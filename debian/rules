@@ -202,7 +202,7 @@ configure: $(addprefix $(STAMP_DIR)/configure-stamp-, $(FLAVORS))
 
 $(STAMP_DIR)/build-stamp-%: $(STAMP_DIR)/configure-stamp-%
 	dh_testdir
-	LD_LIBRARY_PATH=$(builddir)/gdk-pixbuf/.libs:$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH) \
+	LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH) \
 		$(MAKE) $(PARALLEL_FLAGS) -C $(builddir)
 	touch $@
 
@@ -212,7 +212,7 @@ $(STAMP_DIR)/check-stamp-%: $(STAMP_DIR)/build-stamp-%
 	dh_testdir
 	# setting LD_LIBRARY_PATH for "make check" might be needed in the
 	# future, but doesn't seem necessary right now
-	#LD_LIBRARY_PATH=$(builddir)/gdk-pixbuf/.libs:$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH)
+	#LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH)
 	# testsuite failures are ignored
 	-$(MAKE) -C $(builddir) check
 	touch $@
@@ -226,11 +226,6 @@ $(STAMP_DIR)/install-stamp-%: $(STAMP_DIR)/build-stamp-%
 	touch $@
 
 install: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
-	# Add necessary dependencies for the static build to Libs.private
-	a=$$(grep ^Libs: $(installbasedir)/shared/$(LIBDIR)/pkgconfig/gdk-pixbuf-2.0.pc) ; \
-	b=$$(grep ^Libs: $(installbasedir)/static/$(LIBDIR)/pkgconfig/gdk-pixbuf-2.0.pc) ; \
-	c=$$(for i in $$b; do echo $$a| grep -q -e $$i || echo $$i; done) ; \
-	echo Libs.private: $$c >> $(installbasedir)/shared/$(LIBDIR)/pkgconfig/gdk-pixbuf-2.0.pc
 
 # gross kludge to force control generation with the %.in target
 clean::
@@ -325,25 +320,6 @@ binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PK
 	# of dh_installdocs (ship README.Debian etc. in the first package)
 	dh_installdocs -p$(PIXBUF_PKG) -s
 	dh_installman -s
-	# fix the permissions of the development package because it ships
-	# dh_gtkmodules which we need to invoke in this build
-	dh_fixperms -p$(DEV_PKG)
-	# generate a dependency on the Gtk binary version
-	debian/$(DEV_PKG)/usr/bin/dh_gtkmodules -p$(PIXBUF_PKG)
-	# generate an IM module file and a GdkPixbuf loader file for the shared
-	# library
-	LD_LIBRARY_PATH=debian/$(SHARED_PKG)/$(LIBDIR):$(LD_LIBRARY_PATH) \
-	GTK_QUERYLOADERS=$(installbasedir)/shared/usr/bin/gdk-pixbuf-query-loaders \
-	GTK_QUERYIMMODULES=$(installbasedir)/shared/usr/bin/gtk-query-immodules-2.0 \
-		debian/$(DEV_PKG)/usr/bin/dh_gtkmodules \
-			-k \
-			-p$(SHARED_PKG)
-	# generate a GdkPixbuf loader config file for the udeb
-	LD_LIBRARY_PATH=debian/$(UDEB_PKG)/$(LIBDIR):$(LD_LIBRARY_PATH) \
-	GTK_QUERYLOADERS=$(installbasedir)/shared_udeb/usr/bin/gdk-pixbuf-query-loaders \
-		debian/$(DEV_PKG)/usr/bin/dh_gtkmodules \
-			-k \
-			-p$(UDEB_PKG)
 	# generate a minimal MIME cache for the udeb
 	mkdir -p $(mimedir)/packages
 	[ -f $(mimexml) ]

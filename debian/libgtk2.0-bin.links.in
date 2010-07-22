@@ -1,4 +1,3 @@
-@LIBDIR@/@SHARED_PKG@/gdk-pixbuf-query-loaders usr/bin/gdk-pixbuf-query-loaders
 @LIBDIR@/@SHARED_PKG@/gtk-query-immodules-@APIVER@ usr/bin/gtk-query-immodules-@APIVER@
 @LIBDIR@/@SHARED_PKG@/gtk-update-icon-cache usr/bin/gtk-update-icon-cache
 @LIBDIR@/@SHARED_PKG@/update-gtk-immodules usr/sbin/update-gtk-immodules
