@@ -16,8 +16,11 @@ gtk+2.0 (2.21.5-1) UNRELEASED; urgency=low
     + debian/rules,
       debian/libgtk2.0-0.symbols:
       - Update for new API symbols.
+    + debian/update-gdkpixbuf-loaders*,
+      debian/update-gtk-immodules*:
+      - Drop module update scripts which are no-ops since 2.10.1.
 
- -- Sebastian Dröge <slomo@debian.org>  Thu, 22 Jul 2010 18:05:38 +0200
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 22 Jul 2010 21:01:09 +0200
 
 gtk+2.0 (2.21.2-1) experimental; urgency=low
 
