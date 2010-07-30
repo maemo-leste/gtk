@@ -1,3 +1,10 @@
+gtk+2.0 (2.21.5-2) UNRELEASED; urgency=low
+
+  * debian/rules:
+    + Remove obsolete configure parameter.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 30 Jul 2010 19:18:51 +0200
+
 gtk+2.0 (2.21.5-1) experimental; urgency=low
 
   * New upstream development release:
