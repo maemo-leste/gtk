@@ -1,9 +1,17 @@
-gtk+2.0 (2.21.5-2) UNRELEASED; urgency=low
+gtk+2.0 (2.21.6-1) experimental; urgency=low
 
   * debian/rules:
     + Remove obsolete configure parameter.
+  * New upstream development release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/009_gtk-export-filechooser.patch,
+      debian/patches/042_treeview_single-focus.patch,
+      debian/patches/070_mandatory-relibtoolize.patch:
+      - Refreshed.
 
- -- Sebastian Dröge <slomo@debian.org>  Fri, 30 Jul 2010 19:18:51 +0200
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 17 Aug 2010 11:44:53 +0200
 
 gtk+2.0 (2.21.5-1) experimental; urgency=low
 
