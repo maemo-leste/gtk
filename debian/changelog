@@ -6,8 +6,10 @@ gtk+2.0 (2.21.8-1) experimental; urgency=low
       - Update for new API symbols.
     + debian/patches/070_mandatory-relibtoolize.patch:
       - Refreshed.
+  * debian/patches/062_udeb-no-composite.patch:
+    + Fix build of the udeb variant without XComposite.
 
- -- Sebastian Dröge <slomo@debian.org>  Tue, 14 Sep 2010 20:17:04 +0200
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 15 Sep 2010 11:32:17 +0200
 
 gtk+2.0 (2.21.7-1) experimental; urgency=low
 
