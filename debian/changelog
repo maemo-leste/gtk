@@ -12,8 +12,11 @@ gtk+2.0 (2.22.0-1) experimental; urgency=low
 
   [ Sjoerd Simons ]
   * Update the faq/tutorial index files names
+  * debian/control.in:
+    + Add dependency on docbook-utils for db2html to generate the documentation
+      html during build
 
- -- Sjoerd Simons <sjoerd@debian.org>  Sat, 02 Oct 2010 13:37:13 +0100
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 02 Oct 2010 15:52:39 +0100
 
 gtk+2.0 (2.21.8-1) experimental; urgency=low
 
