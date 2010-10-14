@@ -1,0 +1,29 @@
+From 6e4d98c0c714038617195683be60810dbd349ac6 Mon Sep 17 00:00:00 2001
+From: Marek Kasik <mkasik@redhat.com>
+Date: Fri, 21 May 2010 10:14:04 +0000
+Subject: Update list of US Letter locales
+
+Sync paper size fallbacks with the latest 1.8.1 CLDR table (#618000).
+---
+diff --git a/gtk/gtkpapersize.c b/gtk/gtkpapersize.c
+index 7188cef..894dca0 100644
+--- a/gtk/gtkpapersize.c
++++ b/gtk/gtkpapersize.c
+@@ -669,10 +669,11 @@ gtk_paper_size_get_default (void)
+   if (!locale)
+     return GTK_PAPER_NAME_A4;
+ 
+-  if (g_str_has_prefix (locale, "en_CA") ||
+-      g_str_has_prefix (locale, "en_US") ||
+-      g_str_has_prefix (locale, "es_PR") ||
+-      g_str_has_prefix (locale, "es_US"))
++  /* CLDR 1.8.1
++   * http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/territory_language_information.html
++   */
++  if (g_regex_match_simple("[^_.@]{2,3}_(BZ|CA|CL|CO|CR|GT|MX|NI|PA|PH|PR|SV|US|VE)",
++                           locale, G_REGEX_ANCHORED, G_REGEX_MATCH_ANCHORED))
+     paper_size = GTK_PAPER_NAME_LETTER;
+   else
+     paper_size = GTK_PAPER_NAME_A4;
+--
+cgit v0.8.3.1
