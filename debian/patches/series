@@ -10,6 +10,12 @@
 021_loader-files-d.patch
 022_disable-viqr-im-for-vi-locale.patch
 022_module-files-append-compat-module-files-d.patch
+030_gtkscake_redraw.patch
+031_papersize_usletter.patch
+032_offscreenwindow_dnd.patch
+033_filechooser_sort.patch
+034_grab_broken.patch
+035_filechooser_crash.patch
 041_ia32-libs.patch
 042_treeview_single-focus.patch
 060_ignore-random-icons.patch

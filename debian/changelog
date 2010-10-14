@@ -1,3 +1,19 @@
+gtk+2.0 (2.20.1-2) unstable; urgency=low
+
+  * Pickup some patches recommended by upstream from their git 
+    repository.
+    + 030_gtkscake_redraw.patch: correctly redraw GtkScales.
+    + 031_papersize_usletter.patch: update list of countries using US 
+      Letter paper format.
+    + 032_offscreenwindow_dnd.patch: fix crasher with offscreen windows.
+    + 033_filechooser_sort.patch: fix a bug that leaves a file chooser 
+      dialog unusable after a file has been touched in the open folder.
+    + 034_grab_broken.patch: generate correct event for WM_KILLFOCUS.
+    + 035_filechooser_crash.patch: fix a crasher when the file list is 
+      updated.
+
+ -- Josselin Mouette <joss@debian.org>  Thu, 14 Oct 2010 20:01:28 +0200
+
 gtk+2.0 (2.20.1-1) unstable; urgency=low
 
   * New upstream bugfix release:
