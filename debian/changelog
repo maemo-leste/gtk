@@ -1,3 +1,26 @@
+gtk+2.0 (2.22.0-2) UNRELEASED; urgency=low
+
+  * Enable GObject introspection support, thanks to Didier Roche and Sebastien
+    Bacher (Closes: #584235)
+    - debian/rules:
+      - toogle configure option
+      - add new package to BINARY_ARCH_PKGS
+      - add dh_girepository call
+    - debian/control.in:
+      - add gobject-introspection, libgirepository1.0-dev, gir1.0-atk-1.0,
+        gir1.0-pango-1.0, gir1.0-glib-2.0 and gir1.0-freedesktop build-dep
+      - Bump libpango1.0-dev, libgdk-pixbuf2.0-dev and libatk1.0-dev
+        build-dependencies to be sure we have .gir files
+      - add gir package (gir1.0-gtk-2.0)
+    - debian/libgtk2.0-dev.install.in: add gir files
+    - add debian/gir1.0-gtk-2.0.install
+  * Add debian/patches/064_gir_build_workaround.patch: Fix build with
+    introspection enabled
+  * debian/patches/070_mandatory-relibtoolize.patch: Refresh
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 05 Dec 2010 20:10:14 +0100
+
 gtk+2.0 (2.22.0-1) experimental; urgency=low
 
   [ Sebastian Dröge ]
