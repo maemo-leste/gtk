@@ -11,20 +11,20 @@ gtk+2.0 (2.23.2-1) UNRELEASED; urgency=low
       - add new package to BINARY_ARCH_PKGS
       - add dh_girepository call
     - debian/control.in:
-      - add gobject-introspection, libgirepository1.0-dev, gir1.0-atk-1.0,
-        gir1.0-pango-1.0, gir1.0-glib-2.0 and gir1.0-freedesktop build-dep
+      - add gobject-introspection, libgirepository1.0-dev, gir1.2-atk-1.0,
+        gir1.2-pango-1.0, gir1.2-glib-2.0 and gir1.2-freedesktop build-dep
       - Bump libpango1.0-dev, libgdk-pixbuf2.0-dev and libatk1.0-dev
         build-dependencies to be sure we have .gir files
-      - add gir package (gir1.0-gtk-2.0)
+      - add gir package (gir1.2-gtk-2.0)
     - debian/libgtk2.0-dev.install.in: add gir files
-    - add debian/gir1.0-gtk-2.0.install
+    - add debian/gir1.2-gtk-2.0.install
   * Add debian/patches/064_gir_build_workaround.patch: Fix build with
     introspection enabled
   * debian/patches/070_mandatory-relibtoolize.patch: Refresh
   * Switch to dpkg-source 3.0 (quilt) format
   * debian/watch: Bump version to 3
 
- -- Laurent Bigonville <bigon@debian.org>  Sun, 05 Dec 2010 21:03:00 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 09 Dec 2010 17:43:10 +0100
 
 gtk+2.0 (2.22.0-1) experimental; urgency=low
 
