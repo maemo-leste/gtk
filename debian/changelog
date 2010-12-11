@@ -1,5 +1,6 @@
 gtk+2.0 (2.23.2-1) UNRELEASED; urgency=low
 
+  [ Laurent Bigonville ]
   * New upstream version
     - Refresh debian/patches/009_gtk-export-filechooser.patch and
       debian/patches/070_mandatory-relibtoolize.patch
@@ -23,6 +24,11 @@ gtk+2.0 (2.23.2-1) UNRELEASED; urgency=low
   * debian/patches/070_mandatory-relibtoolize.patch: Refresh
   * Switch to dpkg-source 3.0 (quilt) format
   * debian/watch: Bump version to 3
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/control.in,
+    debian/rules:
+    + Remove the chrpath hack, it's been fixed in libtool.
 
  -- Laurent Bigonville <bigon@debian.org>  Thu, 09 Dec 2010 17:43:10 +0100
 
