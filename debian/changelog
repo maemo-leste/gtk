@@ -1,4 +1,4 @@
-gtk+2.0 (2.23.2-1) UNRELEASED; urgency=low
+gtk+2.0 (2.23.2-1) experimental; urgency=low
 
   [ Laurent Bigonville ]
   * New upstream version
@@ -29,8 +29,12 @@ gtk+2.0 (2.23.2-1) UNRELEASED; urgency=low
   * debian/control.in,
     debian/rules:
     + Remove the chrpath hack, it's been fixed in libtool.
+  * debian/control.in:
+    + Bump gobject-introspection build dependency.
+  * debian/copyright:
+    + Updated.
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 09 Dec 2010 17:43:10 +0100
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 12 Dec 2010 22:01:17 +0100
 
 gtk+2.0 (2.22.0-1) experimental; urgency=low
 
