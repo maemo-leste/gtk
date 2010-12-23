@@ -1,3 +1,17 @@
+gtk+2.0 (2.23.3-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+    + debian/control.in:
+      - Bump the libglib2.0-dev build requirement.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Refreshed.
+    + debian/libgtk2.0-0.symbols:
+      - Updated for the new symbols.
+    + debian/rules:
+      - Bump the shver.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 23 Dec 2010 00:51:12 +0000
+
 gtk+2.0 (2.23.2-1) experimental; urgency=low
 
   [ Laurent Bigonville ]
