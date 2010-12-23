@@ -735,10 +735,15 @@ libgdk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gdk_x11_display_set_cursor_theme@Base 2.8.0
  gdk_x11_display_string_to_compound_text@Base 2.23.3
  gdk_x11_display_text_property_to_text_list@Base 2.23.3
+ gdk_x11_display_ungrab@Base 2.23.3
  gdk_x11_display_utf8_to_compound_text@Base 2.23.3
+ gdk_x11_drawable_get_xdisplay@Base 2.23.3
+ gdk_x11_drawable_get_xid@Base 2.23.3
+ gdk_x11_font_get_name@Base 2.23.3
+ gdk_x11_font_get_xdisplay@Base 2.23.3
+ gdk_x11_font_get_xfont@Base 2.8.0
  gdk_x11_free_compound_text@Base 2.23.3
  gdk_x11_free_text_list@Base 2.23.3
- gdk_x11_font_get_xfont@Base 2.8.0
  gdk_x11_gc_get_xdisplay@Base 2.8.0
  gdk_x11_gc_get_xgc@Base 2.8.0
  gdk_x11_get_default_root_xwindow@Base 2.8.0
