@@ -1,4 +1,4 @@
-gtk+2.0 (2.23.3-1) UNRELEASED; urgency=low
+gtk+2.0 (2.23.3-1) experimental; urgency=low
 
   * New upstream release.
     + debian/control.in:
@@ -10,7 +10,7 @@ gtk+2.0 (2.23.3-1) UNRELEASED; urgency=low
     + debian/rules:
       - Bump the shver.
 
- -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 23 Dec 2010 00:51:12 +0000
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 23 Dec 2010 03:09:40 +0000
 
 gtk+2.0 (2.23.2-1) experimental; urgency=low
 
