@@ -1,3 +1,12 @@
+gtk+2.0 (2.23.3-3) experimental; urgency=low
+
+  * debian/patches/007-Revert-some-over-eager-deprecation-removal.patch,
+    debian/patches/008-Don-t-use-deprecated-API.patch:
+    + Two more patches from upstream git, fix more regressions in 2.23.3.
+      Closes: #608028, 608009.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 28 Dec 2010 14:30:44 +0000
+
 gtk+2.0 (2.23.3-2) experimental; urgency=low
 
   * 006-Reinstate-the-implementation-of-gdk_window_foreign_n.patch:
