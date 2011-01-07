@@ -3,9 +3,6 @@
 003_gdk.pc_privates.patch
 004_gtk+-ximian-gtk2-filesel-navbutton-5.patch
 005_support_disabling_x11_extensions.patch
-006-Reinstate-the-implementation-of-gdk_window_foreign_n.patch
-007-Revert-some-over-eager-deprecation-removal.patch
-008-Don-t-use-deprecated-API.patch
 009_gtk-export-filechooser.patch
 011_immodule-cache-dir.patch
 015_default-fallback-icon-theme.patch

@@ -1,3 +1,19 @@
+gtk+2.0 (2.23.90-1) experimental; urgency=low
+
+  * New upstream release.
+    + 006-Reinstate-the-implementation-of-gdk_window_foreign_n.patch,
+      007-Revert-some-over-eager-deprecation-removal.patch,
+      008-Don-t-use-deprecated-API.patch:
+      - Removed, included upstream.
+    + debian/patches/*:
+      - Refreshed.
+    + debian/libgtk2.0-0.symbols:
+      - Updated.
+    + debian/rules:
+      - Bumped the shver.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 07 Jan 2011 02:09:44 +0000
+
 gtk+2.0 (2.23.3-3) experimental; urgency=low
 
   * debian/patches/007-Revert-some-over-eager-deprecation-removal.patch,
