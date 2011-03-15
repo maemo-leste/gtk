@@ -1,3 +1,14 @@
+gtk+2.0 (2.24.3-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/control.in:
+      - Bump the libpango1.0-dev build dependency to make sure we get
+        a version from experimental.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Regenerated.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 15 Mar 2011 20:55:21 +0000
+
 gtk+2.0 (2.24.1-1) experimental; urgency=low
 
   * New upstream release.
