@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.3-1~sid1) unstable; urgency=low
+
+  * Temporarily disable the gir package build.
+  * Upload to unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 20 Mar 2011 18:33:28 +0000
+
 gtk+2.0 (2.24.3-1) experimental; urgency=low
 
   * New upstream release.
