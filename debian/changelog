@@ -1,18 +1,236 @@
-gtk+2.0 (2.20.1-2) unstable; urgency=low
+gtk+2.0 (2.24.3-1) experimental; urgency=low
 
-  * Pickup some patches recommended by upstream from their git 
-    repository.
-    + 030_gtkscake_redraw.patch: correctly redraw GtkScales.
-    + 031_papersize_usletter.patch: update list of countries using US 
-      Letter paper format.
-    + 032_offscreenwindow_dnd.patch: fix crasher with offscreen windows.
-    + 033_filechooser_sort.patch: fix a bug that leaves a file chooser 
-      dialog unusable after a file has been touched in the open folder.
-    + 034_grab_broken.patch: generate correct event for WM_KILLFOCUS.
-    + 035_filechooser_crash.patch: fix a crasher when the file list is 
-      updated.
+  * New upstream release.
+    + debian/control.in:
+      - Bump the libpango1.0-dev build dependency to make sure we get
+        a version from experimental.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Regenerated.
 
- -- Josselin Mouette <joss@debian.org>  Thu, 14 Oct 2010 20:01:28 +0200
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 15 Mar 2011 20:55:21 +0000
+
+gtk+2.0 (2.24.1-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Regenerated.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 22 Feb 2011 20:38:44 +0000
+
+gtk+2.0 (2.24.0-1) experimental; urgency=low
+
+  * New upstream stable release.
+    + debian/libgtk2.0-0.symbols:
+      - Updated.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Regenerated.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 01 Feb 2011 17:59:15 +0000
+
+gtk+2.0 (2.23.90-1) experimental; urgency=low
+
+  * New upstream release.
+    + 006-Reinstate-the-implementation-of-gdk_window_foreign_n.patch,
+      007-Revert-some-over-eager-deprecation-removal.patch,
+      008-Don-t-use-deprecated-API.patch:
+      - Removed, included upstream.
+    + debian/patches/*:
+      - Refreshed.
+    + debian/libgtk2.0-0.symbols:
+      - Updated.
+    + debian/rules:
+      - Bumped the shver.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 07 Jan 2011 02:09:44 +0000
+
+gtk+2.0 (2.23.3-3) experimental; urgency=low
+
+  * debian/patches/007-Revert-some-over-eager-deprecation-removal.patch,
+    debian/patches/008-Don-t-use-deprecated-API.patch:
+    + Two more patches from upstream git, fix more regressions in 2.23.3.
+      Closes: #608028, 608009.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 28 Dec 2010 14:30:44 +0000
+
+gtk+2.0 (2.23.3-2) experimental; urgency=low
+
+  * 006-Reinstate-the-implementation-of-gdk_window_foreign_n.patch:
+    + Patch from upstream git, make gdk_window_foreign_new_for_display
+      not a nop.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 23 Dec 2010 18:35:43 +0000
+
+gtk+2.0 (2.23.3-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/control.in:
+      - Bump the libglib2.0-dev build requirement.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Refreshed.
+    + debian/libgtk2.0-0.symbols:
+      - Updated for the new symbols.
+    + debian/rules:
+      - Bump the shver.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 23 Dec 2010 03:09:40 +0000
+
+gtk+2.0 (2.23.2-1) experimental; urgency=low
+
+  [ Laurent Bigonville ]
+  * New upstream version
+    - Refresh debian/patches/009_gtk-export-filechooser.patch and
+      debian/patches/070_mandatory-relibtoolize.patch
+    - Add new symbols to debian/libgtk2.0-0.symbols
+  * Enable GObject introspection support, thanks to Didier Roche and Sebastien
+    Bacher (Closes: #584235)
+    - debian/rules:
+      - toogle configure option
+      - add new package to BINARY_ARCH_PKGS
+      - add dh_girepository call
+    - debian/control.in:
+      - add gobject-introspection, libgirepository1.0-dev, gir1.2-atk-1.0,
+        gir1.2-pango-1.0, gir1.2-glib-2.0 and gir1.2-freedesktop build-dep
+      - Bump libpango1.0-dev, libgdk-pixbuf2.0-dev and libatk1.0-dev
+        build-dependencies to be sure we have .gir files
+      - add gir package (gir1.2-gtk-2.0)
+    - debian/libgtk2.0-dev.install.in: add gir files
+    - add debian/gir1.2-gtk-2.0.install
+  * Add debian/patches/064_gir_build_workaround.patch: Fix build with
+    introspection enabled
+  * debian/patches/070_mandatory-relibtoolize.patch: Refresh
+  * Switch to dpkg-source 3.0 (quilt) format
+  * debian/watch: Bump version to 3
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/control.in,
+    debian/rules:
+    + Remove the chrpath hack, it's been fixed in libtool.
+  * debian/control.in:
+    + Bump gobject-introspection build dependency.
+  * debian/copyright:
+    + Updated.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 12 Dec 2010 22:01:17 +0100
+
+gtk+2.0 (2.22.0-1) experimental; urgency=low
+
+  [ Sebastian Dröge ]
+  * New upstream stable release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Refreshed.
+    + debian/patches/062_udeb-no-composite.patch:
+      - Dropped, merged upstream.
+
+  [ Sjoerd Simons ]
+  * Update the faq/tutorial index files names
+  * debian/control.in:
+    + Add dependency on docbook-utils for db2html to generate the documentation
+      html during build
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sat, 02 Oct 2010 15:52:39 +0100
+
+gtk+2.0 (2.21.8-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Refreshed.
+  * debian/patches/062_udeb-no-composite.patch:
+    + Fix build of the udeb variant without XComposite.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 15 Sep 2010 11:32:17 +0200
+
+gtk+2.0 (2.21.7-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Refreshed.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 30 Aug 2010 21:45:01 +0200
+
+gtk+2.0 (2.21.6-1) experimental; urgency=low
+
+  * debian/rules:
+    + Remove obsolete configure parameter.
+  * New upstream development release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/009_gtk-export-filechooser.patch,
+      debian/patches/042_treeview_single-focus.patch,
+      debian/patches/070_mandatory-relibtoolize.patch:
+      - Refreshed.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 17 Aug 2010 11:44:53 +0200
+
+gtk+2.0 (2.21.5-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/control.in,
+      debian/rules,
+      debian/*:
+      - Remove all mentions of gdk-pixbuf and (build-) depend on it.
+    + debian/libgtk2.0-0.postinst.in,
+      debian/libgtk2.0-0.postrm.in,
+      debian/libgtk2.0-0.triggers.in,
+      debian/dh_gtkmodules.in:
+      - Handle immodules by triggers and deprecate dh_gtkmodules.
+    + debian/patches/*:
+      - Refreshed.
+      - Remove gdk-pixbuf and immodule patches.
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/update-gdkpixbuf-loaders*,
+      debian/update-gtk-immodules*:
+      - Drop module update scripts which are no-ops since 2.10.1.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 22 Jul 2010 21:01:09 +0200
+
+gtk+2.0 (2.21.2-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Regenerated for the new version.
+    + debian/control.in:
+      - Update GLib (build-) dependency to >= 2.25.8.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 11 Jun 2010 12:19:30 +0200
+
+gtk+2.0 (2.21.1-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Regenerated for the new version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 31 May 2010 09:45:32 +0200
+
+gtk+2.0 (2.21.0-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/rules,
+      debian/libgtk2.0-0.symbols:
+      - Update for new API symbols.
+    + debian/patches/002_static-linking-dont-build-perf.patch:
+      - Refreshed.
+    + debian/patches/070_mandatory-relibtoolize.patch:
+      - Regenerated for the new version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 08 May 2010 08:20:19 +0200
 
 gtk+2.0 (2.20.1-1) unstable; urgency=low
 
