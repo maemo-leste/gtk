@@ -170,8 +170,6 @@ patch: $(STAMP_DIR)/patch-stamp
 $(STAMP_DIR)/patch-stamp:
 	dh_testdir
 	mkdir $(STAMP_DIR)
-	# apply patches
-	QUILT_PATCHES=$(PATCH_DIR) quilt --quiltrc /dev/null push -a || test $$? = 2
 	# backup the original files to restore them in the clean target
 	-test -r config.sub && cp config.sub config.sub.orig
 	-test -r config.guess && cp config.guess config.guess.orig
@@ -258,9 +256,6 @@ clean:: debian/control
 	# restore files from backup (before unpatching)
 	-test -r config.sub.orig && mv -f config.sub.orig config.sub
 	-test -r config.guess.orig && mv -f config.guess.orig config.guess
-	# unapply patches, if any
-	QUILT_PATCHES=$(PATCH_DIR) quilt --quiltrc /dev/null pop -a -R || test $$? = 2
-	-rm -rf .pc
 	rm -f debian/*.devhelp
 	-rm -rf $(STAMP_DIR)
 	-rm -f $(call dh_subst_files,$(ALL_PKGS))
