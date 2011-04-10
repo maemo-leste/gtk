@@ -2,7 +2,7 @@ Source: gtk+2.0
 Section: libs
 Priority: optional
 Maintainer: Sebastien Bacher <seb128@debian.org>
-Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Laurent Bigonville <bigon@debian.org>
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Josselin Mouette <joss@debian.org>
 Build-Depends: debhelper (>= 7.0.50~),
                gettext,
                pkg-config,
@@ -37,9 +37,7 @@ Build-Depends: debhelper (>= 7.0.50~),
                gir1.2-pango-1.0,
                gir1.2-gdkpixbuf-2.0,
                quilt,
-               gawk,
-               xsltproc,
-               shared-mime-info
+               gawk
 Build-Depends-Indep: gtk-doc-tools (>= 1.8),
                      docbook-xml,
                      docbook-utils,
