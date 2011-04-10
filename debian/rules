@@ -104,10 +104,6 @@ buildbasedir = $(CURDIR)/debian/build
 installdir = $(installbasedir)/$(current_flavor)
 installbasedir = $(CURDIR)/debian/install
 
-# temporary directory for the minimal MIME cache generation
-mimedir = debian/build-mime
-mimexml = /usr/share/mime/packages/freedesktop.org.xml
-
 # configure flags
 configure_flags := \
 			--prefix=/usr \
@@ -252,7 +248,6 @@ clean:: debian/control
 	# remove install and build dirs
 	rm -rf $(installbasedir)
 	rm -rf $(buildbasedir)
-	rm -rf $(mimedir)
 	# restore files from backup (before unpatching)
 	-test -r config.sub.orig && mv -f config.sub.orig config.sub
 	-test -r config.guess.orig && mv -f config.guess.orig config.guess
@@ -301,13 +296,6 @@ binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PK
 	# of dh_installdocs (ship README.Debian etc. in the first package)
 	dh_installdocs -p$(PIXBUF_PKG) -s
 	dh_installman -s
-	# generate a minimal MIME cache for the udeb
-	mkdir -p $(mimedir)/packages
-	[ -f $(mimexml) ]
-	xsltproc -nonet debian/keep-png-only.xsl $(mimexml) \
-		> $(mimedir)/packages/png.freedesktop.org.xml
-	update-mime-database $(mimedir)
-	dh_install -p$(UDEB_PKG) $(mimedir)/mime.cache usr/share/mime
 	dh_installexamples -s
 	dh_link -s
 	dh_strip -s --dbg-package=$(DEBUG_PKG) -N$(UDEB_PKG) -Nlibgail18 -Nlibgail-common
