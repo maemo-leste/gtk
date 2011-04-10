@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.4-3) unstable; urgency=low
+
+  * Re-enable shared-mime-info as build-dependency, since it is also 
+    used in the tests.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 22:12:30 +0200
+
 gtk+2.0 (2.24.4-2) unstable; urgency=low
 
   * Drop the mimeinfo.cache from the udeb, it’s been moved to 
