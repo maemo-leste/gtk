@@ -1,9 +1,15 @@
-gtk+2.0 (2.24.3-2) UNRELEASED; urgency=low
+gtk+2.0 (2.24.4-1) unstable; urgency=low
 
+  [ Laurent Bigonville ]
   * debian/copyright: Update FSF address to fix
     old-fsf-address-in-copyright-file lintian warning
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 07 Apr 2011 00:15:10 +0200
+  [ Josselin Mouette ]
+  * Re-enable introspection support.
+  * New upstream release.
+  * 070_mandatory-relibtoolize.patch: regenerated for the new version.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 16:00:37 +0200
 
 gtk+2.0 (2.24.3-1~sid1) unstable; urgency=low
 
