@@ -8,6 +8,7 @@ gtk+2.0 (2.24.4-1) unstable; urgency=low
   * Re-enable introspection support.
   * New upstream release.
   * 070_mandatory-relibtoolize.patch: regenerated for the new version.
+  * Drop manual quilt patching; the 3.0 format does it for us.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 16:00:37 +0200
 
