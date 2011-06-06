@@ -2,6 +2,7 @@ gtk+2.0 (2.24.4-4) UNRELEASED; urgency=low
 
   * debian/control:
     - Update package descriptions, strip leading articles.
+    - Bump Standards-Version to 3.9.2. No further changes.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 07 Jun 2011 01:39:58 +0200
 
