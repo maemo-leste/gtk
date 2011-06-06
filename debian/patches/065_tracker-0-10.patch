@@ -1,0 +1,15 @@
+Index: gtk+2.0-2.24.4/gtk/gtksearchenginetracker.c
+===================================================================
+--- gtk+2.0-2.24.4.orig/gtk/gtksearchenginetracker.c	2011-06-06 23:52:49.482505867 +0200
++++ gtk+2.0-2.24.4/gtk/gtksearchenginetracker.c	2011-06-06 23:55:08.090892001 +0200
+@@ -125,7 +125,9 @@
+        * - 0.7 (unstable, 0.6 sucks so badly)
+        * - 0.6 (stable)
+        */
+-      if ((tracker = g_module_open ("libtracker-client-0.9.so.0", flags)) != NULL)
++      if ((tracker = g_module_open ("libtracker-client-0.10.so.0", flags)) != NULL)
++	version = TRACKER_0_9;
++      else if ((tracker = g_module_open ("libtracker-client-0.9.so.0", flags)) != NULL)
+ 	version = TRACKER_0_9;
+       else if ((tracker = g_module_open ("libtracker-client-0.8.so.0", flags)) != NULL)
+ 	version = TRACKER_0_8;
