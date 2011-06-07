@@ -1,15 +1,98 @@
 Index: gtk+2.0-2.24.4/gtk/gtksearchenginetracker.c
 ===================================================================
---- gtk+2.0-2.24.4.orig/gtk/gtksearchenginetracker.c	2011-06-06 23:52:49.482505867 +0200
-+++ gtk+2.0-2.24.4/gtk/gtksearchenginetracker.c	2011-06-06 23:55:08.090892001 +0200
-@@ -125,7 +125,9 @@
-        * - 0.7 (unstable, 0.6 sucks so badly)
-        * - 0.6 (stable)
+--- gtk+2.0-2.24.4.orig/gtk/gtksearchenginetracker.c	2011-06-07 00:14:23.668364426 +0200
++++ gtk+2.0-2.24.4/gtk/gtksearchenginetracker.c	2011-06-07 02:10:54.256480833 +0200
+@@ -34,10 +34,11 @@
+ typedef enum
+ {
+   TRACKER_UNAVAILABLE = 0,
+-  TRACKER_0_6 = 1 << 0,
+-  TRACKER_0_7 = 1 << 1,
+-  TRACKER_0_8 = 1 << 2,
+-  TRACKER_0_9 = 1 << 3
++  TRACKER_0_6  = 1 << 0,
++  TRACKER_0_7  = 1 << 1,
++  TRACKER_0_8  = 1 << 2,
++  TRACKER_0_9  = 1 << 3
++  TRACKER_0_10 = 1 << 4
+ } TrackerVersion;
+ 
+ 
+@@ -94,12 +95,12 @@
+   MAP (tracker_connect, TRACKER_0_6 | TRACKER_0_7),
+   MAP (tracker_disconnect, TRACKER_0_6 | TRACKER_0_7),
+   MAP (tracker_get_version, TRACKER_0_6),
+-  MAP (tracker_cancel_last_call, TRACKER_0_6 | TRACKER_0_7 | TRACKER_0_8 | TRACKER_0_9),
++  MAP (tracker_cancel_last_call, TRACKER_0_6 | TRACKER_0_7 | TRACKER_0_8 | TRACKER_0_9 | TRACKER_0_10),
+   MAP (tracker_search_metadata_by_text_async, TRACKER_0_6 | TRACKER_0_7),
+   MAP (tracker_search_metadata_by_text_and_location_async, TRACKER_0_6 | TRACKER_0_7),
+-  MAP (tracker_client_new, TRACKER_0_8 | TRACKER_0_9),
+-  MAP (tracker_sparql_escape, TRACKER_0_8 | TRACKER_0_9),
+-  MAP (tracker_resources_sparql_query_async, TRACKER_0_8 | TRACKER_0_9)
++  MAP (tracker_client_new, TRACKER_0_8 | TRACKER_0_9 | TRACKER_0_10),
++  MAP (tracker_sparql_escape, TRACKER_0_8 | TRACKER_0_9 | TRACKER_0_10),
++  MAP (tracker_resources_sparql_query_async, TRACKER_0_8 | TRACKER_0_9 | TRACKER_0_10)
+ #undef MAP
+ };
+ 
+@@ -120,12 +121,15 @@
+ 
+       /* So this is the order:
+        *
+-       * - 0.9 (latest unstable)
+-       * - 0.8 (stable)
+-       * - 0.7 (unstable, 0.6 sucks so badly)
+-       * - 0.6 (stable)
++       * - 0.10 (stable)
++       * - 0.9  (unstable)
++       * - 0.8  (old stable)
++       * - 0.7  (unstable, 0.6 sucks so badly)
++       * - 0.6  (old stable)
         */
 -      if ((tracker = g_module_open ("libtracker-client-0.9.so.0", flags)) != NULL)
 +      if ((tracker = g_module_open ("libtracker-client-0.10.so.0", flags)) != NULL)
-+	version = TRACKER_0_9;
++	version = TRACKER_0_10;
 +      else if ((tracker = g_module_open ("libtracker-client-0.9.so.0", flags)) != NULL)
  	version = TRACKER_0_9;
        else if ((tracker = g_module_open ("libtracker-client-0.8.so.0", flags)) != NULL)
  	version = TRACKER_0_8;
+@@ -188,7 +192,8 @@
+     }
+ 
+   if (tracker->priv->version == TRACKER_0_8 ||
+-      tracker->priv->version == TRACKER_0_9)
++      tracker->priv->version == TRACKER_0_9 ||
++      tracker->priv->version == TRACKER_0_10)
+     g_object_unref (tracker->priv->client);
+   else
+     tracker_disconnect (tracker->priv->client);
+@@ -248,7 +253,8 @@
+     }
+ 
+   if (tracker->priv->version == TRACKER_0_8 ||
+-      tracker->priv->version == TRACKER_0_9)
++      tracker->priv->version == TRACKER_0_9 ||
++      tracker->priv->version == TRACKER_0_10)
+     {
+       OUT_result = (GPtrArray*) results;
+ 
+@@ -318,7 +324,8 @@
+     }
+ 
+   if (tracker->priv->version == TRACKER_0_8 ||
+-      tracker->priv->version == TRACKER_0_9)
++      tracker->priv->version == TRACKER_0_9 ||
++      tracker->priv->version == TRACKER_0_10)
+     {
+       sparql = g_string_new ("SELECT nie:url(?urn) WHERE { ?urn a nfo:FileDataObject; fts:match ");
+       sparql_append_string_literal (sparql, search_text);
+@@ -433,7 +440,8 @@
+   version = open_libtracker ();
+ 
+   if (version == TRACKER_0_8 ||
+-      version == TRACKER_0_9)
++      version == TRACKER_0_9 ||
++      version == TRACKER_0_10)
+     {
+       tracker_client = tracker_client_new (TRACKER_CLIENT_ENABLE_WARNINGS, G_MAXINT);
+     }
