@@ -1,6 +1,7 @@
 gtk+2.0 (2.24.5-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Refresh patches.
   * debian/control:
     - Update package descriptions, strip leading articles.
     - Bump Standards-Version to 3.9.2. No further changes.
