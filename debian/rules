@@ -166,13 +166,8 @@ patch: $(STAMP_DIR)/patch-stamp
 $(STAMP_DIR)/patch-stamp:
 	dh_testdir
 	mkdir $(STAMP_DIR)
-	# backup the original files to restore them in the clean target
-	-test -r config.sub && cp config.sub config.sub.orig
-	-test -r config.guess && cp config.guess config.guess.orig
-	-test -r /usr/share/misc/config.sub && \
-		cp -f /usr/share/misc/config.sub config.sub
-	-test -r /usr/share/misc/config.guess && \
-		cp -f /usr/share/misc/config.guess config.guess
+	mkdir -p m4
+	dh_autoreconf
 	touch $@
 
 $(STAMP_DIR)/configure-stamp-%: $(STAMP_DIR)/patch-stamp
@@ -215,6 +210,7 @@ install: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
 
 # gross kludge to force control generation with the %.in target
 clean::
+	dh_autoreconf_clean
 	touch debian/control.in
 
 debian/%: debian/%.in
