@@ -11,6 +11,10 @@ gtk+2.0 (2.24.5-1) UNRELEASED; urgency=low
   * debian/watch:
     - Switch to .bz2 tarballs.
     - Don't track 3.0 pre-releases.
+  * Use dh-autoreconf to update the build system:
+    - Drop debian/patches/070_mandatory-relibtoolize.patch.
+    - Add Build-Depends on dh-autoreconf.
+    - Call dh_autoreconf in patch-stamp and dh_autoreconf_clean in clean.
 
  -- Michael Biebl <biebl@debian.org>  Mon, 04 Jul 2011 02:18:25 +0200
 

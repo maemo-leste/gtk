@@ -13,4 +13,3 @@
 061_use_pdf_as_default_printing_standard.patch
 064_gir_build_workaround.patch
 065_tracker-0-10.patch
-070_mandatory-relibtoolize.patch
