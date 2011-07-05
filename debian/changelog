@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.5-1) UNRELEASED; urgency=low
+gtk+2.0 (2.24.5-1) unstable; urgency=low
 
   * New upstream release.
   * Refresh patches.
@@ -16,7 +16,7 @@ gtk+2.0 (2.24.5-1) UNRELEASED; urgency=low
     - Add Build-Depends on dh-autoreconf.
     - Call dh_autoreconf in patch-stamp and dh_autoreconf_clean in clean.
 
- -- Michael Biebl <biebl@debian.org>  Mon, 04 Jul 2011 02:18:25 +0200
+ -- Michael Biebl <biebl@debian.org>  Wed, 06 Jul 2011 00:43:06 +0200
 
 gtk+2.0 (2.24.4-3) unstable; urgency=low
 
