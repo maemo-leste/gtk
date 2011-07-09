@@ -5,6 +5,7 @@ Maintainer: Sebastien Bacher <seb128@debian.org>
 Uploaders: @GNOME_TEAM@
 Build-Depends: debhelper (>= 7.0.50~),
                gettext,
+               gtk-doc-tools (>= 1.11),
                pkg-config,
                autotools-dev,
                dh-autoreconf,
@@ -40,8 +41,7 @@ Build-Depends: debhelper (>= 7.0.50~),
                quilt,
                gawk,
                shared-mime-info
-Build-Depends-Indep: gtk-doc-tools (>= 1.8),
-                     docbook-xml,
+Build-Depends-Indep: docbook-xml,
                      docbook-utils,
                      libglib2.0-doc,
                      libatk1.0-doc,
