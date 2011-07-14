@@ -1,11 +1,11 @@
-gtk+2.0 (2.24.5-2) UNRELEASED; urgency=low
+gtk+2.0 (2.24.5-2) unstable; urgency=low
 
   * debian/control.in:
     - Move gtk-doc-tools from Build-Depends-Indep to Build-Depends. The
       upstream tarball is missing the m4 macro directory and gtk-doc.m4 is
       needed for autoreconf. Closes: #633013
 
- -- Michael Biebl <biebl@debian.org>  Sat, 09 Jul 2011 05:45:21 +0200
+ -- Michael Biebl <biebl@debian.org>  Thu, 14 Jul 2011 13:22:26 +0200
 
 gtk+2.0 (2.24.5-1) unstable; urgency=low
 
