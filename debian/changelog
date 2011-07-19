@@ -1,9 +1,9 @@
-gtk+2.0 (2.24.5-3) UNRELEASED; urgency=low
+gtk+2.0 (2.24.5-3) unstable; urgency=low
 
   * Revert "gdk: Make background changes queue a repaint" which causes
     excessive CPU usage in gnome-panel. Closes: #633864
 
- -- Michael Biebl <biebl@debian.org>  Thu, 14 Jul 2011 14:56:06 +0200
+ -- Michael Biebl <biebl@debian.org>  Tue, 19 Jul 2011 19:42:18 +0200
 
 gtk+2.0 (2.24.5-2) unstable; urgency=low
 
