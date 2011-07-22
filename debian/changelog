@@ -1,3 +1,17 @@
+gtk+2.0 (2.24.5-4) unstable; urgency=low
+
+  [ Steve Langasek ]
+  * Build for multiarch. Closes: #634118
+  * Bump gobject-introspection build-dependency for multiarch tuple support.
+  * debian/patches/098_multiarch_module_path.patch: Fall back to the
+    hard-coded pre-multiarch module directory.
+  * Build-depend on debhelper 8.1.3 and add Pre-Depends: ${misc:Pre-Depends}
+    for multiarch-support.
+  * Make the -dev packages depend on a multiarch-capable version of
+    pkg-config.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 22 Jul 2011 20:41:32 +0200
+
 gtk+2.0 (2.24.5-3) unstable; urgency=low
 
   * Revert "gdk: Make background changes queue a repaint" which causes
