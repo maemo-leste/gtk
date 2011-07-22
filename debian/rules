@@ -213,7 +213,6 @@ install: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
 
 # gross kludge to force control generation with the %.in target
 clean::
-	dh_autoreconf_clean
 	touch debian/control.in
 
 debian/%: debian/%.in
@@ -248,9 +247,7 @@ clean:: debian/control
 	# remove install and build dirs
 	rm -rf $(installbasedir)
 	rm -rf $(buildbasedir)
-	# restore files from backup (before unpatching)
-	-test -r config.sub.orig && mv -f config.sub.orig config.sub
-	-test -r config.guess.orig && mv -f config.guess.orig config.guess
+	dh_autoreconf_clean
 	rm -f debian/*.devhelp
 	-rm -rf $(STAMP_DIR)
 	-rm -f $(call dh_subst_files,$(ALL_PKGS))
