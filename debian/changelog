@@ -10,7 +10,16 @@ gtk+2.0 (2.24.5-4) unstable; urgency=low
   * Make the -dev packages depend on a multiarch-capable version of
     pkg-config.
 
- -- Michael Biebl <biebl@debian.org>  Fri, 22 Jul 2011 20:41:32 +0200
+  [ Martin Pitt ]
+  * debian/control.in: Make libgtk2.0-bin Architecture: any, as the symlinks
+    now point to multiarch directories, and the /i386-* links are broken on
+    other architectures.
+
+  [ Mathieu Trudel-Lapierre ]
+  * debian/rules: ensure libgtk2.0-bin is also taken into account as an arch:any
+    package now. (LP: #810747)
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 22 Jul 2011 21:46:47 +0200
 
 gtk+2.0 (2.24.5-3) unstable; urgency=low
 
