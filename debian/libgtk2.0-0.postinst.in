@@ -26,7 +26,6 @@ fi
 
 # Also handle the initial installation
 if [ -d $IMMODULES_DIR ] || [ -d $IMMODULES_DIR_OLD ]; then
-then
      /@LIBDIR@/@SHARED_PKG@/gtk-query-immodules-2.0 \
          $(find $IMMODULES_DIR $IMMODULES_DIR_OLD -name *.so 2> /dev/null) \
      > /@MODULES_BASE_PATH@/gtk.immodules || true
