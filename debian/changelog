@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.5-4) UNRELEASED; urgency=low
+gtk+2.0 (2.24.5-4) unstable; urgency=low
 
   [ Steve Langasek ]
   * Build for multiarch. Closes: #634118
@@ -26,7 +26,7 @@ gtk+2.0 (2.24.5-4) UNRELEASED; urgency=low
     does not exist or is empty handle this case more gracefully and don't
     print an error message.
 
- -- Michael Biebl <biebl@debian.org>  Fri, 22 Jul 2011 23:07:18 +0200
+ -- Michael Biebl <biebl@debian.org>  Thu, 28 Jul 2011 16:24:33 +0200
 
 gtk+2.0 (2.24.5-3) unstable; urgency=low
 
