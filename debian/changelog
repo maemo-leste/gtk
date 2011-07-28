@@ -16,12 +16,12 @@ gtk+2.0 (2.24.5-4) UNRELEASED; urgency=low
     other architectures.
 
   [ Mathieu Trudel-Lapierre ]
-  * debian/rules: ensure libgtk2.0-bin is also taken into account as an arch:any
-    package now. (LP: #810747)
+  * debian/rules: ensure libgtk2.0-bin is also taken into account as an
+    arch:any package now. (LP: #810747)
 
   [ Michael Biebl ]
   * debian/libgtk2.0-dev.install.in: Stop installing libtool .la files.
-  * debian/rules: Stop cleaning the dependency_libs in the *.la files.
+  * debian/rules: Stop cleaning the dependency_libs in the .la files.
   * debian/libgtk2.0-0.postinst.in: If the non-multiarch immodules directory
     does not exist or is empty handle this case more gracefully and don't
     print an error message.
