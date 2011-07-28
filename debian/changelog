@@ -21,6 +21,7 @@ gtk+2.0 (2.24.5-4) UNRELEASED; urgency=low
 
   [ Michael Biebl ]
   * debian/libgtk2.0-dev.install.in: Stop installing libtool .la files.
+  * debian/rules: Stop cleaning the dependency_libs in the *.la files.
 
  -- Michael Biebl <biebl@debian.org>  Fri, 22 Jul 2011 23:07:18 +0200
 
