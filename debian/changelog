@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.5-5) UNRELEASED; urgency=low
+
+  * 006_filechooser_remote.patch: patch from Michal Suchanek to allow 
+    entering non-local URIs in the file chooser. Closes: #629423.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 19 Aug 2011 20:20:13 +0200
+
 gtk+2.0 (2.24.5-4) unstable; urgency=low
 
   [ Steve Langasek ]
