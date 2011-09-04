@@ -170,6 +170,7 @@ $(STAMP_DIR)/patch-stamp:
 	dh_testdir
 	mkdir $(STAMP_DIR)
 	mkdir -p m4
+	cp /usr/share/gtk-doc/data/gtk-doc.make .
 	dh_autoreconf
 	touch $@
 
@@ -248,6 +249,7 @@ clean:: debian/control
 	rm -rf $(installbasedir)
 	rm -rf $(buildbasedir)
 	dh_autoreconf_clean
+	rm -f gtk-doc.make
 	rm -f debian/*.devhelp
 	-rm -rf $(STAMP_DIR)
 	-rm -f $(call dh_subst_files,$(ALL_PKGS))

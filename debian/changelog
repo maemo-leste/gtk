@@ -7,6 +7,7 @@ gtk+2.0 (2.24.6-1) unstable; urgency=low
   * 009_gtk-export-filechooser.patch: refreshed.
   * 066_Revert-gdk-Make-background-changes-queue-a-repaint.patch: 
     dropped, merged upstream.
+  * rules: force update of gtk-doc.make.
 
  -- Josselin Mouette <joss@debian.org>  Fri, 02 Sep 2011 17:17:47 +0200
 
