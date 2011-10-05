@@ -263,6 +263,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libgail18 (= ${binary:Version})
+Breaks: libgnome2-0 (<< 2.32.1-2)
 Multi-Arch: foreign
 Description: GNOME Accessibility Implementation Library -- common modules
  Gail implements ATK interfaces for GTK+ widgets which are dynamically
