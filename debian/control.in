@@ -179,11 +179,11 @@ Description: GTK+ libraries and debugging symbols
 Package: @DOC_PKG@
 Section: doc
 Architecture: all
-Depends: lynx | www-browser,
-         ${misc:Depends}
+Depends: ${misc:Depends}
 Recommends: libglib2.0-doc,
             libatk1.0-doc,
             libpango1.0-doc
+Suggests: devhelp
 Multi-Arch: foreign
 Description: documentation for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
@@ -309,7 +309,8 @@ Description: Gail libraries and debugging symbols
 Package: libgail-doc
 Architecture: all
 Section: doc
-Depends: ${misc:Depends}, lynx | www-browser
+Depends: ${misc:Depends}
+Suggests: devhelp
 Replaces: libgtk2.0-doc (<< 2.14.5)
 Multi-Arch: foreign
 Description: documentation files of the Gail library
