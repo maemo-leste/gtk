@@ -13,4 +13,5 @@
 061_use_pdf_as_default_printing_standard.patch
 064_gir_build_workaround.patch
 065_tracker.patch
+066_filechooser-recent-folders.patch
 098_multiarch_module_path.patch
