@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.6-2) UNRELEASED; urgency=low
+gtk+2.0 (2.24.6-2) unstable; urgency=low
 
   * debian/control.in
     - Set pkg-gnome-maintainers@lists.alioth.debian.org as Maintainer.
@@ -14,7 +14,7 @@ gtk+2.0 (2.24.6-2) UNRELEASED; urgency=low
   * debian/libgail-doc.install, debian/libgtk2.0-doc.install.in: Install
     documentation from the source tree, as it's not being installed any more.
 
- -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 11:11:48 +0200
+ -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 21:29:48 +0200
 
 gtk+2.0 (2.24.6-1) unstable; urgency=low
 
