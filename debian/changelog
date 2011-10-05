@@ -3,6 +3,9 @@ gtk+2.0 (2.24.6-2) UNRELEASED; urgency=low
   * debian/control.in
     - Set pkg-gnome-maintainers@lists.alioth.debian.org as Maintainer.
     - Suggest devhelp instead of depending on lynx | www-browser.
+    - Add Breaks: libgnome2-0 (<< 2.32.1-2) to libgail-common to ensure
+      we have a recent enough version of libgnome2-0 which can read the
+      accessibility module from the new multiarch location. Closes: #636536
 
  -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 11:11:48 +0200
 
