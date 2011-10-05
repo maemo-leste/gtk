@@ -8,6 +8,9 @@ gtk+2.0 (2.24.6-2) UNRELEASED; urgency=low
       accessibility module from the new multiarch location. Closes: #636536
   * Refresh patches.
   * Add support for tracker 0.12 and prefer it over 0.10. Closes: #643943
+  * debian/patches/066_filechooser-recent-folders.patch
+    - Cherry-pick fixes from the upstream filechooser-recent-folder-2-24
+      branch. Closes: #640544, #640466, #644222
 
  -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 11:11:48 +0200
 
