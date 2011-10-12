@@ -1,3 +1,9 @@
+gtk+2.0 (2.24.6-2) UNRELEASED; urgency=low
+
+  * libgtk2.0-0.postrm.in: fix broken check again. (Closes: #639574)
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 12 Oct 2011 17:38:35 +0200
+
 gtk+2.0 (2.24.6-2) unstable; urgency=low
 
   * debian/control.in
