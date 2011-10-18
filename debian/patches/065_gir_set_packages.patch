@@ -15,8 +15,21 @@ https://bugzilla.gnome.org/show_bug.cgi?id=635287
 Index: gtk+-2.24.7/gdk/Makefile.am
 ===================================================================
 --- gtk+-2.24.7.orig/gdk/Makefile.am	2011-08-16 04:30:51.000000000 +0200
-+++ gtk+-2.24.7/gdk/Makefile.am	2011-10-18 17:47:04.649297799 +0200
-@@ -202,6 +202,7 @@
++++ gtk+-2.24.7/gdk/Makefile.am	2011-10-18 19:11:08.000000000 +0200
+@@ -3,6 +3,7 @@
+ -include $(INTROSPECTION_MAKEFILE)
+ INTROSPECTION_GIRS =
+ INTROSPECTION_SCANNER_ARGS = \
++   --warn-all \
+    --add-include-path=../gdk
+ INTROSPECTION_COMPILER_ARGS = \
+    --includedir=$(srcdir) \
+@@ -198,10 +199,11 @@
+         gdkenumtypes.h
+ 
+ Gdk-2.0.gir: $(gdktargetlib) Makefile
+-Gdk_2_0_gir_SCANNERFLAGS = --warn-all
++Gdk_2_0_gir_SCANNERFLAGS = --c-include="gdk/gdk.h"
  Gdk_2_0_gir_INCLUDES = Gio-2.0 GdkPixbuf-2.0 Pango-1.0 cairo-1.0
  Gdk_2_0_gir_LIBS = $(gdktargetlib)
  Gdk_2_0_gir_FILES = $(introspection_files)
@@ -28,15 +41,37 @@ Index: gtk+-2.24.7/gdk/Makefile.am
  GdkX11_2_0_gir_INCLUDES = Gio-2.0 Gdk-2.0 GdkPixbuf-2.0 Pango-1.0 xlib-2.0
  GdkX11_2_0_gir_LIBS = $(gdktargetlib)
  GdkX11_2_0_gir_FILES = $(x11_introspection_files)
-+GdkX11_2_0_gir_PACKAGES = gdk-x11-2.0
++GdkX11_2_0_gir_EXPORT_PACKAGES = gdk-x11-2.0
  GdkX11_2_0_gir_CFLAGS = $(INCLUDES) -L$(top_builddir)/gdk
  INTROSPECTION_GIRS += GdkX11-2.0.gir
  
 Index: gtk+-2.24.7/gtk/Makefile.am
 ===================================================================
 --- gtk+-2.24.7.orig/gtk/Makefile.am	2011-10-18 00:38:28.000000000 +0200
-+++ gtk+-2.24.7/gtk/Makefile.am	2011-10-18 17:47:04.653297749 +0200
-@@ -1022,6 +1022,7 @@
++++ gtk+-2.24.7/gtk/Makefile.am	2011-10-18 19:11:08.000000000 +0200
+@@ -3,6 +3,7 @@
+ -include $(INTROSPECTION_MAKEFILE)
+ INTROSPECTION_GIRS =
+ INTROSPECTION_SCANNER_ARGS = \
++	--warn-all \
+ 	--add-include-path=../gdk
+ INTROSPECTION_COMPILER_ARGS = \
+ 	--includedir=$(srcdir) \
+@@ -1010,11 +1011,11 @@
+     gtktypebuiltins.c
+ 
+ Gtk-2.0.gir: $(INTROSPECTION_SCANNER) $(gtktargetlib) $(top_builddir)/gdk/Gdk-2.0.gir Makefile
+-Gtk_2_0_gir_SCANNERFLAGS = --warn-all --add-include-path=$(top_builddir)/gdk
++Gtk_2_0_gir_SCANNERFLAGS = --include-uninstalled=$(top_builddir)/gdk/Gdk-2.0.gir
+ if USE_X11
+ Gtk_2_0_gir_SCANNERFLAGS += --add-include-path=$(top_builddir)/gdk/x11
+ endif
+-Gtk_2_0_gir_INCLUDES = Atk-1.0 Gdk-2.0
++Gtk_2_0_gir_INCLUDES = Atk-1.0
+ Gtk_2_0_gir_CFLAGS = \
+ 		$(INCLUDES) \
+ 		-UGDK_DISABLE_DEPRECATED \
+@@ -1022,6 +1023,7 @@
  		-DGTK_TEXT_USE_INTERNAL_UNSUPPORTED_API
  Gtk_2_0_gir_LIBS = $(gtktargetlib)
  Gtk_2_0_gir_FILES = $(addprefix $(srcdir)/, $(introspection_files))
