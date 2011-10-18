@@ -1,8 +1,8 @@
-Index: gtk+-2.24.6/configure.in
+Index: gtk+-2.24.7/configure.in
 ===================================================================
---- gtk+-2.24.6.orig/configure.in	2011-09-02 17:04:57.000000000 +0200
-+++ gtk+-2.24.6/configure.in	2011-09-02 17:10:00.671871268 +0200
-@@ -1311,23 +1311,27 @@ LDFLAGS="$saved_ldflags"
+--- gtk+-2.24.7.orig/configure.in	2011-10-18 07:59:56.724172795 +0200
++++ gtk+-2.24.7/configure.in	2011-10-18 07:59:59.172142019 +0200
+@@ -1320,23 +1320,27 @@
  
  # Pull in gio-unix for GDesktopAppInfo usage, see at least gdkapplaunchcontext-x11.c
  if test "x$gdktarget" = "xx11"; then
@@ -35,11 +35,11 @@ Index: gtk+-2.24.6/configure.in
  AC_SUBST(GDK_EXTRA_LIBS)
  AC_SUBST(GDK_EXTRA_CFLAGS)
  AC_SUBST(GDK_DEP_LIBS)
-Index: gtk+-2.24.6/gdk-2.0.pc.in
+Index: gtk+-2.24.7/gdk-2.0.pc.in
 ===================================================================
---- gtk+-2.24.6.orig/gdk-2.0.pc.in	2011-08-16 04:30:51.000000000 +0200
-+++ gtk+-2.24.6/gdk-2.0.pc.in	2011-09-02 17:06:04.962718939 +0200
-@@ -8,5 +8,6 @@ Name: GDK
+--- gtk+-2.24.7.orig/gdk-2.0.pc.in	2011-08-16 04:30:51.000000000 +0200
++++ gtk+-2.24.7/gdk-2.0.pc.in	2011-10-18 07:59:59.176141969 +0200
+@@ -8,5 +8,6 @@
  Description: GTK+ Drawing Kit (${target} target)
  Version: @VERSION@
  Requires: @GDK_PACKAGES@
