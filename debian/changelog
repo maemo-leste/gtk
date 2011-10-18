@@ -11,6 +11,11 @@ gtk+2.0 (2.24.7-1) UNRELEASED; urgency=low
     - Track .xz tarballs.
   * debian/patches/066_filechooser-recent-folders.patch
     - Removed, merged upstream.
+  * debian/patches/009_gtk-export-filechooser.patch
+    - Removed, with maemo being dead upstream and no package using the private
+      filechooser API, this patch has become obsolete. Drop
+      hildon_gtk_file_chooser_install_properties from the symbols file
+      accordingly.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 07:47:45 +0200
 
