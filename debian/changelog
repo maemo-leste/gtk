@@ -1,8 +1,14 @@
-gtk+2.0 (2.24.6-2) UNRELEASED; urgency=low
+gtk+2.0 (2.24.7-1) UNRELEASED; urgency=low
 
+  [ Laurent Bigonville ]
   * libgtk2.0-0.postrm.in: fix broken check again. (Closes: #639574)
 
- -- Laurent Bigonville <bigon@debian.org>  Wed, 12 Oct 2011 17:38:35 +0200
+  [ Michael Biebl ]
+  * New upstream release.
+    - Fixes crash in gtk_entry_completion_default_completion_func () for
+      non UTF-8 strings. Closes: #616150
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 07:47:45 +0200
 
 gtk+2.0 (2.24.6-2) unstable; urgency=low
 
