@@ -9,6 +9,8 @@ gtk+2.0 (2.24.7-1) UNRELEASED; urgency=low
       non UTF-8 strings. Closes: #616150
   * debian/watch:
     - Track .xz tarballs.
+  * debian/patches/066_filechooser-recent-folders.patch
+    - Removed, merged upstream.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 07:47:45 +0200
 
