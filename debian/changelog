@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.7-1) UNRELEASED; urgency=low
+gtk+2.0 (2.24.7-1) unstable; urgency=low
 
   [ Laurent Bigonville ]
   * libgtk2.0-0.postrm.in: fix broken check again. (Closes: #639574)
@@ -21,7 +21,7 @@ gtk+2.0 (2.24.7-1) UNRELEASED; urgency=low
   * debian/patches/065_gir_set_packages.patch
     - Specify packages when generating GIR. Closes: #622759
 
- -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 07:47:45 +0200
+ -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 18:00:14 +0200
 
 gtk+2.0 (2.24.6-2) unstable; urgency=low
 
