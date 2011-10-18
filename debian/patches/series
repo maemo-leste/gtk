@@ -12,5 +12,6 @@
 060_ignore-random-icons.patch
 061_use_pdf_as_default_printing_standard.patch
 064_gir_build_workaround.patch
-065_tracker.patch
+065_gir_set_packages.patch
+070_tracker.patch
 098_multiarch_module_path.patch

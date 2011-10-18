@@ -16,6 +16,8 @@ gtk+2.0 (2.24.7-1) UNRELEASED; urgency=low
       filechooser API, this patch has become obsolete. Drop
       hildon_gtk_file_chooser_install_properties from the symbols file
       accordingly.
+  * debian/patches/065_gir_set_packages.patch
+    - Specify packages when generating GIR. Closes: #622759
 
  -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 07:47:45 +0200
 
