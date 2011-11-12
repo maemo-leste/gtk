@@ -1,11 +1,11 @@
-gtk+2.0 (2.24.8-1) UNRELEASED; urgency=low
+gtk+2.0 (2.24.8-1) unstable; urgency=low
 
   * New upstream release.
   * Remove debian/patches/070_tracker.patch, fixed upstream by using the
     Tracker D-Bus interface.
   * Refresh debian/patches/015_default-fallback-icon-theme.patch-
 
- -- Michael Biebl <biebl@debian.org>  Sat, 12 Nov 2011 01:08:58 +0100
+ -- Michael Biebl <biebl@debian.org>  Sat, 12 Nov 2011 01:58:12 +0100
 
 gtk+2.0 (2.24.7-1) unstable; urgency=low
 
