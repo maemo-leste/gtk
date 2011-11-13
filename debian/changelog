@@ -5,6 +5,7 @@ gtk+2.0 (2.24.8-2) UNRELEASED; urgency=low
   * Remove gtk-query-immodules-2.0 from libgtk2.0-bin since it is 
     clearly not Multi-Arch compatible. It should not be needed anyway, 
     everything is handled by triggers from the private directory.
+  * Remove incorrect M-A: same statement for the debug package.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 13 Nov 2011 17:37:06 +0100
 
