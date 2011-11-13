@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.8-2) UNRELEASED; urgency=low
+gtk+2.0 (2.24.8-2) unstable; urgency=low
 
   * Move /etc/gtk-2.0 to libgtk2.0-common.
   * Add appropriate Breaks/Replaces to handle it.
@@ -6,8 +6,10 @@ gtk+2.0 (2.24.8-2) UNRELEASED; urgency=low
     clearly not Multi-Arch compatible. It should not be needed anyway, 
     everything is handled by triggers from the private directory.
   * Remove incorrect M-A: same statement for the debug package.
+  * gtk2-engines-pixbuf is M-A: same.
+  * libgail-common is M-A: same and not foreign.
 
- -- Josselin Mouette <joss@debian.org>  Sun, 13 Nov 2011 17:37:06 +0100
+ -- Josselin Mouette <joss@debian.org>  Sun, 13 Nov 2011 18:16:43 +0100
 
 gtk+2.0 (2.24.8-1) unstable; urgency=low
 
