@@ -97,6 +97,8 @@ Section: misc
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: libgtk2.0-0
+Replaces: libgtk2.0-0 (<< 2.24.8-2)
+Breaks: libgtk2.0-0 (<< 2.24.8-2)
 Multi-Arch: foreign
 Description: common files for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user

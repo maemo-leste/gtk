@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.8-2) UNRELEASED; urgency=low
+
+  * Move /etc/gtk-2.0 to libgtk2.0-common.
+  * Add appropriate Breaks/Replaces to handle it.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 13 Nov 2011 17:37:06 +0100
+
 gtk+2.0 (2.24.8-1) unstable; urgency=low
 
   * New upstream release.

@@ -97,6 +97,8 @@ Section: misc
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: @SHARED_PKG@
+Replaces: @SHARED_PKG@ (<< 2.24.8-2)
+Breaks: @SHARED_PKG@ (<< 2.24.8-2)
 Multi-Arch: foreign
 Description: common files for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
