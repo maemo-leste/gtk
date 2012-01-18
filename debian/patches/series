@@ -8,6 +8,7 @@
 022_disable-viqr-im-for-vi-locale.patch
 041_ia32-libs.patch
 042_treeview_single-focus.patch
+044_tracker_fts.patch
 060_ignore-random-icons.patch
 061_use_pdf_as_default_printing_standard.patch
 065_gir_set_packages.patch
