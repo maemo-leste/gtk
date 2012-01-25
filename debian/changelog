@@ -1,3 +1,9 @@
+gtk+2.0 (2.24.9-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 25 Jan 2012 12:24:19 +0100
+
 gtk+2.0 (2.24.8-3) unstable; urgency=low
 
   * Change section of gir1.2-gtk-2.0 to introspection.
