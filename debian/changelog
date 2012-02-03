@@ -4,8 +4,11 @@ gtk+2.0 (2.24.9-1) UNRELEASED; urgency=low
   * Remove debian/patches/070_revert_gtk_iconview_layout.patch, merged
     upstream.
   * Update debian/patches/065_gir_set_packages.patch.
+  * Don't install a duplicate of the ChangeLog file as ChangeLog.gz. It's
+    already installed as changelog.gz via dh_installchangelogs.
+  * Install AUTHORS file.
 
- -- Michael Biebl <biebl@debian.org>  Wed, 25 Jan 2012 12:30:03 +0100
+ -- Michael Biebl <biebl@debian.org>  Fri, 03 Feb 2012 23:04:35 +0100
 
 gtk+2.0 (2.24.8-3) unstable; urgency=low
 
