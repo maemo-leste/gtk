@@ -1,3 +1,11 @@
+gtk+2.0 (2.24.9-2) UNRELEASED; urgency=low
+
+  * debian/patches/070-dont-crash-when-printing.patch:
+    - Fix crash due to incorrect handling of custom CUPS options. Patch
+      cherry-picked from upstream Git. Closes: #658710
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 06 Feb 2012 13:22:03 +0100
+
 gtk+2.0 (2.24.9-1) unstable; urgency=low
 
   * New upstream release.

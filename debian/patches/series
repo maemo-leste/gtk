@@ -12,4 +12,5 @@
 060_ignore-random-icons.patch
 061_use_pdf_as_default_printing_standard.patch
 065_gir_set_packages.patch
+070-dont-crash-when-printing.patch
 098_multiarch_module_path.patch
