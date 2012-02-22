@@ -1,9 +1,9 @@
-gtk+2.0 (2.24.10-1) UNRELEASED; urgency=low
+gtk+2.0 (2.24.10-1) unstable; urgency=low
 
   * New upstream release.
   * Remove debian/patches/070-dont-crash-when-printing.patch, merged upstream.
 
- -- Michael Biebl <biebl@debian.org>  Wed, 22 Feb 2012 15:58:30 +0100
+ -- Michael Biebl <biebl@debian.org>  Wed, 22 Feb 2012 16:37:06 +0100
 
 gtk+2.0 (2.24.9-2) unstable; urgency=low
 
