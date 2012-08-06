@@ -278,7 +278,7 @@ binary-indep: build $(maybe_check) install $(call dh_subst_files,$(BINARY_INDEP_
 	dh_installdeb -i
 	dh_gencontrol -i
 	dh_md5sums -i
-	dh_builddeb -i
+	dh_builddeb -i -- -Zxz
 
 binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PKGS)) debian/dh_gtkmodules debian/dh_gtkmodules.1
 	dh_testdir
@@ -322,7 +322,7 @@ binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PK
 	-rm -f debian/shlibs.local
 	dh_gencontrol -s
 	dh_md5sums -s
-	dh_builddeb -s
+	dh_builddeb -s -- -Zxz
 
 list-missing:
 	perl -w debian/dh_listmissing.pl $(foreach f,$(FLAVORS),$(subst $(CURDIR)/,,$(installbasedir))/$(f)) 2>&1 | \
