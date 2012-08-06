@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.10-2) UNRELEASED; urgency=low
+gtk+2.0 (2.24.10-2) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Update epoch on libxrandr dependencies.
@@ -12,7 +12,7 @@ gtk+2.0 (2.24.10-2) UNRELEASED; urgency=low
     for gdk pixbuf loaders and gtk input method modules have been moved out of
     /etc a long time ago. Closes: #681962
 
- -- Michael Biebl <biebl@debian.org>  Mon, 06 Aug 2012 17:38:57 +0200
+ -- Michael Biebl <biebl@debian.org>  Mon, 06 Aug 2012 17:55:03 +0200
 
 gtk+2.0 (2.24.10-1) unstable; urgency=low
 
