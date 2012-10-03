@@ -1,3 +1,239 @@
+gtk+2.0 (2.24.10-2) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Update epoch on libxrandr dependencies.
+
+  [ Ansgar Burchardt ]
+  * debian/rules: Use xz compression for binary packages. Closes: #683912
+
+  [ Michael Biebl ]
+  * debian/libgtk2.0-0.postrm.in: Drop "rm -rf /etc/gtk-2.0" on purge since
+    this removes files owned by libgtk2.0-common. The generated cache files
+    for gdk pixbuf loaders and gtk input method modules have been moved out of
+    /etc a long time ago. Closes: #681962
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 06 Aug 2012 17:55:03 +0200
+
+gtk+2.0 (2.24.10-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove debian/patches/070-dont-crash-when-printing.patch, merged upstream.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 22 Feb 2012 16:37:06 +0100
+
+gtk+2.0 (2.24.9-2) unstable; urgency=low
+
+  * debian/patches/070-dont-crash-when-printing.patch:
+    - Fix crash due to incorrect handling of custom CUPS options. Patch
+      cherry-picked from upstream Git. Closes: #658710
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 06 Feb 2012 13:24:19 +0100
+
+gtk+2.0 (2.24.9-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove debian/patches/070_revert_gtk_iconview_layout.patch, merged
+    upstream.
+  * Update debian/patches/065_gir_set_packages.patch.
+  * Don't install a duplicate of the ChangeLog file as ChangeLog.gz. It's
+    already installed as changelog.gz via dh_installchangelogs.
+  * Install AUTHORS file.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 03 Feb 2012 23:10:17 +0100
+
+gtk+2.0 (2.24.8-3) unstable; urgency=low
+
+  * Change section of gir1.2-gtk-2.0 to introspection.
+  * debian/patches/044_tracker_fts.patch:
+    - Enable tracker fulltext search.
+  * debian/patches/070_revert_gtk_iconview_layout.patch:
+    - Revert "iconview: layout items immediately when setting a GtkTreeModel"
+      as this could lead to a crash in GtkIconView. Closes: #650609
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 18 Jan 2012 13:12:35 +0100
+
+gtk+2.0 (2.24.8-2) unstable; urgency=low
+
+  * Move /etc/gtk-2.0 to libgtk2.0-common.
+  * Add appropriate Breaks/Replaces to handle it.
+  * Remove gtk-query-immodules-2.0 from libgtk2.0-bin since it is 
+    clearly not Multi-Arch compatible. It should not be needed anyway,
+    everything is handled by triggers from the private directory.
+  * Remove incorrect M-A: same statement for the debug package.
+  * gtk2-engines-pixbuf is M-A: same.
+  * libgail-common is M-A: same and not foreign.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 13 Nov 2011 18:16:43 +0100
+
+gtk+2.0 (2.24.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * Remove debian/patches/070_tracker.patch, fixed upstream by using the
+    Tracker D-Bus interface.
+  * Refresh debian/patches/015_default-fallback-icon-theme.patch.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 12 Nov 2011 01:58:12 +0100
+
+gtk+2.0 (2.24.7-1) unstable; urgency=low
+
+  [ Laurent Bigonville ]
+  * libgtk2.0-0.postrm.in: fix broken check again. (Closes: #639574)
+
+  [ Michael Biebl ]
+  * New upstream release.
+    - Fixes crash in gtk_entry_completion_default_completion_func () for
+      non UTF-8 strings. Closes: #616150
+  * debian/watch:
+    - Track .xz tarballs.
+  * debian/patches/066_filechooser-recent-folders.patch
+    - Removed, merged upstream.
+  * debian/patches/009_gtk-export-filechooser.patch
+    - Removed, with maemo being dead upstream and no package using the private
+      filechooser API, this patch has become obsolete. Drop
+      hildon_gtk_file_chooser_install_properties from the symbols file
+      accordingly.
+  * debian/patches/064_gir_build_workaround.patch
+    - Removed, this workaround is no longer required with newer gir versions.
+  * debian/patches/065_gir_set_packages.patch
+    - Specify packages when generating GIR. Closes: #622759
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 18 Oct 2011 18:00:14 +0200
+
+gtk+2.0 (2.24.6-2) unstable; urgency=low
+
+  * debian/control.in
+    - Set pkg-gnome-maintainers@lists.alioth.debian.org as Maintainer.
+    - Suggest devhelp instead of depending on lynx | www-browser.
+    - Add Breaks: libgnome2-0 (<< 2.32.1-2) to libgail-common to ensure
+      we have a recent enough version of libgnome2-0 which can read the
+      accessibility module from the new multiarch location. Closes: #636536
+  * Refresh patches.
+  * Add support for tracker 0.12 and prefer it over 0.10. Closes: #643943
+  * debian/patches/066_filechooser-recent-folders.patch
+    - Cherry-pick fixes from the upstream filechooser-recent-folder-2-24
+      branch. Closes: #640544, #640466, #644222
+  * debian/libgail-doc.install, debian/libgtk2.0-doc.install.in: Install
+    documentation from the source tree, as it's not being installed any more.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 05 Oct 2011 21:29:48 +0200
+
+gtk+2.0 (2.24.6-1) unstable; urgency=low
+
+  * New upstream release.
+    + Contains patch from Michal Suchanek to allow entering non-local 
+      URIs in the file chooser. Closes: #629423.
+  * 003_gdk.pc_privates.patch: updated for the new version.
+  * 009_gtk-export-filechooser.patch: refreshed.
+  * 066_Revert-gdk-Make-background-changes-queue-a-repaint.patch: 
+    dropped, merged upstream.
+  * rules: force update of gtk-doc.make.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 02 Sep 2011 17:17:47 +0200
+
+gtk+2.0 (2.24.5-4) unstable; urgency=low
+
+  [ Steve Langasek ]
+  * Build for multiarch. Closes: #634118
+  * Bump gobject-introspection build-dependency for multiarch tuple support.
+  * debian/patches/098_multiarch_module_path.patch: Fall back to the
+    hard-coded pre-multiarch module directory.
+  * Build-depend on debhelper 8.1.3 and add Pre-Depends: ${misc:Pre-Depends}
+    for multiarch-support.
+  * Make the -dev packages depend on a multiarch-capable version of
+    pkg-config.
+
+  [ Martin Pitt ]
+  * debian/control.in: Make libgtk2.0-bin Architecture: any, as the symlinks
+    now point to multiarch directories, and the /i386-* links are broken on
+    other architectures.
+
+  [ Mathieu Trudel-Lapierre ]
+  * debian/rules: ensure libgtk2.0-bin is also taken into account as an
+    arch:any package now. (LP: #810747)
+
+  [ Michael Biebl ]
+  * debian/libgtk2.0-dev.install.in: Stop installing libtool .la files.
+  * debian/rules: Stop cleaning the dependency_libs in the .la files.
+  * debian/libgtk2.0-0.postinst.in: If the non-multiarch immodules directory
+    does not exist or is empty handle this case more gracefully and don't
+    print an error message.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 28 Jul 2011 16:24:33 +0200
+
+gtk+2.0 (2.24.5-3) unstable; urgency=low
+
+  * Revert "gdk: Make background changes queue a repaint" which causes
+    excessive CPU usage in gnome-panel. Closes: #633864
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 19 Jul 2011 19:42:18 +0200
+
+gtk+2.0 (2.24.5-2) unstable; urgency=low
+
+  * debian/control.in:
+    - Move gtk-doc-tools from Build-Depends-Indep to Build-Depends. The
+      upstream tarball is missing the m4 macro directory and gtk-doc.m4 is
+      needed for autoreconf. Closes: #633013
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 14 Jul 2011 13:22:26 +0200
+
+gtk+2.0 (2.24.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Refresh patches.
+  * debian/control:
+    - Update package descriptions, remove unnecessary articles.
+    - Bump Standards-Version to 3.9.2. No further changes.
+  * debian/patches/065_tracker-0-10.patch
+    - Use libtracker-sparql to add support for Tracker 0.10. Code has been
+      taken from the gtk-3-0 branch with FTS enabled. Closes: #629427
+  * debian/watch:
+    - Switch to .bz2 tarballs.
+    - Don't track 3.0 pre-releases.
+  * Use dh-autoreconf to update the build system:
+    - Drop debian/patches/070_mandatory-relibtoolize.patch.
+    - Add Build-Depends on dh-autoreconf.
+    - Call dh_autoreconf in patch-stamp and dh_autoreconf_clean in clean.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 06 Jul 2011 00:43:06 +0200
+
+gtk+2.0 (2.24.4-3) unstable; urgency=low
+
+  * Re-enable shared-mime-info as build-dependency, since it is also 
+    used in the tests.
+  * libgtk2.0-0.postrm.in: fix broken check. Closes: #621060.
+  * watch: only monitor 2.x versions.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 22:12:30 +0200
+
+gtk+2.0 (2.24.4-2) unstable; urgency=low
+
+  * Drop the mimeinfo.cache from the udeb, it’s been moved to 
+    gdk-pixbuf.
+  * Drop shared-mime-info and xsltproc build-deps accordingly.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 18:21:55 +0200
+
+gtk+2.0 (2.24.4-1) unstable; urgency=low
+
+  [ Laurent Bigonville ]
+  * debian/copyright: Update FSF address to fix
+    old-fsf-address-in-copyright-file lintian warning
+
+  [ Josselin Mouette ]
+  * Re-enable introspection support.
+  * New upstream release.
+  * 070_mandatory-relibtoolize.patch: regenerated for the new version.
+  * Drop manual quilt patching; the 3.0 format does it for us.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 16:00:37 +0200
+
+gtk+2.0 (2.24.3-1~sid1) unstable; urgency=low
+
+  * Temporarily disable the gir package build.
+  * Upload to unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 20 Mar 2011 18:33:28 +0000
+
 gtk+2.0 (2.24.3-1) experimental; urgency=low
 
   * New upstream release.

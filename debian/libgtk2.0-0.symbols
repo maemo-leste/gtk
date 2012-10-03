@@ -4723,4 +4723,3 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_window_unmaximize@Base 2.8.0
  gtk_window_unstick@Base 2.8.0
  gtk_wrap_mode_get_type@Base 2.8.0
- hildon_gtk_file_chooser_install_properties@Base 2.10.0
