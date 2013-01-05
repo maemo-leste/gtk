@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.14-1) UNRELEASED; urgency=low
+gtk+2.0 (2.24.14-1) experimental; urgency=low
 
   * New upstream release.
   * Refresh patches.
@@ -6,7 +6,7 @@ gtk+2.0 (2.24.14-1) UNRELEASED; urgency=low
   * Remove explicit Build-Depends on gir packages.
   * Make libgtk2.0-dev depend on gir1.2-gtk-2.0.
 
- -- Michael Biebl <biebl@debian.org>  Sat, 05 Jan 2013 02:32:43 +0100
+ -- Michael Biebl <biebl@debian.org>  Sat, 05 Jan 2013 07:32:25 +0100
 
 gtk+2.0 (2.24.13-1) experimental; urgency=low
 
