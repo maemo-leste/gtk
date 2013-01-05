@@ -123,6 +123,7 @@ Package: libgtk2.0-dev
 Section: libdevel
 Architecture: any
 Depends: libgtk2.0-0 (= ${binary:Version}),
+         gir1.2-gtk-2.0 (= ${binary:Version}),
          libgtk2.0-common,
          ${misc:Depends},
          ${shlibs:Depends},
