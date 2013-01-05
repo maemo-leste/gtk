@@ -3,6 +3,7 @@ gtk+2.0 (2.24.14-1) UNRELEASED; urgency=low
   * New upstream release.
   * Refresh patches.
   * Remove a few no longer needed Replaces.
+  * Remove explicit Build-Depends on gir packages.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 05 Jan 2013 02:32:43 +0100
 
