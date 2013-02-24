@@ -1,3 +1,9 @@
+gtk+2.0 (2.24.16-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 24 Feb 2013 00:21:02 +0100
+
 gtk+2.0 (2.24.14-1) experimental; urgency=low
 
   * New upstream release.
