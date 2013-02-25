@@ -1,3 +1,13 @@
+gtk+2.0 (2.24.16-2) UNRELEASED; urgency=low
+
+  * Remove dh_installdoc calls which install files that are supposed to be
+    symlinked to the -common package. These symlinks get overwritten later on
+    (by dh_compress), turning back into real files and breaking multiarch
+    coinstallability (LP: #1132881)
+  * Symlink AUTHORS files to -common too
+
+ -- Iain Lane <iain.lane@canonical.com>  Mon, 25 Feb 2013 17:46:26 +0000
+
 gtk+2.0 (2.24.16-1) experimental; urgency=low
 
   * New upstream release.
