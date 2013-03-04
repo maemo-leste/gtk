@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.17-1) UNRELEASED; urgency=low
+gtk+2.0 (2.24.17-1) experimental; urgency=low
 
   [ Iain Lane ]
   * Remove dh_installdoc calls which install files that are supposed to be
@@ -10,7 +10,7 @@ gtk+2.0 (2.24.17-1) UNRELEASED; urgency=low
   [ Emilio Pozuelo Monfort ]
   * New upstream release.
 
- -- Iain Lane <iain.lane@canonical.com>  Mon, 25 Feb 2013 17:46:26 +0000
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 04 Mar 2013 23:18:24 +0100
 
 gtk+2.0 (2.24.16-1) experimental; urgency=low
 
