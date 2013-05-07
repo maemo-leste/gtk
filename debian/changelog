@@ -1,3 +1,41 @@
+gtk+2.0 (2.24.17-1) experimental; urgency=low
+
+  [ Iain Lane ]
+  * Remove dh_installdoc calls which install files that are supposed to be
+    symlinked to the -common package. These symlinks get overwritten later on
+    (by dh_compress), turning back into real files and breaking multiarch
+    coinstallability (LP: #1132881)
+  * Symlink AUTHORS files to -common too
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 04 Mar 2013 23:18:24 +0100
+
+gtk+2.0 (2.24.16-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/patches:
+      - Refreshed.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 24 Feb 2013 13:00:16 +0100
+
+gtk+2.0 (2.24.14-1) experimental; urgency=low
+
+  * New upstream release.
+  * Refresh patches.
+  * Remove a few no longer needed Replaces.
+  * Remove explicit Build-Depends on gir packages.
+  * Make libgtk2.0-dev depend on gir1.2-gtk-2.0.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 05 Jan 2013 07:32:25 +0100
+
+gtk+2.0 (2.24.13-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Wed, 03 Oct 2012 20:32:26 +0200
+
 gtk+2.0 (2.24.10-2) unstable; urgency=low
 
   [ Josselin Mouette ]
