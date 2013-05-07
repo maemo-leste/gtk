@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.17-2) unstable; urgency=low
+gtk+2.0 (2.24.17-2) UNRELEASED; urgency=low
 
   * Upload to unstable.
   * Drop the unused opt flavor.
