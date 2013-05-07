@@ -137,18 +137,8 @@ static_configure_flags := $(configure_flags) \
 			--disable-shared \
 			--enable-static
 
-# optional optimized flavor for some arches
-OPTLIBDIR :=
-# sample code
-#ifneq ($(filter $(DEB_HOST_ARCH), armel),)
-#FLAVORS += opt
-#OPTLIBDIR := $(LIBDIR)/vfp
-#opt_CFLAGS += $(CFLAGS) -mfpu=vfp -mfloat-abi=softfp
-#opt_configure_flags := $(or $(shared_configure_flags),$(configure_flags))
-#endif
-
 # list of flavors to run the test suite on
-CHECK_FLAVORS := $(filter opt shared static, $(FLAVORS))
+CHECK_FLAVORS := $(filter shared static, $(FLAVORS))
 
 DH_INSTALLDOCS_FILES := NEWS README AUTHORS
 
@@ -235,11 +225,9 @@ debian/%: debian/%.in
 		-e "s#@GNOME_TEAM@#$(UPLOADERS)#g" \
 		-e "s#@GTK_BINARY_VERSION@#$(GTK_BINARY_VERSION)#g" \
 		-e "s#@LIBDIR@#$(LIBDIR)#g" \
-		-e 's#@OPTLIBDIR@#$(OPTLIBDIR)#g' \
 		-e "s#@MODULES_BASE_PATH@#$(MODULES_BASE_PATH)#g" \
 		-e "s#@OLD_MODULES_BASE_PATH@#$(OLD_MODULES_BASE_PATH)#g" \
 		$@.in \
-		$(wildcard $(if $(filter opt,$(FLAVORS)),$@.opt)) \
 		> $@
 
 clean:: debian/control
