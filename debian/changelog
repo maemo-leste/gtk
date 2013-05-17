@@ -7,6 +7,8 @@ gtk+2.0 (2.24.17-3) UNRELEASED; urgency=low
   [ Michael Biebl ]
   * New upstream release.
     - Fixes incorrect selection in file chooser button. Closes: #708618
+  * Drop debian/patches/041_ia32-libs.patch since we properly support
+    multiarch now and no longer need the biarch hack.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 08 May 2013 10:51:08 +0200
 
