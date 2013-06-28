@@ -3,6 +3,7 @@ gtk+2.0 (2.24.19-1) UNRELEASED; urgency=low
   * New upstream release.
   * Refresh patches.
   * Update Vcs-* URLs.
+  * Bump Standards-Version to 3.9.4. No further changes.
 
  -- Michael Biebl <biebl@debian.org>  Fri, 28 Jun 2013 23:38:38 +0200
 
