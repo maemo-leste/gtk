@@ -1,5 +1,9 @@
 #!/bin/sh
+
 set -e
+
+IMMODULES_DIR=/@MODULES_BASE_PATH@/immodules
+IMMODULES_DIR_OLD=/@OLD_MODULES_BASE_PATH@/immodules
 
 if [ "$1" = triggered ]; then
     # This is triggered everytime an application installs a
