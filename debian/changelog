@@ -1,3 +1,9 @@
+gtk+2.0 (2.24.20-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 05 Jul 2013 22:59:21 +0200
+
 gtk+2.0 (2.24.19-1) unstable; urgency=low
 
   * New upstream release.
