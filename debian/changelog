@@ -4,6 +4,8 @@ gtk+2.0 (2.24.20-1) UNRELEASED; urgency=low
   * Remove debian/patches/011_immodule-cache-dir.patch, upstream changed the
     location and name of the cache file to be consistent what's used in
     gtk+3.0. It's now in $libdir/gtk-2.0/2.10.0/immodules.cache.
+  * Update and simplify our trigger for gtk-query-immodules-2.0, use the new
+    --update-cache option instead of redirecting stdout.
 
  -- Michael Biebl <biebl@debian.org>  Fri, 05 Jul 2013 22:59:21 +0200
 
