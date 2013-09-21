@@ -1,11 +1,11 @@
-gtk+2.0 (2.24.21-1) UNRELEASED; urgency=low
+gtk+2.0 (2.24.21-1) unstable; urgency=low
 
   * New upstream release.
   * Use the official field for udebs: Package-Type.
   * Update 001_static-linking-dont-query-immodules.patch, follow upstream and
     use immodules.cache instead of gtk.immodules.
 
- -- Michael Biebl <biebl@debian.org>  Tue, 17 Sep 2013 18:15:39 +0200
+ -- Michael Biebl <biebl@debian.org>  Sat, 21 Sep 2013 23:37:03 +0200
 
 gtk+2.0 (2.24.20-1) unstable; urgency=low
 
