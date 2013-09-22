@@ -4,6 +4,8 @@ gtk+2.0 (2.24.21-1) unstable; urgency=low
   * Use the official field for udebs: Package-Type.
   * Update 001_static-linking-dont-query-immodules.patch, follow upstream and
     use immodules.cache instead of gtk.immodules.
+  * Install gtk-doc API documentation for gtk and gdk to the correct location
+    so it can be found by devhelp. Closes: #718360
 
  -- Michael Biebl <biebl@debian.org>  Sat, 21 Sep 2013 23:37:03 +0200
 
