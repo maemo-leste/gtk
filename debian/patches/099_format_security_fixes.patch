@@ -1,0 +1,16 @@
+Description: Fix a format security
+ This bug was introduced in e4c83bbfdb60fdfe0bae207b1ddae295dc267a23
+Author: Michael Biebl <biebl@debian.org>
+Index: gtk+-2.24.23/modules/engines/pixbuf/pixbuf-rc-style.c
+===================================================================
+--- gtk+-2.24.23.orig/modules/engines/pixbuf/pixbuf-rc-style.c	2014-03-06 05:56:42.000000000 +0100
++++ gtk+-2.24.23/modules/engines/pixbuf/pixbuf-rc-style.c	2014-04-04 15:13:02.938274177 +0200
+@@ -669,7 +669,7 @@
+                              const char   *message)
+ {
+   theme_clear_pixbuf (theme_pb);
+-  g_scanner_warn (scanner, message);
++  g_scanner_warn (scanner, "%s", message);
+ }
+ 
+ static guint
