@@ -1,10 +1,18 @@
-gtk+2.0 (2.24.24-2) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.25-1) unstable; urgency=medium
 
   * Team upload
   * debian/watch: change http://download.gnome.org to https, uscan doesn't
     like being redirected
+  * New upstream release
+    - tolerates incorrect use of gtk_main() after initializing threads
+      with gtk_init() but before taking the lock with gdk_threads_enter(),
+      which has historically worked on GNU systems because glibc's mutexes
+      are more permissive than the new implementation in GLib 2.42
+      (Closes: #758619, #763602, #763625, #763690, #763735,
+      but the affected packages should still use Gdk's threading API properly)
+    - update debian/copyright
 
- -- Simon McVittie <smcv@debian.org>  Fri, 10 Oct 2014 18:19:32 +0100
+ -- Simon McVittie <smcv@debian.org>  Fri, 10 Oct 2014 18:33:05 +0100
 
 gtk+2.0 (2.24.24-1) unstable; urgency=medium
 
