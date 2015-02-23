@@ -1,0 +1,351 @@
+From ee95f3d7259c0859ce41189b781b4339b4cd64aa Mon Sep 17 00:00:00 2001
+From: Matthias Clasen <mclasen@redhat.com>
+Date: Fri, 13 Feb 2015 13:12:39 -0500
+Subject: [PATCH] Make gdk_event_apply_filters safe against changes in filter
+ list
+
+An event filter may add or remove filters itself. This patch does
+two things to address this case. The first is to take a temporary
+reference to the filter while it is being used. The second is
+to wait until after the filter function is run before determining
+the next node in the list to process. This guards against
+changes to the next node. It also does not run functions
+that have been marked as removed. Though I'm not sure if this
+case can arise.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=635380
+
+Backport of 323df2b2800383832ed3c2e43626f2c6821c33ec to
+the gtk-2-24 branch by Wolfgang Ulbrich.
+
+http://bugs.debian.org/777142
+---
+ gdk/gdkinternals.h            |  6 +++++
+ gdk/gdkwindow.c               | 30 +++++++++++++++--------
+ gdk/quartz/gdkevents-quartz.c | 55 ++++++++++++++++++++++++++++++-------------
+ gdk/win32/gdkevents-win32.c   | 37 ++++++++++++++++++++++-------
+ gdk/x11/gdkevents-x11.c       | 37 ++++++++++++++++++++++-------
+ 5 files changed, 122 insertions(+), 43 deletions(-)
+
+diff --git a/gdk/gdkinternals.h b/gdk/gdkinternals.h
+index 0bd803f..97a1daa 100644
+--- a/gdk/gdkinternals.h
++++ b/gdk/gdkinternals.h
+@@ -59,9 +59,15 @@ struct _GdkColorInfo
+   guint ref_count;
+ };
+ 
++typedef enum {
++  GDK_EVENT_FILTER_REMOVED = 1 << 0
++} GdkEventFilterFlags;
++
+ struct _GdkEventFilter {
+   GdkFilterFunc function;
+   gpointer data;
++  GdkEventFilterFlags flags;
++  guint ref_count;
+ };
+ 
+ struct _GdkClientFilter {
+diff --git a/gdk/gdkwindow.c b/gdk/gdkwindow.c
+index 45fee34..29c878f 100644
+--- a/gdk/gdkwindow.c
++++ b/gdk/gdkwindow.c
+@@ -2545,13 +2545,18 @@ gdk_window_add_filter (GdkWindow     *window,
+     {
+       filter = (GdkEventFilter *)tmp_list->data;
+       if ((filter->function == function) && (filter->data == data))
+-	return;
++        {
++          filter->ref_count++;
++          return;
++        }
+       tmp_list = tmp_list->next;
+     }
+ 
+   filter = g_new (GdkEventFilter, 1);
+   filter->function = function;
+   filter->data = data;
++  filter->ref_count = 1;
++  filter->flags = 0;
+ 
+   if (private)
+     private->filters = g_list_append (private->filters, filter);
+@@ -2593,16 +2598,21 @@ gdk_window_remove_filter (GdkWindow     *window,
+       tmp_list = tmp_list->next;
+ 
+       if ((filter->function == function) && (filter->data == data))
+-	{
+-	  if (private)
+-	    private->filters = g_list_remove_link (private->filters, node);
+-	  else
+-	    _gdk_default_filters = g_list_remove_link (_gdk_default_filters, node);
+-	  g_list_free_1 (node);
+-	  g_free (filter);
++        {
++          filter->flags |= GDK_EVENT_FILTER_REMOVED;
++          filter->ref_count--;
++          if (filter->ref_count != 0)
++            return;
+ 
+-	  return;
+-	}
++          if (private)
++            private->filters = g_list_remove_link (private->filters, node);
++          else
++            _gdk_default_filters = g_list_remove_link (_gdk_default_filters, node);
++          g_list_free_1 (node);
++          g_free (filter);
++
++          return;
++        }
+     }
+ }
+ 
+diff --git a/gdk/quartz/gdkevents-quartz.c b/gdk/quartz/gdkevents-quartz.c
+index 9e57edd..f199298 100644
+--- a/gdk/quartz/gdkevents-quartz.c
++++ b/gdk/quartz/gdkevents-quartz.c
+@@ -253,21 +253,42 @@ append_event (GdkEvent *event,
+ static gint
+ gdk_event_apply_filters (NSEvent *nsevent,
+ 			 GdkEvent *event,
+-			 GList *filters)
++			 GList **filters)
+ {
+   GList *tmp_list;
+   GdkFilterReturn result;
+   
+-  tmp_list = filters;
++  tmp_list = *filters;
+ 
+   while (tmp_list)
+     {
+       GdkEventFilter *filter = (GdkEventFilter*) tmp_list->data;
+-      
+-      tmp_list = tmp_list->next;
++      GList *node;
++
++      if ((filter->flags & GDK_EVENT_FILTER_REMOVED) != 0)
++        {
++          tmp_list = tmp_list->next;
++          continue;
++        }
++
++      filter->ref_count++;
+       result = filter->function (nsevent, event, filter->data);
+-      if (result !=  GDK_FILTER_CONTINUE)
+-	return result;
++
++      /* get the next node after running the function since the
++         function may add or remove a next node */
++      node = tmp_list;
++      tmp_list = tmp_list->next;
++
++      filter->ref_count--;
++      if (filter->ref_count == 0)
++        {
++          *filters = g_list_remove_link (*filters, node);
++          g_list_free_1 (node);
++          g_free (filter);
++        }
++
++      if (result != GDK_FILTER_CONTINUE)
++        return result;
+     }
+ 
+   return GDK_FILTER_CONTINUE;
+@@ -1319,7 +1340,7 @@ gdk_event_translate (GdkEvent *event,
+       /* Apply global filters */
+       GdkFilterReturn result;
+ 
+-      result = gdk_event_apply_filters (nsevent, event, _gdk_default_filters);
++      result = gdk_event_apply_filters (nsevent, event, &_gdk_default_filters);
+       if (result != GDK_FILTER_CONTINUE)
+         {
+           return_val = (result == GDK_FILTER_TRANSLATE) ? TRUE : FALSE;
+@@ -1390,19 +1411,19 @@ gdk_event_translate (GdkEvent *event,
+       GdkFilterReturn result;
+ 
+       if (filter_private->filters)
+-	{
+-	  g_object_ref (window);
++        {
++          g_object_ref (window);
+ 
+-	  result = gdk_event_apply_filters (nsevent, event, filter_private->filters);
++          result = gdk_event_apply_filters (nsevent, event, &filter_private->filters);
+ 
+-	  g_object_unref (window);
++          g_object_unref (window);
+ 
+-	  if (result != GDK_FILTER_CONTINUE)
+-	    {
+-	      return_val = (result == GDK_FILTER_TRANSLATE) ? TRUE : FALSE;
+-	      goto done;
+-	    }
+-	}
++          if (result != GDK_FILTER_CONTINUE)
++            {
++              return_val = (result == GDK_FILTER_TRANSLATE) ? TRUE : FALSE;
++              goto done;
++            }
++        }
+     }
+ 
+   /* If the app is not active leave the event to AppKit so the window gets
+diff --git a/gdk/win32/gdkevents-win32.c b/gdk/win32/gdkevents-win32.c
+index 8b345cb..c853e1e 100644
+--- a/gdk/win32/gdkevents-win32.c
++++ b/gdk/win32/gdkevents-win32.c
+@@ -1069,7 +1069,7 @@ fill_key_event_string (GdkEvent *event)
+ static GdkFilterReturn
+ apply_event_filters (GdkWindow  *window,
+ 		     MSG        *msg,
+-		     GList      *filters)
++		     GList      **filters)
+ {
+   GdkFilterReturn result = GDK_FILTER_CONTINUE;
+   GdkEvent *event;
+@@ -1087,15 +1087,36 @@ apply_event_filters (GdkWindow  *window,
+    */
+   node = _gdk_event_queue_append (_gdk_display, event);
+   
+-  tmp_list = filters;
++  tmp_list = *filters;
+   while (tmp_list)
+     {
+       GdkEventFilter *filter = (GdkEventFilter *) tmp_list->data;
+-      
+-      tmp_list = tmp_list->next;
++      GList *node;
++
++      if ((filter->flags & GDK_EVENT_FILTER_REMOVED) != 0)
++        {
++          tmp_list = tmp_list->next;
++          continue;
++        }
++
++      filter->ref_count++;
+       result = filter->function (msg, event, filter->data);
+-      if (result !=  GDK_FILTER_CONTINUE)
+-	break;
++
++      /* get the next node after running the function since the
++         function may add or remove a next node */
++      node = tmp_list;
++      tmp_list = tmp_list->next;
++
++      filter->ref_count--;
++      if (filter->ref_count == 0)
++        {
++          *filters = g_list_remove_link (*filters, node);
++          g_list_free_1 (node);
++          g_free (filter);
++        }
++
++      if (result != GDK_FILTER_CONTINUE)
++        break;
+     }
+ 
+   if (result == GDK_FILTER_CONTINUE || result == GDK_FILTER_REMOVE)
+@@ -2075,7 +2096,7 @@ gdk_event_translate (MSG  *msg,
+     {
+       /* Apply global filters */
+ 
+-      GdkFilterReturn result = apply_event_filters (NULL, msg, _gdk_default_filters);
++      GdkFilterReturn result = apply_event_filters (NULL, msg, &_gdk_default_filters);
+       
+       /* If result is GDK_FILTER_CONTINUE, we continue as if nothing
+        * happened. If it is GDK_FILTER_REMOVE or GDK_FILTER_TRANSLATE,
+@@ -2121,7 +2142,7 @@ gdk_event_translate (MSG  *msg,
+     {
+       /* Apply per-window filters */
+ 
+-      GdkFilterReturn result = apply_event_filters (window, msg, ((GdkWindowObject *) window)->filters);
++      GdkFilterReturn result = apply_event_filters (window, msg, &((GdkWindowObject *) window)->filters);
+ 
+       if (result == GDK_FILTER_REMOVE || result == GDK_FILTER_TRANSLATE)
+ 	{
+diff --git a/gdk/x11/gdkevents-x11.c b/gdk/x11/gdkevents-x11.c
+index b96e9f5..8de98c5 100644
+--- a/gdk/x11/gdkevents-x11.c
++++ b/gdk/x11/gdkevents-x11.c
+@@ -96,7 +96,7 @@ struct _GdkEventTypeX11
+ 
+ static gint	 gdk_event_apply_filters (XEvent   *xevent,
+ 					  GdkEvent *event,
+-					  GList    *filters);
++					  GList    **filters);
+ static gboolean	 gdk_event_translate	 (GdkDisplay *display,
+ 					  GdkEvent   *event, 
+ 					  XEvent     *xevent,
+@@ -341,21 +341,42 @@ gdk_event_get_graphics_expose (GdkWindow *window)
+ static gint
+ gdk_event_apply_filters (XEvent *xevent,
+ 			 GdkEvent *event,
+-			 GList *filters)
++			 GList **filters)
+ {
+   GList *tmp_list;
+   GdkFilterReturn result;
+   
+-  tmp_list = filters;
++  tmp_list = *filters;
+   
+   while (tmp_list)
+     {
+       GdkEventFilter *filter = (GdkEventFilter*) tmp_list->data;
++      GList *node;
+       
+-      tmp_list = tmp_list->next;
++      if ((filter->flags & GDK_EVENT_FILTER_REMOVED) != 0)
++        {
++          tmp_list = tmp_list->next;
++          continue;
++        }
++
++      filter->ref_count++;
+       result = filter->function (xevent, event, filter->data);
+-      if (result !=  GDK_FILTER_CONTINUE)
+-	return result;
++
++      /* get the next node after running the function since the
++         function may add or remove a next node */
++      node = tmp_list;
++      tmp_list = tmp_list->next;
++
++      filter->ref_count--;
++      if (filter->ref_count == 0)
++        {
++          *filters = g_list_remove_link (*filters, node);
++          g_list_free_1 (node);
++          g_free (filter);
++        }
++
++      if (result != GDK_FILTER_CONTINUE)
++        return result;
+     }
+   
+   return GDK_FILTER_CONTINUE;
+@@ -944,7 +965,7 @@ gdk_event_translate (GdkDisplay *display,
+       /* Apply global filters */
+       GdkFilterReturn result;
+       result = gdk_event_apply_filters (xevent, event,
+-                                        _gdk_default_filters);
++                                        &_gdk_default_filters);
+       
+       if (result != GDK_FILTER_CONTINUE)
+         {
+@@ -1050,7 +1071,7 @@ gdk_event_translate (GdkDisplay *display,
+ 	  g_object_ref (filter_window);
+ 	  
+ 	  result = gdk_event_apply_filters (xevent, event,
+-					    filter_private->filters);
++					    &filter_private->filters);
+ 	  
+ 	  g_object_unref (filter_window);
+       
+-- 
+2.1.4
+
