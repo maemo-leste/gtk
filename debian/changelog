@@ -1,11 +1,11 @@
-gtk+2.0 (2.24.25-2) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.25-2) unstable; urgency=medium
 
   * debian/patches/0001-Make-gdk_event_apply_filters-safe-against-changes-in.patch:
     Cherry-pick patch from upstream stable branch to protect
     gdk_event_apply_filters_safe from changes in the filter list (Closes:
     #777142)
 
- -- Iain Lane <laney@debian.org>  Mon, 23 Feb 2015 17:46:25 +0000
+ -- Iain Lane <laney@debian.org>  Mon, 02 Mar 2015 09:56:09 +0000
 
 gtk+2.0 (2.24.25-1) unstable; urgency=medium
 
