@@ -1,3 +1,13 @@
+gtk+2.0 (2.24.25-3) UNRELEASED; urgency=medium
+
+  * 0002-gdk-Fix-GdkWindowFilter-internal-refcounting.patch
+    0003-gdkwindow-Fix-event-unref-iteration.patch: Cherry-pick two commits
+    from upstream gtk2 branch to fix refcounting errors in light of the
+    event_apply_filters change in the previous upload. This was causing
+    crashes in some applications, such as Spotify.
+
+ -- Iain Lane <laney@debian.org>  Mon, 02 Mar 2015 11:31:21 +0000
+
 gtk+2.0 (2.24.25-2) unstable; urgency=medium
 
   * debian/patches/0001-Make-gdk_event_apply_filters-safe-against-changes-in.patch:
