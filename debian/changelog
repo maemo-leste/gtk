@@ -1,3 +1,9 @@
+gtk+2.0 (2.24.27-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 10 May 2015 21:05:46 +0200
+
 gtk+2.0 (2.24.25-3) unstable; urgency=medium
 
   * 0002-gdk-Fix-GdkWindowFilter-internal-refcounting.patch
