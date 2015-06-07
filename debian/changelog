@@ -2,6 +2,7 @@ gtk+2.0 (2.24.28-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Refresh patches.
+  * Drop obsolete Breaks/Conflicts/Replaces from pre-wheezy.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 10 May 2015 21:05:46 +0200
 

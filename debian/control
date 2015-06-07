@@ -92,8 +92,6 @@ Section: misc
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: libgtk2.0-0
-Replaces: libgtk2.0-0 (<< 2.24.8-2)
-Breaks: libgtk2.0-0 (<< 2.24.8-2)
 Multi-Arch: foreign
 Description: common files for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
@@ -146,7 +144,6 @@ Depends: libgtk2.0-0 (= ${binary:Version}),
 Recommends: python (>= 2.4),
             debhelper
 Suggests: libgtk2.0-doc
-Replaces: gir-repository-dev
 Description: development files for the GTK+ library
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -230,9 +227,6 @@ Depends: libgtk2.0-common,
          ${misc:Depends},
          ${shlibs:Depends},
          ${gir:Depends}
-Conflicts: gobject-introspection-repository,
-           gir1.0-gtk-2.0
-Replaces: gir1.0-gtk-2.0
 Description: GTK+ graphical user interface library -- gir bindings
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -262,7 +256,6 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libgail18 (= ${binary:Version})
-Breaks: libgnome2-0 (<< 2.32.1-2)
 Multi-Arch: same
 Description: GNOME Accessibility Implementation Library -- common modules
  Gail implements ATK interfaces for GTK+ widgets which are dynamically
