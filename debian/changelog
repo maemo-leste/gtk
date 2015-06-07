@@ -7,6 +7,7 @@ gtk+2.0 (2.24.28-1) UNRELEASED; urgency=medium
     files tend to grow rather large and aren't that useful anymore nowadays.
   * Explicitly build the man pages, upstream no longer ships them in the dist
     tarball.
+  * Bump Standards-Version to 3.9.6.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 10 May 2015 21:05:46 +0200
 
