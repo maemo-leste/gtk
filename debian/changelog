@@ -8,6 +8,7 @@ gtk+2.0 (2.24.28-1) unstable; urgency=medium
   * Explicitly build the man pages, upstream no longer ships them in the dist
     tarball.
   * Bump Standards-Version to 3.9.6.
+  * Don't enable introspection and man pages for udeb build.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 07 Jun 2015 17:00:08 +0200
 

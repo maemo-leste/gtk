@@ -127,10 +127,13 @@ endif
 
 shared_configure_flags := $(configure_flags) \
 			--enable-shared \
-			--enable-introspection=yes \
+			--enable-introspection \
 			--enable-man \
 			--disable-static
-shared_udeb_configure_flags := $(shared_configure_flags) \
+shared_udeb_configure_flags := $(configure_flags) \
+			--enable-shared \
+			--disable-static \
+			--disable-introspection \
 			--disable-xcomposite \
 			--disable-xdamage \
 			--disable-xfixes \
