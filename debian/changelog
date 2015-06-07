@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.28-1) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.28-1) unstable; urgency=medium
 
   * New upstream release.
   * Refresh patches.
@@ -9,7 +9,7 @@ gtk+2.0 (2.24.28-1) UNRELEASED; urgency=medium
     tarball.
   * Bump Standards-Version to 3.9.6.
 
- -- Michael Biebl <biebl@debian.org>  Sun, 10 May 2015 21:05:46 +0200
+ -- Michael Biebl <biebl@debian.org>  Sun, 07 Jun 2015 17:00:08 +0200
 
 gtk+2.0 (2.24.25-3) unstable; urgency=medium
 
