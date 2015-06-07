@@ -6,6 +6,7 @@ Uploaders: Iain Lane <laney@debian.org>, Michael Biebl <biebl@debian.org>
 Build-Depends: debhelper (>= 8.1.3),
                gettext,
                gtk-doc-tools (>= 1.11),
+               xsltproc,
                pkg-config,
                autotools-dev,
                dh-autoreconf,

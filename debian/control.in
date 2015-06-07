@@ -6,6 +6,7 @@ Uploaders: @GNOME_TEAM@
 Build-Depends: debhelper (>= 8.1.3),
                gettext,
                gtk-doc-tools (>= 1.11),
+               xsltproc,
                pkg-config,
                autotools-dev,
                dh-autoreconf,
