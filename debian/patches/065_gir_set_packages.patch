@@ -1,6 +1,8 @@
 === modified file 'gdk/Makefile.am'
---- a/gdk/Makefile.am
-+++ b/gdk/Makefile.am
+Index: gtk+-2.24.29/gdk/Makefile.am
+===================================================================
+--- gtk+-2.24.29.orig/gdk/Makefile.am	2015-12-14 00:39:13.385267155 +0100
++++ gtk+-2.24.29/gdk/Makefile.am	2015-12-14 00:39:13.381266921 +0100
 @@ -3,6 +3,7 @@
  -include $(INTROSPECTION_MAKEFILE)
  INTROSPECTION_GIRS =
@@ -37,8 +39,10 @@
  GdkX11_2_0_gir_CFLAGS = $(INCLUDES) -L$(top_builddir)/gdk
  INTROSPECTION_GIRS += GdkX11-2.0.gir
  
---- a/gtk/Makefile.am
-+++ b/gtk/Makefile.am
+Index: gtk+-2.24.29/gtk/Makefile.am
+===================================================================
+--- gtk+-2.24.29.orig/gtk/Makefile.am	2015-12-14 00:39:13.385267155 +0100
++++ gtk+-2.24.29/gtk/Makefile.am	2015-12-14 00:39:13.381266921 +0100
 @@ -3,6 +3,7 @@
  -include $(INTROSPECTION_MAKEFILE)
  INTROSPECTION_GIRS =
@@ -47,7 +51,7 @@
  	--add-include-path=../gdk
  INTROSPECTION_COMPILER_ARGS = \
  	--includedir=$(srcdir) \
-@@ -1012,11 +1013,11 @@
+@@ -1014,11 +1015,11 @@
      gtktypebuiltins.c
  
  Gtk-2.0.gir: $(INTROSPECTION_SCANNER) $(gtktargetlib) $(top_builddir)/gdk/Gdk-2.0.gir Makefile
@@ -61,7 +65,7 @@
  Gtk_2_0_gir_CFLAGS = \
  		$(INCLUDES) \
  		-UGDK_DISABLE_DEPRECATED \
-@@ -1024,6 +1025,7 @@
+@@ -1026,6 +1027,7 @@
  		-DGTK_TEXT_USE_INTERNAL_UNSUPPORTED_API
  Gtk_2_0_gir_LIBS = $(gtktargetlib)
  Gtk_2_0_gir_FILES = $(introspection_files)
