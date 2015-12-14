@@ -1,8 +1,8 @@
-gtk+2.0 (2.24.29-1) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.29-1) unstable; urgency=medium
 
   * New upstream release.
 
- -- Michael Biebl <biebl@debian.org>  Mon, 14 Dec 2015 00:35:30 +0100
+ -- Michael Biebl <biebl@debian.org>  Mon, 14 Dec 2015 01:12:27 +0100
 
 gtk+2.0 (2.24.28-1) unstable; urgency=medium
 
