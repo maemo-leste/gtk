@@ -3,10 +3,10 @@ Author: Cyril Brulebois <kibi@debian.org>
 
 Support disabling X11 extensions
 
-Index: gtk+-2.24.27/configure.ac
+Index: b/configure.ac
 ===================================================================
---- gtk+-2.24.27.orig/configure.ac	2015-05-10 21:12:24.060665181 +0200
-+++ gtk+-2.24.27/configure.ac	2015-05-10 21:12:24.060665181 +0200
+--- a/configure.ac
++++ b/configure.ac
 @@ -241,6 +241,18 @@
                [AC_HELP_STRING([--enable-xinerama],
  	                      [support xinerama extension if available [default=yes]])],,
@@ -35,8 +35,8 @@ Index: gtk+-2.24.27/configure.ac
 +     $PKG_CONFIG --exists "xrandr >= 1.2.99" ; then
       AC_DEFINE(HAVE_RANDR, 1, [Have the Xrandr extension library])
  
-      X_PACKAGES="$X_PACKAGES xrandr"
-@@ -1206,7 +1219,8 @@
+      if $PKG_CONFIG --exists "xrandr >= 1.5.0" ; then
+@@ -1209,7 +1222,8 @@
  
    # Checks for XFixes extension
    
@@ -46,7 +46,7 @@ Index: gtk+-2.24.27/configure.ac
      AC_DEFINE(HAVE_XFIXES, 1, [Have the XFIXES X extension])
      
      X_PACKAGES="$X_PACKAGES xfixes"
-@@ -1215,7 +1229,8 @@
+@@ -1218,7 +1232,8 @@
  
    # Checks for Xcomposite extension
  
@@ -56,7 +56,7 @@ Index: gtk+-2.24.27/configure.ac
      AC_DEFINE(HAVE_XCOMPOSITE, 1, [Have the XCOMPOSITE X extension])
  
      X_PACKAGES="$X_PACKAGES xcomposite"
-@@ -1224,7 +1239,7 @@
+@@ -1227,7 +1242,7 @@
  
    # Checks for Xdamage extension
  
