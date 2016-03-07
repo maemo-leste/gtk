@@ -1,11 +1,11 @@
-gtk+2.0 (2.24.30-1) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.30-1) unstable; urgency=medium
 
   * New upstream release 2.24.30
     - Support Randr 1.5 monitor information
     - Fixes build against newer gdk-pixbuf
   * debian/patches/005_support_disabling_x11_extensions.patch: Refresh.
 
- -- Iain Lane <laney@debian.org>  Mon, 07 Mar 2016 13:19:12 +0000
+ -- Iain Lane <laney@debian.org>  Mon, 07 Mar 2016 13:51:18 +0000
 
 gtk+2.0 (2.24.29-1) unstable; urgency=medium
 
