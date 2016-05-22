@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.30-2) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.30-2) unstable; urgency=medium
 
   * Acknowledge NMU, thanks Salvatore Bonaccorso.
   * Drop gtk-update-icon-cache from libgtk2.0-bin. From now on we only provide
@@ -8,7 +8,7 @@ gtk+2.0 (2.24.30-2) UNRELEASED; urgency=medium
     packages have been updated, this dependency can be dropped.
   * Bump Standards-Version to 3.9.8.
 
- -- Michael Biebl <biebl@debian.org>  Sun, 22 May 2016 08:20:15 +0200
+ -- Michael Biebl <biebl@debian.org>  Sun, 22 May 2016 23:18:37 +0200
 
 gtk+2.0 (2.24.30-1.1) unstable; urgency=medium
 
