@@ -109,7 +109,8 @@ Section: misc
 Architecture: any
 Depends: ${misc:Depends},
          @SHARED_PKG@ (= ${binary:Version}),
-         @COMMON_PKG@
+         @COMMON_PKG@,
+         gtk-update-icon-cache
 Multi-Arch: foreign
 Description: programs for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user

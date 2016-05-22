@@ -109,7 +109,8 @@ Section: misc
 Architecture: any
 Depends: ${misc:Depends},
          libgtk2.0-0 (= ${binary:Version}),
-         libgtk2.0-common
+         libgtk2.0-common,
+         gtk-update-icon-cache
 Multi-Arch: foreign
 Description: programs for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
