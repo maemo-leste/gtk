@@ -1,3 +1,12 @@
+gtk+2.0 (2.24.30-3) UNRELEASED; urgency=medium
+
+  [ Jeremy Bicha ]
+  * Use https for copyright headers
+  * Use https in d/watch and use new "special strings" to help standardize
+    format
+
+ -- Simon McVittie <smcv@debian.org>  Thu, 23 Jun 2016 09:42:34 +0100
+
 gtk+2.0 (2.24.30-2) unstable; urgency=medium
 
   * Acknowledge NMU, thanks Salvatore Bonaccorso.
