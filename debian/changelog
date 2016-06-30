@@ -5,6 +5,11 @@ gtk+2.0 (2.24.30-3) UNRELEASED; urgency=medium
   * Use https in d/watch and use new "special strings" to help standardize
     format
 
+  [ Emilio Pozuelo Monfort ]
+  * Let libgtk2.0-0 recommend libgail-common, so that installing a
+    GTK+2.0 application also installs the accessibility libs.
+    See #822612.
+
  -- Simon McVittie <smcv@debian.org>  Thu, 23 Jun 2016 09:42:34 +0100
 
 gtk+2.0 (2.24.30-2) unstable; urgency=medium

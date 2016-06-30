@@ -58,6 +58,7 @@ Depends: libgtk2.0-common,
          shared-mime-info
 Provides: gtk2.0-binver-2.10.0
 Recommends: hicolor-icon-theme,
+            libgail-common,
             libgtk2.0-bin
 Suggests: librsvg2-common,
           gvfs

@@ -58,6 +58,7 @@ Depends: @COMMON_PKG@,
          shared-mime-info
 Provides: @GTK_BINVER_DEP@
 Recommends: hicolor-icon-theme,
+            libgail-common,
             @BIN_PKG@
 Suggests: librsvg2-common,
           gvfs
