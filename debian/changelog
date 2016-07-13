@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.30-4) UNRELEASED; urgency=medium
+
+  * debian/control.in: Bump hicolor-icon-theme to a hard dependency, the
+    package is small and only provides the directory structure of the theme.
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 14 Jul 2016 01:45:19 +0200
+
 gtk+2.0 (2.24.30-3) unstable; urgency=medium
 
   [ Jeremy Bicha ]
