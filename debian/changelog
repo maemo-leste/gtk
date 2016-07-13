@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.30-3) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.30-3) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * Use https for copyright headers
@@ -11,7 +11,7 @@ gtk+2.0 (2.24.30-3) UNRELEASED; urgency=medium
     See #822612.
   * Add a libgail18-udeb package. Thanks to Samuel Thibault. Closes: #816720.
 
- -- Simon McVittie <smcv@debian.org>  Thu, 23 Jun 2016 09:42:34 +0100
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 13 Jul 2016 17:43:50 +0200
 
 gtk+2.0 (2.24.30-2) unstable; urgency=medium
 
