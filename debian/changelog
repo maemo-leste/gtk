@@ -10,6 +10,7 @@ gtk+2.0 (2.24.30-3) unstable; urgency=medium
     GTK+2.0 application also installs the accessibility libs.
     See #822612.
   * Add a libgail18-udeb package. Thanks to Samuel Thibault. Closes: #816720.
+  * Set libgail18-udeb to section debian-installer.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 13 Jul 2016 17:43:50 +0200
 

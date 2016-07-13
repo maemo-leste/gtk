@@ -258,6 +258,7 @@ Description: GNOME Accessibility Implementation Library -- shared libraries
 
 Package: libgail18-udeb
 Package-Type: udeb
+Section: debian-installer
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
