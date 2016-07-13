@@ -9,6 +9,7 @@ gtk+2.0 (2.24.30-3) UNRELEASED; urgency=medium
   * Let libgtk2.0-0 recommend libgail-common, so that installing a
     GTK+2.0 application also installs the accessibility libs.
     See #822612.
+  * Add a libgail18-udeb package. Thanks to Samuel Thibault. Closes: #816720.
 
  -- Simon McVittie <smcv@debian.org>  Thu, 23 Jun 2016 09:42:34 +0100
 

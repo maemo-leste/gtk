@@ -81,7 +81,7 @@ PIXBUF_PKG := gtk2-engines-pixbuf
 
 # package groups, used in rule dependencies and in cleanup
 BINARY_INDEP_PKGS := $(COMMON_PKG) $(DOC_PKG) libgail-doc
-BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(DEBUG_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail-dbg libgail-dev libgail-common
+BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(DEBUG_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail18-udeb libgail-dbg libgail-dev libgail-common
 ALL_PKGS := $(BINARY_INDEP_PKGS) $(BINARY_ARCH_PKGS)
 
 # list of flavors we build; each gets a builddir, a configure pass (configure
@@ -287,9 +287,9 @@ binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PK
 	dh_installman -s
 	dh_installexamples -s
 	dh_link -s
-	dh_strip -s --dbg-package=$(DEBUG_PKG) -N$(UDEB_PKG) -Nlibgail18 -Nlibgail-common
+	dh_strip -s --dbg-package=$(DEBUG_PKG) -N$(UDEB_PKG) -Nlibgail18 -Nlibgail18-udeb -Nlibgail-common
 	dh_strip -plibgail18 -plibgail-common --dbg-package=libgail-dbg
-	dh_strip -p$(UDEB_PKG)
+	dh_strip -p$(UDEB_PKG) -plibgail18-udeb
 	dh_compress -s -X.sgml -X.devhelp
 	dh_fixperms -s -X$(LIBDIR)/$(SHARED_PKG)
 	dh_makeshlibs -p$(SHARED_PKG) \
@@ -300,7 +300,9 @@ binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PK
 	dh_makeshlibs -plibgail18 \
 		-X$(MODULES_BASE_PATH) \
 		-V"libgail18 (>= $(SHVER)), libgail-common (>= $(SHVER))" \
+		--add-udeb=libgail18-udeb \
 		-- -c4
+	sed -i debian/libgail18/DEBIAN/shlibs -e '/^udeb: /s/, libgail-common (>= $(SHVER))//'
 	dh_girepository -pgir1.2-gtk-2.0
 	dh_installdeb -s
 	# override shlibs for libraries from this source before computing
