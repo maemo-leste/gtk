@@ -55,11 +55,11 @@ Architecture: any
 Depends: libgtk2.0-common,
          ${misc:Depends},
          ${shlibs:Depends},
+         gnome-icon-theme | adwaita-icon-theme,
          hicolor-icon-theme,
          shared-mime-info
 Provides: gtk2.0-binver-2.10.0
-Recommends: gnome-icon-theme | adwaita-icon-theme,
-            libgail-common,
+Recommends: libgail-common,
             libgtk2.0-bin
 Suggests: librsvg2-common,
           gvfs

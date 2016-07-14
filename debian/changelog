@@ -2,10 +2,10 @@ gtk+2.0 (2.24.30-4) UNRELEASED; urgency=medium
 
   * debian/control.in: Bump hicolor-icon-theme to a hard dependency, the
     package is small and only provides the directory structure of the theme.
-  * Recommends gnome-icon-theme | adwaita-icon-theme so we are sure the needed
-    icons are installed by default. When using the GNOME, the desktop sets the
-    icon theme to Adwaita by default, so the gnome-icon-theme package can be
-    removed.
+  * Depends against gnome-icon-theme | adwaita-icon-theme so we are sure the
+    needed icons are installed by default. When using the GNOME, the desktop
+    sets the icon theme to Adwaita by default, so the gnome-icon-theme package
+    can be removed.
 
  -- Laurent Bigonville <bigon@debian.org>  Thu, 14 Jul 2016 02:08:30 +0200
 
