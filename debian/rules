@@ -188,7 +188,9 @@ $(STAMP_DIR)/build-stamp-%: $(STAMP_DIR)/configure-stamp-%
 		$(MAKE) $(PARALLEL_FLAGS) -C $(builddir)
 	touch $@
 
-build: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
+build-arch: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
+build-indep: $(addprefix $(STAMP_DIR)/build-stamp-, shared)
+build: build-arch build-indep
 
 $(STAMP_DIR)/check-stamp-%: $(STAMP_DIR)/build-stamp-%
 	dh_testdir
@@ -207,7 +209,8 @@ $(STAMP_DIR)/install-stamp-%: $(STAMP_DIR)/build-stamp-%
 		DESTDIR=$(installdir)
 	touch $@
 
-install: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
+install-arch: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
+install-indep: $(addprefix $(STAMP_DIR)/install-stamp-, shared)
 
 # gross kludge to force control generation with the %.in target
 clean::
@@ -253,7 +256,7 @@ clean:: debian/control
 
 maybe_check = $(if $(findstring nocheck,$(DEB_BUILD_OPTIONS)),,check)
 
-binary-indep: build $(maybe_check) install $(call dh_subst_files,$(BINARY_INDEP_PKGS)) devhelpfiles
+binary-indep: build-indep install-indep $(call dh_subst_files,$(BINARY_INDEP_PKGS)) devhelpfiles
 	dh_testdir
 	dh_testroot
 	dh_install -i
@@ -275,7 +278,7 @@ binary-indep: build $(maybe_check) install $(call dh_subst_files,$(BINARY_INDEP_
 	dh_md5sums -i
 	dh_builddeb -i -- -Zxz
 
-binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PKGS)) debian/dh_gtkmodules debian/dh_gtkmodules.1
+binary-arch: build-arch $(maybe_check) install-arch $(call dh_subst_files,$(BINARY_ARCH_PKGS)) debian/dh_gtkmodules debian/dh_gtkmodules.1
 	dh_testdir
 	dh_testroot
 	dh_install -s
@@ -323,4 +326,4 @@ list-missing:
 	    egrep -v '(\.la|$(LIBDIR)/gtk-2.0/$(GTK_BINARY_VERSION)/[^/]+/[^/]+\.a) has been installed' >&2
 
 binary: binary-indep binary-arch
-.PHONY: patch configure build check install clean binary-indep binary-arch list-missing binary devhelpfiles
+.PHONY: patch configure build build-indep build-arch check install clean binary binary-indep binary-arch list-missing devhelpfiles
