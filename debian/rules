@@ -182,6 +182,7 @@ $(STAMP_DIR)/configure-stamp-%: $(STAMP_DIR)/patch-stamp
 
 configure: $(addprefix $(STAMP_DIR)/configure-stamp-, $(FLAVORS))
 
+.NOTPARALLEL: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
 $(STAMP_DIR)/build-stamp-%: $(STAMP_DIR)/configure-stamp-%
 	dh_testdir
 	LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH) \

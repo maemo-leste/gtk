@@ -12,6 +12,8 @@ gtk+2.0 (2.24.30-4) UNRELEASED; urgency=medium
   * Add build-indep and build-arch targets.
   * Don't build the udeb or static flavors when only building arch-indep
     packages. Don't run the test suite either.
+  * Don't build the different flavors in parallel, to workaround a bug in the
+    documentation build. Closes: #798972.
 
  -- Laurent Bigonville <bigon@debian.org>  Thu, 14 Jul 2016 02:08:30 +0200
 
