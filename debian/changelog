@@ -1,5 +1,6 @@
-gtk+2.0 (2.24.30-5) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.31-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Drop obsolete maintainer scripts which cleaned up the /usr/share/doc
     symlinks.
 
