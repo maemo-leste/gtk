@@ -9,6 +9,4 @@
 044_tracker_fts.patch
 060_ignore-random-icons.patch
 061_use_pdf_as_default_printing_standard.patch
-065_gir_set_packages.patch
 098_multiarch_module_path.patch
-099_CVE-2013-7447.patch
