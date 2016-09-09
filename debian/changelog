@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.30-5) UNRELEASED; urgency=medium
+
+  * Drop obsolete maintainer scripts which cleaned up the /usr/share/doc
+    symlinks.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 09 Sep 2016 23:20:25 +0200
+
 gtk+2.0 (2.24.30-4) unstable; urgency=medium
 
   [ Laurent Bigonville ]
