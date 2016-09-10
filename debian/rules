@@ -303,10 +303,9 @@ binary-arch: build-arch $(maybe_check) install-arch $(call dh_subst_files,$(BINA
 		-- -c4
 	dh_makeshlibs -plibgail18 \
 		-X$(MODULES_BASE_PATH) \
-		-V"libgail18 (>= $(SHVER)), libgail-common (>= $(SHVER))" \
+		-V"libgail18 (>= $(SHVER))" \
 		--add-udeb=libgail18-udeb \
 		-- -c4
-	sed -i debian/libgail18/DEBIAN/shlibs -e '/^udeb: /s/, libgail-common (>= $(SHVER))//'
 	dh_girepository -pgir1.2-gtk-2.0
 	dh_installdeb -s
 	# override shlibs for libraries from this source before computing

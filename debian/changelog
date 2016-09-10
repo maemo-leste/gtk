@@ -4,6 +4,9 @@ gtk+2.0 (2.24.31-1) UNRELEASED; urgency=medium
   * Drop obsolete maintainer scripts which cleaned up the /usr/share/doc
     symlinks.
   * Refresh patches. Drop the ones which have been merged upstream.
+  * When linking against libgail18, automatically generate a dependency on
+    libgail-common. This was originally achieved via a .shlibs file but since
+    we use a .symbols file nowadays, move this over there.
 
  -- Michael Biebl <biebl@debian.org>  Fri, 09 Sep 2016 23:20:25 +0200
 
