@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.31-1) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.31-1) unstable; urgency=medium
 
   * New upstream release.
   * Drop obsolete maintainer scripts which cleaned up the /usr/share/doc
@@ -9,7 +9,7 @@ gtk+2.0 (2.24.31-1) UNRELEASED; urgency=medium
     we use a .symbols file nowadays, move this over there.
   * Remove an old shlibs.local hack which doesn't seem necessary anymore.
 
- -- Michael Biebl <biebl@debian.org>  Fri, 09 Sep 2016 23:20:25 +0200
+ -- Michael Biebl <biebl@debian.org>  Sat, 10 Sep 2016 02:25:29 +0200
 
 gtk+2.0 (2.24.30-4) unstable; urgency=medium
 
