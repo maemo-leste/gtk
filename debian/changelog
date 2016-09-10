@@ -8,6 +8,8 @@ gtk+2.0 (2.24.31-1) unstable; urgency=medium
     libgail-common. This was originally achieved via a .shlibs file but since
     we use a .symbols file nowadays, move this over there.
   * Remove an old shlibs.local hack which doesn't seem necessary anymore.
+  * Use idiomatic variables from default.mk dpkg include.
+    Bump Build-Depends on dpkg-dev to (>= 1.16.1).
 
  -- Michael Biebl <biebl@debian.org>  Sat, 10 Sep 2016 02:25:29 +0200
 

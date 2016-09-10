@@ -6,7 +6,7 @@ include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
 DPKG_EXPORT_BUILDFLAGS = 1
--include /usr/share/dpkg/buildflags.mk
+include /usr/share/dpkg/default.mk
 
 GNOME_MODULE := gtk+
 
@@ -24,13 +24,6 @@ PATCH_DIR := debian/patches
 # the childs encounters this line
 DEB_BUILD_OPTIONS_PARALLEL ?= $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
 PARALLEL_FLAGS += $(if $(DEB_BUILD_OPTIONS_PARALLEL),-j$(DEB_BUILD_OPTIONS_PARALLEL))
-
-DEB_HOST_ARCH      ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
-DEB_HOST_ARCH_OS   ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
-DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
-DEB_BUILD_GNU_CPU  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_CPU)
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 DEB_BUILD_OPTIONS += multiarch
 # relative libdir
@@ -52,8 +45,6 @@ CFLAGS += -Wall -g -O$(if $(findstring noopt,$(DEB_BUILD_OPTIONS)),0,2)
 # currently fails in the cups gtkprint backend
 #LDFLAGS += -Wl,-z,defs
 
-DEBVERSION := $(shell dpkg-parsechangelog | sed -n -e 's/^Version: //p')
-VERSION := $(shell echo $(DEBVERSION) | sed -e 's/-[^-]*$$//')
 APIVER := 2.0
 SONAME := 0
 SHVER := 2.24.0
@@ -159,7 +150,7 @@ debian/gtk-%.devhelp: docs/%/html/index.html
 devhelpfiles: debian/gtk-faq.devhelp debian/gtk-tutorial.devhelp
 
 debian/dh_gtkmodules.1: debian/dh_gtkmodules
-	cd debian && pod2man -c "Gtk" -r "$(DEBVERSION)" dh_gtkmodules dh_gtkmodules.1
+	cd debian && pod2man -c "Gtk" -r "$(DEB_VERSION)" dh_gtkmodules dh_gtkmodules.1
 
 patch: $(STAMP_DIR)/patch-stamp
 
@@ -222,7 +213,7 @@ debian/%: debian/%.in
 	sed \
 		-e "s#@SONAME@#$(SONAME)#g" \
 		-e "s#@APIVER@#$(APIVER)#g" \
-		-e "s#@VERSION@#$(VERSION)#g" \
+		-e "s#@VERSION@#$(DEB_VERSION_UPSTREAM)#g" \
 		-e "s#@GTK_BINVER_DEP@#$(GTK_BINVER_DEP)#g" \
 		-e "s#@SHARED_PKG@#$(SHARED_PKG)#g" \
 		-e "s#@COMMON_PKG@#$(COMMON_PKG)#g" \
