@@ -308,15 +308,7 @@ binary-arch: build-arch $(maybe_check) install-arch $(call dh_subst_files,$(BINA
 		-- -c4
 	dh_girepository -pgir1.2-gtk-2.0
 	dh_installdeb -s
-	# override shlibs for libraries from this source before computing
-	# dependencies of packages generated from this source; we already have
-	# inter-dependencies expressed manually in the control file, we do not
-	# need the shlibs to add duplicates
-	cat debian/*/DEBIAN/shlibs | \
-		sed -n -r -e 's/(([^ ]+: )?([^ ]+) ([^ ]+)) .*/\1/p' \
-			> debian/shlibs.local
 	dh_shlibdeps
-	-rm -f debian/shlibs.local
 	dh_gencontrol -s
 	dh_md5sums -s
 	dh_builddeb -s -- -Zxz
