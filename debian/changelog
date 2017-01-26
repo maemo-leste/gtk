@@ -1,3 +1,11 @@
+gtk+2.0 (2.24.31-2) UNRELEASED; urgency=medium
+
+  * debian/patches/0001-Don-t-use-guint32-with-XChangeProperty.patch:
+    + Backport patch from GTK+3 to fix unaligned access on sparc64.
+      Thanks James Clarke. Closes: #852401.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 26 Jan 2017 08:38:59 +0100
+
 gtk+2.0 (2.24.31-1) unstable; urgency=medium
 
   * New upstream release.

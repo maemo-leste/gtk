@@ -1,0 +1,26 @@
+>From 710f538d68e6f9ca0b2fbe38df3f8ee35ddd0126 Mon Sep 17 00:00:00 2001
+From: James Clarke <jrtc27@jrtc27.com>
+Date: Tue, 24 Jan 2017 08:35:28 +0000
+Subject: [PATCH] Don't use guint32 with XChangeProperty
+
+Fixes bug 777683.
+---
+ gdk/x11/gdkwindow-x11.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gdk/x11/gdkwindow-x11.c b/gdk/x11/gdkwindow-x11.c
+index 837f605..887a5ef 100644
+--- a/gdk/x11/gdkwindow-x11.c
++++ b/gdk/x11/gdkwindow-x11.c
+@@ -5575,7 +5575,7 @@ gdk_window_set_opacity (GdkWindow *window,
+ 			gdouble    opacity)
+ {
+   GdkDisplay *display;
+-  guint32 cardinal;
++  gulong cardinal;
+   
+   g_return_if_fail (GDK_IS_WINDOW (window));
+ 
+-- 
+2.11.0
+

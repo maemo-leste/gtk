@@ -10,3 +10,4 @@
 060_ignore-random-icons.patch
 061_use_pdf_as_default_printing_standard.patch
 098_multiarch_module_path.patch
+0001-Don-t-use-guint32-with-XChangeProperty.patch
