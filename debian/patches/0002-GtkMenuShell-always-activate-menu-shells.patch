@@ -1,0 +1,92 @@
+>From 34caf388443c7b77b33bdb2c8bbc59faf9affa82 Mon Sep 17 00:00:00 2001
+From: Colomban Wendling <cwendling@hypra.fr>
+Date: Wed, 7 Dec 2016 15:49:03 +0100
+Subject: [PATCH] GtkMenuShell: always 'activate' menu shells
+
+Failing to do so can leave us with a stuck grab in some cases.
+https://bugzilla.gnome.org/show_bug.cgi?id=554057
+
+Cherry-picks f5eee56b56e2f371a0dc659f2d402b0cfc1c42c2,
+9833fbd77a63ee5dd8f6b5519831db2a4b29ebb9 and
+4eac7f24177d947852574f11ef483b1c43fd17e5 from GTK3.
+---
+ gtk/gtkmenubar.c   | 1 -
+ gtk/gtkmenuitem.c  | 2 --
+ gtk/gtkmenushell.c | 8 +++++---
+ gtk/gtkmenushell.h | 1 -
+ 4 files changed, 5 insertions(+), 7 deletions(-)
+
+diff --git a/gtk/gtkmenubar.c b/gtk/gtkmenubar.c
+index 05de45c..e3b9554 100644
+--- a/gtk/gtkmenubar.c
++++ b/gtk/gtkmenubar.c
+@@ -618,7 +618,6 @@ window_key_press_handler (GtkWidget   *widget,
+ 	      GtkMenuShell *menu_shell = GTK_MENU_SHELL (menubars->data);
+ 
+               _gtk_menu_shell_set_keyboard_mode (menu_shell, TRUE);
+-	      _gtk_menu_shell_activate (menu_shell);
+ 	      gtk_menu_shell_select_first (menu_shell, FALSE);
+ 	      
+ 	      g_list_free (menubars);
+diff --git a/gtk/gtkmenuitem.c b/gtk/gtkmenuitem.c
+index 8f23b75..b706c7d 100644
+--- a/gtk/gtkmenuitem.c
++++ b/gtk/gtkmenuitem.c
+@@ -1433,8 +1433,6 @@ gtk_real_menu_item_activate_item (GtkMenuItem *menu_item)
+ 	{
+ 	  GtkMenuShell *menu_shell = GTK_MENU_SHELL (widget->parent);
+ 
+-	  _gtk_menu_shell_activate (menu_shell);
+-
+ 	  gtk_menu_shell_select_item (GTK_MENU_SHELL (widget->parent), widget);
+ 	  _gtk_menu_item_popup_submenu (widget, FALSE);
+ 
+diff --git a/gtk/gtkmenushell.c b/gtk/gtkmenushell.c
+index a7ad7b5..48de6a8 100644
+--- a/gtk/gtkmenushell.c
++++ b/gtk/gtkmenushell.c
+@@ -563,8 +563,8 @@ gtk_menu_shell_realize (GtkWidget *widget)
+   gtk_style_set_background (widget->style, widget->window, GTK_STATE_NORMAL);
+ }
+ 
+-void
+-_gtk_menu_shell_activate (GtkMenuShell *menu_shell)
++static void
++gtk_menu_shell_activate (GtkMenuShell *menu_shell)
+ {
+   if (!menu_shell->active)
+     {
+@@ -609,7 +609,7 @@ gtk_menu_shell_button_press (GtkWidget      *widget,
+ 
+   if (!menu_shell->active || !menu_shell->button)
+     {
+-      _gtk_menu_shell_activate (menu_shell);
++      gtk_menu_shell_activate (menu_shell);
+ 
+       menu_shell->button = event->button;
+ 
+@@ -1204,6 +1204,8 @@ gtk_menu_shell_real_select_item (GtkMenuShell *menu_shell,
+       return;
+     }
+ 
++  gtk_menu_shell_activate (menu_shell);
++
+   menu_shell->active_menu_item = menu_item;
+   if (pack_dir == GTK_PACK_DIRECTION_TTB || pack_dir == GTK_PACK_DIRECTION_BTT)
+     _gtk_menu_item_set_placement (GTK_MENU_ITEM (menu_shell->active_menu_item),
+diff --git a/gtk/gtkmenushell.h b/gtk/gtkmenushell.h
+index 7672a2b..2d90c33 100644
+--- a/gtk/gtkmenushell.h
++++ b/gtk/gtkmenushell.h
+@@ -116,7 +116,6 @@ void  gtk_menu_shell_select_first      (GtkMenuShell *menu_shell,
+ 					gboolean      search_sensitive);
+ void _gtk_menu_shell_select_last       (GtkMenuShell *menu_shell,
+ 					gboolean      search_sensitive);
+-void  _gtk_menu_shell_activate         (GtkMenuShell *menu_shell);
+ gint  _gtk_menu_shell_get_popup_delay  (GtkMenuShell *menu_shell);
+ void  gtk_menu_shell_cancel            (GtkMenuShell *menu_shell);
+ 
+-- 
+2.1.4
+
+

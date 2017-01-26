@@ -3,6 +3,9 @@ gtk+2.0 (2.24.31-2) UNRELEASED; urgency=medium
   * debian/patches/0001-Don-t-use-guint32-with-XChangeProperty.patch:
     + Backport patch from GTK+3 to fix unaligned access on sparc64.
       Thanks James Clarke. Closes: #852401.
+  * debian/patches/0002-GtkMenuShell-always-activate-menu-shells.patch:
+    + Backport patch from GTK+3 to fix stuck grabs in some situations.
+      Thanks Colomban Wendling. Closes: #847438.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 26 Jan 2017 08:38:59 +0100
 
