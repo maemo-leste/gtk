@@ -1,6 +1,6 @@
 --- a/gtk/gtkdialog.c
 +++ b/gtk/gtkdialog.c
-@@ -29,6 +29,10 @@
+@@ -29,13 +29,20 @@
  #include <stdlib.h>
  #include <string.h>
  #include "config.h"
@@ -11,7 +11,17 @@
  #include "gtkbutton.h"
  #include "gtkdialog.h"
  #include "gtkhbbox.h"
-@@ -46,8 +50,13 @@
++#include "gtkvbbox.h"
+ #include "gtklabel.h"
+ #include "gtkhseparator.h"
++#include "gtkvseparator.h"
+ #include "gtkmarshalers.h"
+ #include "gtkvbox.h"
++#include "gtkhbox.h"
+ #include "gdkkeysyms.h"
+ #include "gtkmain.h"
+ #include "gtkintl.h"
+@@ -46,8 +53,13 @@
  
  #define GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), GTK_TYPE_DIALOG, GtkDialogPrivate))
  
@@ -25,7 +35,7 @@
  } GtkDialogPrivate;
  
  typedef struct _ResponseData ResponseData;
-@@ -75,8 +84,11 @@
+@@ -75,8 +87,11 @@
                                                    GParamSpec   *pspec);
  static void      gtk_dialog_style_set            (GtkWidget    *widget,
                                                    GtkStyle     *prev_style);
@@ -38,7 +48,7 @@
  static void      gtk_dialog_close                (GtkDialog    *dialog);
  
  static ResponseData * get_response_data          (GtkWidget    *widget,
-@@ -101,7 +113,12 @@
+@@ -101,7 +116,12 @@
  
  enum {
    PROP_0,
@@ -52,7 +62,7 @@
  };
  
  enum {
-@@ -131,6 +148,9 @@
+@@ -131,6 +151,9 @@
    
    widget_class->map = gtk_dialog_map;
    widget_class->style_set = gtk_dialog_style_set;
@@ -62,7 +72,7 @@
  
    class->close = gtk_dialog_close;
    
-@@ -151,6 +171,56 @@
+@@ -151,6 +174,56 @@
                                                           FALSE,
                                                           GTK_PARAM_READWRITE | G_PARAM_DEPRECATED));
  
@@ -119,7 +129,7 @@
    /**
     * GtkDialog::response:
     * @dialog: the object on which the signal is emitted
-@@ -246,6 +316,11 @@
+@@ -246,6 +319,11 @@
    gint content_area_spacing;
    gint button_spacing;
    gint action_area_border;
@@ -131,7 +141,7 @@
  
    gtk_widget_style_get (GTK_WIDGET (dialog),
                          "content-area-border", &content_area_border,
-@@ -253,7 +328,12 @@
+@@ -253,7 +331,12 @@
                          "button-spacing", &button_spacing,
                          "action-area-border", &action_area_border,
                          NULL);
@@ -145,7 +155,7 @@
    gtk_container_set_border_width (GTK_CONTAINER (dialog->vbox),
                                    content_area_border);
    if (!_gtk_box_get_spacing_set (GTK_BOX (dialog->vbox)))
-@@ -274,6 +354,8 @@
+@@ -274,6 +357,8 @@
  
    priv = GET_PRIVATE (dialog);
    priv->ignore_separator = FALSE;
@@ -154,7 +164,7 @@
  
    /* To avoid breaking old code that prevents destroy on delete event
     * by connecting a handler, we have to have the FIRST signal
-@@ -286,19 +368,19 @@
+@@ -286,19 +371,19 @@
  
    dialog->vbox = gtk_vbox_new (FALSE, 0);
  
@@ -182,7 +192,7 @@
  
    gtk_window_set_type_hint (GTK_WINDOW (dialog),
                              GDK_WINDOW_TYPE_HINT_DIALOG);
-@@ -338,14 +420,52 @@
+@@ -338,14 +423,52 @@
                           GParamSpec   *pspec)
  {
    GtkDialog *dialog;
@@ -236,7 +246,7 @@
  
      default:
        G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-@@ -360,14 +480,36 @@
+@@ -360,14 +483,36 @@
                           GParamSpec  *pspec)
  {
    GtkDialog *dialog;
@@ -275,7 +285,7 @@
  
      default:
        G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-@@ -453,6 +595,189 @@
+@@ -453,6 +598,189 @@
    update_spacings (GTK_DIALOG (widget));
  }
  
@@ -366,10 +376,10 @@
 +
 +  if(portrait)
 +    {
-+      GtkWidget *toplevel = gtk_widget_get_toplevel (dialog);
++      GtkWidget *toplevel = gtk_widget_get_toplevel (GTK_WIDGET (dialog));
 +
 +      if (GTK_WIDGET_TOPLEVEL (toplevel) &&
-+          gtk_dialog_get_disable_portrait(toplevel))
++	  gtk_dialog_get_disable_portrait(GTK_DIALOG(toplevel)))
 +        {
 +          /* we are stuck in landscape, skip the circus */
 +          return;
@@ -465,7 +475,7 @@
  static GtkWidget *
  dialog_find_button (GtkDialog *dialog,
  		    gint       response_id)
-@@ -711,9 +1036,22 @@
+@@ -711,9 +1039,22 @@
    button = gtk_button_new_from_stock (button_text);
  
    gtk_widget_set_can_default (button, TRUE);
@@ -491,7 +501,7 @@
    gtk_dialog_add_action_widget (dialog,
                                  button,
                                  response_id);
-@@ -877,13 +1215,14 @@
+@@ -877,13 +1218,14 @@
    
    if (setting && dialog->separator == NULL)
      {
@@ -509,7 +519,7 @@
        gtk_widget_show (dialog->separator);
      }
    else if (!setting && dialog->separator != NULL)
-@@ -914,6 +1253,96 @@
+@@ -914,6 +1256,96 @@
  }
  
  /**
