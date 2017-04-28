@@ -668,6 +668,7 @@ libgdk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gdk_window_remove_filter@Base 2.8.0
  gdk_window_remove_redirection@Base 2.14.0
  gdk_window_reparent@Base 2.8.0
+ gdk_window_reset_toplevel_updates_libgtk_only@Base 2.24.0
  gdk_window_resize@Base 2.8.0
  gdk_window_restack@Base 2.18.0
  gdk_window_scroll@Base 2.8.0
@@ -1550,6 +1551,8 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_dialog_get_action_area@Base 2.14.0
  gtk_dialog_get_content_area@Base 2.14.0
  gtk_dialog_get_has_separator@Base 2.8.0
+ gtk_dialog_get_inner_spacing@Base 2.24.0
+ gtk_dialog_get_padding@Base 2.24.0
  gtk_dialog_get_response_for_widget@Base 2.8.0
  gtk_dialog_get_type@Base 2.8.0
  gtk_dialog_get_widget_for_response@Base 2.20.0
@@ -1561,6 +1564,8 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_dialog_set_alternative_button_order_from_array@Base 2.8.0
  gtk_dialog_set_default_response@Base 2.8.0
  gtk_dialog_set_has_separator@Base 2.8.0
+ gtk_dialog_set_inner_spacing@Base 2.24.0
+ gtk_dialog_set_padding@Base 2.24.0
  gtk_dialog_set_response_sensitive@Base 2.8.0
  gtk_direction_type_get_type@Base 2.8.0
  gtk_disable_setlocale@Base 2.8.0
@@ -2134,6 +2139,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_idle_add_priority@Base 2.8.0
  gtk_idle_remove@Base 2.8.0
  gtk_idle_remove_by_data@Base 2.8.0
+ gtk_im_context_clipboard_operation_get_type@Base 2.24.0
  gtk_im_context_delete_surrounding@Base 2.8.0
  gtk_im_context_filter_keypress@Base 2.8.0
  gtk_im_context_focus_in@Base 2.8.0
@@ -2141,11 +2147,13 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_im_context_get_preedit_string@Base 2.8.0
  gtk_im_context_get_surrounding@Base 2.8.0
  gtk_im_context_get_type@Base 2.8.0
+ gtk_im_context_hide@Base 2.24.0
  gtk_im_context_reset@Base 2.8.0
  gtk_im_context_set_client_window@Base 2.8.0
  gtk_im_context_set_cursor_location@Base 2.8.0
  gtk_im_context_set_surrounding@Base 2.8.0
  gtk_im_context_set_use_preedit@Base 2.8.0
+ gtk_im_context_show@Base 2.24.0
  gtk_im_context_simple_add_table@Base 2.8.0
  gtk_im_context_simple_get_type@Base 2.8.0
  gtk_im_context_simple_new@Base 2.8.0
@@ -2225,6 +2233,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_input_dialog_new@Base 2.8.0
  gtk_input_remove@Base 2.8.0
  gtk_interface_age@Base 2.8.0
+ gtk_invalid_input_type_get_type@Base 2.24.0
  gtk_invisible_get_screen@Base 2.8.0
  gtk_invisible_get_type@Base 2.8.0
  gtk_invisible_new@Base 2.8.0
@@ -4061,6 +4070,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_tooltips_set_tip@Base 2.8.0
  gtk_tray_icon_get_type@Base 2.10.0
  gtk_tree_append@Base 2.8.0
+ gtk_tree_cell_data_hint_get_type@Base 2.24.0
  gtk_tree_child_position@Base 2.8.0
  gtk_tree_clear_items@Base 2.8.0
  gtk_tree_drag_dest_drag_data_received@Base 2.8.0
@@ -4237,11 +4247,13 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_tree_view_column_cell_get_size@Base 2.8.0
  gtk_tree_view_column_cell_is_visible@Base 2.8.0
  gtk_tree_view_column_cell_set_cell_data@Base 2.8.0
+ gtk_tree_view_column_cell_set_cell_data_with_hint@Base 2.24.0
  gtk_tree_view_column_clear@Base 2.8.0
  gtk_tree_view_column_clear_attributes@Base 2.8.0
  gtk_tree_view_column_clicked@Base 2.8.0
  gtk_tree_view_column_focus_cell@Base 2.8.0
  gtk_tree_view_column_get_alignment@Base 2.8.0
+ gtk_tree_view_column_get_cell_data_hint@Base 2.24.0
  gtk_tree_view_column_get_cell_renderers@Base 2.8.0
  gtk_tree_view_column_get_clickable@Base 2.8.0
  gtk_tree_view_column_get_expand@Base 2.8.0
@@ -4492,6 +4504,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_widget_get_extension_events@Base 2.8.0
  gtk_widget_get_has_tooltip@Base 2.12.0
  gtk_widget_get_has_window@Base 2.18.0
+ gtk_widget_get_hildon_focus_handling@Base 2.24.0
  gtk_widget_get_modifier_style@Base 2.8.0
  gtk_widget_get_mapped@Base 2.20.0
  gtk_widget_get_name@Base 2.8.0
@@ -4531,6 +4544,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_widget_hide_all@Base 2.8.0
  gtk_widget_hide_on_delete@Base 2.8.0
  gtk_widget_input_shape_combine_mask@Base 2.10.0
+ gtk_widget_insensitive_press@Base 2.24.0
  gtk_widget_intersect@Base 2.8.0
  gtk_widget_is_ancestor@Base 2.8.0
  gtk_widget_is_composited@Base 2.10.0
@@ -4590,6 +4604,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_widget_set_extension_events@Base 2.8.0
  gtk_widget_set_has_tooltip@Base 2.12.0
  gtk_widget_set_has_window@Base 2.18.0
+ gtk_widget_set_hildon_focus_handling@Base 2.24.0
  gtk_widget_set_mapped@Base 2.20.0
  gtk_widget_set_name@Base 2.8.0
  gtk_widget_set_no_show_all@Base 2.8.0
@@ -4620,6 +4635,9 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_widget_style_get@Base 2.8.0
  gtk_widget_style_get_property@Base 2.8.0
  gtk_widget_style_get_valist@Base 2.8.0
+ gtk_widget_tap_and_hold_flags_get_type@Base 2.24.0
+ gtk_widget_tap_and_hold_menu_position_top@Base 2.24.0
+ gtk_widget_tap_and_hold_setup@Base 2.24.0
  gtk_widget_thaw_child_notify@Base 2.8.0
  gtk_widget_translate_coordinates@Base 2.8.0
  gtk_widget_trigger_tooltip_query@Base 2.12.0
@@ -4635,6 +4653,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_window_add_mnemonic@Base 2.8.0
  gtk_window_begin_move_drag@Base 2.8.0
  gtk_window_begin_resize_drag@Base 2.8.0
+ gtk_window_close_other_temporaries@Base 2.24.0
  gtk_window_deiconify@Base 2.8.0
  gtk_window_fullscreen@Base 2.8.0
  gtk_window_get_accept_focus@Base 2.8.0
@@ -4654,11 +4673,13 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_window_get_icon@Base 2.8.0
  gtk_window_get_icon_list@Base 2.8.0
  gtk_window_get_icon_name@Base 2.8.0
+ gtk_window_get_is_temporary@Base 2.24.0
  gtk_window_get_mnemonic_modifier@Base 2.8.0
  gtk_window_get_mnemonics_visible@Base 2.20.0
  gtk_window_get_modal@Base 2.8.0
  gtk_window_get_opacity@Base 2.12.0
  gtk_window_get_position@Base 2.8.0
+ gtk_window_get_prev_focus_widget@Base 2.24.0
  gtk_window_get_resizable@Base 2.8.0
  gtk_window_get_role@Base 2.8.0
  gtk_window_get_screen@Base 2.8.0
@@ -4717,6 +4738,8 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_window_set_icon_from_file@Base 2.8.0
  gtk_window_set_icon_list@Base 2.8.0
  gtk_window_set_icon_name@Base 2.8.0
+ gtk_window_set_is_temporary@Base 2.24.0
+ gtk_window_set_prev_focus_widget@Base 2.24.0
  gtk_window_set_keep_above@Base 2.8.0
  gtk_window_set_keep_below@Base 2.8.0
  gtk_window_set_mnemonic_modifier@Base 2.8.0
@@ -4742,3 +4765,37 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_window_unmaximize@Base 2.8.0
  gtk_window_unstick@Base 2.8.0
  gtk_wrap_mode_get_type@Base 2.8.0
+ hildon_gtk_entry_get_input_default@Base 2.24.0
+ hildon_gtk_entry_get_input_mode@Base 2.24.0
+ hildon_gtk_entry_get_placeholder_text@Base 2.24.0
+ hildon_gtk_entry_set_input_default@Base 2.24.0
+ hildon_gtk_entry_set_input_mode@Base 2.24.0
+ hildon_gtk_entry_set_placeholder_text@Base 2.24.0
+ hildon_gtk_im_context_copy@Base 2.24.0
+ hildon_gtk_im_context_cut@Base 2.24.0
+ hildon_gtk_im_context_filter_event@Base 2.24.0
+ hildon_gtk_im_context_has_selection@Base 2.24.0
+ hildon_gtk_im_context_hide@Base 2.24.0
+ hildon_gtk_im_context_paste@Base 2.24.0
+ hildon_gtk_im_context_show@Base 2.24.0
+ hildon_gtk_input_mode_get_type@Base 2.24.0
+ hildon_gtk_text_view_get_input_default@Base 2.24.0
+ hildon_gtk_text_view_get_input_mode@Base 2.24.0
+ hildon_gtk_text_view_get_placeholder_text@Base 2.24.0
+ hildon_gtk_text_view_set_input_default@Base 2.24.0
+ hildon_gtk_text_view_set_input_mode@Base 2.24.0
+ hildon_gtk_text_view_set_placeholder_text@Base 2.24.0
+ hildon_gtk_widget_set_theme_size@Base 2.24.0
+ hildon_mode_get_type@Base 2.24.0
+ hildon_size_type_get_type@Base 2.24.0
+ hildon_tree_view_get_action_area_box@Base 2.24.0
+ hildon_tree_view_get_action_area_orientation@Base 2.24.0
+ hildon_tree_view_get_action_area_visible@Base 2.24.0
+ hildon_tree_view_get_hildon_ui_mode@Base 2.24.0
+ hildon_tree_view_get_row_header_func@Base 2.24.0
+ hildon_tree_view_set_action_area_orientation@Base 2.24.0
+ hildon_tree_view_set_action_area_visible@Base 2.24.0
+ hildon_tree_view_set_hildon_ui_mode@Base 2.24.0
+ hildon_tree_view_set_row_header_func@Base 2.24.0
+ hildon_ui_mode_get_type@Base 2.24.0
+
