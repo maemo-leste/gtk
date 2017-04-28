@@ -155,7 +155,7 @@
    gtk_window_set_resizable (GTK_WINDOW (menu->toplevel), FALSE);
    gtk_window_set_mnemonic_modifier (GTK_WINDOW (menu->toplevel), 0);
  
-+  gtk_widget_style_get (menu, "maemo-decorated", &decorated, NULL);
++  gtk_widget_style_get (GTK_WIDGET (menu), "maemo-decorated", &decorated, NULL);
 +  gtk_window_set_decorated (GTK_WINDOW (menu->toplevel), decorated);
 +  gtk_widget_add_events (menu->toplevel, GDK_VISIBILITY_NOTIFY_MASK);
 +  gtk_window_set_is_temporary (GTK_WINDOW (menu->toplevel), TRUE);
