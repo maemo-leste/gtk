@@ -16,3 +16,15 @@ gtk2-c89-3.patch
 gtk2-c89-4.patch
 gtk2-c89-5.patch
 gtk2-c89-6.patch
+hildonize-gtk-enums.diff
+hildonize-gdk-window.diff
+hildonize-gtk-container.diff
+hildonize-gtk-window.diff
+hildonize-gtk-menu.diff
+hildonize-gtk-widget.diff
+hildonize-gtk-imcontext.diff
+hildonize-gtk-entry.diff
+hildonize-gtk-dialog.diff
+hildonize-gtk-textview.diff
+hildonize-gtk-rbtree.diff
+hildonize-gtk-treeview.diff
