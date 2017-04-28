@@ -15,3 +15,15 @@
 065_gir_set_packages.patch
 098_multiarch_module_path.patch
 099_CVE-2013-7447.patch
+hildonize-gtk-enums.diff
+hildonize-gdk-window.diff
+hildonize-gtk-container.diff
+hildonize-gtk-window.diff
+hildonize-gtk-menu.diff
+hildonize-gtk-widget.diff
+hildonize-gtk-imcontext.diff
+hildonize-gtk-entry.diff
+hildonize-gtk-dialog.diff
+hildonize-gtk-textview.diff
+hildonize-gtk-rbtree.diff
+hildonize-gtk-treeview.diff
