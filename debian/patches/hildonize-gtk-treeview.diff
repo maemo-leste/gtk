@@ -1739,9 +1739,6 @@
 +	  node = tree->root;
 +
 +	  g_assert (node != tree->nil);
-+
-+	  while (node->left != tree->nil)
-+	    node = node->left;
  
 -      gtk_widget_size_request (GTK_WIDGET (tree_view), &requisition);
 -      tree_view->priv->hadjustment->upper = MAX (tree_view->priv->hadjustment->upper, (gfloat)requisition.width);
@@ -1750,6 +1747,14 @@
 -      gtk_adjustment_changed (tree_view->priv->vadjustment);
 -      gtk_widget_queue_resize (GTK_WIDGET (tree_view));
 -    }
++	  while (node->left != tree->nil)
++	    node = node->left;
+ 
+-  if (tree_view->priv->scroll_to_path)
+-    {
+-      gtk_tree_row_reference_free (tree_view->priv->scroll_to_path);
+-      tree_view->priv->scroll_to_path = NULL;
+-    }
 +	  gtk_tree_model_iter_children (tree_view->priv->model,
 +					&iter, &parent);
 +	}
@@ -1757,11 +1762,8 @@
 +	{
 +	  gboolean done = FALSE;
  
--  if (tree_view->priv->scroll_to_path)
--    {
--      gtk_tree_row_reference_free (tree_view->priv->scroll_to_path);
--      tree_view->priv->scroll_to_path = NULL;
--    }
+-  if (above_path)
+-    gtk_tree_path_free (above_path);
 +	  do
 +	    {
 +	      node = _gtk_rbtree_next (tree, node);
@@ -1774,14 +1776,12 @@
 +		{
 +		  GtkTreeIter parent_iter = iter;
  
--  if (above_path)
--    gtk_tree_path_free (above_path);
-+		  node = tree->parent_node;
-+		  tree = tree->parent_tree;
- 
 -  if (tree_view->priv->scroll_to_column)
 -    {
 -      tree_view->priv->scroll_to_column = NULL;
++		  node = tree->parent_node;
++		  tree = tree->parent_tree;
++
 +		  if (!tree)
 +		    /* We are done */
 +		    return;
@@ -2452,19 +2452,11 @@
  
    if (animate)
      g_object_get (gtk_widget_get_settings (GTK_WIDGET (tree_view)),
-@@ -12139,20 +13083,62 @@
-   node->children->parent_tree = tree;
-   node->children->parent_node = node;
+@@ -12147,12 +13091,54 @@
+ 			    gtk_tree_path_get_depth (path) + 1,
+ 			    open_all);
  
--  gtk_tree_model_iter_children (tree_view->priv->model, &temp, &iter);
-+  gtk_tree_model_iter_children (tree_view->priv->model, &temp, &iter);
-+
-+  gtk_tree_view_build_tree (tree_view,
-+			    node->children,
-+			    &temp,
-+			    gtk_tree_path_get_depth (path) + 1,
-+			    open_all);
-+
+-  remove_expand_collapse_timeout (tree_view);
 +  remove_expand_collapse_timeout (tree_view);
 +
 +  if (animate)
@@ -2492,25 +2484,18 @@
 +  do
 +    {
 +      _gtk_tree_view_find_node (tree_view, tmppath, &tmptree, &tmpnode);
- 
--  gtk_tree_view_build_tree (tree_view,
--			    node->children,
--			    &temp,
--			    gtk_tree_path_get_depth (path) + 1,
--			    open_all);
++
 +      validate_row (tree_view, tmptree, tmpnode, &tmpiter, tmppath);
 +      branch_height += ROW_HEIGHT (tree_view, GTK_RBNODE_GET_HEIGHT (tmpnode));
- 
--  remove_expand_collapse_timeout (tree_view);
++
 +      gtk_tree_path_next (tmppath);
 +    }
 +  while (gtk_tree_model_iter_next (tree_view->priv->model, &tmpiter));
++
++  gtk_tree_path_prev (tmppath);
  
 -  if (animate)
 -    add_expand_collapse_timeout (tree_view, tree, node, TRUE);
-+  gtk_tree_path_prev (tmppath);
- 
--  install_presize_handler (tree_view);
 +  /* We scroll to the just expanded row if the expanding row and its children
 +   * do not fit in the view.
 +   * Otherwise, if the last child is not visible, we scroll to it to make
@@ -2520,7 +2505,8 @@
 +    gtk_tree_view_scroll_to_cell (tree_view, path, NULL, TRUE, 0.0, 0.0);
 +  else if (dy + branch_height > tree_view->priv->vadjustment->value + tree_view->priv->vadjustment->page_size)
 +    gtk_tree_view_scroll_to_cell (tree_view, tmppath, NULL, TRUE, 1.0, 0.0);
-+
+ 
+-  install_presize_handler (tree_view);
 +  gtk_tree_path_free (tmppath);
  
    g_signal_emit (tree_view, tree_view_signals[ROW_EXPANDED], 0, &iter, path);
@@ -2546,17 +2532,40 @@
    if (gtk_tree_row_reference_valid (tree_view->priv->cursor))
      {
        GtkTreePath *cursor_path;
-@@ -12573,7 +13573,8 @@
+@@ -12573,18 +13573,21 @@
     * path maps to a non-existing path and we will silently bail out.
     * We unset tree and node to avoid further processing.
     */
 -  if (!row_is_separator (tree_view, NULL, path)
-+  if (!row_is_separator (tree_view, NULL, NULL, path)
-+      && tree_view->priv->hildon_mode == HILDON_DIABLO
-       && _gtk_tree_view_find_node (tree_view, path, &tree, &node) == FALSE)
+-      && _gtk_tree_view_find_node (tree_view, path, &tree, &node) == FALSE)
++  if (tree_view->priv->hildon_mode == HILDON_DIABLO)
      {
-       tree_view->priv->cursor =
-@@ -12596,8 +13597,13 @@
+-      tree_view->priv->cursor =
+-          gtk_tree_row_reference_new_proxy (G_OBJECT (tree_view),
+-                                            tree_view->priv->model,
+-                                            path);
+-    }
+-  else
+-    {
+-      tree = NULL;
+-      node = NULL;
++      if (!row_is_separator (tree_view, NULL, NULL, path)
++	  && _gtk_tree_view_find_node (tree_view, path, &tree, &node) == FALSE)
++	{
++	  tree_view->priv->cursor =
++	      gtk_tree_row_reference_new_proxy (G_OBJECT (tree_view),
++						tree_view->priv->model,
++						path);
++	}
++      else
++	{
++	  tree = NULL;
++	  node = NULL;
++	}
+     }
+ 
+   if (tree != NULL)
+@@ -12596,8 +13599,13 @@
          {
            GtkTreeSelectMode mode = 0;
  
@@ -2572,7 +2581,7 @@
            if (tree_view->priv->extend_selection_pressed)
              mode |= GTK_TREE_SELECT_MODE_EXTEND;
  
-@@ -12622,7 +13628,9 @@
+@@ -12622,7 +13630,9 @@
  	}
      }
  
@@ -2583,7 +2592,7 @@
  }
  
  /**
-@@ -13780,6 +14788,7 @@
+@@ -13780,6 +14790,7 @@
    gboolean is_separator = FALSE;
    gboolean rtl;
    cairo_t *cr;
@@ -2591,7 +2600,7 @@
  
    g_return_val_if_fail (GTK_IS_TREE_VIEW (tree_view), NULL);
    g_return_val_if_fail (path != NULL, NULL);
-@@ -13804,7 +14813,7 @@
+@@ -13804,7 +14815,7 @@
                                  path))
      return NULL;
    
@@ -2600,7 +2609,7 @@
  
    cell_offset = x;
  
-@@ -13872,7 +14881,14 @@
+@@ -13872,7 +14883,14 @@
  
        if (gtk_tree_view_column_cell_is_visible (column))
  	{
@@ -2616,7 +2625,7 @@
  	    gtk_paint_hline (widget->style,
  			     drawable,
  			     GTK_STATE_NORMAL,
-@@ -15141,6 +16157,83 @@
+@@ -15141,6 +16159,83 @@
    gtk_widget_queue_resize (GTK_WIDGET (tree_view));
  }
  
@@ -2700,7 +2709,7 @@
    
  static void
  gtk_tree_view_grab_notify (GtkWidget *widget,
-@@ -15156,6 +16249,21 @@
+@@ -15156,6 +16251,21 @@
  
        if (tree_view->priv->rubber_band_status)
  	gtk_tree_view_stop_rubber_band (tree_view);
@@ -2722,7 +2731,7 @@
      }
  }
  
-@@ -15755,5 +16863,373 @@
+@@ -15755,5 +16865,373 @@
    return tree_view->priv->tooltip_column;
  }
  
