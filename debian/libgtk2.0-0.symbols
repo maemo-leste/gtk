@@ -4767,6 +4767,10 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  hildon_gtk_text_view_set_input_mode@Base 2.24.0
  hildon_gtk_text_view_set_placeholder_text@Base 2.24.0
  hildon_gtk_widget_set_theme_size@Base 2.24.0
+ hildon_icon_view_get_hildon_ui_mode@Base 2.24.0
+ hildon_icon_view_get_row_header_func@Base 2.24.0
+ hildon_icon_view_set_hildon_ui_mode@Base 2.24.0
+ hildon_icon_view_set_row_header_func@Base 2.24.0
  hildon_mode_get_type@Base 2.24.0
  hildon_size_type_get_type@Base 2.24.0
  hildon_tree_view_get_action_area_box@Base 2.24.0
