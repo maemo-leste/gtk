@@ -1,3 +1,16 @@
+gtk+2.0 (2:2.24.25-3+deb8u3) unstable; urgency=medium
+
+  * add epoch to changelog version
+
+ -- Ivan J. <parazyd@dyne.org>  Tue, 13 Sep 2017 12:12:00 +0200
+
+gtk+2.0 (2.24.25-3+deb8u3) unstable; urgency=medium
+
+  * Import gtk2.24.25 sources in git
+  * Enable git builds
+
+ -- Ivan J. <parazyd@dyne.org>  Tue, 12 Sep 2017 14:45:00 +0200
+
 gtk+2.0 (2.24.25-3+deb8u1) jessie; urgency=medium
 
   * CVE-2013-7447 (Closes: #799275)
