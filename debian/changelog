@@ -2,6 +2,7 @@ gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
 
   * Add recommends as part of effort to not install gtk+2.0 by default:
     - gnome-themes-standard
+    - ibus-gtk
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 03 Nov 2017 16:22:42 -0400
 
