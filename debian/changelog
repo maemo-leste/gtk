@@ -1,9 +1,14 @@
 gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
 
+  [ Jeremy Bicha ]
   * Add recommends as part of effort to not install gtk+2.0 by default:
     - gnome-themes-standard
     - ibus-gtk
     - libcaribou-gtk-module
+
+  [ Simon McVittie ]
+  * gir1.2-gtk-2.0: Add Provides for gir1.2-gdk-2.0, gir1.2-gdkx11-2.0
+    to reflect all typelibs shipped by this package
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 03 Nov 2017 16:22:42 -0400
 
