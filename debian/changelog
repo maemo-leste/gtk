@@ -10,8 +10,8 @@ gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
   * gir1.2-gtk-2.0: Add Provides for gir1.2-gdk-2.0, gir1.2-gdkx11-2.0
     to reflect all typelibs shipped by this package
   * Set Rules-Requires-Root to no
-  * Move udebs, debug symbols, examples from deprecated Priority: extra
-    to Priority: optional
+  * Move udebs and examples from deprecated Priority: extra to
+    Priority: optional
   * Use debhelper compat level 10
     - Do not explicitly depend on dh-autoreconf or autotools-dev
   * Use automatic -dbgsym packages for debug symbols
