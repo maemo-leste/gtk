@@ -15,6 +15,9 @@ gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
   * Use debhelper compat level 10
     - Do not explicitly depend on dh-autoreconf or autotools-dev
   * Use automatic -dbgsym packages for debug symbols
+  * Add Lintian overrides for package-name-doesnt-match-sonames
+    and symbols-declares-dependency-on-other-package, which reflect
+    deliberate maintainer choices
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 03 Nov 2017 16:22:42 -0400
 
