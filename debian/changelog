@@ -13,6 +13,7 @@ gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
   * Move udebs, debug symbols, examples from deprecated Priority: extra
     to Priority: optional
   * Use debhelper compat level 10
+    - Do not explicitly depend on dh-autoreconf or autotools-dev
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 03 Nov 2017 16:22:42 -0400
 
