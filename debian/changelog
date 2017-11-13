@@ -14,6 +14,7 @@ gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
     to Priority: optional
   * Use debhelper compat level 10
     - Do not explicitly depend on dh-autoreconf or autotools-dev
+  * Use automatic -dbgsym packages for debug symbols
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 03 Nov 2017 16:22:42 -0400
 
