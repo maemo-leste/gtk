@@ -12,6 +12,7 @@ gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
   * Set Rules-Requires-Root to no
   * Move udebs, debug symbols, examples from deprecated Priority: extra
     to Priority: optional
+  * Use debhelper compat level 10
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 03 Nov 2017 16:22:42 -0400
 
