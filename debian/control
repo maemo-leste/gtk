@@ -80,7 +80,6 @@ Description: GTK+ graphical user interface library
 Package: libgtk2.0-0-udeb
 Package-Type: udeb
 Section: debian-installer
-Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
@@ -165,7 +164,6 @@ Description: development files for the GTK+ library
 
 Package: libgtk2.0-0-dbg
 Section: debug
-Priority: extra
 Architecture: any
 Depends: libgtk2.0-0 (= ${binary:Version}),
          libgtk2.0-common,
@@ -200,7 +198,6 @@ Description: documentation for the GTK+ graphical user interface library
 
 Package: gtk2.0-examples
 Section: x11
-Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -315,7 +312,6 @@ Description: GNOME Accessibility Implementation Library -- development files
 Package: libgail-dbg
 Architecture: any
 Section: debug
-Priority: extra
 Depends: ${misc:Depends}, libgail18 (= ${binary:Version})
 Recommends: libgtk2.0-0-dbg
 Multi-Arch: same
