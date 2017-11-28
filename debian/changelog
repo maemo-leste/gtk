@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.31-3) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * Add recommends as part of effort to not install gtk+2.0 by default:
@@ -19,7 +19,7 @@ gtk+2.0 (2.24.31-3) UNRELEASED; urgency=medium
     and symbols-declares-dependency-on-other-package, which reflect
     deliberate maintainer choices
 
- -- Jeremy Bicha <jbicha@debian.org>  Fri, 03 Nov 2017 16:22:42 -0400
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 28 Nov 2017 12:54:38 -0500
 
 gtk+2.0 (2.24.31-2) unstable; urgency=medium
 
