@@ -137,8 +137,6 @@ static_configure_flags := $(configure_flags) \
 # list of flavors to run the test suite on
 CHECK_FLAVORS := $(filter shared static, $(FLAVORS))
 
-DH_INSTALLDOCS_FILES := NEWS README AUTHORS
-
 # macro computing the list of 'debian/<pkg>.*" files which have a corresponding
 # ".in" file; pass the list of packages in $(1)
 dh_subst_files = $(patsubst %.in,%,$(wildcard $(addprefix debian/, $(addsuffix *.in, $(1)))))
@@ -297,7 +295,8 @@ binary-arch: build-arch $(maybe_check) install-arch $(call dh_subst_files,$(BINA
 		-- -c4
 	dh_girepository -pgir1.2-gtk-2.0
 	dh_installdeb -s
-	dh_shlibdeps
+	dh_shlibdeps -p$(PIXBUF_PKG) -- -xlibgtk2.0-0
+	dh_shlibdeps --remaining-packages
 	dh_gencontrol -s
 	dh_md5sums -s
 	dh_builddeb -s -- -Zxz

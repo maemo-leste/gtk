@@ -199,8 +199,7 @@ Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         @SHARED_PKG@ (= ${binary:Version}),
-         @COMMON_PKG@
+         @SHARED_PKG@ (= ${binary:Version})
 Description: pixbuf-based theme for GTK+ 2.x
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
