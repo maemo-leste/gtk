@@ -295,8 +295,14 @@ binary-arch: build-arch $(maybe_check) install-arch $(call dh_subst_files,$(BINA
 		-- -c4
 	dh_girepository -pgir1.2-gtk-2.0
 	dh_installdeb -s
+ifeq (yes,$(shell dpkg-vendor --derives-from Ubuntu && echo yes))
 	dh_shlibdeps -p$(PIXBUF_PKG) -- -xlibgtk2.0-0
-	dh_shlibdeps --remaining-packages
+else
+	dh_shlibdeps -p$(PIXBUF_PKG)
+endif
+	# --remaining-packages didn't work right so let's at least make sure
+	# it doesn't run a second time for the pixbuf .so
+	dh_shlibdeps --remaining-packages -Xlibpixmap.so
 	dh_gencontrol -s
 	dh_md5sums -s
 	dh_builddeb -s -- -Zxz
