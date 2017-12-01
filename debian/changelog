@@ -2,6 +2,11 @@ gtk+2.0 (2.24.31-4) UNRELEASED; urgency=medium
 
   * Don't have gtk2-engines-pixbuf depend on libgtk2.0-0 to allow
     themes to be installed without requiring GTK+ 2 to be installed.
+  * Drop new unnecessary recommends since we are handling the gtk+2.0
+    dependency issue directly in the packages:
+    - gnome-themes-standard
+    - ibus-gtk
+    - libcaribou-gtk-module
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 29 Nov 2017 21:07:12 -0500
 
