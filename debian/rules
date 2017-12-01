@@ -137,6 +137,8 @@ static_configure_flags := $(configure_flags) \
 # list of flavors to run the test suite on
 CHECK_FLAVORS := $(filter shared static, $(FLAVORS))
 
+DH_INSTALLDOCS_FILES := NEWS README AUTHORS
+
 # macro computing the list of 'debian/<pkg>.*" files which have a corresponding
 # ".in" file; pass the list of packages in $(1)
 dh_subst_files = $(patsubst %.in,%,$(wildcard $(addprefix debian/, $(addsuffix *.in, $(1)))))
