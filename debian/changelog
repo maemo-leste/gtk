@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.31-4) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.31-4) unstable; urgency=medium
 
   * Don't have gtk2-engines-pixbuf depend on libgtk2.0-0 to allow
     themes to be installed without requiring GTK+ 2 to be installed.
@@ -8,7 +8,7 @@ gtk+2.0 (2.24.31-4) UNRELEASED; urgency=medium
     - ibus-gtk
     - libcaribou-gtk-module
 
- -- Jeremy Bicha <jbicha@debian.org>  Wed, 29 Nov 2017 21:07:12 -0500
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 06 Dec 2017 10:03:47 -0500
 
 gtk+2.0 (2.24.31-3) unstable; urgency=medium
 
