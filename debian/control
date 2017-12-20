@@ -44,7 +44,7 @@ Build-Depends-Indep: libglib2.0-doc,
                      libpango1.0-doc,
                      libcairo2-doc
 Rules-Requires-Root: no
-Standards-Version: 3.9.8
+Standards-Version: 4.1.2
 Vcs-Git: https://anonscm.debian.org/git/pkg-gnome/gtk+2.0.git
 Vcs-Browser: https://anonscm.debian.org/git/pkg-gnome/gtk+2.0.git
 Homepage: http://www.gtk.org/
@@ -63,7 +63,6 @@ Recommends: libgail-common,
 Suggests: librsvg2-common,
           gvfs
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
 Description: GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -228,7 +227,6 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libgtk2.0-0 (= ${binary:Version})
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
 Description: GNOME Accessibility Implementation Library -- shared libraries
  Gail implements ATK interfaces for GTK+ widgets which are dynamically
  loadable at runtime by a GTK+ application. Once loaded, those parts of
@@ -245,7 +243,6 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libgtk2.0-0-udeb (= ${binary:Version})
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
 Description: GNOME Accessibility Implementation Library -- shared libraries
  Gail implements ATK interfaces for GTK+ widgets which are dynamically
  loadable at runtime by a GTK+ application. Once loaded, those parts of
@@ -270,6 +267,7 @@ Description: GNOME Accessibility Implementation Library -- common modules
 
 Package: libgail-dev
 Architecture: any
+Multi-Arch: same
 Section: libdevel
 Depends: ${misc:Depends},
          libgail18 (= ${binary:Version}),
