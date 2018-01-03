@@ -1,5 +1,11 @@
 gtk+2.0 (2.24.31-2) unstable; urgency=medium
 
+  * Enable git builds
+
+ -- Ivan J. <parazyd@dyne.org>  Wed, 03 Jan 2018 18:27:00 +0100
+
+gtk+2.0 (2.24.31-2) unstable; urgency=medium
+
   * debian/patches/0001-Don-t-use-guint32-with-XChangeProperty.patch:
     + Backport patch from GTK+3 to fix unaligned access on sparc64.
       Thanks James Clarke. Closes: #852401.
