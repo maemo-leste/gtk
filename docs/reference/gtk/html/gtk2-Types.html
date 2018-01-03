@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Types</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Types: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Signals.html" title="Signals">
 <link rel="next" href="gtk2-Testing.html" title="Testing">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-Types.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -56,14 +56,6 @@
 <td class="function_name">
 <a class="link" href="gtk2-Types.html#GTK-TYPE-IS-OBJECT:CAPS" title="GTK_TYPE_IS_OBJECT()">GTK_TYPE_IS_OBJECT</a><span class="c_punctuation">()</span>
 </td>
-</tr>
-<tr>
-<td class="define_keyword">#define</td>
-<td class="function_name"><a class="link" href="gtk2-Types.html#GTK-TYPE-FUNDAMENTAL-LAST:CAPS" title="GTK_TYPE_FUNDAMENTAL_LAST">GTK_TYPE_FUNDAMENTAL_LAST</a></td>
-</tr>
-<tr>
-<td class="define_keyword">#define</td>
-<td class="function_name"><a class="link" href="gtk2-Types.html#GTK-TYPE-FUNDAMENTAL-MAX:CAPS" title="GTK_TYPE_FUNDAMENTAL_MAX">GTK_TYPE_FUNDAMENTAL_MAX</a></td>
 </tr>
 <tr>
 <td class="define_keyword">#define</td>
@@ -382,7 +374,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Types.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -395,6 +387,14 @@
 <tr>
 <td class="typedef_keyword">typedef</td>
 <td class="function_name"><a class="link" href="gtk2-Types.html#GtkFundamentalType" title="GtkFundamentalType">GtkFundamentalType</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gtk2-Types.html#GTK-TYPE-FUNDAMENTAL-LAST:CAPS" title="GTK_TYPE_FUNDAMENTAL_LAST">GTK_TYPE_FUNDAMENTAL_LAST</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gtk2-Types.html#GTK-TYPE-FUNDAMENTAL-MAX:CAPS" title="GTK_TYPE_FUNDAMENTAL_MAX">GTK_TYPE_FUNDAMENTAL_MAX</a></td>
 </tr>
 <tr>
 <td class="define_keyword">#define</td>
@@ -489,8 +489,8 @@ managed at runtime.
 Returns the type name of <em class="parameter"><code>class</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-CLASS-NAME.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -517,8 +517,8 @@ Returns the type name of <em class="parameter"><code>class</code></em>.
 Returns the type of <em class="parameter"><code>class</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-CLASS-TYPE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -545,8 +545,8 @@ Returns the type of <em class="parameter"><code>class</code></em>.
 Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>type</code></em> is a <code class="literal">GTK_TYPE_OBJECT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-TYPE-IS-OBJECT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -559,32 +559,6 @@ Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 </tr></tbody>
 </table></div>
 </div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="GTK-TYPE-FUNDAMENTAL-LAST:CAPS"></a><h3>GTK_TYPE_FUNDAMENTAL_LAST</h3>
-<pre class="programlisting">#define GTK_TYPE_FUNDAMENTAL_LAST        (G_TYPE_LAST_RESERVED_FUNDAMENTAL - 1)
-</pre>
-<div class="warning">
-<p><code class="literal">GTK_TYPE_FUNDAMENTAL_LAST</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <span class="type">G_TYPE_LAST_RESERVED_FUNDAMENTAL</span> - 1 instead.</p>
-</div>
-<p>
-The highest-numbered structured or flat enumerated type value.
-</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="GTK-TYPE-FUNDAMENTAL-MAX:CAPS"></a><h3>GTK_TYPE_FUNDAMENTAL_MAX</h3>
-<pre class="programlisting">#define GTK_TYPE_FUNDAMENTAL_MAX         (G_TYPE_FUNDAMENTAL_MAX)
-</pre>
-<div class="warning">
-<p><code class="literal">GTK_TYPE_FUNDAMENTAL_MAX</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-FUNDAMENTAL-MAX:CAPS"><span class="type">G_TYPE_FUNDAMENTAL_MAX</span></a> instead.</p>
-</div>
-<p>
-The maximum fundamental enumerated type value.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -619,8 +593,8 @@ Defines a function pointer.
 Defines a function pointer.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkFunction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -634,9 +608,8 @@ Defines a function pointer.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.9.7"></a><h4>Returns</h4>
+<a name="GtkFunction.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -649,8 +622,8 @@ Defines a function pointer.
 Defines a function pointer.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkDestroyNotify.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -677,8 +650,8 @@ Defines a function pointer.
 Defines a function pointer.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCallbackMarshal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -719,8 +692,8 @@ Defines a function pointer.
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_CHAR</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-CHAR.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -744,8 +717,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_UCHAR</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-UCHAR.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -769,8 +742,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_BOOL</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.14.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-BOOL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -794,8 +767,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_INT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-INT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -819,8 +792,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_UINT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-UINT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -844,8 +817,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_LONG</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-LONG.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -869,8 +842,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_ULONG</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-ULONG.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -894,8 +867,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_FLOAT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-FLOAT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -919,8 +892,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_DOUBLE</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-DOUBLE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -944,8 +917,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_STRING</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-STRING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -969,8 +942,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_ENUM</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.22.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-ENUM.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -994,8 +967,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_FLAGS</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-FLAGS.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1019,8 +992,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_BOXED</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.24.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-BOXED.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1044,8 +1017,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_POINTER</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-POINTER.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1069,8 +1042,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_OBJECT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-OBJECT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1094,8 +1067,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_SIGNAL</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.27.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-VALUE-SIGNAL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1119,8 +1092,8 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_CHAR</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.28.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-CHAR.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1144,8 +1117,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_UCHAR</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.29.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-UCHAR.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1169,8 +1142,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_BOOL</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.30.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-BOOL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1194,8 +1167,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_INT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.31.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-INT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1219,8 +1192,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_UINT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.32.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-UINT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1244,8 +1217,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_LONG</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.33.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-LONG.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1269,8 +1242,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_ULONG</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.34.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-ULONG.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1294,8 +1267,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_FLOAT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.35.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-FLOAT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1319,8 +1292,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_DOUBLE</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.36.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-DOUBLE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1344,8 +1317,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_STRING</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.37.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-STRING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1369,8 +1342,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_ENUM</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.38.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-ENUM.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1394,8 +1367,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_FLAGS</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.39.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-FLAGS.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1419,8 +1392,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_BOXED</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.40.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-BOXED.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1444,8 +1417,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_POINTER</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.41.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-POINTER.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1469,8 +1442,8 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_OBJECT</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.42.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-RETLOC-OBJECT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1494,8 +1467,8 @@ gtk_type_init (<em class="parameter"><code><a href="https://developer.gnome.org/
 Initializes the data structures associated with GTK+ types.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.43.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1520,8 +1493,8 @@ gtk_type_unique (<em class="parameter"><code><a class="link" href="gtk2-Types.ht
 Creates a new, unique type.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.44.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-unique.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1543,9 +1516,8 @@ must also not be <a href="https://developer.gnome.org/glib/unstable/glib-Standar
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.44.7"></a><h4>Returns</h4>
+<a name="gtk-type-unique.returns"></a><h4>Returns</h4>
 <p>the new <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1558,8 +1530,8 @@ must also not be <a href="https://developer.gnome.org/glib/unstable/glib-Standar
 Returns a pointer to the name of a type, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it has none.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.45.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1573,9 +1545,8 @@ Returns a pointer to the name of a type, or <a href="https://developer.gnome.org
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.45.7"></a><h4>Returns</h4>
+<a name="gtk-type-name.returns"></a><h4>Returns</h4>
 <p>a pointer to the name of a type, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it has none.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1588,8 +1559,8 @@ Returns a pointer to the name of a type, or <a href="https://developer.gnome.org
 Gets the internal representation of a type, given its name.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.46.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-from-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1603,9 +1574,8 @@ Gets the internal representation of a type, given its name.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.46.7"></a><h4>Returns</h4>
+<a name="gtk-type-from-name.returns"></a><h4>Returns</h4>
 <p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1618,8 +1588,8 @@ Gets the internal representation of a type, given its name.
 Returns the parent type of a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.47.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-parent.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1633,9 +1603,8 @@ Returns the parent type of a <a class="link" href="gtk2-Types.html#GtkType" titl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.47.7"></a><h4>Returns</h4>
+<a name="gtk-type-parent.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> of the parent.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1659,8 +1628,8 @@ any trouble identifying <em class="parameter"><code>type</code></em>
 .  Initializes the class if necessary.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.48.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1674,9 +1643,8 @@ any trouble identifying <em class="parameter"><code>type</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.48.7"></a><h4>Returns</h4>
+<a name="gtk-type-class.returns"></a><h4>Returns</h4>
 <p> pointer to the class.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1692,8 +1660,8 @@ out of the type's memory chunk if there is a memory chunk.  The object
 has all the proper initializers called.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.49.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1707,9 +1675,8 @@ has all the proper initializers called.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.49.7"></a><h4>Returns</h4>
+<a name="gtk-type-new.returns"></a><h4>Returns</h4>
 <p>pointer to a <a class="link" href="gtk2-Types.html#GtkTypeObject" title="GtkTypeObject"><span class="type">GtkTypeObject</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1723,8 +1690,8 @@ Looks in the type hierarchy to see if <em class="parameter"><code>type</code></e
 ancestors.  Do so with a simple lookup, not a loop.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.50.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-is-a.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1745,11 +1712,10 @@ ancestors.  Do so with a simple lookup, not a loop.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.50.7"></a><h4>Returns</h4>
+<a name="gtk-type-is-a.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>type</code></em>
 is a <em class="parameter"><code>is_a_type</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1762,8 +1728,8 @@ gtk_type_enum_get_values (<em class="parameter"><code><a class="link" href="gtk2
 If <em class="parameter"><code>enum_type</code></em> has values, then return a pointer to all of them.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.51.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-enum-get-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1777,9 +1743,8 @@ If <em class="parameter"><code>enum_type</code></em> has values, then return a p
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.51.7"></a><h4>Returns</h4>
+<a name="gtk-type-enum-get-values.returns"></a><h4>Returns</h4>
 <p><a class="link" href="gtk2-Types.html#GtkEnumValue" title="GtkEnumValue"><span class="type">GtkEnumValue</span></a>*</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1792,8 +1757,8 @@ gtk_type_flags_get_values (<em class="parameter"><code><a class="link" href="gtk
 If <em class="parameter"><code>flags_type</code></em> has values, then return a pointer to all of them.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.52.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-flags-get-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1807,9 +1772,8 @@ If <em class="parameter"><code>flags_type</code></em> has values, then return a 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.52.7"></a><h4>Returns</h4>
+<a name="gtk-type-flags-get-values.returns"></a><h4>Returns</h4>
 <p><a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="type">GtkFlagValue</span></a>*</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1823,8 +1787,8 @@ gtk_type_enum_find_value (<em class="parameter"><code><a class="link" href="gtk2
 Returns a pointer to one of <em class="parameter"><code>enum_type</code></em>'s <a href="gtk2-Types.html#GtkEnumValue"><span class="type">GtkEnumValues</span></a>'s whose name (or nickname) matches <em class="parameter"><code>value_name</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.53.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-enum-find-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1845,9 +1809,8 @@ Returns a pointer to one of <em class="parameter"><code>enum_type</code></em>'s 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.53.7"></a><h4>Returns</h4>
+<a name="gtk-type-enum-find-value.returns"></a><h4>Returns</h4>
 <p><a class="link" href="gtk2-Types.html#GtkEnumValue" title="GtkEnumValue"><span class="type">GtkEnumValue</span></a>*</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1861,8 +1824,8 @@ gtk_type_flags_find_value (<em class="parameter"><code><a class="link" href="gtk
 Returns a pointer to one of <em class="parameter"><code>flag_type</code></em>'s <a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="type">GtkFlagValue</span></a>'s whose name (or nickname) matches <em class="parameter"><code>value_name</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.19.7.54.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-type-flags-find-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1883,9 +1846,8 @@ Returns a pointer to one of <em class="parameter"><code>flag_type</code></em>'s 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.19.7.54.7"></a><h4>Returns</h4>
+<a name="gtk-type-flags-find-value.returns"></a><h4>Returns</h4>
 <p><a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="type">GtkFlagValue</span></a>*</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -1912,6 +1874,32 @@ information about the type is held in a private struct named
 <a class="link" href="gtk2-Types.html#GtkFundamentalType" title="GtkFundamentalType"><span class="type">GtkFundamentalType</span></a> is an enumerated type which lists all the possible
 fundamental types (e.g. <span class="type">char</span>, <span class="type">uchar</span>, <span class="type">int</span>,
 <span class="type">long</span>, <span class="type">float</span>, etc).
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GTK-TYPE-FUNDAMENTAL-LAST:CAPS"></a><h3>GTK_TYPE_FUNDAMENTAL_LAST</h3>
+<pre class="programlisting">#define GTK_TYPE_FUNDAMENTAL_LAST        (G_TYPE_LAST_RESERVED_FUNDAMENTAL - 1)
+</pre>
+<div class="warning">
+<p><code class="literal">GTK_TYPE_FUNDAMENTAL_LAST</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <span class="type">G_TYPE_LAST_RESERVED_FUNDAMENTAL</span> - 1 instead.</p>
+</div>
+<p>
+The highest-numbered structured or flat enumerated type value.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GTK-TYPE-FUNDAMENTAL-MAX:CAPS"></a><h3>GTK_TYPE_FUNDAMENTAL_MAX</h3>
+<pre class="programlisting">#define GTK_TYPE_FUNDAMENTAL_MAX         (G_TYPE_FUNDAMENTAL_MAX)
+</pre>
+<div class="warning">
+<p><code class="literal">GTK_TYPE_FUNDAMENTAL_MAX</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-FUNDAMENTAL-MAX:CAPS"><span class="type">G_TYPE_FUNDAMENTAL_MAX</span></a> instead.</p>
+</div>
+<p>
+The maximum fundamental enumerated type value.
 </p>
 </div>
 <hr>
@@ -2132,7 +2120,6 @@ nickname.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

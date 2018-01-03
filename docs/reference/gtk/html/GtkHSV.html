@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkHSV</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkHSV: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkColorSelection.html" title="GtkColorSelection">
 <link rel="next" href="GtkFileChooser.html" title="GtkFileChooser">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkHSV.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -111,7 +111,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkHSV.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -121,19 +121,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkHSV.html#GtkHSV-changed" title="The “changed” signal">changed</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkHSV.html#GtkHSV-move" title="The “move” signal">move</a></td>
-<td class="signal_flags">Action</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkHSV.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -146,7 +146,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkHSV.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -182,11 +182,10 @@ saturation.
 gtk_hsv_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new HSV color selector.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.2.5"></a><h4>Returns</h4>
+<a name="gtk-hsv-new.returns"></a><h4>Returns</h4>
 <p> A newly-created HSV color selector.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -199,8 +198,8 @@ gtk_hsv_set_color (<em class="parameter"><code><a class="link" href="GtkHSV.html
 <p>Sets the current color in an HSV color selector.
 Color component values must be in the [0.0, 1.0] range.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-hsv-set-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -230,7 +229,7 @@ Color component values must be in the [0.0, 1.0] range.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -243,8 +242,8 @@ gtk_hsv_get_color (<em class="parameter"><code><a class="link" href="GtkHSV.html
 <p>Queries the current color in an HSV color selector.
 Returned values will be in the [0.0, 1.0] range.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-hsv-get-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -274,7 +273,7 @@ Returned values will be in the [0.0, 1.0] range.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -285,8 +284,8 @@ gtk_hsv_set_metrics (<em class="parameter"><code><a class="link" href="GtkHSV.ht
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ring_width</code></em>);</pre>
 <p>Sets the size and ring width of an HSV color selector.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-hsv-set-metrics.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -311,7 +310,7 @@ gtk_hsv_set_metrics (<em class="parameter"><code><a class="link" href="GtkHSV.ht
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -322,8 +321,8 @@ gtk_hsv_get_metrics (<em class="parameter"><code><a class="link" href="GtkHSV.ht
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *ring_width</code></em>);</pre>
 <p>Queries the size and ring width of an HSV color selector.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-hsv-get-metrics.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -348,7 +347,7 @@ gtk_hsv_get_metrics (<em class="parameter"><code><a class="link" href="GtkHSV.ht
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -360,8 +359,8 @@ changes are being made to its value, for example, when the user is
 adjusting the value with the mouse. This function queries whether 
 the HSV color selector is being adjusted or not.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-hsv-is-adjusting.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -375,13 +374,12 @@ the HSV color selector is being adjusted or not.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.7.6"></a><h4>Returns</h4>
+<a name="gtk-hsv-is-adjusting.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if clients can ignore changes to the color value,
 since they may be transitory, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if they should consider
 the color value status to be final.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -397,8 +395,8 @@ gtk_hsv_to_rgb (<em class="parameter"><code><a href="https://developer.gnome.org
 Input values must be in the [0.0, 1.0] range; 
 output values will be in the same range.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-hsv-to-rgb.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -438,7 +436,7 @@ output values will be in the same range.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -454,8 +452,8 @@ gtk_rgb_to_hsv (<em class="parameter"><code><a href="https://developer.gnome.org
 Input values must be in the [0.0, 1.0] range;
 output values will be in the same range.</p>
 <div class="refsect3">
-<a name="id-1.4.12.5.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rgb-to-hsv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -495,7 +493,7 @@ output values will be in the same range.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -517,8 +515,8 @@ user_function (<a class="link" href="GtkHSV.html" title="GtkHSV"><span class="ty
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.5.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkHSV-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -538,7 +536,7 @@ user_function (<a class="link" href="GtkHSV.html" title="GtkHSV"><span class="ty
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -550,8 +548,8 @@ user_function (<a class="link" href="GtkHSV.html" title="GtkHSV"><span class="ty
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.5.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkHSV-move.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -571,7 +569,7 @@ user_function (<a class="link" href="GtkHSV.html" title="GtkHSV"><span class="ty
 </tbody>
 </table></div>
 </div>
-<p>Flags: Action</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -599,7 +597,6 @@ user_function (<a class="link" href="GtkHSV.html" title="GtkHSV"><span class="ty
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

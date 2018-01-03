@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Accelerator Groups</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Accelerator Groups: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-General.html" title="Main loop and Events">
 <link rel="next" href="gtk2-Accelerator-Maps.html" title="Accelerator Maps">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-Keyboard-Accelerators.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -148,7 +148,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="returnvalue">GdkModifierType</span></a>
+<a href="../html/gdk2-Windows.html#GdkModifierType"><span class="returnvalue">GdkModifierType</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accel-group-get-modifier-mask" title="gtk_accel_group_get_modifier_mask ()">gtk_accel_group_get_modifier_mask</a> <span class="c_punctuation">()</span>
@@ -231,7 +231,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Keyboard-Accelerators.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -244,7 +244,7 @@
 <td class="property_flags">Read</td>
 </tr>
 <tr>
-<td class="property_type"><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a></td>
+<td class="property_type"><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a></td>
 <td class="property_name"><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup--modifier-mask" title="The “modifier-mask” property">modifier-mask</a></td>
 <td class="property_flags">Read</td>
 </tr>
@@ -253,7 +253,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Keyboard-Accelerators.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -263,19 +263,19 @@
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup-accel-activate" title="The “accel-activate” signal">accel-activate</a></td>
-<td class="signal_flags">Has Details</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS">Has Details</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup-accel-changed" title="The “accel-changed” signal">accel-changed</a></td>
-<td class="signal_flags">Has Details</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS">Has Details</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <a name="GtkAccelGroup"></a><div class="refsect1">
 <a name="gtk2-Keyboard-Accelerators.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -302,7 +302,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Keyboard-Accelerators.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkAccelGroup
 </pre>
 </div>
@@ -336,9 +336,19 @@ and mnemonics, of course.</p>
 gtk_accel_group_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.2.5"></a><h4>Returns</h4>
-<p>a new <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> object</p>
-<p></p>
+<a name="gtk-accel-group-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>a new <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
 </div>
 </div>
 <hr>
@@ -347,7 +357,7 @@ gtk_accel_group_new (<em class="parameter"><code><span class="type">void</span><
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_accel_group_connect (<em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> accel_key</code></em>,
-                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>,
+                         <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>,
                          <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkAccelFlags" title="enum GtkAccelFlags"><span class="type">GtkAccelFlags</span></a> accel_flags</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Closures.html#GClosure"><span class="type">GClosure</span></a> *closure</code></em>);</pre>
 <p>Installs an accelerator in this group. When <em class="parameter"><code>accel_group</code></em>
@@ -363,8 +373,8 @@ match those of this connection.</p>
 <p>Note that, due to implementation details, a single closure can only be
 connected to one accelerator group.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-connect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -424,8 +434,8 @@ for the path.</p>
 pass a static string, you can save some memory by interning it first with 
 <a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#g-intern-static-string"><code class="function">g_intern_static_string()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-connect-by-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -456,15 +466,9 @@ pass a static string, you can save some memory by interning it first with
 <a name="GtkAccelGroupActivate"></a><h3>GtkAccelGroupActivate ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 <span class="c_punctuation">(</span>*GtkAccelGroupActivate<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>,
-                          <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *acceleratable</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *acceleratable</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> keyval</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifier</code></em>);</pre>
-<p>
-</p>
-<div class="refsect3">
-<a name="id-1.3.3.11.5.5"></a><h4>Returns</h4>
-<p></p>
-</div>
+                          <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifier</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -473,11 +477,7 @@ pass a static string, you can save some memory by interning it first with
 <span class="c_punctuation">(</span>*GtkAccelGroupFindFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelKey" title="struct GtkAccelKey"><span class="type">GtkAccelKey</span></a> *key</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Closures.html#GClosure"><span class="type">GClosure</span></a> *closure</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
-<div class="refsect3">
-<a name="id-1.3.3.11.6.4"></a><h4>Returns</h4>
-<p></p>
-</div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -490,8 +490,8 @@ gtk_accel_group_disconnect (<em class="parameter"><code><a class="link" href="gt
 <p>Since 2.20 <em class="parameter"><code>closure</code></em>
  can be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-disconnect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -509,13 +509,13 @@ gtk_accel_group_disconnect (<em class="parameter"><code><a class="link" href="gt
 to remove all closures. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the closure was found and got disconnected</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="id-1.3.3.11.7.7"></a><h4>Returns</h4>
-<p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the closure was found and got disconnected</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -524,12 +524,12 @@ to remove all closures. </p></td>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_accel_group_disconnect_key (<em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> accel_key</code></em>,
-                                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>);</pre>
+                                <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>);</pre>
 <p>Removes an accelerator previously installed through
 <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accel-group-connect" title="gtk_accel_group_connect ()"><code class="function">gtk_accel_group_connect()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-disconnect-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -551,14 +551,14 @@ gtk_accel_group_disconnect_key (<em class="parameter"><code><a class="link" href
 <td class="parameter_description"><p>modifier combination of the accelerator</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there was an accelerator which could be
+removed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="id-1.3.3.11.8.6"></a><h4>Returns</h4>
-<p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there was an accelerator which could be
-removed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -567,15 +567,15 @@ removed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros
 <pre class="programlisting"><span class="returnvalue">GtkAccelGroupEntry</span> *
 gtk_accel_group_query (<em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> accel_key</code></em>,
-                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>,
+                       <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *n_entries</code></em>);</pre>
 <p>Queries an accelerator group for all entries matching <em class="parameter"><code>accel_key</code></em>
  and 
 <em class="parameter"><code>accel_mods</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-query.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -602,14 +602,14 @@ gtk_accel_group_query (<em class="parameter"><code><a class="link" href="gtk2-Ke
 <td class="parameter_description"><p>        location to return the number of entries found, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>          an array of <em class="parameter"><code>n_entries</code></em>
+<span class="type">GtkAccelGroupEntry</span> elements, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. The array is owned by GTK+ and must not be freed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="id-1.3.3.11.9.6"></a><h4>Returns</h4>
-<p>          an array of <em class="parameter"><code>n_entries</code></em>
-<span class="type">GtkAccelGroupEntry</span> elements, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. The array is owned by GTK+ and must not be freed. </p>
-<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -618,9 +618,9 @@ gtk_accel_group_query (<em class="parameter"><code><a class="link" href="gtk2-Ke
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_accel_group_activate (<em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> accel_quark</code></em>,
-                          <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *acceleratable</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *acceleratable</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> accel_key</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>);</pre>
+                          <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>);</pre>
 <p>Finds the first accelerator in <em class="parameter"><code>accel_group</code></em>
  
 that matches <em class="parameter"><code>accel_key</code></em>
@@ -628,8 +628,8 @@ that matches <em class="parameter"><code>accel_key</code></em>
 , and
 activates it.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -648,7 +648,7 @@ activates it.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>acceleratable</p></td>
-<td class="parameter_description"><p>the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>, usually a <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a>, on which
+<td class="parameter_description"><p>the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>, usually a <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a>, on which
 to activate the accelerator.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
@@ -666,9 +666,8 @@ to activate the accelerator.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.11.10.6"></a><h4>Returns</h4>
+<a name="gtk-accel-group-activate.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an accelerator was activated and handled this keypress</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -685,8 +684,8 @@ within it to be changed during runtime. Refer to
 <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accel-group-unlock" title="gtk_accel_group_unlock ()"><code class="function">gtk_accel_group_unlock()</code></a> has been called an equivalent number
 of times.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.11.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-lock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -708,8 +707,8 @@ gtk_accel_group_unlock (<em class="parameter"><code><a class="link" href="gtk2-K
 <p>Undoes the last call to <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accel-group-lock" title="gtk_accel_group_lock ()"><code class="function">gtk_accel_group_lock()</code></a> on this <em class="parameter"><code>accel_group</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-unlock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -731,8 +730,8 @@ gtk_accel_group_get_is_locked (<em class="parameter"><code><a class="link" href=
 <p>Locks are added and removed using <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accel-group-lock" title="gtk_accel_group_lock ()"><code class="function">gtk_accel_group_lock()</code></a> and
 <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accel-group-unlock" title="gtk_accel_group_unlock ()"><code class="function">gtk_accel_group_unlock()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-get-is-locked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -746,13 +745,12 @@ gtk_accel_group_get_is_locked (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.11.13.6"></a><h4>Returns</h4>
+<a name="gtk-accel-group-get-is-locked.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there are 1 or more locks on the <em class="parameter"><code>accel_group</code></em>
 ,
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -763,38 +761,40 @@ gtk_accel_group_from_accel_closure (<em class="parameter"><code><a href="https:/
  is connected; 
 see <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accel-group-connect" title="gtk_accel_group_connect ()"><code class="function">gtk_accel_group_connect()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-from-accel-closure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>closure</p></td>
 <td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-Closures.html#GClosure"><span class="type">GClosure</span></a></p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p> the <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> to which <em class="parameter"><code>closure</code></em>
+is connected, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="id-1.3.3.11.14.6"></a><h4>Returns</h4>
-<p> the <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> to which <em class="parameter"><code>closure</code></em>
-is connected, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-accel-group-get-modifier-mask"></a><h3>gtk_accel_group_get_modifier_mask ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="returnvalue">GdkModifierType</span></a>
+<pre class="programlisting"><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="returnvalue">GdkModifierType</span></a>
 gtk_accel_group_get_modifier_mask (<em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
-<p>Gets a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> representing the mask for this
+<p>Gets a <a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> representing the mask for this
 <em class="parameter"><code>accel_group</code></em>
-. For example, <span class="type">GDK_CONTROL_MASK</span>, <span class="type">GDK_SHIFT_MASK</span>, etc.</p>
+. For example, <a href="../html/gdk2-Windows.html#GDK-CONTROL-MASK:CAPS"><span class="type">GDK_CONTROL_MASK</span></a>, <a href="../html/gdk2-Windows.html#GDK-SHIFT-MASK:CAPS"><span class="type">GDK_SHIFT_MASK</span></a>, etc.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-get-modifier-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -808,19 +808,18 @@ gtk_accel_group_get_modifier_mask (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.11.15.6"></a><h4>Returns</h4>
+<a name="gtk-accel-group-get-modifier-mask.returns"></a><h4>Returns</h4>
 <p> the modifier mask for this accel group.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-accel-groups-activate"></a><h3>gtk_accel_groups_activate ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-gtk_accel_groups_activate (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *object</code></em>,
+gtk_accel_groups_activate (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> accel_key</code></em>,
-                           <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>);</pre>
+                           <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accel_mods</code></em>);</pre>
 <p>Finds the first accelerator in any <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> attached
 to <em class="parameter"><code>object</code></em>
  that matches <em class="parameter"><code>accel_key</code></em>
@@ -828,8 +827,8 @@ to <em class="parameter"><code>object</code></em>
 , and
 activates that accelerator.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-groups-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -838,7 +837,7 @@ activates that accelerator.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>object</p></td>
-<td class="parameter_description"><p>the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>, usually a <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a>, on which
+<td class="parameter_description"><p>the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>, usually a <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a>, on which
 to activate the accelerator.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
@@ -856,21 +855,20 @@ to activate the accelerator.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.11.16.6"></a><h4>Returns</h4>
+<a name="gtk-accel-groups-activate.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an accelerator was activated and handled this keypress</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-accel-groups-from-object"></a><h3>gtk_accel_groups_from_object ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
-gtk_accel_groups_from_object (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *object</code></em>);</pre>
+gtk_accel_groups_from_object (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object</code></em>);</pre>
 <p>Gets a list of all accel groups which are attached to <em class="parameter"><code>object</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-groups-from-object.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -878,13 +876,13 @@ gtk_accel_groups_from_object (<em class="parameter"><code><a href="https://devel
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>object</p></td>
-<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>, usually a <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>, usually a <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.11.17.6"></a><h4>Returns</h4>
+<a name="gtk-accel-groups-from-object.returns"></a><h4>Returns</h4>
 <p> a list of all accel groups which are attached to <em class="parameter"><code>object</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkAccelGroup][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -901,8 +899,8 @@ gtk_accel_group_find (<em class="parameter"><code><a class="link" href="gtk2-Key
 <em class="parameter"><code>find_func</code></em>
  returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> and returns its <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelKey" title="struct GtkAccelKey"><span class="type">GtkAccelKey</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accel-group-find.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -926,15 +924,15 @@ with</p></td>
 </p></td>
 <td class="parameter_annotations"> </td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p> the key of the first entry passing
+<em class="parameter"><code>find_func</code></em>
+. The key is owned by GTK+ and must not be freed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="id-1.3.3.11.18.6"></a><h4>Returns</h4>
-<p> the key of the first entry passing
-<em class="parameter"><code>find_func</code></em>
-. The key is owned by GTK+ and must not be freed. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -942,15 +940,15 @@ with</p></td>
 <a name="gtk-accelerator-valid"></a><h3>gtk_accelerator_valid ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_accelerator_valid (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> keyval</code></em>,
-                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifiers</code></em>);</pre>
+                       <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifiers</code></em>);</pre>
 <p>Determines whether a given keyval and modifier mask constitute
 a valid keyboard accelerator. For example, the <span class="type">GDK_a</span> keyval
-plus <span class="type">GDK_CONTROL_MASK</span> is valid - this is a "Ctrl+a" accelerator.
+plus <a href="../html/gdk2-Windows.html#GDK-CONTROL-MASK:CAPS"><span class="type">GDK_CONTROL_MASK</span></a> is valid - this is a "Ctrl+a" accelerator.
 But, you can't, for instance, use the <span class="type">GDK_Control_L</span> keyval
 as an accelerator.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accelerator-valid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -967,13 +965,13 @@ as an accelerator.</p>
 <td class="parameter_description"><p>modifier mask</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the accelerator is valid</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="id-1.3.3.11.19.6"></a><h4>Returns</h4>
-<p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the accelerator is valid</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -982,13 +980,13 @@ as an accelerator.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_accelerator_parse (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *accelerator</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *accelerator_key</code></em>,
-                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> *accelerator_mods</code></em>);</pre>
+                       <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> *accelerator_mods</code></em>);</pre>
 <p>Parses a string representing an accelerator. The
 format looks like "&lt;Control&gt;a" or "&lt;Shift&gt;&lt;Alt&gt;F1" or
 "&lt;Release&gt;z" (the last one is for key release).
 The parser is fairly liberal and allows lower or upper case,
 and also abbreviations such as "&lt;Ctl&gt;" and "&lt;Ctrl&gt;".
-Key names are parsed using <a href="http://library.gnome.org/devel/gdk3/gdk2-Keyboard-Handling.html#gdk-keyval-from-name"><code class="function">gdk_keyval_from_name()</code></a>. For character keys the
+Key names are parsed using <a href="../html/gdk2-Keyboard-Handling.html#gdk-keyval-from-name"><code class="function">gdk_keyval_from_name()</code></a>. For character keys the
 name is not the symbol, but the lowercase name, e.g. one would use
 "&lt;Ctrl&gt;minus" instead of "&lt;Ctrl&gt;-".</p>
 <p>If the parse fails, <em class="parameter"><code>accelerator_key</code></em>
@@ -996,8 +994,8 @@ name is not the symbol, but the lowercase name, e.g. one would use
  will
 be set to 0 (zero).</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accelerator-parse.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1028,16 +1026,16 @@ be set to 0 (zero).</p>
 <a name="gtk-accelerator-name"></a><h3>gtk_accelerator_name ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 gtk_accelerator_name (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> accelerator_key</code></em>,
-                      <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accelerator_mods</code></em>);</pre>
+                      <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accelerator_mods</code></em>);</pre>
 <p>Converts an accelerator keyval and modifier mask
 into a string parseable by <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accelerator-parse" title="gtk_accelerator_parse ()"><code class="function">gtk_accelerator_parse()</code></a>.
-For example, if you pass in <span class="type">GDK_q</span> and <span class="type">GDK_CONTROL_MASK</span>,
+For example, if you pass in <span class="type">GDK_q</span> and <a href="../html/gdk2-Windows.html#GDK-CONTROL-MASK:CAPS"><span class="type">GDK_CONTROL_MASK</span></a>,
 this function returns "&lt;Control&gt;q". </p>
 <p>If you need to display accelerators in the user interface,
 see <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accelerator-get-label" title="gtk_accelerator_get_label ()"><code class="function">gtk_accelerator_get_label()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accelerator-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1058,9 +1056,8 @@ see <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accelerator-get-la
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.11.21.7"></a><h4>Returns</h4>
+<a name="gtk-accelerator-name.returns"></a><h4>Returns</h4>
 <p> a newly-allocated accelerator name</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1068,12 +1065,12 @@ see <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accelerator-get-la
 <a name="gtk-accelerator-get-label"></a><h3>gtk_accelerator_get_label ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 gtk_accelerator_get_label (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> accelerator_key</code></em>,
-                           <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accelerator_mods</code></em>);</pre>
+                           <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> accelerator_mods</code></em>);</pre>
 <p>Converts an accelerator keyval and modifier mask into a string 
 which can be used to represent the accelerator to the user.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accelerator-get-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1094,21 +1091,20 @@ which can be used to represent the accelerator to the user.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.11.22.6"></a><h4>Returns</h4>
+<a name="gtk-accelerator-get-label.returns"></a><h4>Returns</h4>
 <p> a newly-allocated string representing the accelerator.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-accelerator-set-default-mod-mask"></a><h3>gtk_accelerator_set_default_mod_mask ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_accelerator_set_default_mod_mask (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> default_mod_mask</code></em>);</pre>
+gtk_accelerator_set_default_mod_mask (<em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> default_mod_mask</code></em>);</pre>
 <p>Sets the modifiers that will be considered significant for keyboard
-accelerators. The default mod mask is <span class="type">GDK_CONTROL_MASK</span> |
-<span class="type">GDK_SHIFT_MASK</span> | <span class="type">GDK_MOD1_MASK</span> | <span class="type">GDK_SUPER_MASK</span> | 
-<span class="type">GDK_HYPER_MASK</span> | <span class="type">GDK_META_MASK</span>, that is, Control, Shift, Alt, 
+accelerators. The default mod mask is <a href="../html/gdk2-Windows.html#GDK-CONTROL-MASK:CAPS"><span class="type">GDK_CONTROL_MASK</span></a> |
+<a href="../html/gdk2-Windows.html#GDK-SHIFT-MASK:CAPS"><span class="type">GDK_SHIFT_MASK</span></a> | <a href="../html/gdk2-Windows.html#GDK-MOD1-MASK:CAPS"><span class="type">GDK_MOD1_MASK</span></a> | <a href="../html/gdk2-Windows.html#GDK-SUPER-MASK:CAPS"><span class="type">GDK_SUPER_MASK</span></a> | 
+<a href="../html/gdk2-Windows.html#GDK-HYPER-MASK:CAPS"><span class="type">GDK_HYPER_MASK</span></a> | <a href="../html/gdk2-Windows.html#GDK-META-MASK:CAPS"><span class="type">GDK_META_MASK</span></a>, that is, Control, Shift, Alt, 
 Super, Hyper and Meta. Other modifiers will by default be ignored 
 by <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a>.
 You must include at least the three modifiers Control, Shift
@@ -1116,8 +1112,8 @@ and Alt in any value you pass to this function.</p>
 <p>The default mod mask should be changed on application startup,
 before using any accelerator groups.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-accelerator-set-default-mod-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1138,9 +1134,19 @@ before using any accelerator groups.</p>
 gtk_accelerator_get_default_mod_mask (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Gets the value set by <a class="link" href="gtk2-Keyboard-Accelerators.html#gtk-accelerator-set-default-mod-mask" title="gtk_accelerator_set_default_mod_mask ()"><code class="function">gtk_accelerator_set_default_mod_mask()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.11.24.5"></a><h4>Returns</h4>
-<p>the default accelerator modifier mask</p>
-<p></p>
+<a name="gtk-accelerator-get-default-mod-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the default accelerator modifier mask</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
 </div>
 </div>
 </div>
@@ -1159,9 +1165,8 @@ gtk_accelerator_get_default_mod_mask (<em class="parameter"><code><span class="t
 <div class="warning"><p><code class="literal">gtk_accel_group_ref</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.3.12.3.6"></a><h4>Returns</h4>
+<a name="gtk-accel-group-ref.returns"></a><h4>Returns</h4>
 <p> the accel group that was passed in</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1181,8 +1186,6 @@ gtk_accelerator_get_default_mod_mask (<em class="parameter"><code><span class="t
   guint           accel_flags : 16;
 };
 </pre>
-<p>
-</p>
 </div>
 </div>
 <div class="refsect1">
@@ -1197,7 +1200,7 @@ gtk_accelerator_get_default_mod_mask (<em class="parameter"><code><span class="t
 <hr>
 <div class="refsect2">
 <a name="GtkAccelGroup--modifier-mask"></a><h3>The <code class="literal">“modifier-mask”</code> property</h3>
-<pre class="programlisting">  “modifier-mask”            <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a></pre>
+<pre class="programlisting">  “modifier-mask”            <a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a></pre>
 <p>Modifier Mask.</p>
 <p>Flags: Read</p>
 <p>Default value: GDK_SHIFT_MASK | GDK_CONTROL_MASK | GDK_MOD1_MASK | GDK_SUPER_MASK | GDK_HYPER_MASK | GDK_META_MASK</p>
@@ -1209,15 +1212,15 @@ gtk_accelerator_get_default_mod_mask (<em class="parameter"><code><span class="t
 <a name="GtkAccelGroup-accel-activate"></a><h3>The <code class="literal">“accel-activate”</code> signal</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 user_function (<a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a>  *accel_group,
-               <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>        *acceleratable,
+               <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>        *acceleratable,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>           keyval,
-               <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifier,
+               <a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifier,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
 <p>The accel-activate signal is an implementation detail of
 <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> and not meant to be used by applications.</p>
 <div class="refsect3">
-<a name="id-1.3.3.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkAccelGroup-accel-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1253,11 +1256,10 @@ user_function (<a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGro
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.3.14.2.6"></a><h4>Returns</h4>
+<a name="GtkAccelGroup-accel-activate.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the accelerator was activated</p>
-<p></p>
 </div>
-<p>Flags: Has Details</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS">Has Details</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1265,7 +1267,7 @@ user_function (<a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGro
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a>  *accel_group,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a>           keyval,
-               <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifier,
+               <a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifier,
                <a href="https://developer.gnome.org/gobject/unstable/gobject-Closures.html#GClosure"><span class="type">GClosure</span></a>       *accel_closure,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
 <p>The accel-changed signal is emitted when a <span class="type">GtkAccelGroupEntry</span>
@@ -1277,8 +1279,8 @@ accelerator should connect to this signal, and rebuild
 their visual representation if the <em class="parameter"><code>accel_closure</code></em>
  is theirs.</p>
 <div class="refsect3">
-<a name="id-1.3.3.14.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkAccelGroup-accel-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1313,7 +1315,7 @@ their visual representation if the <em class="parameter"><code>accel_closure</co
 </tbody>
 </table></div>
 </div>
-<p>Flags: Has Details</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS">Has Details</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1323,7 +1325,6 @@ their visual representation if the <em class="parameter"><code>accel_closure</co
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

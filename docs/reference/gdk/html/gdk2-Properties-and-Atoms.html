@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Properties and Atoms</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Properties and Atoms: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Drag-and-Drop.html" title="Drag and Drop">
 <link rel="next" href="gdk2-Threads.html" title="Threads">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Properties-and-Atoms.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -192,7 +192,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Properties-and-Atoms.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -262,8 +262,8 @@ data commonly stored in X window properties.
 Converts a <a class="link" href="gdk2-Properties-and-Atoms.html#GdkAtom" title="GdkAtom"><span class="type">GdkAtom</span></a> into a pointer type.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GDK-ATOM-TO-POINTER.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -287,8 +287,8 @@ Extracts a <a class="link" href="gdk2-Properties-and-Atoms.html#GdkAtom" title="
 stored in the pointer with <a class="link" href="gdk2-Properties-and-Atoms.html#GDK-ATOM-TO-POINTER:CAPS" title="GDK_ATOM_TO_POINTER()"><code class="function">GDK_ATOM_TO_POINTER()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GDK-POINTER-TO-ATOM.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -319,8 +319,8 @@ the current local. (The elements of the array represent
 the nul-separated elements of the original text string.)
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-property-to-text-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -361,11 +361,10 @@ array should be freed using <a class="link" href="gdk2-Properties-and-Atoms.html
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.4.7"></a><h4>Returns</h4>
+<a name="gdk-text-property-to-text-list.returns"></a><h4>Returns</h4>
 <p>the number of strings stored in <em class="parameter"><code>list</code></em>
 , or 0,
 if the conversion failed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -381,15 +380,15 @@ gdk_text_property_to_text_list_for_display
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> ***list</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_text_property_to_text_list_for_display</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
-<p>Use <a href="http://developer.gnome.org/gdk2/gdk3-X-Window-System-Interaction.html#gdk-x11-display-text-property-to-text-list"><code class="function">gdk_x11_display_text_property_to_text_list()</code></a></p>
+<p>Use <a href="http://developer.gnome.org/gdk3/gdk3-X-Window-System-Interaction.html#gdk-x11-display-text-property-to-text-list"><code class="function">gdk_x11_display_text_property_to_text_list()</code></a></p>
 </div>
 <p>Convert a text string from the encoding as it is stored 
 in a property into an array of strings in the encoding of
 the current locale. (The elements of the array represent the
 nul-separated elements of the original text string.)</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.5.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-property-to-text-list-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -434,12 +433,11 @@ freed using <a class="link" href="gdk2-Properties-and-Atoms.html#gdk-free-text-l
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.5.8"></a><h4>Returns</h4>
+<a name="gdk-text-property-to-text-list-for-display.returns"></a><h4>Returns</h4>
 <p> the number of strings stored in list, or 0,
 if the conversion failed. </p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -452,8 +450,8 @@ Frees the array of strings created by
 <a class="link" href="gdk2-Properties-and-Atoms.html#gdk-text-property-to-text-list" title="gdk_text_property_to_text_list ()"><code class="function">gdk_text_property_to_text_list()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-free-text-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -482,8 +480,8 @@ gdk_text_property_to_utf8_list (<em class="parameter"><code><a class="link" href
 <p>Convert a text property in the giving encoding to
 a list of UTF-8 strings.</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-property-to-utf8-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -521,10 +519,9 @@ list should be freed with <a href="https://developer.gnome.org/glib/unstable/gli
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.7.7"></a><h4>Returns</h4>
+<a name="gdk-text-property-to-utf8-list.returns"></a><h4>Returns</h4>
 <p> the number of strings in the resulting
 list.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -541,8 +538,8 @@ gdk_text_property_to_utf8_list_for_display
 <p>Converts a text property in the given encoding to
 a list of UTF-8 strings.</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-property-to-utf8-list-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -585,12 +582,11 @@ list should be freed with <a href="https://developer.gnome.org/glib/unstable/gli
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.8.6"></a><h4>Returns</h4>
+<a name="gdk-text-property-to-utf8-list-for-display.returns"></a><h4>Returns</h4>
 <p> the number of strings in the resulting
 list.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -607,8 +603,8 @@ Converts a string from the encoding of the current locale
 into a form suitable for storing in a window property.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-string-to-compound-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -645,9 +641,8 @@ in items.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.9.7"></a><h4>Returns</h4>
+<a name="gdk-string-to-compound-text.returns"></a><h4>Returns</h4>
 <p>0 upon sucess, non-zero upon failure.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -663,13 +658,13 @@ gdk_string_to_compound_text_for_display
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *length</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_string_to_compound_text_for_display</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
-<p>Use <a href="http://developer.gnome.org/gdk2/gdk3-X-Window-System-Interaction.html#gdk-x11-display-string-to-compound-text"><code class="function">gdk_x11_display_string_to_compound_text()</code></a></p>
+<p>Use <a href="http://developer.gnome.org/gdk3/gdk3-X-Window-System-Interaction.html#gdk-x11-display-string-to-compound-text"><code class="function">gdk_x11_display_string_to_compound_text()</code></a></p>
 </div>
 <p>Convert a string from the encoding of the current 
 locale into a form suitable for storing in a window property.</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.10.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-string-to-compound-text-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -712,11 +707,10 @@ locale into a form suitable for storing in a window property.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.10.8"></a><h4>Returns</h4>
+<a name="gdk-string-to-compound-text-for-display.returns"></a><h4>Returns</h4>
 <p> 0 upon success, non-zero upon failure. </p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -728,8 +722,8 @@ gdk_free_compound_text (<em class="parameter"><code><a href="https://developer.g
 Frees the data returned from <a class="link" href="gdk2-Properties-and-Atoms.html#gdk-string-to-compound-text" title="gdk_string_to_compound_text ()"><code class="function">gdk_string_to_compound_text()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-free-compound-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -754,8 +748,8 @@ as a STRING. The representation of characters not in STRING
 is not specified; it may be as pseudo-escape sequences
 \x{ABCD}, or it may be in some other form of approximation.</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-utf8-to-string-target.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -769,12 +763,11 @@ is not specified; it may be as pseudo-escape sequences
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.12.6"></a><h4>Returns</h4>
+<a name="gdk-utf8-to-string-target.returns"></a><h4>Returns</h4>
 <p> the newly-allocated string, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
 conversion failed. (It should not fail for
 any properly formed UTF-8 string unless system
 limits like memory or file descriptors are exceeded.)</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -789,8 +782,8 @@ gdk_utf8_to_compound_text (<em class="parameter"><code>const <a href="https://de
 <div class="warning"><p><code class="literal">gdk_utf8_to_compound_text</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Convert from UTF-8 to compound text.</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-utf8-to-compound-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -828,10 +821,9 @@ stored in <em class="parameter"><code>ctext</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.13.7"></a><h4>Returns</h4>
+<a name="gdk-utf8-to-compound-text.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the conversion succeeded, otherwise
 false.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -846,12 +838,12 @@ gdk_utf8_to_compound_text_for_display (<em class="parameter"><code><a class="lin
                                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *length</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_utf8_to_compound_text_for_display</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
-<p>Use <a href="http://developer.gnome.org/gdk2/gdk3-X-Window-System-Interaction.html#gdk-x11-display-utf8-to-compound-text"><code class="function">gdk_x11_display_utf8_to_compound_text()</code></a></p>
+<p>Use <a href="http://developer.gnome.org/gdk3/gdk3-X-Window-System-Interaction.html#gdk-x11-display-utf8-to-compound-text"><code class="function">gdk_x11_display_utf8_to_compound_text()</code></a></p>
 </div>
 <p>Converts from UTF-8 to compound text.</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.14.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-utf8-to-compound-text-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -894,12 +886,11 @@ stored in <em class="parameter"><code>ctext</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.14.8"></a><h4>Returns</h4>
+<a name="gdk-utf8-to-compound-text-for-display.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the conversion succeeded, otherwise
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -911,8 +902,8 @@ gdk_atom_intern (<em class="parameter"><code>const <a href="https://developer.gn
 Finds or creates an atom corresponding to a given string.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-atom-intern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -936,10 +927,9 @@ existance of an atom is as expensive as creating it.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.15.6"></a><h4>Returns</h4>
+<a name="gdk-atom-intern.returns"></a><h4>Returns</h4>
 <p>the atom corresponding to <em class="parameter"><code>atom_name</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -957,8 +947,8 @@ allocated memory in dynamically loaded modules, if you expect to
 ever unload the module again (e.g. do not use this function in
 GTK+ theme engines).</p>
 <div class="refsect3">
-<a name="id-1.2.24.7.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-atom-intern-static-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -972,12 +962,11 @@ GTK+ theme engines).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.16.7"></a><h4>Returns</h4>
+<a name="gdk-atom-intern-static-string.returns"></a><h4>Returns</h4>
 <p> the atom corresponding to <em class="parameter"><code>atom_name</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -988,8 +977,8 @@ gdk_atom_name (<em class="parameter"><code><a class="link" href="gdk2-Properties
 Determines the string corresponding to an atom.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-atom-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1003,13 +992,12 @@ Determines the string corresponding to an atom.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.17.6"></a><h4>Returns</h4>
+<a name="gdk-atom-name.returns"></a><h4>Returns</h4>
 <p>a newly-allocated string containing the string
 corresponding to <em class="parameter"><code>atom</code></em>
 . When you are done
 with the return value, you should free it
 using <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1043,8 +1031,8 @@ should return a useful error to the program. You are advised to use
 is provided.
 </p></div>
 <div class="refsect3">
-<a name="id-1.2.24.7.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-property-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1127,11 +1115,10 @@ using it.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.24.7.18.7"></a><h4>Returns</h4>
+<a name="gdk-property-get.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if data was successfully received and stored
 in <em class="parameter"><code>data</code></em>
 , otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1149,8 +1136,8 @@ gdk_property_change (<em class="parameter"><code><a class="link" href="gdk2-Wind
 Changes the contents of a property on a window.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-property-change.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1220,8 +1207,8 @@ gdk_property_delete (<em class="parameter"><code><a class="link" href="gdk2-Wind
 Deletes a property from a window.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.7.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-property-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1272,8 +1259,8 @@ Describes how existing data is combined with new data when
 using <a class="link" href="gdk2-Properties-and-Atoms.html#gdk-property-change" title="gdk_property_change ()"><code class="function">gdk_property_change()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.24.8.4.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkPropMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1308,7 +1295,6 @@ using <a class="link" href="gdk2-Properties-and-Atoms.html#gdk-property-change" 
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

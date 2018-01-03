@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Drag and Drop</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Drag and Drop: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Clipboards.html" title="Clipboards">
 <link rel="next" href="GtkIconTheme.html" title="GtkIconTheme">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-Drag-and-Drop.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -65,7 +65,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-dest-find-target" title="gtk_drag_dest_find_target ()">gtk_drag_dest_find_target</a> <span class="c_punctuation">()</span>
@@ -169,7 +169,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="returnvalue">GdkDragContext</span></a> *
+<a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="returnvalue">GdkDragContext</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-begin" title="gtk_drag_begin ()">gtk_drag_begin</a> <span class="c_punctuation">()</span>
@@ -332,7 +332,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Drag-and-Drop.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -378,7 +378,7 @@ gtk_drag_dest_set (<em class="parameter"><code><a class="link" href="GtkWidget.h
                    <em class="parameter"><code><a class="link" href="gtk2-Drag-and-Drop.html#GtkDestDefaults" title="enum GtkDestDefaults"><span class="type">GtkDestDefaults</span></a> flags</code></em>,
                    <em class="parameter"><code>const <a class="link" href="gtk2-Selections.html#GtkTargetEntry" title="struct GtkTargetEntry"><span class="type">GtkTargetEntry</span></a> *targets</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_targets</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>);</pre>
+                   <em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>);</pre>
 <p>Sets a widget as a potential drop destination, and adds default behaviors.</p>
 <p>The default behaviors listed in <em class="parameter"><code>flags</code></em>
  have an effect similar
@@ -392,7 +392,7 @@ as described in the documentation for <span class="type">“drag-motion”</span
 behaviors described by <em class="parameter"><code>flags</code></em>
  make some assumptions, that can conflict
 with your own signal handlers. For instance <a class="link" href="gtk2-Drag-and-Drop.html#GTK-DEST-DEFAULT-DROP:CAPS"><span class="type">GTK_DEST_DEFAULT_DROP</span></a> causes
-invokations of <a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#gdk-drag-status"><code class="function">gdk_drag_status()</code></a> in the context of <span class="type">“drag-motion”</span>,
+invokations of <a href="../html/gdk2-Drag-and-Drop.html#gdk-drag-status"><code class="function">gdk_drag_status()</code></a> in the context of <span class="type">“drag-motion”</span>,
 and invokations of <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-finish" title="gtk_drag_finish ()"><code class="function">gtk_drag_finish()</code></a> in <span class="type">“drag-data-received”</span>.
 Especially the later is dramatic, when your own <span class="type">“drag-motion”</span>
 handler calls <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-get-data" title="gtk_drag_get_data ()"><code class="function">gtk_drag_get_data()</code></a> to inspect the dragged data.</p>
@@ -428,12 +428,12 @@ the action to use depending on whether the control key is pressed or not:</p>
 <span class="cbracket">{</span>
 <span class="normal">  </span><span class="usertype">GdkModifierType</span><span class="normal"> mask</span><span class="symbol">;</span>
 
-<span class="normal">  </span><span class="function"><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#gdk-window-get-pointer">gdk_window_get_pointer</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function"><a href="GtkWidget.html#gtk-widget-get-window">gtk_widget_get_window</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">),</span>
+<span class="normal">  </span><span class="function"><a href="../html/gdk2-Windows.html#gdk-window-get-pointer">gdk_window_get_pointer</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function"><a href="GtkWidget.html#gtk-widget-get-window">gtk_widget_get_window</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">),</span>
 <span class="normal">                          <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">mask</span><span class="symbol">);</span>
-<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">mask </span><span class="symbol">&amp;</span><span class="normal"> GDK_CONTROL_MASK</span><span class="symbol">)</span>
-<span class="normal">    </span><span class="function"><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#gdk-drag-status">gdk_drag_status</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">context</span><span class="symbol">,</span><span class="normal"> GDK_ACTION_COPY</span><span class="symbol">,</span><span class="normal"> time</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">mask </span><span class="symbol">&amp;</span><span class="normal"> <a href="../html/gdk2-Windows.html#GDK-CONTROL-MASK:CAPS">GDK_CONTROL_MASK</a></span><span class="symbol">)</span>
+<span class="normal">    </span><span class="function"><a href="../html/gdk2-Drag-and-Drop.html#gdk-drag-status">gdk_drag_status</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">context</span><span class="symbol">,</span><span class="normal"> <a href="../html/gdk2-Drag-and-Drop.html#GDK-ACTION-COPY:CAPS">GDK_ACTION_COPY</a></span><span class="symbol">,</span><span class="normal"> time</span><span class="symbol">);</span>
 <span class="normal">  </span><span class="keyword">else</span>
-<span class="normal">    </span><span class="function"><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#gdk-drag-status">gdk_drag_status</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">context</span><span class="symbol">,</span><span class="normal"> GDK_ACTION_MOVE</span><span class="symbol">,</span><span class="normal"> time</span><span class="symbol">);</span>
+<span class="normal">    </span><span class="function"><a href="../html/gdk2-Drag-and-Drop.html#gdk-drag-status">gdk_drag_status</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">context</span><span class="symbol">,</span><span class="normal"> <a href="../html/gdk2-Drag-and-Drop.html#GDK-ACTION-MOVE:CAPS">GDK_ACTION_MOVE</a></span><span class="symbol">,</span><span class="normal"> time</span><span class="symbol">);</span>
 <span class="cbracket">}</span></pre></td>
       </tr>
     </tbody>
@@ -442,8 +442,8 @@ the action to use depending on whether the control key is pressed or not:</p>
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.3.6.7.2.10"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -490,15 +490,15 @@ and <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-dest-find-target" tit
 <a name="gtk-drag-dest-set-proxy"></a><h3>gtk_drag_dest_set_proxy ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_drag_dest_set_proxy (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *proxy_window</code></em>,
-                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragProtocol"><span class="type">GdkDragProtocol</span></a> protocol</code></em>,
+                         <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *proxy_window</code></em>,
+                         <em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragProtocol"><span class="type">GdkDragProtocol</span></a> protocol</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_coordinates</code></em>);</pre>
 <p>
 Sets this widget as a proxy for drops to another window.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-set-proxy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -519,7 +519,7 @@ Sets this widget as a proxy for drops to another window.
 <td class="parameter_name"><p>protocol</p></td>
 <td class="parameter_description"><p>the drag protocol which the <em class="parameter"><code>proxy_window</code></em>
 accepts
-(You can use <a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#gdk-drag-get-protocol"><code class="function">gdk_drag_get_protocol()</code></a> to determine this)</p></td>
+(You can use <a href="../html/gdk2-Drag-and-Drop.html#gdk-drag-get-protocol"><code class="function">gdk_drag_get_protocol()</code></a> to determine this)</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -544,8 +544,8 @@ Clears information about a drop destination set with
 notification of drags.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-unset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -562,13 +562,13 @@ notification of drags.
 <hr>
 <div class="refsect2">
 <a name="gtk-drag-dest-find-target"></a><h3>gtk_drag_dest_find_target ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<pre class="programlisting"><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 gtk_drag_dest_find_target (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                           <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                           <em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                            <em class="parameter"><code><a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *target_list</code></em>);</pre>
 <div class="refsect3">
-<a name="id-1.3.6.7.5.4"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-find-target.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -594,7 +594,7 @@ Looks for a match between the supported targets of <em class="parameter"><code>c
 and the
 <em class="parameter"><code>dest_target_list</code></em>
 , returning the first matching target, otherwise
-returning <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GDK-NONE:CAPS"><code class="literal">GDK_NONE</code></a>. <em class="parameter"><code>dest_target_list</code></em>
+returning <a href="../html/gdk2-Properties-and-Atoms.html#GDK-NONE:CAPS"><code class="literal">GDK_NONE</code></a>. <em class="parameter"><code>dest_target_list</code></em>
 should usually be the return
 value from <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-dest-get-target-list" title="gtk_drag_dest_get_target_list ()"><code class="function">gtk_drag_dest_get_target_list()</code></a>, but some widgets may
 have different valid targets for different parts of the widget; in
@@ -606,9 +606,9 @@ passes the correct target list to this function. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.6.7.5.5"></a><h4>Returns</h4>
+<a name="gtk-drag-dest-find-target.returns"></a><h4>Returns</h4>
 <p> first target that the source offers
-and the dest can accept, or <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GDK-NONE:CAPS"><code class="literal">GDK_NONE</code></a>. </p>
+and the dest can accept, or <a href="../html/gdk2-Properties-and-Atoms.html#GDK-NONE:CAPS"><code class="literal">GDK_NONE</code></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
@@ -620,8 +620,8 @@ gtk_drag_dest_get_target_list (<em class="parameter"><code><a class="link" href=
 <p>Returns the list of targets this widget can accept from
 drag-and-drop.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-get-target-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -635,7 +635,7 @@ drag-and-drop.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.6.7.6.6"></a><h4>Returns</h4>
+<a name="gtk-drag-dest-get-target-list.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -650,8 +650,8 @@ gtk_drag_dest_set_target_list (<em class="parameter"><code><a class="link" href=
 The widget must first be made into a drag destination with
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-dest-set" title="gtk_drag_dest_set ()"><code class="function">gtk_drag_dest_set()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-set-target-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -684,8 +684,8 @@ are added with <em class="parameter"><code>info</code></em>
 use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-text-targets" title="gtk_target_list_add_text_targets ()"><code class="function">gtk_target_list_add_text_targets()</code></a> and
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-dest-set-target-list" title="gtk_drag_dest_set_target_list ()"><code class="function">gtk_drag_dest_set_target_list()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-add-text-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -698,7 +698,7 @@ use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-text-targets"
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -712,8 +712,8 @@ are added with <em class="parameter"><code>info</code></em>
 use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-image-targets" title="gtk_target_list_add_image_targets ()"><code class="function">gtk_target_list_add_image_targets()</code></a> and
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-dest-set-target-list" title="gtk_drag_dest_set_target_list ()"><code class="function">gtk_drag_dest_set_target_list()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-add-image-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -726,7 +726,7 @@ use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-image-targets
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -740,8 +740,8 @@ are added with <em class="parameter"><code>info</code></em>
 use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-uri-targets" title="gtk_target_list_add_uri_targets ()"><code class="function">gtk_target_list_add_uri_targets()</code></a> and
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-dest-set-target-list" title="gtk_drag_dest_set_target_list ()"><code class="function">gtk_drag_dest_set_target_list()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-add-uri-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -754,7 +754,7 @@ use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-uri-targets" 
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -768,8 +768,8 @@ flag. </p>
 <p>This may be used when a widget wants to do generic
 actions regardless of the targets that the source offers.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-set-track-motion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -789,7 +789,7 @@ actions regardless of the targets that the source offers.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -799,8 +799,8 @@ gtk_drag_dest_get_track_motion (<em class="parameter"><code><a class="link" href
 <p>Returns whether the widget has been configured to always
 emit ::drag-motion signals.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-dest-get-track-motion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -814,17 +814,16 @@ emit ::drag-motion signals.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.6.7.12.6"></a><h4>Returns</h4>
+<a name="gtk-drag-dest-get-track-motion.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the widget always emits ::drag-motion events</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-drag-finish"></a><h3>gtk_drag_finish ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_finish (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+gtk_drag_finish (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> success</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> del</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
@@ -833,8 +832,8 @@ Informs the drag source that the drop is finished, and
 that the data of the drag will no longer be required.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -871,8 +870,8 @@ original data. (This should be <a href="https://developer.gnome.org/glib/unstabl
 <a name="gtk-drag-get-data"></a><h3>gtk_drag_get_data ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_drag_get_data (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>
 Gets the data associated with a drag. When the data
@@ -885,8 +884,8 @@ then the widget will not receive notification of failed
 drops.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -924,14 +923,14 @@ or "drag_data_drop" signal.</p></td>
 <div class="refsect2">
 <a name="gtk-drag-get-source-widget"></a><h3>gtk_drag_get_source_widget ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
-gtk_drag_get_source_widget (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
+gtk_drag_get_source_widget (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Determines the source widget for a drag.</p>
 <p>
 Determines the source widget for a drag.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-get-source-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -945,7 +944,7 @@ Determines the source widget for a drag.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.6.7.15.6"></a><h4>Returns</h4>
+<a name="gtk-drag-get-source-widget.returns"></a><h4>Returns</h4>
 <p> if the drag is occurring
 within a single application, a pointer to the source widget.
 Otherwise, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
@@ -964,8 +963,8 @@ will continue to be displayed until <a class="link" href="gtk2-Drag-and-Drop.htm
 is called.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-highlight.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -989,8 +988,8 @@ Removes a highlight set by <a class="link" href="gtk2-Drag-and-Drop.html#gtk-dra
 a widget.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-unhighlight.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1007,12 +1006,12 @@ a widget.
 <hr>
 <div class="refsect2">
 <a name="gtk-drag-begin"></a><h3>gtk_drag_begin ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="returnvalue">GdkDragContext</span></a> *
+<pre class="programlisting"><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="returnvalue">GdkDragContext</span></a> *
 gtk_drag_begin (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *targets</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> button</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+                <em class="parameter"><code><a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
 <p>Initiates a drag on the source side. The function
 only needs to be used when the application is
 starting drags itself, and is not needed when
@@ -1038,13 +1037,13 @@ moves past a certain threshold distance after a button-press.  Pass the <em clas
 have in your motion-notify-event handler.</p></li>
 <li class="listitem"><p>During a timeout handler, if you want to start a drag after the mouse
 button is held down for some time.  Try to save the last event that you got
-from the mouse, using <a href="http://library.gnome.org/devel/gdk3/gdk2-Events.html#gdk-event-copy"><code class="function">gdk_event_copy()</code></a>, and pass it to this function
-(remember to free the event with <a href="http://library.gnome.org/devel/gdk3/gdk2-Events.html#gdk-event-free"><code class="function">gdk_event_free()</code></a> when you are done).  If you
+from the mouse, using <a href="../html/gdk2-Events.html#gdk-event-copy"><code class="function">gdk_event_copy()</code></a>, and pass it to this function
+(remember to free the event with <a href="../html/gdk2-Events.html#gdk-event-free"><code class="function">gdk_event_free()</code></a> when you are done).  If you
 can really not pass a real event, pass <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><span class="type">NULL</span></a> instead.</p></li>
 </ol></div>
 <div class="refsect3">
-<a name="id-1.3.6.7.18.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-begin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1081,7 +1080,7 @@ source can provide the data.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.6.7.18.9"></a><h4>Returns</h4>
+<a name="gtk-drag-begin.returns"></a><h4>Returns</h4>
 <p> the context for this drag. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1090,7 +1089,7 @@ source can provide the data.</p></td>
 <div class="refsect2">
 <a name="gtk-drag-set-icon-widget"></a><h3>gtk_drag_set_icon_widget ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_set_icon_widget (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+gtk_drag_set_icon_widget (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                           <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_x</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_y</code></em>);</pre>
@@ -1099,8 +1098,8 @@ will not destroy the icon, so if you don't want
 it to persist, you should connect to the "drag-end" 
 signal and destroy it yourself.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-set-icon-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1138,10 +1137,10 @@ of the hotspot.</p></td>
 <div class="refsect2">
 <a name="gtk-drag-set-icon-pixmap"></a><h3>gtk_drag_set_icon_pixmap ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_set_icon_pixmap (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>,
+gtk_drag_set_icon_pixmap (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_x</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_y</code></em>);</pre>
 <p>Sets <em class="parameter"><code>pixmap</code></em>
@@ -1150,8 +1149,8 @@ references for the arguments, and will release them when
 they are no longer needed. In general, <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-set-icon-pixbuf" title="gtk_drag_set_icon_pixbuf ()"><code class="function">gtk_drag_set_icon_pixbuf()</code></a>
 will be more convenient to use.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-set-icon-pixmap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1199,15 +1198,15 @@ of the hotspot.</p></td>
 <div class="refsect2">
 <a name="gtk-drag-set-icon-pixbuf"></a><h3>gtk_drag_set_icon_pixbuf ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_set_icon_pixbuf (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+gtk_drag_set_icon_pixbuf (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_x</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_y</code></em>);</pre>
 <p>Sets <em class="parameter"><code>pixbuf</code></em>
  as the icon for a given drag.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-set-icon-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1222,7 +1221,7 @@ with a  context for the source side of a drag)</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>pixbuf</p></td>
-<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> to use as the drag icon.</p></td>
+<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> to use as the drag icon.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1245,14 +1244,14 @@ of the hotspot.</p></td>
 <div class="refsect2">
 <a name="gtk-drag-set-icon-stock"></a><h3>gtk_drag_set_icon_stock ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_set_icon_stock (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+gtk_drag_set_icon_stock (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_x</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_y</code></em>);</pre>
 <p>Sets the icon for a given drag from a stock ID.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-set-icon-stock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1288,7 +1287,7 @@ with a  context for the source side of a drag)</p></td>
 <div class="refsect2">
 <a name="gtk-drag-set-icon-name"></a><h3>gtk_drag_set_icon_name ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_set_icon_name (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
+gtk_drag_set_icon_name (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>,
                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_x</code></em>,
                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_y</code></em>);</pre>
@@ -1300,8 +1299,8 @@ loaded at the symbolic size <a class="link" href="gtk2-Themeable-Stock-Images.ht
  and <em class="parameter"><code>hot_y</code></em>
  have to be used with care.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-set-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1332,18 +1331,18 @@ with a context for the source side of a drag)</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-drag-set-icon-default"></a><h3>gtk_drag_set_icon_default ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_set_icon_default (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
+gtk_drag_set_icon_default (<em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Sets the icon for a particular drag to the default
 icon.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-set-icon-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1362,9 +1361,9 @@ with a  context for the source side of a drag)</p></td>
 <div class="refsect2">
 <a name="gtk-drag-set-default-icon"></a><h3>gtk_drag_set_default_icon ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_drag_set_default_icon (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
-                           <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
-                           <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>,
+gtk_drag_set_default_icon (<em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
+                           <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
+                           <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_x</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hot_y</code></em>);</pre>
 <div class="warning">
@@ -1375,8 +1374,8 @@ gtk_drag_set_default_icon (<em class="parameter"><code><a href="http://library.g
 <p>Changes the default drag icon. GTK+ retains references for the
 arguments, and will release them when they are no longer needed.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-set-default-icon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1431,8 +1430,8 @@ at (<em class="parameter"><code>current_x</code></em>
 ) has passed the GTK+ drag threshold, and thus
 should trigger the beginning of a drag-and-drop operation.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-check-threshold.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1468,9 +1467,8 @@ should trigger the beginning of a drag-and-drop operation.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.6.7.26.6"></a><h4>Returns</h4>
+<a name="gtk-drag-check-threshold.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the drag threshold has been passed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1478,15 +1476,15 @@ should trigger the beginning of a drag-and-drop operation.</p>
 <a name="gtk-drag-source-set"></a><h3>gtk_drag_source_set ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_drag_source_set (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> start_button_mask</code></em>,
+                     <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> start_button_mask</code></em>,
                      <em class="parameter"><code>const <a class="link" href="gtk2-Selections.html#GtkTargetEntry" title="struct GtkTargetEntry"><span class="type">GtkTargetEntry</span></a> *targets</code></em>,
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_targets</code></em>,
-                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>);</pre>
+                     <em class="parameter"><code><a href="../html/gdk2-Drag-and-Drop.html#GdkDragAction"><span class="type">GdkDragAction</span></a> actions</code></em>);</pre>
 <p>Sets up a widget so that GTK+ will start a drag operation when the user
 clicks and drags on the widget. The widget must have a window.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1529,16 +1527,16 @@ may be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.h
 <a name="gtk-drag-source-set-icon"></a><h3>gtk_drag_source_set_icon ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_drag_source_set_icon (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>);</pre>
+                          <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>);</pre>
 <p>Sets the icon that will be used for drags from a particular widget
 from a pixmap/mask. GTK+ retains references for the arguments, and
 will release them when they are no longer needed.
 Use <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-source-set-icon-pixbuf" title="gtk_drag_source_set_icon_pixbuf ()"><code class="function">gtk_drag_source_set_icon_pixbuf()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-set-icon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1574,14 +1572,14 @@ Use <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-source-set-icon-pixbu
 <a name="gtk-drag-source-set-icon-pixbuf"></a><h3>gtk_drag_source_set_icon_pixbuf ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_drag_source_set_icon_pixbuf (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
+                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
 <p>Sets the icon that will be used for drags from a particular widget
-from a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>. GTK+ retains a reference for <em class="parameter"><code>pixbuf</code></em>
+from a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>. GTK+ retains a reference for <em class="parameter"><code>pixbuf</code></em>
  and will 
 release it when it is no longer needed.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-set-icon-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1595,7 +1593,7 @@ release it when it is no longer needed.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>pixbuf</p></td>
-<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> for the drag icon</p></td>
+<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> for the drag icon</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1611,8 +1609,8 @@ gtk_drag_source_set_icon_stock (<em class="parameter"><code><a class="link" href
 <p>Sets the icon that will be used for drags from a particular source
 to a stock icon.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-set-icon-stock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1642,8 +1640,8 @@ gtk_drag_source_set_icon_name (<em class="parameter"><code><a class="link" href=
 <p>Sets the icon that will be used for drags from a particular source
 to a themed icon. See the docs for <a class="link" href="GtkIconTheme.html" title="GtkIconTheme"><span class="type">GtkIconTheme</span></a> for more details.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-set-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1663,7 +1661,7 @@ to a themed icon. See the docs for <a class="link" href="GtkIconTheme.html" titl
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1674,8 +1672,8 @@ gtk_drag_source_unset (<em class="parameter"><code><a class="link" href="GtkWidg
 Undoes the effects of <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-source-set" title="gtk_drag_source_set ()"><code class="function">gtk_drag_source_set()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.7.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-unset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1699,8 +1697,8 @@ gtk_drag_source_set_target_list (<em class="parameter"><code><a class="link" hre
 The widget must first be made into a drag source with
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-source-set" title="gtk_drag_source_set ()"><code class="function">gtk_drag_source_set()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-set-target-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1720,7 +1718,7 @@ The widget must first be made into a drag source with
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1730,8 +1728,8 @@ gtk_drag_source_get_target_list (<em class="parameter"><code><a class="link" hre
 <p>Gets the list of targets this widget can provide for
 drag-and-drop.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-get-target-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1745,11 +1743,11 @@ drag-and-drop.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.6.7.34.6"></a><h4>Returns</h4>
+<a name="gtk-drag-source-get-target-list.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1763,8 +1761,8 @@ are added with <em class="parameter"><code>info</code></em>
 use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-text-targets" title="gtk_target_list_add_text_targets ()"><code class="function">gtk_target_list_add_text_targets()</code></a> and
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-source-set-target-list" title="gtk_drag_source_set_target_list ()"><code class="function">gtk_drag_source_set_target_list()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-add-text-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1777,7 +1775,7 @@ use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-text-targets"
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1791,8 +1789,8 @@ are added with <em class="parameter"><code>info</code></em>
 use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-image-targets" title="gtk_target_list_add_image_targets ()"><code class="function">gtk_target_list_add_image_targets()</code></a> and
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-source-set-target-list" title="gtk_drag_source_set_target_list ()"><code class="function">gtk_drag_source_set_target_list()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-add-image-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1805,7 +1803,7 @@ use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-image-targets
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1819,8 +1817,8 @@ are added with <em class="parameter"><code>info</code></em>
 use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-uri-targets" title="gtk_target_list_add_uri_targets ()"><code class="function">gtk_target_list_add_uri_targets()</code></a> and
 <a class="link" href="gtk2-Drag-and-Drop.html#gtk-drag-source-set-target-list" title="gtk_drag_source_set_target_list ()"><code class="function">gtk_drag_source_set_target_list()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.6.7.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drag-source-add-uri-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1833,7 +1831,7 @@ use <a class="link" href="gtk2-Selections.html#gtk-target-list-add-uri-targets" 
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1846,8 +1844,8 @@ types of action that will be taken on behalf
 of the user for a drag destination site.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.8.2.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkDestDefaults.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1860,7 +1858,7 @@ of the user for a drag destination site.
 <p>   If set for a widget, GTK+, during a drag over this
    widget will check if the drag matches this widget's
    list of possible targets and actions.
-   GTK+ will then call <a href="http://library.gnome.org/devel/gdk3/gdk2-Drag-and-Drop.html#gdk-drag-status"><code class="function">gdk_drag_status()</code></a> as appropriate.</p>
+   GTK+ will then call <a href="../html/gdk2-Drag-and-Drop.html#gdk-drag-status"><code class="function">gdk_drag_status()</code></a> as appropriate.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
@@ -1909,8 +1907,8 @@ The <a class="link" href="gtk2-Drag-and-Drop.html#GtkTargetFlags" title="enum Gt
 constraints on an entry in a <span class="type">GtkTargetTable</span>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.6.8.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTargetFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1956,7 +1954,6 @@ constraints on an entry in a <span class="type">GtkTargetTable</span>.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

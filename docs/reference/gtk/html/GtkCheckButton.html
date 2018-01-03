@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCheckButton</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCheckButton: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="ButtonWidgets.html" title="Buttons and Toggles">
 <link rel="prev" href="GtkButton.html" title="GtkButton">
 <link rel="next" href="GtkRadioButton.html" title="GtkRadioButton">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCheckButton.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -71,7 +71,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCheckButton.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -93,7 +93,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCheckButton.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -106,7 +106,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCheckButton.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -148,9 +148,8 @@ gtk_check_button_new (<em class="parameter"><code><span class="type">void</span>
 Creates a new <a class="link" href="GtkCheckButton.html" title="GtkCheckButton"><span class="type">GtkCheckButton</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.6.3.10.2.5"></a><h4>Returns</h4>
+<a name="gtk-check-button-new.returns"></a><h4>Returns</h4>
 <p>a <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -162,8 +161,8 @@ gtk_check_button_new_with_label (<em class="parameter"><code>const <a href="http
 Creates a new <a class="link" href="GtkCheckButton.html" title="GtkCheckButton"><span class="type">GtkCheckButton</span></a> with a <a class="link" href="GtkLabel.html" title="GtkLabel"><span class="type">GtkLabel</span></a> to the right of it.
 </p>
 <div class="refsect3">
-<a name="id-1.4.6.3.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-check-button-new-with-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -177,9 +176,8 @@ Creates a new <a class="link" href="GtkCheckButton.html" title="GtkCheckButton">
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.3.10.3.6"></a><h4>Returns</h4>
+<a name="gtk-check-button-new-with-label.returns"></a><h4>Returns</h4>
 <p>a <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -192,8 +190,8 @@ will be created using <a class="link" href="GtkLabel.html#gtk-label-new-with-mne
 in <em class="parameter"><code>label</code></em>
  indicate the mnemonic for the check button.</p>
 <div class="refsect3">
-<a name="id-1.4.6.3.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-check-button-new-with-mnemonic.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -208,9 +206,8 @@ mnemonic character</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.6.3.10.4.6"></a><h4>Returns</h4>
+<a name="gtk-check-button-new-with-mnemonic.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkCheckButton.html" title="GtkCheckButton"><span class="type">GtkCheckButton</span></a></p>
-<p></p>
 </div>
 </div>
 </div>
@@ -277,7 +274,6 @@ mnemonic character</p></td>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

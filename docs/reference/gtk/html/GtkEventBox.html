@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkEventBox</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkEventBox: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MiscObjects.html" title="Miscellaneous">
 <link rel="prev" href="GtkDrawingArea.html" title="GtkDrawingArea">
 <link rel="next" href="GtkHandleBox.html" title="GtkHandleBox">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkEventBox.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -87,7 +87,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEventBox.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -109,7 +109,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEventBox.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -122,7 +122,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEventBox.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -160,9 +160,8 @@ gtk_event_box_new (<em class="parameter"><code><span class="type">void</span></c
 Creates a new <a class="link" href="GtkEventBox.html" title="GtkEventBox"><span class="type">GtkEventBox</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.6.10.2.5"></a><h4>Returns</h4>
+<a name="gtk-event-box-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkEventBox.html" title="GtkEventBox"><span class="type">GtkEventBox</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -178,8 +177,8 @@ in windows of child widgets will first got to that widget, and then
 to its parents.</p>
 <p>The default is to keep the window below the child.</p>
 <div class="refsect3">
-<a name="id-1.4.17.6.10.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-event-box-set-above-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -199,7 +198,7 @@ to its parents.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -210,8 +209,8 @@ gtk_event_box_get_above_child (<em class="parameter"><code><a class="link" href=
 windows of its child. See <a class="link" href="GtkEventBox.html#gtk-event-box-set-above-child" title="gtk_event_box_set_above_child ()"><code class="function">gtk_event_box_set_above_child()</code></a> for
 details.</p>
 <div class="refsect3">
-<a name="id-1.4.17.6.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-event-box-get-above-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -225,12 +224,11 @@ details.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.6.10.4.6"></a><h4>Returns</h4>
+<a name="gtk-event-box-get-above-child.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event box window is above the window
 of its child.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -241,10 +239,10 @@ gtk_event_box_set_visible_window (<em class="parameter"><code><a class="link" hr
 <p>Set whether the event box uses a visible or invisible child
 window. The default is to use visible windows.</p>
 <p>In an invisible window event box, the window that the
-event box creates is a <code class="literal">GDK_INPUT_ONLY</code> window, which 
+event box creates is a <a href="../html/gdk2-Windows.html#GDK-INPUT-ONLY:CAPS"><code class="literal">GDK_INPUT_ONLY</code></a> window, which 
 means that it is invisible and only serves to receive
 events.</p>
-<p>A visible window event box creates a visible (<code class="literal">GDK_INPUT_OUTPUT</code>)
+<p>A visible window event box creates a visible (<a href="../html/gdk2-Windows.html#GDK-INPUT-OUTPUT:CAPS"><code class="literal">GDK_INPUT_OUTPUT</code></a>)
 window that acts as the parent window for all the widgets  
 contained in the event box.</p>
 <p>You should generally make your event box invisible if
@@ -272,8 +270,8 @@ descendant windows, not just at the same place on the screen.
 </p>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.6.10.5.10"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-event-box-set-visible-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -293,7 +291,7 @@ descendant windows, not just at the same place on the screen.
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -303,8 +301,8 @@ gtk_event_box_get_visible_window (<em class="parameter"><code><a class="link" hr
 <p>Returns whether the event box has a visible window.
 See <a class="link" href="GtkEventBox.html#gtk-event-box-set-visible-window" title="gtk_event_box_set_visible_window ()"><code class="function">gtk_event_box_set_visible_window()</code></a> for details.</p>
 <div class="refsect3">
-<a name="id-1.4.17.6.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-event-box-get-visible-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -318,11 +316,10 @@ See <a class="link" href="GtkEventBox.html#gtk-event-box-set-visible-window" tit
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.6.10.6.6"></a><h4>Returns</h4>
+<a name="gtk-event-box-get-visible-window.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event box window is visible</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -356,7 +353,6 @@ should be accessed using the functions below.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

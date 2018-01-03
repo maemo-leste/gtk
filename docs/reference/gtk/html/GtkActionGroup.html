@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkActionGroup</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkActionGroup: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="Actions.html" title="Action-based menus and toolbars">
 <link rel="prev" href="GtkUIManager.html" title="GtkUIManager">
 <link rel="next" href="GtkAction.html" title="GtkAction">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkActionGroup.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -206,7 +206,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkActionGroup.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -234,7 +234,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkActionGroup.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -266,7 +266,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkActionGroup.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -293,7 +293,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkActionGroup.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkActionGroup
 </pre>
 </div>
@@ -350,7 +350,7 @@ modifiers and allows to specify accelerators. This is similar to the
 it doesn't allow you to specify a signal.
 </p>
 <div class="example">
-<a name="id-1.4.11.3.10.5.5"></a><p class="title"><b>Example 38. A <span class="structname">GtkDialog</span> UI definition fragment.</b></p>
+<a name="id-1.4.11.3.10.5.5"></a><p class="title"><b>Example 32. A <span class="structname">GtkDialog</span> UI definition fragment.</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -394,8 +394,8 @@ gtk_action_group_new (<em class="parameter"><code>const <a href="https://develop
 is used when associating <a class="link" href="GtkActionGroup.html#Action-Accel">keybindings</a> 
 with the actions.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -409,11 +409,10 @@ with the actions.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-action-group-new.returns"></a><h4>Returns</h4>
 <p> the new <a class="link" href="GtkActionGroup.html" title="GtkActionGroup"><span class="type">GtkActionGroup</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -422,8 +421,8 @@ with the actions.</p>
 gtk_action_group_get_name (<em class="parameter"><code><a class="link" href="GtkActionGroup.html" title="GtkActionGroup"><span class="type">GtkActionGroup</span></a> *action_group</code></em>);</pre>
 <p>Gets the name of the action group.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -437,11 +436,10 @@ gtk_action_group_get_name (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.3.6"></a><h4>Returns</h4>
+<a name="gtk-action-group-get-name.returns"></a><h4>Returns</h4>
 <p> the name of the action group.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -453,8 +451,8 @@ can only be logically sensitive (see <a class="link" href="GtkAction.html#gtk-ac
 they are sensitive (see <a class="link" href="GtkAction.html#gtk-action-get-sensitive" title="gtk_action_get_sensitive ()"><code class="function">gtk_action_get_sensitive()</code></a>) and their group
 is sensitive.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-get-sensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -468,11 +466,10 @@ is sensitive.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.4.6"></a><h4>Returns</h4>
+<a name="gtk-action-group-get-sensitive.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the group is sensitive.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -483,8 +480,8 @@ gtk_action_group_set_sensitive (<em class="parameter"><code><a class="link" href
 <p>Changes the sensitivity of <em class="parameter"><code>action_group</code></em>
 </p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-set-sensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -504,7 +501,7 @@ gtk_action_group_set_sensitive (<em class="parameter"><code><a class="link" href
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -516,8 +513,8 @@ can only be logically visible (see <a class="link" href="GtkAction.html#gtk-acti
 they are visible (see <a class="link" href="GtkAction.html#gtk-action-get-visible" title="gtk_action_get_visible ()"><code class="function">gtk_action_get_visible()</code></a>) and their group
 is visible.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-get-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -531,11 +528,10 @@ is visible.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.6.6"></a><h4>Returns</h4>
+<a name="gtk-action-group-get-visible.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the group is visible.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -546,8 +542,8 @@ gtk_action_group_set_visible (<em class="parameter"><code><a class="link" href="
 <p>Changes the visible of <em class="parameter"><code>action_group</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-set-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -567,7 +563,7 @@ gtk_action_group_set_visible (<em class="parameter"><code><a class="link" href="
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -577,8 +573,8 @@ gtk_action_group_get_action (<em class="parameter"><code><a class="link" href="G
                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
 <p>Looks up an action in the action group by name.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-get-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -599,11 +595,11 @@ gtk_action_group_get_action (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.8.6"></a><h4>Returns</h4>
+<a name="gtk-action-group-get-action.returns"></a><h4>Returns</h4>
 <p> the action, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no action by that name exists. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -612,8 +608,8 @@ gtk_action_group_get_action (<em class="parameter"><code><a class="link" href="G
 gtk_action_group_list_actions (<em class="parameter"><code><a class="link" href="GtkActionGroup.html" title="GtkActionGroup"><span class="type">GtkActionGroup</span></a> *action_group</code></em>);</pre>
 <p>Lists the actions in the action group.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-list-actions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -627,11 +623,11 @@ gtk_action_group_list_actions (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.9.6"></a><h4>Returns</h4>
+<a name="gtk-action-group-list-actions.returns"></a><h4>Returns</h4>
 <p> an allocated list of the action objects in the action group. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkAction][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -646,8 +642,8 @@ the action. Therefore you must either set the accel path yourself with
 <a class="link" href="GtkAction.html#gtk-action-set-accel-path" title="gtk_action_set_accel_path ()"><code class="function">gtk_action_set_accel_path()</code></a>, or use 
 <code class="literal">gtk_action_group_add_action_with_accel (..., NULL)</code>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -667,7 +663,7 @@ the action. Therefore you must either set the accel path yourself with
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -684,8 +680,8 @@ with the stock_id of the action. </p>
 <p>Accel paths are set to
 <code class="literal">&lt;Actions&gt;/<em class="replaceable"><code>group-name</code></em>/<em class="replaceable"><code>action-name</code></em></code>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.11.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-action-with-accel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -712,7 +708,7 @@ the format understood by <a class="link" href="gtk2-Keyboard-Accelerators.html#g
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -722,8 +718,8 @@ gtk_action_group_remove_action (<em class="parameter"><code><a class="link" href
                                 <em class="parameter"><code><a class="link" href="GtkAction.html" title="GtkAction"><span class="type">GtkAction</span></a> *action</code></em>);</pre>
 <p>Removes an action object from the action group.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-remove-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -743,7 +739,7 @@ gtk_action_group_remove_action (<em class="parameter"><code><a class="link" href
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -759,8 +755,8 @@ to the action group.</p>
 their accel paths are set to 
 <code class="literal">&lt;Actions&gt;/<em class="replaceable"><code>group-name</code></em>/<em class="replaceable"><code>action-name</code></em></code>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-actions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -790,7 +786,7 @@ their accel paths are set to
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -805,8 +801,8 @@ gtk_action_group_add_actions_full (<em class="parameter"><code><a class="link" h
 callback for <em class="parameter"><code>user_data</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-actions-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -842,7 +838,7 @@ callback for <em class="parameter"><code>user_data</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -858,8 +854,8 @@ to the action group.</p>
 their accel paths are set to 
 <code class="literal">&lt;Actions&gt;/<em class="replaceable"><code>group-name</code></em>/<em class="replaceable"><code>action-name</code></em></code>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-toggle-actions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -889,7 +885,7 @@ their accel paths are set to
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -905,8 +901,8 @@ gtk_action_group_add_toggle_actions_full
 <a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> callback for <em class="parameter"><code>user_data</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-toggle-actions-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -942,7 +938,7 @@ gtk_action_group_add_toggle_actions_full
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -961,8 +957,8 @@ add them to the action group. </p>
  callback and the accel paths of the actions are set to 
 <code class="literal">&lt;Actions&gt;/<em class="replaceable"><code>group-name</code></em>/<em class="replaceable"><code>action-name</code></em></code>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-radio-actions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1003,7 +999,7 @@ no action should be activated</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1021,8 +1017,8 @@ gtk_action_group_add_radio_actions_full
 <a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> callback for <em class="parameter"><code>user_data</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-add-radio-actions-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1069,7 +1065,7 @@ no action should be activated</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1086,8 +1082,8 @@ gtk_action_group_set_translate_func (<em class="parameter"><code><a class="link"
 <p>If you're using <code class="function">gettext()</code>, it is enough to set the translation domain
 with <a class="link" href="GtkActionGroup.html#gtk-action-group-set-translation-domain" title="gtk_action_group_set_translation_domain ()"><code class="function">gtk_action_group_set_translation_domain()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-set-translate-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1121,7 +1117,7 @@ destroyed and when the translation function is changed again</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1138,8 +1134,8 @@ gtk_action_group_set_translation_domain
 <p>If you're not using <code class="function">gettext()</code> for localization, see 
 <a class="link" href="GtkActionGroup.html#gtk-action-group-set-translate-func" title="gtk_action_group_set_translate_func ()"><code class="function">gtk_action_group_set_translate_func()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-set-translation-domain.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1159,7 +1155,7 @@ gtk_action_group_set_translation_domain
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1170,8 +1166,8 @@ gtk_action_group_translate_string (<em class="parameter"><code><a class="link" h
 <p>Translates a string using the specified <code class="function">translate_func()</code>. This
 is mainly intended for language bindings.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-action-group-translate-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1192,12 +1188,11 @@ is mainly intended for language bindings.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.3.11.21.6"></a><h4>Returns</h4>
+<a name="gtk-action-group-translate-string.returns"></a><h4>Returns</h4>
 <p> the translation of <em class="parameter"><code>string</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1227,8 +1222,8 @@ members and should not be accessed directly.
 <a class="link" href="GtkActionGroup.html#gtk-action-group-add-actions" title="gtk_action_group_add_actions ()"><code class="function">gtk_action_group_add_actions()</code></a> to construct actions.
 </p>
 <div class="refsect3">
-<a name="id-1.4.11.3.12.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkActionEntry.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1293,8 +1288,8 @@ for translation, see <a class="link" href="GtkActionGroup.html#gtk-action-group-
 <a class="link" href="GtkActionGroup.html#gtk-action-group-add-toggle-actions" title="gtk_action_group_add_toggle_actions ()"><code class="function">gtk_action_group_add_toggle_actions()</code></a> to construct toggle actions.
 </p>
 <div class="refsect3">
-<a name="id-1.4.11.3.12.4.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkToggleActionEntry.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1361,8 +1356,8 @@ for translation, see <a class="link" href="GtkActionGroup.html#gtk-action-group-
 <a class="link" href="GtkActionGroup.html#gtk-action-group-add-radio-actions" title="gtk_action_group_add_radio_actions ()"><code class="function">gtk_action_group_add_radio_actions()</code></a> to construct groups of radio actions.
 </p>
 <div class="refsect3">
-<a name="id-1.4.11.3.12.5.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRadioActionEntry.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1456,8 +1451,8 @@ statusbar.</p>
 just before any action is connected to a proxy, which is probably more
 convenient to use.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.14.2.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkActionGroup-connect-proxy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1487,7 +1482,7 @@ convenient to use.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1505,8 +1500,8 @@ from an action in the group. </p>
 just before any action is connected to a proxy, which is probably more
 convenient to use.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.14.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkActionGroup-disconnect-proxy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1536,7 +1531,7 @@ convenient to use.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1552,8 +1547,8 @@ user_function (<a class="link" href="GtkActionGroup.html" title="GtkActionGroup"
 <p>This is intended for <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> to proxy the signal and provide global
 notification just after any action is activated.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.14.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkActionGroup-post-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1578,7 +1573,7 @@ notification just after any action is activated.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1594,8 +1589,8 @@ user_function (<a class="link" href="GtkActionGroup.html" title="GtkActionGroup"
 <p>This is intended for <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> to proxy the signal and provide global
 notification just before any action is activated.</p>
 <div class="refsect3">
-<a name="id-1.4.11.3.14.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkActionGroup-pre-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1620,12 +1615,11 @@ notification just before any action is activated.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

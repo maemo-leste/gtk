@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkPrintContext</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkPrintContext: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="Printing.html" title="Printing">
 <link rel="prev" href="gtk2-High-level-Printing-API.html" title="GtkPrintOperation">
 <link rel="next" href="GtkPrintSettings.html" title="GtkPrintSettings">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkPrintContext.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -98,7 +98,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontMap"><span class="returnvalue">PangoFontMap</span></a> *
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontMap-struct"><span class="returnvalue">PangoFontMap</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkPrintContext.html#gtk-print-context-get-pango-fontmap" title="gtk_print_context_get_pango_fontmap ()">gtk_print_context_get_pango_fontmap</a> <span class="c_punctuation">()</span>
@@ -106,7 +106,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="returnvalue">PangoContext</span></a> *
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="returnvalue">PangoContext</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkPrintContext.html#gtk-print-context-create-pango-context" title="gtk_print_context_create_pango_context ()">gtk_print_context_create_pango_context</a> <span class="c_punctuation">()</span>
@@ -114,7 +114,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="returnvalue">PangoLayout</span></a> *
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="returnvalue">PangoLayout</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkPrintContext.html#gtk-print-context-create-pango-layout" title="gtk_print_context_create_pango_layout ()">gtk_print_context_create_pango_layout</a> <span class="c_punctuation">()</span>
@@ -133,7 +133,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrintContext.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -146,7 +146,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrintContext.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkPrintContext
 </pre>
 </div>
@@ -161,7 +161,7 @@
 A GtkPrintContext encapsulates context information that is required when
 drawing pages for printing, such as the cairo context and important
 parameters like page size and resolution. It also lets you easily
-create <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> and <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a> objects that match the font metrics
+create <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> and <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a> objects that match the font metrics
 of the cairo surface.
 </p>
 <p>
@@ -169,7 +169,7 @@ GtkPrintContext objects gets passed to the ::begin-print, ::end-print,
 ::request-page-setup and ::draw-page signals on the <a class="link" href="gtk2-High-level-Printing-API.html#GtkPrintOperation"><span class="type">GtkPrintOperation</span></a>.
 </p>
 <div class="example">
-<a name="id-1.4.16.3.7.4"></a><p class="title"><b>Example 50. Using GtkPrintContext in a ::draw-page callback</b></p>
+<a name="id-1.4.16.3.7.4"></a><p class="title"><b>Example 39. Using GtkPrintContext in a ::draw-page callback</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -273,8 +273,8 @@ gtk_print_context_get_cairo_context (<em class="parameter"><code><a class="link"
 <p>Obtains the cairo context that is associated with the
 <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-cairo-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -288,12 +288,12 @@ gtk_print_context_get_cairo_context (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.2.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-cairo-context.returns"></a><h4>Returns</h4>
 <p> the cairo context of <em class="parameter"><code>context</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -309,8 +309,8 @@ an internal print preview, it is not needed for printing,
 since GTK+ itself creates a suitable cairo context in that
 case.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-set-cairo-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -342,7 +342,7 @@ case.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -352,8 +352,8 @@ gtk_print_context_get_page_setup (<em class="parameter"><code><a class="link" hr
 <p>Obtains the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> that determines the page
 dimensions of the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-page-setup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -367,12 +367,12 @@ dimensions of the <a class="link" href="GtkPrintContext.html" title="GtkPrintCon
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.4.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-page-setup.returns"></a><h4>Returns</h4>
 <p> the page setup of <em class="parameter"><code>context</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -381,8 +381,8 @@ dimensions of the <a class="link" href="GtkPrintContext.html" title="GtkPrintCon
 gtk_print_context_get_width (<em class="parameter"><code><a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a> *context</code></em>);</pre>
 <p>Obtains the width of the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>, in pixels.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -396,12 +396,11 @@ gtk_print_context_get_width (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.5.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-width.returns"></a><h4>Returns</h4>
 <p> the width of <em class="parameter"><code>context</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -410,8 +409,8 @@ gtk_print_context_get_width (<em class="parameter"><code><a class="link" href="G
 gtk_print_context_get_height (<em class="parameter"><code><a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a> *context</code></em>);</pre>
 <p>Obtains the height of the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>, in pixels.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -425,12 +424,11 @@ gtk_print_context_get_height (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.6.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-height.returns"></a><h4>Returns</h4>
 <p> the height of <em class="parameter"><code>context</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -440,8 +438,8 @@ gtk_print_context_get_dpi_x (<em class="parameter"><code><a class="link" href="G
 <p>Obtains the horizontal resolution of the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>,
 in dots per inch.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-dpi-x.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -455,12 +453,11 @@ in dots per inch.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.7.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-dpi-x.returns"></a><h4>Returns</h4>
 <p> the horizontal resolution of <em class="parameter"><code>context</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -470,8 +467,8 @@ gtk_print_context_get_dpi_y (<em class="parameter"><code><a class="link" href="G
 <p>Obtains the vertical resolution of the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>,
 in dots per inch.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-dpi-y.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -485,23 +482,22 @@ in dots per inch.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.8.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-dpi-y.returns"></a><h4>Returns</h4>
 <p> the vertical resolution of <em class="parameter"><code>context</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-print-context-get-pango-fontmap"></a><h3>gtk_print_context_get_pango_fontmap ()</h3>
-<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontMap"><span class="returnvalue">PangoFontMap</span></a> *
+<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontMap-struct"><span class="returnvalue">PangoFontMap</span></a> *
 gtk_print_context_get_pango_fontmap (<em class="parameter"><code><a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a> *context</code></em>);</pre>
-<p>Returns a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontMap"><span class="type">PangoFontMap</span></a> that is suitable for use
+<p>Returns a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontMap-struct"><span class="type">PangoFontMap</span></a> that is suitable for use
 with the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-pango-fontmap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -515,24 +511,24 @@ with the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><sp
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.9.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-pango-fontmap.returns"></a><h4>Returns</h4>
 <p> the font map of <em class="parameter"><code>context</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-print-context-create-pango-context"></a><h3>gtk_print_context_create_pango_context ()</h3>
-<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="returnvalue">PangoContext</span></a> *
+<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="returnvalue">PangoContext</span></a> *
 gtk_print_context_create_pango_context
                                (<em class="parameter"><code><a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a> *context</code></em>);</pre>
-<p>Creates a new <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a> that can be used with the
+<p>Creates a new <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a> that can be used with the
 <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-create-pango-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -546,23 +542,23 @@ gtk_print_context_create_pango_context
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.10.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-create-pango-context.returns"></a><h4>Returns</h4>
 <p> a new Pango context for <em class="parameter"><code>context</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-print-context-create-pango-layout"></a><h3>gtk_print_context_create_pango_layout ()</h3>
-<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="returnvalue">PangoLayout</span></a> *
+<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="returnvalue">PangoLayout</span></a> *
 gtk_print_context_create_pango_layout (<em class="parameter"><code><a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a> *context</code></em>);</pre>
-<p>Creates a new <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> that is suitable for use
+<p>Creates a new <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> that is suitable for use
 with the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-create-pango-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -576,12 +572,12 @@ with the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><sp
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.11.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-create-pango-layout.returns"></a><h4>Returns</h4>
 <p> a new Pango layout for <em class="parameter"><code>context</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -594,8 +590,8 @@ gtk_print_context_get_hard_margins (<em class="parameter"><code><a class="link" 
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *right</code></em>);</pre>
 <p>Obtains the hardware printer margins of the <a class="link" href="GtkPrintContext.html" title="GtkPrintContext"><span class="type">GtkPrintContext</span></a>, in units.</p>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-context-get-hard-margins.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -631,11 +627,10 @@ gtk_print_context_get_hard_margins (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.3.8.12.6"></a><h4>Returns</h4>
+<a name="gtk-print-context-get-hard-margins.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the hard margins were retrieved</p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -649,7 +644,6 @@ gtk_print_context_get_hard_margins (<em class="parameter"><code><a class="link" 
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

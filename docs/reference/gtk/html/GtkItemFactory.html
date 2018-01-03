@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkItemFactory</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkItemFactory: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkFileSelection.html" title="GtkFileSelection">
 <link rel="next" href="GtkList.html" title="GtkList">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkItemFactory.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -268,7 +268,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkItemFactory.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -291,7 +291,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkItemFactory.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> GtkItemFactory
@@ -330,8 +330,8 @@ The function used to translate messages in e.g. <a class="link" href="gtk2-Theme
 and <a class="link" href="GtkActionGroup.html" title="GtkActionGroup"><span class="type">GtkActionGroup</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTranslateFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -354,9 +354,8 @@ or tooltip from a <a class="link" href="GtkActionGroup.html#GtkActionEntry" titl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.3.6"></a><h4>Returns</h4>
+<a name="GtkTranslateFunc.returns"></a><h4>Returns</h4>
 <p>the translated message</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -404,8 +403,8 @@ gtk_item_factory_new (<em class="parameter"><code><a href="https://developer.gno
 <p>Creates a new <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a>.</p>
 <p>Beware that the returned object does not have a floating reference.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -434,9 +433,8 @@ menu items will be added, or <a href="https://developer.gnome.org/glib/unstable/
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.7.8"></a><h4>Returns</h4>
+<a name="gtk-item-factory-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -453,8 +451,8 @@ gtk_item_factory_construct (<em class="parameter"><code><a class="link" href="Gt
 </div>
 <p>Initializes an item factory.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-construct.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -497,7 +495,7 @@ gtk_item_factory_add_foreign (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *full_path</code></em>,
                               <em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>,
                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> keyval</code></em>,
-                              <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifiers</code></em>);</pre>
+                              <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifiers</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_add_foreign</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>The recommended API for this purpose are the functions 
@@ -514,8 +512,8 @@ saving/restoring functionality provided by <a class="link" href="gtk2-Accelerato
 <a class="link" href="gtk2-Accelerator-Maps.html#gtk-accel-map-load" title="gtk_accel_map_load"><code class="function">gtk_accel_map_load()</code></a>, even if they haven't been created by an item
 factory.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.9.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-add-foreign.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -563,8 +561,8 @@ gtk_item_factory_from_widget (<em class="parameter"><code><a class="link" href="
 </div>
 <p>Obtains the item factory from which a widget was created.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-from-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -578,7 +576,7 @@ gtk_item_factory_from_widget (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.10.7"></a><h4>Returns</h4>
+<a name="gtk-item-factory-from-widget.returns"></a><h4>Returns</h4>
 <p> the item factory from which <em class="parameter"><code>widget</code></em>
 was created, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
@@ -599,8 +597,8 @@ to it. (The full path of a widget is the concatenation of the factory
 path specified in <a class="link" href="GtkItemFactory.html#gtk-item-factory-new" title="gtk_item_factory_new ()"><code class="function">gtk_item_factory_new()</code></a> with the path specified in the 
 <a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a> from which the widget was created.)</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-path-from-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -614,12 +612,11 @@ path specified in <a class="link" href="GtkItemFactory.html#gtk-item-factory-new
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.11.7"></a><h4>Returns</h4>
+<a name="gtk-item-factory-path-from-widget.returns"></a><h4>Returns</h4>
 <p>the full path to <em class="parameter"><code>widget</code></em>
 if it has been created by an item
 factory, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> otherwise. This value is owned by GTK+ and must not be
 modified or freed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -639,8 +636,8 @@ gtk_item_factory_get_item (<em class="parameter"><code><a class="link" href="Gtk
 submenu, then the item is returned. If you are interested in the submenu, 
 use <a class="link" href="GtkItemFactory.html#gtk-item-factory-get-widget" title="gtk_item_factory_get_widget ()"><code class="function">gtk_item_factory_get_widget()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.12.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-get-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -661,7 +658,7 @@ use <a class="link" href="GtkItemFactory.html#gtk-item-factory-get-widget" title
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.12.8"></a><h4>Returns</h4>
+<a name="gtk-item-factory-get-item.returns"></a><h4>Returns</h4>
 <p> the menu item for the given path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
 doesn't
 lead to a menu item. </p>
@@ -685,8 +682,8 @@ gtk_item_factory_get_widget (<em class="parameter"><code><a class="link" href="G
 submenu, then the submenu is returned. If you are interested in the menu 
 item, use <a class="link" href="GtkItemFactory.html#gtk-item-factory-get-item" title="gtk_item_factory_get_item ()"><code class="function">gtk_item_factory_get_item()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.13.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-get-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -707,7 +704,7 @@ item, use <a class="link" href="GtkItemFactory.html#gtk-item-factory-get-item" t
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.13.8"></a><h4>Returns</h4>
+<a name="gtk-item-factory-get-widget.returns"></a><h4>Returns</h4>
 <p> the widget for the given path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
 doesn't lead
 to a widget. </p>
@@ -730,8 +727,8 @@ with the given <em class="parameter"><code>action</code></em>
 <p>If there are multiple items with the same action, the result is 
 undefined.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.14.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-get-widget-by-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -754,7 +751,7 @@ of <a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.14.8"></a><h4>Returns</h4>
+<a name="gtk-item-factory-get-widget-by-action.returns"></a><h4>Returns</h4>
 <p> the widget which corresponds to the given action, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
 if no widget was found. </p>
 <p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
@@ -774,8 +771,8 @@ gtk_item_factory_get_item_by_action (<em class="parameter"><code><a class="link"
 <a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a> with the given <em class="parameter"><code>action</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-get-item-by-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -798,7 +795,7 @@ of <a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.15.7"></a><h4>Returns</h4>
+<a name="gtk-item-factory-get-item-by-action.returns"></a><h4>Returns</h4>
 <p> the menu item which corresponds to the given action, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
 if no menu item was found. </p>
 <p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
@@ -819,8 +816,8 @@ gtk_item_factory_create_item (<em class="parameter"><code><a class="link" href="
 <p>Creates an item for <em class="parameter"><code>entry</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-create-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -869,8 +866,8 @@ gtk_item_factory_create_items (<em class="parameter"><code><a class="link" href=
 <p>Creates the menu items from the <em class="parameter"><code>entries</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-create-items.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -920,8 +917,8 @@ gtk_item_factory_create_items_ac (<em class="parameter"><code><a class="link" hr
 <p>Creates the menu items from the <em class="parameter"><code>entries</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-create-items-ac.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -974,8 +971,8 @@ gtk_item_factory_delete_item (<em class="parameter"><code><a class="link" href="
  by the given
 item factory.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-delete-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1010,8 +1007,8 @@ gtk_item_factory_delete_entry (<em class="parameter"><code><a class="link" href=
  by the given
 item factory.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-delete-entry.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1047,8 +1044,8 @@ gtk_item_factory_delete_entries (<em class="parameter"><code><a class="link" hre
  by the given
 item factory.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-delete-entries.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1108,8 +1105,8 @@ as the <em class="parameter"><code>button</code></em>
  and <em class="parameter"><code>activation_time</code></em>
  parameters for <a class="link" href="GtkMenu.html#gtk-menu-popup" title="gtk_menu_popup ()"><code class="function">gtk_menu_popup()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.22.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-popup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1183,8 +1180,8 @@ as the <em class="parameter"><code>button</code></em>
  and <em class="parameter"><code>activation_time</code></em>
  parameters for <a class="link" href="GtkMenu.html#gtk-menu-popup" title="gtk_menu_popup ()"><code class="function">gtk_menu_popup()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.23.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-popup-with-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1246,8 +1243,8 @@ gtk_item_factory_popup_data (<em class="parameter"><code><a class="link" href="G
 <a class="link" href="GtkItemFactory.html#gtk-item-factory-popup-with-data" title="gtk_item_factory_popup_with_data ()"><code class="function">gtk_item_factory_popup_with_data()</code></a>. This data is available until the menu
 is popped down again.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.24.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-popup-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1261,11 +1258,10 @@ is popped down again.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.24.7"></a><h4>Returns</h4>
+<a name="gtk-item-factory-popup-data.returns"></a><h4>Returns</h4>
 <p><em class="parameter"><code>popup_data</code></em>
 associated with <em class="parameter"><code>ifactory</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1283,8 +1279,8 @@ gtk_item_factory_popup_data_from_widget
 <a class="link" href="GtkItemFactory.html#gtk-item-factory-popup-with-data" title="gtk_item_factory_popup_with_data ()"><code class="function">gtk_item_factory_popup_with_data()</code></a>. This data is available until the menu
 is popped down again.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-popup-data-from-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1298,14 +1294,13 @@ is popped down again.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.25.7"></a><h4>Returns</h4>
+<a name="gtk-item-factory-popup-data-from-widget.returns"></a><h4>Returns</h4>
 <p><em class="parameter"><code>popup_data</code></em>
 associated with the item factory from
 which <em class="parameter"><code>widget</code></em>
 was created, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>widget</code></em>
 wasn't created
 by an item factory</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1323,8 +1318,8 @@ gtk_item_factory_from_path (<em class="parameter"><code>const <a href="https://d
  argument 
 for <a class="link" href="GtkItemFactory.html#gtk-item-factory-new" title="gtk_item_factory_new ()"><code class="function">gtk_item_factory_new()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-from-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1339,7 +1334,7 @@ for <a class="link" href="GtkItemFactory.html#gtk-item-factory-new" title="gtk_i
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.26.7"></a><h4>Returns</h4>
+<a name="gtk-item-factory-from-path.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> created for the given factory path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
@@ -1357,8 +1352,8 @@ gtk_item_factory_create_menu_entries (<em class="parameter"><code><a href="https
 <p>Creates the menu items from the <em class="parameter"><code>entries</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.27.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-create-menu-entries.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1392,8 +1387,8 @@ gtk_item_factories_path_delete (<em class="parameter"><code>const <a href="https
 </div>
 <p>Deletes all widgets constructed from the specified path.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.28.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factories-path-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1431,8 +1426,8 @@ gtk_item_factory_set_translate_func (<em class="parameter"><code><a class="link"
 <p>Sets a function to be used for translating the path elements before they
 are displayed.</p>
 <div class="refsect3">
-<a name="id-1.4.23.6.8.29.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-item-factory-set-translate-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1531,7 +1526,6 @@ destroyed and when the translation function is changed again</p></td>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

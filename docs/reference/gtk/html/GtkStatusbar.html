@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkStatusbar</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkStatusbar: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DisplayWidgets.html" title="Display Widgets">
 <link rel="prev" href="GtkProgressBar.html" title="GtkProgressBar">
 <link rel="next" href="GtkInfoBar.html" title="GtkInfoBar">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkStatusbar.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -121,7 +121,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkStatusbar.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -136,7 +136,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkStatusbar.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -151,7 +151,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkStatusbar.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -161,19 +161,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStatusbar.html#GtkStatusbar-text-popped" title="The “text-popped” signal">text-popped</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStatusbar.html#GtkStatusbar-text-pushed" title="The “text-pushed” signal">text-pushed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkStatusbar.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -186,7 +186,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkStatusbar.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -255,9 +255,8 @@ recorded at the time it was added. This is done using <a class="link" href="GtkS
 gtk_statusbar_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> ready for messages.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.2.5"></a><h4>Returns</h4>
+<a name="gtk-statusbar-new.returns"></a><h4>Returns</h4>
 <p> the new <a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -270,8 +269,8 @@ gtk_statusbar_get_context_id (<em class="parameter"><code><a class="link" href="
 of the actual context. Note that the description is 
 <span class="emphasis"><em>not</em></span> shown in the UI.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-get-context-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -293,9 +292,8 @@ the new message is being used in</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.3.6"></a><h4>Returns</h4>
+<a name="gtk-statusbar-get-context-id.returns"></a><h4>Returns</h4>
 <p> an integer id</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -307,8 +305,8 @@ gtk_statusbar_push (<em class="parameter"><code><a class="link" href="GtkStatusb
                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
 <p>Pushes a new message onto a statusbar's stack.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-push.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -335,10 +333,9 @@ gtk_statusbar_push (<em class="parameter"><code><a class="link" href="GtkStatusb
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.4.6"></a><h4>Returns</h4>
+<a name="gtk-statusbar-push.returns"></a><h4>Returns</h4>
 <p> a message id that can be used with
 <a class="link" href="GtkStatusbar.html#gtk-statusbar-remove" title="gtk_statusbar_remove ()"><code class="function">gtk_statusbar_remove()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -353,8 +350,8 @@ with the given context id. </p>
 the message at the top of the stack has a different 
 context id.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-pop.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -387,8 +384,8 @@ The exact <em class="parameter"><code>context_id</code></em>
  and <em class="parameter"><code>message_id</code></em>
  must be specified.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -424,8 +421,8 @@ gtk_statusbar_remove_all (<em class="parameter"><code><a class="link" href="GtkS
 stack with the exact <em class="parameter"><code>context_id</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-remove-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -445,7 +442,7 @@ stack with the exact <em class="parameter"><code>context_id</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -456,8 +453,8 @@ gtk_statusbar_set_has_resize_grip (<em class="parameter"><code><a class="link" h
 <p>Sets whether the statusbar has a resize grip. 
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> by default.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-set-has-resize-grip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -485,8 +482,8 @@ gtk_statusbar_set_has_resize_grip (<em class="parameter"><code><a class="link" h
 gtk_statusbar_get_has_resize_grip (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>);</pre>
 <p>Returns whether the statusbar has a resize grip.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-get-has-resize-grip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -500,9 +497,8 @@ gtk_statusbar_get_has_resize_grip (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.9.6"></a><h4>Returns</h4>
+<a name="gtk-statusbar-get-has-resize-grip.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the statusbar has a resize grip.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -512,8 +508,8 @@ gtk_statusbar_get_has_resize_grip (<em class="parameter"><code><a class="link" h
 gtk_statusbar_get_message_area (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>);</pre>
 <p>Retrieves the box containing the label widget.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-statusbar-get-message-area.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -527,11 +523,11 @@ gtk_statusbar_get_message_area (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.5.6.12.10.6"></a><h4>Returns</h4>
+<a name="gtk-statusbar-get-message-area.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GtkBox.html" title="GtkBox"><span class="type">GtkBox</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -553,7 +549,7 @@ below.
 <p>Whether the statusbar has a grip for resizing the toplevel window.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -577,8 +573,8 @@ user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><sp
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
 <p>Is emitted whenever a new message is popped off a statusbar's stack.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.16.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkStatusbar-text-popped.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -608,7 +604,7 @@ user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -620,8 +616,8 @@ user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><sp
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
 <p>Is emitted whenever a new message gets pushed onto a statusbar's stack.</p>
 <div class="refsect3">
-<a name="id-1.4.5.6.16.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkStatusbar-text-pushed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -651,12 +647,11 @@ user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

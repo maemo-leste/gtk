@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTreeModel</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTreeModel: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="TreeWidget.html" title="Tree and List Widget Overview">
 <link rel="next" href="GtkTreeSelection.html" title="GtkTreeSelection">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTreeModel.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -515,7 +515,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeModel.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -525,34 +525,34 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeModel.html#GtkTreeModel-row-changed" title="The “row-changed” signal">row-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeModel.html#GtkTreeModel-row-deleted" title="The “row-deleted” signal">row-deleted</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeModel.html#GtkTreeModel-row-has-child-toggled" title="The “row-has-child-toggled” signal">row-has-child-toggled</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeModel.html#GtkTreeModel-row-inserted" title="The “row-inserted” signal">row-inserted</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeModel.html#GtkTreeModel-rows-reordered" title="The “rows-reordered” signal">rows-reordered</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <a name="GtkTreeIter"></a><a name="GtkTreePath"></a><div class="refsect1">
 <a name="GtkTreeModel.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -587,10 +587,10 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GBoxed
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html">GBoxed</a>
     <span class="lineart">├──</span> GtkTreeIter
     <span class="lineart">╰──</span> GtkTreePath
-    GInterface
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
     <span class="lineart">╰──</span> GtkTreeModel
 </pre>
 </div>
@@ -598,7 +598,7 @@
 <a name="GtkTreeModel.prerequisites"></a><h2>Prerequisites</h2>
 <p>
 GtkTreeModel requires
- <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>.</p>
+ <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
 </div>
 <div class="refsect1">
 <a name="GtkTreeModel.derived-interfaces"></a><h2>Known Derived Interfaces</h2>
@@ -705,7 +705,7 @@ the second is much more common, as you often get paths from callbacks.
 <p>
 </p>
 <div class="example">
-<a name="id-1.4.9.3.13.11.1"></a><p class="title"><b>Example 21. Acquiring a <span class="structname">GtkTreeIter</span></b></p>
+<a name="id-1.4.9.3.13.11.1"></a><p class="title"><b>Example 16. Acquiring a <span class="structname">GtkTreeIter</span></b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -764,7 +764,7 @@ it is specific to the <a class="link" href="GtkListStore.html" title="GtkListSto
 such a function, see the <a class="link" href="GtkListStore.html" title="GtkListStore"><span class="type">GtkListStore</span></a> documentation.
 </p>
 <div class="example">
-<a name="id-1.4.9.3.13.12.4"></a><p class="title"><b>Example 22. Reading data from a <span class="structname">GtkTreeModel</span></b></p>
+<a name="id-1.4.9.3.13.12.4"></a><p class="title"><b>Example 17. Reading data from a <span class="structname">GtkTreeModel</span></b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -862,8 +862,8 @@ such a function, see the <a class="link" href="GtkListStore.html" title="GtkList
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeModelForeachFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -894,9 +894,8 @@ such a function, see the <a class="link" href="GtkListStore.html" title="GtkList
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.2.6"></a><h4>Returns</h4>
+<a name="GtkTreeModelForeachFunc.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to stop iterating, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to continue.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -906,9 +905,8 @@ such a function, see the <a class="link" href="GtkListStore.html" title="GtkList
 gtk_tree_path_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.  This structure refers to a row.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.3.5"></a><h4>Returns</h4>
+<a name="gtk-tree-path-new.returns"></a><h4>Returns</h4>
 <p> A newly created <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -924,8 +922,8 @@ create a path of depth 3 pointing to the 11th child of the root node, the 5th
 child of that 11th child, and the 1st child of that 5th child.  If an invalid
 path string is passed in, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-new-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -939,9 +937,8 @@ path string is passed in, <a href="https://developer.gnome.org/glib/unstable/gli
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.4.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-new-from-string.returns"></a><h4>Returns</h4>
 <p> A newly-created <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -954,8 +951,8 @@ gtk_tree_path_new_from_indices (<em class="parameter"><code><a href="https://dev
  and <em class="parameter"><code>varargs</code></em>
  as indices.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-new-from-indices.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -969,11 +966,10 @@ gtk_tree_path_new_from_indices (<em class="parameter"><code><a href="https://dev
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.5.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-new-from-indices.returns"></a><h4>Returns</h4>
 <p> A newly created <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -983,8 +979,8 @@ gtk_tree_path_to_string (<em class="parameter"><code><a class="link" href="GtkTr
 <p>Generates a string representation of the path.  This string is a ':'
 separated list of numbers.  For example, "4:10:0:3" would be an acceptable return value for this string.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -998,9 +994,8 @@ separated list of numbers.  For example, "4:10:0:3" would be an acceptable retur
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.6.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-to-string.returns"></a><h4>Returns</h4>
 <p> A newly-allocated string.  Must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1010,9 +1005,8 @@ separated list of numbers.  For example, "4:10:0:3" would be an acceptable retur
 gtk_tree_path_new_first (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.  The string representation of this path is "0"</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.7.5"></a><h4>Returns</h4>
+<a name="gtk-tree-path-new-first.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1029,9 +1023,8 @@ An alternate name for <a class="link" href="GtkTreeModel.html#gtk-tree-path-new-
 compatibility reasons.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.8.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-new-root.returns"></a><h4>Returns</h4>
 <p>A new <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1043,8 +1036,8 @@ gtk_tree_path_append_index (<em class="parameter"><code><a class="link" href="Gt
 <p>Appends a new index to a path.  As a result, the depth of the path is
 increased.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-append-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1074,8 +1067,8 @@ gtk_tree_path_prepend_index (<em class="parameter"><code><a class="link" href="G
 <p>Prepends a new index to a path.  As a result, the depth of the path is
 increased.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-prepend-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1104,8 +1097,8 @@ gtk_tree_path_get_depth (<em class="parameter"><code><a class="link" href="GtkTr
 <p>Returns the current depth of <em class="parameter"><code>path</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-get-depth.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1119,10 +1112,9 @@ gtk_tree_path_get_depth (<em class="parameter"><code><a class="link" href="GtkTr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.11.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-get-depth.returns"></a><h4>Returns</h4>
 <p> The depth of <em class="parameter"><code>path</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1134,8 +1126,8 @@ gtk_tree_path_get_indices (<em class="parameter"><code><a class="link" href="Gtk
 .  This is an array of integers, each
 representing a node in a tree.  This value should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-get-indices.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1149,9 +1141,8 @@ representing a node in a tree.  This value should not be freed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.12.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-get-indices.returns"></a><h4>Returns</h4>
 <p> The current indices, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1166,8 +1157,8 @@ This is an array of integers, each representing a node in a tree.
 It also returns the number of elements in the array.
 The array should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-get-indices-with-depth.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1188,11 +1179,11 @@ The array should not be freed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.13.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-get-indices-with-depth.returns"></a><h4>Returns</h4>
 <p> The current indices, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=depth][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1202,8 +1193,8 @@ gtk_tree_path_free (<em class="parameter"><code><a class="link" href="GtkTreeMod
 <p>Frees <em class="parameter"><code>path</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1225,8 +1216,8 @@ gtk_tree_path_copy (<em class="parameter"><code>const <a class="link" href="GtkT
 <p>Creates a new <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> as a copy of <em class="parameter"><code>path</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1240,9 +1231,8 @@ gtk_tree_path_copy (<em class="parameter"><code>const <a class="link" href="GtkT
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.15.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-copy.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1259,8 +1249,8 @@ If <em class="parameter"><code>b</code></em>
 , then 1 is returned.  If the two nodes are equal,
 then 0 is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-compare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1281,11 +1271,10 @@ then 0 is returned.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.16.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-compare.returns"></a><h4>Returns</h4>
 <p> The relative positions of <em class="parameter"><code>a</code></em>
 and <em class="parameter"><code>b</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1296,8 +1285,8 @@ gtk_tree_path_next (<em class="parameter"><code><a class="link" href="GtkTreeMod
 <p>Moves the <em class="parameter"><code>path</code></em>
  to point to the next node at the current depth.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-next.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1320,8 +1309,8 @@ gtk_tree_path_prev (<em class="parameter"><code><a class="link" href="GtkTreeMod
  to point to the previous node at the current depth, 
 if it exists.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-prev.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1335,10 +1324,9 @@ if it exists.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.18.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-prev.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>path</code></em>
 has a previous node, and the move was made.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1349,8 +1337,8 @@ gtk_tree_path_up (<em class="parameter"><code><a class="link" href="GtkTreeModel
 <p>Moves the <em class="parameter"><code>path</code></em>
  to point to its parent node, if it has a parent.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-up.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1364,10 +1352,9 @@ gtk_tree_path_up (<em class="parameter"><code><a class="link" href="GtkTreeModel
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.19.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-up.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>path</code></em>
 has a parent, and the move was made.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1378,8 +1365,8 @@ gtk_tree_path_down (<em class="parameter"><code><a class="link" href="GtkTreeMod
 <p>Moves <em class="parameter"><code>path</code></em>
  to point to the first child of the current path.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-down.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1403,8 +1390,8 @@ gtk_tree_path_is_ancestor (<em class="parameter"><code><a class="link" href="Gtk
  is a descendant of <em class="parameter"><code>path</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-is-ancestor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1425,11 +1412,10 @@ gtk_tree_path_is_ancestor (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.21.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-is-ancestor.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>descendant</code></em>
 is contained inside <em class="parameter"><code>path</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1442,8 +1428,8 @@ gtk_tree_path_is_descendant (<em class="parameter"><code><a class="link" href="G
  is a descendant of <em class="parameter"><code>ancestor</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-path-is-descendant.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1464,11 +1450,10 @@ gtk_tree_path_is_descendant (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.22.6"></a><h4>Returns</h4>
+<a name="gtk-tree-path-is-descendant.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>ancestor</code></em>
 contains <em class="parameter"><code>path</code></em>
 somewhere below it</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1487,8 +1472,8 @@ signals emitted by <em class="parameter"><code>model</code></em>
 isn't a valid path in <em class="parameter"><code>model</code></em>
 , then <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1509,16 +1494,15 @@ isn't a valid path in <em class="parameter"><code>model</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.23.6"></a><h4>Returns</h4>
+<a name="gtk-tree-row-reference-new.returns"></a><h4>Returns</h4>
 <p> A newly allocated <a class="link" href="GtkTreeModel.html#GtkTreeRowReference" title="GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-tree-row-reference-new-proxy"></a><h3>gtk_tree_row_reference_new_proxy ()</h3>
 <pre class="programlisting"><a class="link" href="GtkTreeModel.html#GtkTreeRowReference" title="GtkTreeRowReference"><span class="returnvalue">GtkTreeRowReference</span></a> *
-gtk_tree_row_reference_new_proxy (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *proxy</code></em>,
+gtk_tree_row_reference_new_proxy (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *proxy</code></em>,
                                   <em class="parameter"><code><a class="link" href="GtkTreeModel.html" title="GtkTreeModel"><span class="type">GtkTreeModel</span></a> *model</code></em>,
                                   <em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>);</pre>
 <p>You do not need to use this function.  Creates a row reference based on
@@ -1546,8 +1530,8 @@ doesn't work for reasons of internal implementation.</p>
 carefully monitor exactly when a row reference updates itself, and is not
 generally needed by most applications.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.24.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-new-proxy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1556,7 +1540,7 @@ generally needed by most applications.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>proxy</p></td>
-<td class="parameter_description"><p>A proxy <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a></p></td>
+<td class="parameter_description"><p>A proxy <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1573,9 +1557,8 @@ generally needed by most applications.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.24.8"></a><h4>Returns</h4>
+<a name="gtk-tree-row-reference-new-proxy.returns"></a><h4>Returns</h4>
 <p> A newly allocated <a class="link" href="GtkTreeModel.html#GtkTreeRowReference" title="GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1585,8 +1568,8 @@ generally needed by most applications.</p>
 gtk_tree_row_reference_get_model (<em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreeRowReference" title="GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a> *reference</code></em>);</pre>
 <p>Returns the model that the row reference is monitoring.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-get-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1600,11 +1583,11 @@ gtk_tree_row_reference_get_model (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.25.6"></a><h4>Returns</h4>
+<a name="gtk-tree-row-reference-get-model.returns"></a><h4>Returns</h4>
 <p> the model. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1614,8 +1597,8 @@ gtk_tree_row_reference_get_path (<em class="parameter"><code><a class="link" hre
 <p>Returns a path that the row reference currently points to, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
 path pointed to is no longer valid.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-get-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1629,9 +1612,8 @@ path pointed to is no longer valid.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.26.6"></a><h4>Returns</h4>
+<a name="gtk-tree-row-reference-get-path.returns"></a><h4>Returns</h4>
 <p> A current path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1643,8 +1625,8 @@ gtk_tree_row_reference_valid (<em class="parameter"><code><a class="link" href="
  is non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> and refers to a current valid
 path.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-valid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1658,10 +1640,9 @@ path.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.27.6"></a><h4>Returns</h4>
+<a name="gtk-tree-row-reference-valid.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>reference</code></em>
 points to a valid path.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1673,8 +1654,8 @@ gtk_tree_row_reference_free (<em class="parameter"><code><a class="link" href="G
 . <em class="parameter"><code>reference</code></em>
  may be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1695,8 +1676,8 @@ gtk_tree_row_reference_free (<em class="parameter"><code><a class="link" href="G
 gtk_tree_row_reference_copy (<em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreeRowReference" title="GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a> *reference</code></em>);</pre>
 <p>Copies a <a class="link" href="GtkTreeModel.html#GtkTreeRowReference" title="GtkTreeRowReference"><span class="type">GtkTreeRowReference</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1710,24 +1691,23 @@ gtk_tree_row_reference_copy (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.29.6"></a><h4>Returns</h4>
+<a name="gtk-tree-row-reference-copy.returns"></a><h4>Returns</h4>
 <p> a copy of <em class="parameter"><code>reference</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-tree-row-reference-inserted"></a><h3>gtk_tree_row_reference_inserted ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_tree_row_reference_inserted (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *proxy</code></em>,
+gtk_tree_row_reference_inserted (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *proxy</code></em>,
                                  <em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>);</pre>
 <p>Lets a set of row reference created by <a class="link" href="GtkTreeModel.html#gtk-tree-row-reference-new-proxy" title="gtk_tree_row_reference_new_proxy ()"><code class="function">gtk_tree_row_reference_new_proxy()</code></a>
 know that the model emitted the "row_inserted" signal.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-inserted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1736,7 +1716,7 @@ know that the model emitted the "row_inserted" signal.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>proxy</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a></p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1752,13 +1732,13 @@ know that the model emitted the "row_inserted" signal.</p>
 <div class="refsect2">
 <a name="gtk-tree-row-reference-deleted"></a><h3>gtk_tree_row_reference_deleted ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_tree_row_reference_deleted (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *proxy</code></em>,
+gtk_tree_row_reference_deleted (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *proxy</code></em>,
                                 <em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>);</pre>
 <p>Lets a set of row reference created by <a class="link" href="GtkTreeModel.html#gtk-tree-row-reference-new-proxy" title="gtk_tree_row_reference_new_proxy ()"><code class="function">gtk_tree_row_reference_new_proxy()</code></a>
 know that the model emitted the "row_deleted" signal.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-deleted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1767,7 +1747,7 @@ know that the model emitted the "row_deleted" signal.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>proxy</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a></p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1783,15 +1763,15 @@ know that the model emitted the "row_deleted" signal.</p>
 <div class="refsect2">
 <a name="gtk-tree-row-reference-reordered"></a><h3>gtk_tree_row_reference_reordered ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_tree_row_reference_reordered (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *proxy</code></em>,
+gtk_tree_row_reference_reordered (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *proxy</code></em>,
                                   <em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> *path</code></em>,
                                   <em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>,
                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *new_order</code></em>);</pre>
 <p>Lets a set of row reference created by <a class="link" href="GtkTreeModel.html#gtk-tree-row-reference-new-proxy" title="gtk_tree_row_reference_new_proxy ()"><code class="function">gtk_tree_row_reference_new_proxy()</code></a>
 know that the model emitted the "rows_reordered" signal.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-row-reference-reordered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1800,7 +1780,7 @@ know that the model emitted the "rows_reordered" signal.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>proxy</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a></p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1834,8 +1814,8 @@ can just copy the structs by value
 (<code class="literal">GtkTreeIter new_iter = iter;</code>).
 You must free this iter with <a class="link" href="GtkTreeModel.html#gtk-tree-iter-free" title="gtk_tree_iter_free ()"><code class="function">gtk_tree_iter_free()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-iter-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1849,10 +1829,9 @@ You must free this iter with <a class="link" href="GtkTreeModel.html#gtk-tree-it
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.33.6"></a><h4>Returns</h4>
+<a name="gtk-tree-iter-copy.returns"></a><h4>Returns</h4>
 <p> a newly-allocated copy of <em class="parameter"><code>iter</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1863,8 +1842,8 @@ gtk_tree_iter_free (<em class="parameter"><code><a class="link" href="GtkTreeMod
 <p>Frees an iterator that has been allocated by <a class="link" href="GtkTreeModel.html#gtk-tree-iter-copy" title="gtk_tree_iter_copy ()"><code class="function">gtk_tree_iter_copy()</code></a>.
 This function is mainly used for language bindings.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-iter-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1888,8 +1867,8 @@ combination of <a class="link" href="GtkTreeModel.html#GtkTreeModelFlags" title=
 during the lifecycle of the <em class="parameter"><code>tree_model</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1903,9 +1882,8 @@ during the lifecycle of the <em class="parameter"><code>tree_model</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.35.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-flags.returns"></a><h4>Returns</h4>
 <p> The flags supported by this interface.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1916,8 +1894,8 @@ gtk_tree_model_get_n_columns (<em class="parameter"><code><a class="link" href="
 <p>Returns the number of columns supported by <em class="parameter"><code>tree_model</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-n-columns.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1931,9 +1909,8 @@ gtk_tree_model_get_n_columns (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.36.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-n-columns.returns"></a><h4>Returns</h4>
 <p> The number of columns.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1944,8 +1921,8 @@ gtk_tree_model_get_column_type (<em class="parameter"><code><a class="link" href
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>);</pre>
 <p>Returns the type of the column.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-column-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1966,7 +1943,7 @@ gtk_tree_model_get_column_type (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.37.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-column-type.returns"></a><h4>Returns</h4>
 <p> The type of the column. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1982,8 +1959,8 @@ gtk_tree_model_get_iter (<em class="parameter"><code><a class="link" href="GtkTr
  to a valid iterator pointing to <em class="parameter"><code>path</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.38.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-iter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2009,10 +1986,9 @@ gtk_tree_model_get_iter (<em class="parameter"><code><a class="link" href="GtkTr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.38.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-iter.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>iter</code></em>
 was set.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2028,8 +2004,8 @@ gtk_tree_model_get_iter_from_string (<em class="parameter"><code><a class="link"
 exists. Otherwise, <em class="parameter"><code>iter</code></em>
  is left invalid and <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.39.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-iter-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2055,10 +2031,9 @@ exists. Otherwise, <em class="parameter"><code>iter</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.39.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-iter-from-string.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>iter</code></em>
 was set.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2071,8 +2046,8 @@ gtk_tree_model_get_iter_first (<em class="parameter"><code><a class="link" href=
  with the first iterator in the tree (the one at the path
 "0") and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the tree is empty.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.40.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-iter-first.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2093,10 +2068,9 @@ gtk_tree_model_get_iter_first (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.40.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-iter-first.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>iter</code></em>
 was set.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2111,8 +2085,8 @@ compatibility reasons; this macro will be deprecated in future
 versions of GTK+.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.41.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-iter-root.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2133,10 +2107,9 @@ versions of GTK+.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.41.7"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-iter-root.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>iter</code></em>
 was set.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2149,8 +2122,8 @@ gtk_tree_model_get_path (<em class="parameter"><code><a class="link" href="GtkTr
 .  This path should
 be freed with <a class="link" href="GtkTreeModel.html#gtk-tree-path-free" title="gtk_tree_path_free ()"><code class="function">gtk_tree_path_free()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.42.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2171,9 +2144,8 @@ be freed with <a class="link" href="GtkTreeModel.html#gtk-tree-path-free" title=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.42.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-path.returns"></a><h4>Returns</h4>
 <p> a newly-created <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2191,8 +2163,8 @@ When done with <em class="parameter"><code>value</code></em>
 , <a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#g-value-unset"><code class="function">g_value_unset()</code></a> needs to be called 
 to free any allocated memory.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.43.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2235,8 +2207,8 @@ is no next <em class="parameter"><code>iter</code></em>
 , <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned and <em class="parameter"><code>iter</code></em>
  is set to be invalid.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.44.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-iter-next.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2257,10 +2229,9 @@ is no next <em class="parameter"><code>iter</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.44.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-iter-next.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 has been changed to the next node.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2282,8 +2253,8 @@ will remain a valid node after this function has been called.</p>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> returns the first node, equivalent to
 <code class="literal">gtk_tree_model_get_iter_first (tree_model, iter);</code></p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.45.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-iter-children.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2309,10 +2280,9 @@ will remain a valid node after this function has been called.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.45.7"></a><h4>Returns</h4>
+<a name="gtk-tree-model-iter-children.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>child</code></em>
 has been set to the first child.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2324,8 +2294,8 @@ gtk_tree_model_iter_has_child (<em class="parameter"><code><a class="link" href=
 <p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
  has children, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.46.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-iter-has-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2346,10 +2316,9 @@ gtk_tree_model_iter_has_child (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.46.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-iter-has-child.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 has children.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2363,8 +2332,8 @@ gtk_tree_model_iter_n_children (<em class="parameter"><code><a class="link" href
 
 is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, then the number of toplevel nodes is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.47.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-iter-n-children.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2385,10 +2354,9 @@ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.47.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-iter-n-children.returns"></a><h4>Returns</h4>
 <p> The number of children of <em class="parameter"><code>iter</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2413,8 +2381,8 @@ node after this function has been called.  As a special case, if <em class="para
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, then the <em class="parameter"><code>n</code></em>
 th root node is set.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.48.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-iter-nth-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2445,11 +2413,10 @@ th root node is set.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.48.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-iter-nth-child.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>parent</code></em>
 has an <em class="parameter"><code>n</code></em>
 th child.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2469,8 +2436,8 @@ is returned.  <em class="parameter"><code>child</code></em>
  will remain a valid node after this function has been
 called.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.49.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-iter-parent.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2496,11 +2463,10 @@ called.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.49.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-iter-parent.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>iter</code></em>
 is set to the parent of <em class="parameter"><code>child</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2513,8 +2479,8 @@ gtk_tree_model_get_string_from_iter (<em class="parameter"><code><a class="link"
 separated list of numbers. For example, "4:10:0:3" would be an
 acceptable return value for this string.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.50.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-string-from-iter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2535,11 +2501,10 @@ acceptable return value for this string.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.50.6"></a><h4>Returns</h4>
+<a name="gtk-tree-model-get-string-from-iter.returns"></a><h4>Returns</h4>
 <p> A newly-allocated string. Must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2558,8 +2523,8 @@ displayed by every current view.</p>
 <p>A model should be expected to be able to get an iter independent of its
 reffed state.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.51.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-ref-node.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2592,8 +2557,8 @@ primarily for performance reasons.</p>
 <p>For more information on what this means, see <a class="link" href="GtkTreeModel.html#gtk-tree-model-ref-node" title="gtk_tree_model_ref_node ()"><code class="function">gtk_tree_model_ref_node()</code></a>.
 Please note that nodes that are deleted are not unreffed.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.52.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-unref-node.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2634,8 +2599,8 @@ filled with the string.</p>
 with type <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><code class="literal">G_TYPE_STRING</code></a> or <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-BOXED:CAPS"><code class="literal">G_TYPE_BOXED</code></a> have to be freed. Other values are
 passed by value.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.53.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2667,8 +2632,8 @@ gtk_tree_model_get_valist (<em class="parameter"><code><a class="link" href="Gtk
 <p>See <a class="link" href="GtkTreeModel.html#gtk-tree-model-get" title="gtk_tree_model_get ()"><code class="function">gtk_tree_model_get()</code></a>, this version takes a <span class="type">va_list</span> 
 for language bindings to use.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.54.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-get-valist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2708,8 +2673,8 @@ If <em class="parameter"><code>func</code></em>
  returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, then the tree ceases to be walked, and
 <a class="link" href="GtkTreeModel.html#gtk-tree-model-foreach" title="gtk_tree_model_foreach ()"><code class="function">gtk_tree_model_foreach()</code></a> returns.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.55.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2746,8 +2711,8 @@ gtk_tree_model_row_changed (<em class="parameter"><code><a class="link" href="Gt
 <p>Emits the "row-changed" signal on <em class="parameter"><code>tree_model</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.56.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-row-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2783,8 +2748,8 @@ gtk_tree_model_row_inserted (<em class="parameter"><code><a class="link" href="G
 <p>Emits the "row-inserted" signal on <em class="parameter"><code>tree_model</code></em>
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.57.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-row-inserted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2821,8 +2786,8 @@ gtk_tree_model_row_has_child_toggled (<em class="parameter"><code><a class="link
 .  This should be
 called by models after the child state of a node changes.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.58.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-row-has-child-toggled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2861,8 +2826,8 @@ models after a row has been removed.  The location pointed to by <em class="para
 should be the location that the row previously was at.  It may not be a 
 valid location anymore.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.59.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-row-deleted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2895,8 +2860,8 @@ gtk_tree_model_rows_reordered (<em class="parameter"><code><a class="link" href=
 .  This should be called by
 models when their rows have been reordered.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.14.60.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-model-rows-reordered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3047,8 +3012,8 @@ lifetime of the object.  A more complete description of
 section.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.3.15.7.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeModelFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -3085,8 +3050,8 @@ user_function (<a class="link" href="GtkTreeModel.html" title="GtkTreeModel"><sp
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
 <p>This signal is emitted when a row in the model has changed.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.16.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeModel-row-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3116,7 +3081,7 @@ user_function (<a class="link" href="GtkTreeModel.html" title="GtkTreeModel"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3133,8 +3098,8 @@ The location pointed to by <em class="parameter"><code>path</code></em>
  should be the location that
 the row previously was at. It may not be a valid location anymore.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.16.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeModel-row-deleted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3159,7 +3124,7 @@ the row previously was at. It may not be a valid location anymore.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3172,8 +3137,8 @@ user_function (<a class="link" href="GtkTreeModel.html" title="GtkTreeModel"><sp
 <p>This signal is emitted when a row has gotten the first child row or lost
 its last child row.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.16.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeModel-row-has-child-toggled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3203,7 +3168,7 @@ its last child row.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3219,8 +3184,8 @@ it is a common pattern to first insert an empty row, and
 
 then fill it with the desired values.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.16.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeModel-row-inserted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3250,7 +3215,7 @@ then fill it with the desired values.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3267,8 +3232,8 @@ have been reordered. </p>
 when rows are reordered by DND, since this is implemented
 by removing and then reinserting the row.</p>
 <div class="refsect3">
-<a name="id-1.4.9.3.16.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeModel-rows-reordered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3307,7 +3272,7 @@ i.e. <em class="parameter"><code>new_order</code></em>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -3324,7 +3289,6 @@ Here, <abbr class="abbrev">iter</abbr> is short for <span class="quote">“<span
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

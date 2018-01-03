@@ -7,6 +7,7 @@ endif
 if OS_WIN32
 export_symbols = -export-symbols $(srcdir)/gailutil.def
 install-def-file: gailutil.def
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
 	$(INSTALL) $(srcdir)/gailutil.def $(DESTDIR)$(libdir)
 uninstall-def-file:
 	-rm $(DESTDIR)$(libdir)/gailutil.def
@@ -19,6 +20,7 @@ if MS_LIB_AVAILABLE
 noinst_DATA = gailutil.lib
 
 install-ms-lib:
+	$(mkinstalldirs) $(DESTDIR)$(libdir)
 	$(INSTALL) gailutil.lib $(DESTDIR)$(libdir)
 
 uninstall-ms-lib:
@@ -73,6 +75,20 @@ libgailutil_la_LDFLAGS = \
 	$(no_undefined)				\
 	$(export_symbols)			\
         $(LDFLAGS)
+
+# ----------------- MSVC Projects ------------------
+MSVCPROJS = gailutil
+
+gailutil_FILES = $(libgailutil_la_SOURCES)
+gailutil_EXCLUDES = gaildummy
+
+gailutil_HEADERS_DIR = $(libgailutilincludedir)
+gailutil_HEADERS_INST = $(libgailutilinclude_HEADERS)
+gailutil_HEADERS_EXCLUDES = gaildummy
+
+include $(top_srcdir)/build/Makefile.msvcproj
+
+dist-hook: $(top_builddir)/build/win32/vs9/gailutil.vcproj $(top_builddir)/build/win32/vs9/gailutil.headers
 
 gailutil.lib: libgailutil.la gailutil.def
 	lib -machine:@LIB_EXE_MACHINE_FLAG@ -name:libgailutil-$(GAIL_LT_CURRENT_MINUS_AGE).dll -def:gailutil.def -out:$@

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkRadioAction</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkRadioAction: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="Actions.html" title="Action-based menus and toolbars">
 <link rel="prev" href="GtkToggleAction.html" title="GtkToggleAction">
 <link rel="next" href="GtkRecentAction.html" title="GtkRecentAction">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkRadioAction.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -88,7 +88,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRadioAction.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -116,7 +116,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRadioAction.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -125,13 +125,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkRadioAction.html#GtkRadioAction-changed" title="The “changed” signal">changed</a></td>
-<td class="signal_flags">No Recursion</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkRadioAction.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -144,7 +144,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRadioAction.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a class="link" href="GtkAction.html" title="GtkAction">GtkAction</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkToggleAction.html" title="GtkToggleAction">GtkToggleAction</a>
             <span class="lineart">╰──</span> GtkRadioAction
@@ -183,8 +183,8 @@ gtk_radio_action_new (<em class="parameter"><code>const <a href="https://develop
 a <a class="link" href="GtkActionGroup.html" title="GtkActionGroup"><span class="type">GtkActionGroup</span></a> and set the accelerator for the action,
 call <a class="link" href="GtkActionGroup.html#gtk-action-group-add-action-with-accel" title="gtk_action_group_add_action_with_accel ()"><code class="function">gtk_action_group_add_action_with_accel()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-radio-action-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -222,11 +222,10 @@ return if this action is selected.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-radio-action-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkRadioAction.html" title="GtkRadioAction"><span class="type">GtkRadioAction</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -268,8 +267,8 @@ to the group. </p>
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.3.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-radio-action-get-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -283,11 +282,11 @@ to the group. </p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.3.9"></a><h4>Returns</h4>
+<a name="gtk-radio-action-get-group.returns"></a><h4>Returns</h4>
 <p> the list representing the radio group for this object. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkAction][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -297,8 +296,8 @@ gtk_radio_action_set_group (<em class="parameter"><code><a class="link" href="Gt
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *group</code></em>);</pre>
 <p>Sets the radio group for the radio action object.</p>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-radio-action-set-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -318,7 +317,7 @@ gtk_radio_action_set_group (<em class="parameter"><code><a class="link" href="Gt
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -329,8 +328,8 @@ gtk_radio_action_get_current_value (<em class="parameter"><code><a class="link" 
 the group to which <em class="parameter"><code>action</code></em>
  belongs.</p>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-radio-action-get-current-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -344,11 +343,10 @@ the group to which <em class="parameter"><code>action</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.5.6"></a><h4>Returns</h4>
+<a name="gtk-radio-action-get-current-value.returns"></a><h4>Returns</h4>
 <p> The value of the currently active group member</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -360,8 +358,8 @@ gtk_radio_action_set_current_value (<em class="parameter"><code><a class="link" 
 property <em class="parameter"><code>current_value</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.11.6.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-radio-action-set-current-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -381,7 +379,7 @@ property <em class="parameter"><code>current_value</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -404,7 +402,7 @@ only private members and should not be accessed directly.
 this action belongs.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -412,7 +410,7 @@ this action belongs.</p>
 <pre class="programlisting">  “group”                    <a class="link" href="GtkRadioAction.html" title="GtkRadioAction"><span class="type">GtkRadioAction</span></a> *</pre>
 <p>Sets a new group for a radio action.</p>
 <p>Flags: Write</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -426,7 +424,7 @@ See <a class="link" href="GtkRadioAction.html#gtk-radio-action-get-current-value
 for convenient ways to get and set this property.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -441,8 +439,8 @@ user_function (<a class="link" href="GtkRadioAction.html" title="GtkRadioAction"
 active member is changed. The signal gets emitted after the ::activate signals
 for the previous and current active members.</p>
 <div class="refsect3">
-<a name="id-1.4.11.6.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRadioAction-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -468,13 +466,12 @@ s group which has just been activated</p></td>
 </tbody>
 </table></div>
 </div>
-<p>Flags: No Recursion</p>
-<p class="since">Since 2.4</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

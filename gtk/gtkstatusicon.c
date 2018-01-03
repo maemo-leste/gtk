@@ -687,6 +687,24 @@ button_callback (gpointer data)
 
 static UINT taskbar_created_msg = 0;
 static GSList *status_icons = NULL;
+static UINT status_icon_id = 0;
+
+static GtkStatusIcon *
+find_status_icon (UINT id)
+{
+  GSList *rover;
+
+  for (rover = status_icons; rover != NULL; rover = rover->next)
+    {
+      GtkStatusIcon *status_icon = GTK_STATUS_ICON (rover->data);
+      GtkStatusIconPrivate *priv = status_icon->priv;
+
+      if (priv->nid.uID == id)
+        return status_icon;
+    }
+
+  return NULL;
+}
 
 static LRESULT CALLBACK
 wndproc (HWND   hwnd,
@@ -703,8 +721,14 @@ wndproc (HWND   hwnd,
 	  GtkStatusIcon *status_icon = GTK_STATUS_ICON (rover->data);
 	  GtkStatusIconPrivate *priv = status_icon->priv;
 
+	  /* taskbar_created_msg is also fired when DPI changes. Try to delete existing icons if possible. */
+	  if (!Shell_NotifyIconW (NIM_DELETE, &priv->nid))
+	  {
+		g_warning (G_STRLOC ": Shell_NotifyIcon(NIM_DELETE) on existing icon failed");
+	  }
+
 	  priv->nid.hWnd = hwnd;
-	  priv->nid.uID = GPOINTER_TO_UINT (status_icon);
+	  priv->nid.uID = status_icon_id++;
 	  priv->nid.uCallbackMessage = WM_GTK_TRAY_NOTIFICATION;
 	  priv->nid.uFlags = NIF_MESSAGE;
 
@@ -748,7 +772,7 @@ wndproc (HWND   hwnd,
 	buttondown0:
 	  bc = g_new (ButtonCallbackData, 1);
 	  bc->event = (GdkEventButton *) gdk_event_new (GDK_BUTTON_PRESS);
-	  bc->status_icon = GTK_STATUS_ICON (wparam);
+	  bc->status_icon = find_status_icon (wparam);
 	  build_button_event (bc->status_icon->priv, bc->event, button);
 	  g_idle_add (button_callback, bc);
 	  break;
@@ -774,7 +798,7 @@ wndproc (HWND   hwnd,
 	buttonup0:
 	  bc = g_new (ButtonCallbackData, 1);
 	  bc->event = (GdkEventButton *) gdk_event_new (GDK_BUTTON_RELEASE);
-	  bc->status_icon = GTK_STATUS_ICON (wparam);
+	  bc->status_icon = find_status_icon (wparam);
 	  build_button_event (bc->status_icon->priv, bc->event, button);
 	  g_idle_add (button_callback, bc);
 	  break;
@@ -906,7 +930,7 @@ gtk_status_icon_init (GtkStatusIcon *status_icon)
   memset (&priv->nid, 0, sizeof (priv->nid));
 
   priv->nid.hWnd = create_tray_observer ();
-  priv->nid.uID = GPOINTER_TO_UINT (status_icon);
+  priv->nid.uID = status_icon_id++;
   priv->nid.uCallbackMessage = WM_GTK_TRAY_NOTIFICATION;
   priv->nid.uFlags = NIF_MESSAGE;
 
@@ -1672,7 +1696,7 @@ gtk_status_icon_size_allocate (GtkStatusIcon *status_icon,
   priv->image_width = allocation->width - GTK_MISC (priv->image)->xpad * 2;
   priv->image_height = allocation->height - GTK_MISC (priv->image)->ypad * 2;
 
-  if (priv->size != size)
+  if (priv->size - 1 > size || priv->size + 1 < size)
     {
       priv->size = size;
 

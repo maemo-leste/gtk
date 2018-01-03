@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Visuals</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Visuals: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Colormaps-and-Colors.html" title="Colormaps and Colors">
 <link rel="next" href="gdk2-Fonts.html" title="Fonts">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Visuals.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -208,7 +208,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Visuals.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -249,7 +249,7 @@ of an RGB pixel may be in the top 8 bits of the pixel, or may be in the lower
 <p>
 Usually you can avoid thinking about visuals in GTK+. Visuals are useful to
 interpret the contents of a <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a>, but you should avoid <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> precisely
-because its contents depend on the display hardware; use <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> instead, for
+because its contents depend on the display hardware; use <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> instead, for
 all but the most low-level purposes. Also, anytime you provide a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a>,
 the visual is implied as part of the colormap (<a class="link" href="gdk2-Colormaps-and-Colors.html#gdk-colormap-get-visual" title="gdk_colormap_get_visual ()"><code class="function">gdk_colormap_get_visual()</code></a>), so
 you won't have to provide a visual in addition.
@@ -289,8 +289,8 @@ screen. It's equivalent to listing the visuals
 visual, removing duplicates.</p>
 <p>The array returned by this function should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-query-depths.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -323,8 +323,8 @@ screen. It's equivalent to listing the visuals
 visual, removing duplicates.</p>
 <p>The array returned by this function should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-query-visual-types.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -357,7 +357,7 @@ For example, a visual might support 24-bit color, or 8-bit color,
 and might expect pixels to be in a certain format.</p>
 <p>Call <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a> on the return value when you're finished with it.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.4.6"></a><h4>Returns</h4>
+<a name="gdk-list-visuals.returns"></a><h4>Returns</h4>
 <p>    a list of visuals; the list must be freed, but not its contents. </p>
 <p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GdkVisual]</span></p>
 </div>
@@ -371,9 +371,8 @@ gdk_visual_get_best_depth (<em class="parameter"><code><span class="type">void</
 means "largest," i.e. 32 preferred over 24 preferred over 8 bits
 per pixel.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.5.5"></a><h4>Returns</h4>
+<a name="gdk-visual-get-best-depth.returns"></a><h4>Returns</h4>
 <p> best available depth</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -383,9 +382,8 @@ per pixel.</p>
 gdk_visual_get_best_type (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Return the best available visual type for the default GDK screen.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.6.5"></a><h4>Returns</h4>
+<a name="gdk-visual-get-best-type.returns"></a><h4>Returns</h4>
 <p> best visual type</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -397,7 +395,7 @@ gdk_visual_get_system (<em class="parameter"><code><span class="type">void</span
 This is the visual for the root window of the display.
 The return value should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.7.5"></a><h4>Returns</h4>
+<a name="gdk-visual-get-system.returns"></a><h4>Returns</h4>
 <p> system visual. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -410,7 +408,7 @@ gdk_visual_get_best (<em class="parameter"><code><span class="type">void</span><
 <p>Get the visual with the most available colors for the default
 GDK screen. The return value should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.8.5"></a><h4>Returns</h4>
+<a name="gdk-visual-get-best.returns"></a><h4>Returns</h4>
 <p> best visual. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -427,8 +425,8 @@ over grayscale or fixed-colormap visuals. The return value should not
 be freed. <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> may be returned if no visual supports <em class="parameter"><code>depth</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-best-with-depth.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -442,7 +440,7 @@ be freed. <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macro
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.9.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-best-with-depth.returns"></a><h4>Returns</h4>
 <p> best visual for the given depth. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -459,8 +457,8 @@ should not be freed. <a href="https://developer.gnome.org/glib/unstable/glib-Sta
 <em class="parameter"><code>visual_type</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-best-with-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -474,7 +472,7 @@ should not be freed. <a href="https://developer.gnome.org/glib/unstable/glib-Sta
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.10.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-best-with-type.returns"></a><h4>Returns</h4>
 <p> best visual of the given type. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -487,8 +485,8 @@ gdk_visual_get_best_with_both (<em class="parameter"><code><a href="https://deve
                                <em class="parameter"><code><a class="link" href="gdk2-Visuals.html#GdkVisualType" title="enum GdkVisualType"><span class="type">GdkVisualType</span></a> visual_type</code></em>);</pre>
 <p>Combines <a class="link" href="gdk2-Visuals.html#gdk-visual-get-best-with-depth" title="gdk_visual_get_best_with_depth ()"><code class="function">gdk_visual_get_best_with_depth()</code></a> and <a class="link" href="gdk2-Visuals.html#gdk-visual-get-best-with-type" title="gdk_visual_get_best_with_type ()"><code class="function">gdk_visual_get_best_with_type()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-best-with-both.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -509,7 +507,7 @@ gdk_visual_get_best_with_both (<em class="parameter"><code><a href="https://deve
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.11.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-best-with-both.returns"></a><h4>Returns</h4>
 <p> best visual with both <em class="parameter"><code>depth</code></em>
 and
 <em class="parameter"><code>visual_type</code></em>
@@ -527,8 +525,8 @@ and
 Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.15.7.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -542,9 +540,8 @@ Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.12.7"></a><h4>Returns</h4>
+<a name="gdk-visual-ref.returns"></a><h4>Returns</h4>
 <p>the same visual</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -557,8 +554,8 @@ Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/g
 Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.15.7.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -579,8 +576,8 @@ Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/g
 gdk_visual_get_screen (<em class="parameter"><code><a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> *visual</code></em>);</pre>
 <p>Gets the screen to which this visual belongs</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -594,11 +591,11 @@ gdk_visual_get_screen (<em class="parameter"><code><a class="link" href="gdk2-Vi
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.14.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-screen.returns"></a><h4>Returns</h4>
 <p> the screen to which this visual belongs. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -607,8 +604,8 @@ gdk_visual_get_screen (<em class="parameter"><code><a class="link" href="gdk2-Vi
 gdk_visual_get_bits_per_rgb (<em class="parameter"><code><a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> *visual</code></em>);</pre>
 <p>Returns the number of significant bits per red, green and blue value.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-bits-per-rgb.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -622,12 +619,11 @@ gdk_visual_get_bits_per_rgb (<em class="parameter"><code><a class="link" href="g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.15.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-bits-per-rgb.returns"></a><h4>Returns</h4>
 <p> The number of significant bits per color value for <em class="parameter"><code>visual</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -643,8 +639,8 @@ The "shift" is the number of bits left we must shift a primary for it
 to be in position (according to the "mask").  Finally, "precision" refers
 to how much precision the pixel value contains for a particular primary.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-blue-pixel-details.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -674,7 +670,7 @@ to how much precision the pixel value contains for a particular primary.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -683,8 +679,8 @@ to how much precision the pixel value contains for a particular primary.</p>
 gdk_visual_get_byte_order (<em class="parameter"><code><a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> *visual</code></em>);</pre>
 <p>Returns the byte order of this visual.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-byte-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -698,12 +694,11 @@ gdk_visual_get_byte_order (<em class="parameter"><code><a class="link" href="gdk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.17.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-byte-order.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="gdk2-Visuals.html#GdkByteOrder" title="enum GdkByteOrder"><span class="type">GdkByteOrder</span></a> stating the byte order of <em class="parameter"><code>visual</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -712,8 +707,8 @@ gdk_visual_get_byte_order (<em class="parameter"><code><a class="link" href="gdk
 gdk_visual_get_colormap_size (<em class="parameter"><code><a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> *visual</code></em>);</pre>
 <p>Returns the size of a colormap for this visual.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-colormap-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -727,12 +722,11 @@ gdk_visual_get_colormap_size (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.18.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-colormap-size.returns"></a><h4>Returns</h4>
 <p> The size of a colormap that is suitable for <em class="parameter"><code>visual</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -741,8 +735,8 @@ gdk_visual_get_colormap_size (<em class="parameter"><code><a class="link" href="
 gdk_visual_get_depth (<em class="parameter"><code><a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> *visual</code></em>);</pre>
 <p>Returns the bit depth of this visual.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-depth.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -756,11 +750,10 @@ gdk_visual_get_depth (<em class="parameter"><code><a class="link" href="gdk2-Vis
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.19.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-depth.returns"></a><h4>Returns</h4>
 <p> The bit depth of this visual.</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -776,8 +769,8 @@ The "shift" is the number of bits left we must shift a primary for it
 to be in position (according to the "mask").  Finally, "precision" refers
 to how much precision the pixel value contains for a particular primary.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-green-pixel-details.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -807,7 +800,7 @@ to how much precision the pixel value contains for a particular primary.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -823,8 +816,8 @@ The "shift" is the number of bits left we must shift a primary for it
 to be in position (according to the "mask").  Finally, "precision" refers
 to how much precision the pixel value contains for a particular primary.</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-red-pixel-details.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -854,7 +847,7 @@ to how much precision the pixel value contains for a particular primary.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -863,8 +856,8 @@ to how much precision the pixel value contains for a particular primary.</p>
 gdk_visual_get_visual_type (<em class="parameter"><code><a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> *visual</code></em>);</pre>
 <p>Returns the type of visual this is (PseudoColor, TrueColor, etc).</p>
 <div class="refsect3">
-<a name="id-1.2.15.7.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-visual-get-visual-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -878,12 +871,11 @@ gdk_visual_get_visual_type (<em class="parameter"><code><a class="link" href="gd
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.15.7.22.6"></a><h4>Returns</h4>
+<a name="gdk-visual-get-visual-type.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="gdk2-Visuals.html#GdkVisualType" title="enum GdkVisualType"><span class="type">GdkVisualType</span></a> stating the type of <em class="parameter"><code>visual</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -945,18 +937,14 @@ a particular visual.
 
 </div>
 <br class="example-break"><div class="refsect3">
-<a name="id-1.2.15.8.2.6"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkVisual.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
 <col width="200px" class="struct_members_annotations">
 </colgroup>
-<tbody><tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> <em class="structfield"><code><a name="GdkVisual.parent-instance"></a>parent_instance</code></em>;</p></td>
-<td class="struct_member_description"><p>inherited portion from <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a></p></td>
-<td class="struct_member_annotations"> </td>
-</tr></tbody>
+<tbody></tbody>
 </table></div>
 </div>
 </div>
@@ -969,8 +957,8 @@ pixel values for a visual are converted into RGB
 values for display.
 </p>
 <div class="refsect3">
-<a name="id-1.2.15.8.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkVisualType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1012,10 +1000,10 @@ values for display.
 <td class="enum_member_name"><p><a name="GDK-VISUAL-TRUE-COLOR:CAPS"></a>GDK_VISUAL_TRUE_COLOR</p></td>
 <td class="enum_member_description">
 <p>Each pixel value directly contains red, green,
-   and blue components. The <em class="structfield"><code>red_mask</code></em>,</p>
-<em class="structfield"><code>green_mask</code></em>, and
-<em class="structfield"><code>blue_mask</code></em> fields of the <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a>
-<p>   structure describe how the components are assembled into a pixel value.</p>
+   and blue components. The <em class="structfield"><code>red_mask</code></em>,
+   <em class="structfield"><code>green_mask</code></em>, and
+   <em class="structfield"><code>blue_mask</code></em> fields of the <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a>
+   structure describe how the components are assembled into a pixel value.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
@@ -1040,8 +1028,8 @@ A set of values describing the possible byte-orders
 for storing pixel values in memory.
 </p>
 <div class="refsect3">
-<a name="id-1.2.15.8.4.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkByteOrder.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1079,7 +1067,6 @@ in memory as 0x00, 0xcc, 0xee, 0xff.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

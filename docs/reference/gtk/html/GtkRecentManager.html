@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkRecentManager</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkRecentManager: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="RecentDocuments.html" title="Recently Used Documents">
 <link rel="prev" href="RecentDocuments.html" title="Recently Used Documents">
 <link rel="next" href="GtkRecentChooser.html" title="GtkRecentChooser">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkRecentManager.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -280,7 +280,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkRecentManager.html#gtk-recent-info-get-icon" title="gtk_recent_info_get_icon ()">gtk_recent_info_get_icon</a> <span class="c_punctuation">()</span>
@@ -339,7 +339,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentManager.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -367,7 +367,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentManager.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -376,13 +376,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkRecentManager.html#GtkRecentManager-changed" title="The “changed” signal">changed</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkRecentManager.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -413,7 +413,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkRecentManager
 </pre>
 </div>
@@ -438,7 +438,7 @@ registered it.
 The <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> acts like a database of all the recently
 used files.  You can create new <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> objects, but
 it is more efficient to use the standard recent manager for
-the <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a> so that informations about the recently used
+the <a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a> so that informations about the recently used
 files is shared with other people using them.  In case the
 default screen is being used, adding a new recently used
 file is as simple as:
@@ -515,11 +515,10 @@ each time something inside the list changes.</p>
 <p><a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> objects are expensive: be sure to create them only when
 needed. You should use <a class="link" href="GtkRecentManager.html#gtk-recent-manager-get-default" title="gtk_recent_manager_get_default ()"><code class="function">gtk_recent_manager_get_default()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.2.6"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-new.returns"></a><h4>Returns</h4>
 <p> A newly created <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> object.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -530,17 +529,17 @@ gtk_recent_manager_get_default (<em class="parameter"><code><span class="type">v
 in your application without caring about memory management. The
 returned instance will be freed when you application terminates.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.3.5"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-get-default.returns"></a><h4>Returns</h4>
 <p> A unique <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a>. Do not ref or unref it. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-recent-manager-get-for-screen"></a><h3>gtk_recent_manager_get_for_screen ()</h3>
 <pre class="programlisting"><a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="returnvalue">GtkRecentManager</span></a> *
-gtk_recent_manager_get_for_screen (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a> *screen</code></em>);</pre>
+gtk_recent_manager_get_for_screen (<em class="parameter"><code><a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a> *screen</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_recent_manager_get_for_screen</code> has been deprecated since version 2.12 and should not be used in newly-written code.</p>
 <p>This function has been deprecated and should
@@ -557,8 +556,8 @@ so using this function is usually a better choice than calling
 this function a single recent manager object will be shared between
 users.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-get-for-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -566,27 +565,26 @@ users.</p>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>screen</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.4.8"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-get-for-screen.returns"></a><h4>Returns</h4>
 <p> A unique <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> associated with the given
 screen. This recent manager is associated to the with the screen
 and can be used as long as the screen is open. Do not ref or
 unref it.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-recent-manager-set-screen"></a><h3>gtk_recent_manager_set_screen ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_recent_manager_set_screen (<em class="parameter"><code><a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> *manager</code></em>,
-                               <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a> *screen</code></em>);</pre>
+                               <em class="parameter"><code><a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a> *screen</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_recent_manager_set_screen</code> has been deprecated since version 2.12 and should not be used in newly-written code.</p>
 <p>This function has been deprecated and should
@@ -597,8 +595,8 @@ gtk_recent_manager_set_screen (<em class="parameter"><code><a class="link" href=
 track the user's currently configured recently used documents
 storage.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.5.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-set-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -612,13 +610,13 @@ storage.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>screen</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -636,8 +634,8 @@ then feeds the data to <a class="link" href="GtkRecentManager.html#gtk-recent-ma
 define the metadata for the resource pointed by <em class="parameter"><code>uri</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.6.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-add-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -658,12 +656,11 @@ define the metadata for the resource pointed by <em class="parameter"><code>uri<
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.6.8"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-add-item.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the new item was successfully added
 to the recently used resources list</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -691,8 +688,8 @@ URI; a short description of the item; whether the item should be
 considered private - that is, should be displayed only by the
 applications that have registered it.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.7.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-add-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -718,12 +715,11 @@ applications that have registered it.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.7.9"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-add-full.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the new item was successfully added to the
 recently used resources list, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -736,8 +732,8 @@ gtk_recent_manager_remove_item (<em class="parameter"><code><a class="link" href
  from the recently used resources
 list handled by a recent manager.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-remove-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -763,13 +759,12 @@ list handled by a recent manager.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.8.6"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-remove-item.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the item pointed by <em class="parameter"><code>uri</code></em>
 has been successfully
 removed by the recently used resources list, and <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -782,8 +777,8 @@ gtk_recent_manager_lookup_item (<em class="parameter"><code><a class="link" href
 returns a structure containing informations about the resource
 like its MIME type, or its display name.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-lookup-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -809,15 +804,14 @@ like its MIME type, or its display name.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.9.6"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-lookup-item.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> structure containing information
 about the resource pointed by <em class="parameter"><code>uri</code></em>
 , or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the URI was
 not registered in the recently used resources list.  Free with
 <a class="link" href="GtkRecentManager.html#gtk-recent-info-unref" title="gtk_recent_info_unref ()"><code class="function">gtk_recent_info_unref()</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -829,8 +823,8 @@ gtk_recent_manager_has_item (<em class="parameter"><code><a class="link" href="G
 with <em class="parameter"><code>uri</code></em>
  inside the recent manager.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-has-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -851,11 +845,10 @@ with <em class="parameter"><code>uri</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.10.6"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-has-item.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the resource was found, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -871,8 +864,8 @@ gtk_recent_manager_move_item (<em class="parameter"><code><a class="link" href="
 <p>Please note that this function will not affect the resource pointed
 by the URIs, but only the URI used in the recently used resources list.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-move-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -905,11 +898,10 @@ in the list. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.11.7"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-move-item.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -925,8 +917,8 @@ gtk_recent_manager_get_limit (<em class="parameter"><code><a class="link" href="
 <p>Gets the maximum number of items that the <a class="link" href="GtkRecentManager.html#gtk-recent-manager-get-items" title="gtk_recent_manager_get_items ()"><code class="function">gtk_recent_manager_get_items()</code></a>
 function should return.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.12.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-get-limit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -940,11 +932,10 @@ function should return.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.12.8"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-get-limit.returns"></a><h4>Returns</h4>
 <p> the number of items to return, or -1 for every item.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -963,8 +954,8 @@ function should return.  If <em class="parameter"><code>limit</code></em>
  is set to -1, then return all the
 items.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.13.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-set-limit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -984,7 +975,7 @@ items.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -993,8 +984,8 @@ items.</p>
 gtk_recent_manager_get_items (<em class="parameter"><code><a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> *manager</code></em>);</pre>
 <p>Gets the list of recently used resources.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-get-items.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1008,14 +999,14 @@ gtk_recent_manager_get_items (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.14.6"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-get-items.returns"></a><h4>Returns</h4>
 <p> a list of
 newly allocated <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> objects. Use
 <a class="link" href="GtkRecentManager.html#gtk-recent-info-unref" title="gtk_recent_info_unref ()"><code class="function">gtk_recent_info_unref()</code></a> on each item inside the list, and then
 free the list itself using <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkRecentInfo][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1025,8 +1016,8 @@ gtk_recent_manager_purge_items (<em class="parameter"><code><a class="link" href
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Purges every item from the recently used resources list.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-manager-purge-items.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1047,12 +1038,11 @@ gtk_recent_manager_purge_items (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.15.6"></a><h4>Returns</h4>
+<a name="gtk-recent-manager-purge-items.returns"></a><h4>Returns</h4>
 <p> the number of items that have been removed from the
 recently used resources list.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1062,8 +1052,8 @@ gtk_recent_info_ref (<em class="parameter"><code><a class="link" href="GtkRecent
 <p>Increases the reference count of <em class="parameter"><code>recent_info</code></em>
  by one.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1077,12 +1067,11 @@ gtk_recent_info_ref (<em class="parameter"><code><a class="link" href="GtkRecent
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.16.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-ref.returns"></a><h4>Returns</h4>
 <p> the recent info object with its reference count increased
 by one.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1094,8 +1083,8 @@ gtk_recent_info_unref (<em class="parameter"><code><a class="link" href="GtkRece
 count reaches zero, <em class="parameter"><code>info</code></em>
  is deallocated, and the memory freed.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1108,7 +1097,7 @@ count reaches zero, <em class="parameter"><code>info</code></em>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1117,8 +1106,8 @@ count reaches zero, <em class="parameter"><code>info</code></em>
 gtk_recent_info_get_uri (<em class="parameter"><code><a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> *info</code></em>);</pre>
 <p>Gets the URI of the resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1132,12 +1121,11 @@ gtk_recent_info_get_uri (<em class="parameter"><code><a class="link" href="GtkRe
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.18.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-uri.returns"></a><h4>Returns</h4>
 <p> the URI of the resource.  The returned string is
 owned by the recent manager, and should not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1147,8 +1135,8 @@ gtk_recent_info_get_display_name (<em class="parameter"><code><a class="link" hr
 <p>Gets the name of the resource.  If none has been defined, the basename
 of the resource is obtained.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-display-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1162,12 +1150,11 @@ of the resource is obtained.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.19.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-display-name.returns"></a><h4>Returns</h4>
 <p> the display name of the resource.  The returned string
 is owned by the recent manager, and should not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1176,8 +1163,8 @@ is owned by the recent manager, and should not be freed.</p>
 gtk_recent_info_get_description (<em class="parameter"><code><a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> *info</code></em>);</pre>
 <p>Gets the (short) description of the resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1191,12 +1178,11 @@ gtk_recent_info_get_description (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.20.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-description.returns"></a><h4>Returns</h4>
 <p> the description of the resource.  The returned string
 is owned by the recent manager, and should not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1205,8 +1191,8 @@ is owned by the recent manager, and should not be freed.</p>
 gtk_recent_info_get_mime_type (<em class="parameter"><code><a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> *info</code></em>);</pre>
 <p>Gets the MIME type of the resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-mime-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1220,12 +1206,11 @@ gtk_recent_info_get_mime_type (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.21.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-mime-type.returns"></a><h4>Returns</h4>
 <p> the MIME type of the resource.  The returned string
 is owned by the recent manager, and should not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1235,8 +1220,8 @@ gtk_recent_info_get_added (<em class="parameter"><code><a class="link" href="Gtk
 <p>Gets the timestamp (seconds from system's Epoch) when the resource
 was added to the recently used resources list.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-added.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1250,12 +1235,11 @@ was added to the recently used resources list.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.22.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-added.returns"></a><h4>Returns</h4>
 <p> the number of seconds elapsed from system's Epoch when
 the resource was added to the list, or -1 on failure.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1265,8 +1249,8 @@ gtk_recent_info_get_modified (<em class="parameter"><code><a class="link" href="
 <p>Gets the timestamp (seconds from system's Epoch) when the resource
 was last modified.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-modified.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1280,12 +1264,11 @@ was last modified.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.23.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-modified.returns"></a><h4>Returns</h4>
 <p> the number of seconds elapsed from system's Epoch when
 the resource was last modified, or -1 on failure.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1295,8 +1278,8 @@ gtk_recent_info_get_visited (<em class="parameter"><code><a class="link" href="G
 <p>Gets the timestamp (seconds from system's Epoch) when the resource
 was last visited.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-visited.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1310,12 +1293,11 @@ was last visited.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.24.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-visited.returns"></a><h4>Returns</h4>
 <p> the number of seconds elapsed from system's Epoch when
 the resource was last visited, or -1 on failure.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1326,8 +1308,8 @@ gtk_recent_info_get_private_hint (<em class="parameter"><code><a class="link" hr
 list that have this flag set to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> should only be displayed by the
 applications that have registered them.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-private-hint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1341,11 +1323,10 @@ applications that have registered them.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.25.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-private-hint.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the private flag was found, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1362,8 +1343,8 @@ pointed by <em class="parameter"><code>info</code></em>
 <p>If the command line contains any escape characters defined inside the
 storage specification, they will be expanded.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-application-info.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1400,16 +1381,15 @@ for this application. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.26.7"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-application-info.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an application with <em class="parameter"><code>app_name</code></em>
 has registered this
 resource inside the recently used list, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise. The
 <em class="parameter"><code>app_exec</code></em>
 string is owned by the <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> and should not be
 modified or freed</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1419,8 +1399,8 @@ gtk_recent_info_get_applications (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *length</code></em>);</pre>
 <p>Retrieves the list of applications that have registered this resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-applications.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1441,12 +1421,12 @@ gtk_recent_info_get_applications (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.27.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-applications.returns"></a><h4>Returns</h4>
 <p>    a newly allocated <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of strings.
 Use <a href="https://developer.gnome.org/glib/unstable/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a> to free it. </p>
 <p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=length zero-terminated=1][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1457,8 +1437,8 @@ gtk_recent_info_last_application (<em class="parameter"><code><a class="link" hr
 recently used resource represented by <em class="parameter"><code>info</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-last-application.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1472,11 +1452,10 @@ recently used resource represented by <em class="parameter"><code>info</code></e
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.28.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-last-application.returns"></a><h4>Returns</h4>
 <p> an application name.  Use <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> to free it.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1489,8 +1468,8 @@ gtk_recent_info_get_groups (<em class="parameter"><code><a class="link" href="Gt
 array of returned group names will be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> terminated, so length might
 optionally be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-groups.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1511,12 +1490,12 @@ optionally be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-M
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.29.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-groups.returns"></a><h4>Returns</h4>
 <p>    a newly allocated <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> terminated array of strings.
 Use <a href="https://developer.gnome.org/glib/unstable/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a> to free it. </p>
 <p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=length zero-terminated=1][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1529,8 +1508,8 @@ gtk_recent_info_has_group (<em class="parameter"><code><a class="link" href="Gtk
 recently used item <em class="parameter"><code>info</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-has-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1551,11 +1530,10 @@ recently used item <em class="parameter"><code>info</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.30.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-has-group.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the group was found.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1566,8 +1544,8 @@ gtk_recent_info_has_application (<em class="parameter"><code><a class="link" hre
 <p>Checks whether an application registered this resource using <em class="parameter"><code>app_name</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-has-application.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1588,25 +1566,24 @@ gtk_recent_info_has_application (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.31.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-has-application.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an application with name <em class="parameter"><code>app_name</code></em>
 was found,
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-recent-info-get-icon"></a><h3>gtk_recent_info_get_icon ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_recent_info_get_icon (<em class="parameter"><code><a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> *info</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
 <p>Retrieves the icon of size <em class="parameter"><code>size</code></em>
  associated to the resource MIME type.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-icon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1627,12 +1604,12 @@ gtk_recent_info_get_icon (<em class="parameter"><code><a class="link" href="GtkR
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.32.6"></a><h4>Returns</h4>
-<p> a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> containing the icon,
+<a name="gtk-recent-info-get-icon.returns"></a><h4>Returns</h4>
+<p> a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> containing the icon,
 or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. Use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when finished using the icon. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1643,8 +1620,8 @@ gtk_recent_info_get_short_name (<em class="parameter"><code><a class="link" href
 menu or list.  For example, calling this function on an item that refers to
 "file:///foo/bar.txt" will yield "bar.txt".</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-short-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1658,12 +1635,11 @@ menu or list.  For example, calling this function on an item that refers to
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.33.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-short-name.returns"></a><h4>Returns</h4>
 <p> A newly-allocated string in UTF-8 encoding; free it with
 <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1674,8 +1650,8 @@ gtk_recent_info_get_uri_display (<em class="parameter"><code><a class="link" hre
 is local, it returns a local path; if the resource is not local,
 it returns the UTF-8 encoded content of <a class="link" href="GtkRecentManager.html#gtk-recent-info-get-uri" title="gtk_recent_info_get_uri ()"><code class="function">gtk_recent_info_get_uri()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-uri-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1689,12 +1665,11 @@ it returns the UTF-8 encoded content of <a class="link" href="GtkRecentManager.h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.34.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-uri-display.returns"></a><h4>Returns</h4>
 <p> a newly allocated UTF-8 string containing the
 resource's URI or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. Use <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when done using it.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1705,8 +1680,8 @@ gtk_recent_info_get_age (<em class="parameter"><code><a class="link" href="GtkRe
 pointed by <em class="parameter"><code>info</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-get-age.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1720,12 +1695,11 @@ pointed by <em class="parameter"><code>info</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.35.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-get-age.returns"></a><h4>Returns</h4>
 <p> a positive integer containing the number of days elapsed
 since the time this resource was last modified.  </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1735,8 +1709,8 @@ gtk_recent_info_is_local (<em class="parameter"><code><a class="link" href="GtkR
 <p>Checks whether the resource is local or not by looking at the
 scheme of its URI.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-is-local.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1750,11 +1724,10 @@ scheme of its URI.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.36.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-is-local.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the resource is local.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1765,8 +1738,8 @@ gtk_recent_info_exists (<em class="parameter"><code><a class="link" href="GtkRec
  still exists.  At
 the moment this check is done only on resources pointing to local files.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-exists.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1780,11 +1753,10 @@ the moment this check is done only on resources pointing to local files.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.37.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-exists.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the resource exists</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1795,8 +1767,8 @@ gtk_recent_info_match (<em class="parameter"><code><a class="link" href="GtkRece
 <p>Checks whether two <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> structures point to the same
 resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.38.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-info-match.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1817,12 +1789,11 @@ resource.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.2.10.38.6"></a><h4>Returns</h4>
+<a name="gtk-recent-info-match.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if both <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> structures point to se same
 resource, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1866,8 +1837,8 @@ recently used files list.
 <p>Meta-data to be passed to <a class="link" href="GtkRecentManager.html#gtk-recent-manager-add-full" title="gtk_recent_manager_add_full ()"><code class="function">gtk_recent_manager_add_full()</code></a> when
 registering a recently used resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.11.4.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentData.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1934,8 +1905,8 @@ The <a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark">
 <a name="GtkRecentManagerError"></a><h3>enum GtkRecentManagerError</h3>
 <p>Error codes for GtkRecentManager operations</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.11.6.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentManagerError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2010,7 +1981,7 @@ The <a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark">
 used resources list</p>
 <p>Flags: Read / Write / Construct Only</p>
 <p>Default value: NULL</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2028,7 +1999,7 @@ used resources list</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2038,7 +2009,7 @@ used resources list</p>
 <p>Flags: Read</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -2051,8 +2022,8 @@ user_function (<a class="link" href="GtkRecentManager.html" title="GtkRecentMana
 <p>Emitted when the current recently used resources manager changes its
 contents.</p>
 <div class="refsect3">
-<a name="id-1.4.21.2.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentManager-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2072,13 +2043,12 @@ contents.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.10</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

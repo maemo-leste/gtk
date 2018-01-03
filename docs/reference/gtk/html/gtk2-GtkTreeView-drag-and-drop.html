@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTreeView drag-and-drop</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTreeView drag-and-drop: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkTreeView.html" title="GtkTreeView">
 <link rel="next" href="GtkCellView.html" title="GtkCellView">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-GtkTreeView-drag-and-drop.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -102,7 +102,7 @@
 </div>
 <a name="GtkTreeDragSource"></a><a name="GtkTreeDragDest"></a><div class="refsect1">
 <a name="gtk2-GtkTreeView-drag-and-drop.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -129,7 +129,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-GtkTreeView-drag-and-drop.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GInterface
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
     <span class="lineart">├──</span> GtkTreeDragDest
     <span class="lineart">╰──</span> GtkTreeDragSource
 </pre>
@@ -186,8 +186,8 @@ some model-specific reason. Should robustly handle a <em class="parameter"><code
  no
 longer found in the model!</p>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-drag-source-drag-data-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -208,9 +208,8 @@ longer found in the model!</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-tree-drag-source-drag-data-delete.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the row was successfully deleted</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -229,8 +228,8 @@ the required type of the data.  Should robustly handle a <em class="parameter"><
  no
 longer found in the model!</p>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-drag-source-drag-data-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -257,9 +256,8 @@ from the dragged row. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.3.6"></a><h4>Returns</h4>
+<a name="gtk-tree-drag-source-drag-data-get.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if data of the required type was provided </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -272,8 +270,8 @@ gtk_tree_drag_source_row_draggable (<em class="parameter"><code><a class="link" 
 the source of a DND operation. If the source doesn't implement
 this interface, the row is assumed draggable.</p>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-drag-source-row-draggable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -294,9 +292,8 @@ this interface, the row is assumed draggable.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.4.6"></a><h4>Returns</h4>
+<a name="gtk-tree-drag-source-row-draggable.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the row can be dragged</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -317,8 +314,8 @@ not created for some model-specific reason.  Should robustly handle
 a <em class="parameter"><code>dest</code></em>
  no longer found in the model!</p>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-drag-dest-drag-data-received.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -344,10 +341,9 @@ a <em class="parameter"><code>dest</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.5.6"></a><h4>Returns</h4>
+<a name="gtk-tree-drag-dest-drag-data-received.returns"></a><h4>Returns</h4>
 <p> whether a new row was created before position <em class="parameter"><code>dest</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -368,8 +364,8 @@ exist; the return value will almost certainly be <a href="https://developer.gnom
 parent of <em class="parameter"><code>dest_path</code></em>
  doesn't exist, though.</p>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-drag-dest-row-drop-possible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -395,10 +391,9 @@ parent of <em class="parameter"><code>dest_path</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.6.6"></a><h4>Returns</h4>
+<a name="gtk-tree-drag-dest-row-drop-possible.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a drop is possible before <em class="parameter"><code>dest_path</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -411,8 +406,8 @@ gtk_tree_set_row_drag_data (<em class="parameter"><code><a class="link" href="Gt
 <p>Sets selection data of target type <code class="literal">GTK_TREE_MODEL_ROW</code>. Normally used
 in a drag_data_get handler.</p>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-set-row-drag-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -439,9 +434,8 @@ in a drag_data_get handler.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-tree-set-row-drag-data.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> had the proper target type to allow us to set a tree row</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -464,8 +458,8 @@ you can assume that selection data of type <code class="literal">GTK_TREE_MODEL_
 in from the current process. The returned path must be freed with
 <a class="link" href="GtkTreeModel.html#gtk-tree-path-free" title="gtk_tree_path_free ()"><code class="function">gtk_tree_path_free()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-get-row-drag-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -492,11 +486,10 @@ in from the current process. The returned path must be freed with
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.7.11.8.6"></a><h4>Returns</h4>
+<a name="gtk-tree-get-row-drag-data.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>selection_data</code></em>
 had target type <code class="literal">GTK_TREE_MODEL_ROW</code> and
 is otherwise valid</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -560,7 +553,6 @@ is otherwise valid</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

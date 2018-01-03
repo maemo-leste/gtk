@@ -186,7 +186,15 @@
     [self performSelector: aSelector];
 }
 
+/* This gets called on OS X 10.6 and upwards from interpretKeyEvents */
 -(void)insertText: (id)aString replacementRange: (NSRange)replacementRange
+{
+  [self insertText:aString];
+}
+
+/* This gets called on OS X 10.5 from interpretKeyEvents, although 10.5
+ * is supposed to support NSTextInputClient  */
+-(void)insertText: (id)aString
 {
   GDK_NOTE (EVENTS, g_print ("insertText\n"));
   const char *str;
@@ -676,7 +684,7 @@
   GdkWindowImplQuartz *impl = GDK_WINDOW_IMPL_QUARTZ (private->impl);
   NSRect rect;
 
-  if (!impl->toplevel)
+  if (!impl || !impl->toplevel)
     return;
 
   if (trackingRect)

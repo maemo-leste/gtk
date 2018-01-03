@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkContainer</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkContainer: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="AbstractObjects.html" title="Abstract Base Classes">
 <link rel="prev" href="GtkButtonBox.html" title="GtkButtonBox">
 <link rel="next" href="GtkItem.html" title="GtkItem">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkContainer.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -332,7 +332,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkContainer.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -360,7 +360,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkContainer.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -370,29 +370,29 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkContainer.html#GtkContainer-add" title="The “add” signal">add</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkContainer.html#GtkContainer-check-resize" title="The “check-resize” signal">check-resize</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkContainer.html#GtkContainer-remove" title="The “remove” signal">remove</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkContainer.html#GtkContainer-set-focus-child" title="The “set-focus-child” signal">set-focus-child</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkContainer.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -415,7 +415,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkContainer.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -566,7 +566,7 @@ contain multiple &lt;property&gt; elements that specify
 child properties for the child.
 </p>
 <div class="example">
-<a name="id-1.4.18.5.10.10.3"></a><p class="title"><b>Example 55. Child properties in UI definitions</b></p>
+<a name="id-1.4.18.5.10.10.3"></a><p class="title"><b>Example 44. Child properties in UI definitions</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -618,8 +618,8 @@ This macro should be used to emit a standard warning about unexpected
 properties in <code class="function">set_child_property()</code> and <code class="function">get_child_property()</code> implementations.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-CONTAINER-WARN-INVALID-CHILD-PROPERTY-ID.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -628,7 +628,7 @@ properties in <code class="function">set_child_property()</code> and <code class
 <tbody>
 <tr>
 <td class="parameter_name"><p>object</p></td>
-<td class="parameter_description"><p>the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> on which <code class="function">set_child_property()</code> or <code class="function">get_child_property()</code>
+<td class="parameter_description"><p>the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> on which <code class="function">set_child_property()</code> or <code class="function">get_child_property()</code>
 was called</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
@@ -663,8 +663,8 @@ consider functions such as <a class="link" href="GtkBox.html#gtk-box-pack-start"
 those cases. A widget may be added to only one container at a time;
 you can't place the same widget inside two different containers.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -710,8 +710,8 @@ again it's usually more efficient to simply destroy it directly
 using <a class="link" href="GtkWidget.html#gtk-widget-destroy" title="gtk_widget_destroy ()"><code class="function">gtk_widget_destroy()</code></a> since this will remove it from the
 container and help break any circular reference count cycles.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -746,8 +746,8 @@ gtk_container_add_with_properties (<em class="parameter"><code><a class="link" h
 , setting child properties at the same time.
 See <a class="link" href="GtkContainer.html#gtk-container-add" title="gtk_container_add ()"><code class="function">gtk_container_add()</code></a> and <a class="link" href="GtkContainer.html#gtk-container-child-set" title="gtk_container_child_set ()"><code class="function">gtk_container_child_set()</code></a> for more details.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-add-with-properties.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -782,8 +782,8 @@ gtk_container_get_resize_mode (<em class="parameter"><code><a class="link" href=
 <p>Returns the resize mode for the container. See
 <a class="link" href="GtkContainer.html#gtk-container-set-resize-mode" title="gtk_container_set_resize_mode ()"><code class="function">gtk_container_set_resize_mode()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-get-resize-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -797,9 +797,8 @@ gtk_container_get_resize_mode (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-container-get-resize-mode.returns"></a><h4>Returns</h4>
 <p> the current resize mode</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -813,8 +812,8 @@ gtk_container_set_resize_mode (<em class="parameter"><code><a class="link" href=
 will be passed to the container's parent, queued for later execution
 or executed immediately.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-set-resize-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -857,8 +856,8 @@ gtk_container_foreach (<em class="parameter"><code><a class="link" href="GtkCont
 "internal" child.  Most applications should use
 <a class="link" href="GtkContainer.html#gtk-container-foreach" title="gtk_container_foreach ()"><code class="function">gtk_container_foreach()</code></a>, rather than <a class="link" href="GtkContainer.html#gtk-container-forall" title="gtk_container_forall ()"><code class="function">gtk_container_forall()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -905,12 +904,11 @@ gtk_container_foreach_full (<em class="parameter"><code><a class="link" href="Gt
 <a name="gtk-container-get-children"></a><h3>gtk_container_get_children ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
 gtk_container_get_children (<em class="parameter"><code><a class="link" href="GtkContainer.html" title="GtkContainer"><span class="type">GtkContainer</span></a> *container</code></em>);</pre>
-<div class="warning"><p><code class="literal">gtk_container_get_children</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Returns the container's non-internal children. See
 <a class="link" href="GtkContainer.html#gtk-container-forall" title="gtk_container_forall ()"><code class="function">gtk_container_forall()</code></a> for details on what constitutes an "internal" child.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-get-children.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -924,7 +922,7 @@ gtk_container_get_children (<em class="parameter"><code><a class="link" href="Gt
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.12.7"></a><h4>Returns</h4>
+<a name="gtk-container-get-children.returns"></a><h4>Returns</h4>
 <p> a newly-allocated list of the container's non-internal children. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkWidget][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
@@ -940,8 +938,8 @@ gtk_container_set_reallocate_redraws (<em class="parameter"><code><a class="link
 <p>Containers requesting reallocation redraws get automatically
 redrawn if any of their children changed allocation.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-set-reallocate-redraws.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -973,8 +971,8 @@ gtk_container_get_focus_child (<em class="parameter"><code><a class="link" href=
 currently focused widget. That can be obtained by calling
 <a class="link" href="GtkWindow.html#gtk-window-get-focus" title="gtk_window_get_focus ()"><code class="function">gtk_window_get_focus()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-get-focus-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -988,7 +986,7 @@ currently focused widget. That can be obtained by calling
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.14.6"></a><h4>Returns</h4>
+<a name="gtk-container-get-focus-child.returns"></a><h4>Returns</h4>
 <p> The child widget which will receive the
 focus inside <em class="parameter"><code>container</code></em>
 when the <em class="parameter"><code>conatiner</code></em>
@@ -996,7 +994,7 @@ is focussed,
 or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none is set. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1014,8 +1012,8 @@ default behaviour by overriding the class closure of this signal.</p>
 <p>This is function is mostly meant to be used by widgets. Applications can use
 <a class="link" href="GtkWidget.html#gtk-widget-grab-focus" title="gtk_widget_grab_focus ()"><code class="function">gtk_widget_grab_focus()</code></a> to manualy set the focus to a specific widget.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.15.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-set-focus-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1044,8 +1042,8 @@ gtk_container_get_focus_vadjustment (<em class="parameter"><code><a class="link"
 <p>Retrieves the vertical focus adjustment for the container. See
 <a class="link" href="GtkContainer.html#gtk-container-set-focus-vadjustment" title="gtk_container_set_focus_vadjustment ()"><code class="function">gtk_container_set_focus_vadjustment()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-get-focus-vadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1059,7 +1057,7 @@ gtk_container_get_focus_vadjustment (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.16.6"></a><h4>Returns</h4>
+<a name="gtk-container-get-focus-vadjustment.returns"></a><h4>Returns</h4>
 <p> the vertical focus adjustment, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
 none has been set. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -1080,8 +1078,8 @@ the horizontal adjustment.</p>
 <p>The adjustments have to be in pixel units and in the same coordinate 
 system as the allocation for immediate children of the container.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-set-focus-vadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1112,8 +1110,8 @@ gtk_container_get_focus_hadjustment (<em class="parameter"><code><a class="link"
 <p>Retrieves the horizontal focus adjustment for the container. See
 <a class="link" href="GtkContainer.html#gtk-container-set-focus-hadjustment" title="gtk_container_set_focus_hadjustment ()"><code class="function">gtk_container_set_focus_hadjustment()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-get-focus-hadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1127,7 +1125,7 @@ gtk_container_get_focus_hadjustment (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.18.6"></a><h4>Returns</h4>
+<a name="gtk-container-get-focus-hadjustment.returns"></a><h4>Returns</h4>
 <p> the horizontal focus adjustment, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
 none has been set. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -1148,8 +1146,8 @@ the vertical adjustment.</p>
 <p>The adjustments have to be in pixel units and in the same coordinate 
 system as the allocation for immediate children of the container.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-set-focus-hadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1190,8 +1188,8 @@ gtk_container_child_type (<em class="parameter"><code><a class="link" href="GtkC
 children can be added, e.g. for a <a class="link" href="GtkPaned.html" title="GtkPaned"><span class="type">GtkPaned</span></a> which already has two 
 children.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-child-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1205,9 +1203,8 @@ children.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.21.7"></a><h4>Returns</h4>
+<a name="gtk-container-child-type.returns"></a><h4>Returns</h4>
 <p> a <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1222,8 +1219,8 @@ gtk_container_child_get (<em class="parameter"><code><a class="link" href="GtkCo
  and <em class="parameter"><code>container</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-child-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1262,8 +1259,8 @@ gtk_container_child_set (<em class="parameter"><code><a class="link" href="GtkCo
  and <em class="parameter"><code>container</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-child-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1302,8 +1299,8 @@ gtk_container_child_get_property (<em class="parameter"><code><a class="link" hr
  and <em class="parameter"><code>container</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-child-get-property.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1347,8 +1344,8 @@ gtk_container_child_set_property (<em class="parameter"><code><a class="link" hr
  and <em class="parameter"><code>container</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-child-set-property.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1392,8 +1389,8 @@ gtk_container_child_get_valist (<em class="parameter"><code><a class="link" href
  and <em class="parameter"><code>container</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-child-get-valist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1438,8 +1435,8 @@ gtk_container_child_set_valist (<em class="parameter"><code><a class="link" href
  and <em class="parameter"><code>container</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-child-set-valist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1489,8 +1486,8 @@ of the container, but were added by the container implementation
 itself.  Most applications should use <a class="link" href="GtkContainer.html#gtk-container-foreach" title="gtk_container_foreach ()"><code class="function">gtk_container_foreach()</code></a>,
 rather than <a class="link" href="GtkContainer.html#gtk-container-forall" title="gtk_container_forall ()"><code class="function">gtk_container_forall()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-forall.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1524,8 +1521,8 @@ gtk_container_get_border_width (<em class="parameter"><code><a class="link" href
 <p>Retrieves the border width of the container. See
 <a class="link" href="GtkContainer.html#gtk-container-set-border-width" title="gtk_container_set_border_width ()"><code class="function">gtk_container_set_border_width()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-get-border-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1539,9 +1536,8 @@ gtk_container_get_border_width (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.29.6"></a><h4>Returns</h4>
+<a name="gtk-container-get-border-width.returns"></a><h4>Returns</h4>
 <p> the current border width</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1560,8 +1556,8 @@ create a <a class="link" href="GtkAlignment.html" title="GtkAlignment"><span cla
 to give it a size, and place it on the side of the container as
 a spacer.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.30.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-set-border-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1589,9 +1585,9 @@ the container. Valid values are in the range 0-65535 pixels.</p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_container_propagate_expose (<em class="parameter"><code><a class="link" href="GtkContainer.html" title="GtkContainer"><span class="type">GtkContainer</span></a> *container</code></em>,
                                 <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *child</code></em>,
-                                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEventExpose"><span class="type">GdkEventExpose</span></a> *event</code></em>);</pre>
+                                <em class="parameter"><code><a href="../html/gdk2-Event-Structures.html#GdkEventExpose"><span class="type">GdkEventExpose</span></a> *event</code></em>);</pre>
 <p>When a container receives an expose event, it must send synthetic
-expose events to all children that don't have their own <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindows</span></a>.
+expose events to all children that don't have their own <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindows</span></a>.
 This function provides a convenient way of doing this. A container,
 when it receives an expose event, calls <a class="link" href="GtkContainer.html#gtk-container-propagate-expose" title="gtk_container_propagate_expose ()"><code class="function">gtk_container_propagate_expose()</code></a>
 once for each child, passing in the event the container received.</p>
@@ -1603,12 +1599,12 @@ the event's area with the child area, and sending the event.</p>
 and then chain to the ::expose implementation from <a class="link" href="GtkContainer.html" title="GtkContainer"><span class="type">GtkContainer</span></a>.</p>
 <p>Note that the ::expose-event signal has been replaced by a ::draw
 signal in GTK+ 3, and consequently, <a class="link" href="GtkContainer.html#gtk-container-propagate-expose" title="gtk_container_propagate_expose ()"><code class="function">gtk_container_propagate_expose()</code></a>
-has been replaced by <a href="http://developer.gnome.org/gtk2/GtkContainer.html#gtk-container-propagate-draw"><code class="function">gtk_container_propagate_draw()</code></a>.
+has been replaced by <a href="http://developer.gnome.org/gtk3/GtkContainer.html#gtk-container-propagate-draw"><code class="function">gtk_container_propagate_draw()</code></a>.
 The GTK+ 3 migration guide
 for hints on how to port from ::expose-event to ::draw.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.31.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-propagate-expose.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1648,8 +1644,8 @@ of the children. In that case, GTK+ stores <a href="https://developer.gnome.org/
 <em class="parameter"><code>focusable_widgets</code></em>
  and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-get-focus-chain.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1675,10 +1671,9 @@ individual widgets in the focus chain. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.32.6"></a><h4>Returns</h4>
+<a name="gtk-container-get-focus-chain.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the focus chain of the container
 has been set explicitly.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1694,8 +1689,8 @@ to set the focus chain before you pack the widgets, or have a widget
 in the chain that isn't always packed. The necessary checks are done 
 when the focus chain is actually traversed.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.33.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-set-focus-chain.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1723,8 +1718,8 @@ when the focus chain is actually traversed.</p>
 gtk_container_unset_focus_chain (<em class="parameter"><code><a class="link" href="GtkContainer.html" title="GtkContainer"><span class="type">GtkContainer</span></a> *container</code></em>);</pre>
 <p>Removes a focus chain explicitly set with <a class="link" href="GtkContainer.html#gtk-container-set-focus-chain" title="gtk_container_set_focus_chain ()"><code class="function">gtk_container_set_focus_chain()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-unset-focus-chain.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1747,8 +1742,8 @@ gtk_container_class_find_child_property
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_name</code></em>);</pre>
 <p>Finds a child property of a container class by name.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-class-find-child-property.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1757,7 +1752,7 @@ gtk_container_class_find_child_property
 <tbody>
 <tr>
 <td class="parameter_name"><p>cclass</p></td>
-<td class="parameter_description"><p> a <a href="http://developer.gnome.org/gtk2/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a>. </p></td>
+<td class="parameter_description"><p> a <a href="http://developer.gnome.org/gtk3/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> GtkContainerClass]</span></td>
 </tr>
 <tr>
@@ -1769,7 +1764,7 @@ gtk_container_class_find_child_property
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.35.6"></a><h4>Returns</h4>
+<a name="gtk-container-class-find-child-property.returns"></a><h4>Returns</h4>
 <p> the <a href="https://developer.gnome.org/gobject/unstable/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a> of the child property or
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>class</code></em>
 has no child property with that name. </p>
@@ -1781,13 +1776,13 @@ has no child property with that name. </p>
 <a name="gtk-container-class-install-child-property"></a><h3>gtk_container_class_install_child_property ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_container_class_install_child_property
-                               (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a> *cclass</code></em>,
+                               (<em class="parameter"><code><a href="http://developer.gnome.org/gtk3/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a> *cclass</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> property_id</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a> *pspec</code></em>);</pre>
 <p>Installs a child property on a container class.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-class-install-child-property.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1796,7 +1791,7 @@ gtk_container_class_install_child_property
 <tbody>
 <tr>
 <td class="parameter_name"><p>cclass</p></td>
-<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a></p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk3/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1822,8 +1817,8 @@ gtk_container_class_list_child_properties
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *n_properties</code></em>);</pre>
 <p>Returns all child properties of a container class.</p>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-container-class-list-child-properties.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1832,7 +1827,7 @@ gtk_container_class_list_child_properties
 <tbody>
 <tr>
 <td class="parameter_name"><p>cclass</p></td>
-<td class="parameter_description"><p> a <a href="http://developer.gnome.org/gtk2/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a>. </p></td>
+<td class="parameter_description"><p> a <a href="http://developer.gnome.org/gtk3/GtkContainer.html#GtkContainerClass"><span class="type">GtkContainerClass</span></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> GtkContainerClass]</span></td>
 </tr>
 <tr>
@@ -1844,7 +1839,7 @@ gtk_container_class_list_child_properties
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.5.11.37.6"></a><h4>Returns</h4>
+<a name="gtk-container-class-list-child-properties.returns"></a><h4>Returns</h4>
 <p>  a newly
 allocated <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of <a href="https://developer.gnome.org/gobject/unstable/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a>*.
 The array must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. </p>
@@ -1924,8 +1919,8 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.5.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkContainer-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1945,7 +1940,7 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1956,8 +1951,8 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.5.14.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkContainer-check-resize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1977,7 +1972,7 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1989,8 +1984,8 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.5.14.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkContainer-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2010,7 +2005,7 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2022,8 +2017,8 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.5.14.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkContainer-set-focus-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2043,12 +2038,11 @@ user_function (<a class="link" href="GtkContainer.html" title="GtkContainer"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

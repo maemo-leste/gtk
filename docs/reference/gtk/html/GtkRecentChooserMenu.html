@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkRecentChooserMenu</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkRecentChooserMenu: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="RecentDocuments.html" title="Recently Used Documents">
 <link rel="prev" href="GtkRecentChooserDialog.html" title="GtkRecentChooserDialog">
 <link rel="next" href="GtkRecentChooserWidget.html" title="GtkRecentChooserWidget">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkRecentChooserMenu.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -79,7 +79,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooserMenu.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -94,7 +94,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooserMenu.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -107,7 +107,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooserMenu.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -170,11 +170,10 @@ access.</p>
 <a class="link" href="GtkRecentChooserMenu.html#gtk-recent-chooser-menu-new-for-manager" title="gtk_recent_chooser_menu_new_for_manager ()"><code class="function">gtk_recent_chooser_menu_new_for_manager()</code></a> function to know how to create
 a <a class="link" href="GtkRecentChooserMenu.html" title="GtkRecentChooserMenu"><span class="type">GtkRecentChooserMenu</span></a> widget bound to another <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> object.</p>
 <div class="refsect3">
-<a name="id-1.4.21.5.10.2.8"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-menu-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkRecentChooserMenu.html" title="GtkRecentChooserMenu"><span class="type">GtkRecentChooserMenu</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -190,8 +189,8 @@ or if you have a customized instance of a <a class="link" href="GtkRecentManager
 object or if you wish to share a common <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> object
 among multiple <a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a> widgets.</p>
 <div class="refsect3">
-<a name="id-1.4.21.5.10.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-menu-new-for-manager.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -205,12 +204,11 @@ among multiple <a class="link" href="GtkRecentChooser.html" title="GtkRecentChoo
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.5.10.3.7"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-menu-new-for-manager.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkRecentChooserMenu.html" title="GtkRecentChooserMenu"><span class="type">GtkRecentChooserMenu</span></a>, bound to <em class="parameter"><code>manager</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -220,8 +218,8 @@ gtk_recent_chooser_menu_get_show_numbers
                                (<em class="parameter"><code><a class="link" href="GtkRecentChooserMenu.html" title="GtkRecentChooserMenu"><span class="type">GtkRecentChooserMenu</span></a> *menu</code></em>);</pre>
 <p>Returns the value set by <a class="link" href="GtkRecentChooserMenu.html#gtk-recent-chooser-menu-set-show-numbers" title="gtk_recent_chooser_menu_set_show_numbers ()"><code class="function">gtk_recent_chooser_menu_set_show_numbers()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.5.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-menu-get-show-numbers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -235,11 +233,10 @@ gtk_recent_chooser_menu_get_show_numbers
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.5.10.4.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-menu-get-show-numbers.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if numbers should be shown.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -254,8 +251,8 @@ numbers are shown to provide a unique character for a mnemonic to
 be used inside ten menu item's label.  Only the first the items
 get a number to avoid clashes.</p>
 <div class="refsect3">
-<a name="id-1.4.21.5.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-menu-set-show-numbers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -275,7 +272,7 @@ get a number to avoid clashes.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -296,7 +293,7 @@ get a number to avoid clashes.</p>
 a number acting as a unique mnemonic.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -307,7 +304,6 @@ a number acting as a unique mnemonic.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: GdkRGB</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GdkRGB: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Bitmaps-and-Pixmaps.html" title="Bitmaps and Pixmaps">
 <link rel="next" href="gdk2-Images.html" title="Images">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-GdkRGB.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -204,7 +204,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-GdkRGB.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -237,7 +237,7 @@ GdkRGB is a low-level module which renders RGB, grayscale, and indexed
 colormap images to a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>. It does this as efficiently as
 possible, handling issues such as colormaps, visuals, dithering,
 temporary buffers, and so on. Most code should use the higher-level
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> features in place of this module; for example,
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> features in place of this module; for example,
 <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-pixbuf" title="gdk_draw_pixbuf ()"><code class="function">gdk_draw_pixbuf()</code></a> uses GdkRGB in its implementation.
 </p>
 <p>
@@ -328,14 +328,14 @@ by setting the GDK_DISABLE_MEDIALIB environment variable.
 <span class="normal">  </span><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">window</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">darea</span><span class="symbol">;</span>
 <span class="normal">  </span><span class="usertype">gint</span><span class="normal"> x</span><span class="symbol">,</span><span class="normal"> y</span><span class="symbol">;</span>
 <span class="normal">  </span><span class="usertype">guchar</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">pos</span><span class="symbol">;</span>
-<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init">gtk_init</a></span><span class="normal"> </span><span class="symbol">(&amp;</span><span class="normal">argc</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">argv</span><span class="symbol">);</span>
-<span class="normal">  window </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-new">gtk_window_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">GTK_WINDOW_TOPLEVEL</span><span class="symbol">);</span>
-<span class="normal">  darea </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkDrawingArea.html#gtk-drawing-area-new">gtk_drawing_area_new</a></span><span class="normal"> </span><span class="symbol">();</span>
-<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-set-size-request">gtk_widget_set_size_request</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">darea</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH</span><span class="symbol">,</span><span class="normal"> IMAGE_HEIGHT</span><span class="symbol">);</span>
-<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkContainer.html#gtk-container-add">gtk_container_add</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_CONTAINER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">),</span><span class="normal"> darea</span><span class="symbol">);</span>
-<span class="normal">  </span><span class="function"><a href="http://library.gnome.org/devel/gtk3/gtk2-Signals.html#gtk-signal-connect">gtk_signal_connect</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_OBJECT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">darea</span><span class="symbol">),</span><span class="normal"> </span><span class="string">"expose-event"</span><span class="symbol">,</span>
-<span class="normal">                      </span><span class="function"><a href="http://library.gnome.org/devel/gtk3/gtk2-Types.html#GTK-SIGNAL-FUNC:CAPS">GTK_SIGNAL_FUNC</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">on_darea_expose</span><span class="symbol">),</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
-<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-show-all">gtk_widget_show_all</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-init">gtk_init</a></span><span class="normal"> </span><span class="symbol">(&amp;</span><span class="normal">argc</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">argv</span><span class="symbol">);</span>
+<span class="normal">  window </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk3/GtkWindow.html#gtk-window-new">gtk_window_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="http://developer.gnome.org/gtk3/GtkWindow.html#GTK-WINDOW-TOPLEVEL:CAPS">GTK_WINDOW_TOPLEVEL</a></span><span class="symbol">);</span>
+<span class="normal">  darea </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk3/GtkDrawingArea.html#gtk-drawing-area-new">gtk_drawing_area_new</a></span><span class="normal"> </span><span class="symbol">();</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk3/GtkWidget.html#gtk-widget-set-size-request">gtk_widget_set_size_request</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">darea</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH</span><span class="symbol">,</span><span class="normal"> IMAGE_HEIGHT</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk3/GtkContainer.html#gtk-container-add">gtk_container_add</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_CONTAINER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">),</span><span class="normal"> darea</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="http://library.gnome.org/devel/gtk2/gtk2-Signals.html#gtk-signal-connect">gtk_signal_connect</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_OBJECT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">darea</span><span class="symbol">),</span><span class="normal"> </span><span class="string">"expose-event"</span><span class="symbol">,</span>
+<span class="normal">                      </span><span class="function"><a href="http://library.gnome.org/devel/gtk2/gtk2-Types.html#GTK-SIGNAL-FUNC:CAPS">GTK_SIGNAL_FUNC</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">on_darea_expose</span><span class="symbol">),</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk3/GtkWidget.html#gtk-widget-show-all">gtk_widget_show_all</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">);</span>
 <span class="normal">  </span><span class="comment">/* Set up the RGB buffer. */</span>
 <span class="normal">  pos </span><span class="symbol">=</span><span class="normal"> rgbbuf</span><span class="symbol">;</span>
 <span class="normal">  </span><span class="keyword">for</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">y </span><span class="symbol">=</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span><span class="normal"> y </span><span class="symbol">&lt;</span><span class="normal"> IMAGE_HEIGHT</span><span class="symbol">;</span><span class="normal"> y</span><span class="symbol">++)</span>
@@ -347,7 +347,7 @@ by setting the GDK_DISABLE_MEDIALIB environment variable.
 <span class="normal">      </span><span class="symbol">*</span><span class="normal">pos</span><span class="symbol">++</span><span class="normal"> </span><span class="symbol">=</span><span class="normal"> y </span><span class="symbol">-</span><span class="normal"> y </span><span class="symbol">%</span><span class="normal"> </span><span class="number">32</span><span class="symbol">;</span><span class="normal">          </span><span class="comment">/* Blue. */</span>
 <span class="normal">    </span><span class="cbracket">}</span>
 <span class="normal">    </span><span class="cbracket">}</span>
-<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-main">gtk_main</a></span><span class="normal"> </span><span class="symbol">();</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-main">gtk_main</a></span><span class="normal"> </span><span class="symbol">();</span>
 <span class="normal">  </span><span class="keyword">return</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span>
 <span class="cbracket">}</span>
 <span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a></span>
@@ -355,9 +355,9 @@ by setting the GDK_DISABLE_MEDIALIB environment variable.
 <span class="normal">         </span><span class="usertype">GdkEventExpose</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">event</span><span class="symbol">,</span>
 <span class="normal">         </span><span class="usertype">gpointer</span><span class="normal"> user_data</span><span class="symbol">)</span>
 <span class="cbracket">{</span>
-<span class="normal">  </span><span class="function"><a href="gdk2-GdkRGB.html#gdk-draw-rgb-image">gdk_draw_rgb_image</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">-&gt;</span><span class="normal">window</span><span class="symbol">,</span><span class="normal"> widget</span><span class="symbol">-&gt;</span><span class="normal">style</span><span class="symbol">-&gt;</span><span class="normal">fg_gc</span><span class="symbol">[</span><span class="normal">GTK_STATE_NORMAL</span><span class="symbol">],</span>
+<span class="normal">  </span><span class="function"><a href="gdk2-GdkRGB.html#gdk-draw-rgb-image">gdk_draw_rgb_image</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">-&gt;</span><span class="normal">window</span><span class="symbol">,</span><span class="normal"> widget</span><span class="symbol">-&gt;</span><span class="normal">style</span><span class="symbol">-&gt;</span><span class="normal">fg_gc</span><span class="symbol">[</span><span class="normal"><a href="http://developer.gnome.org/gtk3/GtkWidget.html#GTK-STATE-NORMAL:CAPS">GTK_STATE_NORMAL</a></span><span class="symbol">],</span>
 <span class="normal">              </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH</span><span class="symbol">,</span><span class="normal"> IMAGE_HEIGHT</span><span class="symbol">,</span>
-<span class="normal">              GDK_RGB_DITHER_MAX</span><span class="symbol">,</span><span class="normal"> rgbbuf</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH </span><span class="symbol">*</span><span class="normal"> </span><span class="number">3</span><span class="symbol">);</span>
+<span class="normal">              <a href="gdk2-GdkRGB.html#GDK-RGB-DITHER-MAX:CAPS">GDK_RGB_DITHER_MAX</a></span><span class="symbol">,</span><span class="normal"> rgbbuf</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH </span><span class="symbol">*</span><span class="normal"> </span><span class="number">3</span><span class="symbol">);</span>
 <span class="normal">  </span><span class="keyword">return</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS">TRUE</a></span><span class="symbol">;</span>
 <span class="cbracket">}</span></pre></td>
       </tr>
@@ -413,8 +413,8 @@ the pixel (x + i, y + j) is colored with red value <em class="parameter"><code>r
 1], and blue value <em class="parameter"><code>rgb_buf</code></em>[<em class="parameter"><code>j</code></em> * <em class="parameter"><code>rowstride</code></em> + <em class="parameter"><code>i</code></em> * 3 + 2].
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.3.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-rgb-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -505,8 +505,8 @@ of the screen while avoiding visible "seams" between the different
 dither textures.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.4.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-rgb-image-dithalign.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -594,8 +594,8 @@ Draws an indexed image in the drawable, using a <a class="link" href="gdk2-GdkRG
 actual colors to the color indices.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-indexed-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -676,8 +676,8 @@ gdk_draw_gray_image (<em class="parameter"><code><a class="link" href="gdk2-Draw
 Draws a grayscale image in the drawable.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-gray-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -761,8 +761,8 @@ pixels aligned to 32-bit boundaries is cancelled out by the increased
 memory bandwidth.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-rgb-32-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -842,8 +842,8 @@ gdk_draw_rgb_32_image_dithalign (<em class="parameter"><code><a class="link" hre
 <p>Like <a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-32-image" title="gdk_draw_rgb_32_image ()"><code class="function">gdk_draw_rgb_32_image()</code></a>, but allows you to specify the dither
 offsets. See <a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-image-dithalign" title="gdk_draw_rgb_image_dithalign ()"><code class="function">gdk_draw_rgb_image_dithalign()</code></a> for more details.</p>
 <div class="refsect3">
-<a name="id-1.2.11.7.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-rgb-32-image-dithalign.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -925,8 +925,8 @@ color values greater than or equal to <em class="parameter"><code>n_colors</code
 results, including possibly segfaults.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-cmap-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -947,9 +947,8 @@ results, including possibly segfaults.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.11.7.9.7"></a><h4>Returns</h4>
+<a name="gdk-rgb-cmap-new.returns"></a><h4>Returns</h4>
 <p>The newly created <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -962,8 +961,8 @@ gdk_rgb_cmap_free (<em class="parameter"><code><a class="link" href="gdk2-GdkRGB
 Frees the memory associated with a <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> created by <a class="link" href="gdk2-GdkRGB.html#gdk-rgb-cmap-new" title="gdk_rgb_cmap_new ()"><code class="function">gdk_rgb_cmap_new()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-cmap-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -989,8 +988,8 @@ Sets the foreground color in <em class="parameter"><code>gc</code></em> to the s
 closest approximation, in the case of limited visuals).
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-gc-set-foreground.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1023,8 +1022,8 @@ Sets the background color in <em class="parameter"><code>gc</code></em> to the s
 closest approximation, in the case of limited visuals).
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-gc-set-background.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1057,8 +1056,8 @@ value may be used to set the <em class="structfield"><code>pixel</code></em> fie
 a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> struct.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-xpixel-from-rgb.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1072,9 +1071,8 @@ a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.11.7.13.7"></a><h4>Returns</h4>
+<a name="gdk-rgb-xpixel-from-rgb.returns"></a><h4>Returns</h4>
 <p>The X pixel value.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1089,8 +1087,8 @@ gdk_rgb_find_color (<em class="parameter"><code><a class="link" href="gdk2-Color
 </div>
 <p><em class="parameter"><code>colormap</code></em>
  should be the colormap for the graphics context and
-drawable you're using to draw. If you're drawing to a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a>,
-call <a href="http://library.gnome.org/devel/gtk3/GtkWidget.html#gtk-widget-get-colormap"><code class="function">gtk_widget_get_colormap()</code></a>.</p>
+drawable you're using to draw. If you're drawing to a <a href="http://developer.gnome.org/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>,
+call <a href="http://library.gnome.org/devel/gtk2/GtkWidget.html#gtk-widget-get-colormap"><code class="function">gtk_widget_get_colormap()</code></a>.</p>
 <p><em class="parameter"><code>color</code></em>
  should have its <code class="literal">red</code>, <code class="literal">green</code>, and <code class="literal">blue</code> fields initialized;
 <a class="link" href="gdk2-GdkRGB.html#gdk-rgb-find-color" title="gdk_rgb_find_color ()"><code class="function">gdk_rgb_find_color()</code></a> will fill in the <code class="literal">pixel</code> field with the best
@@ -1102,8 +1100,8 @@ expects <code class="literal">pixel</code> to be initialized.</p>
 do not expect <code class="literal">pixel</code> to be initialized in advance. If you use those
 functions, there's no need for <a class="link" href="gdk2-GdkRGB.html#gdk-rgb-find-color" title="gdk_rgb_find_color ()"><code class="function">gdk_rgb_find_color()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.11.7.14.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-find-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1141,8 +1139,8 @@ A private colormap has more colors, leading to better quality display,
 but also leads to the dreaded "colormap flashing" effect.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.15.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-set-install.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1169,8 +1167,8 @@ allocate a color cube at least as large as <em class="parameter"><code>min_color
 private colormap.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-set-min-colors.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1200,7 +1198,7 @@ it's simply the visual GdkRGB would have chosen as the optimal one
 in those previous versions. GdkRGB can now render to drawables with
 any visual.</p>
 <div class="refsect3">
-<a name="id-1.2.11.7.17.6"></a><h4>Returns</h4>
+<a name="gdk-rgb-get-visual.returns"></a><h4>Returns</h4>
 <p> The <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> chosen by GdkRGB. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1220,7 +1218,7 @@ data to one colormap and visual, but in the current version it can
 render to any colormap and visual. So there's no need to call this
 function.</p>
 <div class="refsect3">
-<a name="id-1.2.11.7.18.6"></a><h4>Returns</h4>
+<a name="gdk-rgb-get-colormap.returns"></a><h4>Returns</h4>
 <p> the preferred colormap. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1238,9 +1236,8 @@ dither mode is desired; if the display is not ditherable, it may make
 sense to gray out or hide the corresponding UI widget.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.19.6"></a><h4>Returns</h4>
+<a name="gdk-rgb-ditherable.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the preferred visual is ditherable.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1256,8 +1253,8 @@ about which dither mode is desired; if the display is not ditherable, it may
 make sense to gray out or hide the corresponding UI widget.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-colormap-ditherable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1271,10 +1268,9 @@ make sense to gray out or hide the corresponding UI widget.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.11.7.20.7"></a><h4>Returns</h4>
+<a name="gdk-rgb-colormap-ditherable.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the visual associated with <em class="parameter"><code>cmap</code></em>
 is ditherable.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1287,8 +1283,8 @@ gdk_rgb_set_verbose (<em class="parameter"><code><a href="https://developer.gnom
 Sets the "verbose" flag. This is generally only useful for debugging.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.7.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rgb-set-verbose.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1316,8 +1312,8 @@ Since GdkRGB currently only handles images with 8 bits per component,
 dithering on 24 bit per pixel displays is a moot point.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.8.2.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkRgbDither.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1364,8 +1360,8 @@ A private data structure which maps color indices to actual RGB
 colors. This is used only for <a class="link" href="gdk2-GdkRGB.html#gdk-draw-indexed-image" title="gdk_draw_indexed_image ()"><code class="function">gdk_draw_indexed_image()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.8.3.6"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkRgbCmap.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1397,9 +1393,8 @@ Gets the colormap set by GdkRGB. This colormap and the corresponding
 visual should be used when creating windows that will be drawn in by GdkRGB.
 </p>
 <div class="refsect3">
-<a name="id-1.2.11.8.4.6"></a><h4>Returns</h4>
+<a name="gdk-rgb-get-cmap.returns"></a><h4>Returns</h4>
 <p>The <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a> set by GdkRGB.</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -1419,7 +1414,7 @@ visual should be used when creating windows that will be drawn in by GdkRGB.
 colors.</p></td>
 </tr>
 <tr>
-<td><p><span class="term"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> and <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-pixbuf" title="gdk_draw_pixbuf ()"><code class="function">gdk_draw_pixbuf()</code></a></span></p></td>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> and <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-pixbuf" title="gdk_draw_pixbuf ()"><code class="function">gdk_draw_pixbuf()</code></a></span></p></td>
 <td><p>Higher-level image handling.</p></td>
 </tr>
 </tbody>
@@ -1429,7 +1424,6 @@ colors.</p></td>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

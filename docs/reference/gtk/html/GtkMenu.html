@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkMenu</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkMenu: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkComboBoxEntry.html" title="GtkComboBoxEntry">
 <link rel="next" href="GtkMenuBar.html" title="GtkMenuBar">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -39,7 +39,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkMenu.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -282,7 +282,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenu.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -338,7 +338,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenu.child-properties"></a><h2>Child Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="child_properties_type">
 <col width="300px" class="child_properties_name">
@@ -370,7 +370,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenu.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -417,7 +417,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenu.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -426,13 +426,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkMenu.html#GtkMenu-move-scroll" title="The “move-scroll” signal">move-scroll</a></td>
-<td class="signal_flags">Action</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkMenu.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -445,7 +445,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenu.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -488,7 +488,7 @@ Applications can display a <a class="link" href="GtkMenu.html" title="GtkMenu"><
 can pop up a menu when the 3rd mouse button is pressed.
 </p>
 <div class="example">
-<a name="id-1.4.10.5.12.6"></a><p class="title"><b>Example 31. Connecting the popup signal handler.</b></p>
+<a name="id-1.4.10.5.12.6"></a><p class="title"><b>Example 25. Connecting the popup signal handler.</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -506,7 +506,7 @@ can pop up a menu when the 3rd mouse button is pressed.
 
 </div>
 <br class="example-break"><div class="example">
-<a name="id-1.4.10.5.12.7"></a><p class="title"><b>Example 32. Signal handler which displays a popup menu.</b></p>
+<a name="id-1.4.10.5.12.7"></a><p class="title"><b>Example 26. Signal handler which displays a popup menu.</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -547,9 +547,9 @@ can pop up a menu when the 3rd mouse button is pressed.
 <span class="comment">   * g_signal_connect_swapped() was called.</span>
 <span class="comment">   */</span>
 <span class="normal">  menu </span><span class="symbol">=</span><span class="normal"> </span><span class="function">GTK_MENU</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">);</span>
-<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">event</span><span class="symbol">-&gt;</span><span class="normal">type </span><span class="symbol">==</span><span class="normal"> GDK_BUTTON_PRESS</span><span class="symbol">)</span>
+<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">event</span><span class="symbol">-&gt;</span><span class="normal">type </span><span class="symbol">==</span><span class="normal"> <a href="../html/gdk2-Events.html#GDK-BUTTON-PRESS:CAPS">GDK_BUTTON_PRESS</a></span><span class="symbol">)</span>
 <span class="normal">    </span><span class="cbracket">{</span>
-<span class="normal">      event_button </span><span class="symbol">=</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEventButton">GdkEventButton</a> </span><span class="symbol">*)</span><span class="normal"> event</span><span class="symbol">;</span>
+<span class="normal">      event_button </span><span class="symbol">=</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="../html/gdk2-Event-Structures.html#GdkEventButton">GdkEventButton</a> </span><span class="symbol">*)</span><span class="normal"> event</span><span class="symbol">;</span>
 <span class="normal">      </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">event_button</span><span class="symbol">-&gt;</span><span class="normal">button </span><span class="symbol">==</span><span class="normal"> </span><span class="number">3</span><span class="symbol">)</span>
 <span class="normal">    </span><span class="cbracket">{</span>
 <span class="normal">      </span><span class="function"><a href="GtkMenu.html#gtk-menu-popup">gtk_menu_popup</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">menu</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span>
@@ -577,9 +577,8 @@ gtk_menu_new (<em class="parameter"><code><span class="type">void</span></code><
 Creates a new <a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.2.5"></a><h4>Returns</h4>
+<a name="gtk-menu-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -587,11 +586,11 @@ Creates a new <a class="link" href="GtkMenu.html" title="GtkMenu"><span class="t
 <a name="gtk-menu-set-screen"></a><h3>gtk_menu_set_screen ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_menu_set_screen (<em class="parameter"><code><a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a> *menu</code></em>,
-                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a> *screen</code></em>);</pre>
-<p>Sets the <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a> on which the menu will be displayed.</p>
+                     <em class="parameter"><code><a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a> *screen</code></em>);</pre>
+<p>Sets the <a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a> on which the menu will be displayed.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -605,14 +604,14 @@ gtk_menu_set_screen (<em class="parameter"><code><a class="link" href="GtkMenu.h
 </tr>
 <tr>
 <td class="parameter_name"><p>screen</p></td>
-<td class="parameter_description"><p> a <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the screen should be
+<td class="parameter_description"><p> a <a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the screen should be
 determined by the widget the menu is attached to. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -627,8 +626,8 @@ determined by the widget the menu is attached to. </p></td>
 Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> to the end of the menu's item list.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-append.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -662,8 +661,8 @@ Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span cla
 Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> to the beginning of the menu's item list.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-prepend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -698,8 +697,8 @@ Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span cla
 indicated by <em class="parameter"><code>position</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-insert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -738,8 +737,8 @@ gtk_menu_reorder_child (<em class="parameter"><code><a class="link" href="GtkMen
 Moves a <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> to a new position within the <a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-reorder-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -788,8 +787,8 @@ rightmost, uppermost and lower column and row numbers of the table.
 (Columns and rows are indexed from zero).</p>
 <p>Note that this function is not related to <a class="link" href="GtkMenu.html#gtk-menu-detach" title="gtk_menu_detach ()"><code class="function">gtk_menu_detach()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-attach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -829,7 +828,7 @@ rightmost, uppermost and lower column and row numbers of the table.
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -865,8 +864,8 @@ a mouse click or key press) that caused the initiation of the popup.
 Only if no such event is available, <a class="link" href="gtk2-General.html#gtk-get-current-event-time" title="gtk_get_current_event_time ()"><code class="function">gtk_get_current_event_time()</code></a> can
 be used instead.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.9.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-popup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -926,8 +925,8 @@ this menu is being used in with <a class="link" href="GtkWindow.html#gtk-window-
 for those windows to support all the accelerators contained in this group.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-accel-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -960,8 +959,8 @@ Gets the <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><s
 See <a class="link" href="GtkMenu.html#gtk-menu-set-accel-group" title="gtk_menu_set_accel_group ()"><code class="function">gtk_menu_set_accel_group()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-accel-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -975,7 +974,7 @@ See <a class="link" href="GtkMenu.html#gtk-menu-set-accel-group" title="gtk_menu
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.11.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-accel-group.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> associated with the menu. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1006,8 +1005,8 @@ and their default setups can be found at <a class="link" href="gtk2-Accelerator-
 pass a static string, you can save some memory by interning it first with 
 <a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#g-intern-static-string"><code class="function">g_intern_static_string()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-accel-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1035,8 +1034,8 @@ pass a static string, you can save some memory by interning it first with
 gtk_menu_get_accel_path (<em class="parameter"><code><a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a> *menu</code></em>);</pre>
 <p>Retrieves the accelerator path set on the menu.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-accel-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1050,11 +1049,10 @@ gtk_menu_get_accel_path (<em class="parameter"><code><a class="link" href="GtkMe
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.13.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-accel-path.returns"></a><h4>Returns</h4>
 <p> the accelerator path set on the menu.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1068,8 +1066,8 @@ is shown as a tearoff menu.  If <em class="parameter"><code>title</code></em>
 attached to a parent menu item, and if so it will try to use the same text as
 that menu item's label.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1097,8 +1095,8 @@ that menu item's label.</p>
 gtk_menu_get_title (<em class="parameter"><code><a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a> *menu</code></em>);</pre>
 <p>Returns the title of the menu. See <a class="link" href="GtkMenu.html#gtk-menu-set-title" title="gtk_menu_set_title ()"><code class="function">gtk_menu_set_title()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1112,11 +1110,10 @@ gtk_menu_get_title (<em class="parameter"><code><a class="link" href="GtkMenu.ht
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.15.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-title.returns"></a><h4>Returns</h4>
 <p> the title of the menu, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the menu has no
 title set on it. This string is owned by the widget and should
 not be modified or freed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1126,15 +1123,15 @@ not be modified or freed.</p>
 gtk_menu_set_monitor (<em class="parameter"><code><a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a> *menu</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> monitor_num</code></em>);</pre>
 <p>Informs GTK+ on which monitor a menu should be popped up. 
-See <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html#gdk-screen-get-monitor-geometry"><code class="function">gdk_screen_get_monitor_geometry()</code></a>.</p>
+See <a href="../html/GdkScreen.html#gdk-screen-get-monitor-geometry"><code class="function">gdk_screen_get_monitor_geometry()</code></a>.</p>
 <p>This function should be called from a <a class="link" href="GtkMenu.html#GtkMenuPositionFunc" title="GtkMenuPositionFunc ()"><span class="type">GtkMenuPositionFunc</span></a> if the
 menu should not appear on the same monitor as the pointer. This 
 information can't be reliably inferred from the coordinates returned
 by a <a class="link" href="GtkMenu.html#GtkMenuPositionFunc" title="GtkMenuPositionFunc ()"><span class="type">GtkMenuPositionFunc</span></a>, since, for very long menus, these coordinates 
 may extend beyond the monitor boundaries or even the screen boundaries.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-monitor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1155,7 +1152,7 @@ be popped up</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1164,8 +1161,8 @@ be popped up</p></td>
 gtk_menu_get_monitor (<em class="parameter"><code><a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a> *menu</code></em>);</pre>
 <p>Retrieves the number of the monitor on which to show the menu.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-monitor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1179,12 +1176,11 @@ gtk_menu_get_monitor (<em class="parameter"><code><a class="link" href="GtkMenu.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.17.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-monitor.returns"></a><h4>Returns</h4>
 <p> the number of the monitor on which the menu should
 be popped up or -1, if no monitor has been set</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1194,8 +1190,8 @@ gtk_menu_get_tearoff_state (<em class="parameter"><code><a class="link" href="Gt
 <p>Returns whether the menu is torn off. See
 <a class="link" href="GtkMenu.html#gtk-menu-set-tearoff-state" title="gtk_menu_set_tearoff_state ()"><code class="function">gtk_menu_set_tearoff_state()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-tearoff-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1209,9 +1205,8 @@ gtk_menu_get_tearoff_state (<em class="parameter"><code><a class="link" href="Gt
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.18.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-tearoff-state.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the menu is currently torn off.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1224,8 +1219,8 @@ gtk_menu_set_reserve_toggle_size (<em class="parameter"><code><a class="link" hr
 <p>Sets whether the menu should reserve space for drawing toggles 
 or icons, regardless of their actual presence.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.19.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-reserve-toggle-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1245,7 +1240,7 @@ or icons, regardless of their actual presence.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1255,8 +1250,8 @@ gtk_menu_get_reserve_toggle_size (<em class="parameter"><code><a class="link" hr
 <p>Returns whether the menu reserves space for toggles and
 icons, regardless of their actual presence.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-reserve-toggle-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1270,11 +1265,10 @@ icons, regardless of their actual presence.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.20.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-reserve-toggle-size.returns"></a><h4>Returns</h4>
 <p> Whether the menu reserves toggle space</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1285,8 +1279,8 @@ gtk_menu_popdown (<em class="parameter"><code><a class="link" href="GtkMenu.html
 Removes the menu from the screen.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-popdown.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1309,8 +1303,8 @@ gtk_menu_reposition (<em class="parameter"><code><a class="link" href="GtkMenu.h
 Repositions the menu according to its position function.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-reposition.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1336,8 +1330,8 @@ Returns the selected menu item from the menu.  This is used by the
 <a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><span class="type">GtkOptionMenu</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1351,7 +1345,7 @@ Returns the selected menu item from the menu.  This is used by the
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.23.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-active.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> that was last selected
 in the menu.  If a selection has not yet been made, the
 first menu item is selected. </p>
@@ -1369,8 +1363,8 @@ Selects the specified menu item within the menu.  This is used by the
 <a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><span class="type">GtkOptionMenu</span></a> and should not be used by anyone else.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1405,8 +1399,8 @@ also be displayed as a tearoff menu which persists until it is closed
 or reattached.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-set-tearoff-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1439,8 +1433,8 @@ Attaches the menu to the widget and provides a callback function that will
 be invoked when the menu calls <a class="link" href="GtkMenu.html#gtk-menu-detach" title="gtk_menu_detach ()"><code class="function">gtk_menu_detach()</code></a> during its destruction.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-attach-to-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1478,8 +1472,8 @@ This function will call the callback function, <em class="parameter"><code>detac
 when the <a class="link" href="GtkMenu.html#gtk-menu-attach-to-widget" title="gtk_menu_attach_to_widget ()"><code class="function">gtk_menu_attach_to_widget()</code></a> function was called.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-detach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1503,8 +1497,8 @@ gtk_menu_get_attach_widget (<em class="parameter"><code><a class="link" href="Gt
 Returns the <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> that the menu is attached to.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-attach-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1518,7 +1512,7 @@ Returns the <a class="link" href="GtkWidget.html" title="GtkWidget"><span class=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.28.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-attach-widget.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> that the menu is attached to. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1531,8 +1525,8 @@ gtk_menu_get_for_attach_widget (<em class="parameter"><code><a class="link" href
 <p>Returns a list of the menus which are attached to this widget.
 This list is owned by GTK+ and must not be modified.</p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-get-for-attach-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1546,11 +1540,11 @@ This list is owned by GTK+ and must not be modified.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.29.6"></a><h4>Returns</h4>
+<a name="gtk-menu-get-for-attach-widget.returns"></a><h4>Returns</h4>
 <p> the list of menus attached to his widget. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkWidget][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1569,8 +1563,8 @@ To make the menu appear on a different monitor than the mouse pointer,
 <a class="link" href="GtkMenu.html#gtk-menu-set-monitor" title="gtk_menu_set_monitor ()"><code class="function">gtk_menu_set_monitor()</code></a> must be called.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkMenuPositionFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1629,8 +1623,8 @@ A user function supplied when calling <a class="link" href="GtkMenu.html#gtk-men
 will be called when the menu is later detached from the widget.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.13.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkMenuDetachFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1670,7 +1664,7 @@ should be accessed using the functions below.
 <pre class="programlisting">  “accel-group”              <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *</pre>
 <p>The accel group holding accelerators for the menu.</p>
 <p>Flags: Read / Write</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1679,7 +1673,7 @@ should be accessed using the functions below.
 <p>An accel path used to conveniently construct accel paths of child items.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1690,7 +1684,7 @@ menu item is selected.</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1700,7 +1694,7 @@ menu item is selected.</p>
 the menu without a <a class="link" href="GtkMenu.html#GtkMenuDetachFunc" title="GtkMenuDetachFunc ()"><span class="type">GtkMenuDetachFunc</span></a>. If you need to use a detacher,
 use <a class="link" href="GtkMenu.html#gtk-menu-attach-to-widget" title="gtk_menu_attach_to_widget ()"><code class="function">gtk_menu_attach_to_widget()</code></a> directly.</p>
 <p>Flags: Read / Write</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1710,7 +1704,7 @@ use <a class="link" href="GtkMenu.html#gtk-menu-attach-to-widget" title="gtk_men
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1724,7 +1718,7 @@ are connected to a menu bar or context menus should reserve
 toggle space for consistency.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1733,7 +1727,7 @@ toggle space for consistency.</p>
 <p>A boolean that indicates whether the menu is torn-off.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1790,7 +1784,7 @@ toggle space for consistency.</p>
 <p>Indicates where scroll arrows should be placed.</p>
 <p>Flags: Read</p>
 <p>Default value: GTK_ARROWS_BOTH</p>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1855,8 +1849,8 @@ user_function (<a class="link" href="GtkMenu.html" title="GtkMenu"><span class="
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.5.18.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkMenu-move-scroll.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1876,12 +1870,11 @@ user_function (<a class="link" href="GtkMenu.html" title="GtkMenu"><span class="
 </tbody>
 </table></div>
 </div>
-<p>Flags: Action</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

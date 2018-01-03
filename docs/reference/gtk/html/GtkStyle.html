@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Styles</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Styles: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Graphics-Contexts.html" title="Graphics Contexts">
 <link rel="next" href="gtk2-Selections.html" title="Selections">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkStyle.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -135,7 +135,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkStyle.html#gtk-style-render-icon" title="gtk_style_render_icon ()">gtk_style_render_icon</a> <span class="c_punctuation">()</span>
@@ -143,7 +143,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
+<a href="../html/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkStyle.html#gtk-style-get-font" title="gtk_style_get_font ()">gtk_style_get_font</a> <span class="c_punctuation">()</span>
@@ -570,7 +570,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkStyle.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -580,19 +580,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStyle.html#GtkStyle-realize" title="The “realize” signal">realize</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStyle.html#GtkStyle-unrealize" title="The “unrealize” signal">unrealize</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <a name="GtkBorder"></a><div class="refsect1">
 <a name="GtkStyle.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -615,9 +615,9 @@
 </div>
 <div class="refsect1">
 <a name="GtkStyle.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GBoxed
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html">GBoxed</a>
     <span class="lineart">╰──</span> GtkBorder
-    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkStyle
 </pre>
 </div>
@@ -641,8 +641,8 @@
 Returns whether the style is attached to a window.
 </p>
 <div class="refsect3">
-<a name="id-1.3.15.10.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-STYLE-ATTACHED.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -663,9 +663,8 @@ Returns whether the style is attached to a window.
 gtk_style_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.3.5"></a><h4>Returns</h4>
+<a name="gtk-style-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -675,8 +674,8 @@ gtk_style_new (<em class="parameter"><code><span class="type">void</span></code>
 gtk_style_copy (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>);</pre>
 <p>Creates a copy of the passed in <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> object.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -690,7 +689,7 @@ gtk_style_copy (<em class="parameter"><code><a class="link" href="GtkStyle.html"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.4.6"></a><h4>Returns</h4>
+<a name="gtk-style-copy.returns"></a><h4>Returns</h4>
 <p> a copy of <em class="parameter"><code>style</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
@@ -701,7 +700,7 @@ gtk_style_copy (<em class="parameter"><code><a class="link" href="GtkStyle.html"
 <a name="gtk-style-attach"></a><h3>gtk_style_attach ()</h3>
 <pre class="programlisting"><a class="link" href="GtkStyle.html" title="Styles"><span class="returnvalue">GtkStyle</span></a> *
 gtk_style_attach (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>);</pre>
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>);</pre>
 <p>Attaches a style to a window; this process allocates the
 colors and creates the GC's for the style - it specializes
 it to a particular visual and colormap. The process may
@@ -711,8 +710,8 @@ been attached to a window with a different style and colormap.</p>
 in the following way:
 <code class="literal">style = gtk_style_attach (style, window)</code></p>
 <div class="refsect3">
-<a name="id-1.3.15.10.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-attach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -726,20 +725,19 @@ in the following way:
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>.</p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.5.7"></a><h4>Returns</h4>
+<a name="gtk-style-attach.returns"></a><h4>Returns</h4>
 <p> Either <em class="parameter"><code>style</code></em>
 , or a newly-created <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a>.
 If the style is newly created, the style parameter
 will be unref'ed, and the new style will have
 a reference count belonging to the caller.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -750,8 +748,8 @@ gtk_style_detach (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 <p>Detaches a style from a window. If the style is not attached
 to any windows anymore, it is unrealized. See <a class="link" href="GtkStyle.html#gtk-style-attach" title="gtk_style_attach ()"><code class="function">gtk_style_attach()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-detach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -777,8 +775,8 @@ gtk_style_ref (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 <p>Increase the reference count of <em class="parameter"><code>style</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -792,10 +790,9 @@ gtk_style_ref (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.7.7"></a><h4>Returns</h4>
+<a name="gtk-style-ref.returns"></a><h4>Returns</h4>
 <p><em class="parameter"><code>style</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -810,8 +807,8 @@ gtk_style_unref (<em class="parameter"><code><a class="link" href="GtkStyle.html
 <p>Decrease the reference count of <em class="parameter"><code>style</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -830,7 +827,7 @@ gtk_style_unref (<em class="parameter"><code><a class="link" href="GtkStyle.html
 <a name="gtk-style-set-background"></a><h3>gtk_style_set_background ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_style_set_background (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                           <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_style_set_background</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Sets the background of <em class="parameter"><code>window</code></em>
@@ -838,8 +835,8 @@ gtk_style_set_background (<em class="parameter"><code><a class="link" href="GtkS
 specified by <em class="parameter"><code>style</code></em>
  for the given state.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-set-background.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -853,7 +850,7 @@ specified by <em class="parameter"><code>style</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -870,17 +867,17 @@ specified by <em class="parameter"><code>style</code></em>
 <a name="gtk-style-apply-default-background"></a><h3>gtk_style_apply_default_background ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_style_apply_default_background (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                                    <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> set_bg</code></em>,
                                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                                    <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
 <div class="refsect3">
-<a name="id-1.3.15.10.10.4"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-apply-default-background.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -913,7 +910,7 @@ Does the same as <a class="link" href="GtkStyle.html#gtk-style-apply-default-bac
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_style_lookup_color (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *color_name</code></em>,
-                        <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                        <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Looks up <em class="parameter"><code>color_name</code></em>
  in the style's logical color mappings,
 filling in <em class="parameter"><code>color</code></em>
@@ -922,8 +919,8 @@ returning <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macro
 it depends on the <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> and might change when a theme
 switch occurs.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-lookup-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -942,18 +939,17 @@ switch occurs.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>color</p></td>
-<td class="parameter_description"><p> the <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to fill in. </p></td>
+<td class="parameter_description"><p> the <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to fill in. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.12.6"></a><h4>Returns</h4>
+<a name="gtk-style-lookup-color.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the mapping was found.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -967,8 +963,8 @@ gtk_style_lookup_icon_set (<em class="parameter"><code><a class="link" href="Gtk
 and the default icon factory, returning an icon set if found,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-lookup-icon-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -989,7 +985,7 @@ otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macro
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.13.6"></a><h4>Returns</h4>
+<a name="gtk-style-lookup-icon-set.returns"></a><h4>Returns</h4>
 <p> icon set of <em class="parameter"><code>stock_id</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -998,7 +994,7 @@ otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macro
 <hr>
 <div class="refsect2">
 <a name="gtk-style-render-icon"></a><h3>gtk_style_render_icon ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_style_render_icon (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
                        <em class="parameter"><code>const <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> *source</code></em>,
                        <em class="parameter"><code><a class="link" href="GtkWidget.html#GtkTextDirection" title="enum GtkTextDirection"><span class="type">GtkTextDirection</span></a> direction</code></em>,
@@ -1012,8 +1008,8 @@ gtk_style_render_icon (<em class="parameter"><code><a class="link" href="GtkStyl
 according to the given parameters and returns the result in a
 pixbuf.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-render-icon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1061,8 +1057,8 @@ don't scale.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.14.6"></a><h4>Returns</h4>
-<p> a newly-created <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>
+<a name="gtk-style-render-icon.returns"></a><h4>Returns</h4>
+<p> a newly-created <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>
 containing the rendered icon. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -1070,18 +1066,18 @@ containing the rendered icon. </p>
 <hr>
 <div class="refsect2">
 <a name="gtk-style-get-font"></a><h3>gtk_style_get_font ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
+<pre class="programlisting"><a href="../html/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
 gtk_style_get_font (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_style_get_font</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>Gets the <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> to use for the given style. This is
+<p>Gets the <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> to use for the given style. This is
 meant only as a replacement for direct access to <em class="parameter"><code>style-&gt;font</code></em>
 
 and should not be used in new code. New code should
 use <em class="parameter"><code>style-&gt;font_desc</code></em>
  instead.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-get-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1095,11 +1091,10 @@ use <em class="parameter"><code>style-&gt;font_desc</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.15.7"></a><h4>Returns</h4>
-<p> the <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> for the style. This font is owned
+<a name="gtk-style-get-font.returns"></a><h4>Returns</h4>
+<p> the <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> for the style. This font is owned
 by the style; if you want to keep around a copy, you must
-call <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#gdk-font-ref"><code class="function">gdk_font_ref()</code></a>.</p>
-<p></p>
+call <a href="../html/gdk2-Fonts.html#gdk-font-ref"><code class="function">gdk_font_ref()</code></a>.</p>
 </div>
 </div>
 <hr>
@@ -1107,15 +1102,15 @@ call <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#gdk-font-ref">
 <a name="gtk-style-set-font"></a><h3>gtk_style_set_font ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_style_set_font (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *font</code></em>);</pre>
+                    <em class="parameter"><code><a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *font</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_style_set_font</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>Sets the <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> to use for a given style. This is
+<p>Sets the <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> to use for a given style. This is
 meant only as a replacement for direct access to style-&gt;font
 and should not be used in new code. New code should
 use style-&gt;font_desc instead.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-set-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1129,7 +1124,7 @@ use style-&gt;font_desc instead.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>font</p></td>
-<td class="parameter_description"><p> a <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use the <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> corresponding
+<td class="parameter_description"><p> a <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use the <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> corresponding
 to style-&gt;font_desc. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -1148,8 +1143,8 @@ gtk_style_get_style_property (<em class="parameter"><code><a class="link" href="
 <p>Queries the value of a style property corresponding to a
 widget class is in the given style.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-get-style-property.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1180,7 +1175,7 @@ queried will be stored</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1193,8 +1188,8 @@ gtk_style_get_valist (<em class="parameter"><code><a class="link" href="GtkStyle
 <p>Non-vararg variant of <a class="link" href="GtkStyle.html#gtk-style-get" title="gtk_style_get ()"><code class="function">gtk_style_get()</code></a>.
 Used primarily by language bindings.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-get-valist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1227,7 +1222,7 @@ location for <em class="parameter"><code>first_property_name</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1242,8 +1237,8 @@ gtk_style_get (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 from <em class="parameter"><code>style</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-style-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1268,14 +1263,14 @@ from <em class="parameter"><code>style</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-draw-hline"></a><h3>gtk_draw_hline ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_hline (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x1</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x2</code></em>,
@@ -1292,8 +1287,8 @@ gtk_draw_hline (<em class="parameter"><code><a class="link" href="GtkStyle.html"
 
 using the given style and state.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-hline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1307,7 +1302,7 @@ using the given style and state.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1339,7 +1334,7 @@ using the given style and state.</p>
 <a name="gtk-draw-vline"></a><h3>gtk_draw_vline ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_vline (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y1_</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y2_</code></em>,
@@ -1356,8 +1351,8 @@ gtk_draw_vline (<em class="parameter"><code><a class="link" href="GtkStyle.html"
 
 using the given style and state.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-vline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1371,7 +1366,7 @@ using the given style and state.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1403,7 +1398,7 @@ using the given style and state.</p>
 <a name="gtk-draw-shadow"></a><h3>gtk_draw_shadow ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_shadow (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -1418,8 +1413,8 @@ gtk_draw_shadow (<em class="parameter"><code><a class="link" href="GtkStyle.html
  
 using the given style and state and shadow type.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.22.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-shadow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1433,7 +1428,7 @@ using the given style and state and shadow type.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1475,10 +1470,10 @@ using the given style and state and shadow type.</p>
 <a name="gtk-draw-polygon"></a><h3>gtk_draw_polygon ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a> *points</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a> *points</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> npoints</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fill</code></em>);</pre>
 <div class="warning">
@@ -1488,8 +1483,8 @@ gtk_draw_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 <p>Draws a polygon on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-polygon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1503,7 +1498,7 @@ gtk_draw_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1518,7 +1513,7 @@ gtk_draw_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>points</p></td>
-<td class="parameter_description"><p>an array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a>s</p></td>
+<td class="parameter_description"><p>an array of <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a>s</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1541,7 +1536,7 @@ gtk_draw_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 <a name="gtk-draw-arrow"></a><h3>gtk_draw_arrow ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_arrow (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkArrowType" title="enum GtkArrowType"><span class="type">GtkArrowType</span></a> arrow_type</code></em>,
@@ -1559,8 +1554,8 @@ gtk_draw_arrow (<em class="parameter"><code><a class="link" href="GtkStyle.html"
 parameters. <em class="parameter"><code>arrow_type</code></em>
  determines the direction of the arrow.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.24.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-arrow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1574,7 +1569,7 @@ parameters. <em class="parameter"><code>arrow_type</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1626,7 +1621,7 @@ parameters. <em class="parameter"><code>arrow_type</code></em>
 <a name="gtk-draw-diamond"></a><h3>gtk_draw_diamond ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_diamond (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -1641,8 +1636,8 @@ gtk_draw_diamond (<em class="parameter"><code><a class="link" href="GtkStyle.htm
  using the given
 parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-diamond.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1656,7 +1651,7 @@ parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1698,7 +1693,7 @@ parameters.</p>
 <a name="gtk-draw-string"></a><h3>gtk_draw_string ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_string (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
@@ -1710,8 +1705,8 @@ gtk_draw_string (<em class="parameter"><code><a class="link" href="GtkStyle.html
 <p>Draws a text string on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1725,7 +1720,7 @@ gtk_draw_string (<em class="parameter"><code><a class="link" href="GtkStyle.html
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1757,7 +1752,7 @@ gtk_draw_string (<em class="parameter"><code><a class="link" href="GtkStyle.html
 <a name="gtk-draw-box"></a><h3>gtk_draw_box ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-              <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+              <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -1771,8 +1766,8 @@ gtk_draw_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" t
 <p>Draws a box on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.27.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-box.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1786,7 +1781,7 @@ gtk_draw_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" t
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1828,7 +1823,7 @@ gtk_draw_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" t
 <a name="gtk-draw-box-gap"></a><h3>gtk_draw_box_gap ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_box_gap (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -1846,8 +1841,8 @@ gtk_draw_box_gap (<em class="parameter"><code><a class="link" href="GtkStyle.htm
  using the given style and state and shadow type, 
 leaving a gap in one side.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.28.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-box-gap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1861,7 +1856,7 @@ leaving a gap in one side.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1918,7 +1913,7 @@ leaving a gap in one side.</p>
 <a name="gtk-draw-check"></a><h3>gtk_draw_check ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_check (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -1933,8 +1928,8 @@ gtk_draw_check (<em class="parameter"><code><a class="link" href="GtkStyle.html"
  with 
 the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.29.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-check.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1948,7 +1943,7 @@ the given parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1990,7 +1985,7 @@ the given parameters.</p>
 <a name="gtk-draw-extension"></a><h3>gtk_draw_extension ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_extension (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                    <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2004,8 +1999,8 @@ gtk_draw_extension (<em class="parameter"><code><a class="link" href="GtkStyle.h
 </div>
 <p>Draws an extension, i.e. a notebook tab.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.30.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-extension.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2019,7 +2014,7 @@ gtk_draw_extension (<em class="parameter"><code><a class="link" href="GtkStyle.h
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2066,7 +2061,7 @@ gtk_draw_extension (<em class="parameter"><code><a class="link" href="GtkStyle.h
 <a name="gtk-draw-flat-box"></a><h3>gtk_draw_flat_box ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2080,8 +2075,8 @@ gtk_draw_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 <p>Draws a flat box on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.31.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-flat-box.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2095,7 +2090,7 @@ gtk_draw_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2137,7 +2132,7 @@ gtk_draw_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 <a name="gtk-draw-focus"></a><h3>gtk_draw_focus ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_focus (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
@@ -2150,8 +2145,8 @@ gtk_draw_focus (<em class="parameter"><code><a class="link" href="GtkStyle.html"
  using the
 given style.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.32.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-focus.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2165,7 +2160,7 @@ given style.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2197,7 +2192,7 @@ given style.</p>
 <a name="gtk-draw-handle"></a><h3>gtk_draw_handle ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_handle (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2211,8 +2206,8 @@ gtk_draw_handle (<em class="parameter"><code><a class="link" href="GtkStyle.html
 </div>
 <p>Draws a handle as used in <a class="link" href="GtkHandleBox.html" title="GtkHandleBox"><span class="type">GtkHandleBox</span></a> and <a class="link" href="GtkPaned.html" title="GtkPaned"><span class="type">GtkPaned</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.33.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-handle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2226,7 +2221,7 @@ gtk_draw_handle (<em class="parameter"><code><a class="link" href="GtkStyle.html
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2273,7 +2268,7 @@ gtk_draw_handle (<em class="parameter"><code><a class="link" href="GtkStyle.html
 <a name="gtk-draw-option"></a><h3>gtk_draw_option ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_option (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2288,8 +2283,8 @@ gtk_draw_option (<em class="parameter"><code><a class="link" href="GtkStyle.html
  with 
 the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.34.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-option.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2303,7 +2298,7 @@ the given parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2345,7 +2340,7 @@ the given parameters.</p>
 <a name="gtk-draw-shadow-gap"></a><h3>gtk_draw_shadow_gap ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_shadow_gap (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                     <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2364,8 +2359,8 @@ gtk_draw_shadow_gap (<em class="parameter"><code><a class="link" href="GtkStyle.
 using the given style and state and shadow type, leaving a 
 gap in one side.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.35.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-shadow-gap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2379,7 +2374,7 @@ gap in one side.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2436,7 +2431,7 @@ gap in one side.</p>
 <a name="gtk-draw-slider"></a><h3>gtk_draw_slider ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_slider (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2449,8 +2444,8 @@ gtk_draw_slider (<em class="parameter"><code><a class="link" href="GtkStyle.html
  using the
 given style and orientation.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.36.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-slider.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2464,7 +2459,7 @@ given style and orientation.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2511,7 +2506,7 @@ given style and orientation.</p>
 <a name="gtk-draw-tab"></a><h3>gtk_draw_tab ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_tab (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-              <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+              <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2526,8 +2521,8 @@ gtk_draw_tab (<em class="parameter"><code><a class="link" href="GtkStyle.html" t
 in the given rectangle on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.37.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-tab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2541,7 +2536,7 @@ in the given rectangle on <em class="parameter"><code>window</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2583,7 +2578,7 @@ in the given rectangle on <em class="parameter"><code>window</code></em>
 <a name="gtk-draw-expander"></a><h3>gtk_draw_expander ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_expander (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
@@ -2594,8 +2589,8 @@ gtk_draw_expander (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 </div>
 <p>Draws an expander as used in <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.38.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-expander.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2609,7 +2604,7 @@ gtk_draw_expander (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2641,18 +2636,18 @@ gtk_draw_expander (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 <a name="gtk-draw-layout"></a><h3>gtk_draw_layout ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_layout (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_text</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
+                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_draw_layout</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Draws a layout on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.39.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2666,7 +2661,7 @@ gtk_draw_layout (<em class="parameter"><code><a class="link" href="GtkStyle.html
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2705,9 +2700,9 @@ graphics context of <em class="parameter"><code>style</code></em>
 <a name="gtk-draw-resize-grip"></a><h3>gtk_draw_resize_grip ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_resize_grip (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                      <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                      <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                       <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                      <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindowEdge"><span class="type">GdkWindowEdge</span></a> edge</code></em>,
+                      <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindowEdge"><span class="type">GdkWindowEdge</span></a> edge</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
@@ -2720,8 +2715,8 @@ gtk_draw_resize_grip (<em class="parameter"><code><a class="link" href="GtkStyle
  using the given
 parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.40.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-resize-grip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2735,7 +2730,7 @@ parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2777,10 +2772,10 @@ parameters.</p>
 <a name="gtk-paint-arrow"></a><h3>gtk_paint_arrow ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_arrow (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                 <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkArrowType" title="enum GtkArrowType"><span class="type">GtkArrowType</span></a> arrow_type</code></em>,
@@ -2794,8 +2789,8 @@ gtk_paint_arrow (<em class="parameter"><code><a class="link" href="GtkStyle.html
 parameters. <em class="parameter"><code>arrow_type</code></em>
  determines the direction of the arrow.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.41.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-arrow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2809,7 +2804,7 @@ parameters. <em class="parameter"><code>arrow_type</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2877,10 +2872,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-box"></a><h3>gtk_paint_box ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-               <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+               <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-               <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+               <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2890,8 +2885,8 @@ gtk_paint_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 <p>Draws a box on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.42.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-box.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2905,7 +2900,7 @@ gtk_paint_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2963,10 +2958,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-box-gap"></a><h3>gtk_paint_box_gap ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_box_gap (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -2980,8 +2975,8 @@ gtk_paint_box_gap (<em class="parameter"><code><a class="link" href="GtkStyle.ht
  using the given style and state and shadow type, 
 leaving a gap in one side.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.43.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-box-gap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2995,7 +2990,7 @@ leaving a gap in one side.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3068,10 +3063,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-check"></a><h3>gtk_paint_check ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_check (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                 <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3082,8 +3077,8 @@ gtk_paint_check (<em class="parameter"><code><a class="link" href="GtkStyle.html
  with 
 the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.44.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-check.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3097,7 +3092,7 @@ the given parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3155,10 +3150,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-diamond"></a><h3>gtk_paint_diamond ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_diamond (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3169,8 +3164,8 @@ gtk_paint_diamond (<em class="parameter"><code><a class="link" href="GtkStyle.ht
  using the given
 parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.45.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-diamond.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3184,7 +3179,7 @@ parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3242,10 +3237,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-extension"></a><h3>gtk_paint_extension ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_extension (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                     <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                     <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                     <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                      <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3255,8 +3250,8 @@ gtk_paint_extension (<em class="parameter"><code><a class="link" href="GtkStyle.
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPositionType" title="enum GtkPositionType"><span class="type">GtkPositionType</span></a> gap_side</code></em>);</pre>
 <p>Draws an extension, i.e. a notebook tab.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.46.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-extension.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3270,7 +3265,7 @@ gtk_paint_extension (<em class="parameter"><code><a class="link" href="GtkStyle.
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3333,10 +3328,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-flat-box"></a><h3>gtk_paint_flat_box ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                    <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                    <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                     <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3346,8 +3341,8 @@ gtk_paint_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.h
 <p>Draws a flat box on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.47.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-flat-box.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3361,7 +3356,7 @@ gtk_paint_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.h
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3419,9 +3414,9 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-focus"></a><h3>gtk_paint_focus ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_focus (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                 <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3432,8 +3427,8 @@ gtk_paint_focus (<em class="parameter"><code><a class="link" href="GtkStyle.html
  using the
 given style.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.48.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-focus.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3447,7 +3442,7 @@ given style.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3500,10 +3495,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-handle"></a><h3>gtk_paint_handle ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_handle (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3513,8 +3508,8 @@ gtk_paint_handle (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkOrientation" title="enum GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>);</pre>
 <p>Draws a handle as used in <a class="link" href="GtkHandleBox.html" title="GtkHandleBox"><span class="type">GtkHandleBox</span></a> and <a class="link" href="GtkPaned.html" title="GtkPaned"><span class="type">GtkPaned</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.49.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-handle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3528,7 +3523,7 @@ gtk_paint_handle (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3591,9 +3586,9 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-hline"></a><h3>gtk_paint_hline ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_hline (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                 <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x1</code></em>,
@@ -3608,8 +3603,8 @@ gtk_paint_hline (<em class="parameter"><code><a class="link" href="GtkStyle.html
 
 using the given style and state.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.50.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-hline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3623,7 +3618,7 @@ using the given style and state.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3671,10 +3666,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-option"></a><h3>gtk_paint_option ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_option (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3685,8 +3680,8 @@ gtk_paint_option (<em class="parameter"><code><a class="link" href="GtkStyle.htm
  with 
 the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.51.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-option.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3700,7 +3695,7 @@ the given parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3758,20 +3753,20 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-polygon"></a><h3>gtk_paint_polygon ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a> *points</code></em>,
+                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a> *points</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_points</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fill</code></em>);</pre>
 <p>Draws a polygon on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.52.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-polygon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3785,7 +3780,7 @@ gtk_paint_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3816,7 +3811,7 @@ output should not be clipped. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>points</p></td>
-<td class="parameter_description"><p>an array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a>s</p></td>
+<td class="parameter_description"><p>an array of <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a>s</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3839,10 +3834,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-shadow"></a><h3>gtk_paint_shadow ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_shadow (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3853,8 +3848,8 @@ gtk_paint_shadow (<em class="parameter"><code><a class="link" href="GtkStyle.htm
  
 using the given style and state and shadow type.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.53.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-shadow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3868,7 +3863,7 @@ using the given style and state and shadow type.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -3926,10 +3921,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-shadow-gap"></a><h3>gtk_paint_shadow_gap ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_shadow_gap (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                      <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                      <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                       <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                       <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                      <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                       <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -3944,8 +3939,8 @@ gtk_paint_shadow_gap (<em class="parameter"><code><a class="link" href="GtkStyle
 using the given style and state and shadow type, leaving a 
 gap in one side.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.54.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-shadow-gap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3959,7 +3954,7 @@ gap in one side.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4032,10 +4027,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-slider"></a><h3>gtk_paint_slider ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_slider (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -4047,8 +4042,8 @@ gtk_paint_slider (<em class="parameter"><code><a class="link" href="GtkStyle.htm
  using the
 given style and orientation.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.55.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-slider.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4062,7 +4057,7 @@ given style and orientation.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4125,9 +4120,9 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-spinner"></a><h3>gtk_paint_spinner ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_spinner (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> step</code></em>,
@@ -4138,8 +4133,8 @@ gtk_paint_spinner (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 <p>Draws a spinner on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.56.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-spinner.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4153,7 +4148,7 @@ gtk_paint_spinner (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4205,16 +4200,16 @@ output should not be clipped. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-paint-string"></a><h3>gtk_paint_string ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_string (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -4227,8 +4222,8 @@ gtk_paint_string (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 <p>Draws a text string on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.57.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4242,7 +4237,7 @@ gtk_paint_string (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4290,10 +4285,10 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-tab"></a><h3>gtk_paint_tab ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_tab (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-               <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+               <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-               <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+               <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -4304,8 +4299,8 @@ gtk_paint_tab (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 in the given rectangle on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.58.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-tab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4319,7 +4314,7 @@ in the given rectangle on <em class="parameter"><code>window</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4377,9 +4372,9 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-vline"></a><h3>gtk_paint_vline ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_vline (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                 <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y1_</code></em>,
@@ -4393,8 +4388,8 @@ gtk_paint_vline (<em class="parameter"><code><a class="link" href="GtkStyle.html
 
 using the given style and state.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.59.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-vline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4408,7 +4403,7 @@ using the given style and state.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4456,9 +4451,9 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-expander"></a><h3>gtk_paint_expander ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_expander (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                    <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                    <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                     <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -4477,8 +4472,8 @@ likely not useful.) The expander is expander_size pixels tall
 in the collapsed position and expander_size pixels wide in the
 expanded position.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.60.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-expander.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4492,7 +4487,7 @@ expanded position.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4542,20 +4537,20 @@ intermediate state.</p></td>
 <a name="gtk-paint-layout"></a><h3>gtk_paint_layout ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_layout (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                  <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_text</code></em>,
-                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
+                  <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
 <p>Draws a layout on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.61.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4569,7 +4564,7 @@ gtk_paint_layout (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4624,12 +4619,12 @@ output should not be clipped. </p></td>
 <a name="gtk-paint-resize-grip"></a><h3>gtk_paint_resize_grip ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_paint_resize_grip (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
-                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                       <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                        <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                       <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                       <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                        <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindowEdge"><span class="type">GdkWindowEdge</span></a> edge</code></em>,
+                       <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindowEdge"><span class="type">GdkWindowEdge</span></a> edge</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
@@ -4638,8 +4633,8 @@ gtk_paint_resize_grip (<em class="parameter"><code><a class="link" href="GtkStyl
  using the given
 parameters.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.62.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-paint-resize-grip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4653,7 +4648,7 @@ parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4711,9 +4706,9 @@ output should not be clipped. </p></td>
 <a name="gtk-draw-insertion-cursor"></a><h3>gtk_draw_insertion_cursor ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_insertion_cursor (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                           <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
-                           <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
-                           <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *location</code></em>,
+                           <em class="parameter"><code><a href="../html/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                           <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
+                           <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *location</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> is_primary</code></em>,
                            <em class="parameter"><code><a class="link" href="GtkWidget.html#GtkTextDirection" title="enum GtkTextDirection"><span class="type">GtkTextDirection</span></a> direction</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> draw_arrow</code></em>);</pre>
@@ -4723,8 +4718,8 @@ gtk_draw_insertion_cursor (<em class="parameter"><code><a class="link" href="Gtk
 . This is not a style function
 but merely a convenience function for drawing the standard cursor shape.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.63.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-draw-insertion-cursor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4738,7 +4733,7 @@ but merely a convenience function for drawing the standard cursor shape.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>drawable</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -4773,7 +4768,7 @@ cursor. Should be <a href="https://developer.gnome.org/glib/unstable/glib-Standa
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -4782,12 +4777,11 @@ cursor. Should be <a href="https://developer.gnome.org/glib/unstable/glib-Standa
 gtk_border_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Allocates a new <a class="link" href="GtkStyle.html#GtkBorder"><span class="type">GtkBorder</span></a> structure and initializes its elements to zero.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.64.5"></a><h4>Returns</h4>
+<a name="gtk-border-new.returns"></a><h4>Returns</h4>
 <p> a new empty <a class="link" href="GtkStyle.html#GtkBorder"><span class="type">GtkBorder</span></a>. The newly allocated <a class="link" href="GtkStyle.html#GtkBorder"><span class="type">GtkBorder</span></a> should be
 freed with <a class="link" href="GtkStyle.html#gtk-border-free" title="gtk_border_free ()"><code class="function">gtk_border_free()</code></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -4796,8 +4790,8 @@ freed with <a class="link" href="GtkStyle.html#gtk-border-free" title="gtk_borde
 gtk_border_copy (<em class="parameter"><code>const <a class="link" href="GtkStyle.html#GtkBorder"><span class="type">GtkBorder</span></a> *border_</code></em>);</pre>
 <p>Copies a <a class="link" href="GtkStyle.html#GtkBorder"><span class="type">GtkBorder</span></a> structure.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.65.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-border-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4811,10 +4805,9 @@ gtk_border_copy (<em class="parameter"><code>const <a class="link" href="GtkStyl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.15.10.65.6"></a><h4>Returns</h4>
+<a name="gtk-border-copy.returns"></a><h4>Returns</h4>
 <p>a copy of <em class="parameter"><code>border_</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -4824,8 +4817,8 @@ gtk_border_copy (<em class="parameter"><code>const <a class="link" href="GtkStyl
 gtk_border_free (<em class="parameter"><code><a class="link" href="GtkStyle.html#GtkBorder"><span class="type">GtkBorder</span></a> *border_</code></em>);</pre>
 <p>Frees a <a class="link" href="GtkStyle.html#GtkBorder"><span class="type">GtkBorder</span></a> structure.</p>
 <div class="refsect3">
-<a name="id-1.3.15.10.66.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-border-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4848,10 +4841,6 @@ gtk_border_free (<em class="parameter"><code><a class="link" href="GtkStyle.html
                         <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *property_value</code></em>);</pre>
 <p>
 </p>
-<div class="refsect3">
-<a name="id-1.3.15.10.67.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 </div>
 <div class="refsect1">
@@ -4936,8 +4925,8 @@ colormap and depth. Connecting to this signal is probably seldom
 useful since most of the time applications and widgets only
 deal with styles that have been already realized.</p>
 <div class="refsect3">
-<a name="id-1.3.15.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkStyle-realize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4957,8 +4946,8 @@ deal with styles that have been already realized.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.4</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -4968,11 +4957,11 @@ user_function (<a class="link" href="GtkStyle.html" title="Styles"><span class="
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
 <p>Emitted when the aspects of the style specific to a particular colormap
 and depth are being cleaned up. A connection to this signal can be useful
-if a widget wants to cache objects like a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> as object data on <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a>.
+if a widget wants to cache objects like a <a href="../html/gdk2-Graphics-Contexts.html#GdkGC-struct"><span class="type">GdkGC</span></a> as object data on <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a>.
 This signal provides a convenient place to free such cached objects.</p>
 <div class="refsect3">
-<a name="id-1.3.15.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkStyle-unrealize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4992,13 +4981,12 @@ This signal provides a convenient place to free such cached objects.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.4</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

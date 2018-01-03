@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: General</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>General: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="reference.html" title="API Reference">
 <link rel="next" href="multihead.html" title="Multi-head Support Overview">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-General.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -266,7 +266,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-General.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -312,12 +312,12 @@ Any arguments used by GDK are removed from the array and <em class="parameter"><
 updated accordingly.
 </p>
 <p>
-GTK+ initializes GDK in <a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init"><code class="function">gtk_init()</code></a> and so this function is not usually needed
+GTK+ initializes GDK in <a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-init"><code class="function">gtk_init()</code></a> and so this function is not usually needed
 by GTK+ applications.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.2.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -365,12 +365,12 @@ Any arguments used by GDK are removed from the array and <em class="parameter"><
 updated accordingly.
 </p>
 <p>
-GTK+ initializes GDK in <a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init"><code class="function">gtk_init()</code></a> and so this function is not usually needed
+GTK+ initializes GDK in <a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-init"><code class="function">gtk_init()</code></a> and so this function is not usually needed
 by GTK+ applications.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.3.11"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-init-check.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -391,9 +391,8 @@ by GTK+ applications.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.7.3.12"></a><h4>Returns</h4>
+<a name="gdk-init-check.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if initialization succeeded.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -409,10 +408,10 @@ use by calls to <a class="link" href="GdkDisplay.html#gdk-display-open" title="g
  are
 updated accordingly.</p>
 <p>You shouldn't call this function explicitely if you are using
-<a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init"><code class="function">gtk_init()</code></a>, <a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init-check"><code class="function">gtk_init_check()</code></a>, <a class="link" href="gdk2-General.html#gdk-init" title="gdk_init ()"><code class="function">gdk_init()</code></a>, or <a class="link" href="gdk2-General.html#gdk-init-check" title="gdk_init_check ()"><code class="function">gdk_init_check()</code></a>.</p>
+<a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-init"><code class="function">gtk_init()</code></a>, <a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-init-check"><code class="function">gtk_init_check()</code></a>, <a class="link" href="gdk2-General.html#gdk-init" title="gdk_init ()"><code class="function">gdk_init()</code></a>, or <a class="link" href="gdk2-General.html#gdk-init-check" title="gdk_init_check ()"><code class="function">gdk_init_check()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-parse-args.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -432,7 +431,7 @@ updated accordingly.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -442,12 +441,11 @@ gdk_get_display_arg_name (<em class="parameter"><code><span class="type">void</s
 <p>Gets the display name specified in the command line arguments passed
 to <a class="link" href="gdk2-General.html#gdk-init" title="gdk_init ()"><code class="function">gdk_init()</code></a> or <a class="link" href="gdk2-General.html#gdk-parse-args" title="gdk_parse_args ()"><code class="function">gdk_parse_args()</code></a>, if any.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.5.5"></a><h4>Returns</h4>
+<a name="gdk-get-display-arg-name.returns"></a><h4>Returns</h4>
 <p> the display name, if specified explicitely, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
 this string is owned by GTK+ and must not be modified or freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -456,11 +454,11 @@ this string is owned by GTK+ and must not be modified or freed.</p>
 gdk_set_locale (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_set_locale</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/glib/unstable/glib-running.html#setlocale"><code class="function">setlocale()</code></a> directly</p>
+<p>Use <code class="function">setlocale()</code> directly</p>
 </div>
 <p>
-Initializes the support for internationalization by calling the <code class="function"><a href="https://developer.gnome.org/glib/unstable/glib-running.html#setlocale"><code class="function">setlocale()</code></a></code>
-system call. This function is called by <a href="http://library.gnome.org/devel/gtk3/gtk2-General.html#gtk-set-locale"><code class="function">gtk_set_locale()</code></a> and so GTK+
+Initializes the support for internationalization by calling the <code class="function"><code class="function">setlocale()</code></code>
+system call. This function is called by <a href="http://library.gnome.org/devel/gtk2/gtk2-General.html#gtk-set-locale"><code class="function">gtk_set_locale()</code></a> and so GTK+
 applications should use that instead.
 </p>
 <p>
@@ -487,9 +485,8 @@ If the locale is not supported by X then it is reset to the standard "C"
 locale.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.6.8"></a><h4>Returns</h4>
+<a name="gdk-set-locale.returns"></a><h4>Returns</h4>
 <p>the resulting locale.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -509,8 +506,8 @@ session management and the Inter-Client Communication Conventions Manual
 (ICCCM) for information on the <code class="literal">WM_CLIENT_LEADER</code> property. 
 (Both documents are part of the X Window System distribution.)</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-set-sm-client-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -541,8 +538,8 @@ performed in a function which is automatically called on exit (via the use
 of <a href="https://developer.gnome.org/glib/unstable/glib-Miscellaneous-Utility-Functions.html#g-atexit"><code class="function">g_atexit()</code></a>).
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.8.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-exit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -566,9 +563,9 @@ loading. If the applications opens windows, this function is
 normally called after opening the application's initial set of
 windows.</p>
 <p>GTK+ will call this function automatically after opening the first
-<a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> unless <a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-set-auto-startup-notification"><code class="function">gtk_window_set_auto_startup_notification()</code></a> is called 
+<a href="http://developer.gnome.org/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> unless <a href="http://developer.gnome.org/gtk3/GtkWindow.html#gtk-window-set-auto-startup-notification"><code class="function">gtk_window_set_auto_startup_notification()</code></a> is called 
 to disable that feature.</p>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -577,13 +574,13 @@ to disable that feature.</p>
 gdk_notify_startup_complete_with_id (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *startup_id</code></em>);</pre>
 <p>Indicates to the GUI environment that the application has finished
 loading, using a given identifier.</p>
-<p>GTK+ will call this function automatically for <a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> with custom
+<p>GTK+ will call this function automatically for <a href="http://developer.gnome.org/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> with custom
 startup-notification identifier unless
-<a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-set-auto-startup-notification"><code class="function">gtk_window_set_auto_startup_notification()</code></a> is called to disable
+<a href="http://developer.gnome.org/gtk3/GtkWindow.html#gtk-window-set-auto-startup-notification"><code class="function">gtk_window_set_auto_startup_notification()</code></a> is called to disable
 that feature.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-notify-startup-complete-with-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -597,7 +594,7 @@ process should be completed</p></td>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -612,9 +609,8 @@ commandline option, the default value is the program name (determined
 with <a href="https://developer.gnome.org/glib/unstable/glib-Miscellaneous-Utility-Functions.html#g-get-prgname"><code class="function">g_get_prgname()</code></a>) with the first character converted to uppercase.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.11.6"></a><h4>Returns</h4>
+<a name="gdk-get-program-class.returns"></a><h4>Returns</h4>
 <p>the program class.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -628,8 +624,8 @@ the class name part of the <code class="literal">WM_CLASS</code> property on
 toplevel windows; see the ICCCM.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-set-program-class.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -654,9 +650,8 @@ Gets the name of the display, which usually comes from the <code class="envar">D
 environment variable or the <code class="option">--display</code> command line option.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.13.6"></a><h4>Returns</h4>
+<a name="gdk-get-display.returns"></a><h4>Returns</h4>
 <p>the name of the display.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -677,9 +672,8 @@ trapping X errors with <a class="link" href="gdk2-General.html#gdk-error-trap-pu
 gdk_screen_width (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Returns the width of the default screen in pixels.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.15.5"></a><h4>Returns</h4>
+<a name="gdk-screen-width.returns"></a><h4>Returns</h4>
 <p> the width of the default screen in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -689,9 +683,8 @@ gdk_screen_width (<em class="parameter"><code><span class="type">void</span></co
 gdk_screen_height (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Returns the height of the default screen in pixels.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.16.5"></a><h4>Returns</h4>
+<a name="gdk-screen-height.returns"></a><h4>Returns</h4>
 <p> the height of the default screen in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -702,10 +695,9 @@ gdk_screen_width_mm (<em class="parameter"><code><span class="type">void</span><
 <p>Returns the width of the default screen in millimeters.
 Note that on many X servers this value will not be correct.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.17.5"></a><h4>Returns</h4>
+<a name="gdk-screen-width-mm.returns"></a><h4>Returns</h4>
 <p> the width of the default screen in millimeters,
 though it is not always correct.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -716,10 +708,9 @@ gdk_screen_height_mm (<em class="parameter"><code><span class="type">void</span>
 <p>Returns the height of the default screen in millimeters.
 Note that on many X servers this value will not be correct.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.18.5"></a><h4>Returns</h4>
+<a name="gdk-screen-height-mm.returns"></a><h4>Returns</h4>
 <p> the height of the default screen in millimeters,
 though it is not always correct.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -743,7 +734,7 @@ This overrides any previous pointer grab by this client.
 Pointer grabs are used for operations which need complete control over mouse
 events, even if the mouse leaves the application.
 For example in GTK+ it is used for Drag and Drop, for dragging the handle in
-the <a href="http://developer.gnome.org/gtk2/GtkHPaned.html"><span class="type">GtkHPaned</span></a> and <a href="http://developer.gnome.org/gtk2/GtkVPaned.html"><span class="type">GtkVPaned</span></a> widgets, and for resizing columns in <a href="http://library.gnome.org/devel/gtk3/GtkCList.html"><span class="type">GtkCList</span></a>
+the <a href="http://developer.gnome.org/gtk3/GtkHPaned.html#GtkHPaned-struct"><span class="type">GtkHPaned</span></a> and <a href="http://developer.gnome.org/gtk3/GtkVPaned.html#GtkVPaned-struct"><span class="type">GtkVPaned</span></a> widgets, and for resizing columns in <a href="http://library.gnome.org/devel/gtk2/GtkCList.html#GtkCList-struct"><span class="type">GtkCList</span></a>
 widgets.
 </p>
 <p>
@@ -761,8 +752,8 @@ up when the grab ends, you should handle the <a class="link" href="gdk2-Event-St
 are emitted when the grab ends unvoluntarily.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.19.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pointer-grab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -825,9 +816,8 @@ the time isn't known.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.7.19.10"></a><h4>Returns</h4>
+<a name="gdk-pointer-grab.returns"></a><h4>Returns</h4>
 <p><a class="link" href="gdk2-General.html#GDK-GRAB-SUCCESS:CAPS"><code class="literal">GDK_GRAB_SUCCESS</code></a> if the grab was successful.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -838,8 +828,8 @@ gdk_pointer_ungrab (<em class="parameter"><code><a href="https://developer.gnome
 <p>Ungrabs the pointer on the default display, if it is grabbed by this 
 application.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pointer-ungrab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -868,9 +858,8 @@ presses into account.</p>
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.21.7"></a><h4>Returns</h4>
+<a name="gdk-pointer-is-grabbed.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the pointer is currently grabbed by this application.* </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -884,8 +873,8 @@ See also <a class="link" href="GdkDisplay.html#gdk-display-set-double-click-dist
 Applications should <span class="emphasis"><em>not</em></span> set this, it is a 
 global user-configured setting.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-set-double-click-time.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -917,8 +906,8 @@ up when the grab ends, you should handle the <a class="link" href="gdk2-Event-St
 are emitted when the grab ends unvoluntarily.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyboard-grab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -951,9 +940,8 @@ available.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.7.23.7"></a><h4>Returns</h4>
+<a name="gdk-keyboard-grab.returns"></a><h4>Returns</h4>
 <p><a class="link" href="gdk2-General.html#GDK-GRAB-SUCCESS:CAPS"><code class="literal">GDK_GRAB_SUCCESS</code></a> if the grab was successful.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -964,8 +952,8 @@ gdk_keyboard_ungrab (<em class="parameter"><code><a href="https://developer.gnom
 <p>Ungrabs the keyboard on the default display, if it is grabbed by this 
 application.</p>
 <div class="refsect3">
-<a name="id-1.2.2.7.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyboard-ungrab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1004,9 +992,8 @@ SYSV shared memory calls. However, it can only be used if the X client and
 server are on the same machine and the server supports it.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.26.7"></a><h4>Returns</h4>
+<a name="gdk-get-use-xshm.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if use of the MIT shared memory extension will be attempted.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1022,8 +1009,8 @@ to set this to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-
 support the extension it may cause warning messages to be output.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.27.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-set-use-xshm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1086,9 +1073,8 @@ gdk_error_trap_pop (<em class="parameter"><code><span class="type">void</span></
 Removes the X error trap installed with <a class="link" href="gdk2-General.html#gdk-error-trap-push" title="gdk_error_trap_push ()"><code class="function">gdk_error_trap_push()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.7.29.5"></a><h4>Returns</h4>
+<a name="gdk-error-trap-pop.returns"></a><h4>Returns</h4>
 <p>the X error code, or 0 if no error occurred.</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -1101,8 +1087,8 @@ Returned by <a class="link" href="gdk2-General.html#gdk-pointer-grab" title="gdk
 success or the reason for the failure of the grab attempt.
 </p>
 <div class="refsect3">
-<a name="id-1.2.2.8.2.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkGrabStatus.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1163,7 +1149,6 @@ This macro is defined if GDK is configured to use the X11 backend.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Points, Rectangles and Regions</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Points, Rectangles and Regions: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="GdkScreen.html" title="GdkScreen">
 <link rel="next" href="gdk2-Graphics-Contexts.html" title="Graphics Contexts">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Points-Rectangles-and-Regions.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -228,7 +228,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Points-Rectangles-and-Regions.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -311,8 +311,8 @@ the rectangles intersect, but not in the intersecting area itself,
 pass <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for <em class="parameter"><code>dest</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rectangle-intersect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -341,9 +341,8 @@ and <em class="parameter"><code>src2</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.2.6"></a><h4>Returns</h4>
+<a name="gdk-rectangle-intersect.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the rectangles intersect.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -365,8 +364,8 @@ It is allowed for <em class="parameter"><code>dest</code></em>
  or <em class="parameter"><code>src2</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-rectangle-union.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -401,9 +400,8 @@ and <em class="parameter"><code>src2</code></em>
 gdk_region_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new empty <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.4.5"></a><h4>Returns</h4>
+<a name="gdk-region-new.returns"></a><h4>Returns</h4>
 <p> a new empty <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -421,8 +419,8 @@ gdk_region_polygon (<em class="parameter"><code>const <a class="link" href="gdk2
 <p>Creates a new <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> using the polygon defined by a 
 number of points.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-polygon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -450,9 +448,8 @@ polygon overlaps itself.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.5.7"></a><h4>Returns</h4>
+<a name="gdk-region-polygon.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> based on the given polygon</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -463,8 +460,8 @@ gdk_region_copy (<em class="parameter"><code>const <a class="link" href="gdk2-Po
 <p>Copies <em class="parameter"><code>region</code></em>
 , creating an identical new region.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -478,10 +475,9 @@ gdk_region_copy (<em class="parameter"><code>const <a class="link" href="gdk2-Po
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.6.6"></a><h4>Returns</h4>
+<a name="gdk-region-copy.returns"></a><h4>Returns</h4>
 <p> a new region identical to <em class="parameter"><code>region</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -492,8 +488,8 @@ gdk_region_rectangle (<em class="parameter"><code>const <a class="link" href="gd
 <p>Creates a new region containing the area <em class="parameter"><code>rectangle</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-rectangle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -507,9 +503,8 @@ gdk_region_rectangle (<em class="parameter"><code>const <a class="link" href="gd
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.7.6"></a><h4>Returns</h4>
+<a name="gdk-region-rectangle.returns"></a><h4>Returns</h4>
 <p> a new region</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -519,8 +514,8 @@ gdk_region_rectangle (<em class="parameter"><code>const <a class="link" href="gd
 gdk_region_destroy (<em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>);</pre>
 <p>Destroys a <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -542,8 +537,8 @@ gdk_region_get_clipbox (<em class="parameter"><code>const <a class="link" href="
                         <em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> *rectangle</code></em>);</pre>
 <p>Obtains the smallest rectangle which includes the entire <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-get-clipbox.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -575,8 +570,8 @@ gdk_region_get_rectangles (<em class="parameter"><code>const <a class="link" hre
 The array returned in <em class="parameter"><code>rectangles</code></em>
  must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-get-rectangles.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -609,8 +604,8 @@ The array returned in <em class="parameter"><code>rectangles</code></em>
 gdk_region_empty (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>);</pre>
 <p>Finds out if the <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> is empty.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-empty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -624,10 +619,9 @@ gdk_region_empty (<em class="parameter"><code>const <a class="link" href="gdk2-P
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.11.6"></a><h4>Returns</h4>
+<a name="gdk-region-empty.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region</code></em>
 is empty.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -638,8 +632,8 @@ gdk_region_equal (<em class="parameter"><code>const <a class="link" href="gdk2-P
                   <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region2</code></em>);</pre>
 <p>Finds out if the two regions are the same.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -660,11 +654,10 @@ gdk_region_equal (<em class="parameter"><code>const <a class="link" href="gdk2-P
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.12.6"></a><h4>Returns</h4>
+<a name="gdk-region-equal.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region1</code></em>
 and <em class="parameter"><code>region2</code></em>
 are equal.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -680,8 +673,8 @@ gdk_region_rect_equal (<em class="parameter"><code>const <a class="link" href="g
 </div>
 <p>Finds out if a regions is the same as a rectangle.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.13.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-rect-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -702,13 +695,12 @@ gdk_region_rect_equal (<em class="parameter"><code>const <a class="link" href="g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.13.8"></a><h4>Returns</h4>
+<a name="gdk-region-rect-equal.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region</code></em>
 and <em class="parameter"><code>rectangle</code></em>
 are equal.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -719,8 +711,8 @@ gdk_region_point_in (<em class="parameter"><code>const <a class="link" href="gdk
                      <em class="parameter"><code><span class="type">int</span> y</code></em>);</pre>
 <p>Finds out if a point is in a region.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-point-in.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -746,10 +738,9 @@ gdk_region_point_in (<em class="parameter"><code>const <a class="link" href="gdk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.14.6"></a><h4>Returns</h4>
+<a name="gdk-region-point-in.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the point is in <em class="parameter"><code>region</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -760,8 +751,8 @@ gdk_region_rect_in (<em class="parameter"><code>const <a class="link" href="gdk2
                     <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> *rectangle</code></em>);</pre>
 <p>Tests whether a rectangle is within a region.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-rect-in.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -782,11 +773,10 @@ gdk_region_rect_in (<em class="parameter"><code>const <a class="link" href="gdk2
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.7.7.15.6"></a><h4>Returns</h4>
+<a name="gdk-region-rect-in.returns"></a><h4>Returns</h4>
 <p> <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GDK-OVERLAP-RECTANGLE-IN:CAPS"><code class="literal">GDK_OVERLAP_RECTANGLE_IN</code></a>, <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GDK-OVERLAP-RECTANGLE-OUT:CAPS"><code class="literal">GDK_OVERLAP_RECTANGLE_OUT</code></a>, or
 <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GDK-OVERLAP-RECTANGLE-PART:CAPS"><code class="literal">GDK_OVERLAP_RECTANGLE_PART</code></a>, depending on whether the rectangle is inside,
 outside, or partly inside the <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>, respectively.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -798,8 +788,8 @@ gdk_region_offset (<em class="parameter"><code><a class="link" href="gdk2-Points
                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dy</code></em>);</pre>
 <p>Moves a region the specified distance.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -839,8 +829,8 @@ gdk_region_shrink (<em class="parameter"><code><a class="link" href="gdk2-Points
 <p>Resizes a region by the specified amount.
 Positive values shrink the region. Negative values expand it.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-shrink.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -881,8 +871,8 @@ either <em class="parameter"><code>region</code></em>
  or <em class="parameter"><code>rect</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-union-with-rect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -918,8 +908,8 @@ both <em class="parameter"><code>source1</code></em>
  and <em class="parameter"><code>source2</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-intersect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -955,8 +945,8 @@ either <em class="parameter"><code>source1</code></em>
  or <em class="parameter"><code>source2</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-union.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -990,8 +980,8 @@ area is the set of pixels contained in <em class="parameter"><code>source1</code
  but not in <em class="parameter"><code>source2</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-subtract.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1025,8 +1015,8 @@ and <em class="parameter"><code>source2</code></em>
 . The resulting area is the set of pixels contained in one
 or the other of the two sources but not in both.</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-xor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1059,8 +1049,8 @@ This defines the type of the function passed to
 <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-spans-intersect-foreach" title="gdk_region_spans_intersect_foreach ()"><code class="function">gdk_region_spans_intersect_foreach()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.7.7.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkSpanFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1099,8 +1089,8 @@ gdk_region_spans_intersect_foreach (<em class="parameter"><code><a class="link" 
  and <em class="parameter"><code>spans</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.7.7.24.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-region-spans-intersect-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1159,8 +1149,8 @@ is sorted wrt. the y coordinate</p></td>
 Defines the x and y coordinates of a point.
 </p>
 <div class="refsect3">
-<a name="id-1.2.7.8.2.6"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkPoint.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1195,8 +1185,8 @@ Defines the x and y coordinates of a point.
 Defines the position and size of a rectangle.
 </p>
 <div class="refsect3">
-<a name="id-1.2.7.8.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkRectangle.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1250,8 +1240,8 @@ creating a <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegi
 The fill rule is only relevant for polygons which overlap themselves.
 </p>
 <div class="refsect3">
-<a name="id-1.2.7.8.5.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkFillRule.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1284,8 +1274,8 @@ included in the region, while areas overlapped an even number of times are not.<
 Specifies the possible values returned by <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-rect-in" title="gdk_region_rect_in ()"><code class="function">gdk_region_rect_in()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.7.8.6.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkOverlapType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1331,8 +1321,8 @@ A GdkSpan represents a horizontal line of pixels starting
 at the pixel with coordinates <em class="parameter"><code>x</code></em>, <em class="parameter"><code>y</code></em> and ending before <em class="parameter"><code>x</code></em> + <em class="parameter"><code>width</code></em>, <em class="parameter"><code>y</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.7.8.7.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkSpan.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1361,7 +1351,6 @@ at the pixel with coordinates <em class="parameter"><code>x</code></em>, <em cla
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

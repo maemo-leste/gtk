@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Pixbufs</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Pixbufs: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Images.html" title="Images">
 <link rel="next" href="gdk2-Colormaps-and-Colors.html" title="Colormaps and Colors">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Pixbufs.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -81,7 +81,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Pixbufs.html#gdk-pixbuf-get-from-drawable" title="gdk_pixbuf_get_from_drawable ()">gdk_pixbuf_get_from_drawable</a> <span class="c_punctuation">()</span>
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Pixbufs.html#gdk-pixbuf-get-from-image" title="gdk_pixbuf_get_from_image ()">gdk_pixbuf_get_from_image</a> <span class="c_punctuation">()</span>
@@ -108,7 +108,7 @@
 <p>
 These functions allow to render pixbufs on drawables. Pixbufs are
 client-side images. For details on how to create and manipulate
-pixbufs, see the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> API documentation.
+pixbufs, see the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> API documentation.
 </p>
 </div>
 <div class="refsect1">
@@ -116,7 +116,7 @@ pixbufs, see the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk
 <div class="refsect2">
 <a name="gdk-pixbuf-render-threshold-alpha"></a><h3>gdk_pixbuf_render_threshold_alpha ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gdk_pixbuf_render_threshold_alpha (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+gdk_pixbuf_render_threshold_alpha (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                    <em class="parameter"><code><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap" title="GdkBitmap"><span class="type">GdkBitmap</span></a> *bitmap</code></em>,
                                    <em class="parameter"><code><span class="type">int</span> src_x</code></em>,
                                    <em class="parameter"><code><span class="type">int</span> src_y</code></em>,
@@ -129,8 +129,8 @@ gdk_pixbuf_render_threshold_alpha (<em class="parameter"><code><a href="http://l
 them to produce a bi-level alpha mask that can be used as a clipping mask for
 a drawable.</p>
 <div class="refsect3">
-<a name="id-1.2.13.6.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixbuf-render-threshold-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -191,7 +191,7 @@ other values will be painted as one.</p></td>
 <div class="refsect2">
 <a name="gdk-pixbuf-render-to-drawable"></a><h3>gdk_pixbuf_render_to_drawable ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gdk_pixbuf_render_to_drawable (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+gdk_pixbuf_render_to_drawable (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                <em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
                                <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
                                <em class="parameter"><code><span class="type">int</span> src_x</code></em>,
@@ -219,8 +219,8 @@ base position change, as in scrolling.  The dither matrix has to be shifted
 for consistent visual results.  If you do not have any of these cases, the
 dither offsets can be both zero.</p>
 <div class="refsect3">
-<a name="id-1.2.13.6.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixbuf-render-to-drawable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -295,7 +295,7 @@ dither offsets can be both zero.</p>
 <div class="refsect2">
 <a name="gdk-pixbuf-render-to-drawable-alpha"></a><h3>gdk_pixbuf_render_to_drawable_alpha ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gdk_pixbuf_render_to_drawable_alpha (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+gdk_pixbuf_render_to_drawable_alpha (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                      <em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
                                      <em class="parameter"><code><span class="type">int</span> src_x</code></em>,
                                      <em class="parameter"><code><span class="type">int</span> src_y</code></em>,
@@ -319,8 +319,8 @@ Otherwise a colormap must be set on them with gdk_drawable_set_colormap.</p>
 <p>On older X servers, rendering pixbufs with an alpha channel involves round trips
 to the X server, and may be somewhat slow.</p>
 <div class="refsect3">
-<a name="id-1.2.13.6.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixbuf-render-to-drawable-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -400,7 +400,7 @@ to the X server, and may be somewhat slow.</p>
 <div class="refsect2">
 <a name="gdk-pixbuf-render-pixmap-and-mask"></a><h3>gdk_pixbuf_render_pixmap_and_mask ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gdk_pixbuf_render_pixmap_and_mask (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+gdk_pixbuf_render_pixmap_and_mask (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                    <em class="parameter"><code><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> **pixmap_return</code></em>,
                                    <em class="parameter"><code><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap" title="GdkBitmap"><span class="type">GdkBitmap</span></a> **mask_return</code></em>,
                                    <em class="parameter"><code><span class="type">int</span> alpha_threshold</code></em>);</pre>
@@ -419,8 +419,8 @@ the actual colormap for a widget, and use
  will be set
 to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.13.6.5.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixbuf-render-pixmap-and-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -458,7 +458,7 @@ or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 <a name="gdk-pixbuf-render-pixmap-and-mask-for-colormap"></a><h3>gdk_pixbuf_render_pixmap_and_mask_for_colormap ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_pixbuf_render_pixmap_and_mask_for_colormap
-                               (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+                               (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                 <em class="parameter"><code><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
                                 <em class="parameter"><code><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> **pixmap_return</code></em>,
                                 <em class="parameter"><code><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap" title="GdkBitmap"><span class="type">GdkBitmap</span></a> **mask_return</code></em>,
@@ -479,8 +479,8 @@ will eventually be used or an error will result.</p>
  will be set
 to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.13.6.6.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixbuf-render-pixmap-and-mask-for-colormap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -521,8 +521,8 @@ or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 <hr>
 <div class="refsect2">
 <a name="gdk-pixbuf-get-from-drawable"></a><h3>gdk_pixbuf_get_from_drawable ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
-gdk_pixbuf_get_from_drawable (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *dest</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
+gdk_pixbuf_get_from_drawable (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *dest</code></em>,
                               <em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *src</code></em>,
                               <em class="parameter"><code><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a> *cmap</code></em>,
                               <em class="parameter"><code><span class="type">int</span> src_x</code></em>,
@@ -532,7 +532,7 @@ gdk_pixbuf_get_from_drawable (<em class="parameter"><code><a href="http://librar
                               <em class="parameter"><code><span class="type">int</span> width</code></em>,
                               <em class="parameter"><code><span class="type">int</span> height</code></em>);</pre>
 <p>Transfers image data from a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> and converts it to an RGB(A)
-representation inside a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>. In other words, copies
+representation inside a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>. In other words, copies
 image data from a server-side drawable to a client-side RGB(A) buffer.
 This allows you to efficiently read individual pixels on the client side.</p>
 <p>If the drawable <em class="parameter"><code>src</code></em>
@@ -579,11 +579,11 @@ instead.</p>
 <p>(In short, there are several ways this function can fail, and if it fails
  it returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>; so check the return value.)</p>
 <p>This function calls <a class="link" href="gdk2-Drawing-Primitives.html#gdk-drawable-get-image" title="gdk_drawable_get_image ()"><code class="function">gdk_drawable_get_image()</code></a> internally and
-converts the resulting image to a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>, so the
+converts the resulting image to a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>, so the
 documentation for <a class="link" href="gdk2-Drawing-Primitives.html#gdk-drawable-get-image" title="gdk_drawable_get_image ()"><code class="function">gdk_drawable_get_image()</code></a> may also be relevant.</p>
 <div class="refsect3">
-<a name="id-1.2.13.6.7.14"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixbuf-get-from-drawable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -642,18 +642,17 @@ is NULL.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.13.6.7.15"></a><h4>Returns</h4>
+<a name="gdk-pixbuf-get-from-drawable.returns"></a><h4>Returns</h4>
 <p> The same pixbuf as <em class="parameter"><code>dest</code></em>
 if it was non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly-created
 pixbuf with a reference count of 1 if no destination pixbuf was specified, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on error</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdk-pixbuf-get-from-image"></a><h3>gdk_pixbuf_get_from_image ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
-gdk_pixbuf_get_from_image (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *dest</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
+gdk_pixbuf_get_from_image (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *dest</code></em>,
                            <em class="parameter"><code><a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> *src</code></em>,
                            <em class="parameter"><code><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a> *cmap</code></em>,
                            <em class="parameter"><code><span class="type">int</span> src_x</code></em>,
@@ -665,8 +664,8 @@ gdk_pixbuf_get_from_image (<em class="parameter"><code><a href="http://library.g
 <p>Same as <a class="link" href="gdk2-Pixbufs.html#gdk-pixbuf-get-from-drawable" title="gdk_pixbuf_get_from_drawable ()"><code class="function">gdk_pixbuf_get_from_drawable()</code></a> but gets the pixbuf from
 an image.</p>
 <div class="refsect3">
-<a name="id-1.2.13.6.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixbuf-get-from-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -725,11 +724,10 @@ is NULL.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.13.6.8.6"></a><h4>Returns</h4>
+<a name="gdk-pixbuf-get-from-image.returns"></a><h4>Returns</h4>
 <p> <em class="parameter"><code>dest</code></em>
 , newly-created pixbuf if <em class="parameter"><code>dest</code></em>
 was <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on error</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -738,7 +736,6 @@ was <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

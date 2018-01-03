@@ -92,6 +92,9 @@
 #ifndef WM_APPCOMMAND
 #define WM_APPCOMMAND 0x319
 #endif
+#ifndef WM_MOUSEHWHEEL
+#define WM_MOUSEHWHEEL 0x20E
+#endif
 
 #ifndef CF_DIBV5
 #define CF_DIBV5 17
@@ -496,6 +499,8 @@ void _gdk_win32_append_event (GdkEvent *event);
 void _gdk_win32_emit_configure_event (GdkWindow *window);
 GdkWindow *_gdk_win32_find_window_for_mouse_event (GdkWindow* reported_window,
 						   MSG*       msg);
+
+guint32 _gdk_win32_keymap_get_decimal_mark (void);
 
 /* Initialization */
 void _gdk_windowing_window_init (GdkScreen *screen);

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkToggleToolButton</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkToggleToolButton: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkMenuToolButton.html" title="GtkMenuToolButton">
 <link rel="next" href="GtkRadioToolButton.html" title="GtkRadioToolButton">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkToggleToolButton.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -80,7 +80,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToggleToolButton.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -95,7 +95,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToggleToolButton.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -104,13 +104,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkToggleToolButton.html#GtkToggleToolButton-toggled" title="The “toggled” signal">toggled</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkToggleToolButton.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -123,7 +123,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToggleToolButton.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -166,11 +166,10 @@ GtkToggleToolButton implements
 gtk_toggle_tool_button_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Returns a new <a class="link" href="GtkToggleToolButton.html" title="GtkToggleToolButton"><span class="type">GtkToggleToolButton</span></a></p>
 <div class="refsect3">
-<a name="id-1.4.10.21.11.2.5"></a><h4>Returns</h4>
+<a name="gtk-toggle-tool-button-new.returns"></a><h4>Returns</h4>
 <p> a newly created <a class="link" href="GtkToggleToolButton.html" title="GtkToggleToolButton"><span class="type">GtkToggleToolButton</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -183,8 +182,8 @@ and <a class="link" href="gtk2-Stock-Items.html#GTK-STOCK-APPLY:CAPS" title="GTK
 <p>It is an error if <em class="parameter"><code>stock_id</code></em>
  is not a name of a stock item.</p>
 <div class="refsect3">
-<a name="id-1.4.10.21.11.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-toggle-tool-button-new-from-stock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -198,11 +197,10 @@ and <a class="link" href="gtk2-Stock-Items.html#GTK-STOCK-APPLY:CAPS" title="GTK
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.21.11.3.7"></a><h4>Returns</h4>
+<a name="gtk-toggle-tool-button-new-from-stock.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkToggleToolButton.html" title="GtkToggleToolButton"><span class="type">GtkToggleToolButton</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -214,8 +212,8 @@ gtk_toggle_tool_button_set_active (<em class="parameter"><code><a class="link" h
 want the GtkToggleButton to be 'pressed in', and <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to raise it.
 This action causes the toggled signal to be emitted.</p>
 <div class="refsect3">
-<a name="id-1.4.10.21.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-toggle-tool-button-set-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -236,7 +234,7 @@ should be active</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -246,8 +244,8 @@ gtk_toggle_tool_button_get_active (<em class="parameter"><code><a class="link" h
 <p>Queries a <a class="link" href="GtkToggleToolButton.html" title="GtkToggleToolButton"><span class="type">GtkToggleToolButton</span></a> and returns its current state.
 Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the toggle button is pressed in and <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is raised.</p>
 <div class="refsect3">
-<a name="id-1.4.10.21.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-toggle-tool-button-get-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -261,11 +259,10 @@ Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.21.11.5.6"></a><h4>Returns</h4>
+<a name="gtk-toggle-tool-button-get-active.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the toggle tool button is pressed in, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if not</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -287,7 +284,7 @@ Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 <p>If the toggle tool button should be pressed in or not.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -299,8 +296,8 @@ user_function (<a class="link" href="GtkToggleToolButton.html" title="GtkToggleT
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
 <p>Emitted whenever the toggle tool button changes state.</p>
 <div class="refsect3">
-<a name="id-1.4.10.21.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkToggleToolButton-toggled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -320,7 +317,7 @@ user_function (<a class="link" href="GtkToggleToolButton.html" title="GtkToggleT
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -353,7 +350,6 @@ user_function (<a class="link" href="GtkToggleToolButton.html" title="GtkToggleT
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

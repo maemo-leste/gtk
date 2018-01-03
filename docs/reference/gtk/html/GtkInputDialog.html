@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkInputDialog</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkInputDialog: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkFontSelectionDialog.html" title="GtkFontSelectionDialog">
 <link rel="next" href="LayoutContainers.html" title="Layout Containers">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkInputDialog.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -53,7 +53,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkInputDialog.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -63,19 +63,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkInputDialog.html#GtkInputDialog-disable-device" title="The “disable-device” signal">disable-device</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkInputDialog.html#GtkInputDialog-enable-device" title="The “enable-device” signal">enable-device</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkInputDialog.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -88,7 +88,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkInputDialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -147,9 +147,8 @@ gtk_input_dialog_new (<em class="parameter"><code><span class="type">void</span>
 Creates a new <a class="link" href="GtkInputDialog.html" title="GtkInputDialog"><span class="type">GtkInputDialog</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.14.10.2.6"></a><h4>Returns</h4>
+<a name="gtk-input-dialog-new.returns"></a><h4>Returns</h4>
 <p>the new <a class="link" href="GtkInputDialog.html" title="GtkInputDialog"><span class="type">GtkInputDialog</span></a>.</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -169,16 +168,16 @@ Creates a new <a class="link" href="GtkInputDialog.html" title="GtkInputDialog">
 <a name="GtkInputDialog-disable-device"></a><h3>The <code class="literal">“disable-device”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkInputDialog.html" title="GtkInputDialog"><span class="type">GtkInputDialog</span></a> *inputdialog,
-               <a href="http://library.gnome.org/devel/gdk3/gdk2-Input-Devices.html#GdkDevice"><span class="type">GdkDevice</span></a>      *arg1,
+               <a href="../html/gdk2-Input-Devices.html#GdkDevice"><span class="type">GdkDevice</span></a>      *arg1,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
 <p>
 This signal is emitted when the user changes the
-mode of a device from a <span class="type">GDK_MODE_SCREEN</span> or <span class="type">GDK_MODE_WINDOW</span>
+mode of a device from a <a href="../html/gdk2-Input-Devices.html#GDK-MODE-SCREEN:CAPS"><span class="type">GDK_MODE_SCREEN</span></a> or <a href="../html/gdk2-Input-Devices.html#GDK-MODE-WINDOW:CAPS"><span class="type">GDK_MODE_WINDOW</span></a>
 to <span class="type">GDK_MODE_ENABLED</span>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.14.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkInputDialog-disable-device.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -203,23 +202,23 @@ to <span class="type">GDK_MODE_ENABLED</span>.
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkInputDialog-enable-device"></a><h3>The <code class="literal">“enable-device”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkInputDialog.html" title="GtkInputDialog"><span class="type">GtkInputDialog</span></a> *inputdialog,
-               <a href="http://library.gnome.org/devel/gdk3/gdk2-Input-Devices.html#GdkDevice"><span class="type">GdkDevice</span></a>      *arg1,
+               <a href="../html/gdk2-Input-Devices.html#GdkDevice"><span class="type">GdkDevice</span></a>      *arg1,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
 <p>
 This signal is emitted when the user changes the
-mode of a device from <span class="type">GDK_MODE_DISABLED</span> to a
-<span class="type">GDK_MODE_SCREEN</span> or <span class="type">GDK_MODE_WINDOW</span>.
+mode of a device from <a href="../html/gdk2-Input-Devices.html#GDK-MODE-DISABLED:CAPS"><span class="type">GDK_MODE_DISABLED</span></a> to a
+<a href="../html/gdk2-Input-Devices.html#GDK-MODE-SCREEN:CAPS"><span class="type">GDK_MODE_SCREEN</span></a> or <a href="../html/gdk2-Input-Devices.html#GDK-MODE-WINDOW:CAPS"><span class="type">GDK_MODE_WINDOW</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.14.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkInputDialog-enable-device.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -244,12 +243,11 @@ mode of a device from <span class="type">GDK_MODE_DISABLED</span> to a
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

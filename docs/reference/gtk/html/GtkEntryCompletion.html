@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkEntryCompletion</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkEntryCompletion: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="NumericEntry.html" title="Numeric/Text Data Entry">
 <link rel="prev" href="GtkEntryBuffer.html" title="GtkEntryBuffer">
 <link rel="next" href="GtkHScale.html" title="GtkHScale">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkEntryCompletion.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -255,7 +255,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEntryCompletion.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -308,7 +308,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEntryCompletion.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -318,29 +318,29 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkEntryCompletion.html#GtkEntryCompletion-action-activated" title="The “action-activated” signal">action-activated</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkEntryCompletion.html#GtkEntryCompletion-cursor-on-match" title="The “cursor-on-match” signal">cursor-on-match</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkEntryCompletion.html#GtkEntryCompletion-insert-prefix" title="The “insert-prefix” signal">insert-prefix</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkEntryCompletion.html#GtkEntryCompletion-match-selected" title="The “match-selected” signal">match-selected</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkEntryCompletion.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -353,7 +353,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEntryCompletion.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkEntryCompletion
 </pre>
 </div>
@@ -420,8 +420,8 @@ A function which decides whether the row indicated by <em class="parameter"><cod
 to the unmodified key via <code class="literal">gtk_entry_get_text (GTK_ENTRY (gtk_entry_completion_get_entry ()))</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkEntryCompletionMatchFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -452,11 +452,10 @@ to the unmodified key via <code class="literal">gtk_entry_get_text (GTK_ENTRY (g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.2.6"></a><h4>Returns</h4>
+<a name="GtkEntryCompletionMatchFunc.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 should be displayed as a possible completion for <em class="parameter"><code>key</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -466,11 +465,10 @@ should be displayed as a possible completion for <em class="parameter"><code>key
 gtk_entry_completion_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkEntryCompletion.html" title="GtkEntryCompletion"><span class="type">GtkEntryCompletion</span></a> object.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.3.5"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-new.returns"></a><h4>Returns</h4>
 <p> A newly created <a class="link" href="GtkEntryCompletion.html" title="GtkEntryCompletion"><span class="type">GtkEntryCompletion</span></a> object.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -480,8 +478,8 @@ gtk_entry_completion_get_entry (<em class="parameter"><code><a class="link" href
 <p>Gets the entry <em class="parameter"><code>completion</code></em>
  has been attached to.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-entry.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -495,12 +493,12 @@ gtk_entry_completion_get_entry (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.4.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-entry.returns"></a><h4>Returns</h4>
 <p> The entry <em class="parameter"><code>completion</code></em>
 has been attached to. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -513,8 +511,8 @@ gtk_entry_completion_set_model (<em class="parameter"><code><a class="link" href
 a model set, it will remove it before setting the new model.
 If model is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, then it will unset the model.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -534,7 +532,7 @@ If model is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Mac
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -544,8 +542,8 @@ gtk_entry_completion_get_model (<em class="parameter"><code><a class="link" href
 <p>Returns the model the <a class="link" href="GtkEntryCompletion.html" title="GtkEntryCompletion"><span class="type">GtkEntryCompletion</span></a> is using as data source.
 Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the model is unset.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -559,12 +557,12 @@ Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.6.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-model.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="GtkTreeModel.html" title="GtkTreeModel"><span class="type">GtkTreeModel</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none
 is currently being used. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -580,8 +578,8 @@ gtk_entry_completion_set_match_func (<em class="parameter"><code><a class="link"
 is used to determine if a row should or should not be in the completion
 list.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-match-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -613,7 +611,7 @@ list.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -629,8 +627,8 @@ gtk_entry_completion_set_minimum_key_length
 key takes a lot of time and will come up with meaningless results anyway
 (ie, a too large dataset).</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-minimum-key-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -650,7 +648,7 @@ key takes a lot of time and will come up with meaningless results anyway
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -661,8 +659,8 @@ gtk_entry_completion_get_minimum_key_length
 <p>Returns the minimum key length as set for <em class="parameter"><code>completion</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-minimum-key-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -676,11 +674,10 @@ gtk_entry_completion_get_minimum_key_length
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.9.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-minimum-key-length.returns"></a><h4>Returns</h4>
 <p> The currently used minimum key length.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -691,8 +688,8 @@ gtk_entry_completion_complete (<em class="parameter"><code><a class="link" href=
 current list with completions, using the current key. The completion list
 view will be updated accordingly.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-complete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -705,7 +702,7 @@ view will be updated accordingly.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -716,8 +713,8 @@ gtk_entry_completion_get_completion_prefix
 <p>Get the original text entered by the user that triggered
 the completion or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there's no completion ongoing.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-completion-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -731,11 +728,10 @@ the completion or <a href="https://developer.gnome.org/glib/unstable/glib-Standa
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.11.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-completion-prefix.returns"></a><h4>Returns</h4>
 <p> the prefix for the current completion</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -744,8 +740,8 @@ the completion or <a href="https://developer.gnome.org/glib/unstable/glib-Standa
 gtk_entry_completion_insert_prefix (<em class="parameter"><code><a class="link" href="GtkEntryCompletion.html" title="GtkEntryCompletion"><span class="type">GtkEntryCompletion</span></a> *completion</code></em>);</pre>
 <p>Requests a prefix insertion.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-insert-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -758,7 +754,7 @@ gtk_entry_completion_insert_prefix (<em class="parameter"><code><a class="link" 
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -775,8 +771,8 @@ with text <em class="parameter"><code>text</code></em>
 . If you want the action item to have markup, use
 <a class="link" href="GtkEntryCompletion.html#gtk-entry-completion-insert-action-markup" title="gtk_entry_completion_insert_action_markup ()"><code class="function">gtk_entry_completion_insert_action_markup()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-insert-action-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -801,7 +797,7 @@ with text <em class="parameter"><code>text</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -817,8 +813,8 @@ gtk_entry_completion_insert_action_markup
 with markup <em class="parameter"><code>markup</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-insert-action-markup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -843,7 +839,7 @@ with markup <em class="parameter"><code>markup</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -855,8 +851,8 @@ gtk_entry_completion_delete_action (<em class="parameter"><code><a class="link" 
  from <em class="parameter"><code>completion</code></em>
 's action list.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-delete-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -876,7 +872,7 @@ gtk_entry_completion_delete_action (<em class="parameter"><code><a class="link" 
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -895,8 +891,8 @@ and to get those strings from <em class="parameter"><code>column</code></em>
 column. If you need to set the text column, but don't want the cell 
 renderer, use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-set"><code class="function">g_object_set()</code></a> to set the ::text_column property directly.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-text-column.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -917,7 +913,7 @@ to get strings from.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -927,8 +923,8 @@ gtk_entry_completion_get_text_column (<em class="parameter"><code><a class="link
 <p>Returns the column in the model of <em class="parameter"><code>completion</code></em>
  to get strings from.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-text-column.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -942,11 +938,10 @@ gtk_entry_completion_get_text_column (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.17.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-text-column.returns"></a><h4>Returns</h4>
 <p> the column containing the strings</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -958,8 +953,8 @@ gtk_entry_completion_set_inline_completion
 <p>Sets whether the common prefix of the possible completions should
 be automatically inserted in the entry.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-inline-completion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -979,7 +974,7 @@ be automatically inserted in the entry.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -990,8 +985,8 @@ gtk_entry_completion_get_inline_completion
 <p>Returns whether the common prefix of the possible completions should
 be automatically inserted in the entry.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-inline-completion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1005,11 +1000,10 @@ be automatically inserted in the entry.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.19.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-inline-completion.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if inline completion is turned on</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1021,8 +1015,8 @@ gtk_entry_completion_set_inline_selection
 <p>Sets whether it is possible to cycle through the possible completions
 inside the entry.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-inline-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1042,7 +1036,7 @@ inside the entry.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1052,8 +1046,8 @@ gtk_entry_completion_get_inline_selection
                                (<em class="parameter"><code><a class="link" href="GtkEntryCompletion.html" title="GtkEntryCompletion"><span class="type">GtkEntryCompletion</span></a> *completion</code></em>);</pre>
 <p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if inline-selection mode is turned on.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-inline-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1067,11 +1061,10 @@ gtk_entry_completion_get_inline_selection
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.21.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-inline-selection.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if inline-selection mode is on</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1082,8 +1075,8 @@ gtk_entry_completion_set_popup_completion
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> popup_completion</code></em>);</pre>
 <p>Sets whether the completions should be presented in a popup window.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-popup-completion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1103,7 +1096,7 @@ gtk_entry_completion_set_popup_completion
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1113,8 +1106,8 @@ gtk_entry_completion_get_popup_completion
                                (<em class="parameter"><code><a class="link" href="GtkEntryCompletion.html" title="GtkEntryCompletion"><span class="type">GtkEntryCompletion</span></a> *completion</code></em>);</pre>
 <p>Returns whether the completions should be presented in a popup window.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-popup-completion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1128,11 +1121,10 @@ gtk_entry_completion_get_popup_completion
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.23.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-popup-completion.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if popup completion is turned on</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1144,8 +1136,8 @@ gtk_entry_completion_set_popup_set_width
 <p>Sets whether the completion popup window will be resized to be the same
 width as the entry.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-popup-set-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1165,7 +1157,7 @@ width as the entry.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1176,8 +1168,8 @@ gtk_entry_completion_get_popup_set_width
 <p>Returns whether the  completion popup window will be resized to the 
 width of the entry.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-popup-set-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1191,12 +1183,11 @@ width of the entry.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.25.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-popup-set-width.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the popup window will be resized to the width of
 the entry</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1210,8 +1201,8 @@ only a single match. You may want to set this to <a href="https://developer.gnom
 are using <a class="link" href="GtkEntryCompletion.html#GtkEntryCompletion--inline-completion" title="The “inline-completion” property">inline
 completion</a>.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-set-popup-single-match.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1232,7 +1223,7 @@ match</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1243,8 +1234,8 @@ gtk_entry_completion_get_popup_single_match
 <p>Returns whether the completion popup window will appear even if there is
 only a single match.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-completion-get-popup-single-match.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1258,12 +1249,11 @@ only a single match.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.11.27.6"></a><h4>Returns</h4>
+<a name="gtk-entry-completion-get-popup-single-match.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the popup window will appear regardless of the
 number of matches.</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1288,7 +1278,7 @@ requires text-column to be set, even if you are using a custom
 match function.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1298,7 +1288,7 @@ match function.</p>
 will appear in the entry as you navigate through them.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1325,7 +1315,7 @@ will appear in the entry as you navigate through them.</p>
 shown in a popup window.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1335,7 +1325,7 @@ shown in a popup window.</p>
 resized to the width of the entry.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1349,7 +1339,7 @@ this to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 completion</a>.
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1360,7 +1350,7 @@ Note that the strings must be UTF-8.</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1373,8 +1363,8 @@ user_function (<a class="link" href="GtkEntryCompletion.html" title="GtkEntryCom
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)</pre>
 <p>Gets emitted when an action is activated.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkEntryCompletion-action-activated.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1399,8 +1389,8 @@ user_function (<a class="link" href="GtkEntryCompletion.html" title="GtkEntryCom
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.4</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1411,14 +1401,13 @@ user_function (<a class="link" href="GtkEntryCompletion.html" title="GtkEntryCom
                <a class="link" href="GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a>        *iter,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)</pre>
 <p>Gets emitted when a match from the cursor is on a match
-of the list.The default behaviour is to replace the contents
+of the list. The default behaviour is to replace the contents
 of the entry with the contents of the text column in the row
-
 pointed to by <em class="parameter"><code>iter</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.14.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkEntryCompletion-cursor-on-match.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1449,12 +1438,11 @@ pointed to by <em class="parameter"><code>iter</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.14.3.6"></a><h4>Returns</h4>
+<a name="GtkEntryCompletion-cursor-on-match.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the signal has been handled</p>
-<p></p>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.12</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1464,19 +1452,16 @@ user_function (<a class="link" href="GtkEntryCompletion.html" title="GtkEntryCom
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>              *prefix,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)</pre>
 <p>Gets emitted when the inline autocompletion is triggered.
-
 The default behaviour is to make the entry display the
-
 whole prefix and select the newly inserted part.</p>
 <p>Applications may connect to this signal in order to insert only a
 smaller part of the <em class="parameter"><code>prefix</code></em>
  into the entry - e.g. the entry used in
 the <a class="link" href="GtkFileChooser.html" title="GtkFileChooser"><span class="type">GtkFileChooser</span></a> inserts only the part of the prefix up to the
-
 next '/'.</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.14.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkEntryCompletion-insert-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1502,12 +1487,11 @@ next '/'.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.14.4.7"></a><h4>Returns</h4>
+<a name="GtkEntryCompletion-insert-prefix.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the signal has been handled</p>
-<p></p>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.6</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1518,16 +1502,13 @@ user_function (<a class="link" href="GtkEntryCompletion.html" title="GtkEntryCom
                <a class="link" href="GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a>        *iter,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)</pre>
 <p>Gets emitted when a match from the list is selected.
-
 The default behaviour is to replace the contents of the
-
 entry with the contents of the text column in the row
-
 pointed to by <em class="parameter"><code>iter</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.7.4.14.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkEntryCompletion-match-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1558,17 +1539,15 @@ pointed to by <em class="parameter"><code>iter</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.4.14.5.6"></a><h4>Returns</h4>
+<a name="GtkEntryCompletion-match-selected.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the signal has been handled</p>
-<p></p>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.4</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

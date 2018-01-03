@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkText</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkText: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkProgress.html" title="GtkProgress">
 <link rel="next" href="GtkTooltips.html" title="GtkTooltips">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkText.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -158,7 +158,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkText.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -192,7 +192,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkText.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -201,13 +201,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkText.html#GtkText-set-scroll-adjustments" title="The “set-scroll-adjustments” signal">set-scroll-adjustments</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkText.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -230,7 +230,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkText.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -274,14 +274,14 @@ gtk_text_new (<em class="parameter"><code><a class="link" href="GtkAdjustment.ht
 <div class="warning"><p><code class="literal">gtk_text_new</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>
 Creates a new <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> widget, initialized with the given pointers to
-<a href="GtkAdjustment.html"><span class="type">GtkAdjustments</span></a>.  These pointers can be used to track the viewing position
+<a href="GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustments</span></a>.  These pointers can be used to track the viewing position
 of the <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> widget.  Passing <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to either or both of them will make
 the <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> create its own.  You can set these later with the function
 <code class="function">gtk_text_set_adjustment()</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -302,9 +302,8 @@ the <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkTe
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.2.7"></a><h4>Returns</h4>
+<a name="gtk-text-new.returns"></a><h4>Returns</h4>
 <p>the new <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> widget.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -320,8 +319,8 @@ still allows you the programmer to make changes with the various <a class="link"
 functions.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-set-editable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -354,8 +353,8 @@ Sets whether the <a class="link" href="GtkText.html" title="GtkText"><span class
 can't be completed on the current line.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-set-word-wrap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -391,8 +390,8 @@ the line continues regardless size of current viewing area.  Similar to word
 wrap but it disregards word boundaries.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-set-line-wrap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -426,8 +425,8 @@ Allows you to set <a class="link" href="GtkAdjustment.html" title="GtkAdjustment
 keep track of the viewing position of the <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> widget.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-set-adjustments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -466,8 +465,8 @@ the number of characters from the extreme upper left corner of the <a class="lin
 widget.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-set-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -499,8 +498,8 @@ Gets the current position of the cursor as the number of characters from
 the upper left corner of the <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> widget.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-get-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -514,9 +513,8 @@ the upper left corner of the <a class="link" href="GtkText.html" title="GtkText"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.8.7"></a><h4>Returns</h4>
+<a name="gtk-text-get-point.returns"></a><h4>Returns</h4>
 <p>the number of characters from the upper left corner</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -530,8 +528,8 @@ Returns the length of the all the text contained within the <a class="link" href
 disregards current point position.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-get-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -545,9 +543,8 @@ disregards current point position.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.9.7"></a><h4>Returns</h4>
+<a name="gtk-text-get-length.returns"></a><h4>Returns</h4>
 <p>the length of the text</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -563,8 +560,8 @@ made to the text within the widget, reducing the amount of flicker seen
 by the user.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-freeze.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -588,8 +585,8 @@ gtk_text_thaw (<em class="parameter"><code><a class="link" href="GtkText.html" t
 Allows the <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> widget to be redrawn again by GTK.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-thaw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -608,9 +605,9 @@ Allows the <a class="link" href="GtkText.html" title="GtkText"><span class="type
 <a name="gtk-text-insert"></a><h3>gtk_text_insert ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_text_insert (<em class="parameter"><code><a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> *text</code></em>,
-                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *font</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *fore</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *back</code></em>,
+                 <em class="parameter"><code><a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *font</code></em>,
+                 <em class="parameter"><code>const <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *fore</code></em>,
+                 <em class="parameter"><code>const <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *back</code></em>,
                  <em class="parameter"><code>const <span class="type">char</span> *chars</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_text_insert</code> is deprecated and should not be used in newly-written code.</p></div>
@@ -619,8 +616,8 @@ Inserts given text into the <a class="link" href="GtkText.html" title="GtkText">
 outlined below.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-insert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -634,7 +631,7 @@ outlined below.
 </tr>
 <tr>
 <td class="parameter_name"><p>font</p></td>
-<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> to use</p></td>
+<td class="parameter_description"><p>the <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> to use</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -674,8 +671,8 @@ Deletes from the current point position backward the given number of
 characters.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-backward-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -696,9 +693,8 @@ characters.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.13.7"></a><h4>Returns</h4>
+<a name="gtk-text-backward-delete.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation was successful, otherwise returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -713,8 +709,8 @@ Deletes from the current point position forward the given number of
 characters.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.14.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-forward-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -735,9 +731,8 @@ characters.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.14.7"></a><h4>Returns</h4>
+<a name="gtk-text-forward-delete.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation was successful, otherwise returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -749,8 +744,8 @@ characters.
 Returns the character at the given index within the <a class="link" href="GtkText.html" title="GtkText"><span class="type">GtkText</span></a> widget.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.11.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-TEXT-INDEX.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -868,8 +863,8 @@ user_function (<a class="link" href="GtkText.html" title="GtkText"><span class="
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.14.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkText-set-scroll-adjustments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -889,12 +884,11 @@ user_function (<a class="link" href="GtkText.html" title="GtkText"><span class="
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

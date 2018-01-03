@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCurve</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCurve: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SpecialObjects.html" title="Special-purpose features">
 <link rel="prev" href="SpecialObjects.html" title="Special-purpose features">
 <link rel="next" href="GtkGammaCurve.html" title="GtkGammaCurve">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCurve.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -104,7 +104,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCurve.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -141,7 +141,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCurve.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -150,13 +150,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkCurve.html#GtkCurve-curve-type-changed" title="The “curve-type-changed” signal">curve-type-changed</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkCurve.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -169,7 +169,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCurve.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -220,9 +220,8 @@ gtk_curve_new (<em class="parameter"><code><span class="type">void</span></code>
 Creates a new <a class="link" href="GtkCurve.html" title="GtkCurve"><span class="type">GtkCurve</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-curve-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkCurve.html" title="GtkCurve"><span class="type">GtkCurve</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -240,8 +239,8 @@ maximum x and y values (i.e. from the bottom-left to the top-right corners).
 The curve type is not changed.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.11.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-curve-reset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -273,8 +272,8 @@ below the straight line. The curve type is changed to <a class="link" href="gtk2
 FIXME: Needs a more precise definition of gamma.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.11.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-curve-set-gamma.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -313,8 +312,8 @@ Sets the minimum and maximum x and y values of the curve.
 The curve is also reset with a call to <a class="link" href="GtkCurve.html#gtk-curve-reset" title="gtk_curve_reset ()"><code class="function">gtk_curve_reset()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.11.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-curve-set-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -365,8 +364,8 @@ gtk_curve_get_vector (<em class="parameter"><code><a class="link" href="GtkCurve
 Returns a vector of points representing the curve.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.11.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-curve-get-vector.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -408,8 +407,8 @@ Sets the vector of points on the curve.
 The curve type is set to <a class="link" href="gtk2-Standard-Enumerations.html#GTK-CURVE-TYPE-FREE:CAPS"><code class="literal">GTK_CURVE_TYPE_FREE</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.11.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-curve-set-vector.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -451,8 +450,8 @@ changing from a free curve to a linear or spline curve, in which case the
 curve will be changed as little as possible.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.11.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-curve-set-curve-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -542,8 +541,8 @@ The curve type can be changed explicitly with a call to
 calling <a class="link" href="GtkCurve.html#gtk-curve-reset" title="gtk_curve_reset ()"><code class="function">gtk_curve_reset()</code></a> or <a class="link" href="GtkCurve.html#gtk-curve-set-gamma" title="gtk_curve_set_gamma ()"><code class="function">gtk_curve_set_gamma()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.20.2.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCurve-curve-type-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -563,7 +562,7 @@ calling <a class="link" href="GtkCurve.html#gtk-curve-reset" title="gtk_curve_re
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -585,7 +584,6 @@ calling <a class="link" href="GtkCurve.html#gtk-curve-reset" title="gtk_curve_re
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

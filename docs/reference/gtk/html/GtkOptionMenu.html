@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkOptionMenu</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkOptionMenu: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkOldEditable.html" title="GtkOldEditable">
 <link rel="next" href="GtkPixmap.html" title="GtkPixmap">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkOptionMenu.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -97,7 +97,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkOptionMenu.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -113,7 +113,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkOptionMenu.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -137,7 +137,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkOptionMenu.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -146,13 +146,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkOptionMenu.html#GtkOptionMenu-changed" title="The “changed” signal">changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkOptionMenu.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -165,7 +165,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkOptionMenu.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -221,9 +221,8 @@ gtk_option_menu_new (<em class="parameter"><code><span class="type">void</span><
 Creates a new <a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><span class="type">GtkOptionMenu</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.2.6"></a><h4>Returns</h4>
+<a name="gtk-option-menu-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><span class="type">GtkOptionMenu</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -239,8 +238,8 @@ gtk_option_menu_get_menu (<em class="parameter"><code><a class="link" href="GtkO
 Returns the <a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a> associated with the <a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><span class="type">GtkOptionMenu</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-option-menu-get-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -254,9 +253,8 @@ Returns the <a class="link" href="GtkMenu.html" title="GtkMenu"><span class="typ
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.3.7"></a><h4>Returns</h4>
+<a name="gtk-option-menu-get-menu.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a> associated with the <a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><span class="type">GtkOptionMenu</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -275,8 +273,8 @@ a new value.  You should provide a simple menu avoiding the
 use of tearoff menu items, submenus, and accelerators.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-option-menu-set-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -310,8 +308,8 @@ gtk_option_menu_remove_menu (<em class="parameter"><code><a class="link" href="G
 Removes the menu from the option menu.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-option-menu-remove-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -340,8 +338,8 @@ Selects the menu item specified by <em class="parameter"><code>index_</code></em
 selected value for the option menu.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-option-menu-set-history.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -374,8 +372,8 @@ gtk_option_menu_get_history (<em class="parameter"><code><a class="link" href="G
 <p>Retrieves the index of the currently selected menu item. The menu
 items are numbered from top to bottom, starting with 0.</p>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-option-menu-get-history.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -389,9 +387,8 @@ items are numbered from top to bottom, starting with 0.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.10.12.7.7"></a><h4>Returns</h4>
+<a name="gtk-option-menu-get-history.returns"></a><h4>Returns</h4>
 <p> index of the selected menu item, or -1 if there are no menu items</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -445,8 +442,8 @@ user_function (<a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.10.16.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkOptionMenu-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -466,12 +463,11 @@ user_function (<a class="link" href="GtkOptionMenu.html" title="GtkOptionMenu"><
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

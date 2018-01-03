@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCombo</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCombo: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkCTree.html" title="GtkCTree">
 <link rel="next" href="GtkFileSelection.html" title="GtkFileSelection">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCombo.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -111,7 +111,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCombo.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -148,7 +148,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCombo.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -161,7 +161,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCombo.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -206,7 +206,7 @@ arrow (cursor) keys, though this behaviour can be turned off with
 As of GTK+ 2.4, <a class="link" href="GtkCombo.html" title="GtkCombo"><span class="type">GtkCombo</span></a> has been deprecated in favor of <a class="link" href="GtkComboBoxEntry.html" title="GtkComboBoxEntry"><span class="type">GtkComboBoxEntry</span></a>.
 </p>
 <div class="example">
-<a name="gtkcombo-simple-example"></a><p class="title"><b>Example 62. Creating a <span class="structname">GtkCombo</span> widget with simple text
+<a name="gtkcombo-simple-example"></a><p class="title"><b>Example 48. Creating a <span class="structname">GtkCombo</span> widget with simple text
 items.</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
@@ -237,7 +237,7 @@ items.</b></p>
 
 </div>
 <br class="example-break"><div class="example">
-<a name="id-1.4.23.4.9.7"></a><p class="title"><b>Example 63. Creating a <span class="structname">GtkCombo</span> widget with a complex item.</b></p>
+<a name="id-1.4.23.4.9.7"></a><p class="title"><b>Example 49. Creating a <span class="structname">GtkCombo</span> widget with a complex item.</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -271,7 +271,7 @@ items.</b></p>
 <span class="normal">hbox </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkHBox.html#gtk-hbox-new">gtk_hbox_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS">FALSE</a></span><span class="symbol">,</span><span class="normal"> </span><span class="number">3</span><span class="symbol">);</span>
 <span class="function"><a href="GtkContainer.html#gtk-container-add">gtk_container_add</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_CONTAINER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">item</span><span class="symbol">),</span><span class="normal"> hbox</span><span class="symbol">);</span>
 <span class="function"><a href="GtkWidget.html#gtk-widget-show">gtk_widget_show</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">hbox</span><span class="symbol">);</span>
-<span class="normal">arrow </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkArrow.html#gtk-arrow-new">gtk_arrow_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">GTK_ARROW_RIGHT</span><span class="symbol">,</span><span class="normal"> GTK_SHADOW_OUT</span><span class="symbol">);</span>
+<span class="normal">arrow </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkArrow.html#gtk-arrow-new">gtk_arrow_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="gtk2-Standard-Enumerations.html#GTK-ARROW-RIGHT:CAPS">GTK_ARROW_RIGHT</a></span><span class="symbol">,</span><span class="normal"> <a href="gtk2-Standard-Enumerations.html#GTK-SHADOW-OUT:CAPS">GTK_SHADOW_OUT</a></span><span class="symbol">);</span>
 <span class="function"><a href="GtkWidget.html#gtk-widget-show">gtk_widget_show</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">arrow</span><span class="symbol">);</span>
 <span class="function"><a href="GtkBox.html#gtk-box-pack-start">gtk_box_pack_start</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_BOX</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">hbox</span><span class="symbol">),</span><span class="normal"> arrow</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS">FALSE</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS">FALSE</a></span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">);</span>
 <span class="normal">label </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkLabel.html#gtk-label-new">gtk_label_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="string">"First Item"</span><span class="symbol">);</span>
@@ -304,9 +304,8 @@ gtk_combo_new (<em class="parameter"><code><span class="type">void</span></code>
 Creates a new <a class="link" href="GtkCombo.html" title="GtkCombo"><span class="type">GtkCombo</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.2.6"></a><h4>Returns</h4>
+<a name="gtk-combo-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkCombo.html" title="GtkCombo"><span class="type">GtkCombo</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -321,11 +320,11 @@ gtk_combo_set_popdown_strings (<em class="parameter"><code><a class="link" href=
 </div>
 <p>
 Convenience function to set all of the items in the popup list.
-(See the <a class="link" href="GtkCombo.html#gtkcombo-simple-example" title="Example 62. Creating a GtkCombo widget with simple text items.">example</a> above.)
+(See the <a class="link" href="GtkCombo.html#gtkcombo-simple-example" title="Example 48. Creating a GtkCombo widget with simple text items.">example</a> above.)
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-set-popdown-strings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -366,8 +365,8 @@ perform any other action until a valid value has been entered.
 If an empty field is acceptable, the <em class="parameter"><code>ok_if_empty</code></em> parameter should be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-set-value-in-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -408,8 +407,8 @@ Specifies if the arrow (cursor) keys can be used to step through the items in
 the list. This is on by default.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-set-use-arrows.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -445,8 +444,8 @@ gtk_combo_set_use_arrows_always (<em class="parameter"><code><a class="link" hre
 Obsolete function, does nothing.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-set-use-arrows-always.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -487,8 +486,8 @@ This may be useful, for example, when you have called
 worried about differences in case.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-set-case-sensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -525,8 +524,8 @@ Sets the string to place in the <a class="link" href="GtkEntry.html" title="GtkE
 selected. This is needed if the list item is not a simple label.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-set-item-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -569,8 +568,8 @@ This may be useful if, for example, you want the Return key to close a dialog
 instead.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.10.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-disable-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -605,8 +604,8 @@ The <a class="link" href="GtkCombo.html#GtkCombo-struct" title="struct GtkCombo"
 an application.)
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.4.11.2.6"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCombo.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -672,7 +671,6 @@ an application.)
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkEntryBuffer</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkEntryBuffer: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="NumericEntry.html" title="Numeric/Text Data Entry">
 <link rel="prev" href="GtkEntry.html" title="GtkEntry">
 <link rel="next" href="GtkEntryCompletion.html" title="GtkEntryCompletion">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkEntryBuffer.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -134,7 +134,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEntryBuffer.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -162,7 +162,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEntryBuffer.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -172,19 +172,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkEntryBuffer.html#GtkEntryBuffer-deleted-text" title="The “deleted-text” signal">deleted-text</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkEntryBuffer.html#GtkEntryBuffer-inserted-text" title="The “inserted-text” signal">inserted-text</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkEntryBuffer.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -197,7 +197,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkEntryBuffer.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkEntryBuffer
 </pre>
 </div>
@@ -228,8 +228,8 @@ gtk_entry_buffer_new (<em class="parameter"><code>const <a href="https://develop
 <p>Create a new GtkEntryBuffer object.</p>
 <p>Optionally, specify initial text to set in the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -251,11 +251,10 @@ gtk_entry_buffer_new (<em class="parameter"><code>const <a href="https://develop
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.2.7"></a><h4>Returns</h4>
+<a name="gtk-entry-buffer-new.returns"></a><h4>Returns</h4>
 <p> A new GtkEntryBuffer object.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -266,8 +265,8 @@ gtk_entry_buffer_get_text (<em class="parameter"><code><a class="link" href="Gtk
 <p>The memory pointer returned by this call will not change
 unless this object emits a signal, or is finalized.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-get-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -281,14 +280,13 @@ unless this object emits a signal, or is finalized.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.3.7"></a><h4>Returns</h4>
+<a name="gtk-entry-buffer-get-text.returns"></a><h4>Returns</h4>
 <p> a pointer to the contents of the widget as a
 string. This string points to internally allocated
 storage in the buffer and must not be freed, modified or
 stored.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -303,8 +301,8 @@ and <a class="link" href="GtkEntryBuffer.html#gtk-entry-buffer-insert-text" titl
 <p>Note that <em class="parameter"><code>n_chars</code></em>
  is in characters, not in bytes.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-set-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -330,7 +328,7 @@ and <a class="link" href="GtkEntryBuffer.html#gtk-entry-buffer-insert-text" titl
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -340,8 +338,8 @@ gtk_entry_buffer_get_bytes (<em class="parameter"><code><a class="link" href="Gt
 <p>Retrieves the length in bytes of the buffer.
 See <a class="link" href="GtkEntryBuffer.html#gtk-entry-buffer-get-length" title="gtk_entry_buffer_get_length ()"><code class="function">gtk_entry_buffer_get_length()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-get-bytes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -355,11 +353,10 @@ See <a class="link" href="GtkEntryBuffer.html#gtk-entry-buffer-get-length" title
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.5.6"></a><h4>Returns</h4>
+<a name="gtk-entry-buffer-get-bytes.returns"></a><h4>Returns</h4>
 <p> The byte length of the buffer.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -368,8 +365,8 @@ See <a class="link" href="GtkEntryBuffer.html#gtk-entry-buffer-get-length" title
 gtk_entry_buffer_get_length (<em class="parameter"><code><a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"><span class="type">GtkEntryBuffer</span></a> *buffer</code></em>);</pre>
 <p>Retrieves the length in characters of the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-get-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -383,11 +380,10 @@ gtk_entry_buffer_get_length (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.6.6"></a><h4>Returns</h4>
+<a name="gtk-entry-buffer-get-length.returns"></a><h4>Returns</h4>
 <p> The number of characters in the buffer.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -398,8 +394,8 @@ gtk_entry_buffer_get_max_length (<em class="parameter"><code><a class="link" hre
 <em class="parameter"><code>buffer</code></em>
 . See <a class="link" href="GtkEntryBuffer.html#gtk-entry-buffer-set-max-length" title="gtk_entry_buffer_set_max_length ()"><code class="function">gtk_entry_buffer_set_max_length()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-get-max-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -413,12 +409,11 @@ gtk_entry_buffer_get_max_length (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.7.6"></a><h4>Returns</h4>
+<a name="gtk-entry-buffer-get-max-length.returns"></a><h4>Returns</h4>
 <p> the maximum allowed number of characters
 in <a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"><span class="type">GtkEntryBuffer</span></a>, or 0 if there is no maximum.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -430,8 +425,8 @@ gtk_entry_buffer_set_max_length (<em class="parameter"><code><a class="link" hre
 the current contents are longer than the given length, then they
 will be truncated to fit.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-set-max-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -453,7 +448,7 @@ be clamped to the range 0-65536.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -477,8 +472,8 @@ bounds, or the maximum buffer text length is exceeded, then they are
 coerced to sane values.</p>
 <p>Note that the position and length are in characters, not in bytes.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.9.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-insert-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -509,11 +504,10 @@ coerced to sane values.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.9.8"></a><h4>Returns</h4>
+<a name="gtk-entry-buffer-insert-text.returns"></a><h4>Returns</h4>
 <p> The number of characters actually inserted.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -534,8 +528,8 @@ until the end of the text are deleted.</p>
 values.</p>
 <p>Note that the positions are specified in characters, not bytes.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.10.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-delete-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -561,11 +555,10 @@ values.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.10.8"></a><h4>Returns</h4>
+<a name="gtk-entry-buffer-delete-text.returns"></a><h4>Returns</h4>
 <p> The number of characters deleted.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -576,8 +569,8 @@ gtk_entry_buffer_emit_deleted_text (<em class="parameter"><code><a class="link" 
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_chars</code></em>);</pre>
 <p>Used when subclassing <a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"><span class="type">GtkEntryBuffer</span></a></p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-emit-deleted-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -602,7 +595,7 @@ gtk_entry_buffer_emit_deleted_text (<em class="parameter"><code><a class="link" 
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -614,8 +607,8 @@ gtk_entry_buffer_emit_inserted_text (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_chars</code></em>);</pre>
 <p>Used when subclassing <a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"><span class="type">GtkEntryBuffer</span></a></p>
 <div class="refsect3">
-<a name="id-1.4.7.3.10.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-entry-buffer-emit-inserted-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -645,7 +638,7 @@ gtk_entry_buffer_emit_inserted_text (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -666,7 +659,7 @@ gtk_entry_buffer_emit_inserted_text (<em class="parameter"><code><a class="link"
 <p>Flags: Read</p>
 <p>Allowed values: &lt;= 65535</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -676,7 +669,7 @@ gtk_entry_buffer_emit_inserted_text (<em class="parameter"><code><a class="link"
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,65535]</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -685,7 +678,7 @@ gtk_entry_buffer_emit_inserted_text (<em class="parameter"><code><a class="link"
 <p>The contents of the buffer.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: ""</p>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -699,8 +692,8 @@ user_function (<a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
 <p>This signal is emitted after text is deleted from the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkEntryBuffer-deleted-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -730,8 +723,8 @@ user_function (<a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.18</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -744,8 +737,8 @@ user_function (<a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
 <p>This signal is emitted after text is inserted into the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.7.3.13.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkEntryBuffer-inserted-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -780,13 +773,12 @@ user_function (<a class="link" href="GtkEntryBuffer.html" title="GtkEntryBuffer"
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.18</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

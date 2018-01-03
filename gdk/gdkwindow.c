@@ -1931,21 +1931,61 @@ gdk_window_ensure_native (GdkWindow *window)
   return TRUE;
 }
 
+/**
+ * _gdk_event_filter_unref:
+ * @window: (allow-none): A #GdkWindow, or %NULL to be the global window
+ * @filter: A window filter
+ *
+ * Release a reference to @filter.  Note this function may
+ * mutate the list storage, so you need to handle this
+ * if iterating over a list of filters.
+ */
+void
+_gdk_event_filter_unref (GdkWindow       *window,
+                         GdkEventFilter  *filter)
+{
+  GList **filters;
+  GList *tmp_list;
+
+  if (window == NULL)
+    filters = &_gdk_default_filters;
+  else
+    {
+      GdkWindowObject *private;
+      private = (GdkWindowObject *) window;
+      filters = &private->filters;
+    }
+
+  tmp_list = *filters;
+  while (tmp_list)
+    {
+      GdkEventFilter *iter_filter = tmp_list->data;
+      GList *node;
+
+      node = tmp_list;
+      tmp_list = tmp_list->next;
+
+      if (iter_filter != filter)
+        continue;
+
+      g_assert (iter_filter->ref_count > 0);
+
+      filter->ref_count--;
+      if (filter->ref_count != 0)
+        continue;
+
+      *filters = g_list_remove_link (*filters, node);
+      g_free (filter);
+      g_list_free_1 (node);
+    }
+}
+
 static void
 window_remove_filters (GdkWindow *window)
 {
   GdkWindowObject *obj = (GdkWindowObject*) window;
-
-  if (obj->filters)
-    {
-      GList *tmp_list;
-
-      for (tmp_list = obj->filters; tmp_list; tmp_list = tmp_list->next)
-	g_free (tmp_list->data);
-
-      g_list_free (obj->filters);
-      obj->filters = NULL;
-    }
+  while (obj->filters)
+    _gdk_event_filter_unref (window, obj->filters->data);
 }
 
 /**
@@ -2545,13 +2585,18 @@ gdk_window_add_filter (GdkWindow     *window,
     {
       filter = (GdkEventFilter *)tmp_list->data;
       if ((filter->function == function) && (filter->data == data))
-	return;
+        {
+          filter->ref_count++;
+          return;
+        }
       tmp_list = tmp_list->next;
     }
 
   filter = g_new (GdkEventFilter, 1);
   filter->function = function;
   filter->data = data;
+  filter->ref_count = 1;
+  filter->flags = 0;
 
   if (private)
     private->filters = g_list_append (private->filters, filter);
@@ -2574,7 +2619,7 @@ gdk_window_remove_filter (GdkWindow     *window,
 			  gpointer       data)
 {
   GdkWindowObject *private;
-  GList *tmp_list, *node;
+  GList *tmp_list;
   GdkEventFilter *filter;
 
   g_return_if_fail (window == NULL || GDK_IS_WINDOW (window));
@@ -2589,20 +2634,15 @@ gdk_window_remove_filter (GdkWindow     *window,
   while (tmp_list)
     {
       filter = (GdkEventFilter *)tmp_list->data;
-      node = tmp_list;
       tmp_list = tmp_list->next;
 
       if ((filter->function == function) && (filter->data == data))
-	{
-	  if (private)
-	    private->filters = g_list_remove_link (private->filters, node);
-	  else
-	    _gdk_default_filters = g_list_remove_link (_gdk_default_filters, node);
-	  g_list_free_1 (node);
-	  g_free (filter);
+        {
+          filter->flags |= GDK_EVENT_FILTER_REMOVED;
+	  _gdk_event_filter_unref (window, filter);
 
-	  return;
-	}
+          return;
+        }
     }
 }
 
@@ -2984,15 +3024,10 @@ gdk_window_begin_paint_region (GdkWindow       *window,
 
   if (implicit_paint)
     {
-      int width, height;
-
       paint->uses_implicit = TRUE;
       paint->pixmap = g_object_ref (implicit_paint->pixmap);
       paint->x_offset = -private->abs_x + implicit_paint->x_offset;
       paint->y_offset = -private->abs_y + implicit_paint->y_offset;
-
-      gdk_drawable_get_size (paint->pixmap, &width, &height);
-      paint->surface = _gdk_drawable_create_cairo_surface (paint->pixmap, width, height);
     }
   else
     {
@@ -3002,8 +3037,9 @@ gdk_window_begin_paint_region (GdkWindow       *window,
       paint->pixmap =
 	gdk_pixmap_new (window,
 			MAX (clip_box.width, 1), MAX (clip_box.height, 1), -1);
-      paint->surface = _gdk_drawable_ref_cairo_surface (paint->pixmap);
     }
+
+  paint->surface = _gdk_drawable_ref_cairo_surface (paint->pixmap);
 
   if (paint->surface)
     cairo_surface_set_device_offset (paint->surface,
@@ -8747,6 +8783,8 @@ do_child_shapes (GdkWindow *window,
     gdk_region_subtract (region, private->shape);
 
   gdk_window_shape_combine_region (window, region, 0, 0);
+
+  gdk_region_destroy (region);
 }
 
 /**

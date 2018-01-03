@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkDrawingArea</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkDrawingArea: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MiscObjects.html" title="Miscellaneous">
 <link rel="prev" href="GtkCalendar.html" title="GtkCalendar">
 <link rel="next" href="GtkEventBox.html" title="GtkEventBox">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkDrawingArea.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -62,7 +62,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkDrawingArea.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -75,7 +75,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkDrawingArea.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -134,7 +134,7 @@ to the background color before sending the expose event, and
 that drawing is implicitly clipped to the exposed area.
 </p>
 <div class="example">
-<a name="id-1.4.17.5.8.4"></a><p class="title"><b>Example 53. Simple <span class="structname">GtkDrawingArea</span> usage.</b></p>
+<a name="id-1.4.17.5.8.4"></a><p class="title"><b>Example 42. Simple <span class="structname">GtkDrawingArea</span> usage.</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -157,7 +157,7 @@ that drawing is implicitly clipped to the exposed area.
         <td class="listing_code"><pre class="programlisting"><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a></span>
 <span class="function">expose_event_callback</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">widget</span><span class="symbol">,</span><span class="normal"> </span><span class="usertype">GdkEventExpose</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">event</span><span class="symbol">,</span><span class="normal"> </span><span class="usertype">gpointer</span><span class="normal"> data</span><span class="symbol">)</span>
 <span class="cbracket">{</span>
-<span class="normal">  </span><span class="function"><a href="http://library.gnome.org/devel/gdk3/gdk2-Drawing-Primitives.html#gdk-draw-arc">gdk_draw_arc</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">-&gt;</span><span class="normal">window</span><span class="symbol">,</span>
+<span class="normal">  </span><span class="function"><a href="../html/gdk2-Drawing-Primitives.html#gdk-draw-arc">gdk_draw_arc</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">-&gt;</span><span class="normal">window</span><span class="symbol">,</span>
 <span class="normal">                widget</span><span class="symbol">-&gt;</span><span class="normal">style</span><span class="symbol">-&gt;</span><span class="normal">fg_gc</span><span class="symbol">[</span><span class="function"><a href="GtkWidget.html#gtk-widget-get-state">gtk_widget_get_state</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">)],</span>
 <span class="normal">                <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS">TRUE</a></span><span class="symbol">,</span>
 <span class="normal">                </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> widget</span><span class="symbol">-&gt;</span><span class="normal">allocation</span><span class="symbol">.</span><span class="normal">width</span><span class="symbol">,</span><span class="normal"> widget</span><span class="symbol">-&gt;</span><span class="normal">allocation</span><span class="symbol">.</span><span class="normal">height</span><span class="symbol">,</span>
@@ -180,12 +180,12 @@ Expose events are normally delivered when a drawing area first comes
 onscreen, or when it's covered by another window and then uncovered
 (exposed). You can also force an expose event by adding to the "damage
 region" of the drawing area's window; <a class="link" href="GtkWidget.html#gtk-widget-queue-draw-area" title="gtk_widget_queue_draw_area ()"><code class="function">gtk_widget_queue_draw_area()</code></a> and
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#gdk-window-invalidate-rect"><code class="function">gdk_window_invalidate_rect()</code></a> are equally good ways to do this. You'll
+<a href="../html/gdk2-Windows.html#gdk-window-invalidate-rect"><code class="function">gdk_window_invalidate_rect()</code></a> are equally good ways to do this. You'll
 then get an expose event for the invalid region.
 </p>
 <p>
 The available routines for drawing are documented on the GDK Drawing Primitives page.
-See also <a href="http://library.gnome.org/devel/gdk3/gdk2-Drawing-Primitives.html#gdk-draw-pixbuf"><code class="function">gdk_draw_pixbuf()</code></a> for drawing a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>.
+See also <a href="../html/gdk2-Drawing-Primitives.html#gdk-draw-pixbuf"><code class="function">gdk_draw_pixbuf()</code></a> for drawing a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.
 </p>
 <p>
 To receive mouse events on a drawing area, you will need to enable
@@ -207,9 +207,8 @@ gtk_drawing_area_new (<em class="parameter"><code><span class="type">void</span>
 Creates a new drawing area.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.5.9.2.5"></a><h4>Returns</h4>
+<a name="gtk-drawing-area-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkDrawingArea.html" title="GtkDrawingArea"><span class="type">GtkDrawingArea</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -231,8 +230,8 @@ larger than this depending on how it is packed
 within the enclosing containers.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.5.9.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-drawing-area-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -274,14 +273,13 @@ should be accessed using the functions below.
 <a name="GtkDrawingArea.see-also"></a><h2>See Also</h2>
 <p>
 Sometimes <a class="link" href="GtkImage.html" title="GtkImage"><span class="type">GtkImage</span></a> is a useful alternative to a drawing area.
-You can put a <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> in the <a class="link" href="GtkImage.html" title="GtkImage"><span class="type">GtkImage</span></a> and draw to the <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>,
+You can put a <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> in the <a class="link" href="GtkImage.html" title="GtkImage"><span class="type">GtkImage</span></a> and draw to the <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>,
 calling <a class="link" href="GtkWidget.html#gtk-widget-queue-draw" title="gtk_widget_queue_draw ()"><code class="function">gtk_widget_queue_draw()</code></a> on the <a class="link" href="GtkImage.html" title="GtkImage"><span class="type">GtkImage</span></a> when you want to
 refresh to the screen.
 </p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

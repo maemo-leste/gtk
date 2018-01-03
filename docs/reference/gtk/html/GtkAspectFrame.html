@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkAspectFrame</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkAspectFrame: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="LayoutContainers.html" title="Layout Containers">
 <link rel="prev" href="GtkAlignment.html" title="GtkAlignment">
 <link rel="next" href="GtkHBox.html" title="GtkHBox">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -30,13 +30,13 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkAspectFrame.top_of_page"></a>GtkAspectFrame</span></h2>
-<p>GtkAspectFrame — A frame that constrains its child to a particular aspect ratio</p>
+<p>GtkAspectFrame</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkAspectFrame.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -63,7 +63,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkAspectFrame.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -95,7 +95,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkAspectFrame.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -108,7 +108,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkAspectFrame.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -131,13 +131,6 @@ GtkAspectFrame implements
 </div>
 <div class="refsect1">
 <a name="GtkAspectFrame.description"></a><h2>Description</h2>
-<p>The <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a> is useful when you want
-pack a widget so that it can resize but always retains
-the same aspect ratio. For instance, one might be
-drawing a small preview of a larger image. <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>
-derives from <a class="link" href="GtkFrame.html" title="GtkFrame"><span class="type">GtkFrame</span></a>, so it can draw a label and
-a frame around the child. The frame will be
-"shrink-wrapped" to the size of the child.</p>
 </div>
 <div class="refsect1">
 <a name="GtkAspectFrame.functions_details"></a><h2>Functions</h2>
@@ -149,55 +142,6 @@ gtk_aspect_frame_new (<em class="parameter"><code>const <a href="https://develop
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> yalign</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> ratio</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> obey_child</code></em>);</pre>
-<p>Create a new <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>.</p>
-<div class="refsect3">
-<a name="id-1.4.13.3.10.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>label</p></td>
-<td class="parameter_description"><p>Label text.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>xalign</p></td>
-<td class="parameter_description"><p>Horizontal alignment of the child within the allocation of
-the <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>. This ranges from 0.0 (left aligned)
-to 1.0 (right aligned)</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>yalign</p></td>
-<td class="parameter_description"><p>Vertical alignment of the child within the allocation of
-the <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>. This ranges from 0.0 (left aligned)
-to 1.0 (right aligned)</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>ratio</p></td>
-<td class="parameter_description"><p>The desired aspect ratio.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>obey_child</p></td>
-<td class="parameter_description"><p>If <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>ratio</code></em>
-is ignored, and the aspect
-ratio is taken from the requistion of the child.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="id-1.4.13.3.10.2.6"></a><h4>Returns</h4>
-<p> the new <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>.</p>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -208,50 +152,6 @@ gtk_aspect_frame_set (<em class="parameter"><code><a class="link" href="GtkAspec
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> yalign</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> ratio</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> obey_child</code></em>);</pre>
-<p>Set parameters for an existing <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>.</p>
-<div class="refsect3">
-<a name="id-1.4.13.3.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>aspect_frame</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>xalign</p></td>
-<td class="parameter_description"><p>Horizontal alignment of the child within the allocation of
-the <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>. This ranges from 0.0 (left aligned)
-to 1.0 (right aligned)</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>yalign</p></td>
-<td class="parameter_description"><p>Vertical alignment of the child within the allocation of
-the <a class="link" href="GtkAspectFrame.html" title="GtkAspectFrame"><span class="type">GtkAspectFrame</span></a>. This ranges from 0.0 (left aligned)
-to 1.0 (right aligned)</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>ratio</p></td>
-<td class="parameter_description"><p>The desired aspect ratio.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>obey_child</p></td>
-<td class="parameter_description"><p>If <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>ratio</code></em>
-is ignored, and the aspect
-ratio is taken from the requistion of the child.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 </div>
 <div class="refsect1">
@@ -259,8 +159,6 @@ ratio is taken from the requistion of the child.</p></td>
 <div class="refsect2">
 <a name="GtkAspectFrame-struct"></a><h3>struct GtkAspectFrame</h3>
 <pre class="programlisting">struct GtkAspectFrame;</pre>
-<p>
-</p>
 </div>
 </div>
 <div class="refsect1">
@@ -302,7 +200,6 @@ ratio is taken from the requistion of the child.</p></td>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

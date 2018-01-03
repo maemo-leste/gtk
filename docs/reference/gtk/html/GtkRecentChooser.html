@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkRecentChooser</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkRecentChooser: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="RecentDocuments.html" title="Recently Used Documents">
 <link rel="prev" href="GtkRecentManager.html" title="GtkRecentManager">
 <link rel="next" href="GtkRecentChooserDialog.html" title="GtkRecentChooserDialog">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkRecentChooser.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -321,7 +321,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooser.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -385,7 +385,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooser.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -395,19 +395,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkRecentChooser.html#GtkRecentChooser-item-activated" title="The “item-activated” signal">item-activated</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkRecentChooser.html#GtkRecentChooser-selection-changed" title="The “selection-changed” signal">selection-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooser.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -438,7 +438,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooser.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GInterface
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
     <span class="lineart">╰──</span> GtkRecentChooser
 </pre>
 </div>
@@ -446,7 +446,7 @@
 <a name="GtkRecentChooser.prerequisites"></a><h2>Prerequisites</h2>
 <p>
 GtkRecentChooser requires
- <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>.</p>
+ <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
 </div>
 <div class="refsect1">
 <a name="GtkRecentChooser.implementations"></a><h2>Known Implementations</h2>
@@ -480,8 +480,8 @@ gtk_recent_chooser_set_show_private (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_private</code></em>);</pre>
 <p>Whether to show recently used resources marked registered as private.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-show-private.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -501,7 +501,7 @@ gtk_recent_chooser_set_show_private (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -512,8 +512,8 @@ gtk_recent_chooser_get_show_private (<em class="parameter"><code><a class="link"
  should display recently used resources
 registered as private.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-show-private.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -527,12 +527,11 @@ registered as private.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.3.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-show-private.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the recent chooser should show private items,
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -544,8 +543,8 @@ gtk_recent_chooser_set_show_not_found (<em class="parameter"><code><a class="lin
  should display the recently used resources that
 it didn't find.  This only applies to local resources.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-show-not-found.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -565,7 +564,7 @@ it didn't find.  This only applies to local resources.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -576,8 +575,8 @@ gtk_recent_chooser_get_show_not_found (<em class="parameter"><code><a class="lin
  should show the recently used resources that
 were not found.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-show-not-found.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -591,12 +590,11 @@ were not found.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.5.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-show-not-found.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the resources not found should be displayed, and
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otheriwse.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -609,8 +607,8 @@ gtk_recent_chooser_set_show_icons (<em class="parameter"><code><a class="link" h
  should show an icon near the resource when
 displaying it.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.6.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-show-icons.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -630,7 +628,7 @@ displaying it.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -640,8 +638,8 @@ gtk_recent_chooser_get_show_icons (<em class="parameter"><code><a class="link" h
 <p>Retrieves whether <em class="parameter"><code>chooser</code></em>
  should show an icon near the resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-show-icons.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -655,11 +653,10 @@ gtk_recent_chooser_get_show_icons (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.7.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-show-icons.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the icons should be displayed, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -671,8 +668,8 @@ gtk_recent_chooser_set_select_multiple
 <p>Sets whether <em class="parameter"><code>chooser</code></em>
  can select multiple items.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-select-multiple.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -693,7 +690,7 @@ can select more than one item</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -704,8 +701,8 @@ gtk_recent_chooser_get_select_multiple
 <p>Gets whether <em class="parameter"><code>chooser</code></em>
  can select multiple items.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-select-multiple.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -719,12 +716,11 @@ gtk_recent_chooser_get_select_multiple
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.9.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-select-multiple.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>chooser</code></em>
 can select more than one item.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -738,8 +734,8 @@ scheme, should be shown in the recently used resources selector.  If
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> (the default) then the shown resources are guaranteed
 to be accessible through the operating system native file system.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-local-only.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -759,7 +755,7 @@ to be accessible through the operating system native file system.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -769,8 +765,8 @@ gtk_recent_chooser_get_local_only (<em class="parameter"><code><a class="link" h
 <p>Gets whether only local resources should be shown in the recently used
 resources selector.  See <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-set-local-only" title="gtk_recent_chooser_set_local_only ()"><code class="function">gtk_recent_chooser_set_local_only()</code></a></p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-local-only.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -784,11 +780,10 @@ resources selector.  See <a class="link" href="GtkRecentChooser.html#gtk-recent-
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.11.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-local-only.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if only local resources should be shown.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -799,8 +794,8 @@ gtk_recent_chooser_set_limit (<em class="parameter"><code><a class="link" href="
 <p>Sets the number of items that should be returned by
 <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-get-items" title="gtk_recent_chooser_get_items ()"><code class="function">gtk_recent_chooser_get_items()</code></a> and <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-get-uris" title="gtk_recent_chooser_get_uris ()"><code class="function">gtk_recent_chooser_get_uris()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-limit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -820,7 +815,7 @@ gtk_recent_chooser_set_limit (<em class="parameter"><code><a class="link" href="
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -830,8 +825,8 @@ gtk_recent_chooser_get_limit (<em class="parameter"><code><a class="link" href="
 <p>Gets the number of items returned by <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-get-items" title="gtk_recent_chooser_get_items ()"><code class="function">gtk_recent_chooser_get_items()</code></a>
 and <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-get-uris" title="gtk_recent_chooser_get_uris ()"><code class="function">gtk_recent_chooser_get_uris()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-limit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -845,12 +840,11 @@ and <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-get-uris" tit
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.13.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-limit.returns"></a><h4>Returns</h4>
 <p> A positive integer, or -1 meaning that all items are
 returned.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -861,8 +855,8 @@ gtk_recent_chooser_set_show_tips (<em class="parameter"><code><a class="link" hr
 <p>Sets whether to show a tooltips containing the full path of each
 recently used resource in a <a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a> widget.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-show-tips.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -882,7 +876,7 @@ recently used resource in a <a class="link" href="GtkRecentChooser.html" title="
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -893,8 +887,8 @@ gtk_recent_chooser_get_show_tips (<em class="parameter"><code><a class="link" hr
  should display tooltips containing the full path
 of a recently user resource.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-show-tips.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -908,12 +902,11 @@ of a recently user resource.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.15.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-show-tips.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the recent chooser should show tooltips,
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -927,8 +920,8 @@ gtk_recent_chooser_set_show_numbers (<em class="parameter"><code><a class="link"
 </div>
 <p>Whether to show recently used resources prepended by a unique number.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.16.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-show-numbers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -948,7 +941,7 @@ gtk_recent_chooser_set_show_numbers (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -963,8 +956,8 @@ gtk_recent_chooser_get_show_numbers (<em class="parameter"><code><a class="link"
  should display recently used resources
 prepended by a unique number.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.17.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-show-numbers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -978,12 +971,11 @@ prepended by a unique number.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.17.8"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-show-numbers.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the recent chooser should show display numbers,
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -995,8 +987,8 @@ gtk_recent_chooser_set_sort_type (<em class="parameter"><code><a class="link" hr
 <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-sort-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1016,7 +1008,7 @@ gtk_recent_chooser_set_sort_type (<em class="parameter"><code><a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1025,8 +1017,8 @@ gtk_recent_chooser_set_sort_type (<em class="parameter"><code><a class="link" hr
 gtk_recent_chooser_get_sort_type (<em class="parameter"><code><a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a> *chooser</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type" title="gtk_recent_chooser_set_sort_type ()"><code class="function">gtk_recent_chooser_set_sort_type()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-sort-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1040,12 +1032,11 @@ gtk_recent_chooser_get_sort_type (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.19.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-sort-type.returns"></a><h4>Returns</h4>
 <p> the sorting order of the <em class="parameter"><code>chooser</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1056,10 +1047,6 @@ gtk_recent_chooser_get_sort_type (<em class="parameter"><code><a class="link" hr
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 </p>
-<div class="refsect3">
-<a name="id-1.4.21.3.12.20.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1081,8 +1068,8 @@ the chooser will sort using this function.</p>
 item comes before the second, zero if the two items are equal and
 a negative integer if the first item comes after the second.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-sort-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1114,7 +1101,7 @@ a negative integer if the first item comes after the second.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1127,8 +1114,8 @@ gtk_recent_chooser_set_current_uri (<em class="parameter"><code><a class="link" 
  as the current URI for <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-current-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1154,11 +1141,10 @@ gtk_recent_chooser_set_current_uri (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.22.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-set-current-uri.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the URI was found.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1168,8 +1154,8 @@ gtk_recent_chooser_get_current_uri (<em class="parameter"><code><a class="link" 
 <p>Gets the URI currently selected by <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-current-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1183,11 +1169,10 @@ gtk_recent_chooser_get_current_uri (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.23.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-current-uri.returns"></a><h4>Returns</h4>
 <p> a newly allocated string holding a URI.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1197,8 +1182,8 @@ gtk_recent_chooser_get_current_item (<em class="parameter"><code><a class="link"
 <p>Gets the <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> currently selected by <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-current-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1212,12 +1197,11 @@ gtk_recent_chooser_get_current_item (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.24.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-current-item.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a>.  Use <a class="link" href="GtkRecentManager.html#gtk-recent-info-unref" title="gtk_recent_info_unref ()"><code class="function">gtk_recent_info_unref()</code></a> when
 when you have finished using it.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1230,8 +1214,8 @@ gtk_recent_chooser_select_uri (<em class="parameter"><code><a class="link" href=
  inside <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-select-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1257,12 +1241,11 @@ gtk_recent_chooser_select_uri (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.25.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-select-uri.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>uri</code></em>
 was found.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1274,8 +1257,8 @@ gtk_recent_chooser_unselect_uri (<em class="parameter"><code><a class="link" hre
  inside <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-unselect-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1295,7 +1278,7 @@ gtk_recent_chooser_unselect_uri (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1307,8 +1290,8 @@ gtk_recent_chooser_select_all (<em class="parameter"><code><a class="link" href=
  supports
 multiple selection.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-select-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1321,7 +1304,7 @@ multiple selection.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1331,8 +1314,8 @@ gtk_recent_chooser_unselect_all (<em class="parameter"><code><a class="link" hre
 <p>Unselects all the items inside <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-unselect-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1345,7 +1328,7 @@ gtk_recent_chooser_unselect_all (<em class="parameter"><code><a class="link" hre
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1357,8 +1340,8 @@ gtk_recent_chooser_get_items (<em class="parameter"><code><a class="link" href="
 "limit" properties of <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.29.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-items.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1372,14 +1355,14 @@ gtk_recent_chooser_get_items (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.29.7"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-items.returns"></a><h4>Returns</h4>
 <p> A newly allocated
 list of <a class="link" href="GtkRecentManager.html#GtkRecentInfo" title="GtkRecentInfo"><span class="type">GtkRecentInfo</span></a> objects.  You should
 use <a class="link" href="GtkRecentManager.html#gtk-recent-info-unref" title="gtk_recent_info_unref ()"><code class="function">gtk_recent_info_unref()</code></a> on every item of the list, and then free
 the list itself using <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkRecentInfo][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1394,8 +1377,8 @@ properties of <em class="parameter"><code>chooser</code></em>
 <p>Since the returned array is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> terminated, <em class="parameter"><code>length</code></em>
  may be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.30.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-uris.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1416,12 +1399,12 @@ properties of <em class="parameter"><code>chooser</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.30.8"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-uris.returns"></a><h4>Returns</h4>
 <p>    A newly allocated, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of strings. Use
 <a href="https://developer.gnome.org/glib/unstable/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a> to free it. </p>
 <p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=length zero-terminated=1][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1435,8 +1418,8 @@ gtk_recent_chooser_add_filter (<em class="parameter"><code><a class="link" href=
 <p>If no previous filter objects were defined, this function will call
 <a class="link" href="GtkRecentChooser.html#gtk-recent-chooser-set-filter" title="gtk_recent_chooser_set_filter ()"><code class="function">gtk_recent_chooser_set_filter()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.31.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-add-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1456,7 +1439,7 @@ gtk_recent_chooser_add_filter (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1468,8 +1451,8 @@ gtk_recent_chooser_remove_filter (<em class="parameter"><code><a class="link" hr
  from the list of <a class="link" href="GtkRecentFilter.html" title="GtkRecentFilter"><span class="type">GtkRecentFilter</span></a> objects held by <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-remove-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1489,7 +1472,7 @@ gtk_recent_chooser_remove_filter (<em class="parameter"><code><a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1499,8 +1482,8 @@ gtk_recent_chooser_list_filters (<em class="parameter"><code><a class="link" hre
 <p>Gets the <a class="link" href="GtkRecentFilter.html" title="GtkRecentFilter"><span class="type">GtkRecentFilter</span></a> objects held by <em class="parameter"><code>chooser</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-list-filters.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1514,13 +1497,13 @@ gtk_recent_chooser_list_filters (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.33.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-list-filters.returns"></a><h4>Returns</h4>
 <p> A singly linked list
 of <a class="link" href="GtkRecentFilter.html" title="GtkRecentFilter"><span class="type">GtkRecentFilter</span></a> objects.  You
 should just free the returned list using <a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#g-slist-free"><code class="function">g_slist_free()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkRecentFilter][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1533,8 +1516,8 @@ gtk_recent_chooser_set_filter (<em class="parameter"><code><a class="link" href=
 
 to affect the displayed recently used resources.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-set-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1554,7 +1537,7 @@ to affect the displayed recently used resources.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1565,8 +1548,8 @@ gtk_recent_chooser_get_filter (<em class="parameter"><code><a class="link" href=
  to affect
 the display of the recently used resources.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-chooser-get-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1580,11 +1563,11 @@ the display of the recently used resources.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.3.12.35.6"></a><h4>Returns</h4>
+<a name="gtk-recent-chooser-get-filter.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GtkRecentFilter.html" title="GtkRecentFilter"><span class="type">GtkRecentFilter</span></a> object. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1654,8 +1637,8 @@ These identify the various errors that can occur while calling
 <a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a> functions.
 </p>
 <div class="refsect3">
-<a name="id-1.4.21.3.13.5.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentChooserError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1686,8 +1669,8 @@ These identify the various errors that can occur while calling
 <p>Used to specify the sorting method to be applyed to the recently
 used resource list.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.13.6.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentSortType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1739,7 +1722,7 @@ used resource list.</p>
 <p>The <a class="link" href="GtkRecentFilter.html" title="GtkRecentFilter"><span class="type">GtkRecentFilter</span></a> object to be used when displaying
 the recently used resources.</p>
 <p>Flags: Read / Write</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1753,7 +1736,7 @@ by setting this property.</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1763,7 +1746,7 @@ by setting this property.</p>
 resources.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1772,7 +1755,7 @@ resources.</p>
 <p>The <a class="link" href="GtkRecentManager.html" title="GtkRecentManager"><span class="type">GtkRecentManager</span></a> instance used by the <a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a> to
 display the list of recently used resources.</p>
 <p>Flags: Write / Construct Only</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1781,7 +1764,7 @@ display the list of recently used resources.</p>
 <p>Allow the user to select multiple resources.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1790,7 +1773,7 @@ display the list of recently used resources.</p>
 <p>Whether this <a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a> should display an icon near the item.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1802,7 +1785,7 @@ potentially expensive check on every local resource (every remote
 resource will always be displayed).</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1820,7 +1803,7 @@ resource will always be displayed).</p>
 full path of the recently used resources.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1829,7 +1812,7 @@ full path of the recently used resources.</p>
 <p>Sorting order to be used when displaying the recently used resources.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_RECENT_SORT_NONE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1844,8 +1827,8 @@ in the recent chooser.  This can happen by double-clicking on an item
 in the recently used resources list, or by pressing</p>
 <span class="keycap"><strong>Enter</strong></span>.
 <div class="refsect3">
-<a name="id-1.4.21.3.15.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentChooser-item-activated.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1865,8 +1848,8 @@ in the recently used resources list, or by pressing</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.10</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1879,8 +1862,8 @@ selected recently used resources.  This can happen when a user
 modifies the selection with the mouse or the keyboard, or when
 explicitely calling functions to change the selection.</p>
 <div class="refsect3">
-<a name="id-1.4.21.3.15.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentChooser-selection-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1900,8 +1883,8 @@ explicitely calling functions to change the selection.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.10</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1913,7 +1896,6 @@ explicitely calling functions to change the selection.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

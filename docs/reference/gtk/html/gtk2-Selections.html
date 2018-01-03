@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Selections</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Selections: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="GtkStyle.html" title="Styles">
 <link rel="next" href="gtk2-Feature-Test-Macros.html" title="Version Information">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-Selections.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -226,7 +226,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Selections.html#gtk-selection-data-get-pixbuf" title="gtk_selection_data_get_pixbuf ()">gtk_selection_data_get_pixbuf</a> <span class="c_punctuation">()</span>
@@ -290,7 +290,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Selections.html#gtk-selection-data-get-selection" title="gtk_selection_data_get_selection ()">gtk_selection_data_get_selection</a> <span class="c_punctuation">()</span>
@@ -313,7 +313,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Selections.html#gtk-selection-data-get-data-type" title="gtk_selection_data_get_data_type ()">gtk_selection_data_get_data_type</a> <span class="c_punctuation">()</span>
@@ -321,7 +321,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/GdkDisplay.html"><span class="returnvalue">GdkDisplay</span></a> *
+<a href="../html/GdkDisplay.html#GdkDisplay-struct"><span class="returnvalue">GdkDisplay</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Selections.html#gtk-selection-data-get-display" title="gtk_selection_data_get_display ()">gtk_selection_data_get_display</a> <span class="c_punctuation">()</span>
@@ -337,7 +337,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Selections.html#gtk-selection-data-get-target" title="gtk_selection_data_get_target ()">gtk_selection_data_get_target</a> <span class="c_punctuation">()</span>
@@ -412,7 +412,7 @@
 </div>
 <a name="GtkTargetList"></a><div class="refsect1">
 <a name="gtk2-Selections.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -435,7 +435,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Selections.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GBoxed
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html">GBoxed</a>
     <span class="lineart">╰──</span> GtkTargetList
 </pre>
 </div>
@@ -472,8 +472,8 @@ gtk_target_list_new (<em class="parameter"><code>const <a class="link" href="gtk
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ntargets</code></em>);</pre>
 <p>Creates a new <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> from an array of <a class="link" href="gtk2-Selections.html#GtkTargetEntry" title="struct GtkTargetEntry"><span class="type">GtkTargetEntry</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -495,7 +495,7 @@ gtk_target_list_new (<em class="parameter"><code>const <a class="link" href="gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.2.6"></a><h4>Returns</h4>
+<a name="gtk-target-list-new.returns"></a><h4>Returns</h4>
 <p> the new <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -507,8 +507,8 @@ gtk_target_list_new (<em class="parameter"><code>const <a class="link" href="gtk
 gtk_target_list_ref (<em class="parameter"><code><a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *list</code></em>);</pre>
 <p>Increases the reference count of a <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> by one.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -522,9 +522,8 @@ gtk_target_list_ref (<em class="parameter"><code><a class="link" href="gtk2-Sele
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.3.6"></a><h4>Returns</h4>
+<a name="gtk-target-list-ref.returns"></a><h4>Returns</h4>
 <p> the passed in <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -535,8 +534,8 @@ gtk_target_list_unref (<em class="parameter"><code><a class="link" href="gtk2-Se
 <p>Decreases the reference count of a <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> by one.
 If the resulting reference count is zero, frees the list.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -555,13 +554,13 @@ If the resulting reference count is zero, frees the list.</p>
 <a name="gtk-target-list-add"></a><h3>gtk_target_list_add ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_target_list_add (<em class="parameter"><code><a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *list</code></em>,
-                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
+                     <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flags</code></em>,
                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> info</code></em>);</pre>
 <p>Appends another target to a <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -601,8 +600,8 @@ gtk_target_list_add_table (<em class="parameter"><code><a class="link" href="gtk
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ntargets</code></em>);</pre>
 <p>Prepends a table of <a class="link" href="gtk2-Selections.html#GtkTargetEntry" title="struct GtkTargetEntry"><span class="type">GtkTargetEntry</span></a> to a target list.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-add-table.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -638,8 +637,8 @@ gtk_target_list_add_text_targets (<em class="parameter"><code><a class="link" hr
 the target list. All targets are added with the same <em class="parameter"><code>info</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-add-text-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -659,7 +658,7 @@ the target list. All targets are added with the same <em class="parameter"><code
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -672,8 +671,8 @@ gtk_target_list_add_image_targets (<em class="parameter"><code><a class="link" h
 the target list. All targets are added with the same <em class="parameter"><code>info</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-add-image-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -699,7 +698,7 @@ how to convert a pixbuf into the format</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -711,8 +710,8 @@ gtk_target_list_add_uri_targets (<em class="parameter"><code><a class="link" hre
 the target list. All targets are added with the same <em class="parameter"><code>info</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-add-uri-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -732,7 +731,7 @@ the target list. All targets are added with the same <em class="parameter"><code
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -748,8 +747,8 @@ gtk_target_list_add_rich_text_targets (<em class="parameter"><code><a class="lin
 targets are added with the same <em class="parameter"><code>info</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-add-rich-text-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -780,18 +779,18 @@ will be added, serializable formats otherwise.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-target-list-remove"></a><h3>gtk_target_list_remove ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_target_list_remove (<em class="parameter"><code><a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *list</code></em>,
-                        <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>);</pre>
+                        <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>);</pre>
 <p>Removes a target from a target list.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -817,12 +816,12 @@ gtk_target_list_remove (<em class="parameter"><code><a class="link" href="gtk2-S
 <a name="gtk-target-list-find"></a><h3>gtk_target_list_find ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_target_list_find (<em class="parameter"><code><a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a> *list</code></em>,
-                      <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
+                      <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *info</code></em>);</pre>
 <p>Looks up a given target in a <a class="link" href="gtk2-Selections.html#GtkTargetList"><span class="type">GtkTargetList</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-list-find.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -849,9 +848,8 @@ or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.12.6"></a><h4>Returns</h4>
+<a name="gtk-target-list-find.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the target was found, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -863,8 +861,8 @@ gtk_target_table_free (<em class="parameter"><code><a class="link" href="gtk2-Se
 <p>This function frees a target table as returned by
 <a class="link" href="gtk2-Selections.html#gtk-target-table-new-from-list" title="gtk_target_table_new_from_list ()"><code class="function">gtk_target_table_new_from_list()</code></a></p>
 <div class="refsect3">
-<a name="id-1.3.16.9.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-table-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -884,7 +882,7 @@ gtk_target_table_free (<em class="parameter"><code><a class="link" href="gtk2-Se
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -897,8 +895,8 @@ same targets as the passed <code class="literal">list</code>. The returned table
 allocated and should be freed using <a class="link" href="gtk2-Selections.html#gtk-target-table-free" title="gtk_target_table_free ()"><code class="function">gtk_target_table_free()</code></a> when no
 longer needed.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-target-table-new-from-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -919,25 +917,25 @@ longer needed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.14.6"></a><h4>Returns</h4>
+<a name="gtk-target-table-new-from-list.returns"></a><h4>Returns</h4>
 <p> the new table. </p>
 <p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_targets][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-owner-set"></a><h3>gtk_selection_owner_set ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_selection_owner_set (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
+                         <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Claims ownership of a given selection for a particular widget,
 or, if <em class="parameter"><code>widget</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, release ownership of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-owner-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -963,25 +961,24 @@ or, if <em class="parameter"><code>widget</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.15.6"></a><h4>Returns</h4>
+<a name="gtk-selection-owner-set.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation succeeded</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-owner-set-for-display"></a><h3>gtk_selection_owner_set_for_display ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-gtk_selection_owner_set_for_display (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/GdkDisplay.html"><span class="type">GdkDisplay</span></a> *display</code></em>,
+gtk_selection_owner_set_for_display (<em class="parameter"><code><a href="../html/GdkDisplay.html#GdkDisplay-struct"><span class="type">GdkDisplay</span></a> *display</code></em>,
                                      <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
+                                     <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Claim ownership of a given selection for a particular widget, or,
 if <em class="parameter"><code>widget</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, release ownership of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-owner-set-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1012,25 +1009,24 @@ if <em class="parameter"><code>widget</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.16.6"></a><h4>Returns</h4>
+<a name="gtk-selection-owner-set-for-display.returns"></a><h4>Returns</h4>
 <p> TRUE if the operation succeeded </p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-add-target"></a><h3>gtk_selection_add_target ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_selection_add_target (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> info</code></em>);</pre>
 <p>Appends a specified target to the list of supported targets for a 
 given widget and selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-add-target.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1066,14 +1062,14 @@ given widget and selection.</p>
 <a name="gtk-selection-add-targets"></a><h3>gtk_selection_add_targets ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_selection_add_targets (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                           <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
+                           <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
                            <em class="parameter"><code>const <a class="link" href="gtk2-Selections.html#GtkTargetEntry" title="struct GtkTargetEntry"><span class="type">GtkTargetEntry</span></a> *targets</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ntargets</code></em>);</pre>
 <p>Prepends a table of targets to the list of supported targets
 for a given widget and selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-add-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1110,12 +1106,12 @@ for a given widget and selection.</p>
 <a name="gtk-selection-clear-targets"></a><h3>gtk_selection_clear_targets ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_selection_clear_targets (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                             <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>);</pre>
+                             <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>);</pre>
 <p>Remove all targets registered for the given selection for the
 widget.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-clear-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1141,14 +1137,14 @@ widget.</p>
 <a name="gtk-selection-convert"></a><h3>gtk_selection_convert ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_selection_convert (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
-                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
+                       <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> selection</code></em>,
+                       <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> target</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Requests the contents of a selection. When received, 
 a "selection-received" signal will be generated.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-convert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1173,18 +1169,17 @@ a "selection-received" signal will be generated.</p>
 <tr>
 <td class="parameter_name"><p>time_</p></td>
 <td class="parameter_description"><p>Time of request (usually of triggering event)
-In emergency, you could use <a href="http://library.gnome.org/devel/gdk3/gdk2-Events.html#GDK-CURRENT-TIME:CAPS"><span class="type">GDK_CURRENT_TIME</span></a></p></td>
+In emergency, you could use <a href="../html/gdk2-Events.html#GDK-CURRENT-TIME:CAPS"><span class="type">GDK_CURRENT_TIME</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.20.6"></a><h4>Returns</h4>
+<a name="gtk-selection-convert.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if requested succeeded. <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if we could not process
 request. (e.g., there was already a request in process for
 this widget).</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1192,7 +1187,7 @@ this widget).</p>
 <a name="gtk-selection-data-set"></a><h3>gtk_selection_data_set ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_selection_data_set (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>,
-                        <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> type</code></em>,
+                        <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> type</code></em>,
                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> format</code></em>,
                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *data</code></em>,
                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>);</pre>
@@ -1200,8 +1195,8 @@ gtk_selection_data_set (<em class="parameter"><code><a class="link" href="GtkWid
 <span class="emphasis"><em>only</em></span> be called from a selection handler callback.
 Zero-terminates the stored data.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1249,8 +1244,8 @@ The string is converted to the form determined by
 <em class="parameter"><code>selection_data-&gt;target</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-set-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1278,10 +1273,9 @@ is nul-terminated.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.22.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-set-text.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the selection was successfully set,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1291,8 +1285,8 @@ otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macro
 gtk_selection_data_get_text (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Gets the contents of the selection data as a UTF-8 string.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1306,12 +1300,11 @@ gtk_selection_data_get_text (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.23.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-text.returns"></a><h4>Returns</h4>
 <p> if the selection data contained a recognized
 text type and it could be converted to UTF-8, a newly allocated
 string containing the converted text, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
 If the result is non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> it must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1319,14 +1312,14 @@ If the result is non-<a href="https://developer.gnome.org/glib/unstable/glib-Sta
 <a name="gtk-selection-data-set-pixbuf"></a><h3>gtk_selection_data_set_pixbuf ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_selection_data_set_pixbuf (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>,
-                               <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
-<p>Sets the contents of the selection from a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>
+                               <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
+<p>Sets the contents of the selection from a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>
 The pixbuf is converted to the form determined by
 <em class="parameter"><code>selection_data-&gt;target</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-set-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1340,29 +1333,28 @@ The pixbuf is converted to the form determined by
 </tr>
 <tr>
 <td class="parameter_name"><p>pixbuf</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a></p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.24.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-set-pixbuf.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the selection was successfully set,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-data-get-pixbuf"></a><h3>gtk_selection_data_get_pixbuf ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_selection_data_get_pixbuf (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
-<p>Gets the contents of the selection data as a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>.</p>
+<p>Gets the contents of the selection data as a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1376,14 +1368,14 @@ gtk_selection_data_get_pixbuf (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.25.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-pixbuf.returns"></a><h4>Returns</h4>
 <p> if the selection data contained a recognized
-image type and it could be converted to a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>, a
+image type and it could be converted to a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>, a
 newly allocated pixbuf is returned, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
 If the result is non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> it must be freed with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1396,8 +1388,8 @@ The string is converted to the form determined by
 <em class="parameter"><code>selection_data-&gt;target</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-set-uris.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1419,12 +1411,11 @@ strings holding URIs. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.26.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-set-uris.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the selection was successfully set,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1433,8 +1424,8 @@ otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macro
 gtk_selection_data_get_uris (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Gets the contents of the selection data as array of URIs.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-uris.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1448,7 +1439,7 @@ gtk_selection_data_get_uris (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.27.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-uris.returns"></a><h4>Returns</h4>
 <p> if
 the selection data contains a list of
 URIs, a newly allocated <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated string array
@@ -1456,14 +1447,14 @@ containing the URIs, otherwise <a href="https://developer.gnome.org/glib/unstabl
 non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> it must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-data-get-targets"></a><h3>gtk_selection_data_get_targets ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_selection_data_get_targets (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>,
-                                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> **targets</code></em>,
+                                <em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> **targets</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *n_atoms</code></em>);</pre>
 <p>Gets the contents of <em class="parameter"><code>selection_data</code></em>
  as an array of targets.
@@ -1471,8 +1462,8 @@ This can be used to interpret the results of getting
 the standard TARGETS target that is always supplied for
 any selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1500,11 +1491,10 @@ stored here must be freed with <a href="https://developer.gnome.org/glib/unstabl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.28.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-targets.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>selection_data</code></em>
 contains a valid
 array of targets, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1517,10 +1507,10 @@ gtk_selection_data_targets_include_image
 <p>Given a <a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> object holding a list of targets,
 determines if any of the targets in <em class="parameter"><code>targets</code></em>
  can be used to
-provide a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>.</p>
+provide a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-targets-include-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1542,13 +1532,12 @@ how to convert a pixbuf into the format</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.29.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-targets-include-image.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>selection_data</code></em>
 holds a list of targets,
 and a suitable target for images is included, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1561,8 +1550,8 @@ determines if any of the targets in <em class="parameter"><code>targets</code></
  can be used to
 provide text.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-targets-include-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1576,11 +1565,10 @@ provide text.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.30.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-targets-include-text.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>selection_data</code></em>
 holds a list of targets,
 and a suitable target for text is included, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1594,8 +1582,8 @@ determines if any of the targets in <em class="parameter"><code>targets</code></
  can be used to
 provide a list or URIs.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-targets-include-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1609,13 +1597,12 @@ provide a list or URIs.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.31.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-targets-include-uri.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>selection_data</code></em>
 holds a list of targets,
 and a suitable target for URI lists is included, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1629,8 +1616,8 @@ determines if any of the targets in <em class="parameter"><code>targets</code></
  can be used to
 provide rich text.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-targets-include-rich-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1651,24 +1638,23 @@ provide rich text.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.32.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-targets-include-rich-text.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>selection_data</code></em>
 holds a list of targets,
 and a suitable target for rich text is included,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-data-get-selection"></a><h3>gtk_selection_data_get_selection ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<pre class="programlisting"><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 gtk_selection_data_get_selection (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
-<p>Retrieves the selection <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> of the selection data.</p>
+<p>Retrieves the selection <a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> of the selection data.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1682,11 +1668,11 @@ gtk_selection_data_get_selection (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.33.6"></a><h4>Returns</h4>
-<p> the selection <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> of the selection data. </p>
+<a name="gtk-selection-data-get-selection.returns"></a><h4>Returns</h4>
+<p> the selection <a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> of the selection data. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1695,8 +1681,8 @@ gtk_selection_data_get_selection (<em class="parameter"><code><a class="link" hr
 gtk_selection_data_get_data (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Retrieves the raw data of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1710,11 +1696,10 @@ gtk_selection_data_get_data (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.34.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-data.returns"></a><h4>Returns</h4>
 <p> the raw data of the selection.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1723,8 +1708,8 @@ gtk_selection_data_get_data (<em class="parameter"><code><a class="link" href="G
 gtk_selection_data_get_length (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Retrieves the length of the raw data of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1738,21 +1723,20 @@ gtk_selection_data_get_length (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.35.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-length.returns"></a><h4>Returns</h4>
 <p> the length of the data of the selection.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-data-get-data-type"></a><h3>gtk_selection_data_get_data_type ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<pre class="programlisting"><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 gtk_selection_data_get_data_type (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Retrieves the data type of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-data-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1766,21 +1750,21 @@ gtk_selection_data_get_data_type (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.36.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-data-type.returns"></a><h4>Returns</h4>
 <p> the data type of the selection. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-data-get-display"></a><h3>gtk_selection_data_get_display ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/GdkDisplay.html"><span class="returnvalue">GdkDisplay</span></a> *
+<pre class="programlisting"><a href="../html/GdkDisplay.html#GdkDisplay-struct"><span class="returnvalue">GdkDisplay</span></a> *
 gtk_selection_data_get_display (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Retrieves the display of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1794,11 +1778,11 @@ gtk_selection_data_get_display (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.37.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-display.returns"></a><h4>Returns</h4>
 <p> the display of the selection. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1807,8 +1791,8 @@ gtk_selection_data_get_display (<em class="parameter"><code><a class="link" href
 gtk_selection_data_get_format (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Retrieves the format of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.38.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1822,21 +1806,20 @@ gtk_selection_data_get_format (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.38.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-format.returns"></a><h4>Returns</h4>
 <p> the format of the selection.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-selection-data-get-target"></a><h3>gtk_selection_data_get_target ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
+<pre class="programlisting"><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="returnvalue">GdkAtom</span></a>
 gtk_selection_data_get_target (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *selection_data</code></em>);</pre>
 <p>Retrieves the target of the selection.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.39.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-get-target.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1850,25 +1833,25 @@ gtk_selection_data_get_target (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.39.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-get-target.returns"></a><h4>Returns</h4>
 <p> the target of the selection. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-targets-include-image"></a><h3>gtk_targets_include_image ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-gtk_targets_include_image (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
+gtk_targets_include_image (<em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_targets</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> writable</code></em>);</pre>
 <p>Determines if any of the targets in <em class="parameter"><code>targets</code></em>
  can be used to
-provide a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>.</p>
+provide a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.40.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-targets-include-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1877,7 +1860,7 @@ provide a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf
 <tbody>
 <tr>
 <td class="parameter_name"><p>targets</p></td>
-<td class="parameter_description"><p> an array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
+<td class="parameter_description"><p> an array of <a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_targets]</span></td>
 </tr>
 <tr>
@@ -1896,26 +1879,25 @@ how to convert a pixbuf into the format</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.40.6"></a><h4>Returns</h4>
+<a name="gtk-targets-include-image.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>targets</code></em>
 include a suitable target for images,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-targets-include-text"></a><h3>gtk_targets_include_text ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-gtk_targets_include_text (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
+gtk_targets_include_text (<em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_targets</code></em>);</pre>
 <p>Determines if any of the targets in <em class="parameter"><code>targets</code></em>
  can be used to
 provide text.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.41.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-targets-include-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1924,7 +1906,7 @@ provide text.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>targets</p></td>
-<td class="parameter_description"><p> an array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
+<td class="parameter_description"><p> an array of <a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_targets]</span></td>
 </tr>
 <tr>
@@ -1937,26 +1919,25 @@ provide text.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.41.6"></a><h4>Returns</h4>
+<a name="gtk-targets-include-text.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>targets</code></em>
 include a suitable target for text,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-targets-include-uri"></a><h3>gtk_targets_include_uri ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-gtk_targets_include_uri (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
+gtk_targets_include_uri (<em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_targets</code></em>);</pre>
 <p>Determines if any of the targets in <em class="parameter"><code>targets</code></em>
  can be used to
 provide an uri list.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.42.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-targets-include-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1965,7 +1946,7 @@ provide an uri list.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>targets</p></td>
-<td class="parameter_description"><p> an array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
+<td class="parameter_description"><p> an array of <a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_targets]</span></td>
 </tr>
 <tr>
@@ -1978,27 +1959,26 @@ provide an uri list.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.42.6"></a><h4>Returns</h4>
+<a name="gtk-targets-include-uri.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>targets</code></em>
 include a suitable target for uri lists,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-targets-include-rich-text"></a><h3>gtk_targets_include_rich_text ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-gtk_targets_include_rich_text (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
+gtk_targets_include_rich_text (<em class="parameter"><code><a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a> *targets</code></em>,
                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_targets</code></em>,
                                <em class="parameter"><code><a class="link" href="GtkTextBuffer.html" title="GtkTextBuffer"><span class="type">GtkTextBuffer</span></a> *buffer</code></em>);</pre>
 <p>Determines if any of the targets in <em class="parameter"><code>targets</code></em>
  can be used to
 provide rich text.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.43.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-targets-include-rich-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2007,7 +1987,7 @@ provide rich text.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>targets</p></td>
-<td class="parameter_description"><p> an array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
+<td class="parameter_description"><p> an array of <a href="../html/gdk2-Properties-and-Atoms.html#GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_targets]</span></td>
 </tr>
 <tr>
@@ -2025,13 +2005,12 @@ provide rich text.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.43.6"></a><h4>Returns</h4>
+<a name="gtk-targets-include-rich-text.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>targets</code></em>
 include a suitable target for rich text,
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2043,8 +2022,8 @@ selections for a widget. Called when widget is being
 destroyed. This function will not generally be
 called by applications.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.44.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-remove-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2063,7 +2042,7 @@ called by applications.</p>
 <a name="gtk-selection-clear"></a><h3>gtk_selection_clear ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_selection_clear (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                     <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEventSelection"><span class="type">GdkEventSelection</span></a> *event</code></em>);</pre>
+                     <em class="parameter"><code><a href="../html/gdk2-Event-Structures.html#GdkEventSelection"><span class="type">GdkEventSelection</span></a> *event</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_selection_clear</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Instead of calling this function, chain up from
@@ -2073,8 +2052,8 @@ from any other context is illegal.</p>
 <p>The default handler for the <a class="link" href="GtkWidget.html#GtkWidget-selection-clear-event" title="The “selection-clear-event” signal"><span class="type">“selection-clear-event”</span></a>
 signal.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.45.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2095,11 +2074,10 @@ signal.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.45.8"></a><h4>Returns</h4>
+<a name="gtk-selection-clear.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event was handled, otherwise false</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2108,8 +2086,8 @@ signal.</p>
 gtk_selection_data_copy (<em class="parameter"><code><a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> *data</code></em>);</pre>
 <p>Makes a copy of a <a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> structure and its data.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.46.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2123,10 +2101,9 @@ gtk_selection_data_copy (<em class="parameter"><code><a class="link" href="GtkWi
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.16.9.46.6"></a><h4>Returns</h4>
+<a name="gtk-selection-data-copy.returns"></a><h4>Returns</h4>
 <p> a pointer to a copy of <em class="parameter"><code>data</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2137,8 +2114,8 @@ gtk_selection_data_free (<em class="parameter"><code><a class="link" href="GtkWi
 <p>Frees a <a class="link" href="GtkWidget.html#GtkSelectionData"><span class="type">GtkSelectionData</span></a> structure returned from
 <a class="link" href="gtk2-Selections.html#gtk-selection-data-copy" title="gtk_selection_data_copy ()"><code class="function">gtk_selection_data_copy()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.16.9.47.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-selection-data-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2230,7 +2207,6 @@ selection handling code.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

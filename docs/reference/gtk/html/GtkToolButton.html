@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkToolButton</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkToolButton: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkSeparatorToolItem.html" title="GtkSeparatorToolItem">
 <link rel="next" href="GtkMenuToolButton.html" title="GtkMenuToolButton">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkToolButton.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -158,7 +158,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToolButton.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -205,7 +205,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToolButton.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -220,7 +220,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToolButton.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -229,13 +229,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkToolButton.html#GtkToolButton-clicked" title="The “clicked” signal">clicked</a></td>
-<td class="signal_flags">Action</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkToolButton.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -248,7 +248,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToolButton.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -274,7 +274,7 @@ GtkToolButton implements
 <div class="refsect1">
 <a name="GtkToolButton.description"></a><h2>Description</h2>
 <p>
-<a class="link" href="GtkToolButton.html" title="GtkToolButton"><span class="type">GtkToolButton</span></a>s are <a href="GtkToolItem.html"><span class="type">GtkToolItems</span></a> containing buttons.
+<a class="link" href="GtkToolButton.html" title="GtkToolButton"><span class="type">GtkToolButton</span></a>s are <a href="GtkToolItem.html#GtkToolItem-struct"><span class="type">GtkToolItems</span></a> containing buttons.
 </p>
 <p>
 Use <a class="link" href="GtkToolButton.html#gtk-tool-button-new" title="gtk_tool_button_new ()"><code class="function">gtk_tool_button_new()</code></a> to create a new <a class="link" href="GtkToolButton.html" title="GtkToolButton"><span class="type">GtkToolButton</span></a>. Use
@@ -309,8 +309,8 @@ gtk_tool_button_new (<em class="parameter"><code><a class="link" href="GtkWidget
  as
 label.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -331,11 +331,10 @@ label.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.2.6"></a><h4>Returns</h4>
+<a name="gtk-tool-button-new.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkToolButton.html" title="GtkToolButton"><span class="type">GtkToolButton</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -348,8 +347,8 @@ and <a class="link" href="gtk2-Stock-Items.html#GTK-STOCK-APPLY:CAPS" title="GTK
 <p>It is an error if <em class="parameter"><code>stock_id</code></em>
  is not a name of a stock item.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-new-from-stock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -363,11 +362,10 @@ and <a class="link" href="gtk2-Stock-Items.html#GTK-STOCK-APPLY:CAPS" title="GTK
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.3.7"></a><h4>Returns</h4>
+<a name="gtk-tool-button-new-from-stock.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkToolButton.html" title="GtkToolButton"><span class="type">GtkToolButton</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -383,8 +381,8 @@ is determined by the "stock_id" property. If the "stock_id" property is also
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, <em class="parameter"><code>button</code></em>
  will not have a label.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-set-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -404,7 +402,7 @@ is determined by the "stock_id" property. If the "stock_id" property is also
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -415,8 +413,8 @@ gtk_tool_button_get_label (<em class="parameter"><code><a class="link" href="Gtk
 doesn't have a label. or uses a the label from a stock item. The returned
 string is owned by GTK+, and must not be modified or freed.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-get-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -430,11 +428,10 @@ string is owned by GTK+, and must not be modified or freed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.5.6"></a><h4>Returns</h4>
+<a name="gtk-tool-button-get-label.returns"></a><h4>Returns</h4>
 <p> The label, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -451,8 +448,8 @@ menu will have an underlined 'O'.</p>
 <p>Labels shown on tool buttons never have mnemonics on them; this property
 only affects the menu item on the overflow menu.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-set-use-underline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -472,7 +469,7 @@ only affects the menu item on the overflow menu.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -482,8 +479,8 @@ gtk_tool_button_get_use_underline (<em class="parameter"><code><a class="link" h
 <p>Returns whether underscores in the label property are used as mnemonics
 on menu items on the overflow menu. See <a class="link" href="GtkToolButton.html#gtk-tool-button-set-use-underline" title="gtk_tool_button_set_use_underline ()"><code class="function">gtk_tool_button_set_use_underline()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-get-use-underline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -497,12 +494,11 @@ on menu items on the overflow menu. See <a class="link" href="GtkToolButton.html
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.7.6"></a><h4>Returns</h4>
+<a name="gtk-tool-button-get-use-underline.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if underscores in the label property are used as
 mnemonics on menu items on the overflow menu.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -514,8 +510,8 @@ gtk_tool_button_set_stock_id (<em class="parameter"><code><a class="link" href="
 The stock_id property only has an effect if not
 overridden by non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> "label" and "icon_widget" properties.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-set-stock-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -535,7 +531,7 @@ overridden by non-<a href="https://developer.gnome.org/glib/unstable/glib-Standa
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -545,8 +541,8 @@ gtk_tool_button_get_stock_id (<em class="parameter"><code><a class="link" href="
 <p>Returns the name of the stock item. See <a class="link" href="GtkToolButton.html#gtk-tool-button-set-stock-id" title="gtk_tool_button_set_stock_id ()"><code class="function">gtk_tool_button_set_stock_id()</code></a>.
 The returned string is owned by GTK+ and must not be freed or modifed.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-get-stock-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -560,12 +556,11 @@ The returned string is owned by GTK+ and must not be freed or modifed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.9.6"></a><h4>Returns</h4>
+<a name="gtk-tool-button-get-stock-id.returns"></a><h4>Returns</h4>
 <p> the name of the stock item for <em class="parameter"><code>button</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -579,8 +574,8 @@ The "icon_name" property only has an effect if not
 overridden by non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> "label", "icon_widget" and "stock_id"
 properties.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-set-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -600,7 +595,7 @@ properties.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -610,8 +605,8 @@ gtk_tool_button_get_icon_name (<em class="parameter"><code><a class="link" href=
 <p>Returns the name of the themed icon for the tool button,
 see <a class="link" href="GtkToolButton.html#gtk-tool-button-set-icon-name" title="gtk_tool_button_set_icon_name ()"><code class="function">gtk_tool_button_set_icon_name()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-get-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -625,12 +620,11 @@ see <a class="link" href="GtkToolButton.html#gtk-tool-button-set-icon-name" titl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.11.6"></a><h4>Returns</h4>
+<a name="gtk-tool-button-get-icon-name.returns"></a><h4>Returns</h4>
 <p> the icon name or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the tool button has
 no themed icon</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -646,8 +640,8 @@ gtk_tool_button_set_icon_widget (<em class="parameter"><code><a class="link" hre
 "stock_id" property is also <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, <em class="parameter"><code>button</code></em>
  will not have an icon.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-set-icon-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -667,7 +661,7 @@ gtk_tool_button_set_icon_widget (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -678,8 +672,8 @@ gtk_tool_button_get_icon_widget (<em class="parameter"><code><a class="link" hre
 .
 See <a class="link" href="GtkToolButton.html#gtk-tool-button-set-icon-widget" title="gtk_tool_button_set_icon_widget ()"><code class="function">gtk_tool_button_set_icon_widget()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-get-icon-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -693,13 +687,13 @@ See <a class="link" href="GtkToolButton.html#gtk-tool-button-set-icon-widget" ti
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.13.6"></a><h4>Returns</h4>
+<a name="gtk-tool-button-get-icon-widget.returns"></a><h4>Returns</h4>
 <p> The widget used as icon
 on <em class="parameter"><code>button</code></em>
 , or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -717,8 +711,8 @@ determined by the "stock_id" property is used as label. If
 "stock_id" is also <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, <em class="parameter"><code>button</code></em>
  does not have a label.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-set-label-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -738,7 +732,7 @@ determined by the "stock_id" property is used as label. If
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -749,8 +743,8 @@ gtk_tool_button_get_label_widget (<em class="parameter"><code><a class="link" hr
 .
 See <a class="link" href="GtkToolButton.html#gtk-tool-button-set-label-widget" title="gtk_tool_button_set_label_widget ()"><code class="function">gtk_tool_button_set_label_widget()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-button-get-label-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -764,13 +758,13 @@ See <a class="link" href="GtkToolButton.html#gtk-tool-button-set-label-widget" t
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.19.12.15.6"></a><h4>Returns</h4>
+<a name="gtk-tool-button-get-label-widget.returns"></a><h4>Returns</h4>
 <p> The widget used as label
 on <em class="parameter"><code>button</code></em>
 , or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -795,7 +789,7 @@ This property only has an effect if not overridden by "label",
 "icon_widget" or "stock_id" properties.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -857,8 +851,8 @@ user_function (<a class="link" href="GtkToolButton.html" title="GtkToolButton"><
 <p>This signal is emitted when the tool button is clicked with the mouse
 or activated with the keyboard.</p>
 <div class="refsect3">
-<a name="id-1.4.10.19.16.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkToolButton-clicked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -878,7 +872,7 @@ or activated with the keyboard.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Action</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -923,7 +917,6 @@ or activated with the keyboard.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

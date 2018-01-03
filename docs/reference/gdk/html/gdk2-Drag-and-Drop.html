@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Drag and Drop</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Drag and Drop: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Selections.html" title="Selections">
 <link rel="next" href="gdk2-Properties-and-Atoms.html" title="Properties and Atoms">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Drag-and-Drop.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -212,7 +212,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Drag-and-Drop.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -260,8 +260,8 @@ the GTK+ documentation for more information.
 gdk_drag_get_selection (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Returns the selection atom for the current source window.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-get-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -275,9 +275,8 @@ gdk_drag_get_selection (<em class="parameter"><code><a class="link" href="gdk2-D
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.2.6"></a><h4>Returns</h4>
+<a name="gdk-drag-get-selection.returns"></a><h4>Returns</h4>
 <p> the selection atom.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -289,8 +288,8 @@ gdk_drag_abort (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-
 <p>Aborts a drag without dropping. </p>
 <p>This function is called by the drag source.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-abort.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -322,8 +321,8 @@ gdk_drop_reply (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-
 <p>This function is called by the drag destination in response
 to a drop initiated by the drag source.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drop-reply.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -361,9 +360,8 @@ gdk_drag_context_new (<em class="parameter"><code><span class="type">void</span>
 </div>
 <p>Creates a new <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.5.6"></a><h4>Returns</h4>
+<a name="gdk-drag-context-new.returns"></a><h4>Returns</h4>
 <p> the newly created <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -375,8 +373,8 @@ gdk_drag_drop (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-D
 <p>Drops on the current destination.</p>
 <p>This function is called by the drag source.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-drop.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -418,8 +416,8 @@ given pointer position.</p>
  and <em class="parameter"><code>protocol</code></em>
  parameters for <a class="link" href="gdk2-Drag-and-Drop.html#gdk-drag-motion" title="gdk_drag_motion ()"><code class="function">gdk_drag_motion()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-find-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -479,8 +477,8 @@ given pointer position.</p>
  and <em class="parameter"><code>protocol</code></em>
  parameters for <a class="link" href="gdk2-Drag-and-Drop.html#gdk-drag-motion" title="gdk_drag_motion ()"><code class="function">gdk_drag_motion()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-find-window-for-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -526,7 +524,7 @@ should be ignored, since it is put up by the drag source as an icon.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -539,8 +537,8 @@ gdk_drag_context_ref (<em class="parameter"><code><a class="link" href="gdk2-Dra
 </div>
 <p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-context-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -562,8 +560,8 @@ gdk_drag_context_get_actions (<em class="parameter"><code><a class="link" href="
 <p>Determines the bitmask of actions proposed by the source if
 <code class="function">gdk_drag_context_suggested_action()</code> returns GDK_ACTION_ASK.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-context-get-actions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -577,11 +575,10 @@ gdk_drag_context_get_actions (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.10.6"></a><h4>Returns</h4>
+<a name="gdk-drag-context-get-actions.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragAction" title="enum GdkDragAction"><span class="type">GdkDragAction</span></a> flags</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -590,8 +587,8 @@ gdk_drag_context_get_actions (<em class="parameter"><code><a class="link" href="
 gdk_drag_context_get_selected_action (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Determines the action chosen by the drag destination.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-context-get-selected-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -605,11 +602,10 @@ gdk_drag_context_get_selected_action (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.11.6"></a><h4>Returns</h4>
+<a name="gdk-drag-context-get-selected-action.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragAction" title="enum GdkDragAction"><span class="type">GdkDragAction</span></a> value</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -618,8 +614,8 @@ gdk_drag_context_get_selected_action (<em class="parameter"><code><a class="link
 gdk_drag_context_get_suggested_action (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Determines the suggested drag action of the context.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-context-get-suggested-action.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -633,11 +629,10 @@ gdk_drag_context_get_suggested_action (<em class="parameter"><code><a class="lin
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.12.6"></a><h4>Returns</h4>
+<a name="gdk-drag-context-get-suggested-action.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragAction" title="enum GdkDragAction"><span class="type">GdkDragAction</span></a> value</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -646,8 +641,8 @@ gdk_drag_context_get_suggested_action (<em class="parameter"><code><a class="lin
 gdk_drag_context_list_targets (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Retrieves the list of targets of the context.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-context-list-targets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -661,11 +656,11 @@ gdk_drag_context_list_targets (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.13.6"></a><h4>Returns</h4>
+<a name="gdk-drag-context-list-targets.returns"></a><h4>Returns</h4>
 <p> a <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of targets. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GdkAtom]</span></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -674,8 +669,8 @@ gdk_drag_context_list_targets (<em class="parameter"><code><a class="link" href=
 gdk_drag_context_get_source_window (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Returns the <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> where the DND operation started.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-context-get-source-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -689,11 +684,11 @@ gdk_drag_context_get_source_window (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.14.6"></a><h4>Returns</h4>
+<a name="gdk-drag-context-get-source-window.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -704,8 +699,8 @@ gdk_drag_begin (<em class="parameter"><code><a class="link" href="gdk2-Windows.h
 <p>Starts a drag and creates a new drag context for it.</p>
 <p>This function is called by the drag source.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-begin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -727,9 +722,8 @@ as list of <a class="link" href="gdk2-Properties-and-Atoms.html#GdkAtom" title="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.15.7"></a><h4>Returns</h4>
+<a name="gdk-drag-begin.returns"></a><h4>Returns</h4>
 <p> a newly created <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -749,8 +743,8 @@ gdk_drag_motion (<em class="parameter"><code><a class="link" href="gdk2-Drag-and
 set of actions changes.</p>
 <p>This function is called by the drag source.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.16.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-motion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -802,9 +796,8 @@ set of actions changes.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.16.8"></a><h4>Returns</h4>
+<a name="gdk-drag-motion.returns"></a><h4>Returns</h4>
 <p> FIXME</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -817,8 +810,8 @@ gdk_drop_finish (<em class="parameter"><code><a class="link" href="gdk2-Drag-and
 <p>Ends the drag operation after a drop.</p>
 <p>This function is called by the drag destination.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drop-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -856,8 +849,8 @@ gdk_drag_get_protocol (<em class="parameter"><code><a class="link" href="gdk2-Ev
 </div>
 <p>Finds out the DND protocol supported by a window.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-get-protocol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -878,13 +871,12 @@ gdk_drag_get_protocol (<em class="parameter"><code><a class="link" href="gdk2-Ev
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.18.7"></a><h4>Returns</h4>
+<a name="gdk-drag-get-protocol.returns"></a><h4>Returns</h4>
 <p> the windowing system specific id for the window where
 the drop should happen. This may be <em class="parameter"><code>xid</code></em>
 or the id of a proxy
 window, or zero if <em class="parameter"><code>xid</code></em>
 doesn't support Drag and Drop.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -896,8 +888,8 @@ gdk_drag_get_protocol_for_display (<em class="parameter"><code><a class="link" h
                                    <em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragProtocol" title="enum GdkDragProtocol"><span class="type">GdkDragProtocol</span></a> *protocol</code></em>);</pre>
 <p>Finds out the DND protocol supported by a window.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-get-protocol-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -923,15 +915,14 @@ gdk_drag_get_protocol_for_display (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.19.6"></a><h4>Returns</h4>
+<a name="gdk-drag-get-protocol-for-display.returns"></a><h4>Returns</h4>
 <p>the windowing system id of the window where the drop should happen. This
 may be <em class="parameter"><code>xid</code></em>
 or the id of a proxy window, or zero if <em class="parameter"><code>xid</code></em>
 doesn't
 support Drag and Drop.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -944,8 +935,8 @@ gdk_drag_context_unref (<em class="parameter"><code><a class="link" href="gdk2-D
 </div>
 <p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-context-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -970,8 +961,8 @@ gdk_drag_status (<em class="parameter"><code><a class="link" href="gdk2-Drag-and
 <p>This function is called by the drag destination in response to
 <a class="link" href="gdk2-Drag-and-Drop.html#gdk-drag-motion" title="gdk_drag_motion ()"><code class="function">gdk_drag_motion()</code></a> called by the drag source.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1008,8 +999,8 @@ transferred. This function is intended to be used while
 handling a <a class="link" href="gdk2-Events.html#GDK-DROP-FINISHED:CAPS"><code class="literal">GDK_DROP_FINISHED</code></a> event, its return value is
 meaningless at other times.</p>
 <div class="refsect3">
-<a name="id-1.2.23.7.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drag-drop-succeeded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1023,11 +1014,10 @@ meaningless at other times.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.23.7.22.6"></a><h4>Returns</h4>
+<a name="gdk-drag-drop-succeeded.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the drop was successful.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1039,8 +1029,8 @@ Used in <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="str
 which DND is done.
 </p>
 <div class="refsect3">
-<a name="id-1.2.23.8.2.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkDragProtocol.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1128,18 +1118,14 @@ A <span class="structname">GdkDragContext</span> holds information about a
 drag in progress. It is used on both source and destination sides.
 </p>
 <div class="refsect3">
-<a name="id-1.2.23.8.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkDragContext.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
 <col width="200px" class="struct_members_annotations">
 </colgroup>
-<tbody><tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> <em class="structfield"><code><a name="GdkDragContext.parent-instance"></a>parent_instance</code></em>;</p></td>
-<td class="struct_member_description"><p>the parent instance</p></td>
-<td class="struct_member_annotations"> </td>
-</tr></tbody>
+<tbody></tbody>
 </table></div>
 </div>
 </div>
@@ -1151,8 +1137,8 @@ Used in <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="str
 should do with the dropped data.
 </p>
 <div class="refsect3">
-<a name="id-1.2.23.8.4.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkDragAction.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1211,7 +1197,6 @@ should do with the dropped data.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

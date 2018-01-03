@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkToolItem</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkToolItem: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkToolbar.html" title="GtkToolbar">
 <link rel="next" href="GtkToolPalette.html" title="GtkToolPalette">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkToolItem.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -280,7 +280,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToolItem.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -307,7 +307,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToolItem.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -317,24 +317,24 @@
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkToolItem.html#GtkToolItem-create-menu-proxy" title="The “create-menu-proxy” signal">create-menu-proxy</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkToolItem.html#GtkToolItem-set-tooltip" title="The “set-tooltip” signal">set-tooltip</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkToolItem.html#GtkToolItem-toolbar-reconfigured" title="The “toolbar-reconfigured” signal">toolbar-reconfigured</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkToolItem.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -347,7 +347,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkToolItem.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -388,11 +388,10 @@ widget to the tool item.</p>
 gtk_tool_item_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a></p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.2.5"></a><h4>Returns</h4>
+<a name="gtk-tool-item-new.returns"></a><h4>Returns</h4>
 <p> the new <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -405,8 +404,8 @@ gtk_tool_item_set_homogeneous (<em class="parameter"><code><a class="link" href=
 homogeneous items. The effect is that all homogeneous items will have
 the same width as the widest of the items.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-homogeneous.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -427,7 +426,7 @@ is the same size as other homogeneous items</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -438,8 +437,8 @@ gtk_tool_item_get_homogeneous (<em class="parameter"><code><a class="link" href=
  is the same size as other homogeneous
 items. See <a class="link" href="GtkToolItem.html#gtk-tool-item-set-homogeneous" title="gtk_tool_item_set_homogeneous ()"><code class="function">gtk_tool_item_set_homogeneous()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-homogeneous.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -453,12 +452,11 @@ items. See <a class="link" href="GtkToolItem.html#gtk-tool-item-set-homogeneous"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.4.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-homogeneous.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the item is the same size as other homogeneous
 items.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -472,8 +470,8 @@ is more room on the toolbar then needed for the items. The
 effect is that the item gets bigger when the toolbar gets bigger
 and smaller when the toolbar gets smaller.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-expand.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -494,7 +492,7 @@ is allocated extra space</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -505,8 +503,8 @@ gtk_tool_item_get_expand (<em class="parameter"><code><a class="link" href="GtkT
  is allocated extra space.
 See <a class="link" href="GtkToolItem.html#gtk-tool-item-set-expand" title="gtk_tool_item_set_expand ()"><code class="function">gtk_tool_item_set_expand()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-expand.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -520,12 +518,11 @@ See <a class="link" href="GtkToolItem.html#gtk-tool-item-set-expand" title="gtk_
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.6.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-expand.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>tool_item</code></em>
 is allocated extra space.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -544,8 +541,8 @@ gtk_tool_item_set_tooltip (<em class="parameter"><code><a class="link" href="Gtk
 text to be displayed as tooltip on the item and the private text
 to be used. See <a class="link" href="GtkTooltips.html#gtk-tooltips-set-tip" title="gtk_tooltips_set_tip ()"><code class="function">gtk_tooltips_set_tip()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-tooltip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -576,7 +573,7 @@ to be used. See <a class="link" href="GtkTooltips.html#gtk-tooltips-set-tip" tit
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -588,8 +585,8 @@ gtk_tool_item_set_tooltip_text (<em class="parameter"><code><a class="link" href
 <p>Sets the text to be displayed as tooltip on the item.
 See <a class="link" href="GtkWidget.html#gtk-widget-set-tooltip-text" title="gtk_widget_set_tooltip_text ()"><code class="function">gtk_widget_set_tooltip_text()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.8.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-tooltip-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -610,7 +607,7 @@ See <a class="link" href="GtkWidget.html#gtk-widget-set-tooltip-text" title="gtk
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -621,8 +618,8 @@ gtk_tool_item_set_tooltip_markup (<em class="parameter"><code><a class="link" hr
 <p>Sets the markup text to be displayed as tooltip on the item.
 See <a class="link" href="GtkWidget.html#gtk-widget-set-tooltip-markup" title="gtk_widget_set_tooltip_markup ()"><code class="function">gtk_widget_set_tooltip_markup()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-tooltip-markup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -643,7 +640,7 @@ See <a class="link" href="GtkWidget.html#gtk-widget-set-tooltip-markup" title="g
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -659,8 +656,8 @@ When <em class="parameter"><code>tool_item</code></em>
 even those that would otherwise be sent to a child of <em class="parameter"><code>tool_item</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-use-drag-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -681,7 +678,7 @@ has a drag window.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -692,8 +689,8 @@ gtk_tool_item_get_use_drag_window (<em class="parameter"><code><a class="link" h
  has a drag window. See
 <a class="link" href="GtkToolItem.html#gtk-tool-item-set-use-drag-window" title="gtk_tool_item_set_use_drag_window ()"><code class="function">gtk_tool_item_set_use_drag_window()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-use-drag-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -707,12 +704,11 @@ gtk_tool_item_get_use_drag_window (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.11.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-use-drag-window.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>tool_item</code></em>
 uses a drag window.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -723,8 +719,8 @@ gtk_tool_item_set_visible_horizontal (<em class="parameter"><code><a class="link
 <p>Sets whether <em class="parameter"><code>tool_item</code></em>
  is visible when the toolbar is docked horizontally.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-visible-horizontal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -745,7 +741,7 @@ is visible when in horizontal mode</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -756,8 +752,8 @@ gtk_tool_item_get_visible_horizontal (<em class="parameter"><code><a class="link
  is visible on toolbars that are
 docked horizontally.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-visible-horizontal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -771,13 +767,12 @@ docked horizontally.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.13.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-visible-horizontal.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>tool_item</code></em>
 is visible on toolbars that are
 docked horizontally.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -793,8 +788,8 @@ useful on a vertically docked toolbar. If <em class="parameter"><code>visible_ve
 <em class="parameter"><code>tool_item</code></em>
  will not appear on toolbars that are docked vertically.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-visible-vertical.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -816,7 +811,7 @@ is in vertical mode</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -827,8 +822,8 @@ gtk_tool_item_get_visible_vertical (<em class="parameter"><code><a class="link" 
  is visible when the toolbar is docked vertically.
 See <a class="link" href="GtkToolItem.html#gtk-tool-item-set-visible-vertical" title="gtk_tool_item_set_visible_vertical ()"><code class="function">gtk_tool_item_set_visible_vertical()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-visible-vertical.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -842,12 +837,11 @@ See <a class="link" href="GtkToolItem.html#gtk-tool-item-set-visible-vertical" t
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.15.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-visible-vertical.returns"></a><h4>Returns</h4>
 <p> Whether <em class="parameter"><code>tool_item</code></em>
 is visible when the toolbar is docked vertically</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -862,8 +856,8 @@ when the toolbar style is <a class="link" href="gtk2-Standard-Enumerations.html#
 only tool buttons with the "is_important" property set have labels, an
 effect known as "priority text"</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-is-important.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -883,7 +877,7 @@ effect known as "priority text"</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -894,8 +888,8 @@ gtk_tool_item_get_is_important (<em class="parameter"><code><a class="link" href
  is considered important. See
 <a class="link" href="GtkToolItem.html#gtk-tool-item-set-is-important" title="gtk_tool_item_set_is_important ()"><code class="function">gtk_tool_item_set_is_important()</code></a></p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-is-important.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -909,12 +903,11 @@ gtk_tool_item_get_is_important (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.17.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-is-important.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>tool_item</code></em>
 is considered important.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -926,8 +919,8 @@ gtk_tool_item_get_ellipsize_mode (<em class="parameter"><code><a class="link" hr
 <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a> should call this function to find out how text should
 be ellipsized.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-ellipsize-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -941,12 +934,11 @@ be ellipsized.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.18.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-ellipsize-mode.returns"></a><h4>Returns</h4>
 <p> a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoEllipsizeMode"><span class="type">PangoEllipsizeMode</span></a> indicating how text in <em class="parameter"><code>tool_item</code></em>
 should be ellipsized.</p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -958,8 +950,8 @@ gtk_tool_item_get_icon_size (<em class="parameter"><code><a class="link" href="G
 <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a> should call this function to find out what size icons
 they should use.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-icon-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -973,13 +965,13 @@ they should use.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.19.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-icon-size.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSize" title="enum GtkIconSize"><span class="type">GtkIconSize</span></a> indicating the icon size
 used for <em class="parameter"><code>tool_item</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> int]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -991,8 +983,8 @@ gtk_tool_item_get_orientation (<em class="parameter"><code><a class="link" href=
 <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a> should call this function to find out what size icons
 they should use.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-orientation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1006,13 +998,12 @@ they should use.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.20.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-orientation.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gtk2-Standard-Enumerations.html#GtkOrientation" title="enum GtkOrientation"><span class="type">GtkOrientation</span></a> indicating the orientation
 used for <em class="parameter"><code>tool_item</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1039,8 +1030,8 @@ show labels when the toolbar style is GTK_TOOLBAR_BOTH_HORIZ.
 </li>
 </ul></div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.21.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-toolbar-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1054,13 +1045,12 @@ show labels when the toolbar style is GTK_TOOLBAR_BOTH_HORIZ.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.21.8"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-toolbar-style.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="gtk2-Standard-Enumerations.html#GtkToolbarStyle" title="enum GtkToolbarStyle"><span class="type">GtkToolbarStyle</span></a> indicating the toolbar style used
 for <em class="parameter"><code>tool_item</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1073,8 +1063,8 @@ Custom subclasses of <a class="link" href="GtkToolItem.html" title="GtkToolItem"
 of the <a class="link" href="GtkToolItem.html#GtkToolItem-toolbar-reconfigured" title="The “toolbar-reconfigured” signal"><span class="type">“toolbar_reconfigured”</span></a> signal to find out the
 relief style of buttons.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-relief-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1088,13 +1078,12 @@ relief style of buttons.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.22.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-relief-style.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gtk2-Standard-Enumerations.html#GtkReliefStyle" title="enum GtkReliefStyle"><span class="type">GtkReliefStyle</span></a> indicating the relief style used
 for <em class="parameter"><code>tool_item</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1106,8 +1095,8 @@ gtk_tool_item_get_text_alignment (<em class="parameter"><code><a class="link" hr
 <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a> should call this function to find out how text should
 be aligned.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-text-alignment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1121,13 +1110,12 @@ be aligned.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.23.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-text-alignment.returns"></a><h4>Returns</h4>
 <p> a <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> indicating the horizontal text alignment
 used for <em class="parameter"><code>tool_item</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1139,8 +1127,8 @@ gtk_tool_item_get_text_orientation (<em class="parameter"><code><a class="link" 
 <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a> should call this function to find out how text should
 be orientated.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-text-orientation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1154,13 +1142,12 @@ be orientated.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.24.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-text-orientation.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gtk2-Standard-Enumerations.html#GtkOrientation" title="enum GtkOrientation"><span class="type">GtkOrientation</span></a> indicating the text orientation
 used for <em class="parameter"><code>tool_item</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1172,8 +1159,8 @@ gtk_tool_item_retrieve_proxy_menu_item
 <a class="link" href="GtkToolItem.html#gtk-tool-item-set-proxy-menu-item" title="gtk_tool_item_set_proxy_menu_item ()"><code class="function">gtk_tool_item_set_proxy_menu_item()</code></a>, ie. the <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a>
 that is going to appear in the overflow menu.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-retrieve-proxy-menu-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1187,13 +1174,13 @@ that is going to appear in the overflow menu.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.25.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-retrieve-proxy-menu-item.returns"></a><h4>Returns</h4>
 <p> The <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> that is going to appear in the
 overflow menu for <em class="parameter"><code>tool_item</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1210,8 +1197,8 @@ update their menu item when the <a class="link" href="GtkToolItem.html" title="G
 s must match ensures that a <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a>
 will not inadvertently change a menu item that they did not create.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-proxy-menu-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1232,14 +1219,14 @@ will not inadvertently change a menu item that they did not create.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.26.7"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-proxy-menu-item.returns"></a><h4>Returns</h4>
 <p> The <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> passed to
 <a class="link" href="GtkToolItem.html#gtk-tool-item-set-proxy-menu-item" title="gtk_tool_item_set_proxy_menu_item ()"><code class="function">gtk_tool_item_set_proxy_menu_item()</code></a>, if the <em class="parameter"><code>menu_item_id</code></em>
 s
 match. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1253,8 +1240,8 @@ gtk_tool_item_set_proxy_menu_item (<em class="parameter"><code><a class="link" h
  is used to identify the caller of this function and
 should also be used with <a class="link" href="GtkToolItem.html#gtk-tool-item-get-proxy-menu-item" title="gtk_tool_item_get_proxy_menu_item ()"><code class="function">gtk_tool_item_get_proxy_menu_item()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-set-proxy-menu-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1280,7 +1267,7 @@ should also be used with <a class="link" href="GtkToolItem.html#gtk-tool-item-ge
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1295,8 +1282,8 @@ the menu will be rebuilt.</p>
 <p>The function must be called when the tool item changes what it
 will do in response to the <a class="link" href="GtkToolItem.html#GtkToolItem-create-menu-proxy" title="The “create-menu-proxy” signal"><span class="type">“create-menu-proxy”</span></a> signal.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.28.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-rebuild-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1309,7 +1296,7 @@ will do in response to the <a class="link" href="GtkToolItem.html#GtkToolItem-cr
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1321,8 +1308,8 @@ gtk_tool_item_toolbar_reconfigured (<em class="parameter"><code><a class="link" 
 <a class="link" href="GtkToolbar.html" title="GtkToolbar"><span class="type">GtkToolbar</span></a> and other <a class="link" href="GtkToolShell.html" title="GtkToolShell"><span class="type">GtkToolShell</span></a> implementations use this function
 to notify children, when some aspect of their configuration changes.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-toolbar-reconfigured.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1335,7 +1322,7 @@ to notify children, when some aspect of their configuration changes.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1347,8 +1334,8 @@ gtk_tool_item_get_text_size_group (<em class="parameter"><code><a class="link" h
 Custom subclasses of <a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="type">GtkToolItem</span></a> should call this function
 and use the size group for labels.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tool-item-get-text-size-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1362,11 +1349,11 @@ and use the size group for labels.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.11.30.6"></a><h4>Returns</h4>
+<a name="gtk-tool-item-get-text-size-group.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GtkSizeGroup.html" title="GtkSizeGroup"><span class="type">GtkSizeGroup</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1435,8 +1422,8 @@ how it will respond to this signal it must call <a class="link" href="GtkToolIte
 to invalidate the cache and ensure that the toolbar rebuilds its overflow
 menu.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.14.2.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkToolItem-create-menu-proxy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1457,11 +1444,10 @@ menu.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.14.2.8"></a><h4>Returns</h4>
+<a name="GtkToolItem-create-menu-proxy.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the signal was handled, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if not</p>
-<p></p>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1481,8 +1467,8 @@ set the item's tooltip.</p>
   need to use this signal anymore.</p>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.14.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkToolItem-set-tooltip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1518,11 +1504,10 @@ set the item's tooltip.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.15.14.3.7"></a><h4>Returns</h4>
+<a name="GtkToolItem-set-tooltip.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the signal was handled, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if not</p>
-<p></p>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1542,8 +1527,8 @@ the default handler of this signal use the functions</p>
 <p>to find out what the toolbar should look like and change
 themselves accordingly.</p>
 <div class="refsect3">
-<a name="id-1.4.10.15.14.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkToolItem-toolbar-reconfigured.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1563,7 +1548,7 @@ themselves accordingly.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1593,7 +1578,6 @@ themselves accordingly.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

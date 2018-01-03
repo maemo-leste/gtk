@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkColorSelection</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkColorSelection: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkColorSelectionDialog.html" title="GtkColorSelectionDialog">
 <link rel="next" href="GtkHSV.html" title="GtkHSV">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkColorSelection.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -232,7 +232,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkColorSelection.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -246,7 +246,7 @@
 </tr>
 <tr>
 <td class="property_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</td>
+<a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</td>
 <td class="property_name"><a class="link" href="GtkColorSelection.html#GtkColorSelection--current-color" title="The “current-color” property">current-color</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -265,7 +265,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkColorSelection.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -274,13 +274,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkColorSelection.html#GtkColorSelection-color-changed" title="The “color-changed” signal">color-changed</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkColorSelection.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -293,7 +293,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkColorSelection.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -332,9 +332,8 @@ color selection dialog box <a class="link" href="GtkColorSelectionDialog.html" t
 gtk_color_selection_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new GtkColorSelection.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.2.5"></a><h4>Returns</h4>
+<a name="gtk-color-selection-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -366,8 +365,8 @@ time.
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-update-policy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -398,8 +397,8 @@ gtk_color_selection_set_has_opacity_control
 <p>Sets the <em class="parameter"><code>colorsel</code></em>
  to use or not use opacity.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-has-opacity-control.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -429,8 +428,8 @@ gtk_color_selection_get_has_opacity_control
                                (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>);</pre>
 <p>Determines whether the colorsel has an opacity control.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-get-has-opacity-control.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -444,10 +443,9 @@ gtk_color_selection_get_has_opacity_control
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.5.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-get-has-opacity-control.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <em class="parameter"><code>colorsel</code></em>
 has an opacity control.  <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it does't.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -459,8 +457,8 @@ gtk_color_selection_set_has_palette (<em class="parameter"><code><a class="link"
 <p>Shows and hides the palette based upon the value of <em class="parameter"><code>has_palette</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-has-palette.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -488,8 +486,8 @@ gtk_color_selection_set_has_palette (<em class="parameter"><code><a class="link"
 gtk_color_selection_get_has_palette (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>);</pre>
 <p>Determines whether the color selector has a color palette.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-get-has-palette.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -503,9 +501,8 @@ gtk_color_selection_get_has_palette (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-get-has-palette.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the selector has a palette.  <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it hasn't.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -515,8 +512,8 @@ gtk_color_selection_get_has_palette (<em class="parameter"><code><a class="link"
 gtk_color_selection_get_current_alpha (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>);</pre>
 <p>Returns the current alpha value.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-get-current-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -530,9 +527,8 @@ gtk_color_selection_get_current_alpha (<em class="parameter"><code><a class="lin
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.8.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-get-current-alpha.returns"></a><h4>Returns</h4>
 <p> an integer between 0 and 65535.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -546,8 +542,8 @@ gtk_color_selection_set_current_alpha (<em class="parameter"><code><a class="lin
 also set the original opacity to be <em class="parameter"><code>alpha</code></em>
  too.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-current-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -573,12 +569,12 @@ also set the original opacity to be <em class="parameter"><code>alpha</code></em
 <a name="gtk-color-selection-get-current-color"></a><h3>gtk_color_selection_get_current_color ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_color_selection_get_current_color (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>,
-                                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                                       <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Sets <em class="parameter"><code>color</code></em>
  to be the current color in the GtkColorSelection widget.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-get-current-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -592,7 +588,7 @@ gtk_color_selection_get_current_color (<em class="parameter"><code><a class="lin
 </tr>
 <tr>
 <td class="parameter_name"><p>color</p></td>
-<td class="parameter_description"><p> a <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to fill in with the current color. </p></td>
+<td class="parameter_description"><p> a <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to fill in with the current color. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -604,14 +600,14 @@ gtk_color_selection_get_current_color (<em class="parameter"><code><a class="lin
 <a name="gtk-color-selection-set-current-color"></a><h3>gtk_color_selection_set_current_color ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_color_selection_set_current_color (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>,
-                                       <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                                       <em class="parameter"><code>const <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Sets the current color to be <em class="parameter"><code>color</code></em>
 .  The first time this is called, it will
 also set the original color to be <em class="parameter"><code>color</code></em>
  too.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-current-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -625,7 +621,7 @@ also set the original color to be <em class="parameter"><code>color</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>color</p></td>
-<td class="parameter_description"><p>A <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to set the current color with.</p></td>
+<td class="parameter_description"><p>A <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to set the current color with.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -640,8 +636,8 @@ gtk_color_selection_get_previous_alpha
                                (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>);</pre>
 <p>Returns the previous alpha value.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-get-previous-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -655,9 +651,8 @@ gtk_color_selection_get_previous_alpha
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.12.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-get-previous-alpha.returns"></a><h4>Returns</h4>
 <p> an integer between 0 and 65535.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -671,8 +666,8 @@ gtk_color_selection_set_previous_alpha
 .  This function should be called with
 some hesitations, as it might seem confusing to have that alpha change.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-previous-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -699,12 +694,12 @@ some hesitations, as it might seem confusing to have that alpha change.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_color_selection_get_previous_color
                                (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>,
-                                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                                <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Fills <em class="parameter"><code>color</code></em>
  in with the original color value.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-get-previous-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -718,7 +713,7 @@ gtk_color_selection_get_previous_color
 </tr>
 <tr>
 <td class="parameter_name"><p>color</p></td>
-<td class="parameter_description"><p> a <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to fill in with the original color value. </p></td>
+<td class="parameter_description"><p> a <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to fill in with the original color value. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -731,15 +726,15 @@ gtk_color_selection_get_previous_color
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_color_selection_set_previous_color
                                (<em class="parameter"><code><a class="link" href="GtkColorSelection.html" title="GtkColorSelection"><span class="type">GtkColorSelection</span></a> *colorsel</code></em>,
-                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Sets the 'previous' color to be <em class="parameter"><code>color</code></em>
 .  This function should be called with
 some hesitations, as it might seem confusing to have that color change.
 Calling <a class="link" href="GtkColorSelection.html#gtk-color-selection-set-current-color" title="gtk_color_selection_set_current_color ()"><code class="function">gtk_color_selection_set_current_color()</code></a> will also set this color the first
 time it is called.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-previous-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -753,7 +748,7 @@ time it is called.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>color</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to set the previous color with.</p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> to set the previous color with.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -768,8 +763,8 @@ gtk_color_selection_is_adjusting (<em class="parameter"><code><a class="link" hr
 <p>Gets the current state of the <em class="parameter"><code>colorsel</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-is-adjusting.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -783,10 +778,9 @@ gtk_color_selection_is_adjusting (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.16.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-is-adjusting.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the user is currently dragging a color around, and <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>
 if the selection has stopped.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -795,13 +789,13 @@ if the selection has stopped.</p>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_color_selection_palette_from_string
                                (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
-                                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> **colors</code></em>,
+                                <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> **colors</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *n_colors</code></em>);</pre>
 <p>Parses a color palette string; the string is a colon-separated
-list of color names readable by <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#gdk-color-parse"><code class="function">gdk_color_parse()</code></a>.</p>
+list of color names readable by <a href="../html/gdk2-Colormaps-and-Colors.html#gdk-color-parse"><code class="function">gdk_color_parse()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-palette-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -816,7 +810,7 @@ list of color names readable by <a href="http://library.gnome.org/devel/gdk3/gdk
 <tr>
 <td class="parameter_name"><p>colors</p></td>
 <td class="parameter_description"><p> return location for allocated
-array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a>. </p></td>
+array of <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_colors]</span></td>
 </tr>
 <tr>
@@ -828,21 +822,20 @@ array of <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.17.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-palette-from-string.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a palette was successfully parsed.</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-color-selection-palette-to-string"></a><h3>gtk_color_selection_palette_to_string ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-gtk_color_selection_palette_to_string (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *colors</code></em>,
+gtk_color_selection_palette_to_string (<em class="parameter"><code>const <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *colors</code></em>,
                                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_colors</code></em>);</pre>
 <p>Encodes a palette as a string, useful for persistent storage.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-palette-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -863,9 +856,8 @@ gtk_color_selection_palette_to_string (<em class="parameter"><code>const <a href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.18.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-palette-to-string.returns"></a><h4>Returns</h4>
 <p> allocated string encoding the palette.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -884,8 +876,8 @@ modify the palette in a color selection. This function should save
 the new palette contents, and update the GtkSettings property
 "gtk-color-palette" so all GtkColorSelection widgets will be modified.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-change-palette-hook.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -899,16 +891,15 @@ the new palette contents, and update the GtkSettings property
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.19.7"></a><h4>Returns</h4>
+<a name="gtk-color-selection-set-change-palette-hook.returns"></a><h4>Returns</h4>
 <p> the previous change palette hook (that was replaced).</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkColorSelectionChangePaletteFunc"></a><h3>GtkColorSelectionChangePaletteFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-<span class="c_punctuation">(</span>*GtkColorSelectionChangePaletteFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *colors</code></em>,
+<span class="c_punctuation">(</span>*GtkColorSelectionChangePaletteFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *colors</code></em>,
                                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_colors</code></em>);</pre>
 <p>
 </p>
@@ -924,8 +915,8 @@ modify the palette in a color selection. This function should save
 the new palette contents, and update the GtkSettings property
 "gtk-color-palette" so all GtkColorSelection widgets will be modified.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-change-palette-with-screen-hook.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -939,23 +930,22 @@ the new palette contents, and update the GtkSettings property
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.21.6"></a><h4>Returns</h4>
+<a name="gtk-color-selection-set-change-palette-with-screen-hook.returns"></a><h4>Returns</h4>
 <p> the previous change palette hook (that was replaced).</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkColorSelectionChangePaletteWithScreenFunc"></a><h3>GtkColorSelectionChangePaletteWithScreenFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 <span class="c_punctuation">(</span>*GtkColorSelectionChangePaletteWithScreenFunc<span class="c_punctuation">)</span>
-                               (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a> *screen</code></em>,
-                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *colors</code></em>,
+                               (<em class="parameter"><code><a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a> *screen</code></em>,
+                                <em class="parameter"><code>const <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *colors</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_colors</code></em>);</pre>
 <p>
 </p>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -972,8 +962,8 @@ gtk_color_selection_set_color (<em class="parameter"><code><a class="link" href=
 also set the original color to be <em class="parameter"><code>color</code></em>
  too.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-set-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1008,8 +998,8 @@ gtk_color_selection_get_color (<em class="parameter"><code><a class="link" href=
 <p>Sets <em class="parameter"><code>color</code></em>
  to be the current color in the GtkColorSelection widget.</p>
 <div class="refsect3">
-<a name="id-1.4.12.4.11.24.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-color-selection-get-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1055,7 +1045,7 @@ and should be accessed using the functions below.
 <hr>
 <div class="refsect2">
 <a name="GtkColorSelection--current-color"></a><h3>The <code class="literal">“current-color”</code> property</h3>
-<pre class="programlisting">  “current-color”            <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</pre>
+<pre class="programlisting">  “current-color”            <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</pre>
 <p>The current color.</p>
 <p>Flags: Read / Write</p>
 </div>
@@ -1088,8 +1078,8 @@ This signal is emitted when the color changes in the <a class="link" href="GtkCo
 according to its update policy.
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.4.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkColorSelection-color-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1109,12 +1099,11 @@ according to its update policy.
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

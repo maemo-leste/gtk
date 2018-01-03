@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTreeStore</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTreeStore: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkListStore.html" title="GtkListStore">
 <link rel="next" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTreeStore.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -230,7 +230,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeStore.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -243,7 +243,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeStore.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkTreeStore
 </pre>
 </div>
@@ -277,7 +277,7 @@ contain multiple &lt;column&gt; elements, each specifying one model
 column. The "type" attribute specifies the data type for the column.
 </p>
 <div class="example">
-<a name="id-1.4.9.25.8.3.3"></a><p class="title"><b>Example 29. A UI Definition fragment for a tree store</b></p>
+<a name="id-1.4.9.25.8.3.3"></a><p class="title"><b>Example 24. A UI Definition fragment for a tree store</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -318,10 +318,10 @@ in.  Note that only types derived from standard GObject fundamental types
 are supported. </p>
 <p>As an example, <code class="literal">gtk_tree_store_new (3, G_TYPE_INT, G_TYPE_STRING,
 GDK_TYPE_PIXBUF);</code> will create a new <a class="link" href="GtkTreeStore.html" title="GtkTreeStore"><span class="type">GtkTreeStore</span></a> with three columns, of type</p>
-<span class="type">int</span>, <span class="type">string</span> and <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> respectively.
+<span class="type">int</span>, <span class="type">string</span> and <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> respectively.
 <div class="refsect3">
-<a name="id-1.4.9.25.9.2.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -335,9 +335,8 @@ GDK_TYPE_PIXBUF);</code> will create a new <a class="link" href="GtkTreeStore.ht
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.2.10"></a><h4>Returns</h4>
+<a name="gtk-tree-store-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkTreeStore.html" title="GtkTreeStore"><span class="type">GtkTreeStore</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -348,8 +347,8 @@ gtk_tree_store_newv (<em class="parameter"><code><a href="https://developer.gnom
                      <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> *types</code></em>);</pre>
 <p>Non vararg creation function.  Used primarily by language bindings.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-newv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -370,7 +369,7 @@ gtk_tree_store_newv (<em class="parameter"><code><a href="https://developer.gnom
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.3.6"></a><h4>Returns</h4>
+<a name="gtk-tree-store-newv.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkTreeStore.html" title="GtkTreeStore"><span class="type">GtkTreeStore</span></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -382,13 +381,13 @@ gtk_tree_store_newv (<em class="parameter"><code><a href="https://developer.gnom
 gtk_tree_store_set_column_types (<em class="parameter"><code><a class="link" href="GtkTreeStore.html" title="GtkTreeStore"><span class="type">GtkTreeStore</span></a> *tree_store</code></em>,
                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_columns</code></em>,
                                  <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> *types</code></em>);</pre>
-<p>This function is meant primarily for <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObjects</span></a> that inherit from 
+<p>This function is meant primarily for <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObjects</span></a> that inherit from 
 <a class="link" href="GtkTreeStore.html" title="GtkTreeStore"><span class="type">GtkTreeStore</span></a>, and should only be used when constructing a new 
 <a class="link" href="GtkTreeStore.html" title="GtkTreeStore"><span class="type">GtkTreeStore</span></a>.  It will not function after a row has been added, 
 or a method on the <a class="link" href="GtkTreeModel.html" title="GtkTreeModel"><span class="type">GtkTreeModel</span></a> interface is called.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-set-column-types.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -429,8 +428,8 @@ The type of <em class="parameter"><code>value</code></em>
  must be convertible to the type of the
 column.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-set-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -478,8 +477,8 @@ The list is terminated by a -1. For example, to set column 0 with type
 <p>The value will be referenced by the store if it is a <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-OBJECT:CAPS"><code class="literal">G_TYPE_OBJECT</code></a>, and it
 will be copied if it is a <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><code class="literal">G_TYPE_STRING</code></a> or <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-BOXED:CAPS"><code class="literal">G_TYPE_BOXED</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -510,8 +509,8 @@ gtk_tree_store_set_valist (<em class="parameter"><code><a class="link" href="Gtk
 <p>See <a class="link" href="GtkTreeStore.html#gtk-tree-store-set" title="gtk_tree_store_set ()"><code class="function">gtk_tree_store_set()</code></a>; this version takes a <span class="type">va_list</span> for
 use by language bindings.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-set-valist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -552,8 +551,8 @@ the columns and values as two arrays, instead of varargs.  This
 function is mainly intended for language bindings or in case
 the number of columns to change is not known until run-time.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-set-valuesv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -590,7 +589,7 @@ arrays</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -605,8 +604,8 @@ gtk_tree_store_remove (<em class="parameter"><code><a class="link" href="GtkTree
 next valid row at that level, or invalidated if it previously pointed to the
 last one.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -627,10 +626,9 @@ last one.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.9.6"></a><h4>Returns</h4>
+<a name="gtk-tree-store-remove.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is still valid, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if not.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -653,8 +651,8 @@ to this new row.  The row will be empty after this function is called.  To
 fill in values, you need to call <a class="link" href="GtkTreeStore.html#gtk-tree-store-set" title="gtk_tree_store_set ()"><code class="function">gtk_tree_store_set()</code></a> or
 <a class="link" href="GtkTreeStore.html#gtk-tree-store-set-value" title="gtk_tree_store_set_value ()"><code class="function">gtk_tree_store_set_value()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-insert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -714,8 +712,8 @@ set, then <em class="parameter"><code>parent</code></em>
 this function is called.  To fill in values, you need to call
 <a class="link" href="GtkTreeStore.html#gtk-tree-store-set" title="gtk_tree_store_set ()"><code class="function">gtk_tree_store_set()</code></a> or <a class="link" href="GtkTreeStore.html#gtk-tree-store-set-value" title="gtk_tree_store_set_value ()"><code class="function">gtk_tree_store_set_value()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-insert-before.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -775,8 +773,8 @@ set, then <em class="parameter"><code>parent</code></em>
 this function is called.  To fill in values, you need to call
 <a class="link" href="GtkTreeStore.html#gtk-tree-store-set" title="gtk_tree_store_set ()"><code class="function">gtk_tree_store_set()</code></a> or <a class="link" href="GtkTreeStore.html#gtk-tree-store-set-value" title="gtk_tree_store_set_value ()"><code class="function">gtk_tree_store_set_value()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-insert-after.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -847,8 +845,8 @@ repeatedly can affect the performance of the program,
 <a class="link" href="GtkTreeStore.html#gtk-tree-store-insert-with-values" title="gtk_tree_store_insert_with_values ()"><code class="function">gtk_tree_store_insert_with_values()</code></a> should generally be preferred when
 inserting rows in a sorted tree store.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.13.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-insert-with-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -878,7 +876,7 @@ inserting rows in a sorted tree store.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -895,8 +893,8 @@ gtk_tree_store_insert_with_valuesv (<em class="parameter"><code><a class="link" 
 the columns and values as two arrays, instead of varargs.  This
 function is mainly intended for language bindings.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-insert-with-valuesv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -943,7 +941,7 @@ arrays</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -962,8 +960,8 @@ to the top level.  <em class="parameter"><code>iter</code></em>
 will be empty after this function is called.  To fill in values, you need to
 call <a class="link" href="GtkTreeStore.html#gtk-tree-store-set" title="gtk_tree_store_set ()"><code class="function">gtk_tree_store_set()</code></a> or <a class="link" href="GtkTreeStore.html#gtk-tree-store-set-value" title="gtk_tree_store_set_value ()"><code class="function">gtk_tree_store_set_value()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-prepend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1006,8 +1004,8 @@ the top level.  <em class="parameter"><code>iter</code></em>
 be empty after this function is called.  To fill in values, you need to call
 <a class="link" href="GtkTreeStore.html#gtk-tree-store-set" title="gtk_tree_store_set ()"><code class="function">gtk_tree_store_set()</code></a> or <a class="link" href="GtkTreeStore.html#gtk-tree-store-set-value" title="gtk_tree_store_set_value ()"><code class="function">gtk_tree_store_set_value()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-append.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1047,8 +1045,8 @@ gtk_tree_store_is_ancestor (<em class="parameter"><code><a class="link" href="Gt
 parent (or grandparent or great-grandparent) of <em class="parameter"><code>descendant</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-is-ancestor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1074,11 +1072,10 @@ parent (or grandparent or great-grandparent) of <em class="parameter"><code>desc
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.17.6"></a><h4>Returns</h4>
+<a name="gtk-tree-store-is-ancestor.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>iter</code></em>
 is an ancestor of <em class="parameter"><code>descendant</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1091,8 +1088,8 @@ gtk_tree_store_iter_depth (<em class="parameter"><code><a class="link" href="Gtk
 .  This will be 0 for anything on the root level, 1
 for anything down a level, etc.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-iter-depth.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1113,10 +1110,9 @@ for anything down a level, etc.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.18.6"></a><h4>Returns</h4>
+<a name="gtk-tree-store-iter-depth.returns"></a><h4>Returns</h4>
 <p> The depth of <em class="parameter"><code>iter</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1127,8 +1123,8 @@ gtk_tree_store_clear (<em class="parameter"><code><a class="link" href="GtkTreeS
 <p>Removes all rows from <em class="parameter"><code>tree_store</code></em>
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1152,8 +1148,8 @@ gtk_tree_store_iter_is_valid (<em class="parameter"><code><a class="link" href="
 purposes.</p>
 <p>Checks if the given iter is a valid iter for this <a class="link" href="GtkTreeStore.html" title="GtkTreeStore"><span class="type">GtkTreeStore</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-iter-is-valid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1174,11 +1170,10 @@ purposes.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.20.7"></a><h4>Returns</h4>
+<a name="gtk-tree-store-iter-is-valid.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the iter is valid, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the iter is invalid.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1194,8 +1189,8 @@ indicated by <em class="parameter"><code>new_order</code></em>
 . Note that this function only works with
 unsorted stores.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-reorder.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1223,7 +1218,7 @@ i.e. <em class="parameter"><code>new_order</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1238,8 +1233,8 @@ gtk_tree_store_swap (<em class="parameter"><code><a class="link" href="GtkTreeSt
 . Note that this function
 only works with unsorted stores.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-swap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1264,7 +1259,7 @@ only works with unsorted stores.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1285,8 +1280,8 @@ works with unsorted stores. If <em class="parameter"><code>position</code></em>
  will be
 moved to the end of the level.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-move-before.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1311,7 +1306,7 @@ moved to the end of the level.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1332,8 +1327,8 @@ works with unsorted stores. If <em class="parameter"><code>position</code></em>
  will be moved
 to the start of the level.</p>
 <div class="refsect3">
-<a name="id-1.4.9.25.9.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-store-move-after.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1358,7 +1353,7 @@ to the start of the level.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1378,7 +1373,6 @@ to the start of the level.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

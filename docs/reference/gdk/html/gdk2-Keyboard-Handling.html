@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Key Values</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Key Values: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Event-Structures.html" title="Event Structures">
 <link rel="next" href="gdk2-Selections.html" title="Selections">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Keyboard-Handling.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -206,7 +206,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Keyboard-Handling.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -216,24 +216,24 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap-direction-changed" title="The “direction-changed” signal">direction-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap-keys-changed" title="The “keys-changed” signal">keys-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap-state-changed" title="The “state-changed” signal">state-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <a name="GdkKeymap"></a><div class="refsect1">
 <a name="gdk2-Keyboard-Handling.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -252,7 +252,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Keyboard-Handling.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GdkKeymap
 </pre>
 </div>
@@ -342,9 +342,8 @@ contains this keyval, however, so you don't normally need to call
 gdk_keymap_get_default (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Returns the <a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><span class="type">GdkKeymap</span></a> attached to the default display.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.2.5"></a><h4>Returns</h4>
+<a name="gdk-keymap-get-default.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><span class="type">GdkKeymap</span></a> attached to the default display.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -355,8 +354,8 @@ gdk_keymap_get_for_display (<em class="parameter"><code><a class="link" href="Gd
 <p>Returns the <a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><span class="type">GdkKeymap</span></a> attached to <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-get-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -370,12 +369,11 @@ gdk_keymap_get_for_display (<em class="parameter"><code><a class="link" href="Gd
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.3.6"></a><h4>Returns</h4>
+<a name="gdk-keymap-get-for-display.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><span class="type">GdkKeymap</span></a> attached to <em class="parameter"><code>display</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -393,8 +391,8 @@ the same as the current keyboard state.</p>
  is deprecated and will stop
 to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-keymap-get-for-display" title="gdk_keymap_get_for_display ()"><code class="function">gdk_keymap_get_for_display()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-lookup-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -415,10 +413,9 @@ to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-k
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.4.7"></a><h4>Returns</h4>
+<a name="gdk-keymap-lookup-key.returns"></a><h4>Returns</h4>
 <p> a keyval, or 0 if none was mapped to the given <em class="parameter"><code>key</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -468,12 +465,12 @@ be masked out.
 7
 8</pre></td>
         <td class="listing_code"><pre class="programlisting"><span class="comment">/* We want to ignore irrelevant modifiers like ScrollLock */</span>
-<span class="preproc">#define</span><span class="normal"> </span><span class="function">ALL_ACCELS_MASK</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">GDK_CONTROL_MASK </span><span class="symbol">|</span><span class="normal"> GDK_SHIFT_MASK </span><span class="symbol">|</span><span class="normal"> GDK_MOD1_MASK</span><span class="symbol">)</span>
+<span class="preproc">#define</span><span class="normal"> </span><span class="function">ALL_ACCELS_MASK</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="gdk2-Windows.html#GDK-CONTROL-MASK:CAPS">GDK_CONTROL_MASK</a> </span><span class="symbol">|</span><span class="normal"> <a href="gdk2-Windows.html#GDK-SHIFT-MASK:CAPS">GDK_SHIFT_MASK</a> </span><span class="symbol">|</span><span class="normal"> <a href="gdk2-Windows.html#GDK-MOD1-MASK:CAPS">GDK_MOD1_MASK</a></span><span class="symbol">)</span>
 <span class="function"><a href="gdk2-Keyboard-Handling.html#gdk-keymap-translate-keyboard-state">gdk_keymap_translate_keyboard_state</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">keymap</span><span class="symbol">,</span><span class="normal"> event</span><span class="symbol">-&gt;</span><span class="normal">hardware_keycode</span><span class="symbol">,</span>
 <span class="normal">                                     event</span><span class="symbol">-&gt;</span><span class="normal">state</span><span class="symbol">,</span><span class="normal"> event</span><span class="symbol">-&gt;</span><span class="normal">group</span><span class="symbol">,</span>
 <span class="normal">                                     </span><span class="symbol">&amp;</span><span class="normal">keyval</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">consumed</span><span class="symbol">);</span>
-<span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">keyval </span><span class="symbol">==</span><span class="normal"> GDK_PLUS </span><span class="symbol">&amp;&amp;</span>
-<span class="normal">    </span><span class="symbol">(</span><span class="normal">event</span><span class="symbol">-&gt;</span><span class="normal">state </span><span class="symbol">&amp;</span><span class="normal"> </span><span class="symbol">~</span><span class="normal">consumed </span><span class="symbol">&amp;</span><span class="normal"> ALL_ACCELS_MASK</span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">==</span><span class="normal"> GDK_CONTROL_MASK</span><span class="symbol">)</span>
+<span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">keyval </span><span class="symbol">==</span><span class="normal"> <a href="gdk2-Cursors.html#GDK-PLUS:CAPS">GDK_PLUS</a> </span><span class="symbol">&amp;&amp;</span>
+<span class="normal">    </span><span class="symbol">(</span><span class="normal">event</span><span class="symbol">-&gt;</span><span class="normal">state </span><span class="symbol">&amp;</span><span class="normal"> </span><span class="symbol">~</span><span class="normal">consumed </span><span class="symbol">&amp;</span><span class="normal"> ALL_ACCELS_MASK</span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">==</span><span class="normal"> <a href="gdk2-Windows.html#GDK-CONTROL-MASK:CAPS">GDK_CONTROL_MASK</a></span><span class="symbol">)</span>
 <span class="normal">  </span><span class="comment">/* Control was pressed */</span></pre></td>
       </tr>
     </tbody>
@@ -520,8 +517,8 @@ not <code class="literal">&lt;Control&gt;&lt;Shift&gt;plus</code>,
  is deprecated and will stop
 to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-keymap-get-for-display" title="gdk_keymap_get_for_display ()"><code class="function">gdk_keymap_get_for_display()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.5.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-translate-keyboard-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -573,9 +570,8 @@ determine the group or level, or <a href="https://developer.gnome.org/glib/unsta
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.5.8"></a><h4>Returns</h4>
+<a name="gdk-keymap-translate-keyboard-state.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there was a keyval bound to the keycode/state/group</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -602,8 +598,8 @@ with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.h
  is deprecated and will stop
 to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-keymap-get-for-display" title="gdk_keymap_get_for_display ()"><code class="function">gdk_keymap_get_for_display()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-get-entries-for-keyval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -634,9 +630,8 @@ to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-k
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.6.7"></a><h4>Returns</h4>
+<a name="gdk-keymap-get-entries-for-keyval.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if keys were found and returned</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -661,8 +656,8 @@ keyboard group and level. See <a class="link" href="gdk2-Keyboard-Handling.html#
  is deprecated and will stop
 to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-keymap-get-for-display" title="gdk_keymap_get_for_display ()"><code class="function">gdk_keymap_get_for_display()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-get-entries-for-keycode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -700,9 +695,8 @@ and <em class="parameter"><code>keyvals</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.7.7"></a><h4>Returns</h4>
+<a name="gdk-keymap-get-entries-for-keycode.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there were any entries</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -718,8 +712,8 @@ to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-k
 Returns the direction of the keymap.
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.10.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-get-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -733,11 +727,10 @@ Returns the direction of the keymap.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.8.7"></a><h4>Returns</h4>
-<p> <code class="literal">PANGO_DIRECTION_LTR</code> or <code class="literal">PANGO_DIRECTION_RTL</code>
-if it can determine the direction. <code class="literal">PANGO_DIRECTION_NEUTRAL</code>
+<a name="gdk-keymap-get-direction.returns"></a><h4>Returns</h4>
+<p> <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Bidirectional-Text.html#PANGO-DIRECTION-LTR:CAPS"><code class="literal">PANGO_DIRECTION_LTR</code></a> or <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Bidirectional-Text.html#PANGO-DIRECTION-RTL:CAPS"><code class="literal">PANGO_DIRECTION_RTL</code></a>
+if it can determine the direction. <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Bidirectional-Text.html#PANGO-DIRECTION-NEUTRAL:CAPS"><code class="literal">PANGO_DIRECTION_NEUTRAL</code></a>
 otherwise.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -751,8 +744,8 @@ languages are in use.</p>
  is deprecated and will stop
 to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-keymap-get-for-display" title="gdk_keymap_get_for_display ()"><code class="function">gdk_keymap_get_for_display()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-have-bidi-layouts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -766,11 +759,10 @@ to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-k
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.9.7"></a><h4>Returns</h4>
+<a name="gdk-keymap-have-bidi-layouts.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there are layouts in both directions, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -779,8 +771,8 @@ to work in GTK+ 3.0. Use <a class="link" href="gdk2-Keyboard-Handling.html#gdk-k
 gdk_keymap_get_caps_lock_state (<em class="parameter"><code><a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><span class="type">GdkKeymap</span></a> *keymap</code></em>);</pre>
 <p>Returns whether the Caps Lock modifer is locked.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-get-caps-lock-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -794,11 +786,10 @@ gdk_keymap_get_caps_lock_state (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.10.6"></a><h4>Returns</h4>
+<a name="gdk-keymap-get-caps-lock-state.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if Caps Lock is on</p>
-<p></p>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -819,8 +810,8 @@ it finds, whereas this function sets all matching virtual modifiers.</p>
 <p>This function is useful when matching key events against
 accelerators.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.11.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-add-virtual-modifiers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -840,7 +831,7 @@ accelerators.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -856,8 +847,8 @@ Mod3,...) and set the corresponding bits in <em class="parameter"><code>state</c
 <p>This function is useful when matching key events against
 accelerators.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keymap-map-virtual-modifiers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -878,15 +869,14 @@ accelerators.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.12.7"></a><h4>Returns</h4>
+<a name="gdk-keymap-map-virtual-modifiers.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if no virtual modifiers were mapped to the
 same non-virtual modifier. Note that <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is also returned
 if a virtual modifier is mapped to a non-virtual modifier that
 was already set in <em class="parameter"><code>state</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -903,8 +893,8 @@ The names are the same as those in the <code class="filename">&lt;gdk/gdkkeysyms
 but without the leading "GDK_".
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.10.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -918,7 +908,7 @@ but without the leading "GDK_".
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.13.7"></a><h4>Returns</h4>
+<a name="gdk-keyval-name.returns"></a><h4>Returns</h4>
 <p> a string containing the name of the key,
 or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>keyval</code></em>
 is not a valid key. The string should not be
@@ -939,8 +929,8 @@ but without the leading "GDK_KEY_".</p>
 Converts a key name to a key value.
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.10.14.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-from-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -954,10 +944,9 @@ Converts a key name to a key value.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.14.7"></a><h4>Returns</h4>
+<a name="gdk-keyval-from-name.returns"></a><h4>Returns</h4>
 <p> the corresponding key value, or <code class="literal">GDK_KEY_VoidSymbol</code>
 if the key name is not a valid key</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -971,8 +960,8 @@ gdk_keyval_convert_case (<em class="parameter"><code><a href="https://developer.
 .
 Examples of keyvals are <span class="type">GDK_a</span>, <span class="type">GDK_Enter</span>, <span class="type">GDK_F1</span>, etc.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-convert-case.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1009,8 +998,8 @@ gdk_keyval_to_upper (<em class="parameter"><code><a href="https://developer.gnom
 Converts a key value to upper case, if applicable.
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.10.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-to-upper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1024,12 +1013,11 @@ Converts a key value to upper case, if applicable.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.16.6"></a><h4>Returns</h4>
+<a name="gdk-keyval-to-upper.returns"></a><h4>Returns</h4>
 <p>the upper case form of <em class="parameter"><code>keyval</code></em>
 , or <em class="parameter"><code>keyval</code></em>
 itself if it is already
 in upper case or it is not subject to case conversion.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1041,8 +1029,8 @@ gdk_keyval_to_lower (<em class="parameter"><code><a href="https://developer.gnom
 Converts a key value to lower case, if applicable.
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.10.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-to-lower.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1056,12 +1044,11 @@ Converts a key value to lower case, if applicable.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.17.6"></a><h4>Returns</h4>
+<a name="gdk-keyval-to-lower.returns"></a><h4>Returns</h4>
 <p>the lower case form of <em class="parameter"><code>keyval</code></em>
 , or <em class="parameter"><code>keyval</code></em>
 itself if it is already
 in lower case or it is not subject to case conversion.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1073,8 +1060,8 @@ gdk_keyval_is_upper (<em class="parameter"><code><a href="https://developer.gnom
 Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the given key value is in upper case.
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.10.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-is-upper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1088,12 +1075,11 @@ Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.18.6"></a><h4>Returns</h4>
+<a name="gdk-keyval-is-upper.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>keyval</code></em>
 is in upper case, or if <em class="parameter"><code>keyval</code></em>
 is not subject to
 case conversion.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1105,8 +1091,8 @@ gdk_keyval_is_lower (<em class="parameter"><code><a href="https://developer.gnom
 Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the given key value is in lower case.
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.10.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-is-lower.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1120,12 +1106,11 @@ Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.19.6"></a><h4>Returns</h4>
+<a name="gdk-keyval-is-lower.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>keyval</code></em>
 is in lower case, or if <em class="parameter"><code>keyval</code></em>
 is not subject to
 case conversion.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1136,8 +1121,8 @@ gdk_keyval_to_unicode (<em class="parameter"><code><a href="https://developer.gn
 <p>Convert from a GDK key symbol to the corresponding ISO10646 (Unicode)
 character.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-keyval-to-unicode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1151,10 +1136,9 @@ character.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.20.6"></a><h4>Returns</h4>
+<a name="gdk-keyval-to-unicode.returns"></a><h4>Returns</h4>
 <p> the corresponding unicode character, or 0 if there
 is no corresponding character.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1164,8 +1148,8 @@ is no corresponding character.</p>
 gdk_unicode_to_keyval (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> wc</code></em>);</pre>
 <p>Convert from a ISO10646 character to a key symbol.</p>
 <div class="refsect3">
-<a name="id-1.2.21.10.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-unicode-to-keyval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1179,11 +1163,10 @@ gdk_unicode_to_keyval (<em class="parameter"><code><a href="https://developer.gn
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.21.10.21.6"></a><h4>Returns</h4>
+<a name="gdk-unicode-to-keyval.returns"></a><h4>Returns</h4>
 <p> the corresponding GDK key symbol, if one exists.
 or, if there is no corresponding symbol,
 wc | 0x01000000</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -1215,8 +1198,8 @@ A <span class="structname">GdkKeymapKey</span> is a hardware key that can
 be mapped to a keyval.
 </p>
 <div class="refsect3">
-<a name="id-1.2.21.11.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkKeymapKey.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1261,8 +1244,8 @@ user_function (<a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><spa
 <p>The ::direction-changed signal gets emitted when the direction of
 the keymap changes.</p>
 <div class="refsect3">
-<a name="id-1.2.21.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkKeymap-direction-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1282,8 +1265,8 @@ the keymap changes.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.0</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: 2.0</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1295,8 +1278,8 @@ user_function (<a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><spa
 <em class="parameter"><code>keymap</code></em>
  changes.</p>
 <div class="refsect3">
-<a name="id-1.2.21.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkKeymap-keys-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1316,8 +1299,8 @@ user_function (<a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><spa
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.2</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1329,8 +1312,8 @@ user_function (<a class="link" href="gdk2-Keyboard-Handling.html#GdkKeymap"><spa
 keyboard changes, e.g when Caps Lock is turned on or off.
 See <a class="link" href="gdk2-Keyboard-Handling.html#gdk-keymap-get-caps-lock-state" title="gdk_keymap_get_caps_lock_state ()"><code class="function">gdk_keymap_get_caps_lock_state()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.21.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkKeymap-state-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1350,13 +1333,12 @@ See <a class="link" href="gdk2-Keyboard-Handling.html#gdk-keymap-get-caps-lock-s
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.16</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -60,9 +60,9 @@ _gtk_marshal_OBJECT__VOID (GClosure     *closure,
 {
   typedef GObject* (*GMarshalFunc_OBJECT__VOID) (gpointer     data1,
                                                  gpointer     data2);
-  register GMarshalFunc_OBJECT__VOID callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_OBJECT__VOID callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   GObject* v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -100,9 +100,9 @@ _gtk_marshal_VOID__ENUM_OBJECT_DOUBLE (GClosure     *closure,
                                                          gpointer     arg_2,
                                                          gdouble      arg_3,
                                                          gpointer     data2);
-  register GMarshalFunc_VOID__ENUM_OBJECT_DOUBLE callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__ENUM_OBJECT_DOUBLE callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 

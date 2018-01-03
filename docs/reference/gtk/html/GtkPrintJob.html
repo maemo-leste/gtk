@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkPrintJob</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkPrintJob: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="Printing.html" title="Printing">
 <link rel="prev" href="GtkPrinter.html" title="GtkPrinter">
 <link rel="next" href="GtkPrintUnixDialog.html" title="GtkPrintUnixDialog">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkPrintJob.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -134,7 +134,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrintJob.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -175,7 +175,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrintJob.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -184,13 +184,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkPrintJob.html#GtkPrintJob-status-changed" title="The “status-changed” signal">status-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkPrintJob.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -203,7 +203,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrintJob.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkPrintJob
 </pre>
 </div>
@@ -245,8 +245,8 @@ The type of callback that is passed to <a class="link" href="GtkPrintJob.html#gt
 It is called when the print job has been completely sent.
 </p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkPrintJobCompleteFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -283,8 +283,8 @@ gtk_print_job_new (<em class="parameter"><code>const <a href="https://developer.
                    <em class="parameter"><code><a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> *page_setup</code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkPrintJob.html" title="GtkPrintJob"><span class="type">GtkPrintJob</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -315,11 +315,10 @@ gtk_print_job_new (<em class="parameter"><code>const <a href="https://developer.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.3.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkPrintJob.html" title="GtkPrintJob"><span class="type">GtkPrintJob</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -328,8 +327,8 @@ gtk_print_job_new (<em class="parameter"><code>const <a href="https://developer.
 gtk_print_job_get_settings (<em class="parameter"><code><a class="link" href="GtkPrintJob.html" title="GtkPrintJob"><span class="type">GtkPrintJob</span></a> *job</code></em>);</pre>
 <p>Gets the <a class="link" href="GtkPrintSettings.html" title="GtkPrintSettings"><span class="type">GtkPrintSettings</span></a> of the print job.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-get-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -343,12 +342,12 @@ gtk_print_job_get_settings (<em class="parameter"><code><a class="link" href="Gt
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.4.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-get-settings.returns"></a><h4>Returns</h4>
 <p> the settings of <em class="parameter"><code>job</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -357,8 +356,8 @@ gtk_print_job_get_settings (<em class="parameter"><code><a class="link" href="Gt
 gtk_print_job_get_printer (<em class="parameter"><code><a class="link" href="GtkPrintJob.html" title="GtkPrintJob"><span class="type">GtkPrintJob</span></a> *job</code></em>);</pre>
 <p>Gets the <a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> of the print job.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-get-printer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -372,12 +371,12 @@ gtk_print_job_get_printer (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.5.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-get-printer.returns"></a><h4>Returns</h4>
 <p> the printer of <em class="parameter"><code>job</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -386,8 +385,8 @@ gtk_print_job_get_printer (<em class="parameter"><code><a class="link" href="Gtk
 gtk_print_job_get_title (<em class="parameter"><code><a class="link" href="GtkPrintJob.html" title="GtkPrintJob"><span class="type">GtkPrintJob</span></a> *job</code></em>);</pre>
 <p>Gets the job title.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -401,12 +400,11 @@ gtk_print_job_get_title (<em class="parameter"><code><a class="link" href="GtkPr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.6.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-get-title.returns"></a><h4>Returns</h4>
 <p> the title of <em class="parameter"><code>job</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -415,8 +413,8 @@ gtk_print_job_get_title (<em class="parameter"><code><a class="link" href="GtkPr
 gtk_print_job_get_status (<em class="parameter"><code><a class="link" href="GtkPrintJob.html" title="GtkPrintJob"><span class="type">GtkPrintJob</span></a> *job</code></em>);</pre>
 <p>Gets the status of the print job.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-get-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -430,12 +428,11 @@ gtk_print_job_get_status (<em class="parameter"><code><a class="link" href="GtkP
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.7.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-get-status.returns"></a><h4>Returns</h4>
 <p> the status of <em class="parameter"><code>job</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -450,8 +447,8 @@ by the platforms printing system (typically PostScript,
 but on many platforms PDF may work too). See 
 <a class="link" href="GtkPrinter.html#gtk-printer-accepts-pdf" title="gtk_printer_accepts_pdf ()"><code class="function">gtk_printer_accepts_pdf()</code></a> and <a class="link" href="GtkPrinter.html#gtk-printer-accepts-ps" title="gtk_printer_accepts_ps ()"><code class="function">gtk_printer_accepts_ps()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-set-source-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -477,11 +474,10 @@ but on many platforms PDF may work too). See
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.8.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-set-source-file.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if an error occurred</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -492,8 +488,8 @@ gtk_print_job_get_surface (<em class="parameter"><code><a class="link" href="Gtk
 <p>Gets a cairo surface onto which the pages of
 the print job should be rendered.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-get-surface.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -514,12 +510,12 @@ the print job should be rendered.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.9.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-get-surface.returns"></a><h4>Returns</h4>
 <p> the cairo surface of <em class="parameter"><code>job</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -531,8 +527,8 @@ gtk_print_job_send (<em class="parameter"><code><a class="link" href="GtkPrintJo
                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> dnotify</code></em>);</pre>
 <p>Sends the print job off to the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-send.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -564,7 +560,7 @@ gtk_print_job_send (<em class="parameter"><code><a class="link" href="GtkPrintJo
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -579,8 +575,8 @@ and when the print job actually reaches the printer.</p>
 <p>This function is often implemented using some form of polling, so it should
 not be enabled unless needed.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-set-track-print-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -600,7 +596,7 @@ not be enabled unless needed.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -610,8 +606,8 @@ gtk_print_job_get_track_print_status (<em class="parameter"><code><a class="link
 <p>Returns wheter jobs will be tracked after printing.
 For details, see <a class="link" href="GtkPrintJob.html#gtk-print-job-set-track-print-status" title="gtk_print_job_set_track_print_status ()"><code class="function">gtk_print_job_set_track_print_status()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-print-job-get-track-print-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -625,11 +621,10 @@ For details, see <a class="link" href="GtkPrintJob.html#gtk-print-job-set-track-
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.8.10.12.6"></a><h4>Returns</h4>
+<a name="gtk-print-job-get-track-print-status.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if print job status will be reported after printing</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -692,8 +687,8 @@ user_function (<a class="link" href="GtkPrintJob.html" title="GtkPrintJob"><span
 <p>Gets emitted when the status of a job changes. The signal handler
 can use <a class="link" href="GtkPrintJob.html#gtk-print-job-get-status" title="gtk_print_job_get_status ()"><code class="function">gtk_print_job_get_status()</code></a> to obtain the new status.</p>
 <div class="refsect3">
-<a name="id-1.4.16.8.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkPrintJob-status-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -713,13 +708,12 @@ can use <a class="link" href="GtkPrintJob.html#gtk-print-job-get-status" title="
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.10</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

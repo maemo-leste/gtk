@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkImageMenuItem</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkImageMenuItem: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkMenuItem.html" title="GtkMenuItem">
 <link rel="next" href="GtkRadioMenuItem.html" title="GtkRadioMenuItem">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkImageMenuItem.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -135,7 +135,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkImageMenuItem.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -169,7 +169,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkImageMenuItem.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -182,7 +182,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkImageMenuItem.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -226,8 +226,8 @@ gtk_image_menu_item_set_image (<em class="parameter"><code><a class="link" href=
 Note that it depends on the show-menu-images setting whether
 the image will be displayed or not.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-set-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -257,8 +257,8 @@ gtk_image_menu_item_get_image (<em class="parameter"><code><a class="link" href=
 .
 See <a class="link" href="GtkImageMenuItem.html#gtk-image-menu-item-set-image" title="gtk_image_menu_item_set_image ()"><code class="function">gtk_image_menu_item_set_image()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -272,7 +272,7 @@ See <a class="link" href="GtkImageMenuItem.html#gtk-image-menu-item-set-image" t
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.3.6"></a><h4>Returns</h4>
+<a name="gtk-image-menu-item-get-image.returns"></a><h4>Returns</h4>
 <p> the widget set as image of <em class="parameter"><code>image_menu_item</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -285,9 +285,8 @@ See <a class="link" href="GtkImageMenuItem.html#gtk-image-menu-item-set-image" t
 gtk_image_menu_item_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkImageMenuItem.html" title="GtkImageMenuItem"><span class="type">GtkImageMenuItem</span></a> with an empty label.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.4.5"></a><h4>Returns</h4>
+<a name="gtk-image-menu-item-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkImageMenuItem.html" title="GtkImageMenuItem"><span class="type">GtkImageMenuItem</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -305,8 +304,8 @@ appropriate path for the menu item, use <a class="link" href="gtk2-Stock-Items.h
 standard accelerator for the stock item, and if one is found, call
 <a class="link" href="gtk2-Accelerator-Maps.html#gtk-accel-map-add-entry" title="gtk_accel_map_add_entry ()"><code class="function">gtk_accel_map_add_entry()</code></a> to register it.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-new-from-stock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -328,9 +327,8 @@ accelerator to, or <a href="https://developer.gnome.org/glib/unstable/glib-Stand
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.5.7"></a><h4>Returns</h4>
+<a name="gtk-image-menu-item-new-from-stock.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkImageMenuItem.html" title="GtkImageMenuItem"><span class="type">GtkImageMenuItem</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -340,8 +338,8 @@ accelerator to, or <a href="https://developer.gnome.org/glib/unstable/glib-Stand
 gtk_image_menu_item_new_with_label (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkImageMenuItem.html" title="GtkImageMenuItem"><span class="type">GtkImageMenuItem</span></a> containing a label.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-new-with-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -355,9 +353,8 @@ gtk_image_menu_item_new_with_label (<em class="parameter"><code>const <a href="h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.6.6"></a><h4>Returns</h4>
+<a name="gtk-image-menu-item-new-with-label.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkImageMenuItem.html" title="GtkImageMenuItem"><span class="type">GtkImageMenuItem</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -370,8 +367,8 @@ will be created using <a class="link" href="GtkLabel.html#gtk-label-new-with-mne
 in <em class="parameter"><code>label</code></em>
  indicate the mnemonic for the menu item.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-new-with-mnemonic.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -386,9 +383,8 @@ mnemonic character</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.7.6"></a><h4>Returns</h4>
+<a name="gtk-image-menu-item-new-with-mnemonic.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkImageMenuItem.html" title="GtkImageMenuItem"><span class="type">GtkImageMenuItem</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -399,8 +395,8 @@ gtk_image_menu_item_get_use_stock (<em class="parameter"><code><a class="link" h
 <p>Checks whether the label set in the menuitem is used as a
 stock id to select the stock item for the item.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-get-use-stock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -414,12 +410,11 @@ stock id to select the stock item for the item.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.8.6"></a><h4>Returns</h4>
+<a name="gtk-image-menu-item-get-use-stock.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the label set in the menuitem is used as a
 stock id to select the stock item for the item</p>
-<p></p>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -430,8 +425,8 @@ gtk_image_menu_item_set_use_stock (<em class="parameter"><code><a class="link" h
 <p>If <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the label set in the menuitem is used as a
 stock id to select the stock item for the item.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-set-use-stock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -451,7 +446,7 @@ stock id to select the stock item for the item.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -462,8 +457,8 @@ gtk_image_menu_item_get_always_show_image
 <p>Returns whether the menu item will ignore the <a class="link" href="GtkSettings.html#GtkSettings--gtk-menu-images" title="The “gtk-menu-images” property"><span class="type">“gtk-menu-images”</span></a>
 setting and always show the image, if available.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-get-always-show-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -477,11 +472,10 @@ setting and always show the image, if available.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.10.6"></a><h4>Returns</h4>
+<a name="gtk-image-menu-item-get-always-show-image.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the menu item will always show the image</p>
-<p></p>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -495,8 +489,8 @@ setting and always show the image, if available.</p>
 <p>Use this property if the menuitem would be useless or hard to use
 without the image.</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-set-always-show-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -516,7 +510,7 @@ without the image.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -532,8 +526,8 @@ and <a class="link" href="GtkMenuItem.html#gtk-menu-item-set-label" title="gtk_m
 <p>If you want this menu item to have changeable accelerators then
 you shouldnt need this (see <a class="link" href="GtkImageMenuItem.html#gtk-image-menu-item-new-from-stock" title="gtk_image_menu_item_new_from_stock ()"><code class="function">gtk_image_menu_item_new_from_stock()</code></a>).</p>
 <div class="refsect3">
-<a name="id-1.4.10.8.10.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-image-menu-item-set-accel-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -553,7 +547,7 @@ you shouldnt need this (see <a class="link" href="GtkImageMenuItem.html#gtk-imag
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -572,7 +566,7 @@ you shouldnt need this (see <a class="link" href="GtkImageMenuItem.html#gtk-imag
 <pre class="programlisting">  “accel-group”              <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *</pre>
 <p>The Accel Group to use for stock accelerator keys</p>
 <p>Flags: Write</p>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -585,7 +579,7 @@ setting and always show the image, if available.</p>
 without the image.</p>
 <p>Flags: Read / Write / Construct</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -602,12 +596,11 @@ without the image.</p>
 stock id to select the stock item for the item.</p>
 <p>Flags: Read / Write / Construct</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.16</p>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

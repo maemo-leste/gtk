@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTextTagTable</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTextTagTable: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TextWidgetObjects.html" title="Multiline Text Editor">
 <link rel="prev" href="GtkTextTag.html" title="GtkTextTag">
 <link rel="next" href="GtkTextView.html" title="GtkTextView">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTextTagTable.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -103,7 +103,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTextTagTable.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -113,24 +113,24 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTextTagTable.html#GtkTextTagTable-tag-added" title="The “tag-added” signal">tag-added</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTextTagTable.html#GtkTextTagTable-tag-changed" title="The “tag-changed” signal">tag-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTextTagTable.html#GtkTextTagTable-tag-removed" title="The “tag-removed” signal">tag-removed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkTextTagTable.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -143,7 +143,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTextTagTable.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkTextTagTable
 </pre>
 </div>
@@ -171,7 +171,7 @@ supports adding tags by specifying "tag" as the "type"
 attribute of a &lt;child&gt; element.
 </p>
 <div class="example">
-<a name="id-1.4.8.7.9.3.3"></a><p class="title"><b>Example 20. A UI definition fragment specifying tags</b></p>
+<a name="id-1.4.8.7.9.3.3"></a><p class="title"><b>Example 15. A UI definition fragment specifying tags</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -221,9 +221,8 @@ gtk_text_tag_table_new (<em class="parameter"><code><span class="type">void</spa
 <p>Creates a new <a class="link" href="GtkTextTagTable.html" title="GtkTextTagTable"><span class="type">GtkTextTagTable</span></a>. The table contains no tags by
 default.</p>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.3.5"></a><h4>Returns</h4>
+<a name="gtk-text-tag-table-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkTextTagTable.html" title="GtkTextTagTable"><span class="type">GtkTextTagTable</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -238,8 +237,8 @@ in the table.</p>
  must not be in a tag table already, and may not have
 the same name as an already-added tag.</p>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-tag-table-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -270,8 +269,8 @@ gtk_text_tag_table_remove (<em class="parameter"><code><a class="link" href="Gtk
 reference to the tag, so be careful - the tag will end
 up destroyed if you don't have a reference to it.</p>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-tag-table-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -300,8 +299,8 @@ gtk_text_tag_table_lookup (<em class="parameter"><code><a class="link" href="Gtk
                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
 <p>Look up a named tag.</p>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-tag-table-lookup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -322,7 +321,7 @@ gtk_text_tag_table_lookup (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.6.6"></a><h4>Returns</h4>
+<a name="gtk-text-tag-table-lookup.returns"></a><h4>Returns</h4>
 <p> The tag, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none by that name is in the table. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -341,8 +340,8 @@ gtk_text_tag_table_foreach (<em class="parameter"><code><a class="link" href="Gt
 Note that the table may not be modified while iterating 
 over it (you can't add/remove tags).</p>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-tag-table-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -375,8 +374,8 @@ over it (you can't add/remove tags).</p>
 gtk_text_tag_table_get_size (<em class="parameter"><code><a class="link" href="GtkTextTagTable.html" title="GtkTextTagTable"><span class="type">GtkTextTagTable</span></a> *table</code></em>);</pre>
 <p>Returns the size of the table (number of tags)</p>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-tag-table-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -390,10 +389,9 @@ gtk_text_tag_table_get_size (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.7.10.8.6"></a><h4>Returns</h4>
+<a name="gtk-text-tag-table-get-size.returns"></a><h4>Returns</h4>
 <p> number of tags in <em class="parameter"><code>table</code></em>
 </p>
-<p></p>
 </div>
 </div>
 </div>
@@ -417,8 +415,8 @@ user_function (<a class="link" href="GtkTextTagTable.html" title="GtkTextTagTabl
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.8.7.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTextTagTable-tag-added.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -438,7 +436,7 @@ user_function (<a class="link" href="GtkTextTagTable.html" title="GtkTextTagTabl
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -451,8 +449,8 @@ user_function (<a class="link" href="GtkTextTagTable.html" title="GtkTextTagTabl
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.8.7.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTextTagTable-tag-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -472,7 +470,7 @@ user_function (<a class="link" href="GtkTextTagTable.html" title="GtkTextTagTabl
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -484,8 +482,8 @@ user_function (<a class="link" href="GtkTextTagTable.html" title="GtkTextTagTabl
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.8.7.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTextTagTable-tag-removed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -505,12 +503,11 @@ user_function (<a class="link" href="GtkTextTagTable.html" title="GtkTextTagTabl
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

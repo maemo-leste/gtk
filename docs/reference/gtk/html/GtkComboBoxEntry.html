@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkComboBoxEntry</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkComboBoxEntry: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkComboBoxText.html" title="GtkComboBoxText">
 <link rel="next" href="GtkMenu.html" title="GtkMenu">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkComboBoxEntry.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -87,7 +87,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkComboBoxEntry.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -102,7 +102,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkComboBoxEntry.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -115,7 +115,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkComboBoxEntry.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -194,11 +194,10 @@ gtk_combo_box_entry_new (<em class="parameter"><code><span class="type">void</sp
 construction, you should set a model using <a class="link" href="GtkComboBox.html#gtk-combo-box-set-model" title="gtk_combo_box_set_model ()"><code class="function">gtk_combo_box_set_model()</code></a> and a
 text column using <a class="link" href="GtkComboBoxEntry.html#gtk-combo-box-entry-set-text-column" title="gtk_combo_box_entry_set_text_column ()"><code class="function">gtk_combo_box_entry_set_text_column()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.4.10.2.7"></a><h4>Returns</h4>
+<a name="gtk-combo-box-entry-new.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkComboBoxEntry.html" title="GtkComboBoxEntry"><span class="type">GtkComboBoxEntry</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -217,8 +216,8 @@ strings from the list, just modify <em class="parameter"><code>model</code></em>
  using its data manipulation
 API.</p>
 <div class="refsect3">
-<a name="id-1.4.10.4.10.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-box-entry-new-with-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -240,11 +239,10 @@ to get the strings from.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.4.10.3.8"></a><h4>Returns</h4>
+<a name="gtk-combo-box-entry-new-with-model.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkComboBoxEntry.html" title="GtkComboBoxEntry"><span class="type">GtkComboBoxEntry</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -259,11 +257,10 @@ the following convenience functions: <a class="link" href="GtkComboBox.html#gtk-
 <a class="link" href="GtkComboBox.html#gtk-combo-box-insert-text" title="gtk_combo_box_insert_text ()"><code class="function">gtk_combo_box_insert_text()</code></a>, <a class="link" href="GtkComboBox.html#gtk-combo-box-prepend-text" title="gtk_combo_box_prepend_text ()"><code class="function">gtk_combo_box_prepend_text()</code></a> and
 <a class="link" href="GtkComboBox.html#gtk-combo-box-remove-text" title="gtk_combo_box_remove_text ()"><code class="function">gtk_combo_box_remove_text()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.4.10.4.7"></a><h4>Returns</h4>
+<a name="gtk-combo-box-entry-new-text.returns"></a><h4>Returns</h4>
 <p> A new text <a class="link" href="GtkComboBoxEntry.html" title="GtkComboBoxEntry"><span class="type">GtkComboBoxEntry</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -280,8 +277,8 @@ gtk_combo_box_entry_set_text_column (<em class="parameter"><code><a class="link"
 to be <em class="parameter"><code>text_column</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.10.4.10.5.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-box-entry-set-text-column.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -302,7 +299,7 @@ to get the strings from.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -316,8 +313,8 @@ gtk_combo_box_entry_get_text_column (<em class="parameter"><code><a class="link"
 <p>Returns the column which <em class="parameter"><code>entry_box</code></em>
  is using to get the strings from.</p>
 <div class="refsect3">
-<a name="id-1.4.10.4.10.6.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-combo-box-entry-get-text-column.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -331,12 +328,11 @@ gtk_combo_box_entry_get_text_column (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.4.10.6.8"></a><h4>Returns</h4>
+<a name="gtk-combo-box-entry-get-text-column.returns"></a><h4>Returns</h4>
 <p> A column in the data source model of <em class="parameter"><code>entry_box</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -368,7 +364,6 @@ gtk_combo_box_entry_get_text_column (<em class="parameter"><code><a class="link"
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

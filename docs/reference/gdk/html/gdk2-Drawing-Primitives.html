@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Drawing Primitives</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Drawing Primitives: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Graphics-Contexts.html" title="Graphics Contexts">
 <link rel="next" href="gdk2-Bitmaps-and-Pixmaps.html" title="Bitmaps and Pixmaps">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Drawing-Primitives.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -333,7 +333,7 @@
 </div>
 <a name="GdkDrawable"></a><div class="refsect1">
 <a name="gdk2-Drawing-Primitives.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -360,7 +360,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Drawing-Primitives.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GdkDrawable
         <span class="lineart">├──</span> <a class="link" href="gdk2-Windows.html#GdkWindow">GdkWindow</a>
         <span class="lineart">╰──</span> <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap">GdkPixmap</a>
@@ -388,10 +388,10 @@ Graphics Contexts section for
 more information.
 </p>
 <p><a name="pango-data-structures"></a>
-Some of the drawing operations take Pango data structures like <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a>,
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> or <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine"><span class="type">PangoLayoutLine</span></a> as arguments. If you're using GTK+, the ususal
-way to obtain these structures is via <a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-create-pango-context"><code class="function">gtk_widget_create_pango_context()</code></a> or
-<a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-create-pango-layout"><code class="function">gtk_widget_create_pango_layout()</code></a>.
+Some of the drawing operations take Pango data structures like <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a>,
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> or <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine-struct"><span class="type">PangoLayoutLine</span></a> as arguments. If you're using GTK+, the ususal
+way to obtain these structures is via <a href="http://developer.gnome.org/gtk3/GtkWidget.html#gtk-widget-create-pango-context"><code class="function">gtk_widget_create_pango_context()</code></a> or
+<a href="http://developer.gnome.org/gtk3/GtkWidget.html#gtk-widget-create-pango-layout"><code class="function">gtk_widget_create_pango_layout()</code></a>.
 </p>
 </div>
 <div class="refsect1">
@@ -408,8 +408,8 @@ gdk_drawable_ref (<em class="parameter"><code><a class="link" href="gdk2-Drawing
 .
 (Drawables were not objects in previous versions of GDK.)</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -423,10 +423,9 @@ gdk_drawable_ref (<em class="parameter"><code><a class="link" href="gdk2-Drawing
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.2.7"></a><h4>Returns</h4>
+<a name="gdk-drawable-ref.returns"></a><h4>Returns</h4>
 <p> the same <em class="parameter"><code>drawable</code></em>
 passed in</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -441,8 +440,8 @@ gdk_drawable_unref (<em class="parameter"><code><a class="link" href="gdk2-Drawi
 <p>Deprecated equivalent of calling <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> on <em class="parameter"><code>drawable</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -466,10 +465,10 @@ gdk_drawable_set_data (<em class="parameter"><code><a class="link" href="gdk2-Dr
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy_func</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_drawable_set_data</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>This function is equivalent to <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-set-data"><code class="function">g_object_set_data()</code></a>,
-the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> variant should be used instead.</p>
+the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> variant should be used instead.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-set-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -508,11 +507,11 @@ the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Objec
 gdk_drawable_get_data (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_drawable_get_data</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>Equivalent to <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-get-data"><code class="function">g_object_get_data()</code></a>; the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> variant should be
+<p>Equivalent to <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-get-data"><code class="function">g_object_get_data()</code></a>; the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> variant should be
 used instead.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -533,10 +532,9 @@ used instead.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.5.7"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-data.returns"></a><h4>Returns</h4>
 <p> the data stored at <em class="parameter"><code>key</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -550,8 +548,8 @@ gdk_drawable_get_display (<em class="parameter"><code><a class="link" href="gdk2
 </div>
 <p>Gets the <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> associated with a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.6.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -565,12 +563,11 @@ gdk_drawable_get_display (<em class="parameter"><code><a class="link" href="gdk2
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.6.8"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-display.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> associated with <em class="parameter"><code>drawable</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -583,8 +580,8 @@ gdk_drawable_get_screen (<em class="parameter"><code><a class="link" href="gdk2-
 </div>
 <p>Gets the <a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> associated with a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -598,12 +595,11 @@ gdk_drawable_get_screen (<em class="parameter"><code><a class="link" href="gdk2-
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.7.8"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-screen.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> associated with <em class="parameter"><code>drawable</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -617,8 +613,8 @@ gdk_drawable_get_visual (<em class="parameter"><code><a class="link" href="gdk2-
 <p>Gets the <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> describing the pixel format of <em class="parameter"><code>drawable</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-visual.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -632,9 +628,8 @@ gdk_drawable_get_visual (<em class="parameter"><code><a class="link" href="gdk2-
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.8.7"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-visual.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -654,8 +649,8 @@ graphics contexts you intend to use together should match. i.e.
 when using a <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> to draw to a drawable, or copying one drawable
 to another, the colormaps should match.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-set-colormap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -685,8 +680,8 @@ gdk_drawable_get_colormap (<em class="parameter"><code><a class="link" href="gdk
 , if one is set; returns
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> otherwise.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-colormap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -700,9 +695,8 @@ gdk_drawable_get_colormap (<em class="parameter"><code><a class="link" href="gdk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.10.6"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-colormap.returns"></a><h4>Returns</h4>
 <p> the colormap, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -714,8 +708,8 @@ gdk_drawable_get_depth (<em class="parameter"><code><a class="link" href="gdk2-D
 that make up a pixel in the drawable's visual. Examples are 8 bits
 per pixel, 24 bits per pixel, etc.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-depth.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -729,9 +723,8 @@ per pixel, 24 bits per pixel, etc.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.11.6"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-depth.returns"></a><h4>Returns</h4>
 <p> number of bits per pixel</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -758,8 +751,8 @@ gdk_drawable_get_size (<em class="parameter"><code><a class="link" href="gdk2-Dr
 size is the size reported in the most-recently-processed configure
 event, rather than the current size on the X server.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.12.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -798,8 +791,8 @@ other factors such as if the window is obscured by other windows,
 but no area outside of this region will be affected by drawing
 primitives.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-clip-region.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -813,10 +806,9 @@ primitives.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.13.7"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-clip-region.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>. This must be freed with <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-destroy" title="gdk_region_destroy ()"><code class="function">gdk_region_destroy()</code></a>
 when you are done.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -829,8 +821,8 @@ This does not necessarily take into account if the window is
 obscured by other windows, but no area outside of this region
 is visible.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-visible-region.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -844,10 +836,9 @@ is visible.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.14.6"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-visible-region.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>. This must be freed with <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-destroy" title="gdk_region_destroy ()"><code class="function">gdk_region_destroy()</code></a>
 when you are done.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -866,8 +857,8 @@ gdk_draw_point (<em class="parameter"><code><a class="link" href="gdk2-Drawing-P
 <p>Draws a point, using the foreground color and other attributes of 
 the <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -915,8 +906,8 @@ gdk_draw_points (<em class="parameter"><code><a class="link" href="gdk2-Drawing-
 <p>Draws a number of points, using the foreground color and other 
 attributes of the <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -988,8 +979,8 @@ pixel wide pixel-aligned line, you would use:</p>
 <p>Draws a line, using the foreground color and other attributes of 
 the <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1048,8 +1039,8 @@ The way in which joins between lines are draw is determined by the
 <a class="link" href="gdk2-Graphics-Contexts.html#GdkCapStyle" title="enum GdkCapStyle"><span class="type">GdkCapStyle</span></a> value in the <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>. This can be set with
 <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-line-attributes" title="gdk_gc_set_line_attributes ()"><code class="function">gdk_gc_set_line_attributes()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-lines.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1087,7 +1078,7 @@ array.</p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_draw_pixbuf (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
                  <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> src_x</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> src_y</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dest_x</code></em>,
@@ -1115,8 +1106,8 @@ acceleration on Intel, AMD, and Sparc chipsets.  If desired, mediaLib
 support can be turned off by setting the GDK_DISABLE_MEDIALIB environment
 variable.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.19.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1135,7 +1126,7 @@ variable.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>pixbuf</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a></p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1186,7 +1177,7 @@ variable.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1204,8 +1195,8 @@ with Cairo.</p>
 </div>
 <p>Draws a number of unconnected lines.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-segments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1270,8 +1261,8 @@ and (20, 0), which makes it 21 pixels wide and 21 pixels high.</p>
 <div class="note"><p>
 </p></div>
 <div class="refsect3">
-<a name="id-1.2.9.9.21.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-rectangle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1340,8 +1331,8 @@ antialiased unless you call <code class="function">cairo_set_antialias()</code>.
 rectangle of the entire ellipse, and the start and end angles of the part 
 of the ellipse to be drawn.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.22.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-arc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1416,8 +1407,8 @@ gdk_draw_polygon (<em class="parameter"><code><a class="link" href="gdk2-Drawing
 </div>
 <p>Draws an outlined or filled polygon.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-polygon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1475,8 +1466,8 @@ as a set. This is low level functionality used internally to implement
 rotated underlines and backgrouds when rendering a PangoLayout and is
 likely not useful for applications.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.24.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-trapezoids.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1506,7 +1497,7 @@ likely not useful for applications.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1514,10 +1505,10 @@ likely not useful for applications.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_draw_glyphs (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
                  <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFont"><span class="type">PangoFont</span></a> *font</code></em>,
+                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFont-struct"><span class="type">PangoFont</span></a> *font</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoGlyphString"><span class="type">PangoGlyphString</span></a> *glyphs</code></em>);</pre>
+                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoGlyphString-struct"><span class="type">PangoGlyphString</span></a> *glyphs</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_draw_glyphs</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>Use <code class="function">pango_cairo_show_glyphs()</code> instead.</p>
@@ -1530,8 +1521,8 @@ lot about internationalized text handling, which you don't want to
 understand; thus, use <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-layout" title="gdk_draw_layout ()"><code class="function">gdk_draw_layout()</code></a> instead of this function,
 <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-layout" title="gdk_draw_layout ()"><code class="function">gdk_draw_layout()</code></a> handles the details.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.25.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-glyphs.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1578,27 +1569,27 @@ understand; thus, use <a class="link" href="gdk2-Drawing-Primitives.html#gdk-dra
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_draw_glyphs_transformed (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
                              <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                             <em class="parameter"><code>const <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoMatrix"><span class="type">PangoMatrix</span></a> *matrix</code></em>,
-                             <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFont"><span class="type">PangoFont</span></a> *font</code></em>,
+                             <em class="parameter"><code>const <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoMatrix-struct"><span class="type">PangoMatrix</span></a> *matrix</code></em>,
+                             <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFont-struct"><span class="type">PangoFont</span></a> *font</code></em>,
                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                             <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoGlyphString"><span class="type">PangoGlyphString</span></a> *glyphs</code></em>);</pre>
+                             <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoGlyphString-struct"><span class="type">PangoGlyphString</span></a> *glyphs</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_draw_glyphs_transformed</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>Use <code class="function">pango_cairo_show_glyphs()</code> instead.</p>
 </div>
-<p>Renders a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoGlyphString"><span class="type">PangoGlyphString</span></a> onto a drawable, possibly
+<p>Renders a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoGlyphString-struct"><span class="type">PangoGlyphString</span></a> onto a drawable, possibly
 transforming the layed-out coordinates through a transformation
 matrix. Note that the transformation matrix for <em class="parameter"><code>font</code></em>
  is not
 changed, so to produce correct rendering results, the <em class="parameter"><code>font</code></em>
 
-must have been loaded using a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a> with an identical
+must have been loaded using a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a> with an identical
 transformation matrix to that passed in to this function.</p>
 <p>See also <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-glyphs" title="gdk_draw_glyphs ()"><code class="function">gdk_draw_glyphs()</code></a>, <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-layout" title="gdk_draw_layout ()"><code class="function">gdk_draw_layout()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.26.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-glyphs-transformed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1617,7 +1608,7 @@ transformation matrix to that passed in to this function.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>matrix</p></td>
-<td class="parameter_description"><p> a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoMatrix"><span class="type">PangoMatrix</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use an identity transformation. </p></td>
+<td class="parameter_description"><p> a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoMatrix-struct"><span class="type">PangoMatrix</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use an identity transformation. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -1645,7 +1636,7 @@ in user space coordinates)</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1655,18 +1646,18 @@ gdk_draw_layout_line (<em class="parameter"><code><a class="link" href="gdk2-Dra
                       <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                      <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine"><span class="type">PangoLayoutLine</span></a> *line</code></em>);</pre>
+                      <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine-struct"><span class="type">PangoLayoutLine</span></a> *line</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_draw_layout_line</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine"><span class="type">PangoLayoutLine</span></a> onto an GDK drawable</p>
-<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a> has a transformation matrix set, then
+<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine-struct"><span class="type">PangoLayoutLine</span></a> onto an GDK drawable</p>
+<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a> has a transformation matrix set, then
 <em class="parameter"><code>x</code></em>
  and <em class="parameter"><code>y</code></em>
  specify the position of the left edge of the baseline
 (left is in before-tranform user coordinates) in after-transform
 device coordinates.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.27.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-layout-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1695,7 +1686,7 @@ device coordinates.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>line</p></td>
-<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine"><span class="type">PangoLayoutLine</span></a></p></td>
+<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine-struct"><span class="type">PangoLayoutLine</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1710,26 +1701,26 @@ gdk_draw_layout_line_with_colors (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                                  <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine"><span class="type">PangoLayoutLine</span></a> *line</code></em>,
+                                  <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine-struct"><span class="type">PangoLayoutLine</span></a> *line</code></em>,
                                   <em class="parameter"><code>const <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> *foreground</code></em>,
                                   <em class="parameter"><code>const <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> *background</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_draw_layout_line_with_colors</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine"><span class="type">PangoLayoutLine</span></a> onto a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>, overriding the
+<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine-struct"><span class="type">PangoLayoutLine</span></a> onto a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>, overriding the
 layout's normal colors with <em class="parameter"><code>foreground</code></em>
  and/or <em class="parameter"><code>background</code></em>
 .
 <em class="parameter"><code>foreground</code></em>
  and <em class="parameter"><code>background</code></em>
  need not be allocated.</p>
-<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a> has a transformation matrix set, then
+<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a> has a transformation matrix set, then
 <em class="parameter"><code>x</code></em>
  and <em class="parameter"><code>y</code></em>
  specify the position of the left edge of the baseline
 (left is in before-tranform user coordinates) in after-transform
 device coordinates.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.28.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-layout-line-with-colors.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1758,7 +1749,7 @@ device coordinates.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>line</p></td>
-<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine"><span class="type">PangoLayoutLine</span></a></p></td>
+<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayoutLine-struct"><span class="type">PangoLayoutLine</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1783,19 +1774,19 @@ gdk_draw_layout (<em class="parameter"><code><a class="link" href="gdk2-Drawing-
                  <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
+                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_draw_layout</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> onto a GDK drawable</p>
-<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a> has a transformation matrix set, then
+<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> onto a GDK drawable</p>
+<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a> has a transformation matrix set, then
 <em class="parameter"><code>x</code></em>
  and <em class="parameter"><code>y</code></em>
  specify the position of the top left corner of the
 bounding box (in device space) of the transformed layout.</p>
-<p>If you're using GTK+, the usual way to obtain a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a>
-is <a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-create-pango-layout"><code class="function">gtk_widget_create_pango_layout()</code></a>.</p>
+<p>If you're using GTK+, the usual way to obtain a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a>
+is <a href="http://developer.gnome.org/gtk3/GtkWidget.html#gtk-widget-create-pango-layout"><code class="function">gtk_widget_create_pango_layout()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.29.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1824,7 +1815,7 @@ is <a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-create-pan
 </tr>
 <tr>
 <td class="parameter_name"><p>layout</p></td>
-<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a></p></td>
+<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1839,27 +1830,27 @@ gdk_draw_layout_with_colors (<em class="parameter"><code><a class="link" href="g
                              <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                             <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> *layout</code></em>,
+                             <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>,
                              <em class="parameter"><code>const <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> *foreground</code></em>,
                              <em class="parameter"><code>const <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> *background</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_draw_layout_with_colors</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> onto a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>, overriding the
+<p>Render a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> onto a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>, overriding the
 layout's normal colors with <em class="parameter"><code>foreground</code></em>
  and/or <em class="parameter"><code>background</code></em>
 .
 <em class="parameter"><code>foreground</code></em>
  and <em class="parameter"><code>background</code></em>
  need not be allocated.</p>
-<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext"><span class="type">PangoContext</span></a> has a transformation matrix set, then
+<p>If the layout's <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoContext-struct"><span class="type">PangoContext</span></a> has a transformation matrix set, then
 <em class="parameter"><code>x</code></em>
  and <em class="parameter"><code>y</code></em>
  specify the position of the top left corner of the
 bounding box (in device space) of the transformed layout.</p>
-<p>If you're using GTK+, the ususal way to obtain a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a>
-is <a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-create-pango-layout"><code class="function">gtk_widget_create_pango_layout()</code></a>.</p>
+<p>If you're using GTK+, the ususal way to obtain a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a>
+is <a href="http://developer.gnome.org/gtk3/GtkWidget.html#gtk-widget-create-pango-layout"><code class="function">gtk_widget_create_pango_layout()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.30.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-layout-with-colors.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1888,7 +1879,7 @@ is <a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-create-pan
 </tr>
 <tr>
 <td class="parameter_name"><p>layout</p></td>
-<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a></p></td>
+<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1921,8 +1912,8 @@ gdk_draw_string (<em class="parameter"><code><a class="link" href="gdk2-Drawing-
 </div>
 <p>Draws a string of characters in the given font or fontset.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.31.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1980,8 +1971,8 @@ gdk_draw_text (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Pr
 </div>
 <p>Draws a number of characters in the given font or fontset.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.32.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2047,8 +2038,8 @@ gdk_draw_text_wc (<em class="parameter"><code><a class="link" href="gdk2-Drawing
 If the font is a 1-byte font, the string is converted into 1-byte 
 characters (discarding the high bytes) before output.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.33.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-text-wc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2139,8 +2130,8 @@ a color drawable. The way to draw a bitmap is to set the bitmap as
 the stipple on the <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>, set the fill mode to <a class="link" href="gdk2-Graphics-Contexts.html#GDK-STIPPLED:CAPS"><code class="literal">GDK_STIPPLED</code></a>, and 
 then draw the rectangle.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.34.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-drawable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2224,8 +2215,8 @@ surfaces.</p>
 <p>Draws a <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> onto a drawable.
 The depth of the <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> must match the depth of the <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.35.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-draw-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2311,7 +2302,7 @@ server-side drawable as a client-side <a class="link" href="gdk2-Images.html#Gdk
 <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> depends on the <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> of the current display, which
 makes manipulating <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> extremely difficult; therefore, in
 most cases you should use <a class="link" href="gdk2-Pixbufs.html#gdk-pixbuf-get-from-drawable" title="gdk_pixbuf_get_from_drawable ()"><code class="function">gdk_pixbuf_get_from_drawable()</code></a> instead of
-this lower-level function. A <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> contains image data in a
+this lower-level function. A <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> contains image data in a
 canonicalized RGB format, rather than a display-dependent format.
 Of course, there's a convenience vs. speed tradeoff here, so you'll
 want to think about what makes sense for your application.</p>
@@ -2335,8 +2326,8 @@ the image data.</p>
 or obscured, then the obscured portions of the returned image
 will contain undefined data.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.36.10"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2374,10 +2365,9 @@ will contain undefined data.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.36.11"></a><h4>Returns</h4>
+<a name="gdk-drawable-get-image.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> containing the contents of <em class="parameter"><code>drawable</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2407,8 +2397,8 @@ surface if you want to download contents to the client.</p>
 
 and copies into that. See <a class="link" href="gdk2-Drawing-Primitives.html#gdk-drawable-get-image" title="gdk_drawable_get_image ()"><code class="function">gdk_drawable_get_image()</code></a> for further details.</p>
 <div class="refsect3">
-<a name="id-1.2.9.9.37.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-drawable-copy-to-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2466,14 +2456,13 @@ is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.9.9.37.8"></a><h4>Returns</h4>
+<a name="gdk-drawable-copy-to-image.returns"></a><h4>Returns</h4>
 <p> <em class="parameter"><code>image</code></em>
 , or a new a <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> containing the contents
 of <em class="parameter"><code>drawable</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -2502,8 +2491,8 @@ Specifies the start and end point of a line for use by the <a class="link" href=
 function.
 </p>
 <div class="refsect3">
-<a name="id-1.2.9.10.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkSegment.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -2547,8 +2536,8 @@ The trapezoids used here have parallel, horizontal top and
 bottom edges.
 </p>
 <div class="refsect3">
-<a name="id-1.2.9.10.4.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkTrapezoid.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -2605,7 +2594,6 @@ Draws a pixmap, or a part of a pixmap, onto another drawable.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkRecentFilter</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkRecentFilter: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="RecentDocuments.html" title="Recently Used Documents">
 <link rel="prev" href="GtkRecentChooserWidget.html" title="GtkRecentChooserWidget">
 <link rel="next" href="Builder.html" title="Interface builder">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkRecentFilter.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -148,7 +148,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentFilter.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -171,7 +171,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRecentFilter.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> GtkRecentFilter
@@ -220,8 +220,8 @@ The type of function that is used with custom filters,
 see <a class="link" href="GtkRecentFilter.html#gtk-recent-filter-add-custom" title="gtk_recent_filter_add_custom ()"><code class="function">gtk_recent_filter_add_custom()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentFilterFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -244,9 +244,8 @@ flags passed to <a class="link" href="GtkRecentFilter.html#gtk-recent-filter-add
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.2.6"></a><h4>Returns</h4>
+<a name="GtkRecentFilterFunc.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file should be displayed</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -275,11 +274,10 @@ To create a filter that accepts any recently used resource, use:</p>
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.3.7"></a><h4>Returns</h4>
+<a name="gtk-recent-filter-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkRecentFilter.html" title="GtkRecentFilter"><span class="type">GtkRecentFilter</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -289,8 +287,8 @@ gtk_recent_filter_get_name (<em class="parameter"><code><a class="link" href="Gt
 <p>Gets the human-readable name for the filter.
 See <a class="link" href="GtkRecentFilter.html#gtk-recent-filter-set-name" title="gtk_recent_filter_set_name ()"><code class="function">gtk_recent_filter_set_name()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -304,12 +302,11 @@ See <a class="link" href="GtkRecentFilter.html#gtk-recent-filter-set-name" title
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.4.6"></a><h4>Returns</h4>
+<a name="gtk-recent-filter-get-name.returns"></a><h4>Returns</h4>
 <p> the name of the filter, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  The returned string
 is owned by the filter object and should not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -321,8 +318,8 @@ gtk_recent_filter_set_name (<em class="parameter"><code><a class="link" href="Gt
 that will be displayed in the recently used resources selector
 user interface if there is a selectable list of filters.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-set-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -343,7 +340,7 @@ user interface if there is a selectable list of filters.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -353,8 +350,8 @@ gtk_recent_filter_add_mime_type (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);</pre>
 <p>Adds a rule that allows resources based on their registered MIME type.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-add-mime-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -374,7 +371,7 @@ gtk_recent_filter_add_mime_type (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -385,8 +382,8 @@ gtk_recent_filter_add_pattern (<em class="parameter"><code><a class="link" href=
 <p>Adds a rule that allows resources based on a pattern matching their
 display name.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-add-pattern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -406,7 +403,7 @@ display name.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -416,8 +413,8 @@ gtk_recent_filter_add_pixbuf_formats (<em class="parameter"><code><a class="link
 <p>Adds a rule allowing image files in the formats supported
 by GdkPixbuf.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-add-pixbuf-formats.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -430,7 +427,7 @@ by GdkPixbuf.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -441,8 +438,8 @@ gtk_recent_filter_add_application (<em class="parameter"><code><a class="link" h
 <p>Adds a rule that allows resources based on the name of the application
 that has registered them.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-add-application.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -462,7 +459,7 @@ that has registered them.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -473,8 +470,8 @@ gtk_recent_filter_add_group (<em class="parameter"><code><a class="link" href="G
 <p>Adds a rule that allows resources based on the name of the group
 to which they belong</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-add-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -494,7 +491,7 @@ to which they belong</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -505,8 +502,8 @@ gtk_recent_filter_add_age (<em class="parameter"><code><a class="link" href="Gtk
 <p>Adds a rule that allows resources based on their age - that is, the number
 of days elapsed since they were last modified.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-add-age.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -526,7 +523,7 @@ of days elapsed since they were last modified.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -544,8 +541,8 @@ about what sorts of information that the filter function needs;
 this allows GTK+ to avoid retrieving expensive information when
 it isn't needed by the filter.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-add-custom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -584,7 +581,7 @@ when it is no longer needed.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -597,8 +594,8 @@ passed to <a class="link" href="GtkRecentFilter.html#gtk-recent-filter-filter" t
 is intended principally for use in the implementation of
 <a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-get-needed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -612,12 +609,11 @@ is intended principally for use in the implementation of
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.13.7"></a><h4>Returns</h4>
+<a name="gtk-recent-filter-get-needed.returns"></a><h4>Returns</h4>
 <p> bitfield of flags indicating needed fields when
 calling <a class="link" href="GtkRecentFilter.html#gtk-recent-filter-filter" title="gtk_recent_filter_filter ()"><code class="function">gtk_recent_filter_filter()</code></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -634,8 +630,8 @@ the fields returned from <a class="link" href="GtkRecentFilter.html#gtk-recent-f
 is intended principally for use in the implementation of
 <a class="link" href="GtkRecentChooser.html" title="GtkRecentChooser"><span class="type">GtkRecentChooser</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.14.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-recent-filter-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -657,11 +653,10 @@ about a recently used resource</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.21.7.8.14.7"></a><h4>Returns</h4>
+<a name="gtk-recent-filter-filter.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file should be displayed</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -694,8 +689,8 @@ A <span class="structname">GtkRecentFilterInfo</span> struct is used
 to pass information about the tested file to <a class="link" href="GtkRecentFilter.html#gtk-recent-filter-filter" title="gtk_recent_filter_filter ()"><code class="function">gtk_recent_filter_filter()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.21.7.9.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentFilterInfo.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -751,8 +746,8 @@ These flags indicate what parts of a <a class="link" href="GtkRecentFilter.html#
 are filled or need to be filled.
 </p>
 <div class="refsect3">
-<a name="id-1.4.21.7.9.4.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRecentFilterFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -817,7 +812,6 @@ are filled or need to be filled.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

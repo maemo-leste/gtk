@@ -96,7 +96,7 @@ struct _GdkEventTypeX11
 
 static gint	 gdk_event_apply_filters (XEvent   *xevent,
 					  GdkEvent *event,
-					  GList    *filters);
+					  GdkWindow *window);
 static gboolean	 gdk_event_translate	 (GdkDisplay *display,
 					  GdkEvent   *event, 
 					  XEvent     *xevent,
@@ -341,21 +341,44 @@ gdk_event_get_graphics_expose (GdkWindow *window)
 static gint
 gdk_event_apply_filters (XEvent *xevent,
 			 GdkEvent *event,
-			 GList *filters)
+			 GdkWindow *window)
 {
   GList *tmp_list;
   GdkFilterReturn result;
   
-  tmp_list = filters;
+  if (window == NULL)
+    tmp_list = _gdk_default_filters;
+  else
+    {
+      GdkWindowObject *window_private;
+      window_private = (GdkWindowObject *) window;
+      tmp_list = window_private->filters;
+    }
+
   
   while (tmp_list)
     {
       GdkEventFilter *filter = (GdkEventFilter*) tmp_list->data;
+      GList *node;
       
-      tmp_list = tmp_list->next;
+      if ((filter->flags & GDK_EVENT_FILTER_REMOVED) != 0)
+        {
+          tmp_list = tmp_list->next;
+          continue;
+        }
+
+      filter->ref_count++;
       result = filter->function (xevent, event, filter->data);
-      if (result !=  GDK_FILTER_CONTINUE)
-	return result;
+
+      /* Protect against unreffing the filter mutating the list */
+      node = tmp_list->next;
+
+      _gdk_event_filter_unref (window, filter);
+
+      tmp_list = node;
+
+      if (result != GDK_FILTER_CONTINUE)
+        return result;
     }
   
   return GDK_FILTER_CONTINUE;
@@ -439,7 +462,7 @@ do_net_wm_state_changes (GdkWindow *window)
     }
   else
     {
-      if (toplevel->have_sticky || toplevel->on_all_desktops)
+      if (toplevel->have_sticky && toplevel->on_all_desktops)
         gdk_synthesize_window_state (window,
                                      0,
                                      GDK_WINDOW_STATE_STICKY);
@@ -520,7 +543,7 @@ gdk_check_wm_desktop_changed (GdkWindow *window)
   if (type != None)
     {
       desktop = (gulong *)data;
-      toplevel->on_all_desktops = (*desktop == 0xFFFFFFFF);
+      toplevel->on_all_desktops = ((*desktop & 0xFFFFFFFF) == 0xFFFFFFFF);
       XFree (desktop);
     }
   else
@@ -943,8 +966,7 @@ gdk_event_translate (GdkDisplay *display,
     {
       /* Apply global filters */
       GdkFilterReturn result;
-      result = gdk_event_apply_filters (xevent, event,
-                                        _gdk_default_filters);
+      result = gdk_event_apply_filters (xevent, event, NULL);
       
       if (result != GDK_FILTER_CONTINUE)
         {
@@ -1050,7 +1072,7 @@ gdk_event_translate (GdkDisplay *display,
 	  g_object_ref (filter_window);
 	  
 	  result = gdk_event_apply_filters (xevent, event,
-					    filter_private->filters);
+					    filter_window);
 	  
 	  g_object_unref (filter_window);
       

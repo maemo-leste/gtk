@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Cursors</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Cursors: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Fonts.html" title="Fonts">
 <link rel="next" href="gdk2-Windows.html" title="Windows">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Cursors.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Cursors.html#gdk-cursor-get-image" title="gdk_cursor_get_image ()">gdk_cursor_get_image</a> <span class="c_punctuation">()</span>
@@ -124,7 +124,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Cursors.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -180,8 +180,8 @@ gdk_cursor_new (<em class="parameter"><code><a class="link" href="gdk2-Cursors.h
 See <a class="link" href="gdk2-Cursors.html#gdk-cursor-new-for-display" title="gdk_cursor_new_for_display ()"><code class="function">gdk_cursor_new_for_display()</code></a>.</p>
 <p>To make the cursor invisible, use <a class="link" href="gdk2-Cursors.html#GDK-BLANK-CURSOR:CAPS"><code class="literal">GDK_BLANK_CURSOR</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -195,9 +195,8 @@ See <a class="link" href="gdk2-Cursors.html#gdk-cursor-new-for-display" title="g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.2.7"></a><h4>Returns</h4>
+<a name="gdk-cursor-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -289,8 +288,8 @@ from inline data as in the below example.</p>
 
 </div>
 <br class="example-break"><div class="refsect3">
-<a name="id-1.2.17.7.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-new-from-pixmap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -335,9 +334,8 @@ The color does not have to be allocated first.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.3.7"></a><h4>Returns</h4>
+<a name="gdk-cursor-new-from-pixmap.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -345,7 +343,7 @@ The color does not have to be allocated first.</p></td>
 <a name="gdk-cursor-new-from-pixbuf"></a><h3>gdk_cursor_new_from_pixbuf ()</h3>
 <pre class="programlisting"><a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="returnvalue">GdkCursor</span></a> *
 gdk_cursor_new_from_pixbuf (<em class="parameter"><code><a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> *display</code></em>,
-                            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+                            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
 <p>Creates a new cursor from a pixbuf. </p>
@@ -366,8 +364,8 @@ the pixbuf. (Since: 3.0)</p>
 <p>On the X backend, support for RGBA cursors requires a
 sufficently new version of the X Render extension.</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.4.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-new-from-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -381,7 +379,7 @@ sufficently new version of the X Render extension.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>pixbuf</p></td>
-<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> containing the cursor image</p></td>
+<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> containing the cursor image</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -398,11 +396,10 @@ sufficently new version of the X Render extension.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.4.9"></a><h4>Returns</h4>
+<a name="gdk-cursor-new-from-pixbuf.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -414,8 +411,8 @@ gdk_cursor_new_from_name (<em class="parameter"><code><a class="link" href="GdkD
  in the current cursor
 theme.</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-new-from-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -436,12 +433,11 @@ theme.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.5.6"></a><h4>Returns</h4>
+<a name="gdk-cursor-new-from-name.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no cursor with
 the given name </p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -508,8 +504,8 @@ Some useful ones are:</p>
 </p></li>
 </ul></div>
 <div class="refsect3">
-<a name="id-1.2.17.7.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-new-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -530,11 +526,10 @@ Some useful ones are:</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.6.7"></a><h4>Returns</h4>
+<a name="gdk-cursor-new-for-display.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -543,8 +538,8 @@ Some useful ones are:</p>
 gdk_cursor_get_display (<em class="parameter"><code><a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a> *cursor</code></em>);</pre>
 <p>Returns the display on which the <a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a> is defined.</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-get-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -558,25 +553,24 @@ gdk_cursor_get_display (<em class="parameter"><code><a class="link" href="gdk2-C
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.7.6"></a><h4>Returns</h4>
+<a name="gdk-cursor-get-display.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> associated to <em class="parameter"><code>cursor</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdk-cursor-get-image"></a><h3>gdk_cursor_get_image ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gdk_cursor_get_image (<em class="parameter"><code><a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a> *cursor</code></em>);</pre>
-<p>Returns a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> with the image used to display the cursor.</p>
+<p>Returns a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> with the image used to display the cursor.</p>
 <p>Note that depending on the capabilities of the windowing system and 
 on the cursor, GDK may not be able to obtain the image data. In this 
 case, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -590,12 +584,11 @@ case, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.ht
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.8.7"></a><h4>Returns</h4>
-<p> a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> representing <em class="parameter"><code>cursor</code></em>
+<a name="gdk-cursor-get-image.returns"></a><h4>Returns</h4>
+<p> a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> representing <em class="parameter"><code>cursor</code></em>
 , or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -604,8 +597,8 @@ case, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.ht
 gdk_cursor_get_cursor_type (<em class="parameter"><code><a class="link" href="gdk2-Cursors.html#GdkCursor" title="GdkCursor"><span class="type">GdkCursor</span></a> *cursor</code></em>);</pre>
 <p>Returns the cursor type for this cursor.</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-get-cursor-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -619,11 +612,10 @@ gdk_cursor_get_cursor_type (<em class="parameter"><code><a class="link" href="gd
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.9.6"></a><h4>Returns</h4>
+<a name="gdk-cursor-get-cursor-type.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Cursors.html#GdkCursorType" title="enum GdkCursorType"><span class="type">GdkCursorType</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -633,8 +625,8 @@ gdk_cursor_ref (<em class="parameter"><code><a class="link" href="gdk2-Cursors.h
 <p>Adds a reference to <em class="parameter"><code>cursor</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -648,7 +640,7 @@ gdk_cursor_ref (<em class="parameter"><code><a class="link" href="gdk2-Cursors.h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.17.7.10.6"></a><h4>Returns</h4>
+<a name="gdk-cursor-ref.returns"></a><h4>Returns</h4>
 <p> Same <em class="parameter"><code>cursor</code></em>
 that was passed in. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
@@ -663,8 +655,8 @@ gdk_cursor_unref (<em class="parameter"><code><a class="link" href="gdk2-Cursors
 , deallocating the cursor
 if no references remain.</p>
 <div class="refsect3">
-<a name="id-1.2.17.7.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-cursor-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -698,8 +690,8 @@ A <span class="type">GdkCursor</span> structure represents a cursor.
 The standard cursors available.
 </p>
 <div class="refsect3">
-<a name="id-1.2.17.8.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkCursorType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1284,7 +1276,6 @@ Destroys a cursor, freeing any resources allocated for it.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: GdkDisplayManager</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GdkDisplayManager: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="GdkDisplay.html" title="GdkDisplay">
 <link rel="next" href="GdkScreen.html" title="GdkScreen">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GdkDisplayManager.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -87,7 +87,7 @@
 </div>
 <div class="refsect1">
 <a name="GdkDisplayManager.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -103,7 +103,7 @@
 </div>
 <div class="refsect1">
 <a name="GdkDisplayManager.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -112,13 +112,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GdkDisplayManager.html#GdkDisplayManager-display-opened" title="The “display-opened” signal">display-opened</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GdkDisplayManager.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -131,7 +131,7 @@
 </div>
 <div class="refsect1">
 <a name="GdkDisplayManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GdkDisplayManager
 </pre>
 </div>
@@ -156,12 +156,12 @@ changes.
 gdk_display_manager_get (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Gets the singleton <a class="link" href="GdkDisplayManager.html" title="GdkDisplayManager"><span class="type">GdkDisplayManager</span></a> object.</p>
 <div class="refsect3">
-<a name="id-1.2.5.10.2.5"></a><h4>Returns</h4>
+<a name="gdk-display-manager-get.returns"></a><h4>Returns</h4>
 <p> The global <a class="link" href="GdkDisplayManager.html" title="GdkDisplayManager"><span class="type">GdkDisplayManager</span></a> singleton; <code class="function">gdk_parse_pargs()</code>,
 <a class="link" href="gdk2-General.html#gdk-init" title="gdk_init ()"><code class="function">gdk_init()</code></a>, or <a class="link" href="gdk2-General.html#gdk-init-check" title="gdk_init_check ()"><code class="function">gdk_init_check()</code></a> must have been called first. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -171,8 +171,8 @@ gdk_display_manager_get_default_display
                                (<em class="parameter"><code><a class="link" href="GdkDisplayManager.html" title="GdkDisplayManager"><span class="type">GdkDisplayManager</span></a> *display_manager</code></em>);</pre>
 <p>Gets the default <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.5.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-manager-get-default-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -186,12 +186,12 @@ gdk_display_manager_get_default_display
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.5.10.3.6"></a><h4>Returns</h4>
+<a name="gdk-display-manager-get-default-display.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no default
 display. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -203,8 +203,8 @@ gdk_display_manager_set_default_display
 <p>Sets <em class="parameter"><code>display</code></em>
  as the default display.</p>
 <div class="refsect3">
-<a name="id-1.2.5.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-manager-set-default-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -224,7 +224,7 @@ gdk_display_manager_set_default_display
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -233,8 +233,8 @@ gdk_display_manager_set_default_display
 gdk_display_manager_list_displays (<em class="parameter"><code><a class="link" href="GdkDisplayManager.html" title="GdkDisplayManager"><span class="type">GdkDisplayManager</span></a> *display_manager</code></em>);</pre>
 <p>List all currently open displays.</p>
 <div class="refsect3">
-<a name="id-1.2.5.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-manager-list-displays.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -248,13 +248,13 @@ gdk_display_manager_list_displays (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.5.10.5.6"></a><h4>Returns</h4>
+<a name="gdk-display-manager-list-displays.returns"></a><h4>Returns</h4>
 <p> a newly allocated
 <a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> of <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> objects. Free this list with <a href="https://developer.gnome.org/glib/unstable/glib-Singly-Linked-Lists.html#g-slist-free"><code class="function">g_slist_free()</code></a> when you
 are done with it. </p>
 <p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GdkDisplay]</span></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -263,8 +263,8 @@ are done with it. </p>
 gdk_display_get_core_pointer (<em class="parameter"><code><a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> *display</code></em>);</pre>
 <p>Returns the core pointer device for the given display</p>
 <div class="refsect3">
-<a name="id-1.2.5.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-core-pointer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -278,12 +278,11 @@ gdk_display_get_core_pointer (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.5.10.6.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-core-pointer.returns"></a><h4>Returns</h4>
 <p> the core pointer device; this is owned by the
 display and should not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -295,7 +294,7 @@ display and should not be freed.</p>
 The <span class="structname">GdkDisplayManager</span> struct has no interesting
 fields.
 </p>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -317,8 +316,8 @@ user_function (<a class="link" href="GdkDisplayManager.html" title="GdkDisplayMa
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
 <p>The ::display_opened signal is emitted when a display is opened.</p>
 <div class="refsect3">
-<a name="id-1.2.5.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkDisplayManager-display-opened.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -343,13 +342,12 @@ user_function (<a class="link" href="GdkDisplayManager.html" title="GdkDisplayMa
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.2</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

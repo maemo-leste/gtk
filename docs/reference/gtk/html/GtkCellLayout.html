@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCellLayout</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCellLayout: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkTreeModelFilter.html" title="GtkTreeModelFilter">
 <link rel="next" href="GtkCellRenderer.html" title="GtkCellRenderer">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCellLayout.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -127,7 +127,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellLayout.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -146,7 +146,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellLayout.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GInterface
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
     <span class="lineart">╰──</span> GtkCellLayout
 </pre>
 </div>
@@ -154,7 +154,7 @@
 <a name="GtkCellLayout.prerequisites"></a><h2>Prerequisites</h2>
 <p>
 GtkCellLayout requires
- <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>.</p>
+ <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
 </div>
 <div class="refsect1">
 <a name="GtkCellLayout.implementations"></a><h2>Known Implementations</h2>
@@ -198,7 +198,7 @@ a name attribute which specifies a property of the cell renderer; the
 content of the element is the attribute value.
 </p>
 <div class="example">
-<a name="id-1.4.9.13.9.4.3"></a><p class="title"><b>Example 26. A UI definition fragment specifying attributes</b></p>
+<a name="id-1.4.9.13.9.4.3"></a><p class="title"><b>Example 21. A UI definition fragment specifying attributes</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -243,8 +243,8 @@ A function which should set the value of <em class="parameter"><code>cell_layout
 as appropriate.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellLayoutDataFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -297,8 +297,8 @@ is divided evenly between cells for which <em class="parameter"><code>expand</co
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
 <p>Note that reusing the same cell renderer is not supported.</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-pack-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -325,7 +325,7 @@ is to be given extra space allocated to <em class="parameter"><code>cell_layout<
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -344,8 +344,8 @@ divided evenly between cells for which <em class="parameter"><code>expand</code>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
 <p>Note that reusing the same cell renderer is not supported.</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-pack-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -372,7 +372,7 @@ is to be given extra space allocated to <em class="parameter"><code>cell_layout<
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -382,8 +382,8 @@ gtk_cell_layout_get_cells (<em class="parameter"><code><a class="link" href="Gtk
 <p>Returns the cell renderers which have been added to <em class="parameter"><code>cell_layout</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-get-cells.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -397,13 +397,13 @@ gtk_cell_layout_get_cells (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.5.6"></a><h4>Returns</h4>
+<a name="gtk-cell-layout-get-cells.returns"></a><h4>Returns</h4>
 <p> a list of cell renderers. The list, but not the
 renderers has been newly allocated and should be freed with
 <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a> when no longer needed. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkCellRenderer][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -419,8 +419,8 @@ gtk_cell_layout_reorder (<em class="parameter"><code><a class="link" href="GtkCe
 into <em class="parameter"><code>cell_layout</code></em>
  for this to function properly.</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-reorder.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -446,7 +446,7 @@ at.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -458,8 +458,8 @@ gtk_cell_layout_clear (<em class="parameter"><code><a class="link" href="GtkCell
 removes all renderers from <em class="parameter"><code>cell_layout</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -472,7 +472,7 @@ removes all renderers from <em class="parameter"><code>cell_layout</code></em>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -487,8 +487,8 @@ attributes should be in attribute/column order, as in
 <a class="link" href="GtkCellLayout.html#gtk-cell-layout-add-attribute" title="gtk_cell_layout_add_attribute ()"><code class="function">gtk_cell_layout_add_attribute()</code></a>. All existing attributes are removed, and
 replaced with the new attributes.</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-set-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -508,7 +508,7 @@ replaced with the new attributes.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -528,8 +528,8 @@ parameter on <em class="parameter"><code>cell</code></em>
 of the model contains strings, you could have the "text" attribute of a
 <a class="link" href="GtkCellRendererText.html" title="GtkCellRendererText"><span class="type">GtkCellRendererText</span></a> get its values from column 2.</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-add-attribute.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -559,7 +559,7 @@ of the model contains strings, you could have the "text" attribute of a
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -578,8 +578,8 @@ column value, and should set the value of <em class="parameter"><code>cell_layou
 as appropriate. <em class="parameter"><code>func</code></em>
  may be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to remove and older one.</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-set-cell-data-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -616,7 +616,7 @@ as appropriate. <em class="parameter"><code>func</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -627,8 +627,8 @@ gtk_cell_layout_clear_attributes (<em class="parameter"><code><a class="link" hr
 <p>Clears all existing attributes previously set with
 <a class="link" href="GtkCellLayout.html#gtk-cell-layout-set-attributes" title="gtk_cell_layout_set_attributes ()"><code class="function">gtk_cell_layout_set_attributes()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.13.10.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-layout-clear-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -648,7 +648,7 @@ gtk_cell_layout_clear_attributes (<em class="parameter"><code><a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -696,7 +696,6 @@ gtk_cell_layout_clear_attributes (<em class="parameter"><code><a class="link" hr
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

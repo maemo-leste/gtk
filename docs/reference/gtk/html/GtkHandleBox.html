@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkHandleBox</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkHandleBox: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MiscObjects.html" title="Miscellaneous">
 <link rel="prev" href="GtkEventBox.html" title="GtkEventBox">
 <link rel="next" href="GtkIMContextSimple.html" title="GtkIMContextSimple">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkHandleBox.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -112,7 +112,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkHandleBox.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -154,7 +154,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkHandleBox.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -164,19 +164,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkHandleBox.html#GtkHandleBox-child-attached" title="The “child-attached” signal">child-attached</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkHandleBox.html#GtkHandleBox-child-detached" title="The “child-detached” signal">child-detached</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkHandleBox.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -189,7 +189,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkHandleBox.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -247,9 +247,8 @@ gtk_handle_box_new (<em class="parameter"><code><span class="type">void</span></
 Create a new handle box.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.2.5"></a><h4>Returns</h4>
+<a name="gtk-handle-box-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkHandleBox.html" title="GtkHandleBox"><span class="type">GtkHandleBox</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -263,8 +262,8 @@ Sets the type of shadow to be drawn around the border
 of the handle box.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-handle-box-set-shadow-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -295,8 +294,8 @@ gtk_handle_box_set_handle_position (<em class="parameter"><code><a class="link" 
 Sets the side of the handlebox where the handle is drawn.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-handle-box-set-handle-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -340,8 +339,8 @@ then the snap edge will be <a class="link" href="gtk2-Standard-Enumerations.html
 it will be <a class="link" href="gtk2-Standard-Enumerations.html#GTK-POS-LEFT:CAPS"><code class="literal">GTK_POS_LEFT</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-handle-box-set-snap-edge.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -372,8 +371,8 @@ gtk_handle_box_get_handle_position (<em class="parameter"><code><a class="link" 
 <p>Gets the handle position of the handle box. See
 <a class="link" href="GtkHandleBox.html#gtk-handle-box-set-handle-position" title="gtk_handle_box_set_handle_position ()"><code class="function">gtk_handle_box_set_handle_position()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-handle-box-get-handle-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -387,9 +386,8 @@ gtk_handle_box_get_handle_position (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.6.6"></a><h4>Returns</h4>
+<a name="gtk-handle-box-get-handle-position.returns"></a><h4>Returns</h4>
 <p> the current handle position.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -400,8 +398,8 @@ gtk_handle_box_get_shadow_type (<em class="parameter"><code><a class="link" href
 <p>Gets the type of shadow drawn around the handle box. See
 <a class="link" href="GtkHandleBox.html#gtk-handle-box-set-shadow-type" title="gtk_handle_box_set_shadow_type ()"><code class="function">gtk_handle_box_set_shadow_type()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-handle-box-get-shadow-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -415,9 +413,8 @@ gtk_handle_box_get_shadow_type (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-handle-box-get-shadow-type.returns"></a><h4>Returns</h4>
 <p> the type of shadow currently drawn around the handle box.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -428,8 +425,8 @@ gtk_handle_box_get_snap_edge (<em class="parameter"><code><a class="link" href="
 <p>Gets the edge used for determining reattachment of the handle box. See
 <a class="link" href="GtkHandleBox.html#gtk-handle-box-set-snap-edge" title="gtk_handle_box_set_snap_edge ()"><code class="function">gtk_handle_box_set_snap_edge()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-handle-box-get-snap-edge.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -443,10 +440,9 @@ gtk_handle_box_get_snap_edge (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.8.6"></a><h4>Returns</h4>
+<a name="gtk-handle-box-get-snap-edge.returns"></a><h4>Returns</h4>
 <p> the edge used for determining reattachment, or (GtkPositionType)-1 if this
 is determined (as per default) from the handle position. </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -456,8 +452,8 @@ is determined (as per default) from the handle position. </p>
 gtk_handle_box_get_child_detached (<em class="parameter"><code><a class="link" href="GtkHandleBox.html" title="GtkHandleBox"><span class="type">GtkHandleBox</span></a> *handle_box</code></em>);</pre>
 <p>Whether the handlebox's child is currently detached.</p>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-handle-box-get-child-detached.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -471,11 +467,10 @@ gtk_handle_box_get_child_detached (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.7.11.9.6"></a><h4>Returns</h4>
+<a name="gtk-handle-box-get-child-detached.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the child is currently detached, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -488,7 +483,7 @@ The <a class="link" href="GtkHandleBox.html#GtkHandleBox-struct" title="struct G
 (These fields should be considered read-only. They should never be set by
 an application.)
 </p>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col>
 <col>
@@ -584,8 +579,8 @@ This signal is emitted when the contents of the
 handlebox are reattached to the main window.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.7.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkHandleBox-child-attached.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -612,7 +607,7 @@ and is here only for backwards-compatibility)</p></td>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -626,8 +621,8 @@ This signal is emitted when the contents of the
 handlebox are detached from the main window.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.7.14.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkHandleBox-child-detached.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -654,12 +649,11 @@ and is here only for backwards-compatibility)</p></td>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

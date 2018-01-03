@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkMenuBar</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkMenuBar: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkMenu.html" title="GtkMenu">
 <link rel="next" href="GtkMenuItem.html" title="GtkMenuItem">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkMenuBar.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -106,7 +106,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenuBar.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -128,7 +128,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenuBar.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -150,7 +150,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenuBar.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -169,7 +169,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkMenuBar.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -205,9 +205,8 @@ gtk_menu_bar_new (<em class="parameter"><code><span class="type">void</span></co
 Creates the new <a class="link" href="GtkMenuBar.html" title="GtkMenuBar"><span class="type">GtkMenuBar</span></a>
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.2.5"></a><h4>Returns</h4>
+<a name="gtk-menu-bar-new.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="GtkMenuBar.html" title="GtkMenuBar"><span class="type">GtkMenuBar</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -223,8 +222,8 @@ Creates the new <a class="link" href="GtkMenuBar.html" title="GtkMenuBar"><span 
 Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> to the end of the GtkMenuBar
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-bar-append.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -258,8 +257,8 @@ Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span cla
 Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> to the beginning of the GtkMenuBar
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-bar-prepend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -293,8 +292,8 @@ Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span cla
 Adds a new <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> to the GtkMenuBar at the position defined by <em class="parameter"><code>position</code></em>
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-bar-insert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -329,8 +328,8 @@ gtk_menu_bar_set_pack_direction (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code><a class="link" href="GtkMenuBar.html#GtkPackDirection" title="enum GtkPackDirection"><span class="type">GtkPackDirection</span></a> pack_dir</code></em>);</pre>
 <p>Sets how items should be packed inside a menubar.</p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-bar-set-pack-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -350,7 +349,7 @@ gtk_menu_bar_set_pack_direction (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -360,8 +359,8 @@ gtk_menu_bar_get_pack_direction (<em class="parameter"><code><a class="link" hre
 <p>Retrieves the current pack direction of the menubar. 
 See <a class="link" href="GtkMenuBar.html#gtk-menu-bar-set-pack-direction" title="gtk_menu_bar_set_pack_direction ()"><code class="function">gtk_menu_bar_set_pack_direction()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-bar-get-pack-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -375,11 +374,10 @@ See <a class="link" href="GtkMenuBar.html#gtk-menu-bar-set-pack-direction" title
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-menu-bar-get-pack-direction.returns"></a><h4>Returns</h4>
 <p> the pack direction</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -389,8 +387,8 @@ gtk_menu_bar_set_child_pack_direction (<em class="parameter"><code><a class="lin
                                        <em class="parameter"><code><a class="link" href="GtkMenuBar.html#GtkPackDirection" title="enum GtkPackDirection"><span class="type">GtkPackDirection</span></a> child_pack_dir</code></em>);</pre>
 <p>Sets how widgets should be packed inside the children of a menubar.</p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-bar-set-child-pack-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -410,7 +408,7 @@ gtk_menu_bar_set_child_pack_direction (<em class="parameter"><code><a class="lin
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -420,8 +418,8 @@ gtk_menu_bar_get_child_pack_direction (<em class="parameter"><code><a class="lin
 <p>Retrieves the current child pack direction of the menubar.
 See <a class="link" href="GtkMenuBar.html#gtk-menu-bar-set-child-pack-direction" title="gtk_menu_bar_set_child_pack_direction ()"><code class="function">gtk_menu_bar_set_child_pack_direction()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-menu-bar-get-child-pack-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -435,11 +433,10 @@ See <a class="link" href="GtkMenuBar.html#gtk-menu-bar-set-child-pack-direction"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.10.6.11.9.6"></a><h4>Returns</h4>
+<a name="gtk-menu-bar-get-child-pack-direction.returns"></a><h4>Returns</h4>
 <p> the child pack direction</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -459,8 +456,8 @@ Determines how widgets should be packed insided menubars and
 menuitems contained in menubars.
 </p>
 <div class="refsect3">
-<a name="id-1.4.10.6.12.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkPackDirection.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -509,7 +506,7 @@ menuitems contained in menubars.
 the widgets contained in child menuitems are arranged.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_PACK_DIRECTION_LTR</p>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -519,7 +516,7 @@ the widgets contained in child menuitems are arranged.</p>
 menuitems are arranged in the menubar.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_PACK_DIRECTION_LTR</p>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -549,7 +546,6 @@ menuitems are arranged in the menubar.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

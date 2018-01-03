@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: GdkDisplay</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GdkDisplay: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="multihead.html" title="Multi-head Support Overview">
 <link rel="next" href="GdkDisplayManager.html" title="GdkDisplayManager">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GdkDisplay.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -341,7 +341,7 @@
 </div>
 <div class="refsect1">
 <a name="GdkDisplay.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -350,13 +350,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GdkDisplay.html#GdkDisplay-closed" title="The “closed” signal">closed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GdkDisplay.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -375,7 +375,7 @@
 </div>
 <div class="refsect1">
 <a name="GdkDisplay.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GdkDisplay
 </pre>
 </div>
@@ -414,8 +414,8 @@
 gdk_display_open (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *display_name</code></em>);</pre>
 <p>Opens a display.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-open.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -429,12 +429,11 @@ gdk_display_open (<em class="parameter"><code>const <a href="https://developer.g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.2.6"></a><h4>Returns</h4>
+<a name="gdk-display-open.returns"></a><h4>Returns</h4>
 <p>a <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the display
 could not be opened.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -445,12 +444,12 @@ gdk_display_get_default (<em class="parameter"><code><span class="type">void</sp
 function for
 <code class="literal">gdk_display_manager_get_default_display (<a class="link" href="GdkDisplayManager.html#gdk-display-manager-get" title="gdk_display_manager_get ()"><code class="function">gdk_display_manager_get()</code></a>)</code>.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.3.5"></a><h4>Returns</h4>
+<a name="gdk-display-get-default.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no default
 display. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -459,8 +458,8 @@ display. </p>
 gdk_display_get_name (<em class="parameter"><code><a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> *display</code></em>);</pre>
 <p>Gets the name of the display.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -474,12 +473,11 @@ gdk_display_get_name (<em class="parameter"><code><a class="link" href="GdkDispl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.4.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-name.returns"></a><h4>Returns</h4>
 <p> a string representing the display name. This string is owned
 by GDK and should not be modified or freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -489,8 +487,8 @@ gdk_display_get_n_screens (<em class="parameter"><code><a class="link" href="Gdk
 <p>Gets the number of screen managed by the <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-n-screens.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -504,11 +502,10 @@ gdk_display_get_n_screens (<em class="parameter"><code><a class="link" href="Gdk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.5.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-n-screens.returns"></a><h4>Returns</h4>
 <p> number of screens.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -518,8 +515,8 @@ gdk_display_get_screen (<em class="parameter"><code><a class="link" href="GdkDis
                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> screen_num</code></em>);</pre>
 <p>Returns a screen object for one of the screens of the display.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -540,11 +537,10 @@ gdk_display_get_screen (<em class="parameter"><code><a class="link" href="GdkDis
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.6.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-screen.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> object</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -554,8 +550,8 @@ gdk_display_get_default_screen (<em class="parameter"><code><a class="link" href
 <p>Get the default <a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> for <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-default-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -569,12 +565,11 @@ gdk_display_get_default_screen (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.7.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-default-screen.returns"></a><h4>Returns</h4>
 <p> the default <a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> object for <em class="parameter"><code>display</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -584,8 +579,8 @@ gdk_display_pointer_ungrab (<em class="parameter"><code><a class="link" href="Gd
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Release any pointer grab.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-pointer-ungrab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -605,7 +600,7 @@ gdk_display_pointer_ungrab (<em class="parameter"><code><a class="link" href="Gd
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -615,8 +610,8 @@ gdk_display_keyboard_ungrab (<em class="parameter"><code><a class="link" href="G
                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Release any keyboard grab</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-keyboard-ungrab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -636,7 +631,7 @@ gdk_display_keyboard_ungrab (<em class="parameter"><code><a class="link" href="G
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -645,8 +640,8 @@ gdk_display_keyboard_ungrab (<em class="parameter"><code><a class="link" href="G
 gdk_display_pointer_is_grabbed (<em class="parameter"><code><a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> *display</code></em>);</pre>
 <p>Test if the pointer is grabbed.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-pointer-is-grabbed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -660,11 +655,10 @@ gdk_display_pointer_is_grabbed (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.10.6"></a><h4>Returns</h4>
+<a name="gdk-display-pointer-is-grabbed.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an active X pointer grab is in effect</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -674,8 +668,8 @@ gdk_display_beep (<em class="parameter"><code><a class="link" href="GdkDisplay.h
 <p>Emits a short beep on <em class="parameter"><code>display</code></em>
 </p>
 <div class="refsect3">
-<a name="id-1.2.4.9.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-beep.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -688,7 +682,7 @@ gdk_display_beep (<em class="parameter"><code><a class="link" href="GdkDisplay.h
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -704,8 +698,8 @@ removed.</p>
 <p>This is most useful for X11. On windowing systems where requests are
 handled synchronously, this function will do nothing.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-sync.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -718,7 +712,7 @@ handled synchronously, this function will do nothing.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -734,8 +728,8 @@ from a thread other than the thread where the main loop is running.</p>
 <p>This is most useful for X11. On windowing systems where requests are
 handled synchronously, this function will do nothing.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-flush.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -748,7 +742,7 @@ handled synchronously, this function will do nothing.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -758,8 +752,8 @@ gdk_display_close (<em class="parameter"><code><a class="link" href="GdkDisplay.
 <p>Closes the connection to the windowing system for the given display,
 and cleans up associated resources.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-close.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -772,7 +766,7 @@ and cleans up associated resources.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -781,8 +775,8 @@ and cleans up associated resources.</p>
 gdk_display_is_closed (<em class="parameter"><code><a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> *display</code></em>);</pre>
 <p>Finds out if the display has been closed.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-is-closed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -796,11 +790,10 @@ gdk_display_is_closed (<em class="parameter"><code><a class="link" href="GdkDisp
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.15.6"></a><h4>Returns</h4>
+<a name="gdk-display-is-closed.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the display is closed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -811,8 +804,8 @@ gdk_display_list_devices (<em class="parameter"><code><a class="link" href="GdkD
 .
 The list is statically allocated and should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-list-devices.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -826,11 +819,10 @@ The list is statically allocated and should not be freed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.16.6"></a><h4>Returns</h4>
+<a name="gdk-display-list-devices.returns"></a><h4>Returns</h4>
 <p> a list of <a class="link" href="gdk2-Input-Devices.html#GdkDevice" title="struct GdkDevice"><span class="type">GdkDevice</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -841,8 +833,8 @@ gdk_display_get_event (<em class="parameter"><code><a class="link" href="GdkDisp
 , fetching events from the
 windowing system if necessary.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-event.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -856,12 +848,11 @@ windowing system if necessary.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.17.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-event.returns"></a><h4>Returns</h4>
 <p> the next <a class="link" href="gdk2-Event-Structures.html#GdkEvent" title="union GdkEvent"><span class="type">GdkEvent</span></a> to be processed, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no events
 are pending. The returned <a class="link" href="gdk2-Event-Structures.html#GdkEvent" title="union GdkEvent"><span class="type">GdkEvent</span></a> should be freed with <a class="link" href="gdk2-Events.html#gdk-event-free" title="gdk_event_free ()"><code class="function">gdk_event_free()</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -874,8 +865,8 @@ removing the event from the queue.  (Note that this function will
 not get more events from the windowing system.  It only checks the events
 that have already been moved to the GDK event queue.)</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-peek-event.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -889,13 +880,12 @@ that have already been moved to the GDK event queue.)</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.18.6"></a><h4>Returns</h4>
+<a name="gdk-display-peek-event.returns"></a><h4>Returns</h4>
 <p> a copy of the first <a class="link" href="gdk2-Event-Structures.html#GdkEvent" title="union GdkEvent"><span class="type">GdkEvent</span></a> on the event queue, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
 if no events are in the queue. The returned <a class="link" href="gdk2-Event-Structures.html#GdkEvent" title="union GdkEvent"><span class="type">GdkEvent</span></a> should be freed with
 <a class="link" href="gdk2-Events.html#gdk-event-free" title="gdk_event_free ()"><code class="function">gdk_event_free()</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -907,8 +897,8 @@ gdk_display_put_event (<em class="parameter"><code><a class="link" href="GdkDisp
 queue for <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-put-event.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -928,7 +918,7 @@ queue for <em class="parameter"><code>display</code></em>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -942,8 +932,8 @@ gdk_display_add_client_message_filter (<em class="parameter"><code><a class="lin
 See <a class="link" href="gdk2-Windows.html#gdk-window-add-filter" title="gdk_window_add_filter ()"><code class="function">gdk_window_add_filter()</code></a> if you are interested in filtering other
 types of events.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-add-client-message-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -977,7 +967,7 @@ of the XClientMessage event struct.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -990,8 +980,8 @@ count as a double click and result in a <a class="link" href="gdk2-Events.html#G
 Applications should <span class="emphasis"><em>not</em></span> set this, it is a global 
 user-configured setting.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-set-double-click-time.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1011,7 +1001,7 @@ user-configured setting.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1025,8 +1015,8 @@ See also <a class="link" href="GdkDisplay.html#gdk-display-set-double-click-time
 Applications should <span class="emphasis"><em>not</em></span> set this, it is a global 
 user-configured setting.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-set-double-click-distance.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1046,7 +1036,7 @@ user-configured setting.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1060,8 +1050,8 @@ gdk_display_get_pointer (<em class="parameter"><code><a class="link" href="GdkDi
 <p>Gets the current location of the pointer and the current modifier
 mask for a given display.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-pointer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1097,7 +1087,7 @@ cursor is on, or <a href="https://developer.gnome.org/glib/unstable/glib-Standar
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1114,8 +1104,8 @@ of the pointer in that window in <em class="parameter"><code>win_x</code></em>
 if the window under the mouse pointer is not known to GDK (for example, 
 belongs to another application).</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-window-at-pointer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1143,11 +1133,11 @@ to the window origin, or <a href="https://developer.gnome.org/glib/unstable/glib
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.24.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-window-at-pointer.returns"></a><h4>Returns</h4>
 <p> the window under the mouse pointer, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1165,8 +1155,8 @@ display. This is only useful for such low-level tools as an
 event recorder. Applications should never have any
 reason to use this facility.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.25.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-set-pointer-hooks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1189,11 +1179,10 @@ or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.25.8"></a><h4>Returns</h4>
+<a name="gdk-display-set-pointer-hooks.returns"></a><h4>Returns</h4>
 <p> the previous pointer hook table</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1216,10 +1205,10 @@ instantaneously to the destination.</p>
 <p>Note that the pointer should normally be under the
 control of the user. This function was added to cover
 some rare use cases like keyboard navigation support
-for the color picker in the <a href="http://developer.gnome.org/gtk2/GtkColorSelectionDialog.html"><span class="type">GtkColorSelectionDialog</span></a>.</p>
+for the color picker in the <a href="http://developer.gnome.org/gtk3/GtkColorSelectionDialog.html#GtkColorSelectionDialog-struct"><span class="type">GtkColorSelectionDialog</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-warp-pointer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1250,7 +1239,7 @@ to warp the pointer to</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1262,8 +1251,8 @@ on <em class="parameter"><code>display</code></em>
 . Otherwise, cursors have only a forground
 and a background color.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-supports-cursor-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1277,11 +1266,10 @@ and a background color.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.27.6"></a><h4>Returns</h4>
+<a name="gdk-display-supports-cursor-color.returns"></a><h4>Returns</h4>
 <p> whether cursors can have multiple colors.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1293,8 +1281,8 @@ on <em class="parameter"><code>display</code></em>
 . Otherwise, cursors are restricted to bilevel 
 alpha (i.e. a mask).</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-supports-cursor-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1308,11 +1296,10 @@ alpha (i.e. a mask).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.28.6"></a><h4>Returns</h4>
+<a name="gdk-display-supports-cursor-alpha.returns"></a><h4>Returns</h4>
 <p> whether cursors can have alpha channels.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1322,8 +1309,8 @@ gdk_display_get_default_cursor_size (<em class="parameter"><code><a class="link"
 <p>Returns the default size to use for cursors on <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-default-cursor-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1337,11 +1324,10 @@ gdk_display_get_default_cursor_size (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.29.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-default-cursor-size.returns"></a><h4>Returns</h4>
 <p> the default cursor size.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1353,8 +1339,8 @@ gdk_display_get_maximal_cursor_size (<em class="parameter"><code><a class="link"
 <p>Gets the maximal size to use for cursors on <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-maximal-cursor-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1379,7 +1365,7 @@ gdk_display_get_maximal_cursor_size (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1391,8 +1377,8 @@ on <em class="parameter"><code>display</code></em>
 . This window is implicitly created by GDK. 
 See <a class="link" href="gdk2-Windows.html#gdk-window-set-group" title="gdk_window_set_group ()"><code class="function">gdk_window_set_group()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-get-default-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1406,12 +1392,11 @@ See <a class="link" href="gdk2-Windows.html#gdk-window-set-group" title="gdk_win
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.31.6"></a><h4>Returns</h4>
+<a name="gdk-display-get-default-group.returns"></a><h4>Returns</h4>
 <p> The default group leader window for <em class="parameter"><code>display</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1422,8 +1407,8 @@ gdk_display_supports_selection_notification
 <p>Returns whether <a class="link" href="gdk2-Event-Structures.html#GdkEventOwnerChange" title="struct GdkEventOwnerChange"><span class="type">GdkEventOwnerChange</span></a> events will be 
 sent when the owner of a selection changes.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-supports-selection-notification.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1437,12 +1422,11 @@ sent when the owner of a selection changes.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.32.6"></a><h4>Returns</h4>
+<a name="gdk-display-supports-selection-notification.returns"></a><h4>Returns</h4>
 <p> whether <a class="link" href="gdk2-Event-Structures.html#GdkEventOwnerChange" title="struct GdkEventOwnerChange"><span class="type">GdkEventOwnerChange</span></a> events will
 be sent.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1454,8 +1438,8 @@ gdk_display_request_selection_notification
 <p>Request <a class="link" href="gdk2-Event-Structures.html#GdkEventOwnerChange" title="struct GdkEventOwnerChange"><span class="type">GdkEventOwnerChange</span></a> events for ownership changes
 of the selection named by the given atom.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-request-selection-notification.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1477,12 +1461,11 @@ ownership change notification is requested</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.33.6"></a><h4>Returns</h4>
+<a name="gdk-display-request-selection-notification.returns"></a><h4>Returns</h4>
 <p> whether <a class="link" href="gdk2-Event-Structures.html#GdkEventOwnerChange" title="struct GdkEventOwnerChange"><span class="type">GdkEventOwnerChange</span></a> events will
 be sent.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1495,8 +1478,8 @@ persistance; i.e. if it's possible to store the clipboard data after an
 application has quit. On X11 this checks if a clipboard daemon is
 running.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-supports-clipboard-persistence.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1510,11 +1493,10 @@ running.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.34.6"></a><h4>Returns</h4>
+<a name="gdk-display-supports-clipboard-persistence.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the display supports clipboard persistance.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1531,8 +1513,8 @@ according to the freedesktop clipboard specification, available at</p>
 <a class="ulink" href="http://www.freedesktop.org/Standards/clipboard-manager-spec" target="_top">
 http://www.freedesktop.org/Standards/clipboard-manager-spec</a>.
 <div class="refsect3">
-<a name="id-1.2.4.9.35.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-store-clipboard.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1569,7 +1551,7 @@ array</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1580,8 +1562,8 @@ gdk_display_supports_shapes (<em class="parameter"><code><a class="link" href="G
 be used to create shaped windows on <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-supports-shapes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1595,11 +1577,10 @@ be used to create shaped windows on <em class="parameter"><code>display</code></
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.36.6"></a><h4>Returns</h4>
+<a name="gdk-display-supports-shapes.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if shaped windows are supported </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1610,8 +1591,8 @@ gdk_display_supports_input_shapes (<em class="parameter"><code><a class="link" h
 be used to modify the input shape of windows on <em class="parameter"><code>display</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-supports-input-shapes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1625,11 +1606,10 @@ be used to modify the input shape of windows on <em class="parameter"><code>disp
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.37.6"></a><h4>Returns</h4>
+<a name="gdk-display-supports-input-shapes.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if windows with modified input shape are supported </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1641,8 +1621,8 @@ to redirect drawing on the window using compositing.</p>
 <p>Currently this only works on X11 with XComposite and
 XDamage extensions available.</p>
 <div class="refsect3">
-<a name="id-1.2.4.9.38.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-display-supports-composite.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1656,11 +1636,10 @@ XDamage extensions available.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.4.9.38.7"></a><h4>Returns</h4>
+<a name="gdk-display-supports-composite.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if windows may be composited.</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1672,7 +1651,7 @@ XDamage extensions available.</p>
 The <span class="structname">GdkDisplay</span> struct is the GDK representation
 of an X display. All its fields are private and should not be accessed directly.
 </p>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1703,8 +1682,8 @@ This is only useful for such low-level tools as an event recorder.
 Applications should never have any reason to use this facility
 </p>
 <div class="refsect3">
-<a name="id-1.2.4.10.3.6"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkDisplayPointerHooks.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1743,7 +1722,7 @@ belongs to another application).</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1758,8 +1737,8 @@ user_function (<a class="link" href="GdkDisplay.html" title="GdkDisplay"><span c
 system for <em class="parameter"><code>display</code></em>
  is closed.</p>
 <div class="refsect3">
-<a name="id-1.2.4.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkDisplay-closed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1784,13 +1763,12 @@ system for <em class="parameter"><code>display</code></em>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.2</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

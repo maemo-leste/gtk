@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkScrolledWindow</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkScrolledWindow: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="ScrollingWidgets.html" title="Scrolling">
 <link rel="prev" href="GtkVScrollbar.html" title="GtkVScrollbar">
 <link rel="next" href="Printing.html" title="Printing">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkScrolledWindow.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -169,7 +169,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkScrolledWindow.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -218,7 +218,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkScrolledWindow.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -240,7 +240,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkScrolledWindow.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -250,19 +250,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkScrolledWindow.html#GtkScrolledWindow-move-focus-out" title="The “move-focus-out” signal">move-focus-out</a></td>
-<td class="signal_flags">Action</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
 </tr>
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkScrolledWindow.html#GtkScrolledWindow-scroll-child" title="The “scroll-child” signal">scroll-child</a></td>
-<td class="signal_flags">Action</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkScrolledWindow.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -275,7 +275,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkScrolledWindow.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -355,8 +355,8 @@ shared with the scrollbars and the child widget to keep the bars in sync
 with the child. Usually you want to pass <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the adjustments, which 
 will cause the scrolled window to create them for you.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -377,9 +377,8 @@ will cause the scrolled window to create them for you.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.2.7"></a><h4>Returns</h4>
+<a name="gtk-scrolled-window-new.returns"></a><h4>Returns</h4>
 <p> a new scrolled window</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -391,8 +390,8 @@ gtk_scrolled_window_get_hadjustment (<em class="parameter"><code><a class="link"
 horizontal scrollbar to the child widget's horizontal scroll
 functionality.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-get-hadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -406,7 +405,7 @@ functionality.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.3.6"></a><h4>Returns</h4>
+<a name="gtk-scrolled-window-get-hadjustment.returns"></a><h4>Returns</h4>
 <p> the horizontal <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -419,8 +418,8 @@ gtk_scrolled_window_get_vadjustment (<em class="parameter"><code><a class="link"
 <p>Returns the vertical scrollbar's adjustment, used to connect the
 vertical scrollbar to the child widget's vertical scroll functionality.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-get-vadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -434,7 +433,7 @@ vertical scrollbar to the child widget's vertical scroll functionality.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.4.6"></a><h4>Returns</h4>
+<a name="gtk-scrolled-window-get-vadjustment.returns"></a><h4>Returns</h4>
 <p> the vertical <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -447,8 +446,8 @@ gtk_scrolled_window_get_hscrollbar (<em class="parameter"><code><a class="link" 
 <p>Returns the horizontal scrollbar of <em class="parameter"><code>scrolled_window</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-get-hscrollbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -462,12 +461,12 @@ gtk_scrolled_window_get_hscrollbar (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.5.6"></a><h4>Returns</h4>
+<a name="gtk-scrolled-window-get-hscrollbar.returns"></a><h4>Returns</h4>
 <p> the horizontal scrollbar of the scrolled window,
 or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it does not have one. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -477,8 +476,8 @@ gtk_scrolled_window_get_vscrollbar (<em class="parameter"><code><a class="link" 
 <p>Returns the vertical scrollbar of <em class="parameter"><code>scrolled_window</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-get-vscrollbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -492,12 +491,12 @@ gtk_scrolled_window_get_vscrollbar (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.6.6"></a><h4>Returns</h4>
+<a name="gtk-scrolled-window-get-vscrollbar.returns"></a><h4>Returns</h4>
 <p> the vertical scrollbar of the scrolled window,
 or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it does not have one. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -514,8 +513,8 @@ never present; if <a class="link" href="gtk2-Standard-Enumerations.html#GTK-POLI
 if needed (that is, if the slider part of the bar would be smaller
 than the trough - the display is larger than the page size).</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-set-policy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -552,8 +551,8 @@ is simply a convenience function; it is equivalent to adding the
 unscrollable child to a viewport, then adding the viewport to the
 scrolled window. If a child has native scrolling, use
 <a class="link" href="GtkContainer.html#gtk-container-add" title="gtk_container_add ()"><code class="function">gtk_container_add()</code></a> instead of this function.</p>
-<p>The viewport scrolls the child by moving its <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>, and takes
-the size of the child to be the size of its toplevel <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>. 
+<p>The viewport scrolls the child by moving its <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>, and takes
+the size of the child to be the size of its toplevel <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>. 
 This will be very wrong for most widgets that support native scrolling;
 for example, if you add a widget such as <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a> with a viewport,
 the whole widget will scroll, including the column headings. Thus, 
@@ -563,8 +562,8 @@ widgets with native scrolling support should not be used with the
 set_scroll_adjustments_signal field in <a class="link" href="GtkWidget.html#GtkWidgetClass" title="struct GtkWidgetClass"><span class="type">GtkWidgetClass</span></a> is non-zero,
 i.e. has been filled in with a valid signal identifier.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.8.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-add-with-viewport.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -600,8 +599,8 @@ Other values in <a class="link" href="gtk2-Standard-Enumerations.html#GtkCornerT
 <p>See also <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-get-placement" title="gtk_scrolled_window_get_placement ()"><code class="function">gtk_scrolled_window_get_placement()</code></a> and
 <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-unset-placement" title="gtk_scrolled_window_unset_placement ()"><code class="function">gtk_scrolled_window_unset_placement()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.9.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-set-placement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -633,8 +632,8 @@ window, it obeys the "gtk-scrolled-window-placement" XSETTING.</p>
 <p>See also <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-set-placement" title="gtk_scrolled_window_set_placement ()"><code class="function">gtk_scrolled_window_set_placement()</code></a> and
 <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-get-placement" title="gtk_scrolled_window_get_placement ()"><code class="function">gtk_scrolled_window_get_placement()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-unset-placement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -647,7 +646,7 @@ window, it obeys the "gtk-scrolled-window-placement" XSETTING.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -659,8 +658,8 @@ gtk_scrolled_window_set_shadow_type (<em class="parameter"><code><a class="link"
 <em class="parameter"><code>scrolled_window</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-set-shadow-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -689,8 +688,8 @@ gtk_scrolled_window_set_hadjustment (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *hadjustment</code></em>);</pre>
 <p>Sets the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> for the horizontal scrollbar.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-set-hadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -719,8 +718,8 @@ gtk_scrolled_window_set_vadjustment (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *vadjustment</code></em>);</pre>
 <p>Sets the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> for the vertical scrollbar.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-set-vadjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -749,8 +748,8 @@ gtk_scrolled_window_get_placement (<em class="parameter"><code><a class="link" h
 <p>Gets the placement of the contents with respect to the scrollbars
 for the scrolled window. See <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-set-placement" title="gtk_scrolled_window_set_placement ()"><code class="function">gtk_scrolled_window_set_placement()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-get-placement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -764,11 +763,10 @@ for the scrolled window. See <a class="link" href="GtkScrolledWindow.html#gtk-sc
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.14.6"></a><h4>Returns</h4>
+<a name="gtk-scrolled-window-get-placement.returns"></a><h4>Returns</h4>
 <p> the current placement value.</p>
 <p>See also <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-set-placement" title="gtk_scrolled_window_set_placement ()"><code class="function">gtk_scrolled_window_set_placement()</code></a> and
 <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-unset-placement" title="gtk_scrolled_window_unset_placement ()"><code class="function">gtk_scrolled_window_unset_placement()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -781,8 +779,8 @@ gtk_scrolled_window_get_policy (<em class="parameter"><code><a class="link" href
 <p>Retrieves the current policy values for the horizontal and vertical
 scrollbars. See <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-set-policy" title="gtk_scrolled_window_set_policy ()"><code class="function">gtk_scrolled_window_set_policy()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-get-policy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -818,8 +816,8 @@ gtk_scrolled_window_get_shadow_type (<em class="parameter"><code><a class="link"
 <p>Gets the shadow type of the scrolled window. See 
 <a class="link" href="GtkScrolledWindow.html#gtk-scrolled-window-set-shadow-type" title="gtk_scrolled_window_set_shadow_type ()"><code class="function">gtk_scrolled_window_set_shadow_type()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-scrolled-window-get-shadow-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -833,9 +831,8 @@ gtk_scrolled_window_get_shadow_type (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.15.4.12.16.6"></a><h4>Returns</h4>
+<a name="gtk-scrolled-window-get-shadow-type.returns"></a><h4>Returns</h4>
 <p> the current shadow type</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -912,7 +909,7 @@ of the contents with respect to the scrollbars. Otherwise, the
 "gtk-scrolled-window-placement" setting is used.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -932,7 +929,7 @@ of the contents with respect to the scrollbars. Otherwise, the
 <p>Whether to place scrollbars within the scrolled window's bevel.</p>
 <p>Flags: Read</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -946,8 +943,8 @@ user_function (<a class="link" href="GtkScrolledWindow.html" title="GtkScrolledW
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.15.4.16.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkScrolledWindow-move-focus-out.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -960,7 +957,7 @@ user_function (<a class="link" href="GtkScrolledWindow.html" title="GtkScrolledW
 </tr></tbody>
 </table></div>
 </div>
-<p>Flags: Action</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -975,8 +972,8 @@ user_function (<a class="link" href="GtkScrolledWindow.html" title="GtkScrolledW
 The horizontal or vertical adjustment is updated which triggers a
 signal that the scrolled windows child may listen to and scroll itself.</p>
 <div class="refsect3">
-<a name="id-1.4.15.4.16.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkScrolledWindow-scroll-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1007,7 +1004,7 @@ horizontally or not</p></td>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Action</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1029,7 +1026,6 @@ API.)</p></div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

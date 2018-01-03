@@ -102,6 +102,9 @@
 /* Have the Xrandr extension library */
 #undef HAVE_RANDR
 
+/* Have the Xrandr 1.5 extension library */
+#undef HAVE_RANDR15
+
 /* Define to 1 if shm.h is available */
 #undef HAVE_SHM_H
 
@@ -213,8 +216,7 @@
 /* Define to 1 if you have the `_NSGetEnviron' function. */
 #undef HAVE__NSGETENVIRON
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #undef LT_OBJDIR
 
 /* Define if <X11/extensions/XIproto.h> needed for xReply */

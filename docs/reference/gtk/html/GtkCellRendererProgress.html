@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCellRendererProgress</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCellRendererProgress: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkCellRendererPixbuf.html" title="GtkCellRendererPixbuf">
 <link rel="next" href="GtkCellRendererSpin.html" title="GtkCellRendererSpin">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCellRendererProgress.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -52,7 +52,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererProgress.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -95,7 +95,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererProgress.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -108,7 +108,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererProgress.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer">GtkCellRenderer</a>
@@ -138,11 +138,10 @@ The <a class="link" href="GtkCellRendererProgress.html" title="GtkCellRendererPr
 gtk_cell_renderer_progress_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkCellRendererProgress.html" title="GtkCellRendererProgress"><span class="type">GtkCellRendererProgress</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.19.9.2.5"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-progress-new.returns"></a><h4>Returns</h4>
 <p> the new cell renderer</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -164,7 +163,7 @@ direction of the progress bar (left-to-right, right-to-left,
 top-to-bottom or bottom-to-top).</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_PROGRESS_LEFT_TO_RIGHT</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -183,7 +182,7 @@ to zero. To indicate completion, set the property to <a href="https://developer.
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -197,7 +196,7 @@ label to be displayed. Setting this property to an empty string causes
 no label to be displayed.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -209,7 +208,7 @@ text in the progress bar.  Valid values range from 0 (left) to 1
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,1]</p>
 <p>Default value: 0.5</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -221,7 +220,7 @@ text in the progress bar.  Valid values range from 0 (top) to 1
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,1]</p>
 <p>Default value: 0.5</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -232,12 +231,11 @@ progress bar will be "filled in".</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,100]</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkFixed</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkFixed: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="LayoutContainers.html" title="Layout Containers">
 <link rel="prev" href="GtkVButtonBox.html" title="GtkVButtonBox">
 <link rel="next" href="GtkHPaned.html" title="GtkHPaned">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkFixed.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -87,7 +87,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFixed.child-properties"></a><h2>Child Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="child_properties_type">
 <col width="300px" class="child_properties_name">
@@ -109,7 +109,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFixed.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -122,7 +122,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFixed.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -199,9 +199,8 @@ gtk_fixed_new (<em class="parameter"><code><span class="type">void</span></code>
 Creates a new <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.8.10.2.5"></a><h4>Returns</h4>
+<a name="gtk-fixed-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -216,8 +215,8 @@ gtk_fixed_put (<em class="parameter"><code><a class="link" href="GtkFixed.html" 
 Adds a widget to a <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> container at the given position.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.8.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-fixed-put.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -260,8 +259,8 @@ gtk_fixed_move (<em class="parameter"><code><a class="link" href="GtkFixed.html"
 Moves a child of a <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> container to the given position.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.8.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-fixed-move.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -301,11 +300,11 @@ gtk_fixed_get_has_window (<em class="parameter"><code><a class="link" href="GtkF
 <p><code class="literal">gtk_fixed_get_has_window</code> has been deprecated since version 2.20 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkWidget.html#gtk-widget-get-has-window" title="gtk_widget_get_has_window ()"><code class="function">gtk_widget_get_has_window()</code></a> instead.</p>
 </div>
-<p>Gets whether the <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> has its own <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>.
+<p>Gets whether the <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> has its own <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>.
 See <a class="link" href="GtkFixed.html#gtk-fixed-set-has-window" title="gtk_fixed_set_has_window ()"><code class="function">gtk_fixed_set_has_window()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.13.8.10.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-fixed-get-has-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -319,10 +318,9 @@ See <a class="link" href="GtkFixed.html#gtk-fixed-set-has-window" title="gtk_fix
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.13.8.10.5.7"></a><h4>Returns</h4>
+<a name="gtk-fixed-get-has-window.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>fixed</code></em>
 has its own window.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -336,16 +334,16 @@ gtk_fixed_set_has_window (<em class="parameter"><code><a class="link" href="GtkF
 <p>Use <a class="link" href="GtkWidget.html#gtk-widget-set-has-window" title="gtk_widget_set_has_window ()"><code class="function">gtk_widget_set_has_window()</code></a> instead.</p>
 </div>
 <p>Sets whether a <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> widget is created with a separate
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> for <em class="parameter"><code>widget-&gt;window</code></em>
+<a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> for <em class="parameter"><code>widget-&gt;window</code></em>
  or not. (By default, it will be
-created with no separate <a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>). This function must be called
+created with no separate <a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>). This function must be called
 while the <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> is not realized, for instance, immediately after the
 window is created.</p>
 <p>This function was added to provide an easy migration path for
 older applications which may expect <a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> to have a separate window.</p>
 <div class="refsect3">
-<a name="id-1.4.13.8.10.6.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-fixed-set-has-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -377,7 +375,7 @@ The <a class="link" href="GtkFixed.html#GtkFixed-struct" title="struct GtkFixed"
 (These fields should be considered read-only. They should never be set by
 an application.)
 </p>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col>
 <col>
@@ -413,7 +411,6 @@ their positions.</td>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

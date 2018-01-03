@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkPixmap</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkPixmap: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkOptionMenu.html" title="GtkOptionMenu">
 <link rel="next" href="GtkPreview.html" title="GtkPreview">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkPixmap.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -78,7 +78,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPixmap.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -91,7 +91,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPixmap.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -114,8 +114,8 @@ GtkPixmap implements
 <a name="GtkPixmap.description"></a><h2>Description</h2>
 <p>
 The <a class="link" href="GtkPixmap.html" title="GtkPixmap"><span class="type">GtkPixmap</span></a> widget displays a graphical image or icon.
-The icon is typically created using <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-colormap-create-from-xpm"><code class="function">gdk_pixmap_colormap_create_from_xpm()</code></a>
-or <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-colormap-create-from-xpm-d"><code class="function">gdk_pixmap_colormap_create_from_xpm_d()</code></a>.
+The icon is typically created using <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-colormap-create-from-xpm"><code class="function">gdk_pixmap_colormap_create_from_xpm()</code></a>
+or <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-colormap-create-from-xpm-d"><code class="function">gdk_pixmap_colormap_create_from_xpm_d()</code></a>.
 </p>
 <p>
 The pixels in a <a class="link" href="GtkPixmap.html" title="GtkPixmap"><span class="type">GtkPixmap</span></a> cannot be manipulated by the application after
@@ -134,15 +134,15 @@ in newly written code. Use <a class="link" href="GtkImage.html" title="GtkImage"
 <div class="refsect2">
 <a name="gtk-pixmap-new"></a><h3>gtk_pixmap_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
-gtk_pixmap_new (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>);</pre>
+gtk_pixmap_new (<em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *pixmap</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_pixmap_new</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>
 Creates a new <a class="link" href="GtkPixmap.html" title="GtkPixmap"><span class="type">GtkPixmap</span></a>, using the given GDK pixmap and mask.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.11.9.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-pixmap-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -163,9 +163,8 @@ Creates a new <a class="link" href="GtkPixmap.html" title="GtkPixmap"><span clas
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.11.9.2.7"></a><h4>Returns</h4>
+<a name="gtk-pixmap-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkPixmap.html" title="GtkPixmap"><span class="type">GtkPixmap</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -173,15 +172,15 @@ Creates a new <a class="link" href="GtkPixmap.html" title="GtkPixmap"><span clas
 <a name="gtk-pixmap-set"></a><h3>gtk_pixmap_set ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_pixmap_set (<em class="parameter"><code><a class="link" href="GtkPixmap.html" title="GtkPixmap"><span class="type">GtkPixmap</span></a> *pixmap</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *val</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>);</pre>
+                <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *val</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_pixmap_set</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>
-Sets the <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> and <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> mask.
+Sets the <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> and <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> mask.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.11.9.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-pixmap-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -195,12 +194,12 @@ Sets the <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.h
 </tr>
 <tr>
 <td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>.</p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>mask</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a>, which indicates which parts of the <em class="parameter"><code>pixmap</code></em>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a>, which indicates which parts of the <em class="parameter"><code>pixmap</code></em>
 should be
 transparent. This can be NULL, in which case none of the <em class="parameter"><code>pixmap</code></em>
 is
@@ -216,15 +215,15 @@ transparent.</p></td>
 <a name="gtk-pixmap-get"></a><h3>gtk_pixmap_get ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_pixmap_get (<em class="parameter"><code><a class="link" href="GtkPixmap.html" title="GtkPixmap"><span class="type">GtkPixmap</span></a> *pixmap</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> **val</code></em>,
-                <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> **mask</code></em>);</pre>
+                <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> **val</code></em>,
+                <em class="parameter"><code><a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> **mask</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_pixmap_get</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>
-Gets the current <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> and <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> mask.
+Gets the current <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> and <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> mask.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.11.9.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-pixmap-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -238,12 +237,12 @@ Gets the current <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-P
 </tr>
 <tr>
 <td class="parameter_name"><p>val</p></td>
-<td class="parameter_description"><p>returns the current <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>.</p></td>
+<td class="parameter_description"><p>returns the current <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>mask</p></td>
-<td class="parameter_description"><p>returns the current <a href="http://library.gnome.org/devel/gdk3/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> mask.</p></td>
+<td class="parameter_description"><p>returns the current <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap"><span class="type">GdkBitmap</span></a> mask.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -262,8 +261,8 @@ Sets wether an extra pixmap should be automatically created and used
 when the pixmap is insensitive. The default value is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.11.9.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-pixmap-set-build-insensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -300,7 +299,6 @@ should be accessed using the functions below.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

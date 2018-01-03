@@ -13,8 +13,8 @@ AC_PREREQ(2.62)
 
 m4_define([gtk_major_version], [2])
 m4_define([gtk_minor_version], [24])
-m4_define([gtk_micro_version], [25])
-m4_define([gtk_interface_age], [25])
+m4_define([gtk_micro_version], [31])
+m4_define([gtk_interface_age], [31])
 m4_define([gtk_binary_age],
           [m4_eval(100 * gtk_minor_version + gtk_micro_version)])
 m4_define([gtk_version],
@@ -621,8 +621,6 @@ if test "x$GLIB_VERSION_MAJOR_MINOR" = "x$GLIB_REQUIRED_VERSION_MAJOR_MINOR"; th
   CFLAGS="-DG_DISABLE_DEPRECATED $CFLAGS"
 fi
 
-CFLAGS="-DGDK_PIXBUF_DISABLE_DEPRECATED $CFLAGS"
-
 
 dnl
 dnl Check for bind_textdomain_codeset, including -lintl if GLib brings it in.
@@ -1194,6 +1192,9 @@ if test "x$gdktarget" = "xx11"; then
   if $PKG_CONFIG --exists "xrandr >= 1.2.99" ; then
      AC_DEFINE(HAVE_RANDR, 1, [Have the Xrandr extension library])
 
+     if $PKG_CONFIG --exists "xrandr >= 1.5.0" ; then
+       AC_DEFINE(HAVE_RANDR15, 1, [Have the Xrandr 1.5 extension library])
+     fi
      X_PACKAGES="$X_PACKAGES xrandr"
   fi
        
@@ -1743,6 +1744,7 @@ build/win32/vs9/Makefile
 build/win32/vs10/Makefile
 build/win32/vs11/Makefile
 build/win32/vs12/Makefile
+build/win32/vs14/Makefile
 gdk/Makefile
 gdk/x11/Makefile
 gdk/win32/Makefile

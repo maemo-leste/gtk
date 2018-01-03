@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Graphics Contexts</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Graphics Contexts: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Points-Rectangles-and-Regions.html" title="Points, Rectangles and Regions">
 <link rel="next" href="gdk2-Drawing-Primitives.html" title="Drawing Primitives">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Graphics-Contexts.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -277,7 +277,7 @@
 </div>
 <a name="GdkGC"></a><div class="refsect1">
 <a name="gdk2-Graphics-Contexts.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -328,7 +328,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Graphics-Contexts.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GdkGC
 </pre>
 </div>
@@ -371,8 +371,8 @@ gdk_gc_new (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primi
 </div>
 <p>Create a new graphics context with default values.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -387,9 +387,8 @@ with drawables of the same depth as this one.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.8.9.2.7"></a><h4>Returns</h4>
+<a name="gdk-gc-new.returns"></a><h4>Returns</h4>
 <p> the new graphics context.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -405,8 +404,8 @@ gdk_gc_new_with_values (<em class="parameter"><code><a class="link" href="gdk2-D
 </div>
 <p>Create a new GC with the given initial values.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-new-with-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -434,9 +433,8 @@ are set.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.8.9.3.7"></a><h4>Returns</h4>
+<a name="gdk-gc-new-with-values.returns"></a><h4>Returns</h4>
 <p> the new graphics context.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -448,8 +446,8 @@ gdk_gc_get_screen (<em class="parameter"><code><a class="link" href="gdk2-Graphi
 <p>Gets the <a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> for which <em class="parameter"><code>gc</code></em>
  was created</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-get-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -463,12 +461,11 @@ gdk_gc_get_screen (<em class="parameter"><code><a class="link" href="gdk2-Graphi
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.8.9.4.8"></a><h4>Returns</h4>
+<a name="gdk-gc-get-screen.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> for <em class="parameter"><code>gc</code></em>
 .</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -481,8 +478,8 @@ gdk_gc_ref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Cont
 </div>
 <p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -496,9 +493,8 @@ gdk_gc_ref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Cont
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.8.9.5.7"></a><h4>Returns</h4>
+<a name="gdk-gc-ref.returns"></a><h4>Returns</h4>
 <p> the gc.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -513,8 +509,8 @@ gdk_gc_unref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Co
 <p>Decrement the reference count of <em class="parameter"><code>gc</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -549,8 +545,8 @@ on <em class="parameter"><code>gc</code></em>
 , calling individual "setter" functions is likely more
 convenient.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -593,8 +589,8 @@ only the pixel values of the <em class="parameter"><code>values-&gt;foreground</
 are filled, use <a class="link" href="gdk2-Colormaps-and-Colors.html#gdk-colormap-query-color" title="gdk_colormap_query_color ()"><code class="function">gdk_colormap_query_color()</code></a> to obtain the rgb values
 if you need them.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-get-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -632,8 +628,8 @@ Note that this function uses <em class="parameter"><code>color-&gt;pixel</code><
 <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-rgb-fg-color" title="gdk_gc_set_rgb_fg_color ()"><code class="function">gdk_gc_set_rgb_fg_color()</code></a> to specify the foreground 
 color as red, green, blue components.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-foreground.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -673,8 +669,8 @@ Note that this function uses <em class="parameter"><code>color-&gt;pixel</code><
 <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-rgb-bg-color" title="gdk_gc_set_rgb_bg_color ()"><code class="function">gdk_gc_set_rgb_bg_color()</code></a> to specify the background 
 color as red, green, blue components.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-background.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -712,8 +708,8 @@ then for pseudo-color colormaps (colormaps with a small modifiable
 number of colors), a colorcube will be allocated in the colormap.</p>
 <p>Calling this function for a GC without a colormap is an error.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.11.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-rgb-fg-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -751,8 +747,8 @@ then for pseudo-color colormaps (colormaps with a small modifiable
 number of colors), a colorcube will be allocated in the colormap.</p>
 <p>Calling this function for a GC without a colormap is an error.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.12.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-rgb-bg-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -786,8 +782,8 @@ all text-drawing functions in GDK take a <em class="parameter"><code>font</code>
 argument; the value set here is used when that
 argument is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.)</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -822,8 +818,8 @@ gdk_gc_set_function (<em class="parameter"><code><a class="link" href="gdk2-Grap
 pixel values being drawn are combined to produce
 the final pixel values.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.14.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-function.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -858,8 +854,8 @@ deprecation comments on <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc
 </div>
 <p>Set the fill mode for a graphics context.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -906,8 +902,8 @@ as the source in Cairo:</p>
 This will only be used if the fill mode
 is <a class="link" href="gdk2-Graphics-Contexts.html#GDK-TILED:CAPS"><code class="literal">GDK_TILED</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-tile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -946,8 +942,8 @@ surface using <code class="function">cairo_push_group()</code> first, so that yo
 stipple will only be used if the fill mode is
 <a class="link" href="gdk2-Graphics-Contexts.html#GDK-STIPPLED:CAPS"><code class="literal">GDK_STIPPLED</code></a> or <a class="link" href="gdk2-Graphics-Contexts.html#GDK-OPAQUE-STIPPLED:CAPS"><code class="literal">GDK_OPAQUE_STIPPLED</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-stipple.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -987,8 +983,8 @@ the GC. The tile or stipple will be aligned such
 that the upper left corner of the tile or stipple
 will coincide with this point.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-ts-origin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1030,8 +1026,8 @@ Cairo.</p>
 interpreted relative to the upper-left corner of
 the destination drawable of the current operation.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-clip-origin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1071,8 +1067,8 @@ gdk_gc_set_clip_mask (<em class="parameter"><code><a class="link" href="gdk2-Gra
 The clip mask is interpreted relative to the clip
 origin. (See <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-clip-origin" title="gdk_gc_set_clip_origin ()"><code class="function">gdk_gc_set_clip_origin()</code></a>).</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-clip-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1107,8 +1103,8 @@ gdk_gc_set_clip_rectangle (<em class="parameter"><code><a class="link" href="gdk
 rectangle. The clip mask is interpreted relative to the clip
 origin. (See <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-clip-origin" title="gdk_gc_set_clip_origin ()"><code class="function">gdk_gc_set_clip_origin()</code></a>).</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-clip-rectangle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1143,8 +1139,8 @@ gdk_gc_set_clip_region (<em class="parameter"><code><a class="link" href="gdk2-G
 The clip mask is interpreted relative to the clip origin. (See
 <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-clip-origin" title="gdk_gc_set_clip_origin ()"><code class="function">gdk_gc_set_clip_origin()</code></a>).</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.22.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-clip-region.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1181,8 +1177,8 @@ and masks and <a class="link" href="gdk2-Graphics-Contexts.html#GDK-CLIP-BY-CHIL
 <p>Sets how drawing with this GC on a window will affect child
 windows of that window.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-subwindow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1221,8 +1217,8 @@ using this graphics context generate exposure events
 for the corresponding regions of the destination
 drawable. (See <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-drawable" title="gdk_draw_drawable ()"><code class="function">gdk_draw_drawable()</code></a>).</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.24.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-exposures.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1264,8 +1260,8 @@ a <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">Gd
 the corresponding members of <a class="link" href="gdk2-Graphics-Contexts.html#GdkGCValues" title="struct GdkGCValues"><span class="type">GdkGCValues</span></a> for full
 explanations of the arguments.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-line-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1326,8 +1322,8 @@ be changed with <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-lin
 specifying how many pixels into the dash-list the pattern 
 should actually begin.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.26.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-dashes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1373,8 +1369,8 @@ can be helpful in cases where you'd have copied a <a class="link" href="gdk2-Gra
 <p>Copy the set of values from one graphics context
 onto another graphics context.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.27.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1410,8 +1406,8 @@ automatically, so there is no need to care about them.</p>
 of the colormap's visual must match the depth of the drawable
 for which the GC was created.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.28.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-set-colormap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1447,8 +1443,8 @@ A GC will have a colormap if the drawable for which it was created
 has a colormap, or if a colormap was set explicitely with
 gdk_gc_set_colormap.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.29.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-get-colormap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1462,11 +1458,10 @@ gdk_gc_set_colormap.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.8.9.29.7"></a><h4>Returns</h4>
+<a name="gdk-gc-get-colormap.returns"></a><h4>Returns</h4>
 <p> the colormap of <em class="parameter"><code>gc</code></em>
 , or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>gc</code></em>
 doesn't have one.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1486,8 +1481,8 @@ of the GC so that drawing at x - x_offset, y - y_offset with
 the offset GC  has the same effect as drawing at x, y with the original
 GC.</p>
 <div class="refsect3">
-<a name="id-1.2.8.9.30.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-gc-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1554,8 +1549,8 @@ The <a class="link" href="gdk2-Graphics-Contexts.html#GdkGCValues" title="struct
 to create or modify a graphics context.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkGCValues.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1666,8 +1661,8 @@ A set of bit flags used to indicate which fields
 <a class="link" href="gdk2-Graphics-Contexts.html#GdkGCValues" title="struct GdkGCValues"><span class="type">GdkGCValues</span></a> structure are set.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.4.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkGCValuesMask.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1834,8 +1829,8 @@ images, only <a class="link" href="gdk2-Graphics-Contexts.html#GDK-COPY:CAPS"><c
 useful. For bitmaps, <a class="link" href="gdk2-Graphics-Contexts.html#GDK-AND:CAPS"><code class="literal">GDK_AND</code></a> and <a class="link" href="gdk2-Graphics-Contexts.html#GDK-OR:CAPS"><code class="literal">GDK_OR</code></a> are also useful.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.5.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkFunction.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1978,8 +1973,8 @@ This function is obsolete and should not be used.
 Determines how primitives are drawn.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.7.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkFill.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2032,8 +2027,8 @@ Determines how drawing onto a window will affect child
 windows of that window.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.8.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkSubwindowMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2065,8 +2060,8 @@ windows of that window.
 Determines how lines are drawn.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.9.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkLineStyle.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2107,8 +2102,8 @@ Determines how lines are drawn.
 Determines how the end of lines are drawn.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.10.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkCapStyle.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2158,8 +2153,8 @@ Determines how the end of lines are drawn.
 Determines how the joins between segments of a polygon are drawn.
 </p>
 <div class="refsect3">
-<a name="id-1.2.8.10.11.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkJoinStyle.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2195,7 +2190,6 @@ Determines how the joins between segments of a polygon are drawn.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

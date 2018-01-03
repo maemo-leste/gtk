@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkFontSelection</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkFontSelection: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkFontButton.html" title="GtkFontButton">
 <link rel="next" href="GtkFontSelectionDialog.html" title="GtkFontSelectionDialog">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkFontSelection.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -52,7 +52,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
+<a href="../html/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkFontSelection.html#gtk-font-selection-get-font" title="gtk_font_selection_get_font ()">gtk_font_selection_get_font</a> <span class="c_punctuation">()</span>
@@ -91,7 +91,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace"><span class="returnvalue">PangoFontFace</span></a> *
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace-struct"><span class="returnvalue">PangoFontFace</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkFontSelection.html#gtk-font-selection-get-face" title="gtk_font_selection_get_face ()">gtk_font_selection_get_face</a> <span class="c_punctuation">()</span>
@@ -107,7 +107,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily"><span class="returnvalue">PangoFontFamily</span></a> *
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily-struct"><span class="returnvalue">PangoFontFamily</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkFontSelection.html#gtk-font-selection-get-family" title="gtk_font_selection_get_family ()">gtk_font_selection_get_family</a> <span class="c_punctuation">()</span>
@@ -158,7 +158,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFontSelection.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -167,7 +167,7 @@
 <tbody>
 <tr>
 <td class="property_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *</td>
+<a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *</td>
 <td class="property_name"><a class="link" href="GtkFontSelection.html#GtkFontSelection--font" title="The “font” property">font</a></td>
 <td class="property_flags">Read</td>
 </tr>
@@ -188,7 +188,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFontSelection.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -201,7 +201,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFontSelection.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -250,15 +250,14 @@ To change the text which is shown in the preview area, use
 gtk_font_selection_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.2.5"></a><h4>Returns</h4>
+<a name="gtk-font-selection-new.returns"></a><h4>Returns</h4>
 <p> a n ew <a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-font-selection-get-font"></a><h3>gtk_font_selection_get_font ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
+<pre class="programlisting"><a href="../html/gdk2-Fonts.html#GdkFont"><span class="returnvalue">GdkFont</span></a> *
 gtk_font_selection_get_font (<em class="parameter"><code><a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a> *fontsel</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_font_selection_get_font</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
@@ -266,8 +265,8 @@ gtk_font_selection_get_font (<em class="parameter"><code><a class="link" href="G
 </div>
 <p>Gets the currently-selected font.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -281,9 +280,8 @@ gtk_font_selection_get_font (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.3.7"></a><h4>Returns</h4>
-<p> A <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a>.</p>
-<p></p>
+<a name="gtk-font-selection-get-font.returns"></a><h4>Returns</h4>
+<p> A <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a>.</p>
 </div>
 </div>
 <hr>
@@ -299,8 +297,8 @@ For example, "Helvetica Italic Bold 12" could be normalized to
 "Helvetica Bold Italic 12". Use <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#pango-font-description-equal"><code class="function">pango_font_description_equal()</code></a>
 if you want to compare two font descriptions.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-font-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -314,10 +312,9 @@ if you want to compare two font descriptions.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.4.7"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-font-name.returns"></a><h4>Returns</h4>
 <p> A string with the name of the current font, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
 no font is selected. You must free this string with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -334,8 +331,8 @@ for this to work; this can be guaranteed by simply making sure that the
 <em class="parameter"><code>fontsel</code></em>
  is inserted in a toplevel window before you call this function.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.5.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-set-font-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -356,12 +353,11 @@ for this to work; this can be guaranteed by simply making sure that the
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.5.8"></a><h4>Returns</h4>
+<a name="gtk-font-selection-set-font-name.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the font could be set successfully; <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if no
 such font exists or if the <em class="parameter"><code>fontsel</code></em>
 doesn't belong to a particular
 screen yet.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -371,8 +367,8 @@ screen yet.</p>
 gtk_font_selection_get_preview_text (<em class="parameter"><code><a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a> *fontsel</code></em>);</pre>
 <p>Gets the text displayed in the preview area.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-preview-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -386,11 +382,10 @@ gtk_font_selection_get_preview_text (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.6.6"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-preview-text.returns"></a><h4>Returns</h4>
 <p> the text displayed in the preview area.
 This string is owned by the widget and should not be
 modified or freed </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -403,8 +398,8 @@ gtk_font_selection_set_preview_text (<em class="parameter"><code><a class="link"
 The <em class="parameter"><code>text</code></em>
  is used to show how the selected font looks.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-set-preview-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -428,13 +423,13 @@ The <em class="parameter"><code>text</code></em>
 <hr>
 <div class="refsect2">
 <a name="gtk-font-selection-get-face"></a><h3>gtk_font_selection_get_face ()</h3>
-<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace"><span class="returnvalue">PangoFontFace</span></a> *
+<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace-struct"><span class="returnvalue">PangoFontFace</span></a> *
 gtk_font_selection_get_face (<em class="parameter"><code><a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a> *fontsel</code></em>);</pre>
-<p>Gets the <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace"><span class="type">PangoFontFace</span></a> representing the selected font group
+<p>Gets the <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace-struct"><span class="type">PangoFontFace</span></a> representing the selected font group
 details (i.e. family, slant, weight, width, etc).</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-face.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -448,14 +443,14 @@ details (i.e. family, slant, weight, width, etc).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.8.6"></a><h4>Returns</h4>
-<p> A <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace"><span class="type">PangoFontFace</span></a> representing the
+<a name="gtk-font-selection-get-face.returns"></a><h4>Returns</h4>
+<p> A <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFace-struct"><span class="type">PangoFontFace</span></a> representing the
 selected font group details. The returned object is owned by
 <em class="parameter"><code>fontsel</code></em>
 and must not be modified or freed. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -465,8 +460,8 @@ gtk_font_selection_get_face_list (<em class="parameter"><code><a class="link" hr
 <p>This returns the <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a> which lists all styles available for
 the selected font. For example, 'Regular', 'Bold', etc.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-face-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -480,22 +475,22 @@ the selected font. For example, 'Regular', 'Bold', etc.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.9.6"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-face-list.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> that is part of <em class="parameter"><code>fontsel</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-font-selection-get-family"></a><h3>gtk_font_selection_get_family ()</h3>
-<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily"><span class="returnvalue">PangoFontFamily</span></a> *
+<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily-struct"><span class="returnvalue">PangoFontFamily</span></a> *
 gtk_font_selection_get_family (<em class="parameter"><code><a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a> *fontsel</code></em>);</pre>
-<p>Gets the <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily"><span class="type">PangoFontFamily</span></a> representing the selected font family.</p>
+<p>Gets the <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily-struct"><span class="type">PangoFontFamily</span></a> representing the selected font family.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-family.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -509,15 +504,15 @@ gtk_font_selection_get_family (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.10.6"></a><h4>Returns</h4>
-<p> A <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily"><span class="type">PangoFontFamily</span></a> representing the
+<a name="gtk-font-selection-get-family.returns"></a><h4>Returns</h4>
+<p> A <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontFamily-struct"><span class="type">PangoFontFamily</span></a> representing the
 selected font family. Font families are a collection of font
 faces. The returned object is owned by <em class="parameter"><code>fontsel</code></em>
 and must not
 be modified or freed. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -526,8 +521,8 @@ be modified or freed. </p>
 gtk_font_selection_get_size (<em class="parameter"><code><a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a> *fontsel</code></em>);</pre>
 <p>The selected font size.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -541,12 +536,11 @@ gtk_font_selection_get_size (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.11.6"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-size.returns"></a><h4>Returns</h4>
 <p> A n integer representing the selected font size,
 or -1 if no font size is selected.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -556,8 +550,8 @@ gtk_font_selection_get_family_list (<em class="parameter"><code><a class="link" 
 <p>This returns the <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a> that lists font families, for
 example, 'Sans', 'Serif', etc.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-family-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -571,12 +565,12 @@ example, 'Sans', 'Serif', etc.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.12.6"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-family-list.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> that is part of <em class="parameter"><code>fontsel</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -585,8 +579,8 @@ example, 'Sans', 'Serif', etc.</p>
 gtk_font_selection_get_preview_entry (<em class="parameter"><code><a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a> *fontsel</code></em>);</pre>
 <p>This returns the <a class="link" href="GtkEntry.html" title="GtkEntry"><span class="type">GtkEntry</span></a> used to display the font as a preview.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-preview-entry.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -600,12 +594,12 @@ gtk_font_selection_get_preview_entry (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.13.6"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-preview-entry.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> that is part of <em class="parameter"><code>fontsel</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -615,8 +609,8 @@ gtk_font_selection_get_size_entry (<em class="parameter"><code><a class="link" h
 <p>This returns the <a class="link" href="GtkEntry.html" title="GtkEntry"><span class="type">GtkEntry</span></a> used to allow the user to edit the font
 number manually instead of selecting it from the list of font sizes.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-size-entry.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -630,12 +624,12 @@ number manually instead of selecting it from the list of font sizes.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.14.6"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-size-entry.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> that is part of <em class="parameter"><code>fontsel</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -644,8 +638,8 @@ number manually instead of selecting it from the list of font sizes.</p>
 gtk_font_selection_get_size_list (<em class="parameter"><code><a class="link" href="GtkFontSelection.html" title="GtkFontSelection"><span class="type">GtkFontSelection</span></a> *fontsel</code></em>);</pre>
 <p>This returns the <span class="type">GtkTreeeView</span> used to list font sizes.</p>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-selection-get-size-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -659,12 +653,12 @@ gtk_font_selection_get_size_list (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.12.10.15.6"></a><h4>Returns</h4>
+<a name="gtk-font-selection-get-size-list.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> that is part of <em class="parameter"><code>fontsel</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -682,7 +676,7 @@ only be accessed using the functions below.
 <a name="GtkFontSelection.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GtkFontSelection--font"></a><h3>The <code class="literal">“font”</code> property</h3>
-<pre class="programlisting">  “font”                     <a href="http://library.gnome.org/devel/gdk3/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *</pre>
+<pre class="programlisting">  “font”                     <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> *</pre>
 <p>The GdkFont that is currently selected.</p>
 <p>Flags: Read</p>
 </div>
@@ -722,7 +716,6 @@ only be accessed using the functions below.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkFontButton</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkFontButton: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="gtk2-gtkfilefilter.html" title="GtkFileFilter">
 <link rel="next" href="GtkFontSelection.html" title="GtkFontSelection">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkFontButton.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -158,7 +158,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFontButton.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -202,7 +202,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFontButton.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -211,13 +211,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkFontButton.html#GtkFontButton-font-set" title="The “font-set” signal">font-set</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkFontButton.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -230,7 +230,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFontButton.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -266,11 +266,10 @@ dialog to change the font. It is suitable widget for selecting a font in a prefe
 gtk_font_button_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new font picker widget.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.2.5"></a><h4>Returns</h4>
+<a name="gtk-font-button-new.returns"></a><h4>Returns</h4>
 <p> a new font picker widget.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -279,8 +278,8 @@ gtk_font_button_new (<em class="parameter"><code><span class="type">void</span><
 gtk_font_button_new_with_font (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *fontname</code></em>);</pre>
 <p>Creates a new font picker widget.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-new-with-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -294,11 +293,10 @@ gtk_font_button_new_with_font (<em class="parameter"><code>const <a href="https:
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.3.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-new-with-font.returns"></a><h4>Returns</h4>
 <p> a new font picker widget.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -308,8 +306,8 @@ gtk_font_button_set_font_name (<em class="parameter"><code><a class="link" href=
                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *fontname</code></em>);</pre>
 <p>Sets or updates the currently-displayed font in font picker dialog.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-set-font-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -330,12 +328,11 @@ gtk_font_button_set_font_name (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.4.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-set-font-name.returns"></a><h4>Returns</h4>
 <p> Return value of <a class="link" href="GtkFontSelectionDialog.html#gtk-font-selection-dialog-set-font-name" title="gtk_font_selection_dialog_set_font_name ()"><code class="function">gtk_font_selection_dialog_set_font_name()</code></a> if the
 font selection dialog exists, otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -347,10 +344,10 @@ style and size information as well. If you want to render something
 with the font, use this string with <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#pango-font-description-from-string"><code class="function">pango_font_description_from_string()</code></a> .
 If you're interested in peeking certain values (family name,
 style, size, weight) just query these properties from the
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription"><span class="type">PangoFontDescription</span></a> object.</p>
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription-struct"><span class="type">PangoFontDescription</span></a> object.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-get-font-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -364,11 +361,10 @@ style, size, weight) just query these properties from the
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.5.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-get-font-name.returns"></a><h4>Returns</h4>
 <p> an internal copy of the font name which must not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -379,8 +375,8 @@ gtk_font_button_set_show_style (<em class="parameter"><code><a class="link" href
 <p>If <em class="parameter"><code>show_style</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the font style will be displayed along with name of the selected font.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-set-show-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -400,7 +396,7 @@ gtk_font_button_set_show_style (<em class="parameter"><code><a class="link" href
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -409,8 +405,8 @@ gtk_font_button_set_show_style (<em class="parameter"><code><a class="link" href
 gtk_font_button_get_show_style (<em class="parameter"><code><a class="link" href="GtkFontButton.html" title="GtkFontButton"><span class="type">GtkFontButton</span></a> *font_button</code></em>);</pre>
 <p>Returns whether the name of the font style will be shown in the label.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-get-show-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -424,11 +420,10 @@ gtk_font_button_get_show_style (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-get-show-style.returns"></a><h4>Returns</h4>
 <p> whether the font style will be shown in the label.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -439,8 +434,8 @@ gtk_font_button_set_show_size (<em class="parameter"><code><a class="link" href=
 <p>If <em class="parameter"><code>show_size</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the font size will be displayed along with the name of the selected font.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-set-show-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -460,7 +455,7 @@ gtk_font_button_set_show_size (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -469,8 +464,8 @@ gtk_font_button_set_show_size (<em class="parameter"><code><a class="link" href=
 gtk_font_button_get_show_size (<em class="parameter"><code><a class="link" href="GtkFontButton.html" title="GtkFontButton"><span class="type">GtkFontButton</span></a> *font_button</code></em>);</pre>
 <p>Returns whether the font size will be shown in the label.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-get-show-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -484,11 +479,10 @@ gtk_font_button_get_show_size (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.9.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-get-show-size.returns"></a><h4>Returns</h4>
 <p> whether the font size will be shown in the label.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -499,8 +493,8 @@ gtk_font_button_set_use_font (<em class="parameter"><code><a class="link" href="
 <p>If <em class="parameter"><code>use_font</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the font name will be written using the selected font.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-set-use-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -520,7 +514,7 @@ gtk_font_button_set_use_font (<em class="parameter"><code><a class="link" href="
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -529,8 +523,8 @@ gtk_font_button_set_use_font (<em class="parameter"><code><a class="link" href="
 gtk_font_button_get_use_font (<em class="parameter"><code><a class="link" href="GtkFontButton.html" title="GtkFontButton"><span class="type">GtkFontButton</span></a> *font_button</code></em>);</pre>
 <p>Returns whether the selected font is used in the label.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-get-use-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -544,11 +538,10 @@ gtk_font_button_get_use_font (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.11.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-get-use-font.returns"></a><h4>Returns</h4>
 <p> whether the selected font is used in the label.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -559,8 +552,8 @@ gtk_font_button_set_use_size (<em class="parameter"><code><a class="link" href="
 <p>If <em class="parameter"><code>use_size</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the font name will be written using the selected size.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-set-use-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -580,7 +573,7 @@ gtk_font_button_set_use_size (<em class="parameter"><code><a class="link" href="
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -589,8 +582,8 @@ gtk_font_button_set_use_size (<em class="parameter"><code><a class="link" href="
 gtk_font_button_get_use_size (<em class="parameter"><code><a class="link" href="GtkFontButton.html" title="GtkFontButton"><span class="type">GtkFontButton</span></a> *font_button</code></em>);</pre>
 <p>Returns whether the selected size is used in the label.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-get-use-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -604,11 +597,10 @@ gtk_font_button_get_use_size (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.13.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-get-use-size.returns"></a><h4>Returns</h4>
 <p> whether the selected size is used in the label.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -618,8 +610,8 @@ gtk_font_button_set_title (<em class="parameter"><code><a class="link" href="Gtk
                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>);</pre>
 <p>Sets the title for the font selection dialog.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-set-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -639,7 +631,7 @@ gtk_font_button_set_title (<em class="parameter"><code><a class="link" href="Gtk
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -648,8 +640,8 @@ gtk_font_button_set_title (<em class="parameter"><code><a class="link" href="Gtk
 gtk_font_button_get_title (<em class="parameter"><code><a class="link" href="GtkFontButton.html" title="GtkFontButton"><span class="type">GtkFontButton</span></a> *font_button</code></em>);</pre>
 <p>Retrieves the title of the font selection dialog.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-font-button-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -663,11 +655,10 @@ gtk_font_button_get_title (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.11.11.15.6"></a><h4>Returns</h4>
+<a name="gtk-font-button-get-title.returns"></a><h4>Returns</h4>
 <p> an internal copy of the title string which must not be freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -689,7 +680,7 @@ directly.
 <p>The name of the currently selected font.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: "Sans 12"</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -702,7 +693,7 @@ in the label. For a more WYSIWYG way to show the selected size, see the
 ::use-size property.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -715,7 +706,7 @@ will be shown in the label. For a more WYSIWYG way to show the selected
 style, see the ::use-font property.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -724,7 +715,7 @@ style, see the ::use-font property.</p>
 <p>The title of the font selection dialog.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: "Pick a Font"</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -735,7 +726,7 @@ style, see the ::use-font property.</p>
 in the selected font.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -746,7 +737,7 @@ in the selected font.</p>
 with the selected font size.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -765,8 +756,8 @@ to find out which font was just selected.</p>
 changes the font. If you need to react to programmatic font changes
 as well, use the notify::font-name signal.</p>
 <div class="refsect3">
-<a name="id-1.4.12.11.14.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkFontButton-font-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -786,8 +777,8 @@ as well, use the notify::font-name signal.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.4</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -798,7 +789,6 @@ as well, use the notify::font-name signal.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

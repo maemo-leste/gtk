@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkSpinner</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkSpinner: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DisplayWidgets.html" title="Display Widgets">
 <link rel="prev" href="GtkStatusIcon.html" title="GtkStatusIcon">
 <link rel="next" href="ButtonWidgets.html" title="Buttons and Toggles">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -31,13 +31,13 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkSpinner.top_of_page"></a>GtkSpinner</span></h2>
-<p>GtkSpinner — Show a spinner animation</p>
+<p>GtkSpinner</p>
 </td>
 <td class="gallery_image" valign="top" align="right"><img src="spinner.png"></td>
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkSpinner.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -72,7 +72,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkSpinner.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -87,7 +87,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkSpinner.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -109,7 +109,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkSpinner.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -122,7 +122,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkSpinner.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -143,11 +143,6 @@ GtkSpinner implements
 </div>
 <div class="refsect1">
 <a name="GtkSpinner.description"></a><h2>Description</h2>
-<p>A GtkSpinner widget displays an icon-size spinning animation.
-It is often used as an alternative to a <a class="link" href="GtkProgressBar.html" title="GtkProgressBar"><span class="type">GtkProgressBar</span></a> for
-displaying indefinite activity, instead of actual progress.</p>
-<p>To start the animation, use <a class="link" href="GtkSpinner.html#gtk-spinner-start" title="gtk_spinner_start ()"><code class="function">gtk_spinner_start()</code></a>, to stop it
-use <a class="link" href="GtkSpinner.html#gtk-spinner-stop" title="gtk_spinner_stop ()"><code class="function">gtk_spinner_stop()</code></a>.</p>
 </div>
 <div class="refsect1">
 <a name="GtkSpinner.functions_details"></a><h2>Functions</h2>
@@ -155,59 +150,21 @@ use <a class="link" href="GtkSpinner.html#gtk-spinner-stop" title="gtk_spinner_s
 <a name="gtk-spinner-new"></a><h3>gtk_spinner_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_spinner_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<p>Returns a new spinner widget. Not yet started.</p>
-<div class="refsect3">
-<a name="id-1.4.5.9.11.2.5"></a><h4>Returns</h4>
-<p> a new <a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a></p>
-<p></p>
-</div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-spinner-start"></a><h3>gtk_spinner_start ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_spinner_start (<em class="parameter"><code><a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a> *spinner</code></em>);</pre>
-<p>Starts the animation of the spinner.</p>
-<div class="refsect3">
-<a name="id-1.4.5.9.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>spinner</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-spinner-stop"></a><h3>gtk_spinner_stop ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_spinner_stop (<em class="parameter"><code><a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a> *spinner</code></em>);</pre>
-<p>Stops the animation of the spinner.</p>
-<div class="refsect3">
-<a name="id-1.4.5.9.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>spinner</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -215,8 +172,6 @@ gtk_spinner_stop (<em class="parameter"><code><a class="link" href="GtkSpinner.h
 <div class="refsect2">
 <a name="GtkSpinner-struct"></a><h3>struct GtkSpinner</h3>
 <pre class="programlisting">struct GtkSpinner;</pre>
-<p>
-</p>
 </div>
 </div>
 <div class="refsect1">
@@ -234,32 +189,25 @@ gtk_spinner_stop (<em class="parameter"><code><a class="link" href="GtkSpinner.h
 <div class="refsect2">
 <a name="GtkSpinner--s-cycle-duration"></a><h3>The <code class="literal">“cycle-duration”</code> style property</h3>
 <pre class="programlisting">  “cycle-duration”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
-<p>The duration in milliseconds for the spinner to complete a full cycle.</p>
+<p>The length of time in milliseconds for the spinner to complete a full loop.</p>
 <p>Flags: Read</p>
 <p>Allowed values: &gt;= 500</p>
 <p>Default value: 1000</p>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkSpinner--s-num-steps"></a><h3>The <code class="literal">“num-steps”</code> style property</h3>
 <pre class="programlisting">  “num-steps”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
-<p>The number of steps for the spinner to complete a full loop.
-The animation will complete a full cycle in one second by default
-(see the <span class="type">“cycle-duration”</span> style property).</p>
+<p>The number of steps for the spinner to complete a full loop. The animation will complete a full cycle in one second by default (see #GtkSpinner:cycle-duration).</p>
 <p>Flags: Read</p>
 <p>Allowed values: &gt;= 1</p>
 <p>Default value: 12</p>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
-</div>
-<div class="refsect1">
-<a name="GtkSpinner.see-also"></a><h2>See Also</h2>
-<p><a class="link" href="GtkCellRendererSpinner.html" title="GtkCellRendererSpinner"><span class="type">GtkCellRendererSpinner</span></a>, <a class="link" href="GtkProgressBar.html" title="GtkProgressBar"><span class="type">GtkProgressBar</span></a></p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

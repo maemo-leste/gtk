@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkFileChooserButton</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkFileChooserButton: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkFileChooser.html" title="GtkFileChooser">
 <link rel="next" href="GtkFileChooserDialog.html" title="GtkFileChooserDialog">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkFileChooserButton.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -119,7 +119,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserButton.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -153,7 +153,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserButton.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -162,13 +162,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkFileChooserButton.html#GtkFileChooserButton-file-set" title="The “file-set” signal">file-set</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserButton.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -181,7 +181,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserButton.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -213,7 +213,7 @@ that button.  This widget does not support setting the "select-multiple"
 property to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
 </p>
 <div class="example">
-<a name="id-1.4.12.7.10.3"></a><p class="title"><b>Example 44. Create a button to let the user select a file in /etc</b></p>
+<a name="id-1.4.12.7.10.3"></a><p class="title"><b>Example 33. Create a button to let the user select a file in /etc</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -228,7 +228,7 @@ property to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Mac
         <td class="listing_code"><pre class="programlisting"><span class="cbracket">{</span>
 <span class="normal">  </span><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">button</span><span class="symbol">;</span>
 <span class="normal">  button </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkFileChooserButton.html#gtk-file-chooser-button-new">gtk_file_chooser_button_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-I18N.html#gettext-macro">_</a></span><span class="symbol">(</span><span class="string">"Select a file"</span><span class="symbol">),</span>
-<span class="normal">                                        GTK_FILE_CHOOSER_ACTION_OPEN</span><span class="symbol">);</span>
+<span class="normal">                                        <a href="GtkFileChooser.html#GTK-FILE-CHOOSER-ACTION-OPEN:CAPS">GTK_FILE_CHOOSER_ACTION_OPEN</a></span><span class="symbol">);</span>
 <span class="normal">  </span><span class="function"><a href="GtkFileChooser.html#gtk-file-chooser-set-current-folder">gtk_file_chooser_set_current_folder</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_FILE_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">button</span><span class="symbol">),</span>
 <span class="normal">                                       </span><span class="string">"/etc"</span><span class="symbol">);</span>
 <span class="cbracket">}</span></pre></td>
@@ -258,8 +258,8 @@ gtk_file_chooser_button_new (<em class="parameter"><code>const <a href="https://
                              <em class="parameter"><code><a class="link" href="GtkFileChooser.html#GtkFileChooserAction" title="enum GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>);</pre>
 <p>Creates a new file-selecting button widget.</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -280,11 +280,10 @@ gtk_file_chooser_button_new (<em class="parameter"><code>const <a href="https://
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-file-chooser-button-new.returns"></a><h4>Returns</h4>
 <p> a new button widget.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -301,8 +300,8 @@ gtk_file_chooser_button_new_with_backend
 <p>Creates a new file-selecting button widget using <em class="parameter"><code>backend</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-new-with-backend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -328,11 +327,10 @@ gtk_file_chooser_button_new_with_backend
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.3.8"></a><h4>Returns</h4>
+<a name="gtk-file-chooser-button-new-with-backend.returns"></a><h4>Returns</h4>
 <p> a new button widget.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -352,8 +350,8 @@ implements the <a class="link" href="GtkFileChooser.html" title="GtkFileChooser"
 added with response <a class="link" href="GtkDialog.html#GTK-RESPONSE-ACCEPT:CAPS"><code class="literal">GTK_RESPONSE_ACCEPT</code></a> or <a class="link" href="GtkDialog.html#GTK-RESPONSE-OK:CAPS"><code class="literal">GTK_RESPONSE_OK</code></a> in
 order for the button to take over the file selected in the dialog.</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.4.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-new-with-dialog.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -367,11 +365,10 @@ order for the button to take over the file selected in the dialog.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.4.10"></a><h4>Returns</h4>
+<a name="gtk-file-chooser-button-new-with-dialog.returns"></a><h4>Returns</h4>
 <p> a new button widget.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -382,8 +379,8 @@ gtk_file_chooser_button_get_title (<em class="parameter"><code><a class="link" h
 . The returned value
 should not be modified or freed.</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -397,11 +394,10 @@ should not be modified or freed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.5.6"></a><h4>Returns</h4>
+<a name="gtk-file-chooser-button-get-title.returns"></a><h4>Returns</h4>
 <p> a pointer to the browse dialog's title.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -413,8 +409,8 @@ gtk_file_chooser_button_set_title (<em class="parameter"><code><a class="link" h
  of the browse dialog used by <em class="parameter"><code>button</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-set-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -434,7 +430,7 @@ gtk_file_chooser_button_set_title (<em class="parameter"><code><a class="link" h
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -445,8 +441,8 @@ gtk_file_chooser_button_get_width_chars
 <p>Retrieves the width in characters of the <em class="parameter"><code>button</code></em>
  widget's entry and/or label.</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-get-width-chars.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -460,11 +456,10 @@ gtk_file_chooser_button_get_width_chars
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-file-chooser-button-get-width-chars.returns"></a><h4>Returns</h4>
 <p> an integer width (in characters) that the button will use to size itself.</p>
-<p></p>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -477,8 +472,8 @@ gtk_file_chooser_button_set_width_chars
  will use to <em class="parameter"><code>n_chars</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-set-width-chars.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -498,7 +493,7 @@ gtk_file_chooser_button_set_width_chars
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -509,8 +504,8 @@ gtk_file_chooser_button_get_focus_on_click
 <p>Returns whether the button grabs focus when it is clicked with the mouse.
 See <a class="link" href="GtkFileChooserButton.html#gtk-file-chooser-button-set-focus-on-click" title="gtk_file_chooser_button_set_focus_on_click ()"><code class="function">gtk_file_chooser_button_set_focus_on_click()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-get-focus-on-click.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -524,12 +519,11 @@ See <a class="link" href="GtkFileChooserButton.html#gtk-file-chooser-button-set-
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.9.6"></a><h4>Returns</h4>
+<a name="gtk-file-chooser-button-get-focus-on-click.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the button grabs focus when it is clicked with
 the mouse.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -543,8 +537,8 @@ Making mouse clicks not grab focus is useful in places like toolbars where
 you don't want the keyboard focus removed from the main area of the
 application.</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-chooser-button-set-focus-on-click.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -564,7 +558,7 @@ application.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -584,7 +578,7 @@ This should not be accessed directly.  Use the accessor functions below.
 <pre class="programlisting">  “dialog”                   <a class="link" href="GtkFileChooser.html" title="GtkFileChooser"><span class="type">GtkFileChooser</span></a> *</pre>
 <p>Instance of the <a class="link" href="GtkFileChooserDialog.html" title="GtkFileChooserDialog"><span class="type">GtkFileChooserDialog</span></a> associated with the button.</p>
 <p>Flags: Write / Construct Only</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -594,7 +588,7 @@ This should not be accessed directly.  Use the accessor functions below.
 with the mouse.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -603,7 +597,7 @@ with the mouse.</p>
 <p>Title to put on the <a class="link" href="GtkFileChooserDialog.html" title="GtkFileChooserDialog"><span class="type">GtkFileChooserDialog</span></a> associated with the button.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: "Select a File"</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -613,7 +607,7 @@ with the mouse.</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -627,8 +621,8 @@ user_function (<a class="link" href="GtkFileChooserButton.html" title="GtkFileCh
 <p>Note that this signal is only emitted when the <span class="emphasis"><em>user</em></span>
 changes the file.</p>
 <div class="refsect3">
-<a name="id-1.4.12.7.14.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkFileChooserButton-file-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -648,8 +642,8 @@ changes the file.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.12</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -660,7 +654,6 @@ changes the file.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

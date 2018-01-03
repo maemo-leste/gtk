@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkObject</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkObject: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="AbstractObjects.html" title="Abstract Base Classes">
 <link rel="prev" href="GtkMisc.html" title="GtkMisc">
 <link rel="next" href="GtkPaned.html" title="GtkPaned">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkObject.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -235,7 +235,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkObject.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -250,7 +250,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkObject.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -259,13 +259,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkObject.html#GtkObject-destroy" title="The “destroy” signal">destroy</a></td>
-<td class="signal_flags">No Hooks</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-HOOKS:CAPS">No Hooks</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkObject.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -304,7 +304,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkObject.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> GtkObject
             <span class="lineart">├──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -329,8 +329,8 @@
 <p>
 <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a> is the base class for all widgets, and for a few
 non-widget objects such as <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a>. <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a> predates
-<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>; non-widgets that derive from <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a> rather than
-<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> do so for backward compatibility reasons.
+<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>; non-widgets that derive from <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a> rather than
+<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> do so for backward compatibility reasons.
 </p>
 <p>
 <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a>s are created with a "floating" reference count.
@@ -409,7 +409,7 @@ Some simple rules for handling <a class="link" href="GtkObject.html" title="GtkO
 <li class="listitem"><p>
 Never call <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> unless you have previously called <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a>,
 even if you created the <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a>. (Note: this is <span class="emphasis"><em>not</em></span>
-true for <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>; for <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>, the creator of the object owns a reference.)
+true for <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>; for <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>, the creator of the object owns a reference.)
 </p></li>
 <li class="listitem"><p>
 Call <a class="link" href="GtkObject.html#gtk-object-destroy" title="gtk_object_destroy ()"><code class="function">gtk_object_destroy()</code></a> to get rid of most objects in most cases.
@@ -439,8 +439,8 @@ Gets the <a class="link" href="GtkObject.html#GtkObjectFlags" title="enum GtkObj
 accessing its members.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-OBJECT-FLAGS.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -465,8 +465,8 @@ Evaluates to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Ma
 See the overview documentation for <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-OBJECT-FLOATING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -496,8 +496,8 @@ Constructs an object given its arguments, enumerated in the call to the
 function.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -521,9 +521,8 @@ the object.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.4.7"></a><h4>Returns</h4>
+<a name="gtk-object-new.returns"></a><h4>Returns</h4>
 <p>the new <a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -541,8 +540,8 @@ otherwise does nothing. See the <a class="link" href="GtkObject.html" title="Gtk
 the top of the page.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-sink.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -569,8 +568,8 @@ gtk_object_ref (<em class="parameter"><code><a class="link" href="GtkObject.html
 Increases the reference count of the object.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -584,10 +583,9 @@ Increases the reference count of the object.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.6.7"></a><h4>Returns</h4>
+<a name="gtk-object-ref.returns"></a><h4>Returns</h4>
 <p><em class="parameter"><code>object</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -604,8 +602,8 @@ Decreases the reference count of an object.  When its reference count drops
 to 0, the object is finalized (i.e. its memory is freed).
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -637,8 +635,8 @@ hold a pointer to an object without calling <a href="https://developer.gnome.org
 a strong reference, that is, forces the object to stay alive).
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-weakref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -679,8 +677,8 @@ gtk_object_weakunref (<em class="parameter"><code><a class="link" href="GtkObjec
 Removes a weak reference callback to an object.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-weakunref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -727,8 +725,8 @@ its reference count actually drops to 0; <a class="link" href="GtkObject.html#gt
 reference holders to release their references, it does not free the object.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.10.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -757,8 +755,8 @@ gtk_object_get (<em class="parameter"><code><a class="link" href="GtkObject.html
 Gets properties of an object.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -805,7 +803,7 @@ Sets properties on an object.
 4
 5
 6</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="type">void</span><span class="normal"> </span><span class="function">set_box_properties</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="GtkBox.html">GtkBox</a></span><span class="symbol">*</span><span class="normal"> box</span><span class="symbol">)</span>
+        <td class="listing_code"><pre class="programlisting"><span class="type">void</span><span class="normal"> </span><span class="function">set_box_properties</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="GtkBox.html#GtkBox-struct">GtkBox</a></span><span class="symbol">*</span><span class="normal"> box</span><span class="symbol">)</span>
 <span class="cbracket">{</span>
 <span class="normal">  </span><span class="function"><a href="GtkObject.html#gtk-object-set">gtk_object_set</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_OBJECT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">box</span><span class="symbol">),</span><span class="normal"> </span><span class="string">"homogeneous"</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS">TRUE</a></span><span class="symbol">,</span>
 <span class="normal">                                    </span><span class="string">"spacing"</span><span class="symbol">,</span><span class="normal"> </span><span class="number">8</span><span class="symbol">,</span>
@@ -819,8 +817,8 @@ Sets properties on an object.
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.12.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -861,8 +859,8 @@ If the object already had an association with that name,
 the old association will be destroyed.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.13.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-set-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -906,8 +904,8 @@ for when the association is destroyed, either by
 <a class="link" href="GtkObject.html#gtk-object-remove-data" title="gtk_object_remove_data ()"><code class="function">gtk_object_remove_data()</code></a> or when the object is destroyed.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.14.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-set-data-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -957,8 +955,8 @@ If you specified a destroy handler with <a class="link" href="GtkObject.html#gtk
 it will be invoked.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.15.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-remove-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -993,8 +991,8 @@ gtk_object_get_data (<em class="parameter"><code><a class="link" href="GtkObject
 Get a named field from the object's table of associations (the object_data).
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1015,9 +1013,8 @@ Get a named field from the object's table of associations (the object_data).
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.16.7"></a><h4>Returns</h4>
+<a name="gtk-object-get-data.returns"></a><h4>Returns</h4>
 <p>the data if found, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no such data exists.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1040,8 +1037,8 @@ will be ignored.
 Therefore this only affects data set using <a class="link" href="GtkObject.html#gtk-object-set-data-full" title="gtk_object_set_data_full ()"><code class="function">gtk_object_set_data_full()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.17.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-remove-no-notify.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1077,8 +1074,8 @@ For convenience, every object offers a generic user data
 pointer.  This function sets it.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-set-user-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1116,8 +1113,8 @@ This is intended to be a pointer for your convenience in
 writing applications.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.19.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-get-user-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1131,9 +1128,8 @@ writing applications.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.19.8"></a><h4>Returns</h4>
+<a name="gtk-object-get-user-data.returns"></a><h4>Returns</h4>
 <p>the user data field for object.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1146,13 +1142,13 @@ gtk_object_add_arg_type (<em class="parameter"><code>const <a href="https://deve
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> arg_id</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_object_add_arg_type</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>
-Deprecated in favor of the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> property system including <a href="https://developer.gnome.org/gobject/unstable/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a>.
+Deprecated in favor of the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> property system including <a href="https://developer.gnome.org/gobject/unstable/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a>.
 Add a new type of argument to an object class.
 Usually this is called when registering a new type of object.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-add-arg-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1205,8 +1201,8 @@ Use <a class="link" href="GtkObject.html#gtk-object-data-try-key" title="gtk_obj
 to get an id from a string.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.21.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-set-data-by-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1253,8 +1249,8 @@ Use <a class="link" href="GtkObject.html#gtk-object-data-try-key" title="gtk_obj
 to get an id from a string.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.22.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-set-data-by-id-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1304,8 +1300,8 @@ Use <a class="link" href="GtkObject.html#gtk-object-data-try-key" title="gtk_obj
 to get an id from a string.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.23.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-get-data-by-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1326,9 +1322,8 @@ to get an id from a string.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.23.8"></a><h4>Returns</h4>
+<a name="gtk-object-get-data-by-id.returns"></a><h4>Returns</h4>
 <p>the data if found, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no such data exists.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1354,8 +1349,8 @@ Use <a class="link" href="GtkObject.html#gtk-object-data-try-key" title="gtk_obj
 to get an id from a string.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.24.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-remove-data-by-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1395,8 +1390,8 @@ Use <a class="link" href="GtkObject.html#gtk-object-data-try-key" title="gtk_obj
 to get an id from a string.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.10.25.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-object-remove-no-notify-by-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1439,8 +1434,8 @@ The object itself.  You should never use these members directly -
 </div>
 <p>Gets the type of an object.</p>
 <div class="refsect3">
-<a name="id-1.4.18.9.11.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-OBJECT-TYPE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1465,8 +1460,8 @@ The object itself.  You should never use these members directly -
 </div>
 <p>Gets the name of an object's type.</p>
 <div class="refsect3">
-<a name="id-1.4.18.9.11.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GTK-OBJECT-TYPE-NAME.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1492,8 +1487,8 @@ The object itself.  You should never use these members directly -
 Tells about the state of the object.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.11.5.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkObjectFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1540,8 +1535,8 @@ Tells about the state of the object.
 Possible flags indicating how an argument should be treated.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.11.6.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkArgFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1634,8 +1629,8 @@ the reference that they hold. May result in finalization of the object
 if all references are released.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.9.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkObject-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1655,18 +1650,17 @@ if all references are released.
 </tbody>
 </table></div>
 </div>
-<p>Flags: No Hooks</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-HOOKS:CAPS">No Hooks</a></p>
 </div>
 </div>
 <div class="refsect1">
 <a name="GtkObject.see-also"></a><h2>See Also</h2>
 <p>
-<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>
+<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>
 </p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

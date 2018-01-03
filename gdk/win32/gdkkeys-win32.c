@@ -47,6 +47,7 @@ static GdkModifierType gdk_shift_modifiers = GDK_SHIFT_MASK;
 static GdkKeymap *default_keymap = NULL;
 
 static guint *keysym_tab = NULL;
+static wchar_t decimal_mark = 0;
 
 #ifdef G_ENABLE_DEBUG
 static void
@@ -143,6 +144,8 @@ handle_special (guint  vk,
       *ksymp = GDK_Meta_L; break;
     case VK_RWIN:
       *ksymp = GDK_Meta_R; break;
+    case VK_DECIMAL:
+      *ksymp = GDK_KEY_KP_Decimal; break;
     case VK_APPS:
       *ksymp = GDK_Menu; break;
     case VK_MULTIPLY:
@@ -327,6 +330,18 @@ handle_dead (guint  keysym,
     }
 }
 
+/* keypad decimal mark depends on active keyboard layout
+   return current decimal mark as unicode character
+   */
+guint32
+_gdk_win32_keymap_get_decimal_mark (void)
+{
+  if (decimal_mark)
+    return (decimal_mark);
+
+  return ((guint32) '.');
+}
+
 static void
 update_keymap (void)
 {
@@ -380,7 +395,7 @@ update_keymap (void)
 	       */
 	      handle_special (vk, ksymp, shift);
 
-	      if (*ksymp == 0)
+	      if ((*ksymp == 0) || ((vk == VK_DECIMAL) && (shift == 0)))
 		{
 		  wchar_t wcs[10];
 		  gint k;
@@ -394,7 +409,12 @@ update_keymap (void)
 			   vk, scancode, shift, k,
 			   wcs[0], wcs[1]);
 #endif
-		  if (k == 1)
+		  if ((vk == VK_DECIMAL) && (shift == 0))
+		    {
+		      if (k == 1)
+		        decimal_mark = wcs[0];
+		    }
+		  else if (k == 1)
 		    *ksymp = gdk_unicode_to_keyval (wcs[0]);
 		  else if (k == -1)
 		    {

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkFileFilter</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkFileFilter: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkFileChooserWidget.html" title="GtkFileChooserWidget">
 <link rel="next" href="GtkFontButton.html" title="GtkFontButton">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-gtkfilefilter.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -124,7 +124,7 @@
 </div>
 <a name="GtkFileFilter"></a><div class="refsect1">
 <a name="gtk2-gtkfilefilter.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -147,7 +147,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-gtkfilefilter.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> GtkFileFilter
@@ -192,8 +192,8 @@ The type of function that is used with custom filters,
 see <a class="link" href="gtk2-gtkfilefilter.html#gtk-file-filter-add-custom" title="gtk_file_filter_add_custom ()"><code class="function">gtk_file_filter_add_custom()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkFileFilterFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -216,9 +216,8 @@ flags passed to <a class="link" href="gtk2-gtkfilefilter.html#gtk-file-filter-ad
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.2.6"></a><h4>Returns</h4>
+<a name="GtkFileFilterFunc.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file should be displayed</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -247,11 +246,10 @@ that accepts any file, use:</p>
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.3.7"></a><h4>Returns</h4>
+<a name="gtk-file-filter-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gtk2-gtkfilefilter.html#GtkFileFilter"><span class="type">GtkFileFilter</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -263,8 +261,8 @@ gtk_file_filter_set_name (<em class="parameter"><code><a class="link" href="gtk2
 that will be displayed in the file selector user interface if
 there is a selectable list of filters.</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-set-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -285,7 +283,7 @@ to remove any existing name. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -294,8 +292,8 @@ to remove any existing name. </p></td>
 gtk_file_filter_get_name (<em class="parameter"><code><a class="link" href="gtk2-gtkfilefilter.html#GtkFileFilter"><span class="type">GtkFileFilter</span></a> *filter</code></em>);</pre>
 <p>Gets the human-readable name for the filter. See <a class="link" href="gtk2-gtkfilefilter.html#gtk-file-filter-set-name" title="gtk_file_filter_set_name ()"><code class="function">gtk_file_filter_set_name()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -309,13 +307,12 @@ gtk_file_filter_get_name (<em class="parameter"><code><a class="link" href="gtk2
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.5.6"></a><h4>Returns</h4>
+<a name="gtk-file-filter-get-name.returns"></a><h4>Returns</h4>
 <p> The human-readable name of the filter,
 or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. This value is owned by GTK+ and must not
 be modified or freed.</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -326,8 +323,8 @@ gtk_file_filter_add_mime_type (<em class="parameter"><code><a class="link" href=
 <p>Adds a rule allowing a given mime type to <em class="parameter"><code>filter</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-add-mime-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -347,7 +344,7 @@ gtk_file_filter_add_mime_type (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -357,8 +354,8 @@ gtk_file_filter_add_pattern (<em class="parameter"><code><a class="link" href="g
                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pattern</code></em>);</pre>
 <p>Adds a rule allowing a shell style glob to a filter.</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-add-pattern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -378,7 +375,7 @@ gtk_file_filter_add_pattern (<em class="parameter"><code><a class="link" href="g
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -388,8 +385,8 @@ gtk_file_filter_add_pixbuf_formats (<em class="parameter"><code><a class="link" 
 <p>Adds a rule allowing image files in the formats supported
 by GdkPixbuf.</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-add-pixbuf-formats.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -402,7 +399,7 @@ by GdkPixbuf.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -420,8 +417,8 @@ about what sorts of information that the filter function needs;
 this allows GTK+ to avoid retrieving expensive information when
 it isn't needed by the filter.</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-add-custom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -460,7 +457,7 @@ when it is no longer needed.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -473,8 +470,8 @@ passed to <a class="link" href="gtk2-gtkfilefilter.html#gtk-file-filter-filter" 
 is intended principally for use in the implementation of
 <a class="link" href="GtkFileChooser.html" title="GtkFileChooser"><span class="type">GtkFileChooser</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-get-needed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -488,12 +485,11 @@ is intended principally for use in the implementation of
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.10.7"></a><h4>Returns</h4>
+<a name="gtk-file-filter-get-needed.returns"></a><h4>Returns</h4>
 <p> bitfield of flags indicating needed fields when
 calling <a class="link" href="gtk2-gtkfilefilter.html#gtk-file-filter-filter" title="gtk_file_filter_filter ()"><code class="function">gtk_file_filter_filter()</code></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -510,8 +506,8 @@ the fields returned from <a class="link" href="gtk2-gtkfilefilter.html#gtk-file-
 is intended principally for use in the implementation of
 <a class="link" href="GtkFileChooser.html" title="GtkFileChooser"><span class="type">GtkFileChooser</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-file-filter-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -533,11 +529,10 @@ about a file.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.12.10.9.11.7"></a><h4>Returns</h4>
+<a name="gtk-file-filter-filter.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file should be displayed</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -568,8 +563,8 @@ to pass information about the tested file to
 <a class="link" href="gtk2-gtkfilefilter.html#gtk-file-filter-filter" title="gtk_file_filter_filter ()"><code class="function">gtk_file_filter_filter()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.10.10.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkFileFilterInfo.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -615,8 +610,8 @@ These flags indicate what parts of a <a class="link" href="gtk2-gtkfilefilter.ht
 are filled or need to be filled.
 </p>
 <div class="refsect3">
-<a name="id-1.4.12.10.10.4.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkFileFilterFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -665,7 +660,6 @@ are filled or need to be filled.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

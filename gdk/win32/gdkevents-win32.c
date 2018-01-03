@@ -1069,7 +1069,7 @@ fill_key_event_string (GdkEvent *event)
 static GdkFilterReturn
 apply_event_filters (GdkWindow  *window,
 		     MSG        *msg,
-		     GList      *filters)
+		     GList      **filters)
 {
   GdkFilterReturn result = GDK_FILTER_CONTINUE;
   GdkEvent *event;
@@ -1087,15 +1087,36 @@ apply_event_filters (GdkWindow  *window,
    */
   node = _gdk_event_queue_append (_gdk_display, event);
   
-  tmp_list = filters;
+  tmp_list = *filters;
   while (tmp_list)
     {
       GdkEventFilter *filter = (GdkEventFilter *) tmp_list->data;
-      
-      tmp_list = tmp_list->next;
+      GList *node;
+
+      if ((filter->flags & GDK_EVENT_FILTER_REMOVED) != 0)
+        {
+          tmp_list = tmp_list->next;
+          continue;
+        }
+
+      filter->ref_count++;
       result = filter->function (msg, event, filter->data);
-      if (result !=  GDK_FILTER_CONTINUE)
-	break;
+
+      /* get the next node after running the function since the
+         function may add or remove a next node */
+      node = tmp_list;
+      tmp_list = tmp_list->next;
+
+      filter->ref_count--;
+      if (filter->ref_count == 0)
+        {
+          *filters = g_list_remove_link (*filters, node);
+          g_list_free_1 (node);
+          g_free (filter);
+        }
+
+      if (result != GDK_FILTER_CONTINUE)
+        break;
     }
 
   if (result == GDK_FILTER_CONTINUE || result == GDK_FILTER_REMOVE)
@@ -2075,7 +2096,7 @@ gdk_event_translate (MSG  *msg,
     {
       /* Apply global filters */
 
-      GdkFilterReturn result = apply_event_filters (NULL, msg, _gdk_default_filters);
+      GdkFilterReturn result = apply_event_filters (NULL, msg, &_gdk_default_filters);
       
       /* If result is GDK_FILTER_CONTINUE, we continue as if nothing
        * happened. If it is GDK_FILTER_REMOVE or GDK_FILTER_TRANSLATE,
@@ -2121,7 +2142,7 @@ gdk_event_translate (MSG  *msg,
     {
       /* Apply per-window filters */
 
-      GdkFilterReturn result = apply_event_filters (window, msg, ((GdkWindowObject *) window)->filters);
+      GdkFilterReturn result = apply_event_filters (window, msg, &((GdkWindowObject *) window)->filters);
 
       if (result == GDK_FILTER_REMOVE || result == GDK_FILTER_TRANSLATE)
 	{
@@ -2259,6 +2280,35 @@ gdk_event_translate (MSG  *msg,
       if (GDK_WINDOW_DESTROYED (window))
 	break;
 
+      impl = GDK_WINDOW_IMPL_WIN32 (GDK_WINDOW_OBJECT (window)->impl);
+
+      API_CALL (GetKeyboardState, (key_state));
+
+      ccount = 0;
+
+      if (msg->wParam == VK_PACKET)
+	{
+	  ccount = ToUnicode (VK_PACKET, HIWORD (msg->lParam), key_state, wbuf, 1, 0);
+	  if (ccount == 1)
+	    {
+	      if (wbuf[0] >= 0xD800 && wbuf[0] < 0xDC00)
+	        {
+		  if (msg->message == WM_KEYDOWN)
+		    impl->leading_surrogate_keydown = wbuf[0];
+		  else
+		    impl->leading_surrogate_keyup = wbuf[0];
+
+		  /* don't emit an event */
+		  return_val = TRUE;
+		  break;
+	        }
+	      else
+		{
+		  /* wait until an event is created */;
+		}
+	    }
+	}
+
       event = gdk_event_new ((msg->message == WM_KEYDOWN ||
 			      msg->message == WM_SYSKEYDOWN) ?
 			     GDK_KEY_PRESS : GDK_KEY_RELEASE);
@@ -2289,22 +2339,46 @@ gdk_event_translate (MSG  *msg,
 	       LOBYTE (HIWORD (msg->lParam)) == _scancode_rshift)
 	event->key.hardware_keycode = VK_RSHIFT;
 
-      API_CALL (GetKeyboardState, (key_state));
-
       /* g_print ("ctrl:%02x lctrl:%02x rctrl:%02x alt:%02x lalt:%02x ralt:%02x\n", key_state[VK_CONTROL], key_state[VK_LCONTROL], key_state[VK_RCONTROL], key_state[VK_MENU], key_state[VK_LMENU], key_state[VK_RMENU]); */
       
       build_key_event_state (event, key_state);
 
-      if (msg->wParam == VK_PACKET &&
-	  ToUnicode (VK_PACKET, HIWORD (msg->lParam), key_state, wbuf, 1, 0) == 1)
-	event->key.keyval = gdk_unicode_to_keyval (wbuf[0]);
+      if (msg->wParam == VK_PACKET && ccount == 1)
+	{
+	  if (wbuf[0] >= 0xD800 && wbuf[0] < 0xDC00)
+	    {
+	      g_assert_not_reached ();
+	    }
+	  else if (wbuf[0] >= 0xDC00 && wbuf[0] < 0xE000)
+	    {
+	      wchar_t leading;
+
+              if (msg->message == WM_KEYDOWN)
+		leading = impl->leading_surrogate_keydown;
+	      else
+		leading = impl->leading_surrogate_keyup;
+
+	      event->key.keyval = gdk_unicode_to_keyval ((leading - 0xD800) * 0x400 + wbuf[0] - 0xDC00 + 0x10000);
+	    }
+	  else
+	    {
+	      event->key.keyval = gdk_unicode_to_keyval (wbuf[0]);
+	    }
+	}
       else
-	gdk_keymap_translate_keyboard_state (NULL,
-					     event->key.hardware_keycode,
-					     event->key.state,
-					     event->key.group,
-					     &event->key.keyval,
-					     NULL, NULL, NULL);
+	{
+	  gdk_keymap_translate_keyboard_state (gdk_keymap_get_for_display (_gdk_display),
+					       event->key.hardware_keycode,
+					       event->key.state,
+					       event->key.group,
+					       &event->key.keyval,
+					       NULL, NULL, NULL);
+	}
+
+      if (msg->message == WM_KEYDOWN)
+	impl->leading_surrogate_keydown = 0;
+      else
+	impl->leading_surrogate_keyup = 0;
 
       fill_key_event_string (event);
 
@@ -2642,6 +2716,7 @@ gdk_event_translate (MSG  *msg,
       break;
 
     case WM_MOUSEWHEEL:
+    case WM_MOUSEHWHEEL:
       GDK_NOTE (EVENTS, g_print (" %d", (short) HIWORD (msg->wParam)));
 
       /* WM_MOUSEWHEEL is delivered to the focus window. Work around
@@ -2692,8 +2767,13 @@ gdk_event_translate (MSG  *msg,
 
       event = gdk_event_new (GDK_SCROLL);
       event->scroll.window = window;
-      event->scroll.direction = (((short) HIWORD (msg->wParam)) > 0) ?
-	GDK_SCROLL_UP : GDK_SCROLL_DOWN;
+
+      if (msg->message == WM_MOUSEWHEEL)
+	  event->scroll.direction = (((short) HIWORD (msg->wParam)) > 0) ?
+	    GDK_SCROLL_UP : GDK_SCROLL_DOWN;
+      else if (msg->message == WM_MOUSEHWHEEL)
+	  event->scroll.direction = (((short) HIWORD (msg->wParam)) > 0) ?
+	    GDK_SCROLL_RIGHT : GDK_SCROLL_LEFT;
       event->scroll.time = _gdk_win32_get_next_tick (msg->time);
       event->scroll.x = (gint16) point.x;
       event->scroll.y = (gint16) point.y;

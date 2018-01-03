@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Input</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Input: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Threads.html" title="Threads">
 <link rel="next" href="gdk2-Input-Devices.html" title="Input Devices">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Input.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -84,7 +84,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Input.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -106,7 +106,7 @@
 The functions in this section are used to establish
 callbacks when some condition becomes true for
 a file descriptor. They are currently just wrappers around
-the <a href="https://developer.gnome.org/glib/unstable/glib-IO-Channels.html">IO Channel</a>
+the IO Channel
 facility.
 </p>
 </div>
@@ -127,8 +127,8 @@ gdk_input_add_full (<em class="parameter"><code><a href="https://developer.gnome
 <p>Establish a callback when a condition becomes true on
 a file descriptor.</p>
 <div class="refsect3">
-<a name="id-1.2.26.7.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-input-add-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -167,10 +167,9 @@ handler is removed.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.26.7.2.7"></a><h4>Returns</h4>
+<a name="gdk-input-add-full.returns"></a><h4>Returns</h4>
 <p> a tag that can later be used as an argument to
 <a class="link" href="gdk2-Input.html#gdk-input-remove" title="gdk_input_remove ()"><code class="function">gdk_input_remove()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -185,8 +184,8 @@ A callback function that will be called when some condition
 occurs.
 </p>
 <div class="refsect3">
-<a name="id-1.2.26.7.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkInputFunction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -224,8 +223,8 @@ no longer being stored by GDK. Will typically free the
 structure or object that <em class="parameter"><code>data</code></em> points to.
 </p>
 <div class="refsect3">
-<a name="id-1.2.26.7.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkDestroyNotify.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -254,8 +253,8 @@ gdk_input_add (<em class="parameter"><code><a href="https://developer.gnome.org/
 <p>Establish a callback when a condition becomes true on
 a file descriptor.</p>
 <div class="refsect3">
-<a name="id-1.2.26.7.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-input-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -287,10 +286,9 @@ a file descriptor.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.26.7.5.7"></a><h4>Returns</h4>
+<a name="gdk-input-add.returns"></a><h4>Returns</h4>
 <p> a tag that can later be used as an argument to
 <a class="link" href="gdk2-Input.html#gdk-input-remove" title="gdk_input_remove ()"><code class="function">gdk_input_remove()</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -304,8 +302,8 @@ Remove a callback added with <a class="link" href="gdk2-Input.html#gdk-input-add
 <a class="link" href="gdk2-Input.html#gdk-input-add-full" title="gdk_input_add_full ()"><code class="function">gdk_input_add_full()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.26.7.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-input-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -332,8 +330,8 @@ of this enumeration correspond to the <em class="parameter"><code>readfds</code>
 <code class="function">select</code> system call.
 </p>
 <div class="refsect3">
-<a name="id-1.2.26.8.2.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkInputCondition.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -380,11 +378,11 @@ on the file descriptor returns a count of zero.)</p>
 </colgroup>
 <tbody>
 <tr>
-<td><p><span class="term"><a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html">GLib Main Loop</a></span></p></td>
+<td><p><span class="term">GLib Main Loop</span></p></td>
 <td><p>The main loop in which input callbacks run.</p></td>
 </tr>
 <tr>
-<td><p><span class="term"><a href="https://developer.gnome.org/glib/unstable/glib-IO-Channels.html">IO Channels</a></span></p></td>
+<td><p><span class="term">IO Channels</span></p></td>
 <td><p>A newer and more flexible way of doing IO
 callbacks.</p></td>
 </tr>
@@ -395,7 +393,6 @@ callbacks.</p></td>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

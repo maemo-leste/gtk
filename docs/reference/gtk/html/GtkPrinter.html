@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkPrinter</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkPrinter: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="Printing.html" title="Printing">
 <link rel="prev" href="GtkPaperSize.html" title="GtkPaperSize">
 <link rel="next" href="GtkPrintJob.html" title="GtkPrintJob">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkPrinter.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -234,7 +234,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrinter.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -306,7 +306,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrinter.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -315,13 +315,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkPrinter.html#GtkPrinter-details-acquired" title="The “details-acquired” signal">details-acquired</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <a name="GtkPrintBackend"></a><div class="refsect1">
 <a name="GtkPrinter.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -340,7 +340,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPrinter.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">├──</span> GtkPrintBackend
     <span class="lineart">╰──</span> GtkPrinter
 </pre>
@@ -377,8 +377,8 @@ gtk_printer_new (<em class="parameter"><code>const <a href="https://developer.gn
                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> virtual_</code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -404,11 +404,10 @@ gtk_printer_new (<em class="parameter"><code>const <a href="https://developer.gn
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-printer-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -417,8 +416,8 @@ gtk_printer_new (<em class="parameter"><code>const <a href="https://developer.gn
 gtk_printer_get_backend (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Returns the backend of the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-backend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -432,12 +431,12 @@ gtk_printer_get_backend (<em class="parameter"><code><a class="link" href="GtkPr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.3.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-backend.returns"></a><h4>Returns</h4>
 <p> the backend of <em class="parameter"><code>printer</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -446,8 +445,8 @@ gtk_printer_get_backend (<em class="parameter"><code><a class="link" href="GtkPr
 gtk_printer_get_name (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Returns the name of the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -461,12 +460,11 @@ gtk_printer_get_name (<em class="parameter"><code><a class="link" href="GtkPrint
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.4.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-name.returns"></a><h4>Returns</h4>
 <p> the name of <em class="parameter"><code>printer</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -476,8 +474,8 @@ gtk_printer_get_state_message (<em class="parameter"><code><a class="link" href=
 <p>Returns the state message describing the current state
 of the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-state-message.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -491,12 +489,11 @@ of the printer.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.5.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-state-message.returns"></a><h4>Returns</h4>
 <p> the state message of <em class="parameter"><code>printer</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -505,8 +502,8 @@ of the printer.</p>
 gtk_printer_get_description (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Gets the description of the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -520,12 +517,11 @@ gtk_printer_get_description (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.6.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-description.returns"></a><h4>Returns</h4>
 <p> the description of <em class="parameter"><code>printer</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -534,8 +530,8 @@ gtk_printer_get_description (<em class="parameter"><code><a class="link" href="G
 gtk_printer_get_location (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Returns a description of the location of the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-location.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -549,12 +545,11 @@ gtk_printer_get_location (<em class="parameter"><code><a class="link" href="GtkP
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-location.returns"></a><h4>Returns</h4>
 <p> the location of <em class="parameter"><code>printer</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -563,8 +558,8 @@ gtk_printer_get_location (<em class="parameter"><code><a class="link" href="GtkP
 gtk_printer_get_icon_name (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Gets the name of the icon to use for the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -578,12 +573,11 @@ gtk_printer_get_icon_name (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.8.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-icon-name.returns"></a><h4>Returns</h4>
 <p> the icon name for <em class="parameter"><code>printer</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -592,8 +586,8 @@ gtk_printer_get_icon_name (<em class="parameter"><code><a class="link" href="Gtk
 gtk_printer_get_job_count (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Gets the number of jobs currently queued on the printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-job-count.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -607,12 +601,11 @@ gtk_printer_get_job_count (<em class="parameter"><code><a class="link" href="Gtk
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.9.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-job-count.returns"></a><h4>Returns</h4>
 <p> the number of jobs on <em class="parameter"><code>printer</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -622,8 +615,8 @@ gtk_printer_is_active (<em class="parameter"><code><a class="link" href="GtkPrin
 <p>Returns whether the printer is currently active (i.e. 
 accepts new jobs).</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-is-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -637,12 +630,11 @@ accepts new jobs).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.10.6"></a><h4>Returns</h4>
+<a name="gtk-printer-is-active.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 is active</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -653,8 +645,8 @@ gtk_printer_is_paused (<em class="parameter"><code><a class="link" href="GtkPrin
 A paused printer still accepts jobs, but it is not
 printing them.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-is-paused.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -668,12 +660,11 @@ printing them.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.11.6"></a><h4>Returns</h4>
+<a name="gtk-printer-is-paused.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 is paused</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -682,8 +673,8 @@ is paused</p>
 gtk_printer_is_accepting_jobs (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Returns whether the printer is accepting jobs</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-is-accepting-jobs.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -697,12 +688,11 @@ gtk_printer_is_accepting_jobs (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.12.6"></a><h4>Returns</h4>
+<a name="gtk-printer-is-accepting-jobs.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 is accepting jobs</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -713,8 +703,8 @@ gtk_printer_is_virtual (<em class="parameter"><code><a class="link" href="GtkPri
 represent actual printer hardware, but something like 
 a CUPS class).</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-is-virtual.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -728,12 +718,11 @@ a CUPS class).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.13.6"></a><h4>Returns</h4>
+<a name="gtk-printer-is-virtual.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 is virtual</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -742,8 +731,8 @@ is virtual</p>
 gtk_printer_is_default (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Returns whether the printer is the default printer.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-is-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -757,12 +746,11 @@ gtk_printer_is_default (<em class="parameter"><code><a class="link" href="GtkPri
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.14.6"></a><h4>Returns</h4>
+<a name="gtk-printer-is-default.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 is the default</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -772,8 +760,8 @@ gtk_printer_accepts_ps (<em class="parameter"><code><a class="link" href="GtkPri
 <p>Returns whether the printer accepts input in
 PostScript format.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-accepts-ps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -787,12 +775,11 @@ PostScript format.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.15.6"></a><h4>Returns</h4>
+<a name="gtk-printer-accepts-ps.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 accepts PostScript</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -802,8 +789,8 @@ gtk_printer_accepts_pdf (<em class="parameter"><code><a class="link" href="GtkPr
 <p>Returns whether the printer accepts input in
 PDF format.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-accepts-pdf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -817,12 +804,11 @@ PDF format.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.16.6"></a><h4>Returns</h4>
+<a name="gtk-printer-accepts-pdf.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 accepts PDF</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -834,8 +820,8 @@ gtk_printer_list_papers (<em class="parameter"><code><a class="link" href="GtkPr
 This will return and empty list unless the printer's details are 
 available, see <a class="link" href="GtkPrinter.html#gtk-printer-has-details" title="gtk_printer_has_details ()"><code class="function">gtk_printer_has_details()</code></a> and <a class="link" href="GtkPrinter.html#gtk-printer-request-details" title="gtk_printer_request_details ()"><code class="function">gtk_printer_request_details()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-list-papers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -849,11 +835,11 @@ available, see <a class="link" href="GtkPrinter.html#gtk-printer-has-details" ti
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.17.6"></a><h4>Returns</h4>
+<a name="gtk-printer-list-papers.returns"></a><h4>Returns</h4>
 <p> a newly allocated list of newly allocated <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> s. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkPageSetup][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -863,8 +849,8 @@ gtk_printer_compare (<em class="parameter"><code><a class="link" href="GtkPrinte
                      <em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *b</code></em>);</pre>
 <p>Compares two printers.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-compare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -885,16 +871,15 @@ gtk_printer_compare (<em class="parameter"><code><a class="link" href="GtkPrinte
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.18.6"></a><h4>Returns</h4>
+<a name="gtk-printer-compare.returns"></a><h4>Returns</h4>
 <p> 0 if the printer match, a negative value if <em class="parameter"><code>a</code></em>
 &lt; <em class="parameter"><code>b</code></em>
 ,
 or a positive value if <em class="parameter"><code>a</code></em>
 &gt; <em class="parameter"><code>b</code></em>
 </p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -903,8 +888,8 @@ or a positive value if <em class="parameter"><code>a</code></em>
 gtk_printer_has_details (<em class="parameter"><code><a class="link" href="GtkPrinter.html" title="GtkPrinter"><span class="type">GtkPrinter</span></a> *printer</code></em>);</pre>
 <p>Returns whether the printer details are available.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-has-details.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -918,12 +903,11 @@ gtk_printer_has_details (<em class="parameter"><code><a class="link" href="GtkPr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.19.6"></a><h4>Returns</h4>
+<a name="gtk-printer-has-details.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>printer</code></em>
 details are available</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -934,8 +918,8 @@ gtk_printer_request_details (<em class="parameter"><code><a class="link" href="G
 the <a class="link" href="GtkPrinter.html#GtkPrinter-details-acquired" title="The “details-acquired” signal"><span class="type">“details-acquired”</span></a> signal will be emitted on <em class="parameter"><code>printer</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-request-details.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -948,7 +932,7 @@ the <a class="link" href="GtkPrinter.html#GtkPrinter-details-acquired" title="Th
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -962,8 +946,8 @@ you must handle yourself.</p>
 <p>This will return 0 unless the printer's details are available, see
 <a class="link" href="GtkPrinter.html#gtk-printer-has-details" title="gtk_printer_has_details ()"><code class="function">gtk_printer_has_details()</code></a> and <a class="link" href="GtkPrinter.html#gtk-printer-request-details" title="gtk_printer_request_details ()"><code class="function">gtk_printer_request_details()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.21.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-capabilities.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -977,11 +961,10 @@ you must handle yourself.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.21.8"></a><h4>Returns</h4>
+<a name="gtk-printer-get-capabilities.returns"></a><h4>Returns</h4>
 <p> the printer's capabilities</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -991,8 +974,8 @@ gtk_printer_get_default_page_size (<em class="parameter"><code><a class="link" h
 <p>Returns default page size of <em class="parameter"><code>printer</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-default-page-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1006,11 +989,10 @@ gtk_printer_get_default_page_size (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.22.6"></a><h4>Returns</h4>
+<a name="gtk-printer-get-default-page-size.returns"></a><h4>Returns</h4>
 <p> a newly allocated <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> with default page size of the printer.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1027,8 +1009,8 @@ the area at the borders of the paper that the printer cannot print to.</p>
 <p>Note: This will not succeed unless the printer's details are available,
 see <a class="link" href="GtkPrinter.html#gtk-printer-has-details" title="gtk_printer_has_details ()"><code class="function">gtk_printer_has_details()</code></a> and <a class="link" href="GtkPrinter.html#gtk-printer-request-details" title="gtk_printer_request_details ()"><code class="function">gtk_printer_request_details()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-printer-get-hard-margins.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1064,11 +1046,10 @@ see <a class="link" href="GtkPrinter.html#gtk-printer-has-details" title="gtk_pr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.23.7"></a><h4>Returns</h4>
+<a name="gtk-printer-get-hard-margins.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> iff the hard margins were retrieved</p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1082,8 +1063,8 @@ Note that you need to ref <em class="parameter"><code>printer</code></em>, if yo
 a reference to it after the function has returned.
 </p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkPrinterFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1104,9 +1085,8 @@ a reference to it after the function has returned.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.24.6"></a><h4>Returns</h4>
+<a name="GtkPrinterFunc.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to stop the enumeration, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to continue</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1121,8 +1101,8 @@ gtk_enumerate_printers (<em class="parameter"><code><a class="link" href="GtkPri
 If <em class="parameter"><code>func</code></em>
  returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the enumeration is stopped.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.11.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-enumerate-printers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1155,7 +1135,7 @@ all printers are enumerated; otherwise return early</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1182,7 +1162,7 @@ all printers are enumerated; otherwise return early</p></td>
 <p>This property is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the printer is accepting jobs.</p>
 <p>Flags: Read</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1259,7 +1239,7 @@ A paused printer still accepts jobs, but it does
 not print them.</p>
 <p>Flags: Read</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1283,8 +1263,8 @@ about a printer from the print backend. The <em class="parameter"><code>success<
  parameter
 indicates if the information was actually obtained.</p>
 <div class="refsect3">
-<a name="id-1.4.16.7.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkPrinter-details-acquired.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1309,13 +1289,12 @@ indicates if the information was actually obtained.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.10</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

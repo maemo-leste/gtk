@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTipsQuery</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTipsQuery: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkTooltips.html" title="GtkTooltips">
 <link rel="next" href="GtkTree.html" title="GtkTree">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTipsQuery.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -88,7 +88,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTipsQuery.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -123,7 +123,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTipsQuery.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -133,29 +133,29 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-start-query" title="The “start-query” signal">start-query</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-stop-query" title="The “stop-query” signal">stop-query</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-widget-entered" title="The “widget-entered” signal">widget-entered</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-widget-selected" title="The “widget-selected” signal">widget-selected</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkTipsQuery.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -168,7 +168,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTipsQuery.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -226,9 +226,8 @@ gtk_tips_query_new (<em class="parameter"><code><span class="type">void</span></
 Creates a new <a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="type">GtkTipsQuery</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-tips-query-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="type">GtkTipsQuery</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -243,8 +242,8 @@ The <a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="t
 moves it will display the tooltip of the widget beneath the mouse.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.11.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tips-query-start-query.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -268,8 +267,8 @@ gtk_tips_query_stop_query (<em class="parameter"><code><a class="link" href="Gtk
 Stops a query.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.11.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tips-query-stop-query.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -296,8 +295,8 @@ If the <em class="parameter"><code>caller</code></em> is selected while the quer
 automatically stopped.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.11.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tips-query-set-caller.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -332,8 +331,8 @@ and the text to display when the query is in effect but the widget beneath
 the pointer has no tooltip.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.11.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tips-query-set-labels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -430,8 +429,8 @@ user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><sp
 Emitted when the query is started.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTipsQuery-start-query.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -451,7 +450,7 @@ Emitted when the query is started.
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -463,8 +462,8 @@ user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><sp
 Emitted when the query is stopped.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.14.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTipsQuery-stop-query.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -484,7 +483,7 @@ Emitted when the query is stopped.
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -499,8 +498,8 @@ user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><sp
 Emitted when a widget is entered by the pointer while the query is in effect.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.14.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTipsQuery-widget-entered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -535,7 +534,7 @@ Emitted when a widget is entered by the pointer while the query is in effect.
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -545,14 +544,14 @@ user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><sp
                <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a>    *widget,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg1,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg2,
-               <a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>     *arg3,
+               <a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>     *arg3,
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
 <p>
 Emitted when a widget is selected during a query.
 </p>
 <div class="refsect3">
-<a name="id-1.4.23.16.14.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTipsQuery-widget-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -593,11 +592,10 @@ Emitted when a widget is selected during a query.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.23.16.14.5.6"></a><h4>Returns</h4>
+<a name="GtkTipsQuery-widget-selected.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the query should be stopped.</p>
-<p></p>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -619,7 +617,6 @@ Emitted when a widget is selected during a query.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

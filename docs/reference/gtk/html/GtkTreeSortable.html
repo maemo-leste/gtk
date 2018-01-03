@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTreeSortable</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTreeSortable: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkIconView.html" title="GtkIconView">
 <link rel="next" href="GtkTreeModelSort.html" title="GtkTreeModelSort">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTreeSortable.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -104,7 +104,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeSortable.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -113,13 +113,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeSortable.html#GtkTreeSortable-sort-column-changed" title="The “sort-column-changed” signal">sort-column-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkTreeSortable.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -138,7 +138,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeSortable.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GInterface
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
     <span class="lineart">╰──</span> GtkTreeSortable
 </pre>
 </div>
@@ -146,7 +146,7 @@
 <a name="GtkTreeSortable.prerequisites"></a><h2>Prerequisites</h2>
 <p>
 GtkTreeSortable requires
- <a class="link" href="GtkTreeModel.html" title="GtkTreeModel">GtkTreeModel</a> and  <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>.</p>
+ <a class="link" href="GtkTreeModel.html" title="GtkTreeModel">GtkTreeModel</a> and  <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
 </div>
 <div class="refsect1">
 <a name="GtkTreeSortable.implementations"></a><h2>Known Implementations</h2>
@@ -190,8 +190,8 @@ for the "price" column could be one which returns
 <code class="literal">price_of(<em class="parameter"><code>a</code></em>) - price_of(<em class="parameter"><code>b</code></em>)</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeIterCompareFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -225,12 +225,11 @@ for the "price" column could be one which returns
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.2.7"></a><h4>Returns</h4>
+<a name="GtkTreeIterCompareFunc.returns"></a><h4>Returns</h4>
 <p>a negative integer, zero or a positive integer depending on whether
 <em class="parameter"><code>a</code></em>
 sorts before, with or after <em class="parameter"><code>b</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -241,8 +240,8 @@ gtk_tree_sortable_sort_column_changed (<em class="parameter"><code><a class="lin
 <p>Emits a <a class="link" href="GtkTreeSortable.html#GtkTreeSortable-sort-column-changed" title="The “sort-column-changed” signal"><span class="type">“sort-column-changed”</span></a> signal on <em class="parameter"><code>sortable</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-sortable-sort-column-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -268,11 +267,11 @@ gtk_tree_sortable_get_sort_column_id (<em class="parameter"><code><a class="link
  with the current sort column and the
 order. It returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> unless the <em class="parameter"><code>sort_column_id</code></em>
  is 
-<a href="http://developer.gnome.org/gtk2/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a> or 
-<a href="http://developer.gnome.org/gtk2/GtkTreeSortable.html#GTK-TREE-SORTABLE-UNSORTED-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_UNSORTED_SORT_COLUMN_ID</code></a>.</p>
+<a href="http://developer.gnome.org/gtk3/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a> or 
+<a href="http://developer.gnome.org/gtk3/GtkTreeSortable.html#GTK-TREE-SORTABLE-UNSORTED-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_UNSORTED_SORT_COLUMN_ID</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-sortable-get-sort-column-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -298,10 +297,9 @@ order. It returns <a href="https://developer.gnome.org/glib/unstable/glib-Standa
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.4.6"></a><h4>Returns</h4>
+<a name="gtk-tree-sortable-get-sort-column-id.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the sort column is not one of the special sort
 column ids.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -325,18 +323,18 @@ a regular column id, or one of the following special values:</p>
 </colgroup>
 <tbody>
 <tr>
-<td><p><span class="term"><a href="http://developer.gnome.org/gtk2/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a></span></p></td>
+<td><p><span class="term"><a href="http://developer.gnome.org/gtk3/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a></span></p></td>
 <td>the default sort function will be used, if it is set</td>
 </tr>
 <tr>
-<td><p><span class="term"><a href="http://developer.gnome.org/gtk2/GtkTreeSortable.html#GTK-TREE-SORTABLE-UNSORTED-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_UNSORTED_SORT_COLUMN_ID</code></a></span></p></td>
+<td><p><span class="term"><a href="http://developer.gnome.org/gtk3/GtkTreeSortable.html#GTK-TREE-SORTABLE-UNSORTED-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_UNSORTED_SORT_COLUMN_ID</code></a></span></p></td>
 <td>no sorting will occur</td>
 </tr>
 </tbody>
 </table></div>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-sortable-set-sort-column-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -378,8 +376,8 @@ current sort column id of <em class="parameter"><code>sortable</code></em>
 , then 
 the model will sort using this function.</p>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-sortable-set-sort-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -430,17 +428,17 @@ gtk_tree_sortable_set_default_sort_func
 .  
 If the current sort column id of <em class="parameter"><code>sortable</code></em>
  is
-<a href="http://developer.gnome.org/gtk2/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a>, then the model will sort using 
+<a href="http://developer.gnome.org/gtk3/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a>, then the model will sort using 
 this function.</p>
 <p>If <em class="parameter"><code>sort_func</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, then there will be no default comparison function.
 This means that once the model  has been sorted, it can't go back to the
 default state. In this case, when the current sort column id of <em class="parameter"><code>sortable</code></em>
  
-is <a href="http://developer.gnome.org/gtk2/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a>, the model will be unsorted.</p>
+is <a href="http://developer.gnome.org/gtk3/GtkTreeSortable.html#GTK-TREE-SORTABLE-DEFAULT-SORT-COLUMN-ID:CAPS"><code class="literal">GTK_TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID</code></a>, the model will be unsorted.</p>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-sortable-set-default-sort-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -483,8 +481,8 @@ gtk_tree_sortable_has_default_sort_func
 primarily by GtkTreeViewColumns in order to determine if a model can 
 go back to the default state, or not.</p>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-sortable-has-default-sort-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -498,9 +496,8 @@ go back to the default state, or not.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.10.11.8.6"></a><h4>Returns</h4>
+<a name="gtk-tree-sortable-has-default-sort-func.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if the model has a default sort function</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -557,8 +554,8 @@ or sort order of <em class="parameter"><code>sortable</code></em>
 the contents of <em class="parameter"><code>sortable</code></em>
  are resorted.</p>
 <div class="refsect3">
-<a name="id-1.4.9.10.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeSortable-sort-column-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -578,7 +575,7 @@ the contents of <em class="parameter"><code>sortable</code></em>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -589,7 +586,6 @@ the contents of <em class="parameter"><code>sortable</code></em>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

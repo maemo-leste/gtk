@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Bitmaps and Pixmaps</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Bitmaps and Pixmaps: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Drawing-Primitives.html" title="Drawing Primitives">
 <link rel="next" href="gdk2-GdkRGB.html" title="GdkRGB">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Bitmaps-and-Pixmaps.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -109,7 +109,7 @@
 </div>
 <a name="GdkPixmap"></a><div class="refsect1">
 <a name="gdk2-Bitmaps-and-Pixmaps.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -144,7 +144,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Bitmaps-and-Pixmaps.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable">GdkDrawable</a>
         <span class="lineart">╰──</span> GdkPixmap
 </pre>
@@ -188,8 +188,8 @@ function if you're not forced to use a <a class="link" href="gdk2-Bitmaps-and-Pi
 as the replacement function for this function in GTK 3.
 </p>
 <div class="refsect3">
-<a name="id-1.2.10.9.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixmap-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -226,9 +226,8 @@ pixmap will be equal to that of <em class="parameter"><code>drawable</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.10.9.2.7"></a><h4>Returns</h4>
+<a name="gdk-pixmap-new.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -254,8 +253,8 @@ to draw the image surface to the bitmap.</p>
 Creates a new bitmap from data in XBM format.
 </p>
 <div class="refsect3">
-<a name="id-1.2.10.9.3.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-bitmap-create-from-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -288,9 +287,8 @@ window is used.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.10.9.3.7"></a><h4>Returns</h4>
+<a name="gdk-bitmap-create-from-data.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap" title="GdkBitmap"><span class="type">GdkBitmap</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -316,8 +314,8 @@ this surface with <code class="function">cairo_mask_surface()</code> to paint th
 Create a two-color pixmap from data in XBM data.
 </p>
 <div class="refsect3">
-<a name="id-1.2.10.9.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixmap-create-from-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -364,9 +362,8 @@ for the new pixmap. Can be <a href="https://developer.gnome.org/glib/unstable/gl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.10.9.4.7"></a><h4>Returns</h4>
+<a name="gdk-pixmap-create-from-data.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -379,15 +376,15 @@ gdk_pixmap_create_from_xpm (<em class="parameter"><code><a class="link" href="gd
                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_pixmap_create_from_xpm</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> instead. You can use
+<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> instead. You can use
 <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file"><code class="function">gdk_pixbuf_new_from_file()</code></a> to create it.
 If you must use a pixmap, use <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-new" title="gdk_pixmap_new ()"><code class="function">gdk_pixmap_new()</code></a> to
 create it and Cairo to draw the pixbuf onto it.</p>
 </div>
 <p>Create a pixmap from a XPM file.</p>
 <div class="refsect3">
-<a name="id-1.2.10.9.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixmap-create-from-xpm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -423,7 +420,7 @@ in which case a default color will be used.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.10.9.5.7"></a><h4>Returns</h4>
+<a name="gdk-pixmap-create-from-xpm.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -439,15 +436,15 @@ gdk_pixmap_colormap_create_from_xpm (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_pixmap_colormap_create_from_xpm</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> instead. You can use
+<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> instead. You can use
 <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file"><code class="function">gdk_pixbuf_new_from_file()</code></a> to create it.
 If you must use a pixmap, use <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-new" title="gdk_pixmap_new ()"><code class="function">gdk_pixmap_new()</code></a> to
 create it and Cairo to draw the pixbuf onto it.</p>
 </div>
 <p>Create a pixmap from a XPM file using a particular colormap.</p>
 <div class="refsect3">
-<a name="id-1.2.10.9.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixmap-colormap-create-from-xpm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -491,7 +488,7 @@ in which case a default color will be used.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.10.9.6.7"></a><h4>Returns</h4>
+<a name="gdk-pixmap-colormap-create-from-xpm.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -506,15 +503,15 @@ gdk_pixmap_create_from_xpm_d (<em class="parameter"><code><a class="link" href="
                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **data</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_pixmap_create_from_xpm_d</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> instead. You can use
+<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> instead. You can use
 <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-xpm-data"><code class="function">gdk_pixbuf_new_from_xpm_data()</code></a> to create it.
 If you must use a pixmap, use <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-new" title="gdk_pixmap_new ()"><code class="function">gdk_pixmap_new()</code></a> to
 create it and Cairo to draw the pixbuf onto it.</p>
 </div>
 <p>Create a pixmap from data in XPM format.</p>
 <div class="refsect3">
-<a name="id-1.2.10.9.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixmap-create-from-xpm-d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -550,7 +547,7 @@ in which case a default color will be used.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.10.9.7.7"></a><h4>Returns</h4>
+<a name="gdk-pixmap-create-from-xpm-d.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -566,7 +563,7 @@ gdk_pixmap_colormap_create_from_xpm_d (<em class="parameter"><code><a class="lin
                                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **data</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_pixmap_colormap_create_from_xpm_d</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> instead. You can use
+<p>Use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> instead. You can use
 <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-xpm-data"><code class="function">gdk_pixbuf_new_from_xpm_data()</code></a> to create it.
 If you must use a pixmap, use <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-new" title="gdk_pixmap_new ()"><code class="function">gdk_pixmap_new()</code></a> to
 create it and Cairo to draw the pixbuf onto it.</p>
@@ -574,8 +571,8 @@ create it and Cairo to draw the pixbuf onto it.</p>
 <p>Create a pixmap from data in XPM format using a particular
 colormap.</p>
 <div class="refsect3">
-<a name="id-1.2.10.9.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixmap-colormap-create-from-xpm-d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -619,7 +616,7 @@ in which case a default color will be used.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.10.9.8.7"></a><h4>Returns</h4>
+<a name="gdk-pixmap-colormap-create-from-xpm-d.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -635,8 +632,8 @@ gdk_pixmap_get_size (<em class="parameter"><code><a class="link" href="gdk2-Bitm
 even when compiling without deprecated symbols and you must use pixmaps.
 It is identical to <a class="link" href="gdk2-Drawing-Primitives.html#gdk-drawable-get-size" title="gdk_drawable_get_size ()"><code class="function">gdk_drawable_get_size()</code></a>, but for pixmaps.</p>
 <div class="refsect3">
-<a name="id-1.2.10.9.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-pixmap-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -663,7 +660,7 @@ It is identical to <a class="link" href="gdk2-Drawing-Primitives.html#gdk-drawab
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.24</p>
+<p class="since">Since: 2.24</p>
 </div>
 </div>
 <div class="refsect1">
@@ -690,10 +687,9 @@ these types.
 Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.10.10.3.6"></a><h4>Returns</h4>
+<a name="gdk-pixmap-ref.returns"></a><h4>Returns</h4>
 <p><em class="parameter"><code>pixmap</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -728,10 +724,9 @@ refers generically to any of these types.
 Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.10.10.6.6"></a><h4>Returns</h4>
+<a name="gdk-bitmap-ref.returns"></a><h4>Returns</h4>
 <p><em class="parameter"><code>pixmap</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -747,7 +742,6 @@ Deprecated equivalent of <a href="https://developer.gnome.org/gobject/unstable/g
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

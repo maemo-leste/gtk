@@ -62,9 +62,9 @@ gtk_marshal_BOOLEAN__VOID (GClosure     *closure,
 {
   typedef gboolean (*GMarshalFunc_BOOLEAN__VOID) (gpointer     data1,
                                                   gpointer     data2);
-  register GMarshalFunc_BOOLEAN__VOID callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__VOID callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -100,9 +100,9 @@ gtk_marshal_BOOLEAN__POINTER (GClosure     *closure,
   typedef gboolean (*GMarshalFunc_BOOLEAN__POINTER) (gpointer     data1,
                                                      gpointer     arg_1,
                                                      gpointer     data2);
-  register GMarshalFunc_BOOLEAN__POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -142,9 +142,9 @@ gtk_marshal_BOOLEAN__POINTER_POINTER_INT_INT (GClosure     *closure,
                                                                      gint         arg_3,
                                                                      gint         arg_4,
                                                                      gpointer     data2);
-  register GMarshalFunc_BOOLEAN__POINTER_POINTER_INT_INT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__POINTER_POINTER_INT_INT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -186,9 +186,9 @@ gtk_marshal_BOOLEAN__POINTER_INT_INT (GClosure     *closure,
                                                              gint         arg_2,
                                                              gint         arg_3,
                                                              gpointer     data2);
-  register GMarshalFunc_BOOLEAN__POINTER_INT_INT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__POINTER_INT_INT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -230,9 +230,9 @@ gtk_marshal_BOOLEAN__POINTER_INT_INT_UINT (GClosure     *closure,
                                                                   gint         arg_3,
                                                                   guint        arg_4,
                                                                   gpointer     data2);
-  register GMarshalFunc_BOOLEAN__POINTER_INT_INT_UINT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__POINTER_INT_INT_UINT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -275,9 +275,9 @@ gtk_marshal_BOOLEAN__POINTER_STRING_STRING_POINTER (GClosure     *closure,
                                                                            gpointer     arg_3,
                                                                            gpointer     arg_4,
                                                                            gpointer     data2);
-  register GMarshalFunc_BOOLEAN__POINTER_STRING_STRING_POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_BOOLEAN__POINTER_STRING_STRING_POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gboolean v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -317,9 +317,9 @@ gtk_marshal_ENUM__ENUM (GClosure     *closure,
   typedef gint (*GMarshalFunc_ENUM__ENUM) (gpointer     data1,
                                            gint         arg_1,
                                            gpointer     data2);
-  register GMarshalFunc_ENUM__ENUM callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_ENUM__ENUM callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gint v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -356,9 +356,9 @@ gtk_marshal_INT__POINTER (GClosure     *closure,
   typedef gint (*GMarshalFunc_INT__POINTER) (gpointer     data1,
                                              gpointer     arg_1,
                                              gpointer     data2);
-  register GMarshalFunc_INT__POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_INT__POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gint v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -397,9 +397,9 @@ gtk_marshal_INT__POINTER_CHAR_CHAR (GClosure     *closure,
                                                        gchar        arg_2,
                                                        gchar        arg_3,
                                                        gpointer     data2);
-  register GMarshalFunc_INT__POINTER_CHAR_CHAR callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_INT__POINTER_CHAR_CHAR callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
   gint v_return;
 
   g_return_if_fail (return_value != NULL);
@@ -445,9 +445,9 @@ gtk_marshal_VOID__ENUM_FLOAT (GClosure     *closure,
                                                  gint         arg_1,
                                                  gfloat       arg_2,
                                                  gpointer     data2);
-  register GMarshalFunc_VOID__ENUM_FLOAT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__ENUM_FLOAT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 3);
 
@@ -483,9 +483,9 @@ gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN (GClosure     *closure,
                                                          gfloat       arg_2,
                                                          gboolean     arg_3,
                                                          gpointer     data2);
-  register GMarshalFunc_VOID__ENUM_FLOAT_BOOLEAN callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__ENUM_FLOAT_BOOLEAN callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 
@@ -523,9 +523,9 @@ gtk_marshal_VOID__INT_INT (GClosure     *closure,
                                               gint         arg_1,
                                               gint         arg_2,
                                               gpointer     data2);
-  register GMarshalFunc_VOID__INT_INT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__INT_INT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 3);
 
@@ -561,9 +561,9 @@ gtk_marshal_VOID__INT_INT_POINTER (GClosure     *closure,
                                                       gint         arg_2,
                                                       gpointer     arg_3,
                                                       gpointer     data2);
-  register GMarshalFunc_VOID__INT_INT_POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__INT_INT_POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 
@@ -605,9 +605,9 @@ gtk_marshal_VOID__POINTER_INT (GClosure     *closure,
                                                   gpointer     arg_1,
                                                   gint         arg_2,
                                                   gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_INT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_INT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 3);
 
@@ -642,9 +642,9 @@ gtk_marshal_VOID__POINTER_POINTER (GClosure     *closure,
                                                       gpointer     arg_1,
                                                       gpointer     arg_2,
                                                       gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 3);
 
@@ -680,9 +680,9 @@ gtk_marshal_VOID__POINTER_POINTER_POINTER (GClosure     *closure,
                                                               gpointer     arg_2,
                                                               gpointer     arg_3,
                                                               gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_POINTER_POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_POINTER_POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 
@@ -719,9 +719,9 @@ gtk_marshal_VOID__POINTER_STRING_STRING (GClosure     *closure,
                                                             gpointer     arg_2,
                                                             gpointer     arg_3,
                                                             gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_STRING_STRING callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_STRING_STRING callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 
@@ -757,9 +757,9 @@ gtk_marshal_VOID__POINTER_UINT (GClosure     *closure,
                                                    gpointer     arg_1,
                                                    guint        arg_2,
                                                    gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_UINT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_UINT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 3);
 
@@ -795,9 +795,9 @@ gtk_marshal_VOID__POINTER_UINT_ENUM (GClosure     *closure,
                                                         guint        arg_2,
                                                         gint         arg_3,
                                                         gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_UINT_ENUM callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_UINT_ENUM callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 
@@ -835,9 +835,9 @@ gtk_marshal_VOID__POINTER_POINTER_UINT_UINT (GClosure     *closure,
                                                                 guint        arg_3,
                                                                 guint        arg_4,
                                                                 gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_POINTER_UINT_UINT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_POINTER_UINT_UINT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 5);
 
@@ -878,9 +878,9 @@ gtk_marshal_VOID__POINTER_INT_INT_POINTER_UINT_UINT (GClosure     *closure,
                                                                         guint        arg_5,
                                                                         guint        arg_6,
                                                                         gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_INT_INT_POINTER_UINT_UINT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_INT_INT_POINTER_UINT_UINT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 7);
 
@@ -920,9 +920,9 @@ gtk_marshal_VOID__POINTER_UINT_UINT (GClosure     *closure,
                                                         guint        arg_2,
                                                         guint        arg_3,
                                                         gpointer     data2);
-  register GMarshalFunc_VOID__POINTER_UINT_UINT callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__POINTER_UINT_UINT callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 
@@ -963,9 +963,9 @@ gtk_marshal_VOID__STRING_INT_POINTER (GClosure     *closure,
                                                          gint         arg_2,
                                                          gpointer     arg_3,
                                                          gpointer     data2);
-  register GMarshalFunc_VOID__STRING_INT_POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__STRING_INT_POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 4);
 
@@ -1007,9 +1007,9 @@ gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER (GClosure     *closure,
                                                                           gint         arg_5,
                                                                           gpointer     arg_6,
                                                                           gpointer     data2);
-  register GMarshalFunc_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 7);
 
@@ -1051,9 +1051,9 @@ gtk_marshal_VOID__UINT_POINTER_UINT_UINT_ENUM (GClosure     *closure,
                                                                   guint        arg_4,
                                                                   gint         arg_5,
                                                                   gpointer     data2);
-  register GMarshalFunc_VOID__UINT_POINTER_UINT_UINT_ENUM callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__UINT_POINTER_UINT_UINT_ENUM callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 6);
 
@@ -1091,9 +1091,9 @@ gtk_marshal_VOID__UINT_STRING (GClosure     *closure,
                                                   guint        arg_1,
                                                   gpointer     arg_2,
                                                   gpointer     data2);
-  register GMarshalFunc_VOID__UINT_STRING callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  GMarshalFunc_VOID__UINT_STRING callback;
+  GCClosure *cc = (GCClosure*) closure;
+  gpointer data1, data2;
 
   g_return_if_fail (n_param_values == 3);
 

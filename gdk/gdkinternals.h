@@ -59,9 +59,15 @@ struct _GdkColorInfo
   guint ref_count;
 };
 
+typedef enum {
+  GDK_EVENT_FILTER_REMOVED = 1 << 0
+} GdkEventFilterFlags;
+
 struct _GdkEventFilter {
   GdkFilterFunc function;
   gpointer data;
+  GdkEventFilterFlags flags;
+  guint ref_count;
 };
 
 struct _GdkClientFilter {
@@ -292,6 +298,9 @@ extern gchar     *_gdk_display_arg_name;
 
 void      _gdk_events_queue  (GdkDisplay *display);
 GdkEvent* _gdk_event_unqueue (GdkDisplay *display);
+
+void _gdk_event_filter_unref        (GdkWindow      *window,
+				     GdkEventFilter *filter);
 
 GList* _gdk_event_queue_find_first   (GdkDisplay *display);
 void   _gdk_event_queue_remove_link  (GdkDisplay *display,

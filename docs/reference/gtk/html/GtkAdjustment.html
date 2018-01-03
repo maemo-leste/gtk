@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkAdjustment</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkAdjustment: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MiscObjects.html" title="Miscellaneous">
 <link rel="prev" href="MiscObjects.html" title="Miscellaneous">
 <link rel="next" href="GtkArrow.html" title="GtkArrow">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkAdjustment.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -183,7 +183,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkAdjustment.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -225,7 +225,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkAdjustment.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -235,19 +235,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkAdjustment.html#GtkAdjustment-changed" title="The “changed” signal">changed</a></td>
-<td class="signal_flags">No Recursion</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkAdjustment.html#GtkAdjustment-value-changed" title="The “value-changed” signal">value-changed</a></td>
-<td class="signal_flags">No Recursion</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkAdjustment.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -260,7 +260,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkAdjustment.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> GtkAdjustment
@@ -306,8 +306,8 @@ gtk_adjustment_new (<em class="parameter"><code><a href="https://developer.gnome
 Creates a new <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -348,9 +348,8 @@ Creates a new <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><s
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.2.6"></a><h4>Returns</h4>
+<a name="gtk-adjustment-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -361,8 +360,8 @@ gtk_adjustment_get_value (<em class="parameter"><code><a class="link" href="GtkA
 <p>Gets the current value of the adjustment. See
 <a class="link" href="GtkAdjustment.html#gtk-adjustment-set-value" title="gtk_adjustment_set_value ()"><code class="function">gtk_adjustment_set_value()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -376,9 +375,8 @@ gtk_adjustment_get_value (<em class="parameter"><code><a class="link" href="GtkA
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.3.6"></a><h4>Returns</h4>
+<a name="gtk-adjustment-get-value.returns"></a><h4>Returns</h4>
 <p> The current value of the adjustment.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -398,8 +396,8 @@ range of allowed values goes from <code class="literal">adjustment-&gt;lower</co
 <code class="literal">adjustment-&gt;upper - adjustment-&gt;page_size</code>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-set-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -436,8 +434,8 @@ be in the current page.
 A "changed" signal will be emitted if the value is changed.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-clamp-page.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -474,8 +472,8 @@ This is typically called by the owner of the <a class="link" href="GtkAdjustment
 changed any of the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> fields other than the value.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -500,8 +498,8 @@ This is typically called by the owner of the <a class="link" href="GtkAdjustment
 changed the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> value field.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-value-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -531,8 +529,8 @@ gtk_adjustment_configure (<em class="parameter"><code><a class="link" href="GtkA
 signal. See <a class="link" href="GtkAdjustment.html#gtk-adjustment-set-lower" title="gtk_adjustment_set_lower ()"><code class="function">gtk_adjustment_set_lower()</code></a> for an alternative way
 of compressing multiple emissions of "changed" into one.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-configure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -577,7 +575,7 @@ of compressing multiple emissions of "changed" into one.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -586,8 +584,8 @@ of compressing multiple emissions of "changed" into one.</p>
 gtk_adjustment_get_lower (<em class="parameter"><code><a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>);</pre>
 <p>Retrieves the minimum value of the adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-get-lower.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -601,11 +599,10 @@ gtk_adjustment_get_lower (<em class="parameter"><code><a class="link" href="GtkA
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.9.6"></a><h4>Returns</h4>
+<a name="gtk-adjustment-get-lower.returns"></a><h4>Returns</h4>
 <p> The current minimum value of the adjustment.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -614,8 +611,8 @@ gtk_adjustment_get_lower (<em class="parameter"><code><a class="link" href="GtkA
 gtk_adjustment_get_page_increment (<em class="parameter"><code><a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>);</pre>
 <p>Retrieves the page increment of the adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-get-page-increment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -629,11 +626,10 @@ gtk_adjustment_get_page_increment (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.10.6"></a><h4>Returns</h4>
+<a name="gtk-adjustment-get-page-increment.returns"></a><h4>Returns</h4>
 <p> The current page increment of the adjustment.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -642,8 +638,8 @@ gtk_adjustment_get_page_increment (<em class="parameter"><code><a class="link" h
 gtk_adjustment_get_page_size (<em class="parameter"><code><a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>);</pre>
 <p>Retrieves the page size of the adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-get-page-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -657,11 +653,10 @@ gtk_adjustment_get_page_size (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.11.6"></a><h4>Returns</h4>
+<a name="gtk-adjustment-get-page-size.returns"></a><h4>Returns</h4>
 <p> The current page size of the adjustment.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -670,8 +665,8 @@ gtk_adjustment_get_page_size (<em class="parameter"><code><a class="link" href="
 gtk_adjustment_get_step_increment (<em class="parameter"><code><a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>);</pre>
 <p>Retrieves the step increment of the adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-get-step-increment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -685,11 +680,10 @@ gtk_adjustment_get_step_increment (<em class="parameter"><code><a class="link" h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.12.6"></a><h4>Returns</h4>
+<a name="gtk-adjustment-get-step-increment.returns"></a><h4>Returns</h4>
 <p> The current step increment of the adjustment.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -698,8 +692,8 @@ gtk_adjustment_get_step_increment (<em class="parameter"><code><a class="link" h
 gtk_adjustment_get_upper (<em class="parameter"><code><a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>);</pre>
 <p>Retrieves the maximum value of the adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-get-upper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -713,11 +707,10 @@ gtk_adjustment_get_upper (<em class="parameter"><code><a class="link" href="GtkA
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.13.6"></a><h4>Returns</h4>
+<a name="gtk-adjustment-get-upper.returns"></a><h4>Returns</h4>
 <p> The current maximum value of the adjustment.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -737,8 +730,8 @@ calls to the individual setters.</p>
 to change, or using <a class="link" href="GtkAdjustment.html#gtk-adjustment-configure" title="gtk_adjustment_configure ()"><code class="function">gtk_adjustment_configure()</code></a> has the same effect
 of compressing "changed" emissions.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.14.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-set-lower.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -758,7 +751,7 @@ of compressing "changed" emissions.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -771,8 +764,8 @@ gtk_adjustment_set_page_increment (<em class="parameter"><code><a class="link" h
 emissions of the "changed" signal when setting multiple adjustment
 properties.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-set-page-increment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -792,7 +785,7 @@ properties.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -805,8 +798,8 @@ gtk_adjustment_set_page_size (<em class="parameter"><code><a class="link" href="
 emissions of the "changed" signal when setting multiple adjustment
 properties.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-set-page-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -826,7 +819,7 @@ properties.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -839,8 +832,8 @@ gtk_adjustment_set_step_increment (<em class="parameter"><code><a class="link" h
 emissions of the "changed" signal when setting multiple adjustment
 properties.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-set-step-increment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -860,7 +853,7 @@ properties.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -876,8 +869,8 @@ property is nonzero.</p>
 emissions of the "changed" signal when setting multiple adjustment
 properties.</p>
 <div class="refsect3">
-<a name="id-1.4.17.2.10.18.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-adjustment-set-upper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -897,7 +890,7 @@ properties.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -908,7 +901,7 @@ properties.</p>
 <p>
 The <a class="link" href="GtkAdjustment.html#GtkAdjustment-struct" title="struct GtkAdjustment"><span class="type">GtkAdjustment</span></a> struct contains the following fields.
 </p>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col>
 <col>
@@ -966,7 +959,7 @@ In a <a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="
 <p>The minimum value of the adjustment.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -975,7 +968,7 @@ In a <a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="
 <p>The page increment of the adjustment.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -989,7 +982,7 @@ if the adjustment is used for a simple scalar value, e.g. in a
 <a class="link" href="GtkSpinButton.html" title="GtkSpinButton"><span class="type">GtkSpinButton</span></a>.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -998,7 +991,7 @@ if the adjustment is used for a simple scalar value, e.g. in a
 <p>The step increment of the adjustment.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1013,7 +1006,7 @@ Note that values will be restricted by
 property is nonzero.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1022,7 +1015,7 @@ property is nonzero.</p>
 <p>The value of the adjustment.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1037,8 +1030,8 @@ Emitted when one or more of the <a class="link" href="GtkAdjustment.html" title=
 other than the value field.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.2.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkAdjustment-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1058,7 +1051,7 @@ other than the value field.
 </tbody>
 </table></div>
 </div>
-<p>Flags: No Recursion</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1070,8 +1063,8 @@ user_function (<a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><
 Emitted when the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> value field has been changed.
 </p>
 <div class="refsect3">
-<a name="id-1.4.17.2.13.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkAdjustment-value-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1091,12 +1084,11 @@ Emitted when the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"
 </tbody>
 </table></div>
 </div>
-<p>Flags: No Recursion</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

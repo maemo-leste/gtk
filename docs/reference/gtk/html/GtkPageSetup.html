@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkPageSetup</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkPageSetup: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="Printing.html" title="Printing">
 <link rel="prev" href="GtkPrintSettings.html" title="GtkPrintSettings">
 <link rel="next" href="GtkPaperSize.html" title="GtkPaperSize">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkPageSetup.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -245,7 +245,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPageSetup.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -258,7 +258,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkPageSetup.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkPageSetup
 </pre>
 </div>
@@ -290,7 +290,7 @@ to get the defaults, or use <a class="link" href="gtk2-High-level-Printing-API.h
 the page setup dialog and receive the resulting page setup.
 </p>
 <div class="example">
-<a name="id-1.4.16.5.7.5"></a><p class="title"><b>Example 51. A page setup dialog</b></p>
+<a name="id-1.4.16.5.7.5"></a><p class="title"><b>Example 40. A page setup dialog</b></p>
 <div class="example-contents">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -341,11 +341,10 @@ Printing support was added in GTK+ 2.10.
 gtk_page_setup_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.2.5"></a><h4>Returns</h4>
+<a name="gtk-page-setup-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -354,8 +353,8 @@ gtk_page_setup_new (<em class="parameter"><code><span class="type">void</span></
 gtk_page_setup_copy (<em class="parameter"><code><a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> *other</code></em>);</pre>
 <p>Copies a <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -369,12 +368,12 @@ gtk_page_setup_copy (<em class="parameter"><code><a class="link" href="GtkPageSe
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.3.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-copy.returns"></a><h4>Returns</h4>
 <p> a copy of <em class="parameter"><code>other</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -383,8 +382,8 @@ gtk_page_setup_copy (<em class="parameter"><code><a class="link" href="GtkPageSe
 gtk_page_setup_get_orientation (<em class="parameter"><code><a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> *setup</code></em>);</pre>
 <p>Gets the page orientation of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-orientation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -398,11 +397,10 @@ gtk_page_setup_get_orientation (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.4.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-orientation.returns"></a><h4>Returns</h4>
 <p> the page orientation</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -412,8 +410,8 @@ gtk_page_setup_set_orientation (<em class="parameter"><code><a class="link" href
                                 <em class="parameter"><code><a class="link" href="GtkPrintSettings.html#GtkPageOrientation" title="enum GtkPageOrientation"><span class="type">GtkPageOrientation</span></a> orientation</code></em>);</pre>
 <p>Sets the page orientation of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-set-orientation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -433,7 +431,7 @@ gtk_page_setup_set_orientation (<em class="parameter"><code><a class="link" href
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -442,8 +440,8 @@ gtk_page_setup_set_orientation (<em class="parameter"><code><a class="link" href
 gtk_page_setup_get_paper_size (<em class="parameter"><code><a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> *setup</code></em>);</pre>
 <p>Gets the paper size of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-paper-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -457,11 +455,10 @@ gtk_page_setup_get_paper_size (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.6.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-paper-size.returns"></a><h4>Returns</h4>
 <p> the paper size</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -473,8 +470,8 @@ gtk_page_setup_set_paper_size (<em class="parameter"><code><a class="link" href=
 changing the margins. See 
 <a class="link" href="GtkPageSetup.html#gtk-page-setup-set-paper-size-and-default-margins" title="gtk_page_setup_set_paper_size_and_default_margins ()"><code class="function">gtk_page_setup_set_paper_size_and_default_margins()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-set-paper-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -494,7 +491,7 @@ changing the margins. See
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -505,8 +502,8 @@ gtk_page_setup_get_top_margin (<em class="parameter"><code><a class="link" href=
 <p>Gets the top margin in units of <em class="parameter"><code>unit</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-top-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -527,11 +524,10 @@ gtk_page_setup_get_top_margin (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.8.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-top-margin.returns"></a><h4>Returns</h4>
 <p> the top margin</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -542,8 +538,8 @@ gtk_page_setup_set_top_margin (<em class="parameter"><code><a class="link" href=
                                <em class="parameter"><code><a class="link" href="GtkPaperSize.html#GtkUnit" title="enum GtkUnit"><span class="type">GtkUnit</span></a> unit</code></em>);</pre>
 <p>Sets the top margin of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-set-top-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -570,7 +566,7 @@ gtk_page_setup_set_top_margin (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -581,8 +577,8 @@ gtk_page_setup_get_bottom_margin (<em class="parameter"><code><a class="link" hr
 <p>Gets the bottom margin in units of <em class="parameter"><code>unit</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-bottom-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -603,11 +599,10 @@ gtk_page_setup_get_bottom_margin (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.10.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-bottom-margin.returns"></a><h4>Returns</h4>
 <p> the bottom margin</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -618,8 +613,8 @@ gtk_page_setup_set_bottom_margin (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a class="link" href="GtkPaperSize.html#GtkUnit" title="enum GtkUnit"><span class="type">GtkUnit</span></a> unit</code></em>);</pre>
 <p>Sets the bottom margin of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-set-bottom-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -646,7 +641,7 @@ gtk_page_setup_set_bottom_margin (<em class="parameter"><code><a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -657,8 +652,8 @@ gtk_page_setup_get_left_margin (<em class="parameter"><code><a class="link" href
 <p>Gets the left margin in units of <em class="parameter"><code>unit</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-left-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -679,11 +674,10 @@ gtk_page_setup_get_left_margin (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.12.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-left-margin.returns"></a><h4>Returns</h4>
 <p> the left margin</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -694,8 +688,8 @@ gtk_page_setup_set_left_margin (<em class="parameter"><code><a class="link" href
                                 <em class="parameter"><code><a class="link" href="GtkPaperSize.html#GtkUnit" title="enum GtkUnit"><span class="type">GtkUnit</span></a> unit</code></em>);</pre>
 <p>Sets the left margin of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-set-left-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -722,7 +716,7 @@ gtk_page_setup_set_left_margin (<em class="parameter"><code><a class="link" href
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -733,8 +727,8 @@ gtk_page_setup_get_right_margin (<em class="parameter"><code><a class="link" hre
 <p>Gets the right margin in units of <em class="parameter"><code>unit</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-right-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -755,11 +749,10 @@ gtk_page_setup_get_right_margin (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.14.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-right-margin.returns"></a><h4>Returns</h4>
 <p> the right margin</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -770,8 +763,8 @@ gtk_page_setup_set_right_margin (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code><a class="link" href="GtkPaperSize.html#GtkUnit" title="enum GtkUnit"><span class="type">GtkUnit</span></a> unit</code></em>);</pre>
 <p>Sets the right margin of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-set-right-margin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -798,7 +791,7 @@ gtk_page_setup_set_right_margin (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -810,8 +803,8 @@ gtk_page_setup_set_paper_size_and_default_margins
 <p>Sets the paper size of the <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> and modifies
 the margins according to the new paper size.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-set-paper-size-and-default-margins.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -831,7 +824,7 @@ the margins according to the new paper size.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -845,8 +838,8 @@ gtk_page_setup_get_paper_width (<em class="parameter"><code><a class="link" href
 not margins into consideration. 
 See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-page-width" title="gtk_page_setup_get_page_width ()"><code class="function">gtk_page_setup_get_page_width()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-paper-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -867,11 +860,10 @@ See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-page-width" title
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.17.7"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-paper-width.returns"></a><h4>Returns</h4>
 <p> the paper width.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -885,8 +877,8 @@ gtk_page_setup_get_paper_height (<em class="parameter"><code><a class="link" hre
 not margins into consideration.
 See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-page-height" title="gtk_page_setup_get_page_height ()"><code class="function">gtk_page_setup_get_page_height()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-paper-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -907,11 +899,10 @@ See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-page-height" titl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.18.7"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-paper-height.returns"></a><h4>Returns</h4>
 <p> the paper height.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -925,8 +916,8 @@ gtk_page_setup_get_page_width (<em class="parameter"><code><a class="link" href=
 margins into consideration. 
 See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-paper-width" title="gtk_page_setup_get_paper_width ()"><code class="function">gtk_page_setup_get_paper_width()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-page-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -947,11 +938,10 @@ See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-paper-width" titl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.19.7"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-page-width.returns"></a><h4>Returns</h4>
 <p> the page width.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -965,8 +955,8 @@ gtk_page_setup_get_page_height (<em class="parameter"><code><a class="link" href
 margins into consideration. 
 See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-paper-height" title="gtk_page_setup_get_paper_height ()"><code class="function">gtk_page_setup_get_paper_height()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-get-page-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -987,11 +977,10 @@ See <a class="link" href="GtkPageSetup.html#gtk-page-setup-get-paper-height" tit
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.20.7"></a><h4>Returns</h4>
+<a name="gtk-page-setup-get-page-height.returns"></a><h4>Returns</h4>
 <p> the page height.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1004,8 +993,8 @@ gtk_page_setup_new_from_file (<em class="parameter"><code>const <a href="https:/
 new <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> object with the restored page setup, 
 or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if an error occurred. See <a class="link" href="GtkPageSetup.html#gtk-page-setup-to-file" title="gtk_page_setup_to_file ()"><code class="function">gtk_page_setup_to_file()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-new-from-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1026,11 +1015,10 @@ or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.21.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-new-from-file.returns"></a><h4>Returns</h4>
 <p> the restored <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1045,8 +1033,8 @@ gtk_page_setup_new_from_key_file (<em class="parameter"><code><a href="https://d
 . Returns a new <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a> object with the restored
 page setup, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if an error occurred.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-new-from-key-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1073,11 +1061,10 @@ to use the default name "Page Setup". </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.22.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-new-from-key-file.returns"></a><h4>Returns</h4>
 <p> the restored <a class="link" href="GtkPageSetup.html" title="GtkPageSetup"><span class="type">GtkPageSetup</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1090,8 +1077,8 @@ gtk_page_setup_load_file (<em class="parameter"><code><a class="link" href="GtkP
 .
 See <a class="link" href="GtkPageSetup.html#gtk-page-setup-to-file" title="gtk_page_setup_to_file ()"><code class="function">gtk_page_setup_to_file()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-load-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1117,11 +1104,10 @@ See <a class="link" href="GtkPageSetup.html#gtk-page-setup-to-file" title="gtk_p
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.23.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-load-file.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1136,8 +1122,8 @@ gtk_page_setup_load_key_file (<em class="parameter"><code><a class="link" href="
 <em class="parameter"><code>key_file</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-load-key-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1169,11 +1155,10 @@ to use the default name "Page Setup". </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.24.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-load-key-file.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1186,8 +1171,8 @@ gtk_page_setup_to_file (<em class="parameter"><code><a class="link" href="GtkPag
  to <em class="parameter"><code>file_name</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-to-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1213,11 +1198,10 @@ gtk_page_setup_to_file (<em class="parameter"><code><a class="link" href="GtkPag
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.25.6"></a><h4>Returns</h4>
+<a name="gtk-page-setup-to-file.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1230,8 +1214,8 @@ gtk_page_setup_to_key_file (<em class="parameter"><code><a class="link" href="Gt
  to <em class="parameter"><code>key_file</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.16.5.8.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-page-setup-to-key-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1258,7 +1242,7 @@ or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1272,7 +1256,6 @@ or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

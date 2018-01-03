@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCellRenderer</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCellRenderer: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkCellLayout.html" title="GtkCellLayout">
 <link rel="next" href="GtkCellEditable.html" title="GtkCellEditable">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCellRenderer.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -175,7 +175,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRenderer.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -190,7 +190,7 @@
 </tr>
 <tr>
 <td class="property_type">
-<a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</td>
+<a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</td>
 <td class="property_name"><a class="link" href="GtkCellRenderer.html#GtkCellRenderer--cell-background-gdk" title="The “cell-background-gdk” property">cell-background-gdk</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -264,7 +264,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRenderer.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -274,19 +274,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkCellRenderer.html#GtkCellRenderer-editing-canceled" title="The “editing-canceled” signal">editing-canceled</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkCellRenderer.html#GtkCellRenderer-editing-started" title="The “editing-started” signal">editing-started</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkCellRenderer.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -313,7 +313,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRenderer.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> GtkCellRenderer
@@ -333,17 +333,17 @@
 <a name="GtkCellRenderer.description"></a><h2>Description</h2>
 <p>
 The <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> is a base class of a set of objects used for
-rendering a cell to a <a href="http://library.gnome.org/devel/gdk3/gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>.  These objects are used primarily by
+rendering a cell to a <a href="../html/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a>.  These objects are used primarily by
 the <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a> widget, though they aren't tied to them in any
 specific way.  It is worth noting that <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> is not a
 <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> and cannot be treated as such.
 </p>
 <p>
 The primary use of a <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> is for drawing a certain graphical
-elements on a <a href="http://library.gnome.org/devel/gdk3/gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>.  Typically, one cell renderer is used to
+elements on a <a href="../html/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a>.  Typically, one cell renderer is used to
 draw many cells on the screen.  To this extent, it isn't expected that a
 CellRenderer keep any permanent state around.  Instead, any state is set
-just prior to use using <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>s property system.  Then, the
+just prior to use using <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>s property system.  Then, the
 cell is measured using <a class="link" href="GtkCellRenderer.html#gtk-cell-renderer-get-size" title="gtk_cell_renderer_get_size ()"><code class="function">gtk_cell_renderer_get_size()</code></a>.  Finally, the cell
 is rendered in the correct location using <a class="link" href="GtkCellRenderer.html#gtk-cell-renderer-render" title="gtk_cell_renderer_render ()"><code class="function">gtk_cell_renderer_render()</code></a>.
 </p>
@@ -373,7 +373,7 @@ respectively.
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_cell_renderer_get_size (<em class="parameter"><code><a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> *cell</code></em>,
                             <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                            <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
+                            <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x_offset</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y_offset</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
@@ -390,8 +390,8 @@ in <em class="parameter"><code>x_offset</code></em>
  and <em class="parameter"><code>y_offset</code></em>
  are inclusive of the xpad and ypad properties.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -444,11 +444,11 @@ in <em class="parameter"><code>x_offset</code></em>
 <a name="gtk-cell-renderer-render"></a><h3>gtk_cell_renderer_render ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_cell_renderer_render (<em class="parameter"><code><a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> *cell</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                          <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                           <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *background_area</code></em>,
-                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
-                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *expose_area</code></em>,
+                          <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *background_area</code></em>,
+                          <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
+                          <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *expose_area</code></em>,
                           <em class="parameter"><code><a class="link" href="GtkCellRenderer.html#GtkCellRendererState" title="enum GtkCellRendererState"><span class="type">GtkCellRendererState</span></a> flags</code></em>);</pre>
 <p>Invokes the virtual render function of the <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a>. The three
 passed-in rectangles are areas of <em class="parameter"><code>window</code></em>
@@ -465,8 +465,8 @@ so the <em class="parameter"><code>background_area</code></em>
 .  <em class="parameter"><code>expose_area</code></em>
  is a clip rectangle.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-render.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -480,7 +480,7 @@ so the <em class="parameter"><code>background_area</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> to draw to</p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a> to draw to</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -519,18 +519,18 @@ padding on the sides)</p></td>
 <a name="gtk-cell-renderer-activate"></a><h3>gtk_cell_renderer_activate ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_cell_renderer_activate (<em class="parameter"><code><a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> *cell</code></em>,
-                            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>,
+                            <em class="parameter"><code><a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>,
                             <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
-                            <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *background_area</code></em>,
-                            <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
+                            <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *background_area</code></em>,
+                            <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
                             <em class="parameter"><code><a class="link" href="GtkCellRenderer.html#GtkCellRendererState" title="enum GtkCellRendererState"><span class="type">GtkCellRendererState</span></a> flags</code></em>);</pre>
 <p>Passes an activate event to the cell renderer for possible processing.  
 Some cell renderers may use events; for example, <a class="link" href="GtkCellRendererToggle.html" title="GtkCellRendererToggle"><span class="type">GtkCellRendererToggle</span></a> 
 toggles when it gets a mouse click.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -544,7 +544,7 @@ toggles when it gets a mouse click.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>event</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -577,9 +577,8 @@ e.g. for <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.4.6"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-activate.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event was consumed/handled</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -587,16 +586,16 @@ e.g. for <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class
 <a name="gtk-cell-renderer-start-editing"></a><h3>gtk_cell_renderer_start_editing ()</h3>
 <pre class="programlisting"><a class="link" href="GtkCellEditable.html" title="GtkCellEditable"><span class="returnvalue">GtkCellEditable</span></a> *
 gtk_cell_renderer_start_editing (<em class="parameter"><code><a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> *cell</code></em>,
-                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>,
+                                 <em class="parameter"><code><a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>,
                                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
-                                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *background_area</code></em>,
-                                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
+                                 <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *background_area</code></em>,
+                                 <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
                                  <em class="parameter"><code><a class="link" href="GtkCellRenderer.html#GtkCellRendererState" title="enum GtkCellRendererState"><span class="type">GtkCellRendererState</span></a> flags</code></em>);</pre>
 <p>Passes an activate event to the cell renderer for possible processing.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-start-editing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -610,7 +609,7 @@ gtk_cell_renderer_start_editing (<em class="parameter"><code><a class="link" hre
 </tr>
 <tr>
 <td class="parameter_name"><p>event</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a></p></td>
+<td class="parameter_description"><p>a <a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -643,7 +642,7 @@ e.g. for <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.5.6"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-start-editing.returns"></a><h4>Returns</h4>
 <p> A new <a class="link" href="GtkCellEditable.html" title="GtkCellEditable"><span class="type">GtkCellEditable</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -663,8 +662,8 @@ signal.  </p>
 need to notify the client program that an editing process was canceled 
 and the changes were not committed.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.6.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-editing-canceled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -677,7 +676,7 @@ and the changes were not committed.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -693,8 +692,8 @@ If <em class="parameter"><code>canceled</code></em>
 in response to the <a class="link" href="GtkCellEditable.html#GtkCellEditable-editing-done" title="The “editing-done” signal"><span class="type">“editing-done”</span></a> signal of 
 <a class="link" href="GtkCellEditable.html" title="GtkCellEditable"><span class="type">GtkCellEditable</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-stop-editing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -714,7 +713,7 @@ in response to the <a class="link" href="GtkCellEditable.html#GtkCellEditable-ed
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.6</p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -728,8 +727,8 @@ gtk_cell_renderer_get_fixed_size (<em class="parameter"><code><a class="link" hr
  with the appropriate size of <em class="parameter"><code>cell</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-get-fixed-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -764,8 +763,8 @@ gtk_cell_renderer_set_fixed_size (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
 <p>Sets the renderer size to be explicit, independent of the properties set.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-set-fixed-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -798,8 +797,8 @@ gtk_cell_renderer_set_fixed_size (<em class="parameter"><code><a class="link" hr
 gtk_cell_renderer_get_visible (<em class="parameter"><code><a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> *cell</code></em>);</pre>
 <p>Returns the cell renderer's visibility.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-get-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -813,11 +812,10 @@ gtk_cell_renderer_get_visible (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.10.6"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-get-visible.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cell renderer is visible</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -827,8 +825,8 @@ gtk_cell_renderer_set_visible (<em class="parameter"><code><a class="link" href=
                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> visible</code></em>);</pre>
 <p>Sets the cell renderer's visibility.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-set-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -848,7 +846,7 @@ gtk_cell_renderer_set_visible (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -857,8 +855,8 @@ gtk_cell_renderer_set_visible (<em class="parameter"><code><a class="link" href=
 gtk_cell_renderer_get_sensitive (<em class="parameter"><code><a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a> *cell</code></em>);</pre>
 <p>Returns the cell renderer's sensitivity.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-get-sensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -872,11 +870,10 @@ gtk_cell_renderer_get_sensitive (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.12.6"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-get-sensitive.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cell renderer is sensitive</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -886,8 +883,8 @@ gtk_cell_renderer_set_sensitive (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sensitive</code></em>);</pre>
 <p>Sets the cell renderer's sensitivity.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-set-sensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -907,7 +904,7 @@ gtk_cell_renderer_set_sensitive (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -921,8 +918,8 @@ gtk_cell_renderer_get_alignment (<em class="parameter"><code><a class="link" hre
  with the appropriate values of <em class="parameter"><code>cell</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-get-alignment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -947,7 +944,7 @@ gtk_cell_renderer_get_alignment (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -958,8 +955,8 @@ gtk_cell_renderer_set_alignment (<em class="parameter"><code><a class="link" hre
                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> yalign</code></em>);</pre>
 <p>Sets the renderer's alignment within its available space.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-set-alignment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -984,7 +981,7 @@ gtk_cell_renderer_set_alignment (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -998,8 +995,8 @@ gtk_cell_renderer_get_padding (<em class="parameter"><code><a class="link" href=
  with the appropriate values of <em class="parameter"><code>cell</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-get-padding.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1024,7 +1021,7 @@ gtk_cell_renderer_get_padding (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1035,8 +1032,8 @@ gtk_cell_renderer_set_padding (<em class="parameter"><code><a class="link" href=
                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ypad</code></em>);</pre>
 <p>Sets the renderer's padding.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.10.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-set-padding.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1061,7 +1058,7 @@ gtk_cell_renderer_set_padding (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1072,8 +1069,8 @@ gtk_cell_renderer_set_padding (<em class="parameter"><code><a class="link" href=
 Tells how a cell is to be rendererd.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.14.11.2.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellRendererState.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1127,8 +1124,8 @@ probably has a selection colored background to render to.</p>
 Identifies how the user can interact with a particular cell.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.14.11.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellRendererMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1233,7 +1230,7 @@ it cannot be individually modified.</p>
 <hr>
 <div class="refsect2">
 <a name="GtkCellRenderer--cell-background-gdk"></a><h3>The <code class="literal">“cell-background-gdk”</code> property</h3>
-<pre class="programlisting">  “cell-background-gdk”      <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</pre>
+<pre class="programlisting">  “cell-background-gdk”      <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *</pre>
 <p>Cell background color as a GdkColor.</p>
 <p>Flags: Read / Write</p>
 </div>
@@ -1358,8 +1355,8 @@ cell.  For example, an editable cell renderer could be written to cancel
 editing when the user presses Escape. </p>
 <p>See also: <a class="link" href="GtkCellRenderer.html#gtk-cell-renderer-stop-editing" title="gtk_cell_renderer_stop_editing ()"><code class="function">gtk_cell_renderer_stop_editing()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.14.13.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellRenderer-editing-canceled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1379,8 +1376,8 @@ editing when the user presses Escape. </p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.4</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1443,8 +1440,8 @@ before doing any specific setup, as in the following example:</p>
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.4.9.14.13.3.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellRenderer-editing-started.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1474,8 +1471,8 @@ before doing any specific setup, as in the following example:</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
-<p class="since">Since 2.6</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1486,7 +1483,6 @@ before doing any specific setup, as in the following example:</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

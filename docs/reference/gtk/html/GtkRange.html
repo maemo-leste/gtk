@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkRange</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkRange: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="AbstractObjects.html" title="Abstract Base Classes">
 <link rel="prev" href="GtkPaned.html" title="GtkPaned">
 <link rel="next" href="GtkScale.html" title="GtkScale">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkRange.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -289,7 +289,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRange.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -347,7 +347,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRange.style-properties"></a><h2>Style Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="style_properties_type">
 <col width="300px" class="style_properties_name">
@@ -414,7 +414,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRange.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -424,29 +424,29 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkRange.html#GtkRange-adjust-bounds" title="The “adjust-bounds” signal">adjust-bounds</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
 <td class="signal_name"><a class="link" href="GtkRange.html#GtkRange-change-value" title="The “change-value” signal">change-value</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkRange.html#GtkRange-move-slider" title="The “move-slider” signal">move-slider</a></td>
-<td class="signal_flags">Action</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkRange.html#GtkRange-value-changed" title="The “value-changed” signal">value-changed</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkRange.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -465,7 +465,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkRange.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -506,8 +506,8 @@ of the "steppers". It also provides properties and methods for setting a
 gtk_range_get_fill_level (<em class="parameter"><code><a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> *range</code></em>);</pre>
 <p>Gets the current position of the fill level indicator.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-fill-level.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -521,11 +521,10 @@ gtk_range_get_fill_level (<em class="parameter"><code><a class="link" href="GtkR
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.2.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-fill-level.returns"></a><h4>Returns</h4>
 <p> The current fill level</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -534,8 +533,8 @@ gtk_range_get_fill_level (<em class="parameter"><code><a class="link" href="GtkR
 gtk_range_get_restrict_to_fill_level (<em class="parameter"><code><a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> *range</code></em>);</pre>
 <p>Gets whether the range is restricted to the fill level.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-restrict-to-fill-level.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -549,12 +548,11 @@ gtk_range_get_restrict_to_fill_level (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.3.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-restrict-to-fill-level.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>range</code></em>
 is restricted to the fill level.</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -563,8 +561,8 @@ is restricted to the fill level.</p>
 gtk_range_get_show_fill_level (<em class="parameter"><code><a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> *range</code></em>);</pre>
 <p>Gets whether the range displays the fill level graphically.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-show-fill-level.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -578,12 +576,11 @@ gtk_range_get_show_fill_level (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.4.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-show-fill-level.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>range</code></em>
 shows the fill level.</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -606,8 +603,8 @@ to values which are smaller than the fill level. This is controller
 by <a class="link" href="GtkRange.html#gtk-range-set-restrict-to-fill-level" title="gtk_range_set_restrict_to_fill_level ()"><code class="function">gtk_range_set_restrict_to_fill_level()</code></a> and is by default
 enabled.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.5.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-fill-level.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -627,7 +624,7 @@ enabled.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -639,8 +636,8 @@ gtk_range_set_restrict_to_fill_level (<em class="parameter"><code><a class="link
 <a class="link" href="GtkRange.html#gtk-range-set-fill-level" title="gtk_range_set_fill_level ()"><code class="function">gtk_range_set_fill_level()</code></a> for a general description of the fill
 level concept.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-restrict-to-fill-level.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -660,7 +657,7 @@ level concept.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -672,8 +669,8 @@ gtk_range_set_show_fill_level (<em class="parameter"><code><a class="link" href=
 <a class="link" href="GtkRange.html#gtk-range-set-fill-level" title="gtk_range_set_fill_level ()"><code class="function">gtk_range_set_fill_level()</code></a> for a general description of the fill
 level concept.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-show-fill-level.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -693,7 +690,7 @@ level concept.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -705,8 +702,8 @@ See <a class="link" href="GtkRange.html#gtk-range-set-adjustment" title="gtk_ran
 The return value does not have a reference added, so should not
 be unreferenced.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-adjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -720,7 +717,7 @@ be unreferenced.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.8.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-adjustment.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -745,8 +742,8 @@ continuous. <a class="link" href="gtk2-Standard-Enumerations.html#GTK-UPDATE-DIS
 be updated when the user releases the button and ends the slider
 drag operation.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-update-policy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -782,8 +779,8 @@ is normally 0 for <a class="link" href="GtkScale.html" title="GtkScale"><span cl
 indicates the size of the visible area of the widget being scrolled.
 The page size affects the size of the scrollbar slider.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-adjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -811,8 +808,8 @@ The page size affects the size of the scrollbar slider.</p>
 gtk_range_get_inverted (<em class="parameter"><code><a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> *range</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="GtkRange.html#gtk-range-set-inverted" title="gtk_range_set_inverted ()"><code class="function">gtk_range_set_inverted()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-inverted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -826,9 +823,8 @@ gtk_range_get_inverted (<em class="parameter"><code><a class="link" href="GtkRan
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.11.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-inverted.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the range is inverted</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -842,8 +838,8 @@ slider moves from top to bottom or left to right. Inverted
 ranges have higher values at the top or on the right rather than
 on the bottom or left.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-inverted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -877,8 +873,8 @@ gtk_range_get_update_policy (<em class="parameter"><code><a class="link" href="G
 <p>Gets the update policy of <em class="parameter"><code>range</code></em>
 . See <a class="link" href="GtkRange.html#gtk-range-set-update-policy" title="gtk_range_set_update_policy ()"><code class="function">gtk_range_set_update_policy()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-update-policy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -892,9 +888,8 @@ gtk_range_get_update_policy (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.13.7"></a><h4>Returns</h4>
+<a name="gtk-range-get-update-policy.returns"></a><h4>Returns</h4>
 <p> the current update policy</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -909,8 +904,8 @@ The step size is used when the user clicks the <a class="link" href="GtkScrollba
 arrows or moves <a class="link" href="GtkScale.html" title="GtkScale"><span class="type">GtkScale</span></a> via arrow keys. The page size
 is used for example when moving via Page Up or Page Down keys.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-increments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -951,8 +946,8 @@ page size, it is clamped between <em class="parameter"><code>min</code></em>
  and <em class="parameter"><code>max</code></em>
  - page-size.)</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -985,8 +980,8 @@ page size, it is clamped between <em class="parameter"><code>min</code></em>
 gtk_range_get_value (<em class="parameter"><code><a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> *range</code></em>);</pre>
 <p>Gets the current value of the range.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1000,9 +995,8 @@ gtk_range_get_value (<em class="parameter"><code><a class="link" href="GtkRange.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.16.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-value.returns"></a><h4>Returns</h4>
 <p> current value of the range.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1016,8 +1010,8 @@ minimum or maximum range values, it will be clamped to fit inside
 them. The range emits the <a class="link" href="GtkRange.html#GtkRange-value-changed" title="The “value-changed” signal"><span class="type">“value-changed”</span></a> signal if the 
 value changes.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1046,8 +1040,8 @@ gtk_range_get_round_digits (<em class="parameter"><code><a class="link" href="Gt
 <p>Gets the number of digits to round the value to when
 it changes. See <a class="link" href="GtkRange.html#GtkRange-change-value" title="The “change-value” signal"><span class="type">“change-value”</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-round-digits.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1061,11 +1055,10 @@ it changes. See <a class="link" href="GtkRange.html#GtkRange-change-value" title
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.18.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-round-digits.returns"></a><h4>Returns</h4>
 <p> the number of digits to round to</p>
-<p></p>
 </div>
-<p class="since">Since 2.24</p>
+<p class="since">Since: <a class="link" href="api-index-2-24.html#api-index-2.24">2.24</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1076,8 +1069,8 @@ gtk_range_set_round_digits (<em class="parameter"><code><a class="link" href="Gt
 <p>Sets the number of digits to round the value to when
 it changes. See <a class="link" href="GtkRange.html#GtkRange-change-value" title="The “change-value” signal"><span class="type">“change-value”</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-round-digits.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1097,7 +1090,7 @@ it changes. See <a class="link" href="GtkRange.html#GtkRange-change-value" title
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.24</p>
+<p class="since">Since: <a class="link" href="api-index-2-24.html#api-index-2.24">2.24</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1109,8 +1102,8 @@ gtk_range_set_lower_stepper_sensitivity
 <p>Sets the sensitivity policy for the stepper that points to the
 'lower' end of the GtkRange's adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-lower-stepper-sensitivity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1130,7 +1123,7 @@ gtk_range_set_lower_stepper_sensitivity
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1141,8 +1134,8 @@ gtk_range_get_lower_stepper_sensitivity
 <p>Gets the sensitivity policy for the stepper that points to the
 'lower' end of the GtkRange's adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-lower-stepper-sensitivity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1156,11 +1149,10 @@ gtk_range_get_lower_stepper_sensitivity
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.21.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-lower-stepper-sensitivity.returns"></a><h4>Returns</h4>
 <p> The lower stepper's sensitivity policy.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1172,8 +1164,8 @@ gtk_range_set_upper_stepper_sensitivity
 <p>Sets the sensitivity policy for the stepper that points to the
 'upper' end of the GtkRange's adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-upper-stepper-sensitivity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1193,7 +1185,7 @@ gtk_range_set_upper_stepper_sensitivity
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1204,8 +1196,8 @@ gtk_range_get_upper_stepper_sensitivity
 <p>Gets the sensitivity policy for the stepper that points to the
 'upper' end of the GtkRange's adjustment.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-upper-stepper-sensitivity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1219,11 +1211,10 @@ gtk_range_get_upper_stepper_sensitivity
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.23.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-upper-stepper-sensitivity.returns"></a><h4>Returns</h4>
 <p> The upper stepper's sensitivity policy.</p>
-<p></p>
 </div>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1232,8 +1223,8 @@ gtk_range_get_upper_stepper_sensitivity
 gtk_range_get_flippable (<em class="parameter"><code><a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> *range</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="GtkRange.html#gtk-range-set-flippable" title="gtk_range_set_flippable ()"><code class="function">gtk_range_set_flippable()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-flippable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1247,11 +1238,10 @@ gtk_range_get_flippable (<em class="parameter"><code><a class="link" href="GtkRa
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.24.6"></a><h4>Returns</h4>
+<a name="gtk-range-get-flippable.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the range is flippable</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1263,8 +1253,8 @@ gtk_range_set_flippable (<em class="parameter"><code><a class="link" href="GtkRa
 horizontal and its direction is <a class="link" href="GtkWidget.html#GTK-TEXT-DIR-RTL:CAPS"><code class="literal">GTK_TEXT_DIR_RTL</code></a>.</p>
 <p>See <a class="link" href="GtkWidget.html#gtk-widget-get-direction" title="gtk_widget_get_direction ()"><code class="function">gtk_widget_get_direction()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-flippable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1284,7 +1274,7 @@ horizontal and its direction is <a class="link" href="GtkWidget.html#GTK-TEXT-DI
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1294,8 +1284,8 @@ gtk_range_get_min_slider_size (<em class="parameter"><code><a class="link" href=
 <p>This function is useful mainly for <a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> subclasses.</p>
 <p>See <a class="link" href="GtkRange.html#gtk-range-set-min-slider-size" title="gtk_range_set_min_slider_size ()"><code class="function">gtk_range_set_min_slider_size()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-min-slider-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1309,24 +1299,23 @@ gtk_range_get_min_slider_size (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.26.7"></a><h4>Returns</h4>
+<a name="gtk-range-get-min-slider-size.returns"></a><h4>Returns</h4>
 <p> The minimum size of the range's slider.</p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-range-get-range-rect"></a><h3>gtk_range_get_range_rect ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_range_get_range_rect (<em class="parameter"><code><a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> *range</code></em>,
-                          <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *range_rect</code></em>);</pre>
+                          <em class="parameter"><code><a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *range_rect</code></em>);</pre>
 <p>This function returns the area that contains the range's trough
 and its steppers, in widget-&gt;window coordinates.</p>
 <p>This function is useful mainly for <a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> subclasses.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.27.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-range-rect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1346,7 +1335,7 @@ and its steppers, in widget-&gt;window coordinates.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1359,8 +1348,8 @@ gtk_range_get_slider_range (<em class="parameter"><code><a class="link" href="Gt
 in widget-&gt;window coordinates.</p>
 <p>This function is useful mainly for <a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> subclasses.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.28.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-slider-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1387,7 +1376,7 @@ end, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1397,8 +1386,8 @@ gtk_range_get_slider_size_fixed (<em class="parameter"><code><a class="link" hre
 <p>This function is useful mainly for <a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> subclasses.</p>
 <p>See <a class="link" href="GtkRange.html#gtk-range-set-slider-size-fixed" title="gtk_range_set_slider_size_fixed ()"><code class="function">gtk_range_set_slider_size_fixed()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.29.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-get-slider-size-fixed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1412,11 +1401,10 @@ gtk_range_get_slider_size_fixed (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.29.7"></a><h4>Returns</h4>
+<a name="gtk-range-get-slider-size-fixed.returns"></a><h4>Returns</h4>
 <p> whether the range's slider has a fixed size.</p>
-<p></p>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1427,8 +1415,8 @@ gtk_range_set_min_slider_size (<em class="parameter"><code><a class="link" href=
 <p>Sets the minimum size of the range's slider.</p>
 <p>This function is useful mainly for <a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> subclasses.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.30.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-min-slider-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1448,7 +1436,7 @@ gtk_range_set_min_slider_size (<em class="parameter"><code><a class="link" href=
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1460,8 +1448,8 @@ gtk_range_set_slider_size_fixed (<em class="parameter"><code><a class="link" hre
 depends on it's adjustment's page size.</p>
 <p>This function is useful mainly for <a class="link" href="GtkRange.html" title="GtkRange"><span class="type">GtkRange</span></a> subclasses.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.12.31.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-range-set-slider-size-fixed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1481,7 +1469,7 @@ depends on it's adjustment's page size.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1500,8 +1488,8 @@ Determines how GTK+ handles the sensitivity of stepper arrows
 at the end of range widgets.
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.11.13.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkSensitivityType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1551,7 +1539,7 @@ at the end of range widgets.
 See <a class="link" href="GtkRange.html#gtk-range-set-fill-level" title="gtk_range_set_fill_level ()"><code class="function">gtk_range_set_fill_level()</code></a>.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 1.79769e+308</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1578,7 +1566,7 @@ movement is restricted to an upper boundary set by the
 fill level. See <a class="link" href="GtkRange.html#gtk-range-set-restrict-to-fill-level" title="gtk_range_set_restrict_to_fill_level ()"><code class="function">gtk_range_set_restrict_to_fill_level()</code></a>.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1589,7 +1577,7 @@ it changes, or -1. See <a class="link" href="GtkRange.html#GtkRange-change-value
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.24</p>
+<p class="since">Since: <a class="link" href="api-index-2-24.html#api-index-2.24">2.24</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1600,7 +1588,7 @@ graphics are displayed on the trough. See
 <a class="link" href="GtkRange.html#gtk-range-set-show-fill-level" title="gtk_range_set_show_fill_level ()"><code class="function">gtk_range_set_show_fill_level()</code></a>.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1657,7 +1645,7 @@ while they are dragged.</p>
 <p>Flags: Read</p>
 <p>Allowed values: [0,1]</p>
 <p>Default value: 0.5</p>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1680,7 +1668,7 @@ suffixed with information about the stepper position.</p>
 </div>
 <p>Flags: Read</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1725,7 +1713,7 @@ slider are drawn with different details.</p>
 </div>
 <p>Flags: Read</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1737,7 +1725,7 @@ to exclude the steppers and their spacing. Note that setting the
 automatically enable trough-under-steppers too.</p>
 <p>Flags: Read</p>
 <p>Default value: TRUE</p>
-<p class="since">Since 2.10</p>
+<p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1751,8 +1739,8 @@ user_function (<a class="link" href="GtkRange.html" title="GtkRange"><span class
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.18.11.16.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRange-adjust-bounds.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1772,7 +1760,7 @@ user_function (<a class="link" href="GtkRange.html" title="GtkRange"><span class
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1796,8 +1784,8 @@ clamps the value based on <a class="link" href="GtkRange.html#GtkRange--round-di
 <p>It is not possible to use delayed update policies in an overridden
 ::change-value handler.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.16.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRange-change-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1833,8 +1821,8 @@ signal, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
-<p class="since">Since 2.6</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1845,8 +1833,8 @@ user_function (<a class="link" href="GtkRange.html" title="GtkRange"><span class
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
 <p>Virtual function that moves the slider. Used for keybindings.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.16.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRange-move-slider.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1871,7 +1859,7 @@ user_function (<a class="link" href="GtkRange.html" title="GtkRange"><span class
 </tbody>
 </table></div>
 </div>
-<p>Flags: Action</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1881,8 +1869,8 @@ user_function (<a class="link" href="GtkRange.html" title="GtkRange"><span class
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
 <p>Emitted when the range value changes.</p>
 <div class="refsect3">
-<a name="id-1.4.18.11.16.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRange-value-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1902,12 +1890,11 @@ user_function (<a class="link" href="GtkRange.html" title="GtkRange"><span class
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

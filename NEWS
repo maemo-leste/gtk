@@ -1,3 +1,109 @@
+Overview of Changes from GTK+ 2.24.30 to 2.24.31
+================================================
+
+* File chooser:
+ - backport many file chooser entry fixes and cleanups
+ - don't crash if invisible files are deleted
+
+* Bug fixes:
+ 555087 Shouldn't the return type of gtk_entry_completion_get_model be Gtk...
+ 586367 In local_only mode, file chooser should return native paths for fi...
+ 635287 Specify packages when generating GIR
+ 640698 Incompatibility in 'matched-selected' signal invocation
+ 648419 crash in remove_capslock_feedback at gtkentry.c line 10127
+ 672271 File chooser seems over-enthusiastic about using subdirectories
+ 679333 unable to filter folders in folder select mode
+ 687196 filesystemmodel: invalidate nodes on file remove
+ 703220 (CVE-2013-7447) Memory allocation integer overflow in gdk_cairo_se...
+ 720330 Gtk-CRITICAL **: gtk_entry_completion_set_model: assertion 'GTK_IS...
+ 729927 impossible to create a directory if the contents of the current on...
+ 737777 Applications crash randomly while printing with a password-secured...
+ 752707 Location bar navigation to parent directories
+ 756450 GTK file chooser completion dropdown sets cursor in wrong position
+ 765120 Configure notify does not always reflect window size enforced by (...
+ 765193 Add introspection support for Visual Studio builds
+ 768163 improved fullscreen behaviour
+ 764996 GDK: Incorrect window size when creating window with position spec...
+ 769126 Can't type astral plane characters into a GtkEntry using the Windo...
+
+
+Overview of Changes from GTK+ 2.24.29 to 2.24.30
+================================================
+
+* Win32:
+ - Build fixes
+
+* X11:
+ - Support Randr 1.5 monitor information
+
+* Bug fixes:
+ 722815 OS X: Deliver GdkModifierType during 'drag-motion'
+ 612611 Fix interaction between scrolling menus and automatic mnemonics
+ 699652 win32: On focus restore the window if iconified
+ 698652 win32: Properly handle show and focus
+        OS X: Fix clipboard image retrieval
+        OS X: Fix a crash when fullscreening
+ 758893 Prevent status icon size dithering
+
+* Translation updates:
+ Japanese
+ Thai
+
+
+Overview of Changes from GTK+ 2.24.28 to 2.24.29
+================================================
+
+* OS X:
+ - Partial aspect ratio support
+
+* Bug fixes:
+ 345345 PrintOperation::paginate is not emitted for class handler
+ 745127 Changing order of file in "Places" crashes the application
+ 749507 gtk-2.0.m4 fails to detect a prefixed pkg-config
+ 752638 notebook tab dragging doesn't work on Quartz (patches...
+ 753644 Switching from Multipress input method to None immedi...
+ 753691 make install -j2 fails when building for MinGW
+ 753992 im-quartz discard_preedit segmentation fault
+ 754046 annotate gtk_color_button_get_color
+
+* Translation updates:
+ Occitan
+
+
+Overview of Changes from GTK+ 2.24.27 to 2.24.28
+================================================
+
+* Bug fixes:
+ 693738 gtk print dialog shows "Getting printer information failed"...
+ 746064 "sticky" window state reported wrongly on X11
+ 746269 Segfault in gtk_tree_view_move_cursor_page_up_down
+ 748014 W32: Tilting mousewheel left/right does not scroll horizontally
+
+
+Overview of Changes from GTK+ 2.24.26 to 2.24.27
+================================================
+
+* Bug fixes:
+ 696505 Segfault on Windows x64: gtkstatusicon.c tries to put 64-bit...
+ 745052 Icon theme code assumes directories with mtime 0 don't exist
+        Don't leak pixel data in some error paths
+ 745536 gdk: Fix GdkWindowFilter internal refcounting
+
+
+Overview of Changes from GTK+ 2.24.25 to 2.24.26
+================================================
+
+* Bug fixes:
+ 635380 gdk_event_apply_filters is unsafe against changes ...
+ 738837 region leak
+ 741060 Graphical artifacts drawn on Win32 since 4ecbef0791d4
+ 741959 text input broken on OS X 10.5 from 2.24.19 onwards
+ 743544 gtk2 autogen.sh fails with automake 1.15
+ 743917 Gtk modules must be compatible with both gtk 2 and 3
+        gailbutton: Avoid a possible NULL dereference
+        label: Avoid a possible NULL dereference
+
+
 Overview of Changes from GTK+ 2.24.24 to 2.24.25
 ================================================
 

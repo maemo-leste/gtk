@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTreeViewColumn</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTreeViewColumn: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkTreeSelection.html" title="GtkTreeSelection">
 <link rel="next" href="GtkTreeView.html" title="GtkTreeView">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTreeViewColumn.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -463,7 +463,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeViewColumn.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -562,7 +562,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeViewColumn.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -571,13 +571,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeViewColumn.html#GtkTreeViewColumn-clicked" title="The “clicked” signal">clicked</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkTreeViewColumn.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -596,7 +596,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeViewColumn.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> GtkTreeViewColumn
@@ -645,8 +645,8 @@ integer from the <em class="parameter"><code>tree_model</code></em>, and render 
 calling <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-cell-data-func" title="gtk_tree_view_column_set_cell_data_func ()"><code class="function">gtk_tree_view_column_set_cell_data_func()</code></a>
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeCellDataFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -690,9 +690,8 @@ calling <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-ce
 gtk_tree_view_column_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.3.5"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-new.returns"></a><h4>Returns</h4>
 <p> A newly created <a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -743,8 +742,8 @@ equivalent to calling <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.4.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-new-with-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -765,9 +764,8 @@ equivalent to calling <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.4.9"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-new-with-attributes.returns"></a><h4>Returns</h4>
 <p> A newly created <a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -785,8 +783,8 @@ the <em class="parameter"><code>cell</code></em>
 evenly between cells for which <em class="parameter"><code>expand</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-pack-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -829,8 +827,8 @@ is allocated no more space than it needs. Any unused space is divided
 evenly between cells for which <em class="parameter"><code>expand</code></em>
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-pack-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -866,8 +864,8 @@ gtk_tree_view_column_clear (<em class="parameter"><code><a class="link" href="Gt
 <p>Unsets all the mappings on all renderers on the <em class="parameter"><code>tree_column</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -894,8 +892,8 @@ gtk_tree_view_column_get_cell_renderers
 <p>Returns a newly-allocated <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of all the cell renderers in the column,
 in no particular order.  The list must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-cell-renderers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -909,9 +907,8 @@ in no particular order.  The list must be freed with <a href="https://developer.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.8.7"></a><h4>Returns</h4>
-<p> A list of <a href="GtkCellRenderer.html"><span class="type">GtkCellRenderers</span></a></p>
-<p></p>
+<a name="gtk-tree-view-column-get-cell-renderers.returns"></a><h4>Returns</h4>
+<p> A list of <a href="GtkCellRenderer.html#GtkCellRenderer-struct"><span class="type">GtkCellRenderers</span></a></p>
 </div>
 </div>
 <hr>
@@ -933,8 +930,8 @@ if column 2 of the model contains strings, you could have the
 "text" attribute of a <a class="link" href="GtkCellRendererText.html" title="GtkCellRendererText"><span class="type">GtkCellRendererText</span></a> get its values from
 column 2.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-add-attribute.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -978,8 +975,8 @@ The attributes should be in attribute/column order, as in
 <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-add-attribute" title="gtk_tree_view_column_add_attribute ()"><code class="function">gtk_tree_view_column_add_attribute()</code></a>. All existing attributes
 are removed, and replaced with the new attributes.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1018,8 +1015,8 @@ cell renderer as appropriate.  <em class="parameter"><code>func</code></em>
  may be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to remove an
 older one.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-cell-data-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1066,8 +1063,8 @@ gtk_tree_view_column_clear_attributes (<em class="parameter"><code><a class="lin
 <p>Clears all existing attributes previously set with
 <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-attributes" title="gtk_tree_view_column_set_attributes ()"><code class="function">gtk_tree_view_column_set_attributes()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-clear-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1098,8 +1095,8 @@ gtk_tree_view_column_set_spacing (<em class="parameter"><code><a class="link" hr
 , which is the number of pixels to
 place between cell renderers packed into it.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1128,8 +1125,8 @@ gtk_tree_view_column_get_spacing (<em class="parameter"><code><a class="link" hr
 <p>Returns the spacing of <em class="parameter"><code>tree_column</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1143,10 +1140,9 @@ gtk_tree_view_column_get_spacing (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.14.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-spacing.returns"></a><h4>Returns</h4>
 <p> the spacing of <em class="parameter"><code>tree_column</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1158,8 +1154,8 @@ gtk_tree_view_column_set_visible (<em class="parameter"><code><a class="link" hr
 <p>Sets the visibility of <em class="parameter"><code>tree_column</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1189,8 +1185,8 @@ gtk_tree_view_column_get_visible (<em class="parameter"><code><a class="link" hr
 <p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>tree_column</code></em>
  is visible.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1204,10 +1200,9 @@ gtk_tree_view_column_get_visible (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.16.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-visible.returns"></a><h4>Returns</h4>
 <p> whether the column is visible or not.  If it is visible, then
 the tree will show the column.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1222,8 +1217,8 @@ grabbing the outer edge of the column button.  If resizable is <a href="https://
 sizing mode of the column is <a class="link" href="GtkTreeViewColumn.html#GTK-TREE-VIEW-COLUMN-AUTOSIZE:CAPS"><span class="type">GTK_TREE_VIEW_COLUMN_AUTOSIZE</span></a>, then the sizing
 mode is changed to <a class="link" href="GtkTreeViewColumn.html#GTK-TREE-VIEW-COLUMN-GROW-ONLY:CAPS"><span class="type">GTK_TREE_VIEW_COLUMN_GROW_ONLY</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-resizable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1252,8 +1247,8 @@ gtk_tree_view_column_get_resizable (<em class="parameter"><code><a class="link" 
 <p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <em class="parameter"><code>tree_column</code></em>
  can be resized by the end user.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-resizable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1267,10 +1262,9 @@ gtk_tree_view_column_get_resizable (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.18.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-resizable.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if the <em class="parameter"><code>tree_column</code></em>
 can be resized.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1283,8 +1277,8 @@ gtk_tree_view_column_set_sizing (<em class="parameter"><code><a class="link" hre
  to <em class="parameter"><code>type</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-sizing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1313,8 +1307,8 @@ gtk_tree_view_column_get_sizing (<em class="parameter"><code><a class="link" hre
 <p>Returns the current type of <em class="parameter"><code>tree_column</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-sizing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1328,10 +1322,9 @@ gtk_tree_view_column_get_sizing (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.20.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-sizing.returns"></a><h4>Returns</h4>
 <p> The type of <em class="parameter"><code>tree_column</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1342,8 +1335,8 @@ gtk_tree_view_column_get_width (<em class="parameter"><code><a class="link" href
 <p>Returns the current size of <em class="parameter"><code>tree_column</code></em>
  in pixels.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1357,10 +1350,9 @@ gtk_tree_view_column_get_width (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.21.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-width.returns"></a><h4>Returns</h4>
 <p> The current width of <em class="parameter"><code>tree_column</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1371,8 +1363,8 @@ gtk_tree_view_column_get_fixed_width (<em class="parameter"><code><a class="link
 <p>Gets the fixed width of the column.  This value is only meaning may not be
 the actual width of the column on the screen, just what is requested.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-fixed-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1386,9 +1378,8 @@ the actual width of the column on the screen, just what is requested.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.22.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-fixed-width.returns"></a><h4>Returns</h4>
 <p> the fixed width of the column</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1403,8 +1394,8 @@ the min/max width for the column.  Please note that the min/max width of the
 column doesn't actually affect the "fixed_width" property of the widget, just
 the actual size when displayed.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-fixed-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1437,8 +1428,8 @@ gtk_tree_view_column_set_min_width (<em class="parameter"><code><a class="link" 
  is -1, then the
 minimum width is unset.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-min-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1468,8 +1459,8 @@ gtk_tree_view_column_get_min_width (<em class="parameter"><code><a class="link" 
 , or -1 if no minimum
 width is set.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-min-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1483,10 +1474,9 @@ width is set.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.25.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-min-width.returns"></a><h4>Returns</h4>
 <p> The minimum width of the <em class="parameter"><code>tree_column</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1502,8 +1492,8 @@ maximum width is unset.  Note, the column can actually be wider than max
 width if it's the last column in a view.  In this case, the column expands to
 fill any extra space.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-max-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1533,8 +1523,8 @@ gtk_tree_view_column_get_max_width (<em class="parameter"><code><a class="link" 
 , or -1 if no maximum
 width is set.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-max-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1548,10 +1538,9 @@ width is set.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.27.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-max-width.returns"></a><h4>Returns</h4>
 <p> The maximum width of the <em class="parameter"><code>tree_column</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1563,8 +1552,8 @@ gtk_tree_view_column_clicked (<em class="parameter"><code><a class="link" href="
 <em class="parameter"><code>tree_column</code></em>
  is clickable.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-clicked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1588,8 +1577,8 @@ gtk_tree_view_column_set_title (<em class="parameter"><code><a class="link" href
 .  If a custom widget has been set, then
 this value is ignored.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1618,8 +1607,8 @@ this value is ignored.</p>
 gtk_tree_view_column_get_title (<em class="parameter"><code><a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a> *tree_column</code></em>);</pre>
 <p>Returns the title of the widget.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1633,10 +1622,9 @@ gtk_tree_view_column_get_title (<em class="parameter"><code><a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.30.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-title.returns"></a><h4>Returns</h4>
 <p> the title of the column. This string should not be
 modified or freed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1650,8 +1638,8 @@ amongst all columns that have the expand set to <a href="https://developer.gnome
 option set, then the last column gets all extra space.  By default, every
 column is created with this <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-expand.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1671,7 +1659,7 @@ column is created with this <a href="https://developer.gnome.org/glib/unstable/g
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1680,8 +1668,8 @@ column is created with this <a href="https://developer.gnome.org/glib/unstable/g
 gtk_tree_view_column_get_expand (<em class="parameter"><code><a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a> *tree_column</code></em>);</pre>
 <p>Return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the column expands to take any available space.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-expand.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1695,11 +1683,10 @@ gtk_tree_view_column_get_expand (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.32.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-expand.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if the column expands</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1711,8 +1698,8 @@ gtk_tree_view_column_set_clickable (<em class="parameter"><code><a class="link" 
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  When the header is active,
 then it can take keyboard focus, and can be clicked.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-clickable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1740,8 +1727,8 @@ then it can take keyboard focus, and can be clicked.</p>
 gtk_tree_view_column_get_clickable (<em class="parameter"><code><a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a> *tree_column</code></em>);</pre>
 <p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the user can click on the header for the column.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-clickable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1755,9 +1742,8 @@ gtk_tree_view_column_get_clickable (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.34.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-clickable.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if user can click the column header.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1771,8 +1757,8 @@ gtk_tree_view_column_set_widget (<em class="parameter"><code><a class="link" hre
 header button is set with a <a class="link" href="GtkLabel.html" title="GtkLabel"><span class="type">GtkLabel</span></a> set to the title of <em class="parameter"><code>tree_column</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1801,8 +1787,8 @@ gtk_tree_view_column_get_widget (<em class="parameter"><code><a class="link" hre
 <p>Returns the <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> in the button on the column header.
 If a custom widget has not been set then <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1816,7 +1802,7 @@ If a custom widget has not been set then <a href="https://developer.gnome.org/gl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.36.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-widget.returns"></a><h4>Returns</h4>
 <p> The <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> in the column
 header, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -1832,8 +1818,8 @@ gtk_tree_view_column_set_alignment (<em class="parameter"><code><a class="link" 
 The alignment determines its location inside the button -- 0.0 for left, 0.5
 for center, 1.0 for right.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-alignment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1863,8 +1849,8 @@ gtk_tree_view_column_get_alignment (<em class="parameter"><code><a class="link" 
 .  This value can range
 between 0.0 and 1.0.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.38.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-alignment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1878,10 +1864,9 @@ between 0.0 and 1.0.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.38.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-alignment.returns"></a><h4>Returns</h4>
 <p> The current alignent of <em class="parameter"><code>tree_column</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1894,8 +1879,8 @@ gtk_tree_view_column_set_reorderable (<em class="parameter"><code><a class="link
  is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, then the column can be reordered by the end user
 dragging the header.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.39.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-reorderable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1924,8 +1909,8 @@ gtk_tree_view_column_get_reorderable (<em class="parameter"><code><a class="link
 <p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <em class="parameter"><code>tree_column</code></em>
  can be reordered by the user.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.40.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-reorderable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1939,10 +1924,9 @@ gtk_tree_view_column_get_reorderable (<em class="parameter"><code><a class="link
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.40.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-reorderable.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <em class="parameter"><code>tree_column</code></em>
 can be reordered by the user.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1956,8 +1940,8 @@ gtk_tree_view_column_set_sort_column_id
  that this column sorts on when this column 
 is selected for sorting.  Doing so makes the column header clickable.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.41.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-sort-column-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1990,8 +1974,8 @@ gtk_tree_view_column_get_sort_column_id
 column is selected for sorting.
 See <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-sort-column-id" title="gtk_tree_view_column_set_sort_column_id ()"><code class="function">gtk_tree_view_column_set_sort_column_id()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.42.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-sort-column-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2005,11 +1989,10 @@ See <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-sort-c
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.42.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-sort-column-id.returns"></a><h4>Returns</h4>
 <p> the current <em class="parameter"><code>sort_column_id</code></em>
 for this column, or -1 if
 this column can't be used for sorting.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2025,8 +2008,8 @@ the header button indicating the column is sorted. Call
 <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-sort-order" title="gtk_tree_view_column_set_sort_order ()"><code class="function">gtk_tree_view_column_set_sort_order()</code></a> to change the direction of
 the arrow.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.43.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-sort-indicator.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2055,8 +2038,8 @@ gtk_tree_view_column_get_sort_indicator
                                (<em class="parameter"><code><a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a> *tree_column</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-sort-indicator" title="gtk_tree_view_column_set_sort_indicator ()"><code class="function">gtk_tree_view_column_set_sort_indicator()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.44.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-sort-indicator.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2070,9 +2053,8 @@ gtk_tree_view_column_get_sort_indicator
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.44.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-sort-indicator.returns"></a><h4>Returns</h4>
 <p> whether the sort indicator arrow is displayed</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2091,8 +2073,8 @@ that. For custom models, the mechanism will vary. </p>
 Note that you must have the sort indicator enabled to see anything when 
 calling this function; see <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-sort-indicator" title="gtk_tree_view_column_set_sort_indicator ()"><code class="function">gtk_tree_view_column_set_sort_indicator()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.45.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-set-sort-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2120,8 +2102,8 @@ calling this function; see <a class="link" href="GtkTreeViewColumn.html#gtk-tree
 gtk_tree_view_column_get_sort_order (<em class="parameter"><code><a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a> *tree_column</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-set-sort-order" title="gtk_tree_view_column_set_sort_order ()"><code class="function">gtk_tree_view_column_set_sort_order()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.46.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-sort-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2135,9 +2117,8 @@ gtk_tree_view_column_get_sort_order (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.46.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-sort-order.returns"></a><h4>Returns</h4>
 <p> the sort order the sort indicator is indicating</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2159,8 +2140,8 @@ column on the <em class="parameter"><code>iter</code></em>
 , and use that value to set the attribute on the cell
 renderer.  This is used primarily by the <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.47.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-cell-set-cell-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2201,7 +2182,7 @@ renderer.  This is used primarily by the <a class="link" href="GtkTreeView.html"
 <a name="gtk-tree-view-column-cell-get-size"></a><h3>gtk_tree_view_column_cell_get_size ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tree_view_column_cell_get_size (<em class="parameter"><code><a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a> *tree_column</code></em>,
-                                    <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gdk3/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
+                                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *cell_area</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x_offset</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y_offset</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
@@ -2209,8 +2190,8 @@ gtk_tree_view_column_cell_get_size (<em class="parameter"><code><a class="link" 
 <p>Obtains the width and height needed to render the column.  This is used
 primarily by the <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.48.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-cell-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2268,8 +2249,8 @@ cell is not found in the column, <em class="parameter"><code>start_pos</code></e
  are not changed and
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.49.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-cell-get-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2304,11 +2285,10 @@ within
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.49.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-cell-get-position.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>cell</code></em>
 belongs to <em class="parameter"><code>tree_column</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2321,8 +2301,8 @@ gtk_tree_view_column_cell_is_visible (<em class="parameter"><code><a class="link
 For this to be meaningful, you must first initialize the cells with
 <a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-cell-set-cell-data" title="gtk_tree_view_column_cell_set_cell_data ()"><code class="function">gtk_tree_view_column_cell_set_cell_data()</code></a></p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.50.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-cell-is-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2336,10 +2316,9 @@ For this to be meaningful, you must first initialize the cells with
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.50.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-cell-is-visible.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if any of the cells packed into the <em class="parameter"><code>tree_column</code></em>
 are currently visible</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2352,8 +2331,8 @@ gtk_tree_view_column_focus_cell (<em class="parameter"><code><a class="link" hre
 , if the column contains
 2 or more editable and activatable cells.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.51.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-focus-cell.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2373,7 +2352,7 @@ gtk_tree_view_column_focus_cell (<em class="parameter"><code><a class="link" hre
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2383,8 +2362,8 @@ gtk_tree_view_column_queue_resize (<em class="parameter"><code><a class="link" h
 <p>Flags the column, and the cell renderers added to this column, to have
 their sizes renegotiated.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.52.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-queue-resize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2397,7 +2376,7 @@ their sizes renegotiated.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2410,8 +2389,8 @@ If <em class="parameter"><code>column</code></em>
  is currently not inserted in any tree view, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is
 returned.</p>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.53.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-view-column-get-tree-view.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2425,13 +2404,13 @@ returned.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.5.11.53.6"></a><h4>Returns</h4>
+<a name="gtk-tree-view-column-get-tree-view.returns"></a><h4>Returns</h4>
 <p> The tree view wherein <em class="parameter"><code>column</code></em>
 has
 been inserted if any, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> otherwise. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -2444,8 +2423,8 @@ that <em class="parameter"><code>GTK_TREE_VIEW_COLUMN_AUTOSIZE</code></em> are i
 can make columns appear choppy.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.5.12.2.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeViewColumnSizing.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2571,7 +2550,7 @@ clickable. Set to <code class="literal">-1</code> to make the column unsortable.
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2641,8 +2620,8 @@ user_function (<a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewC
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.5.14.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeViewColumn-clicked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2662,7 +2641,7 @@ user_function (<a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewC
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -2673,7 +2652,6 @@ user_function (<a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewC
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

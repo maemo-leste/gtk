@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCellRendererToggle</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCellRendererToggle: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkCellRendererText.html" title="GtkCellRendererText">
 <link rel="next" href="GtkCellRendererSpinner.html" title="GtkCellRendererSpinner">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,7 +36,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCellRendererToggle.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -103,7 +103,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererToggle.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -140,7 +140,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererToggle.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -149,13 +149,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkCellRendererToggle.html#GtkCellRendererToggle-toggled" title="The “toggled” signal">toggled</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererToggle.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -168,7 +168,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererToggle.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer">GtkCellRenderer</a>
@@ -203,9 +203,8 @@ can bind the "active" property on the cell renderer to a boolean value
 in the model, thus causing the check button to reflect the state of
 the model.</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.2.5"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-toggle-new.returns"></a><h4>Returns</h4>
 <p> the new cell renderer</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -215,8 +214,8 @@ the model.</p>
 gtk_cell_renderer_toggle_get_radio (<em class="parameter"><code><a class="link" href="GtkCellRendererToggle.html" title="GtkCellRendererToggle"><span class="type">GtkCellRendererToggle</span></a> *toggle</code></em>);</pre>
 <p>Returns whether we're rendering radio toggles rather than checkboxes.</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-toggle-get-radio.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -230,9 +229,8 @@ gtk_cell_renderer_toggle_get_radio (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.3.6"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-toggle-get-radio.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we're rendering radio toggles rather than checkboxes</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -250,8 +248,8 @@ before rendering each cell in the model (for <a class="link" href="GtkTreeView.h
 up a per-row setting using <a class="link" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn"><span class="type">GtkTreeViewColumn</span></a> to associate model
 columns with cell renderer properties).</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-toggle-set-radio.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -280,8 +278,8 @@ gtk_cell_renderer_toggle_get_active (<em class="parameter"><code><a class="link"
 <p>Returns whether the cell renderer is active. See
 <a class="link" href="GtkCellRendererToggle.html#gtk-cell-renderer-toggle-set-active" title="gtk_cell_renderer_toggle_set_active ()"><code class="function">gtk_cell_renderer_toggle_set_active()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-toggle-get-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -295,9 +293,8 @@ gtk_cell_renderer_toggle_get_active (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.5.6"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-toggle-get-active.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cell renderer is active.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -308,8 +305,8 @@ gtk_cell_renderer_toggle_set_active (<em class="parameter"><code><a class="link"
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
 <p>Activates or deactivates a cell renderer.</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-toggle-set-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -339,8 +336,8 @@ gtk_cell_renderer_toggle_get_activatable
 <p>Returns whether the cell renderer is activatable. See
 <a class="link" href="GtkCellRendererToggle.html#gtk-cell-renderer-toggle-set-activatable" title="gtk_cell_renderer_toggle_set_activatable ()"><code class="function">gtk_cell_renderer_toggle_set_activatable()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-toggle-get-activatable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -354,11 +351,10 @@ gtk_cell_renderer_toggle_get_activatable
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.7.6"></a><h4>Returns</h4>
+<a name="gtk-cell-renderer-toggle-get-activatable.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cell renderer is activatable.</p>
-<p></p>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -369,8 +365,8 @@ gtk_cell_renderer_toggle_set_activatable
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
 <p>Makes the cell renderer activatable.</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.10.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-renderer-toggle-set-activatable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -390,7 +386,7 @@ gtk_cell_renderer_toggle_set_activatable
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.18</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -455,8 +451,8 @@ user_function (<a class="link" href="GtkCellRendererToggle.html" title="GtkCellR
                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
 <p>The ::toggled signal is emitted when the cell is toggled.</p>
 <div class="refsect3">
-<a name="id-1.4.9.22.13.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellRendererToggle-toggled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -482,12 +478,11 @@ event location</p></td>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

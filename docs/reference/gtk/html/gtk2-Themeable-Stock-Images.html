@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Themeable Stock Images</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Themeable Stock Images: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Stock-Items.html" title="Stock Items">
 <link rel="next" href="gtk2-Resource-Files.html" title="Resource Files">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-Themeable-Stock-Images.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -147,7 +147,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-set-render-icon" title="gtk_icon_set_render_icon ()">gtk_icon_set_render_icon</a> <span class="c_punctuation">()</span>
@@ -234,7 +234,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-source-get-pixbuf" title="gtk_icon_source_get_pixbuf ()">gtk_icon_source_get_pixbuf</a> <span class="c_punctuation">()</span>
@@ -356,7 +356,7 @@
 </div>
 <a name="GtkIconFactory"></a><a name="GtkIconSet"></a><div class="refsect1">
 <a name="gtk2-Themeable-Stock-Images.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -391,9 +391,9 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Themeable-Stock-Images.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GBoxed
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html">GBoxed</a>
     <span class="lineart">╰──</span> GtkIconSet
-    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkIconFactory
 </pre>
 </div>
@@ -530,8 +530,8 @@ gtk_icon_source_copy (<em class="parameter"><code>const <a class="link" href="gt
 <p>Creates a copy of <em class="parameter"><code>source</code></em>
 ; mostly useful for language bindings.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -545,9 +545,8 @@ gtk_icon_source_copy (<em class="parameter"><code>const <a class="link" href="gt
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-copy.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -558,8 +557,8 @@ gtk_icon_source_free (<em class="parameter"><code><a class="link" href="gtk2-The
 <p>Frees a dynamically-allocated icon source, along with its
 filename, size, and pixbuf fields if those are not <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -598,8 +597,8 @@ existed in <em class="parameter"><code>factory</code></em>
 with the new <em class="parameter"><code>icon_set</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-factory-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -638,8 +637,8 @@ There will normally be an icon factory added for each library or
 application that comes with icons. The default icon factories
 can be overridden by themes.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-factory-add-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -666,8 +665,8 @@ use <a class="link" href="GtkStyle.html#gtk-style-lookup-icon-set" title="gtk_st
 widget that will display the icon, instead of using this
 function directly, so that themes are taken into account.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-factory-lookup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -688,7 +687,7 @@ function directly, so that themes are taken into account.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.6.6"></a><h4>Returns</h4>
+<a name="gtk-icon-factory-lookup.returns"></a><h4>Returns</h4>
 <p> icon set of <em class="parameter"><code>stock_id</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -705,8 +704,8 @@ the <a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkSt
 using this function directly, so that themes are taken into
 account.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-factory-lookup-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -720,7 +719,7 @@ account.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.7.6"></a><h4>Returns</h4>
+<a name="gtk-icon-factory-lookup-default.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -744,9 +743,8 @@ the icon in a list of default icon factories, maintained by
 add a default icon factory with their icons, which will allow
 themes to override the icons for the application.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.8.5"></a><h4>Returns</h4>
+<a name="gtk-icon-factory-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconFactory"><span class="type">GtkIconFactory</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -758,8 +756,8 @@ gtk_icon_factory_remove_default (<em class="parameter"><code><a class="link" hre
 factories. Not normally used; you might use it for a library that
 can be unloaded or shut down.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-factory-remove-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -802,8 +800,8 @@ add the sources to the icon set does not matter.</p>
 <p>gtk_icon_set_new_from_pixbuf() creates a new icon set with a
 default icon source based on the given pixbuf.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.10.9"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-set-add-source.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -832,8 +830,8 @@ gtk_icon_set_copy (<em class="parameter"><code><a class="link" href="gtk2-Themea
 <p>Copies <em class="parameter"><code>icon_set</code></em>
  by value.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-set-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -847,9 +845,8 @@ gtk_icon_set_copy (<em class="parameter"><code><a class="link" href="gtk2-Themea
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.11.6"></a><h4>Returns</h4>
+<a name="gtk-icon-set-copy.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a> identical to the first.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -858,24 +855,23 @@ gtk_icon_set_copy (<em class="parameter"><code><a class="link" href="gtk2-Themea
 <pre class="programlisting"><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="returnvalue">GtkIconSet</span></a> *
 gtk_icon_set_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>Creates a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a>. A <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a> represents a single icon
-in various sizes and widget states. It can provide a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>
+in various sizes and widget states. It can provide a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>
 for a given size and state on request, and automatically caches
-some of the rendered <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> objects.</p>
+some of the rendered <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> objects.</p>
 <p>Normally you would use <a class="link" href="GtkWidget.html#gtk-widget-render-icon" title="gtk_widget_render_icon ()"><code class="function">gtk_widget_render_icon()</code></a> instead of
 using <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a> directly. The one case where you'd use
 <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a> is to create application-specific icon sets to place in
 a <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconFactory"><span class="type">GtkIconFactory</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.12.6"></a><h4>Returns</h4>
+<a name="gtk-icon-set-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-icon-set-new-from-pixbuf"></a><h3>gtk_icon_set_new_from_pixbuf ()</h3>
 <pre class="programlisting"><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="returnvalue">GtkIconSet</span></a> *
-gtk_icon_set_new_from_pixbuf (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
+gtk_icon_set_new_from_pixbuf (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
 <p>Creates a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a> with <em class="parameter"><code>pixbuf</code></em>
  as the default/fallback
 source image. If you don't add any additional <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> to the
@@ -884,8 +880,8 @@ icon set, all variants of the icon will be created from <em class="parameter"><c
 using scaling, pixelation, etc. as required to adjust the icon size
 or make the icon look insensitive/prelighted.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-set-new-from-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -893,15 +889,14 @@ or make the icon look insensitive/prelighted.</p>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>pixbuf</p></td>
-<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a></p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.13.6"></a><h4>Returns</h4>
+<a name="gtk-icon-set-new-from-pixbuf.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -912,8 +907,8 @@ gtk_icon_set_ref (<em class="parameter"><code><a class="link" href="gtk2-Themeab
 <p>Increments the reference count on <em class="parameter"><code>icon_set</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-set-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -927,16 +922,15 @@ gtk_icon_set_ref (<em class="parameter"><code><a class="link" href="gtk2-Themeab
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.14.6"></a><h4>Returns</h4>
+<a name="gtk-icon-set-ref.returns"></a><h4>Returns</h4>
 <p> <em class="parameter"><code>icon_set</code></em>
 .</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-icon-set-render-icon"></a><h3>gtk_icon_set_render_icon ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_icon_set_render_icon (<em class="parameter"><code><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a> *icon_set</code></em>,
                           <em class="parameter"><code><a class="link" href="GtkStyle.html" title="Styles"><span class="type">GtkStyle</span></a> *style</code></em>,
                           <em class="parameter"><code><a class="link" href="GtkWidget.html#GtkTextDirection" title="enum GtkTextDirection"><span class="type">GtkTextDirection</span></a> direction</code></em>,
@@ -951,8 +945,8 @@ function never returns <a href="https://developer.gnome.org/glib/unstable/glib-S
 (perhaps because an image file fails to load), a default "missing
 image" icon will be returned instead.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-set-render-icon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -990,7 +984,7 @@ means render at the size of the source and don't scale. </p></td>
 <td class="parameter_name"><p>widget</p></td>
 <td class="parameter_description"><p> widget that will display the icon, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
 The only use that is typically made of this
-is to determine the appropriate <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a>. </p></td>
+is to determine the appropriate <a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -1004,8 +998,8 @@ will disable caching. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.15.6"></a><h4>Returns</h4>
-<p> a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> to be displayed. </p>
+<a name="gtk-icon-set-render-icon.returns"></a><h4>Returns</h4>
+<p> a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> to be displayed. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 </div>
@@ -1018,8 +1012,8 @@ gtk_icon_set_unref (<em class="parameter"><code><a class="link" href="gtk2-Theme
 , and frees memory
 if the reference count reaches 0.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-set-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1053,8 +1047,8 @@ the width/height returned by <a class="link" href="gtk2-Themeable-Stock-Images.h
 are free to render the pixbuf however they like, including changing
 the usual size.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-size-lookup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1080,10 +1074,9 @@ the usual size.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.17.6"></a><h4>Returns</h4>
+<a name="gtk-icon-size-lookup.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>size</code></em>
 was a valid size</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1106,8 +1099,8 @@ the width/height returned by <a class="link" href="gtk2-Themeable-Stock-Images.h
 are free to render the pixbuf however they like, including changing
 the usual size.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-size-lookup-for-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1139,12 +1132,11 @@ which set of user preferences to used.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.18.6"></a><h4>Returns</h4>
+<a name="gtk-icon-size-lookup-for-settings.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>size</code></em>
 was a valid size</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1156,8 +1148,8 @@ gtk_icon_size_register (<em class="parameter"><code>const <a href="https://devel
 <p>Registers a new icon size, along the same lines as <a class="link" href="gtk2-Themeable-Stock-Images.html#GTK-ICON-SIZE-MENU:CAPS"><span class="type">GTK_ICON_SIZE_MENU</span></a>,
 etc. Returns the integer value for the size.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-size-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1183,7 +1175,7 @@ etc. Returns the integer value for the size.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.19.6"></a><h4>Returns</h4>
+<a name="gtk-icon-size-register.returns"></a><h4>Returns</h4>
 <p> integer value representing the size. </p>
 <p><span class="annotation">[<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> int]</span></p>
 </div>
@@ -1202,8 +1194,8 @@ So calling <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-size-
 will return <em class="parameter"><code>target</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-size-register-alias.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1233,8 +1225,8 @@ gtk_icon_size_from_name (<em class="parameter"><code>const <a href="https://deve
 <p>Looks up the icon size associated with <em class="parameter"><code>name</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-size-from-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1248,9 +1240,8 @@ gtk_icon_size_from_name (<em class="parameter"><code>const <a href="https://deve
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.21.6"></a><h4>Returns</h4>
+<a name="gtk-icon-size-from-name.returns"></a><h4>Returns</h4>
 <p>the icon size with the given name.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1261,8 +1252,8 @@ gtk_icon_size_get_name (<em class="parameter"><code><a class="link" href="gtk2-T
 <p>Gets the canonical name of the given icon size. The returned string
 is statically allocated and should not be freed.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-size-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1276,9 +1267,8 @@ is statically allocated and should not be freed.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.22.6"></a><h4>Returns</h4>
+<a name="gtk-icon-size-get-name.returns"></a><h4>Returns</h4>
 <p>the name of the given icon size.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1291,8 +1281,8 @@ gtk_icon_set_get_sizes (<em class="parameter"><code><a class="link" href="gtk2-T
 <p>Obtains a list of icon sizes this icon set can render. The returned
 array must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-set-get-sizes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1328,8 +1318,8 @@ gtk_icon_source_get_direction (<em class="parameter"><code>const <a class="link"
 value is only useful/meaningful if the text direction is <span class="emphasis"><em>not</em></span>
 wildcarded.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1343,9 +1333,8 @@ wildcarded.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.24.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-direction.returns"></a><h4>Returns</h4>
 <p> text direction this source matches</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1356,8 +1345,8 @@ gtk_icon_source_get_direction_wildcarded
                                (<em class="parameter"><code>const <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> *source</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-source-set-direction-wildcarded" title="gtk_icon_source_set_direction_wildcarded ()"><code class="function">gtk_icon_source_set_direction_wildcarded()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.25.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-direction-wildcarded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1371,15 +1360,14 @@ gtk_icon_source_get_direction_wildcarded
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.25.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-direction-wildcarded.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if this icon source is a base for any text direction variant</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-icon-source-get-pixbuf"></a><h3>gtk_icon_source_get_pixbuf ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_icon_source_get_pixbuf (<em class="parameter"><code>const <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> *source</code></em>);</pre>
 <p>Retrieves the source pixbuf, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none is set.
 In addition, if a filename source is in use, this
@@ -1389,8 +1377,8 @@ for the GtkIconSource passed to the GtkStyle::<code class="function">render_icon
 virtual function. The reference count on the pixbuf is
 not incremented.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1404,7 +1392,7 @@ not incremented.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.26.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-pixbuf.returns"></a><h4>Returns</h4>
 <p> source pixbuf. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1418,8 +1406,8 @@ gtk_icon_source_get_icon_name (<em class="parameter"><code>const <a class="link"
 icon_name is not a copy, and should not be modified or expected to
 persist beyond the lifetime of the icon source.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1433,9 +1421,8 @@ persist beyond the lifetime of the icon source.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.27.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-icon-name.returns"></a><h4>Returns</h4>
 <p> icon name. This string must not be modified or freed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1446,8 +1433,8 @@ gtk_icon_source_get_size (<em class="parameter"><code>const <a class="link" href
 <p>Obtains the icon size this source applies to. The return value
 is only useful/meaningful if the icon size is <span class="emphasis"><em>not</em></span> wildcarded.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1461,7 +1448,7 @@ is only useful/meaningful if the icon size is <span class="emphasis"><em>not</em
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.28.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-size.returns"></a><h4>Returns</h4>
 <p> icon size this source matches. </p>
 <p><span class="annotation">[<acronym title="Override the parsed C type with given type."><span class="acronym">type</span></acronym> int]</span></p>
 </div>
@@ -1473,8 +1460,8 @@ is only useful/meaningful if the icon size is <span class="emphasis"><em>not</em
 gtk_icon_source_get_size_wildcarded (<em class="parameter"><code>const <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> *source</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-source-set-size-wildcarded" title="gtk_icon_source_set_size_wildcarded ()"><code class="function">gtk_icon_source_set_size_wildcarded()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-size-wildcarded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1488,9 +1475,8 @@ gtk_icon_source_get_size_wildcarded (<em class="parameter"><code>const <a class=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.29.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-size-wildcarded.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if this icon source is a base for any icon size variant</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1502,8 +1488,8 @@ gtk_icon_source_get_state (<em class="parameter"><code>const <a class="link" hre
 value is only useful/meaningful if the widget state is <span class="emphasis"><em>not</em></span>
 wildcarded.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1517,9 +1503,8 @@ wildcarded.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.30.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-state.returns"></a><h4>Returns</h4>
 <p> widget state this source matches</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1529,8 +1514,8 @@ wildcarded.</p>
 gtk_icon_source_get_state_wildcarded (<em class="parameter"><code>const <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> *source</code></em>);</pre>
 <p>Gets the value set by <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-source-set-state-wildcarded" title="gtk_icon_source_set_state_wildcarded ()"><code class="function">gtk_icon_source_set_state_wildcarded()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-get-state-wildcarded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1544,9 +1529,8 @@ gtk_icon_source_get_state_wildcarded (<em class="parameter"><code>const <a class
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.9.11.31.6"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-state-wildcarded.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if this icon source is a base for any widget state variant</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1554,7 +1538,7 @@ gtk_icon_source_get_state_wildcarded (<em class="parameter"><code>const <a class
 <a name="gtk-icon-source-new"></a><h3>gtk_icon_source_new ()</h3>
 <pre class="programlisting"><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="returnvalue">GtkIconSource</span></a> *
 gtk_icon_source_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<p>Creates a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a>. A <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> contains a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> (or
+<p>Creates a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a>. A <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> contains a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> (or
 image filename) that serves as the base image for one or more of the
 icons in a <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a>, along with a specification for which icons in the
 icon set will be based on that pixbuf or image file. An icon set contains
@@ -1579,9 +1563,8 @@ they'll be used to create, and add them to the icon set with
 the icon source will be used as the base icon for any desired text
 direction, widget state, or icon size.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.32.9"></a><h4>Returns</h4>
+<a name="gtk-icon-source-new.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1597,8 +1580,8 @@ if the text direction is wildcarded. Therefore, you should usually
 call <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-source-set-direction-wildcarded" title="gtk_icon_source_set_direction_wildcarded ()"><code class="function">gtk_icon_source_set_direction_wildcarded()</code></a> to un-wildcard it
 in addition to calling this function.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.33.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1635,8 +1618,8 @@ will only be used with that text direction.</p>
 <p><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a> prefers non-wildcarded sources (exact matches) over
 wildcarded sources, and will use an exact match when possible.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.34.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-direction-wildcarded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1662,12 +1645,12 @@ wildcarded sources, and will use an exact match when possible.</p>
 <a name="gtk-icon-source-set-pixbuf"></a><h3>gtk_icon_source_set_pixbuf ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_icon_source_set_pixbuf (<em class="parameter"><code><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> *source</code></em>,
-                            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
+                            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
 <p>Sets a pixbuf to use as a base image when creating icon variants
 for <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1697,8 +1680,8 @@ gtk_icon_source_set_icon_name (<em class="parameter"><code><a class="link" href=
 <p>Sets the name of an icon to look up in the current icon theme
 to use as a base image when creating icon variants for <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1732,8 +1715,8 @@ if the size is wildcarded. Therefore, you should usually
 call <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-source-set-size-wildcarded" title="gtk_icon_source_set_size_wildcarded ()"><code class="function">gtk_icon_source_set_size_wildcarded()</code></a> to un-wildcard it
 in addition to calling this function.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.37.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1771,8 +1754,8 @@ wildcarded sources, and will use an exact match when possible.</p>
 an appropriate icon at a given size, but will not change the size
 of source images that match exactly.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.38.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-size-wildcarded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1806,8 +1789,8 @@ if the state is wildcarded. Therefore, you should usually
 call <a class="link" href="gtk2-Themeable-Stock-Images.html#gtk-icon-source-set-state-wildcarded" title="gtk_icon_source_set_state_wildcarded ()"><code class="function">gtk_icon_source_set_state_wildcarded()</code></a> to un-wildcard it
 in addition to calling this function.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.39.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1846,8 +1829,8 @@ produce an appropriate icon for a given state, for example
 lightening an image on prelight, but will not modify source images
 that match exactly.</p>
 <div class="refsect3">
-<a name="id-1.3.9.11.40.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-state-wildcarded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1897,8 +1880,8 @@ that match exactly.</p>
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.3.9.12.5.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkIconSize.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1953,10 +1936,9 @@ that match exactly.</p>
 filename is not a copy, and should not be modified or expected to
 persist beyond the lifetime of the icon source.</p>
 <div class="refsect3">
-<a name="id-1.3.9.12.6.5"></a><h4>Returns</h4>
+<a name="gtk-icon-source-get-filename.returns"></a><h4>Returns</h4>
 <p> image filename. This string must not be modified
 or freed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1967,8 +1949,8 @@ or freed.</p>
 <p>Sets the name of an image file to use as a base image when creating
 icon variants for <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="type">GtkIconSet</span></a>. The filename must be absolute.</p>
 <div class="refsect3">
-<a name="id-1.3.9.12.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-icon-source-set-filename.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1992,7 +1974,6 @@ icon variants for <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIcon
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

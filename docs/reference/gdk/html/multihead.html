@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Multi-head Support Overview</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Multi-head Support Overview: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-General.html" title="General">
 <link rel="next" href="GdkDisplay.html" title="GdkDisplay">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -91,7 +91,7 @@
 <span class="usertype">GdkScreen</span><span class="normal"> </span><span class="symbol">**</span><span class="normal">screen_list</span><span class="symbol">;</span>
 <span class="usertype">GdkDisplay</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">display</span><span class="symbol">;</span>
 
-<span class="function"><a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init">gtk_init</a></span><span class="normal"> </span><span class="symbol">(&amp;</span><span class="normal">argc</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">argv</span><span class="symbol">);</span>
+<span class="function"><a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-init">gtk_init</a></span><span class="normal"> </span><span class="symbol">(&amp;</span><span class="normal">argc</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">argv</span><span class="symbol">);</span>
 
 <span class="normal">display </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GdkDisplay.html#gdk-display-get-default">gdk_display_get_default</a></span><span class="normal"> </span><span class="symbol">();</span>
 <span class="normal">num_screen </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GdkDisplay.html#gdk-display-get-n-screens">gdk_display_get_n_screens</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">display</span><span class="symbol">);</span>
@@ -146,7 +146,7 @@
 <span class="usertype">GdkScreen</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">second_screen</span><span class="symbol">;</span>
 <span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">window</span><span class="symbol">;</span>
 
-<span class="function"><a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init">gtk_init</a></span><span class="normal"> </span><span class="symbol">(&amp;</span><span class="normal">argc</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">argv</span><span class="symbol">);</span>
+<span class="function"><a href="http://developer.gnome.org/gtk3/gtk3-General.html#gtk-init">gtk_init</a></span><span class="normal"> </span><span class="symbol">(&amp;</span><span class="normal">argc</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">argv</span><span class="symbol">);</span>
 
 <span class="comment">/* screen2_name needs to be initialized before calling </span>
 <span class="comment">/* gdk_display_new() */</span>
@@ -161,8 +161,8 @@
 <span class="normal">  </span><span class="cbracket">}</span>
 <span class="comment">/* now GdkScreen can be assigned to GtkWindows */</span>
 
-<span class="normal">window </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-new">gtk_window_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">GTK_WINDOW_TOPLEVEL</span><span class="symbol">);</span>
-<span class="function"><a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-set-screen">gtk_window_set_screen</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">,</span><span class="normal"> second_screen</span><span class="symbol">);</span></pre></td>
+<span class="normal">window </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk3/GtkWindow.html#gtk-window-new">gtk_window_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="http://developer.gnome.org/gtk3/GtkWindow.html#GTK-WINDOW-TOPLEVEL:CAPS">GTK_WINDOW_TOPLEVEL</a></span><span class="symbol">);</span>
+<span class="function"><a href="http://developer.gnome.org/gtk3/GtkWindow.html#gtk-window-set-screen">gtk_window_set_screen</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">,</span><span class="normal"> second_screen</span><span class="symbol">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -198,7 +198,6 @@
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

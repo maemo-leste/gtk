@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTreeSelection</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTreeSelection: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkTreeModel.html" title="GtkTreeModel">
 <link rel="next" href="GtkTreeViewColumn.html" title="GtkTreeViewColumn">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,7 +35,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTreeSelection.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -222,7 +222,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeSelection.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -231,13 +231,13 @@
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTreeSelection.html#GtkTreeSelection-changed" title="The “changed” signal">changed</a></td>
-<td class="signal_flags">Run First</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkTreeSelection.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -250,7 +250,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTreeSelection.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkTreeSelection
 </pre>
 </div>
@@ -306,8 +306,8 @@ state might change.  A return value of <a href="https://developer.gnome.org/glib
 that it is okay to change the selection.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeSelectionFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -343,9 +343,8 @@ that it is okay to change the selection.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.2.6"></a><h4>Returns</h4>
+<a name="GtkTreeSelectionFunc.returns"></a><h4>Returns</h4>
 <p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if the selection state of the row can be toggled</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -361,8 +360,8 @@ A function used by <a class="link" href="GtkTreeSelection.html#gtk-tree-selectio
 selected rows.  It will be called on every selected row in the view.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeSelectionForeachFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -404,8 +403,8 @@ gtk_tree_selection_set_mode (<em class="parameter"><code><a class="link" href="G
 <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-MULTIPLE:CAPS"><span class="type">GTK_SELECTION_MULTIPLE</span></a>, then the anchor is kept selected, if it was
 previously selected.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-set-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -435,8 +434,8 @@ gtk_tree_selection_get_mode (<em class="parameter"><code><a class="link" href="G
 . See
 <a class="link" href="GtkTreeSelection.html#gtk-tree-selection-set-mode" title="gtk_tree_selection_set_mode ()"><code class="function">gtk_tree_selection_set_mode()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-get-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -450,9 +449,8 @@ gtk_tree_selection_get_mode (<em class="parameter"><code><a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.5.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-get-mode.returns"></a><h4>Returns</h4>
 <p> the current selection mode</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -469,8 +467,8 @@ is selected or unselected, giving some control over which nodes are selected.
 The select function should return <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the state of the node may be toggled,
 and <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the state of the node should be left unchanged.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-set-select-function.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -508,9 +506,10 @@ and <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html
 gtk_tree_selection_get_select_function
                                (<em class="parameter"><code><a class="link" href="GtkTreeSelection.html" title="GtkTreeSelection"><span class="type">GtkTreeSelection</span></a> *selection</code></em>);</pre>
 <p>Returns the current selection function.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-get-select-function.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -524,11 +523,10 @@ gtk_tree_selection_get_select_function
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.7.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-get-select-function.returns"></a><h4>Returns</h4>
 <p> The function.</p>
-<p></p>
 </div>
-<p class="since">Since 2.14</p>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -536,9 +534,10 @@ gtk_tree_selection_get_select_function
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 gtk_tree_selection_get_user_data (<em class="parameter"><code><a class="link" href="GtkTreeSelection.html" title="GtkTreeSelection"><span class="type">GtkTreeSelection</span></a> *selection</code></em>);</pre>
 <p>Returns the user data for the selection function.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-get-user-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -552,9 +551,8 @@ gtk_tree_selection_get_user_data (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.8.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-get-user-data.returns"></a><h4>Returns</h4>
 <p> The user data.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -565,8 +563,8 @@ gtk_tree_selection_get_tree_view (<em class="parameter"><code><a class="link" hr
 <p>Returns the tree view associated with <em class="parameter"><code>selection</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-get-tree-view.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -580,7 +578,7 @@ gtk_tree_selection_get_tree_view (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.9.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-get-tree-view.returns"></a><h4>Returns</h4>
 <p> A <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -604,8 +602,8 @@ with the current model as a convenience.  This function will not work if you
 use <em class="parameter"><code>selection</code></em>
  is <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-MULTIPLE:CAPS"><span class="type">GTK_SELECTION_MULTIPLE</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-get-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -631,9 +629,8 @@ use <em class="parameter"><code>selection</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.10.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-get-selected.returns"></a><h4>Returns</h4>
 <p> TRUE, if there is a selected node.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -647,8 +644,8 @@ gtk_tree_selection_selected_foreach (<em class="parameter"><code><a class="link"
 the tree or selection from within this function. As a result,
 <a class="link" href="GtkTreeSelection.html#gtk-tree-selection-get-selected-rows" title="gtk_tree_selection_get_selected_rows ()"><code class="function">gtk_tree_selection_get_selected_rows()</code></a> might be more useful.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-selected-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -700,8 +697,8 @@ To do this, you can use <a class="link" href="GtkTreeModel.html#gtk-tree-row-ref
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.12.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-get-selected-rows.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -722,11 +719,11 @@ To do this, you can use <a class="link" href="GtkTreeModel.html#gtk-tree-row-ref
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.12.9"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-get-selected-rows.returns"></a><h4>Returns</h4>
 <p> A <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> containing a <a class="link" href="GtkTreeModel.html#GtkTreePath"><span class="type">GtkTreePath</span></a> for each selected row. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkTreePath][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -737,8 +734,8 @@ gtk_tree_selection_count_selected_rows
 <p>Returns the number of rows that have been selected in <em class="parameter"><code>tree</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-count-selected-rows.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -752,11 +749,10 @@ gtk_tree_selection_count_selected_rows
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.13.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-count-selected-rows.returns"></a><h4>Returns</h4>
 <p> The number of rows selected.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -767,8 +763,8 @@ gtk_tree_selection_select_path (<em class="parameter"><code><a class="link" href
 <p>Select the row at <em class="parameter"><code>path</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-select-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -798,8 +794,8 @@ gtk_tree_selection_unselect_path (<em class="parameter"><code><a class="link" hr
 <p>Unselects the row at <em class="parameter"><code>path</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-unselect-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -831,8 +827,8 @@ gtk_tree_selection_path_is_selected (<em class="parameter"><code><a class="link"
 
 does not point to a valid location, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-path-is-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -853,10 +849,9 @@ does not point to a valid location, <a href="https://developer.gnome.org/glib/un
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.16.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-path-is-selected.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>path</code></em>
 is selected.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -867,8 +862,8 @@ gtk_tree_selection_select_iter (<em class="parameter"><code><a class="link" href
                                 <em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
 <p>Selects the specified iterator.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-select-iter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -897,8 +892,8 @@ gtk_tree_selection_unselect_iter (<em class="parameter"><code><a class="link" hr
                                   <em class="parameter"><code><a class="link" href="GtkTreeModel.html#GtkTreeIter"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
 <p>Unselects the specified iterator.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-unselect-iter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -928,8 +923,8 @@ gtk_tree_selection_iter_is_selected (<em class="parameter"><code><a class="link"
 <p>Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the row at <em class="parameter"><code>iter</code></em>
  is currently selected.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-iter-is-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -950,10 +945,9 @@ gtk_tree_selection_iter_is_selected (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.19.6"></a><h4>Returns</h4>
+<a name="gtk-tree-selection-iter-is-selected.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, if <em class="parameter"><code>iter</code></em>
 is selected</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -965,8 +959,8 @@ gtk_tree_selection_select_all (<em class="parameter"><code><a class="link" href=
  must be set to <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-MULTIPLE:CAPS"><span class="type">GTK_SELECTION_MULTIPLE</span></a>
 mode.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-select-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -987,8 +981,8 @@ mode.</p>
 gtk_tree_selection_unselect_all (<em class="parameter"><code><a class="link" href="GtkTreeSelection.html" title="GtkTreeSelection"><span class="type">GtkTreeSelection</span></a> *selection</code></em>);</pre>
 <p>Unselects all the nodes.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-unselect-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1015,8 +1009,8 @@ gtk_tree_selection_select_range (<em class="parameter"><code><a class="link" hre
 <em class="parameter"><code>selection</code></em>
  must be set to <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-MULTIPLE:CAPS"><span class="type">GTK_SELECTION_MULTIPLE</span></a> mode.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-select-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1054,8 +1048,8 @@ gtk_tree_selection_unselect_range (<em class="parameter"><code><a class="link" h
 
 inclusive.</p>
 <div class="refsect3">
-<a name="id-1.4.9.4.9.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-tree-selection-unselect-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1080,7 +1074,7 @@ inclusive.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1106,8 +1100,8 @@ of rows are selected, and it may occasionally be emitted when nothing
 has happened.
 </p>
 <div class="refsect3">
-<a name="id-1.4.9.4.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTreeSelection-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1127,7 +1121,7 @@ has happened.
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run First</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1138,7 +1132,6 @@ has happened.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

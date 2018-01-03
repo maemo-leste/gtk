@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Images</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Images: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-GdkRGB.html" title="GdkRGB">
 <link rel="next" href="gdk2-Pixbufs.html" title="Pixbufs">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Images.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -196,7 +196,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Images.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -261,8 +261,8 @@ gdk_image_new (<em class="parameter"><code><a class="link" href="gdk2-Images.htm
 Creates a new <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.12.7.2.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -296,9 +296,8 @@ then use <a class="link" href="gdk2-Images.html#GDK-IMAGE-NORMAL:CAPS"><code cla
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.2.7"></a><h4>Returns</h4>
+<a name="gdk-image-new.returns"></a><h4>Returns</h4>
 <p>a new <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the image could not be created.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -315,8 +314,8 @@ gdk_image_new_bitmap (<em class="parameter"><code><a class="link" href="gdk2-Vis
 be allocated by <code class="function">malloc()</code> (NOT <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-malloc"><code class="function">g_malloc()</code></a>) and will be freed when the 
 image is freed.</p></div>
 <div class="refsect3">
-<a name="id-1.2.12.7.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-new-bitmap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -347,9 +346,8 @@ image is freed.</p></div>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.3.8"></a><h4>Returns</h4>
+<a name="gdk-image-new-bitmap.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -367,8 +365,8 @@ gdk_image_get (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Pr
 most cases <a class="link" href="gdk2-Pixbufs.html#gdk-pixbuf-get-from-drawable" title="gdk_pixbuf_get_from_drawable ()"><code class="function">gdk_pixbuf_get_from_drawable()</code></a> is the most convenient
 choice.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.4.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -408,9 +406,8 @@ choice.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.4.7"></a><h4>Returns</h4>
+<a name="gdk-image-get.returns"></a><h4>Returns</h4>
 <p> a new <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -424,8 +421,8 @@ gdk_image_ref (<em class="parameter"><code><a class="link" href="gdk2-Images.htm
 </div>
 <p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -439,9 +436,8 @@ gdk_image_ref (<em class="parameter"><code><a class="link" href="gdk2-Images.htm
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.5.7"></a><h4>Returns</h4>
+<a name="gdk-image-ref.returns"></a><h4>Returns</h4>
 <p> the image</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -455,8 +451,8 @@ gdk_image_unref (<em class="parameter"><code><a class="link" href="gdk2-Images.h
 </div>
 <p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -484,8 +480,8 @@ will have a colormap if the drawable from which it was created has
 a colormap, or if a colormap was set explicitely with
 <a class="link" href="gdk2-Images.html#gdk-image-set-colormap" title="gdk_image_set_colormap ()"><code class="function">gdk_image_set_colormap()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-colormap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -499,9 +495,8 @@ a colormap, or if a colormap was set explicitely with
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.7.7"></a><h4>Returns</h4>
+<a name="gdk-image-get-colormap.returns"></a><h4>Returns</h4>
 <p> colormap for the image</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -520,8 +515,8 @@ correct colormap if you get the image from a drawable. If you
 create the image from scratch, use the colormap of the drawable you
 intend to render the image to.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-set-colormap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -553,8 +548,8 @@ gdk_image_get_bits_per_pixel (<em class="parameter"><code><a class="link" href="
 </div>
 <p>Determines the number of bits per pixel of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.9.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-bits-per-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -568,11 +563,10 @@ gdk_image_get_bits_per_pixel (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.9.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-bits-per-pixel.returns"></a><h4>Returns</h4>
 <p> the bits per pixel</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -585,8 +579,8 @@ gdk_image_get_bytes_per_pixel (<em class="parameter"><code><a class="link" href=
 </div>
 <p>Determines the number of bytes per pixel of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.10.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-bytes-per-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -600,11 +594,10 @@ gdk_image_get_bytes_per_pixel (<em class="parameter"><code><a class="link" href=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.10.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-bytes-per-pixel.returns"></a><h4>Returns</h4>
 <p> the bytes per pixel</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -617,8 +610,8 @@ gdk_image_get_bytes_per_line (<em class="parameter"><code><a class="link" href="
 </div>
 <p>Determines the number of bytes per line of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.11.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-bytes-per-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -632,11 +625,10 @@ gdk_image_get_bytes_per_line (<em class="parameter"><code><a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.11.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-bytes-per-line.returns"></a><h4>Returns</h4>
 <p> the bytes per line</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -649,8 +641,8 @@ gdk_image_get_byte_order (<em class="parameter"><code><a class="link" href="gdk2
 </div>
 <p>Determines the byte order of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.12.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-byte-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -664,11 +656,10 @@ gdk_image_get_byte_order (<em class="parameter"><code><a class="link" href="gdk2
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.12.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-byte-order.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -681,8 +672,8 @@ gdk_image_get_depth (<em class="parameter"><code><a class="link" href="gdk2-Imag
 </div>
 <p>Determines the depth of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.13.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-depth.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -696,11 +687,10 @@ gdk_image_get_depth (<em class="parameter"><code><a class="link" href="gdk2-Imag
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.13.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-depth.returns"></a><h4>Returns</h4>
 <p> the depth</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -713,8 +703,8 @@ gdk_image_get_height (<em class="parameter"><code><a class="link" href="gdk2-Ima
 </div>
 <p>Determines the height of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.14.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -728,11 +718,10 @@ gdk_image_get_height (<em class="parameter"><code><a class="link" href="gdk2-Ima
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.14.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-height.returns"></a><h4>Returns</h4>
 <p> the height</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -745,8 +734,8 @@ gdk_image_get_image_type (<em class="parameter"><code><a class="link" href="gdk2
 </div>
 <p>Determines the type of a given image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.15.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-image-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -760,11 +749,10 @@ gdk_image_get_image_type (<em class="parameter"><code><a class="link" href="gdk2
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.15.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-image-type.returns"></a><h4>Returns</h4>
 <p> the <a class="link" href="gdk2-Images.html#GdkImageType" title="enum GdkImageType"><span class="type">GdkImageType</span></a> of the image</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -777,8 +765,8 @@ gdk_image_get_visual (<em class="parameter"><code><a class="link" href="gdk2-Ima
 </div>
 <p>Determines the visual that was used to create the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.16.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-visual.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -792,11 +780,10 @@ gdk_image_get_visual (<em class="parameter"><code><a class="link" href="gdk2-Ima
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.16.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-visual.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a></p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -809,8 +796,8 @@ gdk_image_get_width (<em class="parameter"><code><a class="link" href="gdk2-Imag
 </div>
 <p>Determines the width of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.17.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -824,11 +811,10 @@ gdk_image_get_width (<em class="parameter"><code><a class="link" href="gdk2-Imag
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.17.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-width.returns"></a><h4>Returns</h4>
 <p> the width</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -841,8 +827,8 @@ gdk_image_get_pixels (<em class="parameter"><code><a class="link" href="gdk2-Ima
 </div>
 <p>Returns a pointer to the pixel data of the image.</p>
 <div class="refsect3">
-<a name="id-1.2.12.7.18.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-pixels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -856,11 +842,10 @@ gdk_image_get_pixels (<em class="parameter"><code><a class="link" href="gdk2-Ima
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.18.8"></a><h4>Returns</h4>
+<a name="gdk-image-get-pixels.returns"></a><h4>Returns</h4>
 <p> the pixel data of the image</p>
-<p></p>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -875,8 +860,8 @@ gdk_image_put_pixel (<em class="parameter"><code><a class="link" href="gdk2-Imag
 Sets a pixel in a <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> to a given pixel value.
 </p>
 <div class="refsect3">
-<a name="id-1.2.12.7.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-put-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -919,8 +904,8 @@ gdk_image_get_pixel (<em class="parameter"><code><a class="link" href="gdk2-Imag
 Gets a pixel value at a specified position in a <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.12.7.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-image-get-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -946,9 +931,8 @@ Gets a pixel value at a specified position in a <a class="link" href="gdk2-Image
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.12.7.20.7"></a><h4>Returns</h4>
+<a name="gdk-image-get-pixel.returns"></a><h4>Returns</h4>
 <p>the pixel value at the given position.</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -978,18 +962,14 @@ Gets a pixel value at a specified position in a <a class="link" href="gdk2-Image
 The <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a> struct contains information on the image and the pixel data.
 </p>
 <div class="refsect3">
-<a name="id-1.2.12.8.2.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkImage.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
 <col width="200px" class="struct_members_annotations">
 </colgroup>
-<tbody><tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> <em class="structfield"><code><a name="GdkImage.parent-instance"></a>parent_instance</code></em>;</p></td>
-<td class="struct_member_description"><p>the parent instance</p></td>
-<td class="struct_member_annotations"> </td>
-</tr></tbody>
+<tbody></tbody>
 </table></div>
 </div>
 </div>
@@ -1000,8 +980,8 @@ The <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span clas
 Specifies the type of a <a class="link" href="gdk2-Images.html#GdkImage" title="GdkImage"><span class="type">GdkImage</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.2.12.8.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkImageType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1084,7 +1064,6 @@ displays.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

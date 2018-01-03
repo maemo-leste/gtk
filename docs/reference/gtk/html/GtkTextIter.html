@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTextIter</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTextIter: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TextWidgetObjects.html" title="Multiline Text Editor">
 <link rel="prev" href="TextWidget.html" title="Text Widget Overview">
 <link rel="next" href="GtkTextMark.html" title="GtkTextMark">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTextIter.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -154,7 +154,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkTextIter.html#gtk-text-iter-get-pixbuf" title="gtk_text_iter_get_pixbuf ()">gtk_text_iter_get_pixbuf</a> <span class="c_punctuation">()</span>
@@ -338,7 +338,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Scripts-and-Languages.html#PangoLanguage"><span class="returnvalue">PangoLanguage</span></a> *
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Scripts-and-Languages.html#PangoLanguage-struct"><span class="returnvalue">PangoLanguage</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkTextIter.html#gtk-text-iter-get-language" title="gtk_text_iter_get_language ()">gtk_text_iter_get_language</a> <span class="c_punctuation">()</span>
@@ -773,7 +773,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTextIter.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -792,7 +792,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTextIter.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GBoxed
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html">GBoxed</a>
     <span class="lineart">╰──</span> GtkTextIter
 </pre>
 </div>
@@ -819,8 +819,8 @@ types related to the text widget and how they work together.
 gtk_text_iter_get_buffer (<em class="parameter"><code>const <a class="link" href="GtkTextIter.html" title="GtkTextIter"><span class="type">GtkTextIter</span></a> *iter</code></em>);</pre>
 <p>Returns the <a class="link" href="GtkTextBuffer.html" title="GtkTextBuffer"><span class="type">GtkTextBuffer</span></a> this iterator is associated with.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -834,7 +834,7 @@ gtk_text_iter_get_buffer (<em class="parameter"><code>const <a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.2.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-buffer.returns"></a><h4>Returns</h4>
 <p> the buffer. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -849,8 +849,8 @@ is not useful in applications, because iterators can be copied with a
 simple assignment (<code class="literal">GtkTextIter i = j;</code>). The
 function is used by language bindings.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -864,10 +864,9 @@ function is used by language bindings.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.3.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-copy.returns"></a><h4>Returns</h4>
 <p> a copy of the <em class="parameter"><code>iter</code></em>
 , free with <a class="link" href="GtkTextIter.html#gtk-text-iter-free" title="gtk_text_iter_free ()"><code class="function">gtk_text_iter_free()</code></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -880,8 +879,8 @@ is intended for use in language bindings, and is not
 especially useful for applications, because iterators can
 simply be allocated on the stack.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -906,8 +905,8 @@ starting with 0 for the first character in the buffer.
 Use <a class="link" href="GtkTextBuffer.html#gtk-text-buffer-get-iter-at-offset" title="gtk_text_buffer_get_iter_at_offset ()"><code class="function">gtk_text_buffer_get_iter_at_offset()</code></a> to convert an
 offset back into an iterator.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -921,9 +920,8 @@ offset back into an iterator.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.5.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-offset.returns"></a><h4>Returns</h4>
 <p> a character offset</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -935,8 +933,8 @@ gtk_text_iter_get_line (<em class="parameter"><code>const <a class="link" href="
 a <a class="link" href="GtkTextBuffer.html" title="GtkTextBuffer"><span class="type">GtkTextBuffer</span></a> are numbered beginning with 0 for the first
 line in the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -950,9 +948,8 @@ line in the buffer.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.6.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-line.returns"></a><h4>Returns</h4>
 <p> a line number</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -964,8 +961,8 @@ gtk_text_iter_get_line_offset (<em class="parameter"><code>const <a class="link"
 counting from the start of a newline-terminated line.
 The first character on the line has offset 0.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-line-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -979,9 +976,8 @@ The first character on the line has offset 0.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.7.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-line-offset.returns"></a><h4>Returns</h4>
 <p> offset from start of line</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -995,8 +991,8 @@ Remember that <a class="link" href="GtkTextBuffer.html" title="GtkTextBuffer"><s
 UTF-8, and that characters can require a variable
 number of bytes to represent.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-line-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1010,9 +1006,8 @@ number of bytes to represent.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.8.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-line-index.returns"></a><h4>Returns</h4>
 <p> distance from start of line, in bytes</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1026,8 +1021,8 @@ line to the given <em class="parameter"><code>iter</code></em>
 are invisible due to tags with the "invisible" flag
 toggled on.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-visible-line-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1041,10 +1036,9 @@ toggled on.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.9.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-visible-line-index.returns"></a><h4>Returns</h4>
 <p> byte index of <em class="parameter"><code>iter</code></em>
 with respect to the start of the line</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1058,8 +1052,8 @@ line to the given <em class="parameter"><code>iter</code></em>
 are invisible due to tags with the "invisible" flag
 toggled on.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-visible-line-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1073,9 +1067,8 @@ toggled on.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.10.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-visible-line-offset.returns"></a><h4>Returns</h4>
 <p> offset in visible characters from the start of the line </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1091,8 +1084,8 @@ the end iterator, zero is returned; zero is not a valid Unicode character.
 So you can write a loop which ends when <a class="link" href="GtkTextIter.html#gtk-text-iter-get-char" title="gtk_text_iter_get_char ()"><code class="function">gtk_text_iter_get_char()</code></a>
 returns 0.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-char.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1106,10 +1099,9 @@ returns 0.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.11.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-char.returns"></a><h4>Returns</h4>
 <p> a Unicode character, or 0 if <em class="parameter"><code>iter</code></em>
 is not dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1127,8 +1119,8 @@ offsets in the text buffer. Note that 0xFFFC can occur in normal
 text as well, so it is not a reliable indicator that a pixbuf or
 widget is in the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-slice.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1149,9 +1141,8 @@ widget is in the buffer.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.12.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-slice.returns"></a><h4>Returns</h4>
 <p> slice of text from the buffer</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1166,8 +1157,8 @@ offsets in the returned string will not correspond to character and
 byte offsets in the buffer. If you want offsets to correspond, see
 <a class="link" href="GtkTextIter.html#gtk-text-iter-get-slice" title="gtk_text_iter_get_slice ()"><code class="function">gtk_text_iter_get_slice()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1188,9 +1179,8 @@ byte offsets in the buffer. If you want offsets to correspond, see
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.13.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-text.returns"></a><h4>Returns</h4>
 <p> array of characters from the buffer</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1203,8 +1193,8 @@ gtk_text_iter_get_visible_slice (<em class="parameter"><code>const <a class="lin
 Invisible text is usually invisible because a <a class="link" href="GtkTextTag.html" title="GtkTextTag"><span class="type">GtkTextTag</span></a> with the
 "invisible" attribute turned on has been applied to it.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-visible-slice.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1225,9 +1215,8 @@ Invisible text is usually invisible because a <a class="link" href="GtkTextTag.h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.14.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-visible-slice.returns"></a><h4>Returns</h4>
 <p> slice of text from the buffer</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1240,8 +1229,8 @@ gtk_text_iter_get_visible_text (<em class="parameter"><code>const <a class="link
 Invisible text is usually invisible because a <a class="link" href="GtkTextTag.html" title="GtkTextTag"><span class="type">GtkTextTag</span></a> with the
 "invisible" attribute turned on has been applied to it.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-visible-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1262,23 +1251,22 @@ Invisible text is usually invisible because a <a class="link" href="GtkTextTag.h
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.15.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-visible-text.returns"></a><h4>Returns</h4>
 <p> string containing visible text in the range</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-text-iter-get-pixbuf"></a><h3>gtk_text_iter_get_pixbuf ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_text_iter_get_pixbuf (<em class="parameter"><code>const <a class="link" href="GtkTextIter.html" title="GtkTextIter"><span class="type">GtkTextIter</span></a> *iter</code></em>);</pre>
 <p>If the element at <em class="parameter"><code>iter</code></em>
  is a pixbuf, the pixbuf is returned
 (with no new reference count added). Otherwise,
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1292,7 +1280,7 @@ gtk_text_iter_get_pixbuf (<em class="parameter"><code>const <a class="link" href
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.16.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-pixbuf.returns"></a><h4>Returns</h4>
 <p> the pixbuf at <em class="parameter"><code>iter</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -1309,8 +1297,8 @@ they are just marks in between iterable locations), multiple marks
 can exist in the same place. The returned list is not in any
 meaningful order.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-marks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1324,7 +1312,7 @@ meaningful order.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.17.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-marks.returns"></a><h4>Returns</h4>
 <p> list of <a class="link" href="GtkTextMark.html" title="GtkTextMark"><span class="type">GtkTextMark</span></a>. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkTextMark][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
@@ -1346,8 +1334,8 @@ a tag is toggled off, then some non-empty range following <em class="parameter">
 
 does <span class="emphasis"><em>not</em></span> have the tag applied to it.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-toggled-tags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1368,7 +1356,7 @@ does <span class="emphasis"><em>not</em></span> have the tag applied to it.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.18.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-toggled-tags.returns"></a><h4>Returns</h4>
 <p> tags toggled at this point. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkTextTag][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
@@ -1383,8 +1371,8 @@ gtk_text_iter_get_child_anchor (<em class="parameter"><code>const <a class="link
 anchor is returned (with no new reference count added). Otherwise,
 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.19.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-child-anchor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1398,7 +1386,7 @@ anchor is returned (with no new reference count added). Otherwise,
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.19.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-child-anchor.returns"></a><h4>Returns</h4>
 <p> the anchor at <em class="parameter"><code>iter</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
@@ -1420,8 +1408,8 @@ that the <a class="link" href="GtkTextIter.html#gtk-text-iter-begins-tag" title=
 <a class="link" href="GtkTextIter.html#gtk-text-iter-has-tag" title="gtk_text_iter_has_tag ()"><code class="function">gtk_text_iter_has_tag()</code></a> tells you whether an iterator is
 <span class="emphasis"><em>within</em></span> a tagged range.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.20.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-begins-tag.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1442,11 +1430,10 @@ that the <a class="link" href="GtkTextIter.html#gtk-text-iter-begins-tag" title=
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.20.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-begins-tag.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 is the start of a range tagged with <em class="parameter"><code>tag</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1465,8 +1452,8 @@ that the <a class="link" href="GtkTextIter.html#gtk-text-iter-ends-tag" title="g
 <a class="link" href="GtkTextIter.html#gtk-text-iter-has-tag" title="gtk_text_iter_has_tag ()"><code class="function">gtk_text_iter_has_tag()</code></a> tells you whether an iterator is
 <span class="emphasis"><em>within</em></span> a tagged range.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.21.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-ends-tag.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1487,11 +1474,10 @@ that the <a class="link" href="GtkTextIter.html#gtk-text-iter-ends-tag" title="g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.21.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-ends-tag.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 is the end of a range tagged with <em class="parameter"><code>tag</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1506,8 +1492,8 @@ gtk_text_iter_toggles_tag (<em class="parameter"><code>const <a class="link" hre
  applied to it begins <span class="emphasis"><em>or</em></span> ends at <em class="parameter"><code>iter</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.22.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-toggles-tag.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1528,11 +1514,10 @@ gtk_text_iter_toggles_tag (<em class="parameter"><code>const <a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.22.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-toggles-tag.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>tag</code></em>
 is toggled on or off at <em class="parameter"><code>iter</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1545,8 +1530,8 @@ gtk_text_iter_has_tag (<em class="parameter"><code>const <a class="link" href="G
  is within a range tagged with <em class="parameter"><code>tag</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.23.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-has-tag.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1567,11 +1552,10 @@ gtk_text_iter_has_tag (<em class="parameter"><code>const <a class="link" href="G
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.23.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-has-tag.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 is tagged with <em class="parameter"><code>tag</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1585,8 +1569,8 @@ priority (highest-priority tags are last). The <a class="link" href="GtkTextTag.
 list don't have a reference added, but you have to free the list
 itself.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-tags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1600,7 +1584,7 @@ itself.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.24.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-tags.returns"></a><h4>Returns</h4>
 <p> list of <a class="link" href="GtkTextTag.html" title="GtkTextTag"><span class="type">GtkTextTag</span></a>. </p>
 <p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkTextTag][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
@@ -1628,8 +1612,8 @@ know whether a new character inserted at <em class="parameter"><code>iter</code>
 editable range. Use <a class="link" href="GtkTextIter.html#gtk-text-iter-can-insert" title="gtk_text_iter_can_insert ()"><code class="function">gtk_text_iter_can_insert()</code></a> to handle this
 case.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-editable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1650,10 +1634,9 @@ case.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.25.7"></a><h4>Returns</h4>
+<a name="gtk-text-iter-editable.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 is inside an editable range</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1672,8 +1655,8 @@ user should be allowed to insert text at <em class="parameter"><code>iter</code>
 <a class="link" href="GtkTextBuffer.html#gtk-text-buffer-insert-interactive" title="gtk_text_buffer_insert_interactive ()"><code class="function">gtk_text_buffer_insert_interactive()</code></a> uses this function to decide
 whether insertions are allowed at a given position.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.26.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-can-insert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1694,10 +1677,9 @@ whether insertions are allowed at a given position.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.26.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-can-insert.returns"></a><h4>Returns</h4>
 <p> whether text inserted at <em class="parameter"><code>iter</code></em>
 would be editable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1711,8 +1693,8 @@ breaks are determined by Pango and should be correct for nearly any
 language (if not, the correct fix would be to the Pango word break
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.27.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-starts-word.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1726,10 +1708,9 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.27.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-starts-word.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is at the start of a word</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1743,8 +1724,8 @@ are determined by Pango and should be correct for nearly any
 language (if not, the correct fix would be to the Pango word break
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.28.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-ends-word.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1758,10 +1739,9 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.28.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-ends-word.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is at the end of a word</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1775,8 +1755,8 @@ opposed to say inside some whitespace).  Word breaks are determined
 by Pango and should be correct for nearly any language (if not, the
 correct fix would be to the Pango word break algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.29.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-inside-word.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1790,10 +1770,9 @@ correct fix would be to the Pango word break algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.29.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-inside-word.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is inside a word</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1808,8 +1787,8 @@ However this function is potentially more efficient than
 <a class="link" href="GtkTextIter.html#gtk-text-iter-get-line-offset" title="gtk_text_iter_get_line_offset ()"><code class="function">gtk_text_iter_get_line_offset()</code></a> because it doesn't have to compute
 the offset, it just has to see whether it's 0.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.30.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-starts-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1823,10 +1802,9 @@ the offset, it just has to see whether it's 0.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.30.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-starts-line.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 begins a line</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1844,8 +1822,8 @@ the end of a line, the line ends before the \r. The end iterator is
 considered to be at the end of a line, even though there are no
 paragraph delimiter chars there.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.31.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-ends-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1859,10 +1837,9 @@ paragraph delimiter chars there.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.31.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-ends-line.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 is at the end of a line</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1876,8 +1853,8 @@ determined by Pango and should be correct for nearly any language
 (if not, the correct fix would be to the Pango text boundary
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.32.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-starts-sentence.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1891,10 +1868,9 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.32.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-starts-sentence.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is at the start of a sentence.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1908,8 +1884,8 @@ determined by Pango and should be correct for nearly any language
 (if not, the correct fix would be to the Pango text boundary
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.33.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-ends-sentence.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1923,10 +1899,9 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.33.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-ends-sentence.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is at the end of a sentence.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1941,8 +1916,8 @@ letter of the next sentence).  Sentence boundaries are determined
 by Pango and should be correct for nearly any language (if not, the
 correct fix would be to the Pango text boundary algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.34.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-inside-sentence.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1956,10 +1931,9 @@ correct fix would be to the Pango text boundary algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.34.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-inside-sentence.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is inside a sentence.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1970,8 +1944,8 @@ gtk_text_iter_is_cursor_position (<em class="parameter"><code>const <a class="li
 <p>See <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-cursor-position" title="gtk_text_iter_forward_cursor_position ()"><code class="function">gtk_text_iter_forward_cursor_position()</code></a> or <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoLogAttr"><span class="type">PangoLogAttr</span></a> or
 <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#pango-break"><code class="function">pango_break()</code></a> for details on what a cursor position is.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.35.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-is-cursor-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1985,10 +1959,9 @@ gtk_text_iter_is_cursor_position (<em class="parameter"><code>const <a class="li
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.35.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-is-cursor-position.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cursor can be placed at <em class="parameter"><code>iter</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2000,8 +1973,8 @@ gtk_text_iter_get_chars_in_line (<em class="parameter"><code>const <a class="lin
 ,
 including the paragraph delimiters.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.36.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-chars-in-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2015,9 +1988,8 @@ including the paragraph delimiters.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.36.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-chars-in-line.returns"></a><h4>Returns</h4>
 <p> number of characters in the line</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2029,8 +2001,8 @@ gtk_text_iter_get_bytes_in_line (<em class="parameter"><code>const <a class="lin
 ,
 including the paragraph delimiters.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.37.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-bytes-in-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2044,9 +2016,8 @@ including the paragraph delimiters.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.37.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-bytes-in-line.returns"></a><h4>Returns</h4>
 <p> number of bytes in the line</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2067,8 +2038,8 @@ effects of any tags present at <em class="parameter"><code>iter</code></em>
 ,
 the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.38.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2089,16 +2060,15 @@ the function returns <a href="https://developer.gnome.org/glib/unstable/glib-Sta
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.38.7"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-attributes.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>values</code></em>
 was modified</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-text-iter-get-language"></a><h3>gtk_text_iter_get_language ()</h3>
-<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Scripts-and-Languages.html#PangoLanguage"><span class="returnvalue">PangoLanguage</span></a> *
+<pre class="programlisting"><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Scripts-and-Languages.html#PangoLanguage-struct"><span class="returnvalue">PangoLanguage</span></a> *
 gtk_text_iter_get_language (<em class="parameter"><code>const <a class="link" href="GtkTextIter.html" title="GtkTextIter"><span class="type">GtkTextIter</span></a> *iter</code></em>);</pre>
 <p>A convenience wrapper around <a class="link" href="GtkTextIter.html#gtk-text-iter-get-attributes" title="gtk_text_iter_get_attributes ()"><code class="function">gtk_text_iter_get_attributes()</code></a>,
 which returns the language in effect at <em class="parameter"><code>iter</code></em>
@@ -2107,8 +2077,8 @@ language apply to <em class="parameter"><code>iter</code></em>
 , the return value is identical to that of
 <a class="link" href="gtk2-General.html#gtk-get-default-language" title="gtk_get_default_language ()"><code class="function">gtk_get_default_language()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.39.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-get-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2122,10 +2092,9 @@ language apply to <em class="parameter"><code>iter</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.39.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-get-language.returns"></a><h4>Returns</h4>
 <p> language in effect at <em class="parameter"><code>iter</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2139,8 +2108,8 @@ dereferenceable iterator in the buffer. <a class="link" href="GtkTextIter.html#g
 the most efficient way to check whether an iterator is the end
 iterator.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.40.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-is-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2154,10 +2123,9 @@ iterator.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.40.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-is-end.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 is the end iterator</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2170,8 +2138,8 @@ gtk_text_iter_is_start (<em class="parameter"><code>const <a class="link" href="
 if <em class="parameter"><code>iter</code></em>
  has a character offset of 0.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.41.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-is-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2185,10 +2153,9 @@ if <em class="parameter"><code>iter</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.41.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-is-start.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 is the first in the buffer</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2207,8 +2174,8 @@ end iterator or one character before it, <em class="parameter"><code>iter</code>
 the end iterator, and <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-char" title="gtk_text_iter_forward_char ()"><code class="function">gtk_text_iter_forward_char()</code></a> returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for
 convenience when writing loops.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.42.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-char.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2222,10 +2189,9 @@ convenience when writing loops.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.42.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-char.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved and is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2239,8 +2205,8 @@ was possible; if <em class="parameter"><code>iter</code></em>
 offset 0), <a class="link" href="GtkTextIter.html#gtk-text-iter-backward-char" title="gtk_text_iter_backward_char ()"><code class="function">gtk_text_iter_backward_char()</code></a> returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for convenience when
 writing loops.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.43.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-char.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2254,9 +2220,8 @@ writing loops.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.43.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-char.returns"></a><h4>Returns</h4>
 <p> whether movement was possible</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2276,8 +2241,8 @@ buffer). The return value indicates whether the new position of
 
 is 0, the function does nothing and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.44.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-chars.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2298,10 +2263,9 @@ is 0, the function does nothing and returns <a href="https://developer.gnome.org
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.44.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-chars.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved and is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2320,8 +2284,8 @@ moved onto the end iterator, then <a href="https://developer.gnome.org/glib/unst
  is 0,
 the function does nothing and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.45.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-chars.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2342,10 +2306,9 @@ the function does nothing and returns <a href="https://developer.gnome.org/glib/
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.45.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-chars.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved and is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2359,8 +2322,8 @@ last line of the buffer, moves the iter to the end of the current line.
 If after the operation, the iter is at the end of the buffer and not
 dereferencable, returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>. Otherwise, returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.46.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2374,10 +2337,9 @@ dereferencable, returns <a href="https://developer.gnome.org/glib/unstable/glib-
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.46.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-line.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 can be dereferenced</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2398,8 +2360,8 @@ the line and the function returns <a href="https://developer.gnome.org/glib/unst
 in a loop calling this function, the line number may not change on
 every iteration, if your first iteration is on line 0.)</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.47.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2413,10 +2375,9 @@ every iteration, if your first iteration is on line 0.)</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.47.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-line.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2438,8 +2399,8 @@ the function does nothing and returns <a href="https://developer.gnome.org/glib/
 moves backward by 0 - <em class="parameter"><code>count</code></em>
  lines.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.48.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-lines.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2460,10 +2421,9 @@ moves backward by 0 - <em class="parameter"><code>count</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.48.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-lines.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved and is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2485,8 +2445,8 @@ the function does nothing and returns <a href="https://developer.gnome.org/glib/
 moves forward by 0 - <em class="parameter"><code>count</code></em>
  lines.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.49.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-lines.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2507,10 +2467,9 @@ moves forward by 0 - <em class="parameter"><code>count</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.49.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-lines.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved and is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2522,8 +2481,8 @@ gtk_text_iter_forward_word_ends (<em class="parameter"><code><a class="link" hre
 <p>Calls <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-word-end" title="gtk_text_iter_forward_word_end ()"><code class="function">gtk_text_iter_forward_word_end()</code></a> up to <em class="parameter"><code>count</code></em>
  times.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.50.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-word-ends.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2544,10 +2503,9 @@ gtk_text_iter_forward_word_ends (<em class="parameter"><code><a class="link" hre
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.50.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-word-ends.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2559,8 +2517,8 @@ gtk_text_iter_backward_word_starts (<em class="parameter"><code><a class="link" 
 <p>Calls <a class="link" href="GtkTextIter.html#gtk-text-iter-backward-word-start" title="gtk_text_iter_backward_word_start ()"><code class="function">gtk_text_iter_backward_word_start()</code></a> up to <em class="parameter"><code>count</code></em>
  times.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.51.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-word-starts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2581,10 +2539,9 @@ gtk_text_iter_backward_word_starts (<em class="parameter"><code><a class="link" 
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.51.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-word-starts.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2599,8 +2556,8 @@ are determined by Pango and should be correct for nearly any
 language (if not, the correct fix would be to the Pango word break
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.52.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-word-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2614,10 +2571,9 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.52.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-word-end.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2632,8 +2588,8 @@ are determined by Pango and should be correct for nearly any
 language (if not, the correct fix would be to the Pango word break
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.53.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-word-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2647,10 +2603,9 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.53.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-word-start.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2670,8 +2625,8 @@ mark" that causes the accent to be rendered; so the cursor can't go
 between those two characters. See also the <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#PangoLogAttr"><span class="type">PangoLogAttr</span></a> structure and
 <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Text-Processing.html#pango-break"><code class="function">pango_break()</code></a> function.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.54.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-cursor-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2685,9 +2640,8 @@ between those two characters. See also the <a href="/home/mclasen/gnome/share/gt
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.54.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-cursor-position.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new position is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2698,8 +2652,8 @@ gtk_text_iter_backward_cursor_position
                                (<em class="parameter"><code><a class="link" href="GtkTextIter.html" title="GtkTextIter"><span class="type">GtkTextIter</span></a> *iter</code></em>);</pre>
 <p>Like <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-cursor-position" title="gtk_text_iter_forward_cursor_position ()"><code class="function">gtk_text_iter_forward_cursor_position()</code></a>, but moves backward.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.55.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-cursor-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2713,9 +2667,8 @@ gtk_text_iter_backward_cursor_position
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.55.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-cursor-position.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2729,8 +2682,8 @@ gtk_text_iter_forward_cursor_positions
  cursor positions. See
 <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-cursor-position" title="gtk_text_iter_forward_cursor_position ()"><code class="function">gtk_text_iter_forward_cursor_position()</code></a> for details.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.56.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-cursor-positions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2751,9 +2704,8 @@ gtk_text_iter_forward_cursor_positions
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.56.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-cursor-positions.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new position is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2767,8 +2719,8 @@ gtk_text_iter_backward_cursor_positions
  cursor positions. See
 <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-cursor-position" title="gtk_text_iter_forward_cursor_position ()"><code class="function">gtk_text_iter_forward_cursor_position()</code></a> for details.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.57.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-cursor-positions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2789,9 +2741,8 @@ gtk_text_iter_backward_cursor_positions
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.57.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-cursor-positions.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new position is dereferenceable</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2806,8 +2757,8 @@ boundaries are determined by Pango and should be correct for nearly
 any language (if not, the correct fix would be to the Pango text
 boundary algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.58.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-sentence-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2821,10 +2772,9 @@ boundary algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.58.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-sentence-start.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2840,8 +2790,8 @@ or until it returns <a href="https://developer.gnome.org/glib/unstable/glib-Stan
  is negative, moves forward
 instead of backward.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.59.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-sentence-starts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2862,10 +2812,9 @@ instead of backward.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.59.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-sentence-starts.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2880,8 +2829,8 @@ boundaries are determined by Pango and should be correct for nearly
 any language (if not, the correct fix would be to the Pango text
 boundary algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.60.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-sentence-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2895,10 +2844,9 @@ boundary algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.60.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-sentence-end.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2913,8 +2861,8 @@ gtk_text_iter_forward_sentence_ends (<em class="parameter"><code><a class="link"
  is
 negative, moves backward instead of forward.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.61.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-sentence-ends.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2935,10 +2883,9 @@ negative, moves backward instead of forward.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.61.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-sentence-ends.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -2951,8 +2898,8 @@ gtk_text_iter_forward_visible_word_ends
 <p>Calls <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-visible-word-end" title="gtk_text_iter_forward_visible_word_end ()"><code class="function">gtk_text_iter_forward_visible_word_end()</code></a> up to <em class="parameter"><code>count</code></em>
  times.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.62.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-visible-word-ends.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2973,12 +2920,11 @@ gtk_text_iter_forward_visible_word_ends
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.62.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-visible-word-ends.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2990,8 +2936,8 @@ gtk_text_iter_backward_visible_word_starts
 <p>Calls <a class="link" href="GtkTextIter.html#gtk-text-iter-backward-visible-word-start" title="gtk_text_iter_backward_visible_word_start ()"><code class="function">gtk_text_iter_backward_visible_word_start()</code></a> up to <em class="parameter"><code>count</code></em>
  times.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.63.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-visible-word-starts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3012,12 +2958,11 @@ gtk_text_iter_backward_visible_word_starts
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.63.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-visible-word-starts.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3032,8 +2977,8 @@ are determined by Pango and should be correct for nearly any
 language (if not, the correct fix would be to the Pango word break
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.64.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-visible-word-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3047,12 +2992,11 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.64.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-visible-word-end.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3067,8 +3011,8 @@ are determined by Pango and should be correct for nearly any
 language (if not, the correct fix would be to the Pango word break
 algorithms).</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.65.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-visible-word-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3082,12 +3026,11 @@ algorithms).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.65.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-visible-word-start.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 moved and is not the end iterator </p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3099,8 +3042,8 @@ gtk_text_iter_forward_visible_cursor_position
  forward to the next visible cursor position. See 
 <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-cursor-position" title="gtk_text_iter_forward_cursor_position ()"><code class="function">gtk_text_iter_forward_cursor_position()</code></a> for details.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.66.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-visible-cursor-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3114,11 +3057,10 @@ gtk_text_iter_forward_visible_cursor_position
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.66.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-visible-cursor-position.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new position is dereferenceable</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3130,8 +3072,8 @@ gtk_text_iter_backward_visible_cursor_position
  forward to the previous visible cursor position. See 
 <a class="link" href="GtkTextIter.html#gtk-text-iter-backward-cursor-position" title="gtk_text_iter_backward_cursor_position ()"><code class="function">gtk_text_iter_backward_cursor_position()</code></a> for details.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.67.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-visible-cursor-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3145,11 +3087,10 @@ gtk_text_iter_backward_visible_cursor_position
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.67.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-visible-cursor-position.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new position is dereferenceable</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3162,8 +3103,8 @@ gtk_text_iter_forward_visible_cursor_positions
  visible cursor positions. See
 <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-cursor-position" title="gtk_text_iter_forward_cursor_position ()"><code class="function">gtk_text_iter_forward_cursor_position()</code></a> for details.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.68.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-visible-cursor-positions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3184,11 +3125,10 @@ gtk_text_iter_forward_visible_cursor_positions
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.68.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-visible-cursor-positions.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new position is dereferenceable</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3201,8 +3141,8 @@ gtk_text_iter_backward_visible_cursor_positions
  visible cursor positions. See
 <a class="link" href="GtkTextIter.html#gtk-text-iter-backward-cursor-position" title="gtk_text_iter_backward_cursor_position ()"><code class="function">gtk_text_iter_backward_cursor_position()</code></a> for details.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.69.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-visible-cursor-positions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3223,11 +3163,10 @@ gtk_text_iter_backward_visible_cursor_positions
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.69.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-visible-cursor-positions.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new position is dereferenceable</p>
-<p></p>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3242,8 +3181,8 @@ the end of the buffer and is now not dereferenceable, or if <em class="parameter
  was
 already at the end of the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.70.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-visible-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3257,12 +3196,11 @@ already at the end of the buffer.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.70.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-visible-line.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 can be dereferenced</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3282,8 +3220,8 @@ the line and the function returns <a href="https://developer.gnome.org/glib/unst
 in a loop calling this function, the line number may not change on
 every iteration, if your first iteration is on line 0.)</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.71.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-visible-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3297,12 +3235,11 @@ every iteration, if your first iteration is on line 0.)</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.71.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-visible-line.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3323,8 +3260,8 @@ the function does nothing and returns <a href="https://developer.gnome.org/glib/
 moves backward by 0 - <em class="parameter"><code>count</code></em>
  lines.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.72.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-visible-lines.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3345,12 +3282,11 @@ moves backward by 0 - <em class="parameter"><code>count</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.72.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-visible-lines.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved and is dereferenceable</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3371,8 +3307,8 @@ the function does nothing and returns <a href="https://developer.gnome.org/glib/
 moves forward by 0 - <em class="parameter"><code>count</code></em>
  lines.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.73.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-visible-lines.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3393,12 +3329,11 @@ moves forward by 0 - <em class="parameter"><code>count</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.73.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-visible-lines.returns"></a><h4>Returns</h4>
 <p> whether <em class="parameter"><code>iter</code></em>
 moved and is dereferenceable</p>
-<p></p>
 </div>
-<p class="since">Since 2.8</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -3412,8 +3347,8 @@ gtk_text_iter_set_offset (<em class="parameter"><code><a class="link" href="GtkT
  counts from the start
 of the entire text buffer, starting with 0.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.74.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-set-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3448,8 +3383,8 @@ gtk_text_iter_set_line (<em class="parameter"><code><a class="link" href="GtkTex
 buffer, moves <em class="parameter"><code>iter</code></em>
  to the start of the last line in the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.75.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-set-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3485,8 +3420,8 @@ moves to the start of the next line. See
 <a class="link" href="GtkTextIter.html#gtk-text-iter-set-line-index" title="gtk_text_iter_set_line_index ()"><code class="function">gtk_text_iter_set_line_index()</code></a> if you have a byte index rather than
 a character offset.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.76.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-set-line-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3519,8 +3454,8 @@ gtk_text_iter_set_line_index (<em class="parameter"><code><a class="link" href="
 the start of a character, it can't be in the middle of a UTF-8
 encoded character.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.77.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-set-line-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3552,8 +3487,8 @@ gtk_text_iter_set_visible_line_index (<em class="parameter"><code><a class="link
 bytes, i.e. text with a tag making it invisible is not counted
 in the index.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.78.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-set-visible-line-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3584,8 +3519,8 @@ gtk_text_iter_set_visible_line_offset (<em class="parameter"><code><a class="lin
 characters, i.e. text with a tag making it invisible is not
 counted in the offset.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.79.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-set-visible-line-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3616,8 +3551,8 @@ gtk_text_iter_forward_to_end (<em class="parameter"><code><a class="link" href="
 valid character in the buffer. <a class="link" href="GtkTextIter.html#gtk-text-iter-get-char" title="gtk_text_iter_get_char ()"><code class="function">gtk_text_iter_get_char()</code></a> called on the
 end iterator returns 0, which is convenient for writing loops.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.80.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-to-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3646,8 +3581,8 @@ next line. If <em class="parameter"><code>iter</code></em>
 not end in paragraph delimiters, moves to the end iterator (end of
 the last line), and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.81.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-to-line-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3661,9 +3596,8 @@ the last line), and returns <a href="https://developer.gnome.org/glib/unstable/g
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.81.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-to-line-end.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if we moved and the new location is not the end iterator</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -3685,8 +3619,8 @@ located at <em class="parameter"><code>iter</code></em>
 the location of the toggle, or to the end of the buffer
 if no toggle is found.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.82.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-to-tag-toggle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3707,10 +3641,9 @@ if no toggle is found.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.82.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-to-tag-toggle.returns"></a><h4>Returns</h4>
 <p> whether we found a tag toggle after <em class="parameter"><code>iter</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -3732,8 +3665,8 @@ located at <em class="parameter"><code>iter</code></em>
 to the location of the toggle, or the start of the buffer
 if no toggle is found.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.83.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-to-tag-toggle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3754,10 +3687,9 @@ if no toggle is found.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.83.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-to-tag-toggle.returns"></a><h4>Returns</h4>
 <p> whether we found a tag toggle before <em class="parameter"><code>iter</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -3768,10 +3700,6 @@ if no toggle is found.</p>
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 </p>
-<div class="refsect3">
-<a name="id-1.4.8.3.8.84.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -3793,8 +3721,8 @@ If <em class="parameter"><code>pred</code></em>
 <em class="parameter"><code>limit</code></em>
  is non-<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, otherwise to the end iterator.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.85.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-find-char.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3826,9 +3754,8 @@ If <em class="parameter"><code>pred</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.85.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-find-char.returns"></a><h4>Returns</h4>
 <p> whether a match was found</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -3842,8 +3769,8 @@ gtk_text_iter_backward_find_char (<em class="parameter"><code><a class="link" hr
 <p>Same as <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-find-char" title="gtk_text_iter_forward_find_char ()"><code class="function">gtk_text_iter_forward_find_char()</code></a>, but goes backward from <em class="parameter"><code>iter</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.86.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-find-char.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3875,9 +3802,8 @@ gtk_text_iter_backward_find_char (<em class="parameter"><code><a class="link" hr
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.86.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-find-char.returns"></a><h4>Returns</h4>
 <p> whether a match was found</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -3912,8 +3838,8 @@ flags are not given, the match must be exact; the special 0xFFFC
 character in <em class="parameter"><code>str</code></em>
  will match embedded pixbufs or child widgets.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.87.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-forward-search.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -3954,9 +3880,8 @@ character in <em class="parameter"><code>str</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.87.7"></a><h4>Returns</h4>
+<a name="gtk-text-iter-forward-search.returns"></a><h4>Returns</h4>
 <p> whether a match was found</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -3971,8 +3896,8 @@ gtk_text_iter_backward_search (<em class="parameter"><code>const <a class="link"
                                <em class="parameter"><code>const <a class="link" href="GtkTextIter.html" title="GtkTextIter"><span class="type">GtkTextIter</span></a> *limit</code></em>);</pre>
 <p>Same as <a class="link" href="GtkTextIter.html#gtk-text-iter-forward-search" title="gtk_text_iter_forward_search ()"><code class="function">gtk_text_iter_forward_search()</code></a>, but moves backward.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.88.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-backward-search.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4014,9 +3939,8 @@ gtk_text_iter_backward_search (<em class="parameter"><code>const <a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.88.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-backward-search.returns"></a><h4>Returns</h4>
 <p> whether a match was found</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -4031,8 +3955,8 @@ better than e.g. getting the character offset for each iterator and
 comparing the offsets yourself. Also, it's a bit faster than
 <a class="link" href="GtkTextIter.html#gtk-text-iter-compare" title="gtk_text_iter_compare ()"><code class="function">gtk_text_iter_compare()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.89.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4053,9 +3977,8 @@ comparing the offsets yourself. Also, it's a bit faster than
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.89.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-equal.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the iterators point to the same place in the buffer</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -4073,8 +3996,8 @@ gtk_text_iter_compare (<em class="parameter"><code>const <a class="link" href="G
 Ordering is in character offset order, i.e. the first character in the buffer
 is less than the second character in the buffer.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.90.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-compare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4095,12 +4018,11 @@ is less than the second character in the buffer.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.90.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-compare.returns"></a><h4>Returns</h4>
 <p> -1 if <em class="parameter"><code>lhs</code></em>
 is less than <em class="parameter"><code>rhs</code></em>
 , 1 if <em class="parameter"><code>lhs</code></em>
 is greater, 0 if they are equal</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -4118,8 +4040,8 @@ gtk_text_iter_in_range (<em class="parameter"><code>const <a class="link" href="
  and <em class="parameter"><code>end</code></em>
  must be in ascending order.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.91.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-in-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4145,10 +4067,9 @@ gtk_text_iter_in_range (<em class="parameter"><code>const <a class="link" href="
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.91.6"></a><h4>Returns</h4>
+<a name="gtk-text-iter-in-range.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>iter</code></em>
 is in the range</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -4170,8 +4091,8 @@ automatically on your behalf, so there's no real reason to call it yourself
 in those cases. There are some exceptions, such as <a class="link" href="GtkTextIter.html#gtk-text-iter-in-range" title="gtk_text_iter_in_range ()"><code class="function">gtk_text_iter_in_range()</code></a>,
 that expect a pre-sorted range.</p>
 <div class="refsect3">
-<a name="id-1.4.8.3.8.92.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-text-iter-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -4213,8 +4134,8 @@ that expect a pre-sorted range.</p>
 <p>
 </p>
 <div class="refsect3">
-<a name="id-1.4.8.3.9.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkTextSearchFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -4238,7 +4159,6 @@ that expect a pre-sorted range.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

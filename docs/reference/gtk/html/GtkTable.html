@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkTable</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkTable: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="LayoutContainers.html" title="Layout Containers">
 <link rel="prev" href="GtkNotebook.html" title="GtkNotebook">
 <link rel="next" href="GtkExpander.html" title="GtkExpander">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,7 +37,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkTable.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -168,7 +168,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTable.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -205,7 +205,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTable.child-properties"></a><h2>Child Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="child_properties_type">
 <col width="300px" class="child_properties_name">
@@ -257,7 +257,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTable.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -270,7 +270,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTable.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
@@ -332,8 +332,8 @@ must both be in the range 1 .. 65535. For historical reasons, 0 is accepted
 as well and is silently interpreted as 1.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -360,9 +360,8 @@ containing the largest widget.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.2.6"></a><h4>Returns</h4>
+<a name="gtk-table-new.returns"></a><h4>Returns</h4>
 <p>A pointer to the the newly created table widget.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -376,8 +375,8 @@ gtk_table_resize (<em class="parameter"><code><a class="link" href="GtkTable.htm
 If you need to change a table's size <span class="emphasis"><em>after</em></span> it has been created, this function allows you to do so.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-resize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -424,8 +423,8 @@ These each represent the leftmost, rightmost, uppermost and lowest column
 and row numbers of the table. (Columns and rows are indexed from zero).
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-attach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -500,8 +499,8 @@ gtk_table_attach_defaults (<em class="parameter"><code><a class="link" href="Gtk
 As there are many options associated with <a class="link" href="GtkTable.html#gtk-table-attach" title="gtk_table_attach ()"><code class="function">gtk_table_attach()</code></a>, this convenience function provides the programmer with a means to add children to a table with identical padding and expansion options. The values used for the <a class="link" href="gtk2-Standard-Enumerations.html#GtkAttachOptions" title="enum GtkAttachOptions"><span class="type">GtkAttachOptions</span></a> are <code class="literal">GTK_EXPAND | GTK_FILL</code>, and the padding is set to 0.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-attach-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -553,8 +552,8 @@ gtk_table_set_row_spacing (<em class="parameter"><code><a class="link" href="Gtk
 Changes the space between a given table row and the subsequent row.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-set-row-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -592,8 +591,8 @@ Alters the amount of space between a given table column and the following
 column.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-set-col-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -629,8 +628,8 @@ gtk_table_set_row_spacings (<em class="parameter"><code><a class="link" href="Gt
 Sets the space between every row in <em class="parameter"><code>table</code></em> equal to <em class="parameter"><code>spacing</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-set-row-spacings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -661,8 +660,8 @@ gtk_table_set_col_spacings (<em class="parameter"><code><a class="link" href="Gt
 Sets the space between every column in <em class="parameter"><code>table</code></em> equal to <em class="parameter"><code>spacing</code></em>.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-set-col-spacings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -693,8 +692,8 @@ gtk_table_set_homogeneous (<em class="parameter"><code><a class="link" href="Gtk
 Changes the homogenous property of table cells, ie. whether all cells are an equal size or not.
 </p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-set-homogeneous.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -725,8 +724,8 @@ gtk_table_get_default_row_spacing (<em class="parameter"><code><a class="link" h
 the spacing that will be used for newly added rows.
 (See <a class="link" href="GtkTable.html#gtk-table-set-row-spacings" title="gtk_table_set_row_spacings ()"><code class="function">gtk_table_set_row_spacings()</code></a>)</p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-get-default-row-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -740,9 +739,8 @@ the spacing that will be used for newly added rows.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.11.6"></a><h4>Returns</h4>
+<a name="gtk-table-get-default-row-spacing.returns"></a><h4>Returns</h4>
 <p> the default row spacing</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -753,8 +751,8 @@ gtk_table_get_homogeneous (<em class="parameter"><code><a class="link" href="Gtk
 <p>Returns whether the table cells are all constrained to the same
 width and height. (See <code class="function">gtk_table_set_homogenous()</code>)</p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.12.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-get-homogeneous.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -768,9 +766,8 @@ width and height. (See <code class="function">gtk_table_set_homogenous()</code>)
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.12.6"></a><h4>Returns</h4>
+<a name="gtk-table-get-homogeneous.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cells are all constrained to the same size</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -784,8 +781,8 @@ gtk_table_get_row_spacing (<em class="parameter"><code><a class="link" href="Gtk
 row <em class="parameter"><code>row</code></em>
  + 1. See <a class="link" href="GtkTable.html#gtk-table-set-row-spacing" title="gtk_table_set_row_spacing ()"><code class="function">gtk_table_set_row_spacing()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-get-row-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -806,9 +803,8 @@ row <em class="parameter"><code>row</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.13.6"></a><h4>Returns</h4>
+<a name="gtk-table-get-row-spacing.returns"></a><h4>Returns</h4>
 <p> the row spacing</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -822,8 +818,8 @@ gtk_table_get_col_spacing (<em class="parameter"><code><a class="link" href="Gtk
 column <em class="parameter"><code>col</code></em>
  + 1. See <a class="link" href="GtkTable.html#gtk-table-set-col-spacing" title="gtk_table_set_col_spacing ()"><code class="function">gtk_table_set_col_spacing()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-get-col-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -844,9 +840,8 @@ column <em class="parameter"><code>col</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.14.6"></a><h4>Returns</h4>
+<a name="gtk-table-get-col-spacing.returns"></a><h4>Returns</h4>
 <p> the column spacing</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -858,8 +853,8 @@ gtk_table_get_default_col_spacing (<em class="parameter"><code><a class="link" h
 the spacing that will be used for newly added columns.
 (See <a class="link" href="GtkTable.html#gtk-table-set-col-spacings" title="gtk_table_set_col_spacings ()"><code class="function">gtk_table_set_col_spacings()</code></a>)</p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-get-default-col-spacing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -873,9 +868,8 @@ the spacing that will be used for newly added columns.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.15.6"></a><h4>Returns</h4>
+<a name="gtk-table-get-default-col-spacing.returns"></a><h4>Returns</h4>
 <p> the default column spacing</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -887,8 +881,8 @@ gtk_table_get_size (<em class="parameter"><code><a class="link" href="GtkTable.h
                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *columns</code></em>);</pre>
 <p>Returns the number of rows and columns in the table.</p>
 <div class="refsect3">
-<a name="id-1.4.13.13.11.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-table-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -915,7 +909,7 @@ of columns, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 2.22</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -1075,7 +1069,6 @@ The <span class="structname">GtkTable</span> structure holds the data for the ac
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

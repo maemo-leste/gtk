@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCellRendererSpinner</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCellRendererSpinner: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkCellRendererToggle.html" title="GtkCellRendererToggle">
 <link rel="next" href="GtkListStore.html" title="GtkListStore">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,13 +29,13 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkCellRendererSpinner.top_of_page"></a>GtkCellRendererSpinner</span></h2>
-<p>GtkCellRendererSpinner — Renders a spinning animation in a cell</p>
+<p>GtkCellRendererSpinner</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCellRendererSpinner.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -52,7 +52,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererSpinner.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -79,7 +79,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererSpinner.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -92,7 +92,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererSpinner.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer">GtkCellRenderer</a>
@@ -106,15 +106,6 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererSpinner.description"></a><h2>Description</h2>
-<p>GtkCellRendererSpinner renders a spinning animation in a cell, very
-similar to <a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a>. It can often be used as an alternative
-to a <a class="link" href="GtkCellRendererProgress.html" title="GtkCellRendererProgress"><span class="type">GtkCellRendererProgress</span></a> for displaying indefinite activity,
-instead of actual progress.</p>
-<p>To start the animation in a cell, set the <a class="link" href="GtkCellRendererSpinner.html#GtkCellRendererSpinner--active" title="The “active” property"><span class="type">“active”</span></a>
-property to <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> and increment the <a class="link" href="GtkCellRendererSpinner.html#GtkCellRendererSpinner--pulse" title="The “pulse” property"><span class="type">“pulse”</span></a> property
-at regular intervals. The usual way to set the cell renderer properties
-for each cell is to bind them to columns in your tree model using e.g.
-<a class="link" href="GtkTreeViewColumn.html#gtk-tree-view-column-add-attribute" title="gtk_tree_view_column_add_attribute ()"><code class="function">gtk_tree_view_column_add_attribute()</code></a>.</p>
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererSpinner.functions_details"></a><h2>Functions</h2>
@@ -122,14 +113,7 @@ for each cell is to bind them to columns in your tree model using e.g.
 <a name="gtk-cell-renderer-spinner-new"></a><h3>gtk_cell_renderer_spinner_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="returnvalue">GtkCellRenderer</span></a> *
 gtk_cell_renderer_spinner_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<p>Returns a new cell renderer which will show a spinner to indicate
-activity.</p>
-<div class="refsect3">
-<a name="id-1.4.9.23.9.2.5"></a><h4>Returns</h4>
-<p> a new <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer"><span class="type">GtkCellRenderer</span></a></p>
-<p></p>
-</div>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -137,8 +121,6 @@ activity.</p>
 <div class="refsect2">
 <a name="GtkCellRendererSpinner-struct"></a><h3>struct GtkCellRendererSpinner</h3>
 <pre class="programlisting">struct GtkCellRendererSpinner;</pre>
-<p>
-</p>
 </div>
 </div>
 <div class="refsect1">
@@ -154,33 +136,23 @@ activity.</p>
 <div class="refsect2">
 <a name="GtkCellRendererSpinner--pulse"></a><h3>The <code class="literal">“pulse”</code> property</h3>
 <pre class="programlisting">  “pulse”                    <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
-<p>Pulse of the spinner. Increment this value to draw the next frame of the
-spinner animation. Usually, you would update this value in a timeout.</p>
-<p>The <a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a> widget draws one full cycle of the animation per second by default.
-You can learn about the number of frames used by the theme
-by looking at the <span class="type">“num-steps”</span> style property and the duration
-of the cycle by looking at <span class="type">“cycle-duration”</span>.</p>
+<p>Pulse of the spinner.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkCellRendererSpinner--size"></a><h3>The <code class="literal">“size”</code> property</h3>
 <pre class="programlisting">  “size”                     <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSize" title="enum GtkIconSize"><span class="type">GtkIconSize</span></a></pre>
-<p>The <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSize" title="enum GtkIconSize"><span class="type">GtkIconSize</span></a> value that specifies the size of the rendered spinner.</p>
+<p>The GtkIconSize value that specifies the size of the rendered spinner.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_ICON_SIZE_MENU</p>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
-</div>
-<div class="refsect1">
-<a name="GtkCellRendererSpinner.see-also"></a><h2>See Also</h2>
-<p><a class="link" href="GtkSpinner.html" title="GtkSpinner"><span class="type">GtkSpinner</span></a>, <a class="link" href="GtkCellRendererProgress.html" title="GtkCellRendererProgress"><span class="type">GtkCellRendererProgress</span></a></p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

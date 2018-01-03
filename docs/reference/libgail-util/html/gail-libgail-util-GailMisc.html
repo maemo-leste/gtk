@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GAIL Reference Manual: GailMisc</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GailMisc: GAIL Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GAIL Reference Manual">
 <link rel="up" href="libgail-util-main.html" title="GAIL libgail-util Library">
 <link rel="prev" href="gail-libgail-util-GailTextUtil.html" title="GailTextUtil">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gail-libgail-util-GailMisc.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -126,8 +126,8 @@ gail_misc_add_attribute (<em class="parameter"><code><span class="type">AtkAttri
 to <em class="parameter"><code>attrib_set</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-add-attribute.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -153,9 +153,8 @@ to <em class="parameter"><code>attrib_set</code></em>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.5.2.6"></a><h4>Returns</h4>
+<a name="gail-misc-add-attribute.returns"></a><h4>Returns</h4>
 <p> A pointer to the new <span class="type">AtkAttributeSet</span>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -163,7 +162,7 @@ to <em class="parameter"><code>attrib_set</code></em>
 <a name="gail-misc-layout-get-run-attributes"></a><h3>gail_misc_layout_get_run_attributes ()</h3>
 <pre class="programlisting"><span class="returnvalue">AtkAttributeSet</span> *
 gail_misc_layout_get_run_attributes (<em class="parameter"><code><span class="type">AtkAttributeSet</span> *attrib_set</code></em>,
-                                     <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> *layout</code></em>,
+                                     <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>,
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> offset</code></em>,
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *start_offset</code></em>,
@@ -171,8 +170,8 @@ gail_misc_layout_get_run_attributes (<em class="parameter"><code><span class="ty
 <p>Adds the attributes for the run starting at offset to the specified
 attribute set.</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-layout-get-run-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -213,9 +212,8 @@ attribute set.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.5.3.6"></a><h4>Returns</h4>
+<a name="gail-misc-layout-get-run-attributes.returns"></a><h4>Returns</h4>
 <p> A pointer to the <span class="type">AtkAttributeSet</span>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -223,12 +221,12 @@ attribute set.</p>
 <a name="gail-misc-get-default-attributes"></a><h3>gail_misc_get_default_attributes ()</h3>
 <pre class="programlisting"><span class="returnvalue">AtkAttributeSet</span> *
 gail_misc_get_default_attributes (<em class="parameter"><code><span class="type">AtkAttributeSet</span> *attrib_set</code></em>,
-                                  <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> *layout</code></em>,
-                                  <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+                                  <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>,
+                                  <em class="parameter"><code><a href="http://developer.gnome.org/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
 <p>Adds the default attributes to the specified attribute set.</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-get-default-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -254,9 +252,8 @@ gail_misc_get_default_attributes (<em class="parameter"><code><span class="type"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.5.4.6"></a><h4>Returns</h4>
+<a name="gail-misc-get-default-attributes.returns"></a><h4>Returns</h4>
 <p> A pointer to the <span class="type">AtkAttributeSet</span>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -264,7 +261,7 @@ gail_misc_get_default_attributes (<em class="parameter"><code><span class="type"
 <a name="gail-misc-get-extents-from-pango-rectangle"></a><h3>gail_misc_get_extents_from_pango_rectangle ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gail_misc_get_extents_from_pango_rectangle
-                               (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                               (<em class="parameter"><code><a href="http://developer.gnome.org/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *widget</code></em>,
                                 <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Glyph-Storage.html#PangoRectangle"><span class="type">PangoRectangle</span></a> *char_rect</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_layout</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_layout</code></em>,
@@ -279,8 +276,8 @@ relative to either top-level window or screen coordinates as
 specified by <em class="parameter"><code>coords</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-get-extents-from-pango-rectangle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -348,8 +345,8 @@ PangoLayout that contains the PangoRectangle, relative to <em class="parameter">
 <a name="gail-misc-get-index-at-point-in-layout"></a><h3>gail_misc_get_index_at_point_in_layout ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 gail_misc_get_index_at_point_in_layout
-                               (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                                <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> *layout</code></em>,
+                               (<em class="parameter"><code><a href="http://developer.gnome.org/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                                <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_layout</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_layout</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
@@ -357,10 +354,10 @@ gail_misc_get_index_at_point_in_layout
                                 <em class="parameter"><code><span class="type">AtkCoordType</span> coords</code></em>);</pre>
 <p>Gets the byte offset at the specified <em class="parameter"><code>x</code></em>
  and <em class="parameter"><code>y</code></em>
- in a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a>.</p>
+ in a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-get-index-at-point-in-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -369,26 +366,26 @@ gail_misc_get_index_at_point_in_layout
 <tbody>
 <tr>
 <td class="parameter_name"><p>widget</p></td>
-<td class="parameter_description"><p>A <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_description"><p>A <a href="http://developer.gnome.org/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>layout</p></td>
-<td class="parameter_description"><p>The <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a> from which to get the index at the
+<td class="parameter_description"><p>The <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> from which to get the index at the
 specified point.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>x_layout</p></td>
 <td class="parameter_description"><p>The x-offset at which the widget displays the
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a>, relative to <em class="parameter"><code>widget</code></em>
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a>, relative to <em class="parameter"><code>widget</code></em>
 </p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>y_layout</p></td>
 <td class="parameter_description"><p>The y-offset at which the widget displays the
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a>, relative to <em class="parameter"><code>widget</code></em>
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a>, relative to <em class="parameter"><code>widget</code></em>
 </p></td>
 <td class="parameter_annotations"> </td>
 </tr>
@@ -415,19 +412,18 @@ calculate the index</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.5.6.6"></a><h4>Returns</h4>
+<a name="gail-misc-get-index-at-point-in-layout.returns"></a><h4>Returns</h4>
 <p> the byte offset at the specified <em class="parameter"><code>x</code></em>
 and <em class="parameter"><code>y</code></em>
 in a
-<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout"><span class="type">PangoLayout</span></a></p>
-<p></p>
+<a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gail-misc-get-origins"></a><h3>gail_misc_get_origins ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gail_misc_get_origins (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *widget</code></em>,
+gail_misc_get_origins (<em class="parameter"><code><a href="http://developer.gnome.org/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *widget</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x_window</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y_window</code></em>,
                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x_toplevel</code></em>,
@@ -435,8 +431,8 @@ gail_misc_get_origins (<em class="parameter"><code><a href="http://developer.gno
 <p>Gets the origin of the widget window, and the origin of the
 widgets top-level window.</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-get-origins.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -445,7 +441,7 @@ widgets top-level window.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>widget</p></td>
-<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_description"><p>a <a href="http://developer.gnome.org/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -477,13 +473,13 @@ widgets top-level window.</p>
 <a name="gail-misc-add-to-attr-set"></a><h3>gail_misc_add_to_attr_set ()</h3>
 <pre class="programlisting"><span class="returnvalue">AtkAttributeSet</span> *
 gail_misc_add_to_attr_set (<em class="parameter"><code><span class="type">AtkAttributeSet</span> *attrib_set</code></em>,
-                           <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTextTag.html#GtkTextAttributes"><span class="type">GtkTextAttributes</span></a> *attrs</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/gtk3/GtkTextTag.html#GtkTextAttributes"><span class="type">GtkTextAttributes</span></a> *attrs</code></em>,
                            <em class="parameter"><code><span class="type">AtkTextAttribute</span> attr</code></em>);</pre>
 <p>Gets the value for the AtkTextAttribute from the GtkTextAttributes
 and adds it to the AttributeSet.</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-add-to-attr-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -497,7 +493,7 @@ and adds it to the AttributeSet.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>attrs</p></td>
-<td class="parameter_description"><p>The <a href="http://developer.gnome.org/gtk2/GtkTextTag.html#GtkTextAttributes"><span class="type">GtkTextAttributes</span></a> containing the attribute value</p></td>
+<td class="parameter_description"><p>The <a href="http://developer.gnome.org/gtk3/GtkTextTag.html#GtkTextAttributes"><span class="type">GtkTextAttributes</span></a> containing the attribute value</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -509,24 +505,23 @@ and adds it to the AttributeSet.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.5.8.6"></a><h4>Returns</h4>
+<a name="gail-misc-add-to-attr-set.returns"></a><h4>Returns</h4>
 <p> A pointer to the updated <span class="type">AtkAttributeSet</span>.</p>
-<p></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gail-misc-buffer-get-run-attributes"></a><h3>gail_misc_buffer_get_run_attributes ()</h3>
 <pre class="programlisting"><span class="returnvalue">AtkAttributeSet</span> *
-gail_misc_buffer_get_run_attributes (<em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkTextBuffer.html"><span class="type">GtkTextBuffer</span></a> *buffer</code></em>,
+gail_misc_buffer_get_run_attributes (<em class="parameter"><code><a href="http://developer.gnome.org/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a> *buffer</code></em>,
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> offset</code></em>,
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *start_offset</code></em>,
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *end_offset</code></em>);</pre>
 <p>Creates an AtkAttributeSet which contains the attributes for the 
 run starting at offset.</p>
 <div class="refsect3">
-<a name="id-1.2.3.5.9.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gail-misc-buffer-get-run-attributes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -535,7 +530,7 @@ run starting at offset.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>buffer</p></td>
-<td class="parameter_description"><p>The <a href="http://developer.gnome.org/gtk2/GtkTextBuffer.html"><span class="type">GtkTextBuffer</span></a> for which the attributes will be obtained</p></td>
+<td class="parameter_description"><p>The <a href="http://developer.gnome.org/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a> for which the attributes will be obtained</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -557,9 +552,8 @@ run starting at offset.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.5.9.6"></a><h4>Returns</h4>
+<a name="gail-misc-buffer-get-run-attributes.returns"></a><h4>Returns</h4>
 <p> A pointer to the <span class="type">AtkAttributeSet</span>.</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -568,7 +562,6 @@ run starting at offset.</p>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

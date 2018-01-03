@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Resource Files</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Resource Files: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Themeable-Stock-Images.html" title="Themeable Stock Images">
 <link rel="next" href="GtkSettings.html" title="Settings">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -34,7 +34,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gtk2-Resource-Files.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -245,7 +245,7 @@
 </div>
 <a name="GtkRcStyle"></a><div class="refsect1">
 <a name="gtk2-Resource-Files.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -280,7 +280,7 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Resource-Files.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkRcStyle
 </pre>
 </div>
@@ -755,7 +755,7 @@ settings</code></em> }</code></span></p></td>
 <tr>
 <td><p><span class="term"><code class="literal"><em class="replaceable"><code>class</code></em>::<em class="replaceable"><code>property</code></em> = <em class="replaceable"><code>value</code></em></code></span></p></td>
 <td><p>
-        Sets a <a class="link" href="GtkWidget.html#style-properties">style property</a> for a widget class.
+        Sets a style property for a widget class.
        </p></td>
 </tr>
 </tbody>
@@ -1106,10 +1106,6 @@ same as for styles.
 gtk_rc_scanner_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 </p>
-<div class="refsect3">
-<a name="id-1.3.10.9.2.5"></a><h4>Returns</h4>
-<p></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1123,8 +1119,8 @@ composites them together, and then creates a
 created styles, so a new style may not be
 created.)</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-get-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1138,7 +1134,7 @@ created.)</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.3.6"></a><h4>Returns</h4>
+<a name="gtk-rc-get-style.returns"></a><h4>Returns</h4>
 <p> the resulting style. No refcount is added
 to the returned style, so if you want to save this
 style around, you should add a reference yourself. </p>
@@ -1180,8 +1176,8 @@ would be items inside a GNOME canvas widget.</p>
 
 <p></p>
 <div class="refsect3">
-<a name="id-1.3.10.9.4.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-get-style-by-paths.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1215,7 +1211,7 @@ when matching against class styles, or <a href="https://developer.gnome.org/gobj
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.4.9"></a><h4>Returns</h4>
+<a name="gtk-rc-get-style-by-paths.returns"></a><h4>Returns</h4>
 <p> A style created by matching with the
 supplied paths, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if nothing matching was specified and the
 default style should be used. The returned value is owned by GTK+
@@ -1241,8 +1237,8 @@ the widget's pathname. This is equivalent to a:
 statement in a RC file.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.5.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-add-widget-name-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1281,8 +1277,8 @@ the widget's class pathname. This is equivalent to a:
 statement in a RC file.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-add-widget-class-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1321,8 +1317,8 @@ the class hierarchy of the widget. This is equivalent to a:
 statement in a RC file.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.7.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-add-class-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1353,8 +1349,8 @@ gtk_rc_parse_string (<em class="parameter"><code>const <a href="https://develope
 Parses resource information directly from a string.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.8.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-parse-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1377,9 +1373,8 @@ gtk_rc_reparse_all (<em class="parameter"><code><span class="type">void</span></
 default <a class="link" href="GtkSettings.html" title="Settings"><span class="type">GtkSettings</span></a> has changed, discard all style information
 and then reread all previously read RC files.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.9.5"></a><h4>Returns</h4>
+<a name="gtk-rc-reparse-all.returns"></a><h4>Returns</h4>
 <p>  <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the files were reread.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1392,8 +1387,8 @@ gtk_rc_reparse_all_for_settings (<em class="parameter"><code><a class="link" hre
 for the given <a class="link" href="GtkSettings.html" title="Settings"><span class="type">GtkSettings</span></a> has changed, discard all style information
 and then reread all previously read RC files.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.10.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-reparse-all-for-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1414,9 +1409,8 @@ and then reread all previously read RC files.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.10.6"></a><h4>Returns</h4>
+<a name="gtk-rc-reparse-all-for-settings.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the files were reread.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1426,7 +1420,7 @@ and then reread all previously read RC files.</p>
 gtk_rc_reset_styles (<em class="parameter"><code><a class="link" href="GtkSettings.html" title="Settings"><span class="type">GtkSettings</span></a> *settings</code></em>);</pre>
 <p>This function recomputes the styles for all widgets that use a
 particular <a class="link" href="GtkSettings.html" title="Settings"><span class="type">GtkSettings</span></a> object. (There is one <a class="link" href="GtkSettings.html" title="Settings"><span class="type">GtkSettings</span></a> object
-per <a href="http://library.gnome.org/devel/gdk3/GdkScreen.html"><span class="type">GdkScreen</span></a>, see <a class="link" href="GtkSettings.html#gtk-settings-get-for-screen" title="gtk_settings_get_for_screen ()"><code class="function">gtk_settings_get_for_screen()</code></a>); It is useful
+per <a href="../html/GdkScreen.html#GdkScreen-struct"><span class="type">GdkScreen</span></a>, see <a class="link" href="GtkSettings.html#gtk-settings-get-for-screen" title="gtk_settings_get_for_screen ()"><code class="function">gtk_settings_get_for_screen()</code></a>); It is useful
 when some global parameter has changed that affects the appearance
 of all widgets, because when a widget gets a new style, it will
 both redraw and recompute any cached information about its
@@ -1435,8 +1429,8 @@ set by the operating system changes. Note that this function
 doesn't affect widgets that have a style set explicitely on them
 with <a class="link" href="GtkWidget.html#gtk-widget-set-style" title="gtk_widget_set_style ()"><code class="function">gtk_widget_set_style()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.11.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-reset-styles.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1449,7 +1443,7 @@ with <a class="link" href="GtkWidget.html#gtk-widget-set-style" title="gtk_widge
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 2.4</p>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1459,7 +1453,7 @@ gtk_rc_get_default_files (<em class="parameter"><code><span class="type">void</s
 <p>Retrieves the current list of RC files that will be parsed
 at the end of <a class="link" href="gtk2-General.html#gtk-init" title="gtk_init ()"><code class="function">gtk_init()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.12.5"></a><h4>Returns</h4>
+<a name="gtk-rc-get-default-files.returns"></a><h4>Returns</h4>
 <p>    A <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of filenames.
 This memory is owned by GTK+ and must not be freed by the application.
 If you want to store this information, you should make a copy. </p>
@@ -1471,14 +1465,14 @@ If you want to store this information, you should make a copy. </p>
 <a name="gtk-rc-parse-color"></a><h3>gtk_rc_parse_color ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
 gtk_rc_parse_color (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Lexical-Scanner.html#GScanner"><span class="type">GScanner</span></a> *scanner</code></em>,
-                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                    <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Parses a color in the format expected
 in a RC file. </p>
 <p>Note that theme engines should use <a class="link" href="gtk2-Resource-Files.html#gtk-rc-parse-color-full" title="gtk_rc_parse_color_full ()"><code class="function">gtk_rc_parse_color_full()</code></a> in 
 order to support symbolic colors.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-parse-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1492,7 +1486,7 @@ order to support symbolic colors.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>color</p></td>
-<td class="parameter_description"><p> a pointer to a <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> structure in which to store
+<td class="parameter_description"><p> a pointer to a <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> structure in which to store
 the result. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
@@ -1500,10 +1494,9 @@ the result. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.13.7"></a><h4>Returns</h4>
-<p> <code class="literal">G_TOKEN_NONE</code> if parsing succeeded, otherwise the token
+<a name="gtk-rc-parse-color.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Lexical-Scanner.html#G-TOKEN-NONE:CAPS"><code class="literal">G_TOKEN_NONE</code></a> if parsing succeeded, otherwise the token
 that was expected but not found</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1512,14 +1505,14 @@ that was expected but not found</p>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
 gtk_rc_parse_color_full (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Lexical-Scanner.html#GScanner"><span class="type">GScanner</span></a> *scanner</code></em>,
                          <em class="parameter"><code><a class="link" href="gtk2-Resource-Files.html#GtkRcStyle"><span class="type">GtkRcStyle</span></a> *style</code></em>,
-                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+                         <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Parses a color in the format expected
 in a RC file. If <em class="parameter"><code>style</code></em>
  is not <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it will be consulted to resolve
 references to symbolic colors.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-parse-color-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1538,7 +1531,7 @@ references to symbolic colors.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>color</p></td>
-<td class="parameter_description"><p> a pointer to a <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> structure in which to store
+<td class="parameter_description"><p> a pointer to a <a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> structure in which to store
 the result. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
@@ -1546,12 +1539,11 @@ the result. </p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.14.6"></a><h4>Returns</h4>
-<p> <code class="literal">G_TOKEN_NONE</code> if parsing succeeded, otherwise the token
+<a name="gtk-rc-parse-color-full.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Lexical-Scanner.html#G-TOKEN-NONE:CAPS"><code class="literal">G_TOKEN_NONE</code></a> if parsing succeeded, otherwise the token
 that was expected but not found</p>
-<p></p>
 </div>
-<p class="since">Since 2.12</p>
+<p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1564,8 +1556,8 @@ Parses a <a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" tit
 in a RC file.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-parse-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1587,10 +1579,9 @@ store the result.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.15.6"></a><h4>Returns</h4>
-<p><code class="literal">G_TOKEN_NONE</code> if parsing succeeded, otherwise the token
+<a name="gtk-rc-parse-state.returns"></a><h4>Returns</h4>
+<p><a href="https://developer.gnome.org/glib/unstable/glib-Lexical-Scanner.html#G-TOKEN-NONE:CAPS"><code class="literal">G_TOKEN_NONE</code></a> if parsing succeeded, otherwise the token
 that was expected but not found.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1604,8 +1595,8 @@ Parses a <a class="link" href="gtk2-Standard-Enumerations.html#GtkPathPriorityTy
 in a RC file.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-parse-priority.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1627,10 +1618,9 @@ to store the result.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.16.6"></a><h4>Returns</h4>
-<p><code class="literal">G_TOKEN_NONE</code> if parsing succeeded, otherwise the token
+<a name="gtk-rc-parse-priority.returns"></a><h4>Returns</h4>
+<p><a href="https://developer.gnome.org/glib/unstable/glib-Lexical-Scanner.html#G-TOKEN-NONE:CAPS"><code class="literal">G_TOKEN_NONE</code></a> if parsing succeeded, otherwise the token
 that was expected but not found.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1641,8 +1631,8 @@ gtk_rc_find_module_in_path (<em class="parameter"><code>const <a href="https://d
 <p>Searches for a theme engine in the GTK+ search path. This function
 is not useful for applications and should not be used.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.17.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-find-module-in-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1656,10 +1646,9 @@ is not useful for applications and should not be used.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.17.6"></a><h4>Returns</h4>
+<a name="gtk-rc-find-module-in-path.returns"></a><h4>Returns</h4>
 <p> The filename, if found (must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>),
 otherwise <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1673,8 +1662,8 @@ gtk_rc_find_pixmap_in_path (<em class="parameter"><code><a class="link" href="Gt
 If the file is not found, it outputs a warning message using
 <a href="https://developer.gnome.org/glib/unstable/glib-Message-Logging.html#g-warning"><code class="function">g_warning()</code></a> and returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.18.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-find-pixmap-in-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1701,9 +1690,8 @@ warning message, or <a href="https://developer.gnome.org/glib/unstable/glib-Stan
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.18.6"></a><h4>Returns</h4>
+<a name="gtk-rc-find-pixmap-in-path.returns"></a><h4>Returns</h4>
 <p> the filename. </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1716,9 +1704,8 @@ For full information about the search for theme engines,
 see the docs for <code class="envar">GTK_PATH</code> in</p>
 <a class="xref" href="gtk-running.html" title="Running GTK+ Applications"><span class="refentrytitle">Running GTK+ Applications</span>(3)</a>.
 <div class="refsect3">
-<a name="id-1.3.10.9.19.6"></a><h4>Returns</h4>
+<a name="gtk-rc-get-module-dir.returns"></a><h4>Returns</h4>
 <p> the directory. (Must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>)</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1732,10 +1719,9 @@ environment variable for more details about looking up modules. This
 function is useful solely for utilities supplied with GTK+ and should
 not be used by applications under normal circumstances.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.20.5"></a><h4>Returns</h4>
+<a name="gtk-rc-get-im-module-path.returns"></a><h4>Returns</h4>
 <p>a newly-allocated string containing the path in which to
 look for IM modules.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1747,10 +1733,9 @@ gtk_rc_get_im_module_file (<em class="parameter"><code><span class="type">void</
 of the <a class="link" href="gtk-running.html#im-module-file" title="GTK_IM_MODULE_FILE"><code class="envar">GTK_IM_MODULE_FILE</code></a>
 environment variable for more details.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.21.5"></a><h4>Returns</h4>
+<a name="gtk-rc-get-im-module-file.returns"></a><h4>Returns</h4>
 <p>a newly-allocated string containing the name of the file
 listing the IM modules available for loading</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1764,9 +1749,8 @@ be installed. (GTK+ does not actually use this directory
 itself.)
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.22.5"></a><h4>Returns</h4>
+<a name="gtk-rc-get-theme-dir.returns"></a><h4>Returns</h4>
 <p>The directory (must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>).</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1779,9 +1763,8 @@ Creates a new <a class="link" href="gtk2-Resource-Files.html#GtkRcStyle"><span c
 a reference count of 1.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.23.5"></a><h4>Returns</h4>
+<a name="gtk-rc-style-new.returns"></a><h4>Returns</h4>
 <p>the newly-created <a class="link" href="gtk2-Resource-Files.html#GtkRcStyle"><span class="type">GtkRcStyle</span></a></p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1793,8 +1776,8 @@ gtk_rc_style_copy (<em class="parameter"><code><a class="link" href="gtk2-Resour
 will correctly copy an RC style that is a member of a class
 derived from <a class="link" href="gtk2-Resource-Files.html#GtkRcStyle"><span class="type">GtkRcStyle</span></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.10.9.24.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-style-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1808,7 +1791,7 @@ derived from <a class="link" href="gtk2-Resource-Files.html#GtkRcStyle"><span cl
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.3.10.9.24.6"></a><h4>Returns</h4>
+<a name="gtk-rc-style-copy.returns"></a><h4>Returns</h4>
 <p> the resulting <a class="link" href="gtk2-Resource-Files.html#GtkRcStyle"><span class="type">GtkRcStyle</span></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -1826,8 +1809,8 @@ gtk_rc_style_ref (<em class="parameter"><code><a class="link" href="gtk2-Resourc
 Increments the reference count of a <a class="link" href="gtk2-Resource-Files.html#GtkRcStyle"><span class="type">GtkRcStyle</span></a>.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-style-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1855,8 +1838,8 @@ Decrements the reference count of a <a class="link" href="gtk2-Resource-Files.ht
 frees if the result is 0.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.9.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-style-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1906,8 +1889,8 @@ to specify which fields of a <a class="link" href="gtk2-Resource-Files.html#GtkR
 set for each state.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.10.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRcFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1956,8 +1939,8 @@ can reuse these tokens when parsing the theme-engine
 specific portions of a RC file.
 </p>
 <div class="refsect3">
-<a name="id-1.3.10.10.4.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkRcTokenType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -2185,8 +2168,8 @@ Parses a given resource file.
 <p>Adds a file to the list of files to be parsed at the
 end of <a class="link" href="gtk2-General.html#gtk-init" title="gtk_init ()"><code class="function">gtk_init()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.10.10.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-add-default-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2210,8 +2193,8 @@ is searched in the current directory.</p></td>
 <p>Sets the list of files that GTK+ will read at the
 end of <a class="link" href="gtk2-General.html#gtk-init" title="gtk_init ()"><code class="function">gtk_init()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.3.10.10.7.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-rc-set-default-files.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -2228,7 +2211,6 @@ end of <a class="link" href="gtk2-General.html#gtk-init" title="gtk_init ()"><c
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GDK 2 Reference Manual: Fonts</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Fonts: GDK 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Visuals.html" title="Visuals">
 <link rel="next" href="gdk2-Cursors.html" title="Cursors">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -33,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="gdk2-Fonts.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -260,7 +260,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Fonts.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -321,7 +321,7 @@ full description:
 <p>
 The fields in the XLFD are:
 </p>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col>
 <col>
@@ -566,8 +566,8 @@ gdk_font_load (<em class="parameter"><code>const <a href="https://developer.gnom
 <p>The font may be newly loaded or looked up the font in a cache. 
 You should make no assumptions about the initial reference count.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.2.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -581,9 +581,8 @@ You should make no assumptions about the initial reference count.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.2.8"></a><h4>Returns</h4>
+<a name="gdk-font-load.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="type">GdkFont</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the font could not be loaded.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -598,8 +597,8 @@ gdk_font_load_for_display (<em class="parameter"><code><a class="link" href="Gdk
 <p>The font may be newly loaded or looked up the font in a cache. 
 You should make no assumptions about the initial reference count.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.3.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-load-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -620,11 +619,10 @@ You should make no assumptions about the initial reference count.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.3.9"></a><h4>Returns</h4>
+<a name="gdk-font-load-for-display.returns"></a><h4>Returns</h4>
 <p>a <a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="type">GdkFont</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the font could not be loaded.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -636,8 +634,8 @@ gdk_fontset_load (<em class="parameter"><code>const <a href="https://developer.g
 <p>The fontset may be newly loaded or looked up in a cache. 
 You should make no assumptions about the initial reference count.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.4.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-fontset-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -652,9 +650,8 @@ the component fonts of the fontset to load.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.4.8"></a><h4>Returns</h4>
+<a name="gdk-fontset-load.returns"></a><h4>Returns</h4>
 <p> a <a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="type">GdkFont</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the fontset could not be loaded.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -669,8 +666,8 @@ gdk_fontset_load_for_display (<em class="parameter"><code><a class="link" href="
 <p>The fontset may be newly loaded or looked up in a cache. 
 You should make no assumptions about the initial reference count.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.5.8"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-fontset-load-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -692,17 +689,16 @@ the component fonts of the fontset to load.</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.5.9"></a><h4>Returns</h4>
+<a name="gdk-fontset-load-for-display.returns"></a><h4>Returns</h4>
 <p>a <a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="type">GdkFont</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the fontset could not be loaded.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdk-font-from-description"></a><h3>gdk_font_from_description ()</h3>
 <pre class="programlisting"><a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="returnvalue">GdkFont</span></a> *
-gdk_font_from_description (<em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription"><span class="type">PangoFontDescription</span></a> *font_desc</code></em>);</pre>
+gdk_font_from_description (<em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription-struct"><span class="type">PangoFontDescription</span></a> *font_desc</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_font_from_description</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Load a <a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="type">GdkFont</span></a> based on a Pango font description. This font will
 only be an approximation of the Pango font, and
@@ -710,8 +706,8 @@ internationalization will not be handled correctly. This function
 should only be used for legacy code that cannot be easily converted
 to use Pango. Using Pango directly will produce better results.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.6.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-from-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -719,16 +715,15 @@ to use Pango. Using Pango directly will produce better results.</p>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>font_desc</p></td>
-<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription"><span class="type">PangoFontDescription</span></a>.</p></td>
+<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription-struct"><span class="type">PangoFontDescription</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.6.7"></a><h4>Returns</h4>
+<a name="gdk-font-from-description.returns"></a><h4>Returns</h4>
 <p> the newly loaded font, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the font
 cannot be loaded.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -736,7 +731,7 @@ cannot be loaded.</p>
 <a name="gdk-font-from-description-for-display"></a><h3>gdk_font_from_description_for_display ()</h3>
 <pre class="programlisting"><a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="returnvalue">GdkFont</span></a> *
 gdk_font_from_description_for_display (<em class="parameter"><code><a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> *display</code></em>,
-                                       <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription"><span class="type">PangoFontDescription</span></a> *font_desc</code></em>);</pre>
+                                       <em class="parameter"><code><a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription-struct"><span class="type">PangoFontDescription</span></a> *font_desc</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_font_from_description_for_display</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Loads a <a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="type">GdkFont</span></a> based on a Pango font description for use on <em class="parameter"><code>display</code></em>
 . 
@@ -745,8 +740,8 @@ internationalization will not be handled correctly. This function
 should only be used for legacy code that cannot be easily converted
 to use Pango. Using Pango directly will produce better results.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-from-description-for-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -760,19 +755,18 @@ to use Pango. Using Pango directly will produce better results.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>font_desc</p></td>
-<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription"><span class="type">PangoFontDescription</span></a>.</p></td>
+<td class="parameter_description"><p>a <a href="/home/mclasen/gnome/share/gtk-doc/html/pango/pango-Fonts.html#PangoFontDescription-struct"><span class="type">PangoFontDescription</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.7.8"></a><h4>Returns</h4>
+<a name="gdk-font-from-description-for-display.returns"></a><h4>Returns</h4>
 <p> the newly loaded font, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the font
 cannot be loaded.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -783,8 +777,8 @@ gdk_font_get_display (<em class="parameter"><code><a class="link" href="gdk2-Fon
 <p>Returns the <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a> for <em class="parameter"><code>font</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.8.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-get-display.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -798,11 +792,10 @@ gdk_font_get_display (<em class="parameter"><code><a class="link" href="gdk2-Fon
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.8.8"></a><h4>Returns</h4>
+<a name="gdk-font-get-display.returns"></a><h4>Returns</h4>
 <p> the corresponding <a class="link" href="GdkDisplay.html" title="GdkDisplay"><span class="type">GdkDisplay</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 2.2</p>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -812,8 +805,8 @@ gdk_font_ref (<em class="parameter"><code><a class="link" href="gdk2-Fonts.html#
 <div class="warning"><p><code class="literal">gdk_font_ref</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Increases the reference count of a font by one.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -827,10 +820,9 @@ gdk_font_ref (<em class="parameter"><code><a class="link" href="gdk2-Fonts.html#
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.9.7"></a><h4>Returns</h4>
+<a name="gdk-font-ref.returns"></a><h4>Returns</h4>
 <p> <em class="parameter"><code>font</code></em>
 </p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -842,8 +834,8 @@ gdk_font_unref (<em class="parameter"><code><a class="link" href="gdk2-Fonts.htm
 <p>Decreases the reference count of a font by one.
 If the result is zero, destroys the font.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.10.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -865,8 +857,8 @@ gdk_font_id (<em class="parameter"><code>const <a class="link" href="gdk2-Fonts.
 <div class="warning"><p><code class="literal">gdk_font_id</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Returns the X Font ID for the given font.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -880,9 +872,8 @@ gdk_font_id (<em class="parameter"><code>const <a class="link" href="gdk2-Fonts.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.11.7"></a><h4>Returns</h4>
+<a name="gdk-font-id.returns"></a><h4>Returns</h4>
 <p> the numeric X Font ID</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -896,8 +887,8 @@ gdk_font_equal (<em class="parameter"><code>const <a class="link" href="gdk2-Fon
 if they have the same X font ID. This operation does
 not currently work correctly for fontsets.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.12.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-font-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -918,9 +909,8 @@ not currently work correctly for fontsets.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.12.7"></a><h4>Returns</h4>
+<a name="gdk-font-equal.returns"></a><h4>Returns</h4>
 <p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the fonts are equal.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -937,8 +927,8 @@ gdk_string_extents (<em class="parameter"><code><a class="link" href="gdk2-Fonts
 <div class="warning"><p><code class="literal">gdk_string_extents</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Gets the metrics of a nul-terminated string.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.13.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-string-extents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -999,8 +989,8 @@ gdk_text_extents (<em class="parameter"><code><a class="link" href="gdk2-Fonts.h
 <div class="warning"><p><code class="literal">gdk_text_extents</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Gets the metrics of a string.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.14.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-extents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1068,8 +1058,8 @@ gdk_text_extents_wc (<em class="parameter"><code><a class="link" href="gdk2-Font
 <div class="warning"><p><code class="literal">gdk_text_extents_wc</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Gets the metrics of a string of wide characters.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.15.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-extents-wc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1132,8 +1122,8 @@ gdk_string_width (<em class="parameter"><code><a class="link" href="gdk2-Fonts.h
 point where the next string in a sequence of strings
 should be drawn)</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.16.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-string-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1154,9 +1144,8 @@ should be drawn)</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.16.7"></a><h4>Returns</h4>
+<a name="gdk-string-width.returns"></a><h4>Returns</h4>
 <p> the width of the string in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1169,8 +1158,8 @@ gdk_text_width (<em class="parameter"><code><a class="link" href="gdk2-Fonts.htm
 <div class="warning"><p><code class="literal">gdk_text_width</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Determines the width of a given string.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.17.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1196,9 +1185,8 @@ gdk_text_width (<em class="parameter"><code><a class="link" href="gdk2-Fonts.htm
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.17.7"></a><h4>Returns</h4>
+<a name="gdk-text-width.returns"></a><h4>Returns</h4>
 <p> the width of the string in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1211,8 +1199,8 @@ gdk_text_width_wc (<em class="parameter"><code><a class="link" href="gdk2-Fonts.
 <div class="warning"><p><code class="literal">gdk_text_width_wc</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Determines the width of a given wide-character string.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.18.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-width-wc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1238,9 +1226,8 @@ gdk_text_width_wc (<em class="parameter"><code><a class="link" href="gdk2-Fonts.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.18.7"></a><h4>Returns</h4>
+<a name="gdk-text-width-wc.returns"></a><h4>Returns</h4>
 <p> the width of the string in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1255,8 +1242,8 @@ gdk_char_width (<em class="parameter"><code><a class="link" href="gdk2-Fonts.htm
 </div>
 <p>Determines the width of a given character.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.19.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-char-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1277,9 +1264,8 @@ gdk_char_width (<em class="parameter"><code><a class="link" href="gdk2-Fonts.htm
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.19.7"></a><h4>Returns</h4>
+<a name="gdk-char-width.returns"></a><h4>Returns</h4>
 <p> the width of the character in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1292,8 +1278,8 @@ gdk_char_width_wc (<em class="parameter"><code><a class="link" href="gdk2-Fonts.
 <p>Determines the width of a given wide character. (Encoded
 in the wide-character encoding of the current locale).</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.20.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-char-width-wc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1314,9 +1300,8 @@ in the wide-character encoding of the current locale).</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.20.7"></a><h4>Returns</h4>
+<a name="gdk-char-width-wc.returns"></a><h4>Returns</h4>
 <p> the width of the character in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1332,8 +1317,8 @@ correct value for determining the origin of the next
 portion when drawing text in multiple pieces.
 See <a class="link" href="gdk2-Fonts.html#gdk-string-width" title="gdk_string_width ()"><code class="function">gdk_string_width()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.21.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-string-measure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1354,9 +1339,8 @@ See <a class="link" href="gdk2-Fonts.html#gdk-string-width" title="gdk_string_wi
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.21.7"></a><h4>Returns</h4>
+<a name="gdk-string-measure.returns"></a><h4>Returns</h4>
 <p> the right bearing of the string in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1373,8 +1357,8 @@ correct value for determining the origin of the next
 portion when drawing text in multiple pieces. 
 See <a class="link" href="gdk2-Fonts.html#gdk-text-width" title="gdk_text_width ()"><code class="function">gdk_text_width()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.22.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-measure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1400,9 +1384,8 @@ See <a class="link" href="gdk2-Fonts.html#gdk-text-width" title="gdk_text_width�
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.22.7"></a><h4>Returns</h4>
+<a name="gdk-text-measure.returns"></a><h4>Returns</h4>
 <p> the right bearing of the string in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1417,8 +1400,8 @@ portion of a character when drawn. This is not the
 correct value for determining the origin of the next
 portion when drawing text in multiple pieces.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.23.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-char-measure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1439,9 +1422,8 @@ portion when drawing text in multiple pieces.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.23.7"></a><h4>Returns</h4>
+<a name="gdk-char-measure.returns"></a><h4>Returns</h4>
 <p> the right bearing of the character in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1456,8 +1438,8 @@ string. This value is not generally useful, because you
 cannot determine how this total height will be drawn in
 relation to the baseline. See <a class="link" href="gdk2-Fonts.html#gdk-string-extents" title="gdk_string_extents ()"><code class="function">gdk_string_extents()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.24.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-string-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1478,9 +1460,8 @@ relation to the baseline. See <a class="link" href="gdk2-Fonts.html#gdk-string-e
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.24.7"></a><h4>Returns</h4>
+<a name="gdk-string-height.returns"></a><h4>Returns</h4>
 <p> the height of the string in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1496,8 +1477,8 @@ This value is not generally useful, because you cannot
 determine how this total height will be drawn in
 relation to the baseline. See <a class="link" href="gdk2-Fonts.html#gdk-text-extents" title="gdk_text_extents ()"><code class="function">gdk_text_extents()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.25.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-text-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1523,9 +1504,8 @@ relation to the baseline. See <a class="link" href="gdk2-Fonts.html#gdk-text-ext
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.25.7"></a><h4>Returns</h4>
+<a name="gdk-text-height.returns"></a><h4>Returns</h4>
 <p> the height of the string in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1543,8 +1523,8 @@ This value is not generally useful, because you cannot
 determine how this total height will be drawn in
 relation to the baseline. See <a class="link" href="gdk2-Fonts.html#gdk-text-extents" title="gdk_text_extents ()"><code class="function">gdk_text_extents()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.26.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-char-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1565,9 +1545,8 @@ relation to the baseline. See <a class="link" href="gdk2-Fonts.html#gdk-text-ext
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.26.7"></a><h4>Returns</h4>
+<a name="gdk-char-height.returns"></a><h4>Returns</h4>
 <p> the height of the character in pixels.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1580,8 +1559,8 @@ gdk_wcstombs (<em class="parameter"><code>const <a class="link" href="gdk2-Fonts
 (The function name comes from an acronym of 'Wide Character String TO
 Multi-Byte String').</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.27.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-wcstombs.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1595,12 +1574,11 @@ Multi-Byte String').</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.27.7"></a><h4>Returns</h4>
+<a name="gdk-wcstombs.returns"></a><h4>Returns</h4>
 <p> the multi-byte string corresponding to <em class="parameter"><code>src</code></em>
 , or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
 conversion failed. The returned string should be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when no
 longer needed.</p>
-<p></p>
 </div>
 </div>
 <hr>
@@ -1615,8 +1593,8 @@ gdk_mbstowcs (<em class="parameter"><code><a class="link" href="gdk2-Fonts.html#
 (The function name comes from an acronym of 'Multi-Byte String TO Wide
 Character String').</p>
 <div class="refsect3">
-<a name="id-1.2.16.7.28.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gdk-mbstowcs.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -1643,11 +1621,10 @@ Character String').</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.16.7.28.7"></a><h4>Returns</h4>
+<a name="gdk-mbstowcs.returns"></a><h4>Returns</h4>
 <p> the number of wide characters written into <em class="parameter"><code>dest</code></em>
 , or -1 if
 the conversion failed.</p>
-<p></p>
 </div>
 </div>
 </div>
@@ -1669,8 +1646,8 @@ structure is returned by <a class="link" href="gdk2-Fonts.html#gdk-font-load" ti
 and is reference counted with <a class="link" href="gdk2-Fonts.html#gdk-font-ref" title="gdk_font_ref ()"><code class="function">gdk_font_ref()</code></a> and <a class="link" href="gdk2-Fonts.html#gdk-font-unref" title="gdk_font_unref ()"><code class="function">gdk_font_unref()</code></a>
 </p>
 <div class="refsect3">
-<a name="id-1.2.16.8.2.6"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkFont.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1708,8 +1685,8 @@ Indicates the type of a font. The possible values
 are currently:
 </p>
 <div class="refsect3">
-<a name="id-1.2.16.8.3.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GdkFontType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -1775,7 +1752,6 @@ for more detailed information on wide and multi-byte characters.
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

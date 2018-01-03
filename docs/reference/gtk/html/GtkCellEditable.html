@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: GtkCellEditable</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>GtkCellEditable: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkCellRenderer.html" title="GtkCellRenderer">
 <link rel="next" href="GtkCellRendererAccel.html" title="GtkCellRendererAccel">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,7 +38,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="GtkCellEditable.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -73,7 +73,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellEditable.properties"></a><h2>Properties</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="properties_type">
 <col width="300px" class="properties_name">
@@ -88,7 +88,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellEditable.signals"></a><h2>Signals</h2>
-<div class="informaltable"><table border="0">
+<div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
 <col width="150px" class="signals_return">
 <col width="300px" class="signals_name">
@@ -98,19 +98,19 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkCellEditable.html#GtkCellEditable-editing-done" title="The “editing-done” signal">editing-done</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkCellEditable.html#GtkCellEditable-remove-widget" title="The “remove-widget” signal">remove-widget</a></td>
-<td class="signal_flags">Run Last</td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkCellEditable.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
@@ -129,7 +129,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellEditable.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GInterface
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
     <span class="lineart">╰──</span> GtkCellEditable
 </pre>
 </div>
@@ -163,15 +163,15 @@ to be usable when editing the contents of a <a class="link" href="GtkTreeView.ht
 <a name="gtk-cell-editable-start-editing"></a><h3>gtk_cell_editable_start_editing ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_cell_editable_start_editing (<em class="parameter"><code><a class="link" href="GtkCellEditable.html" title="GtkCellEditable"><span class="type">GtkCellEditable</span></a> *cell_editable</code></em>,
-                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
+                                 <em class="parameter"><code><a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> *event</code></em>);</pre>
 <p>Begins editing on a <em class="parameter"><code>cell_editable</code></em>
 . <em class="parameter"><code>event</code></em>
- is the <a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> that began 
+ is the <a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a> that began 
 the editing process. It may be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, in the instance that editing was 
 initiated through programatic means.</p>
 <div class="refsect3">
-<a name="id-1.4.9.15.12.2.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-editable-start-editing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -185,7 +185,7 @@ initiated through programatic means.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>event</p></td>
-<td class="parameter_description"><p> A <a href="http://library.gnome.org/devel/gdk3/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p> A <a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -199,8 +199,8 @@ initiated through programatic means.</p>
 gtk_cell_editable_editing_done (<em class="parameter"><code><a class="link" href="GtkCellEditable.html" title="GtkCellEditable"><span class="type">GtkCellEditable</span></a> *cell_editable</code></em>);</pre>
 <p>Emits the <a class="link" href="GtkCellEditable.html#GtkCellEditable-editing-done" title="The “editing-done” signal"><span class="type">“editing-done”</span></a> signal.</p>
 <div class="refsect3">
-<a name="id-1.4.9.15.12.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-editable-editing-done.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -221,8 +221,8 @@ gtk_cell_editable_editing_done (<em class="parameter"><code><a class="link" href
 gtk_cell_editable_remove_widget (<em class="parameter"><code><a class="link" href="GtkCellEditable.html" title="GtkCellEditable"><span class="type">GtkCellEditable</span></a> *cell_editable</code></em>);</pre>
 <p>Emits the <a class="link" href="GtkCellEditable.html#GtkCellEditable-remove-widget" title="The “remove-widget” signal"><span class="type">“remove-widget”</span></a> signal.</p>
 <div class="refsect3">
-<a name="id-1.4.9.15.12.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="gtk-cell-editable-remove-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -272,7 +272,7 @@ gtk_cell_editable_remove_widget (<em class="parameter"><code><a class="link" hre
 <p>Indicates whether editing on the cell has been canceled.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-<p class="since">Since 2.20</p>
+<p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -291,8 +291,8 @@ emitting this signal when they are done editing, e.g.
 <p>gtk_cell_editable_editing_done() is a convenience method
 for emitting GtkCellEditable::editing-done.</p>
 <div class="refsect3">
-<a name="id-1.4.9.15.15.2.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellEditable-editing-done.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -312,7 +312,7 @@ for emitting GtkCellEditable::editing-done.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -330,8 +330,8 @@ before the widget is removed.</p>
 <p>gtk_cell_editable_remove_widget() is a convenience method
 for emitting GtkCellEditable::remove-widget.</p>
 <div class="refsect3">
-<a name="id-1.4.9.15.15.3.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="GtkCellEditable-remove-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -351,12 +351,11 @@ for emitting GtkCellEditable::remove-widget.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: Run Last</p>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>

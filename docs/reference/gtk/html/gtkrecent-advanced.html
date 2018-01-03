@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GTK+ 2 Reference Manual: Advanced usage</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<title>Advanced usage: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtk-migrating-GtkRecentChooser.html" title="Migrating from EggRecent to GtkRecentChooser">
 <link rel="prev" href="gtkrecent-chooser.html" title="Displaying the Recently Used Documents">
 <link rel="next" href="gtk-migrating-GtkLinkButton.html" title="Migrating from GnomeHRef to GtkLinkButton">
-<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -48,13 +48,13 @@
 7
 8</pre></td>
         <td class="listing_code"><pre class="programlisting"><span class="comment">/* no sorting */</span>
-<span class="normal">    </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span><span class="normal"> GTK_RECENT_SORT_NONE</span><span class="symbol">);</span>
+<span class="normal">    </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span><span class="normal"> <a href="GtkRecentChooser.html#GTK-RECENT-SORT-NONE:CAPS">GTK_RECENT_SORT_NONE</a></span><span class="symbol">);</span>
 <span class="normal">    </span>
 <span class="comment">/* most recently used first */</span>
-<span class="normal">    </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span><span class="normal"> GTK_RECENT_SORT_MRU</span><span class="symbol">);</span>
+<span class="normal">    </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span><span class="normal"> <a href="GtkRecentChooser.html#GTK-RECENT-SORT-MRU:CAPS">GTK_RECENT_SORT_MRU</a></span><span class="symbol">);</span>
 <span class="normal">    </span>
 <span class="normal">    </span><span class="comment">/* most recently used last */</span>
-<span class="normal">    </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span><span class="normal"> GTK_RECENT_SORT_LRU</span><span class="symbol">);</span></pre></td>
+<span class="normal">    </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span><span class="normal"> <a href="GtkRecentChooser.html#GTK-RECENT-SORT-LRU:CAPS">GTK_RECENT_SORT_LRU</a></span><span class="symbol">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -123,7 +123,7 @@
 
 <span class="normal">  </span><span class="comment">/* set custom sorting and set the custom sorting function */</span>
 <span class="normal">  </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span>
-<span class="normal">                                    GTK_RECENT_SORT_CUSTOM</span><span class="symbol">);</span>
+<span class="normal">                                    <a href="GtkRecentChooser.html#GTK-RECENT-SORT-CUSTOM:CAPS">GTK_RECENT_SORT_CUSTOM</a></span><span class="symbol">);</span>
 <span class="normal">  </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-func">gtk_recent_chooser_set_sort_func</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">GTK_RECENT_CHOOSER</span><span class="symbol">,</span>
 <span class="normal">                                    sort_by_usage_count</span><span class="symbol">,</span>
 <span class="normal">                    <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> </span><span class="comment">/* sort function data */</span>
@@ -200,7 +200,6 @@
     </p>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.21.1</div>
+<hr>Generated by GTK-Doc V1.25.1</div>
 </body>
 </html>
