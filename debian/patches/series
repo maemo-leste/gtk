@@ -12,3 +12,16 @@
 098_multiarch_module_path.patch
 0001-Don-t-use-guint32-with-XChangeProperty.patch
 0002-GtkMenuShell-always-activate-menu-shells.patch
+hildonize-gtk-enums.diff
+hildonize-gdk-window.diff
+hildonize-gtk-container.diff
+hildonize-gtk-window.diff
+hildonize-gtk-menu.diff
+hildonize-gtk-widget.diff
+hildonize-gtk-imcontext.diff
+hildonize-gtk-entry.diff
+hildonize-gtk-dialog.diff
+hildonize-gtk-textview.diff
+hildonize-gtk-rbtree.diff
+hildonize-gtk-treeview.diff
+hildonize-gtk-iconview.diff
