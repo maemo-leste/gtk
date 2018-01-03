@@ -1,4 +1,4 @@
-libgailutil.so.18 libgail18 #MINVER#
+libgailutil.so.18 libgail18 #MINVER#, libgail-common
 * Build-Depends-Package: libgail-dev
  gail_misc_add_attribute@Base 1.18.0
  gail_misc_add_to_attr_set@Base 1.18.0

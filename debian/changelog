@@ -1,21 +1,114 @@
-gtk+2.0 (2:2.24.25-3+deb8u3) unstable; urgency=medium
+gtk+2.0 (2.24.31-2) unstable; urgency=medium
 
-  * add epoch to changelog version
+  * debian/patches/0001-Don-t-use-guint32-with-XChangeProperty.patch:
+    + Backport patch from GTK+3 to fix unaligned access on sparc64.
+      Thanks James Clarke. Closes: #852401.
+  * debian/patches/0002-GtkMenuShell-always-activate-menu-shells.patch:
+    + Backport patch from GTK+3 to fix stuck grabs in some situations.
+      Thanks Colomban Wendling. Closes: #847438.
 
- -- Ivan J. <parazyd@dyne.org>  Tue, 13 Sep 2017 12:12:00 +0200
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 26 Jan 2017 17:59:51 +0100
 
-gtk+2.0 (2.24.25-3+deb8u3) unstable; urgency=medium
+gtk+2.0 (2.24.31-1) unstable; urgency=medium
 
-  * Import gtk2.24.25 sources in git
-  * Enable git builds
+  * New upstream release.
+  * Drop obsolete maintainer scripts which cleaned up the /usr/share/doc
+    symlinks.
+  * Refresh patches. Drop the ones which have been merged upstream.
+  * When linking against libgail18, automatically generate a dependency on
+    libgail-common. This was originally achieved via a .shlibs file but since
+    we use a .symbols file nowadays, move this over there.
+  * Remove an old shlibs.local hack which doesn't seem necessary anymore.
+  * Use idiomatic variables from default.mk dpkg include.
+    Bump Build-Depends on dpkg-dev to (>= 1.16.1).
 
- -- Ivan J. <parazyd@dyne.org>  Tue, 12 Sep 2017 14:45:00 +0200
+ -- Michael Biebl <biebl@debian.org>  Sat, 10 Sep 2016 02:25:29 +0200
 
-gtk+2.0 (2.24.25-3+deb8u1) jessie; urgency=medium
+gtk+2.0 (2.24.30-4) unstable; urgency=medium
 
-  * CVE-2013-7447 (Closes: #799275)
+  [ Laurent Bigonville ]
+  * debian/control.in: Bump hicolor-icon-theme to a hard dependency, the
+    package is small and only provides the directory structure of the theme.
+  * Depends against gnome-icon-theme | adwaita-icon-theme so we are sure the
+    needed icons are installed by default. When using the GNOME, the desktop
+    sets the icon theme to Adwaita by default, so the gnome-icon-theme package
+    can be removed.
 
- -- Moritz Mühlenhoff <jmm@debian.org>  Thu, 17 Mar 2016 00:17:18 +0100
+  [ Emilio Pozuelo Monfort ]
+  * Add build-indep and build-arch targets.
+  * Don't build the udeb or static flavors when only building arch-indep
+    packages. Don't run the test suite either.
+  * Don't build the different flavors in parallel, to workaround a bug in the
+    documentation build. Closes: #798972.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 17 Jul 2016 18:34:17 +0200
+
+gtk+2.0 (2.24.30-3) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * Use https for copyright headers
+  * Use https in d/watch and use new "special strings" to help standardize
+    format
+
+  [ Emilio Pozuelo Monfort ]
+  * Let libgtk2.0-0 recommend libgail-common, so that installing a
+    GTK+2.0 application also installs the accessibility libs.
+    See #822612.
+  * Add a libgail18-udeb package. Thanks to Samuel Thibault. Closes: #816720.
+  * Set libgail18-udeb to section debian-installer.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 13 Jul 2016 17:43:50 +0200
+
+gtk+2.0 (2.24.30-2) unstable; urgency=medium
+
+  * Acknowledge NMU, thanks Salvatore Bonaccorso.
+  * Drop gtk-update-icon-cache from libgtk2.0-bin. From now on we only provide
+    one implementation which is built from src:gtk+3.0 and shipped in a
+    separate package called gtk-update-icon-cache. To simplify the transition
+    make libgtk2.0-bin depend on gtk-update-icon-cache. Once all theme
+    packages have been updated, this dependency can be dropped.
+  * Bump Standards-Version to 3.9.8.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 22 May 2016 23:18:37 +0200
+
+gtk+2.0 (2.24.30-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * CVE-2013-7447: Integer overflow in image handling (Closes: #799275)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 18 Mar 2016 20:20:37 +0100
+
+gtk+2.0 (2.24.30-1) unstable; urgency=medium
+
+  * New upstream release 2.24.30
+    - Support Randr 1.5 monitor information
+    - Fixes build against newer gdk-pixbuf
+  * debian/patches/005_support_disabling_x11_extensions.patch: Refresh.
+
+ -- Iain Lane <laney@debian.org>  Mon, 07 Mar 2016 13:51:18 +0000
+
+gtk+2.0 (2.24.29-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 14 Dec 2015 01:12:27 +0100
+
+gtk+2.0 (2.24.28-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+  * Drop obsolete Breaks/Conflicts/Replaces from pre-wheezy.
+  * Stop including image data when generating the icon caches since the cache
+    files tend to grow rather large and aren't that useful anymore nowadays.
+  * Explicitly build the man pages, upstream no longer ships them in the dist
+    tarball.
+  * Add Build-Depends on docbook-xsl and libxml2-utils and move docbook-xml
+    and docbook-utils from Build-Depends-Indep to Build-Depends. Those are
+    required to build the man pages which are shipped in arch:any packages.
+  * Bump Standards-Version to 3.9.6.
+  * Don't enable introspection and man pages for udeb build.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 07 Jun 2015 17:00:08 +0200
 
 gtk+2.0 (2.24.25-3) unstable; urgency=medium
 

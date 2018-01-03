@@ -1,0 +1,2 @@
+debian/install/shared_udeb/@LIBDIR@/libgail*.so.* @LIBDIR@
+debian/install/shared_udeb/@LIBDIR@/gtk-@APIVER@/modules/*.so @LIBDIR@/gtk-@APIVER@/modules
