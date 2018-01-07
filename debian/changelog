@@ -1,3 +1,9 @@
+gtk+2.0 (2:2.24.31-3) unstable; urgency=medium
+
+  * Bump version to make the build pass
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sat, 07 Jan 2018 09:00:00 +0100
+
 gtk+2.0 (2:2.24.31-2) unstable; urgency=medium
 
   * Prepend 2: to the version number
