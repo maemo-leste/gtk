@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.32-1) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.32-1) unstable; urgency=medium
 
   * New upstream release
   * debian/libgtk2.0-0.symbols: Add symbols
@@ -7,7 +7,7 @@ gtk+2.0 (2.24.32-1) UNRELEASED; urgency=medium
     - 0001-Don-t-use-guint32-with-XChangeProperty.patch
     - 0002-GtkMenuShell-always-activate-menu-shells.patch
 
- -- Jeremy Bicha <jbicha@debian.org>  Fri, 19 Jan 2018 21:59:26 -0500
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 20 Jan 2018 07:46:38 -0500
 
 gtk+2.0 (2.24.31-5) unstable; urgency=medium
 
