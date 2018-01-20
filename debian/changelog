@@ -1,5 +1,6 @@
-gtk+2.0 (2.24.31-6) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.32-1) UNRELEASED; urgency=medium
 
+  * New upstream release
   * Update Vcs fields for migration to https://salsa.debian.org/
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 19 Jan 2018 21:59:26 -0500
