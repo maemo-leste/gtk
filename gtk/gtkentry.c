@@ -4774,21 +4774,29 @@ gtk_entry_move_cursor (GtkEntry       *entry,
 	      new_pos = current_x < bound_x ? entry->current_pos : entry->selection_bound;
 	    else 
 	      new_pos = current_x > bound_x ? entry->current_pos : entry->selection_bound;
-	    break;
 	  }
-	case GTK_MOVEMENT_LOGICAL_POSITIONS:
+	  break;
+
 	case GTK_MOVEMENT_WORDS:
+          if (entry->resolved_dir == PANGO_DIRECTION_RTL)
+            count *= -1;
+          /* Fall through */
+
+	case GTK_MOVEMENT_LOGICAL_POSITIONS:
 	  if (count < 0)
 	    new_pos = MIN (entry->current_pos, entry->selection_bound);
 	  else
 	    new_pos = MAX (entry->current_pos, entry->selection_bound);
+
 	  break;
+
 	case GTK_MOVEMENT_DISPLAY_LINE_ENDS:
 	case GTK_MOVEMENT_PARAGRAPH_ENDS:
 	case GTK_MOVEMENT_BUFFER_ENDS:
 	  priv = GTK_ENTRY_GET_PRIVATE (entry);
 	  new_pos = count < 0 ? 0 : gtk_entry_buffer_get_length (get_buffer (entry));
 	  break;
+
 	case GTK_MOVEMENT_DISPLAY_LINES:
 	case GTK_MOVEMENT_PARAGRAPHS:
 	case GTK_MOVEMENT_PAGES:
@@ -4803,8 +4811,10 @@ gtk_entry_move_cursor (GtkEntry       *entry,
 	case GTK_MOVEMENT_LOGICAL_POSITIONS:
 	  new_pos = gtk_entry_move_logically (entry, new_pos, count);
 	  break;
+
 	case GTK_MOVEMENT_VISUAL_POSITIONS:
 	  new_pos = gtk_entry_move_visually (entry, new_pos, count);
+
           if (entry->current_pos == new_pos)
             {
               if (!extend_selection)
@@ -4827,12 +4837,17 @@ gtk_entry_move_cursor (GtkEntry       *entry,
                 }
             }
 	  break;
+
 	case GTK_MOVEMENT_WORDS:
+          if (entry->resolved_dir == PANGO_DIRECTION_RTL)
+            count *= -1;
+
 	  while (count > 0)
 	    {
 	      new_pos = gtk_entry_move_forward_word (entry, new_pos, FALSE);
 	      count--;
 	    }
+
 	  while (count < 0)
 	    {
 	      new_pos = gtk_entry_move_backward_word (entry, new_pos, FALSE);
@@ -4840,7 +4855,9 @@ gtk_entry_move_cursor (GtkEntry       *entry,
 	    }
           if (entry->current_pos == new_pos)
             gtk_widget_error_bell (GTK_WIDGET (entry));
+
 	  break;
+
 	case GTK_MOVEMENT_DISPLAY_LINE_ENDS:
 	case GTK_MOVEMENT_PARAGRAPH_ENDS:
 	case GTK_MOVEMENT_BUFFER_ENDS:
@@ -4848,7 +4865,9 @@ gtk_entry_move_cursor (GtkEntry       *entry,
 	  new_pos = count < 0 ? 0 : gtk_entry_buffer_get_length (get_buffer (entry));
           if (entry->current_pos == new_pos)
             gtk_widget_error_bell (GTK_WIDGET (entry));
+
 	  break;
+
 	case GTK_MOVEMENT_DISPLAY_LINES:
 	case GTK_MOVEMENT_PARAGRAPHS:
 	case GTK_MOVEMENT_PAGES:
@@ -4911,6 +4930,7 @@ gtk_entry_delete_from_cursor (GtkEntry       *entry,
       end_pos = gtk_entry_move_logically (entry, entry->current_pos, count);
       gtk_editable_delete_text (editable, MIN (start_pos, end_pos), MAX (start_pos, end_pos));
       break;
+
     case GTK_DELETE_WORDS:
       if (count < 0)
 	{
@@ -4932,24 +4952,30 @@ gtk_entry_delete_from_cursor (GtkEntry       *entry,
 	  start_pos = gtk_entry_move_backward_word (entry, start_pos, FALSE);
 	  count++;
 	}
+
       while (count > 0)
 	{
 	  end_pos = gtk_entry_move_forward_word (entry, end_pos, FALSE);
 	  count--;
 	}
+
       gtk_editable_delete_text (editable, start_pos, end_pos);
       break;
+
     case GTK_DELETE_DISPLAY_LINE_ENDS:
     case GTK_DELETE_PARAGRAPH_ENDS:
       if (count < 0)
 	gtk_editable_delete_text (editable, 0, entry->current_pos);
       else
 	gtk_editable_delete_text (editable, entry->current_pos, -1);
+
       break;
+
     case GTK_DELETE_DISPLAY_LINES:
     case GTK_DELETE_PARAGRAPHS:
       gtk_editable_delete_text (editable, 0, -1);  
       break;
+
     case GTK_DELETE_WHITESPACE:
       gtk_entry_delete_whitespace (entry);
       break;
@@ -5224,6 +5250,7 @@ gtk_entry_enter_text (GtkEntry       *entry,
   GtkEditable *editable = GTK_EDITABLE (entry);
   gint tmp_pos;
   gboolean old_need_im_reset;
+  guint text_length;
 
   old_need_im_reset = entry->need_im_reset;
   entry->need_im_reset = FALSE;
@@ -5233,7 +5260,11 @@ gtk_entry_enter_text (GtkEntry       *entry,
   else
     {
       if (entry->overwrite_mode)
-        gtk_entry_delete_from_cursor (entry, GTK_DELETE_CHARS, 1);
+        {
+          text_length = gtk_entry_buffer_get_length (get_buffer (entry));
+          if (entry->current_pos < text_length)
+            gtk_entry_delete_from_cursor (entry, GTK_DELETE_CHARS, 1);
+        }
     }
 
   tmp_pos = entry->current_pos;
@@ -8336,23 +8367,28 @@ gtk_entry_get_icon_window (GtkEntry             *entry,
 static void
 ensure_has_tooltip (GtkEntry *entry)
 {
-  GtkEntryPrivate *priv;
-  EntryIconInfo *icon_info;
-  int i;
-  gboolean has_tooltip = FALSE;
+  gchar *text = gtk_widget_get_tooltip_text (GTK_WIDGET (entry));
+  gboolean has_tooltip = text != NULL;
 
-  priv = GTK_ENTRY_GET_PRIVATE (entry);
-
-  for (i = 0; i < MAX_ICONS; i++)
+  if (!has_tooltip)
     {
-      if ((icon_info = priv->icons[i]) != NULL)
+      GtkEntryPrivate *priv = GTK_ENTRY_GET_PRIVATE (entry);
+      int i;
+
+      for (i = 0; i < MAX_ICONS; i++)
         {
-          if (icon_info->tooltip != NULL)
+          EntryIconInfo *icon_info = priv->icons[i];
+
+          if (icon_info != NULL && icon_info->tooltip != NULL)
             {
               has_tooltip = TRUE;
               break;
             }
         }
+    }
+  else
+    {
+      g_free (text);
     }
 
   gtk_widget_set_has_tooltip (GTK_WIDGET (entry), has_tooltip);
@@ -8408,6 +8444,12 @@ gtk_entry_get_icon_tooltip_text (GtkEntry             *entry,
  *
  * See also gtk_widget_set_tooltip_text() and 
  * gtk_entry_set_icon_tooltip_markup().
+ *
+ * If you unset the widget tooltip via gtk_widget_set_tooltip_text() or
+ * gtk_widget_set_tooltip_markup(), this sets GtkWidget:has-tooltip to %FALSE,
+ * which suppresses icon tooltips too. You can resolve this by then calling
+ * gtk_widget_set_has_tooltip() to set GtkWidget:has-tooltip back to %TRUE, or
+ * setting at least one non-empty tooltip on any icon achieves the same result.
  *
  * Since: 2.16
  */
@@ -8486,7 +8528,7 @@ gtk_entry_get_icon_tooltip_markup (GtkEntry             *entry,
  * Use %NULL for @tooltip to remove an existing tooltip.
  *
  * See also gtk_widget_set_tooltip_markup() and 
- * gtk_enty_set_icon_tooltip_text().
+ * gtk_entry_set_icon_tooltip_text().
  *
  * Since: 2.16
  */

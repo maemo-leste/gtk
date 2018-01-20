@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Migrating from SexyIconEntry to GtkEntry: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="gtk-migrating-tooltips.html" title="Migrating from GtkTooltips to GtkTooltip">
 <link rel="next" href="gtk-migrating-label-links.html" title="Migrating from SexyUrlLabel to GtkLabel">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -28,7 +28,7 @@
     straightforward. The main difference between the two APIs is that
     SexyIconEntry uses <a class="link" href="GtkImage.html" title="GtkImage"><span class="type">GtkImage</span></a> widgets in a somewhat awkward way as
     storage vehicles for icons, while GtkEntry allows to specify icons
-    via pixbufs, stock ids, icon names or <a href="https://developer.gnome.org/gio/unstable/GIcon.html#GIcon-struct"><span class="type">GIcons</span></a>. So, if your code uses
+    via pixbufs, stock ids, icon names or <a href="../gio/GIcon.html#GIcon-struct"><span class="type">GIcons</span></a>. So, if your code uses
     e.g.:
 </p>
 <div class="informalexample">
@@ -37,8 +37,8 @@
       <tr>
         <td class="listing_lines" align="right"><pre>1
 2</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">image </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkImage.html#gtk-image-new-from-stock">gtk_image_new_from_stock</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="gtk2-Stock-Items.html#GTK-STOCK-NEW:CAPS">GTK_STOCK_NEW</a></span><span class="symbol">,</span><span class="normal"> <a href="gtk2-Themeable-Stock-Images.html#GTK-ICON-SIZE-MENU:CAPS">GTK_ICON_SIZE_MENU</a></span><span class="symbol">);</span>
-<span class="function">sexy_icon_entry_set_icon</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">,</span><span class="normal"> SEXY_ICON_ENTRY_PRIMARY</span><span class="symbol">,</span><span class="normal"> image</span><span class="symbol">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting">image <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkImage.html#gtk-image-new-from-stock">gtk_image_new_from_stock</a></span> <span class="gtkdoc opt">(</span>GTK_STOCK_NEW<span class="gtkdoc opt">,</span> GTK_ICON_SIZE_MENU<span class="gtkdoc opt">);</span>
+<span class="function">sexy_icon_entry_set_icon</span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">,</span> SEXY_ICON_ENTRY_PRIMARY<span class="gtkdoc opt">,</span> image<span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -52,7 +52,7 @@
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="function"><a href="GtkEntry.html#gtk-entry-set-icon-from-stock">gtk_entry_set_icon_from_stock</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">,</span><span class="normal"> <a href="GtkEntry.html#GTK-ENTRY-ICON-PRIMARY:CAPS">GTK_ENTRY_ICON_PRIMARY</a></span><span class="symbol">,</span><span class="normal"> <a href="gtk2-Stock-Items.html#GTK-STOCK-NEW:CAPS">GTK_STOCK_NEW</a></span><span class="symbol">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="function"><a href="GtkEntry.html#gtk-entry-set-icon-from-stock">gtk_entry_set_icon_from_stock</a></span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">,</span> GTK_ENTRY_ICON_PRIMARY<span class="gtkdoc opt">,</span> GTK_STOCK_NEW<span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -73,9 +73,9 @@
         <td class="listing_lines" align="right"><pre>1
 2
 3</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="type">void</span><span class="normal"> </span><span class="symbol">(*</span><span class="normal">icon_pressed</span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">SexyIconEntry</span><span class="normal">         </span><span class="symbol">*</span><span class="normal">entry</span><span class="symbol">,</span><span class="normal"> </span>
-<span class="normal">                      </span><span class="usertype">SexyIconEntryPosition</span><span class="normal">  icon_pos</span><span class="symbol">,</span>
-<span class="normal">                      </span><span class="type">int</span><span class="normal">                    button</span><span class="symbol">)</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">void</span> <span class="gtkdoc opt">(*</span>icon_pressed<span class="gtkdoc opt">) (</span>SexyIconEntry         <span class="gtkdoc opt">*</span>entry<span class="gtkdoc opt">,</span> 
+                      SexyIconEntryPosition  icon_pos<span class="gtkdoc opt">,</span>
+                      <span class="gtkdoc kwb">int</span>                    button<span class="gtkdoc opt">)</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -91,9 +91,9 @@ to
         <td class="listing_lines" align="right"><pre>1
 2
 3</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="type">void</span><span class="normal"> </span><span class="symbol">(*</span><span class="normal">icon_press</span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkEntry</span><span class="normal">              </span><span class="symbol">*</span><span class="normal">entry</span><span class="symbol">,</span><span class="normal"> </span>
-<span class="normal">                    </span><span class="usertype">GtkEntryIconPosition</span><span class="normal">  icon_pos</span><span class="symbol">,</span>
-<span class="normal">                    </span><span class="usertype">GdkEventButton</span><span class="normal">       </span><span class="symbol">*</span><span class="normal">event</span><span class="symbol">)</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">void</span> <span class="gtkdoc opt">(*</span>icon_press<span class="gtkdoc opt">) (</span>GtkEntry              <span class="gtkdoc opt">*</span>entry<span class="gtkdoc opt">,</span> 
+                    GtkEntryIconPosition  icon_pos<span class="gtkdoc opt">,</span>
+                    GdkEventButton       <span class="gtkdoc opt">*</span>event<span class="gtkdoc opt">)</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -122,18 +122,18 @@ to
 10
 11
 12</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
-<span class="function">icon_pressed_cb</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">SexyIconEntry</span><span class="normal">         </span><span class="symbol">*</span><span class="normal">entry</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="usertype">SexyIconEntryPosition</span><span class="normal">  position</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="type">int</span><span class="normal">                    button</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="usertype">gpointer</span><span class="normal">               data</span><span class="symbol">)</span>
-<span class="cbracket">{</span>
-<span class="normal">  </span><span class="usertype">GtkMenu</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">menu </span><span class="symbol">=</span><span class="normal"> data</span><span class="symbol">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">static void</span>
+<span class="function">icon_pressed_cb</span> <span class="gtkdoc opt">(</span>SexyIconEntry         <span class="gtkdoc opt">*</span>entry<span class="gtkdoc opt">,</span>
+                 SexyIconEntryPosition  position<span class="gtkdoc opt">,</span>
+                 <span class="gtkdoc kwb">int</span>                    button<span class="gtkdoc opt">,</span>
+                 gpointer               data<span class="gtkdoc opt">)</span>
+<span class="gtkdoc opt">{</span>
+  GtkMenu <span class="gtkdoc opt">*</span>menu <span class="gtkdoc opt">=</span> data<span class="gtkdoc opt">;</span>
 
-<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">position </span><span class="symbol">==</span><span class="normal"> SEXY_ICON_ENTRY_PRIMARY</span><span class="symbol">)</span>
-<span class="normal">    </span><span class="function"><a href="GtkMenu.html#gtk-menu-popup">gtk_menu_popup</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_MENU</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">menu</span><span class="symbol">),</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span>
-<span class="normal">                    button</span><span class="symbol">,</span><span class="normal"> <a href="../html/gdk2-Events.html#GDK-CURRENT-TIME:CAPS">GDK_CURRENT_TIME</a></span><span class="symbol">);</span>
-<span class="cbracket">}</span></pre></td>
+  <span class="keyword">if</span> <span class="gtkdoc opt">(</span>position <span class="gtkdoc opt">==</span> SEXY_ICON_ENTRY_PRIMARY<span class="gtkdoc opt">)</span>
+    <span class="function"><a href="GtkMenu.html#gtk-menu-popup">gtk_menu_popup</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_MENU</span> <span class="gtkdoc opt">(</span>menu<span class="gtkdoc opt">),</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span>
+                    button<span class="gtkdoc opt">,</span> GDK_CURRENT_TIME<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -158,18 +158,18 @@ to
 10
 11
 12</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
-<span class="function">icon_press_cb</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkEntry</span><span class="normal">             </span><span class="symbol">*</span><span class="normal">entry</span><span class="symbol">,</span>
-<span class="normal">               </span><span class="usertype">GtkEntryIconPosition</span><span class="normal">  position</span><span class="symbol">,</span>
-<span class="normal">               </span><span class="usertype">GdkEventButton</span><span class="normal">       </span><span class="symbol">*</span><span class="normal">event</span><span class="symbol">,</span>
-<span class="normal">               </span><span class="usertype">gpointer</span><span class="normal">              data</span><span class="symbol">)</span>
-<span class="cbracket">{</span>
-<span class="normal">  </span><span class="usertype">GtkMenu</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">menu </span><span class="symbol">=</span><span class="normal"> data</span><span class="symbol">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">static void</span>
+<span class="function">icon_press_cb</span> <span class="gtkdoc opt">(</span>GtkEntry             <span class="gtkdoc opt">*</span>entry<span class="gtkdoc opt">,</span>
+               GtkEntryIconPosition  position<span class="gtkdoc opt">,</span>
+               GdkEventButton       <span class="gtkdoc opt">*</span>event<span class="gtkdoc opt">,</span>
+               gpointer              data<span class="gtkdoc opt">)</span>
+<span class="gtkdoc opt">{</span>
+  GtkMenu <span class="gtkdoc opt">*</span>menu <span class="gtkdoc opt">=</span> data<span class="gtkdoc opt">;</span>
 
-<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">position </span><span class="symbol">==</span><span class="normal"> <a href="GtkEntry.html#GTK-ENTRY-ICON-PRIMARY:CAPS">GTK_ENTRY_ICON_PRIMARY</a></span><span class="symbol">)</span>
-<span class="normal">    </span><span class="function"><a href="GtkMenu.html#gtk-menu-popup">gtk_menu_popup</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_MENU</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">menu</span><span class="symbol">),</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">,</span>
-<span class="normal">                    event</span><span class="symbol">-&gt;</span><span class="normal">button</span><span class="symbol">,</span><span class="normal"> event</span><span class="symbol">-&gt;</span><span class="normal">time</span><span class="symbol">);</span>
-<span class="cbracket">}</span></pre></td>
+  <span class="keyword">if</span> <span class="gtkdoc opt">(</span>position <span class="gtkdoc opt">==</span> GTK_ENTRY_ICON_PRIMARY<span class="gtkdoc opt">)</span>
+    <span class="function"><a href="GtkMenu.html#gtk-menu-popup">gtk_menu_popup</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_MENU</span> <span class="gtkdoc opt">(</span>menu<span class="gtkdoc opt">),</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span>
+                    event<span class="gtkdoc opt">-&gt;</span>button<span class="gtkdoc opt">,</span> event<span class="gtkdoc opt">-&gt;</span>time<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -242,42 +242,42 @@ to
 34
 35
 36</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
-<span class="function">icon_pressed_cb</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkEntry</span><span class="normal">       </span><span class="symbol">*</span><span class="normal">entry</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="usertype">gint</span><span class="normal">            position</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="usertype">GdkEventButton</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">event</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="usertype">gpointer</span><span class="normal">        data</span><span class="symbol">)</span>
-<span class="cbracket">{</span>
-<span class="normal">  </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">position </span><span class="symbol">==</span><span class="normal"> <a href="GtkEntry.html#GTK-ENTRY-ICON-SECONDARY:CAPS">GTK_ENTRY_ICON_SECONDARY</a></span><span class="symbol">)</span>
-<span class="normal">    </span><span class="function"><a href="GtkEntry.html#gtk-entry-set-text">gtk_entry_set_text</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">,</span><span class="normal"> </span><span class="string">""</span><span class="symbol">);</span>
-<span class="cbracket">}</span>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">static void</span>
+<span class="function">icon_pressed_cb</span> <span class="gtkdoc opt">(</span>GtkEntry       <span class="gtkdoc opt">*</span>entry<span class="gtkdoc opt">,</span>
+                 gint            position<span class="gtkdoc opt">,</span>
+                 GdkEventButton <span class="gtkdoc opt">*</span>event<span class="gtkdoc opt">,</span>
+                 gpointer        data<span class="gtkdoc opt">)</span>
+<span class="gtkdoc opt">{</span>
+  <span class="keyword">if</span> <span class="gtkdoc opt">(</span>position <span class="gtkdoc opt">==</span> GTK_ENTRY_ICON_SECONDARY<span class="gtkdoc opt">)</span>
+    <span class="function"><a href="GtkEntry.html#gtk-entry-set-text">gtk_entry_set_text</a></span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">,</span> <span class="string">&quot;&quot;</span><span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">}</span>
 
-<span class="keyword">static</span><span class="normal"> </span><span class="type">void</span>
-<span class="function">text_changed_cb</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkEntry</span><span class="normal">   </span><span class="symbol">*</span><span class="normal">entry</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="usertype">GParamSpec</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">pspec</span><span class="symbol">,</span>
-<span class="normal">                 </span><span class="usertype">GtkWidget</span><span class="normal">  </span><span class="symbol">*</span><span class="normal">button</span><span class="symbol">)</span>
-<span class="cbracket">{</span>
-<span class="normal">  </span><span class="usertype">gboolean</span><span class="normal"> has_text</span><span class="symbol">;</span>
+<span class="gtkdoc kwb">static void</span>
+<span class="function">text_changed_cb</span> <span class="gtkdoc opt">(</span>GtkEntry   <span class="gtkdoc opt">*</span>entry<span class="gtkdoc opt">,</span>
+                 GParamSpec <span class="gtkdoc opt">*</span>pspec<span class="gtkdoc opt">,</span>
+                 GtkWidget  <span class="gtkdoc opt">*</span>button<span class="gtkdoc opt">)</span>
+<span class="gtkdoc opt">{</span>
+  gboolean has_text<span class="gtkdoc opt">;</span>
 
-<span class="normal">  has_text </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkEntry.html#gtk-entry-get-text-length">gtk_entry_get_text_length</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">&gt;</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span>
-<span class="normal">  </span><span class="function"><a href="GtkEntry.html#gtk-entry-set-icon-sensitive">gtk_entry_set_icon_sensitive</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">,</span>
-<span class="normal">                                <a href="GtkEntry.html#GTK-ENTRY-ICON-SECONDARY:CAPS">GTK_ENTRY_ICON_SECONDARY</a></span><span class="symbol">,</span>
-<span class="normal">                                has_text</span><span class="symbol">);</span>
-<span class="cbracket">}</span>
+  has_text <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkEntry.html#gtk-entry-get-text-length">gtk_entry_get_text_length</a></span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">) &gt;</span> <span class="number">0</span><span class="gtkdoc opt">;</span>
+  <span class="function"><a href="GtkEntry.html#gtk-entry-set-icon-sensitive">gtk_entry_set_icon_sensitive</a></span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">,</span>
+                                GTK_ENTRY_ICON_SECONDARY<span class="gtkdoc opt">,</span>
+                                has_text<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">}</span>
 
 
-<span class="normal">  </span><span class="comment">/* ... */</span>
-<span class="normal"> </span>
-<span class="normal">  </span><span class="comment">/* Set up the clear icon */</span>
-<span class="normal">  </span><span class="function"><a href="GtkEntry.html#gtk-entry-set-icon-from-stock">gtk_entry_set_icon_from_stock</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_ENTRY</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">),</span>
-<span class="normal">                                 <a href="GtkEntry.html#GTK-ENTRY-ICON-SECONDARY:CAPS">GTK_ENTRY_ICON_SECONDARY</a></span><span class="symbol">,</span>
-<span class="normal">                                 <a href="gtk2-Stock-Items.html#GTK-STOCK-CLEAR:CAPS">GTK_STOCK_CLEAR</a></span><span class="symbol">);</span>
-<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#g-signal-connect">g_signal_connect</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"icon-press"</span><span class="symbol">,</span>
-<span class="normal">                    </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-Closures.html#G-CALLBACK:CAPS">G_CALLBACK</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">icon_pressed_cb</span><span class="symbol">),</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
-<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#g-signal-connect">g_signal_connect</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">entry</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"notify::text"</span><span class="symbol">,</span>
-<span class="normal">                    </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-Closures.html#G-CALLBACK:CAPS">G_CALLBACK</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">text_changed_cb</span><span class="symbol">),</span><span class="normal"> find_button</span><span class="symbol">);</span>
-<span class="normal"> </span>
-<span class="normal">  </span><span class="comment">/* ... */</span></pre></td>
+  <span class="comment">/* ... */</span>
+ 
+  <span class="comment">/* Set up the clear icon */</span>
+  <span class="function"><a href="GtkEntry.html#gtk-entry-set-icon-from-stock">gtk_entry_set_icon_from_stock</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_ENTRY</span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">),</span>
+                                 GTK_ENTRY_ICON_SECONDARY<span class="gtkdoc opt">,</span>
+                                 GTK_STOCK_CLEAR<span class="gtkdoc opt">);</span>
+  <span class="function"><a href="../gobject/gobject-Signals.html#g-signal-connect">g_signal_connect</a></span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">,</span> <span class="string">&quot;icon-press&quot;</span><span class="gtkdoc opt">,</span>
+                    <span class="function"><a href="../gobject/gobject-Closures.html#G-CALLBACK:CAPS">G_CALLBACK</a></span> <span class="gtkdoc opt">(</span>icon_pressed_cb<span class="gtkdoc opt">),</span> NULL<span class="gtkdoc opt">);</span>
+  <span class="function"><a href="../gobject/gobject-Signals.html#g-signal-connect">g_signal_connect</a></span> <span class="gtkdoc opt">(</span>entry<span class="gtkdoc opt">,</span> <span class="string">&quot;notify::text&quot;</span><span class="gtkdoc opt">,</span>
+                    <span class="function"><a href="../gobject/gobject-Closures.html#G-CALLBACK:CAPS">G_CALLBACK</a></span> <span class="gtkdoc opt">(</span>text_changed_cb<span class="gtkdoc opt">),</span> find_button<span class="gtkdoc opt">);</span>
+ 
+  <span class="comment">/* ... */</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -287,6 +287,6 @@ to
   </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

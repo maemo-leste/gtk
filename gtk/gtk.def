@@ -1778,10 +1778,16 @@ EXPORTS
 	gtk_marshal_ENUM__ENUM
 	gtk_marshal_INT__POINTER
 	gtk_marshal_INT__POINTER_CHAR_CHAR
+	gtk_marshal_VOID__BOOLEAN
+	gtk_marshal_VOID__BOXED
+	gtk_marshal_VOID__ENUM
 	gtk_marshal_VOID__ENUM_FLOAT
 	gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN
+	gtk_marshal_VOID__INT
 	gtk_marshal_VOID__INT_INT
 	gtk_marshal_VOID__INT_INT_POINTER
+	gtk_marshal_VOID__OBJECT
+	gtk_marshal_VOID__POINTER
 	gtk_marshal_VOID__POINTER_INT
 	gtk_marshal_VOID__POINTER_INT_INT_POINTER_UINT_UINT
 	gtk_marshal_VOID__POINTER_POINTER
@@ -1791,10 +1797,13 @@ EXPORTS
 	gtk_marshal_VOID__POINTER_UINT
 	gtk_marshal_VOID__POINTER_UINT_ENUM
 	gtk_marshal_VOID__POINTER_UINT_UINT
+	gtk_marshal_VOID__STRING
 	gtk_marshal_VOID__STRING_INT_POINTER
+	gtk_marshal_VOID__UINT
 	gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER
 	gtk_marshal_VOID__UINT_POINTER_UINT_UINT_ENUM
 	gtk_marshal_VOID__UINT_STRING
+	gtk_marshal_VOID__VOID
 	gtk_menu_bar_get_type 
 	gtk_menu_bar_new
 	gtk_menu_bar_get_child_pack_direction

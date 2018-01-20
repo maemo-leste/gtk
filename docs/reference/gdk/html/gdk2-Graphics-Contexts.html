@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Graphics Contexts: GDK 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Points-Rectangles-and-Regions.html" title="Points, Rectangles and Regions">
 <link rel="next" href="gdk2-Drawing-Primitives.html" title="Drawing Primitives">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -28,7 +28,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="gdk2-Graphics-Contexts.top_of_page"></a>Graphics Contexts</span></h2>
-<p>Graphics Contexts — Objects to encapsulate drawing properties</p>
+<p>Graphics Contexts</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -328,7 +328,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Graphics-Contexts.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GdkGC
 </pre>
 </div>
@@ -339,25 +339,6 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Graphics-Contexts.description"></a><h2>Description</h2>
-<p>
-All drawing operations in GDK take a
-<em class="firstterm">graphics context</em> (GC) argument.
-A graphics context encapsulates information about
-the way things are drawn, such as the foreground
-color or line width. By using graphics contexts,
-the number of arguments to each drawing call is
-greatly reduced, and communication overhead is
-minimized, since identical arguments do not need
-to be passed repeatedly.
-</p>
-<p>
-Most values of a graphics context can be set at
-creation time by using <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-new-with-values" title="gdk_gc_new_with_values ()"><code class="function">gdk_gc_new_with_values()</code></a>,
-or can be set one-by-one using functions such
-as <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-foreground" title="gdk_gc_set_foreground ()"><code class="function">gdk_gc_set_foreground()</code></a>. A few of the values
-in the GC, such as the dash pattern, can only
-be set by the latter method.
-</p>
 </div>
 <div class="refsect1">
 <a name="gdk2-Graphics-Contexts.functions_details"></a><h2>Functions</h2>
@@ -474,9 +455,9 @@ gdk_gc_get_screen (<em class="parameter"><code><a class="link" href="gdk2-Graphi
 gdk_gc_ref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_ref</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
+<p>Use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
 </div>
-<p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
+<p>Deprecated function; use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
 <div class="refsect3">
 <a name="gdk-gc-ref.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -504,7 +485,7 @@ gdk_gc_ref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Cont
 gdk_gc_unref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_unref</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
+<p>Use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
 </div>
 <p>Decrement the reference count of <em class="parameter"><code>gc</code></em>
 .</p>
@@ -780,7 +761,7 @@ gdk_gc_set_font (<em class="parameter"><code><a class="link" href="gdk2-Graphics
 all text-drawing functions in GDK take a <em class="parameter"><code>font</code></em>
 
 argument; the value set here is used when that
-argument is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.)</p>
+argument is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.)</p>
 <div class="refsect3">
 <a name="gdk-gc-set-font.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -891,7 +872,7 @@ as the source in Cairo:</p>
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="function">cairo_pattern_set_extend</span><span class="normal"> </span><span class="symbol">(</span><span class="function">cairo_get_source</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">cr</span><span class="symbol">),</span><span class="normal"> CAIRO_EXTEND_REPEAT</span><span class="symbol">);]|</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="function">cairo_pattern_set_extend</span> <span class="gtkdoc opt">(</span><span class="function">cairo_get_source</span> <span class="gtkdoc opt">(</span>cr<span class="gtkdoc opt">),</span> CAIRO_EXTEND_REPEAT<span class="gtkdoc opt">);]|</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -969,8 +950,8 @@ stipple will only be used if the fill mode is
 <a name="gdk-gc-set-ts-origin"></a><h3>gdk_gc_set_ts_origin ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_ts_origin (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_ts_origin</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>You can set the origin for tiles and stipples in Cairo
@@ -1015,8 +996,8 @@ will coincide with this point.</p>
 <a name="gdk-gc-set-clip-origin"></a><h3>gdk_gc_set_clip_origin ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_clip_origin (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_clip_origin</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>Use <code class="function">cairo_translate()</code> before applying the clip path in
@@ -1204,7 +1185,7 @@ windows of that window.</p>
 <a name="gdk-gc-set-exposures"></a><h3>gdk_gc_set_exposures ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_exposures (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exposures</code></em>);</pre>
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exposures</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_exposures</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>There is no replacement. If you need to control
@@ -1232,7 +1213,7 @@ drawable. (See <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-drawa
 </tr>
 <tr>
 <td class="parameter_name"><p>exposures</p></td>
-<td class="parameter_description"><p>if <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, exposure events will be generated.</p></td>
+<td class="parameter_description"><p>if <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, exposure events will be generated.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1244,7 +1225,7 @@ drawable. (See <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-drawa
 <a name="gdk-gc-set-line-attributes"></a><h3>gdk_gc_set_line_attributes ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_line_attributes (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line_width</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line_width</code></em>,
                             <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkLineStyle" title="enum GdkLineStyle"><span class="type">GdkLineStyle</span></a> line_style</code></em>,
                             <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkCapStyle" title="enum GdkCapStyle"><span class="type">GdkCapStyle</span></a> cap_style</code></em>,
                             <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkJoinStyle" title="enum GdkJoinStyle"><span class="type">GdkJoinStyle</span></a> join_style</code></em>);</pre>
@@ -1302,9 +1283,9 @@ explanations of the arguments.</p>
 <a name="gdk-gc-set-dashes"></a><h3>gdk_gc_set_dashes ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_dashes (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dash_offset</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> dash_list[]</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dash_offset</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> dash_list[]</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_dashes</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>Use <code class="function">cairo_set_dash()</code> to set the dash in Cairo.</p>
@@ -1460,7 +1441,7 @@ gdk_gc_set_colormap.</p>
 <div class="refsect3">
 <a name="gdk-gc-get-colormap.returns"></a><h4>Returns</h4>
 <p> the colormap of <em class="parameter"><code>gc</code></em>
-, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>gc</code></em>
+, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>gc</code></em>
 doesn't have one.</p>
 </div>
 </div>
@@ -1469,8 +1450,8 @@ doesn't have one.</p>
 <a name="gdk-gc-offset"></a><h3>gdk_gc_offset ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_offset (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_offset</code></em>,
-               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_offset</code></em>);</pre>
+               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_offset</code></em>,
+               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_offset</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_offset</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>There is no direct replacement, as this is just a
@@ -1514,11 +1495,6 @@ GC.</p>
 <div class="refsect2">
 <a name="GdkGC-struct"></a><h3>GdkGC</h3>
 <pre class="programlisting">typedef struct _GdkGC GdkGC;</pre>
-<p>
-The <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> structure represents a graphics context.
-It is an opaque structure with no user-visible
-elements.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1544,122 +1520,10 @@ elements.
   GdkJoinStyle	    join_style;
 };
 </pre>
-<p>
-The <a class="link" href="gdk2-Graphics-Contexts.html#GdkGCValues" title="struct GdkGCValues"><span class="type">GdkGCValues</span></a> structure holds a set of values used
-to create or modify a graphics context.
-</p>
-<div class="refsect3">
-<a name="GdkGCValues.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="struct_members_name">
-<col class="struct_members_description">
-<col width="200px" class="struct_members_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> <em class="structfield"><code><a name="GdkGCValues.foreground"></a>foreground</code></em>;</p></td>
-<td class="struct_member_description"><p>the foreground color. Note that <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-get-values" title="gdk_gc_get_values ()"><code class="function">gdk_gc_get_values()</code></a>
-only sets the pixel value.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> <em class="structfield"><code><a name="GdkGCValues.background"></a>background</code></em>;</p></td>
-<td class="struct_member_description"><p>the background color. Note that <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-get-values" title="gdk_gc_get_values ()"><code class="function">gdk_gc_get_values()</code></a>
-only sets the pixel value.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Fonts.html#GdkFont" title="GdkFont"><span class="type">GdkFont</span></a> *<em class="structfield"><code><a name="GdkGCValues.font"></a>font</code></em>;</p></td>
-<td class="struct_member_description"><p>the default font.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Graphics-Contexts.html#GdkFunction" title="enum GdkFunction"><span class="type">GdkFunction</span></a> <em class="structfield"><code><a name="GdkGCValues.function"></a>function</code></em>;</p></td>
-<td class="struct_member_description"><p>the bitwise operation used when drawing.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Graphics-Contexts.html#GdkFill" title="enum GdkFill"><span class="type">GdkFill</span></a> <em class="structfield"><code><a name="GdkGCValues.fill"></a>fill</code></em>;</p></td>
-<td class="struct_member_description"><p>the fill style.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *<em class="structfield"><code><a name="GdkGCValues.tile"></a>tile</code></em>;</p></td>
-<td class="struct_member_description"><p>the tile pixmap.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *<em class="structfield"><code><a name="GdkGCValues.stipple"></a>stipple</code></em>;</p></td>
-<td class="struct_member_description"><p>the stipple bitmap.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> *<em class="structfield"><code><a name="GdkGCValues.clip-mask"></a>clip_mask</code></em>;</p></td>
-<td class="struct_member_description"><p>the clip mask bitmap.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Graphics-Contexts.html#GdkSubwindowMode" title="enum GdkSubwindowMode"><span class="type">GdkSubwindowMode</span></a> <em class="structfield"><code><a name="GdkGCValues.subwindow-mode"></a>subwindow_mode</code></em>;</p></td>
-<td class="struct_member_description"><p>the subwindow mode.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkGCValues.ts-x-origin"></a>ts_x_origin</code></em>;</p></td>
-<td class="struct_member_description"><p>the x origin of the tile or stipple.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkGCValues.ts-y-origin"></a>ts_y_origin</code></em>;</p></td>
-<td class="struct_member_description"><p>the y origin of the tile or stipple.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkGCValues.clip-x-origin"></a>clip_x_origin</code></em>;</p></td>
-<td class="struct_member_description"><p>the x origin of the clip mask.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkGCValues.clip-y-origin"></a>clip_y_origin</code></em>;</p></td>
-<td class="struct_member_description"><p>the y origin of the clip mask.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkGCValues.graphics-exposures"></a>graphics_exposures</code></em>;</p></td>
-<td class="struct_member_description"><p>whether graphics exposures are enabled.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkGCValues.line-width"></a>line_width</code></em>;</p></td>
-<td class="struct_member_description"><p>the line width.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Graphics-Contexts.html#GdkLineStyle" title="enum GdkLineStyle"><span class="type">GdkLineStyle</span></a> <em class="structfield"><code><a name="GdkGCValues.line-style"></a>line_style</code></em>;</p></td>
-<td class="struct_member_description"><p>the way dashed lines are drawn.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Graphics-Contexts.html#GdkCapStyle" title="enum GdkCapStyle"><span class="type">GdkCapStyle</span></a> <em class="structfield"><code><a name="GdkGCValues.cap-style"></a>cap_style</code></em>;</p></td>
-<td class="struct_member_description"><p>the way the ends of lines are drawn.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a class="link" href="gdk2-Graphics-Contexts.html#GdkJoinStyle" title="enum GdkJoinStyle"><span class="type">GdkJoinStyle</span></a> <em class="structfield"><code><a name="GdkGCValues.join-style"></a>join_style</code></em>;</p></td>
-<td class="struct_member_description"><p>the way joins between lines are drawn.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GdkGCValuesMask"></a><h3>enum GdkGCValuesMask</h3>
-<p>
-A set of bit flags used to indicate which fields
-<a class="link" href="gdk2-Graphics-Contexts.html#GdkGCValues" title="struct GdkGCValues"><span class="type">GdkGCValues</span></a> structure are set.
-</p>
 <div class="refsect3">
 <a name="GdkGCValuesMask.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1671,147 +1535,93 @@ A set of bit flags used to indicate which fields
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-FOREGROUND:CAPS"></a>GDK_GC_FOREGROUND</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>foreground</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-BACKGROUND:CAPS"></a>GDK_GC_BACKGROUND</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>background</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-FONT:CAPS"></a>GDK_GC_FONT</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>font</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-FUNCTION:CAPS"></a>GDK_GC_FUNCTION</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>function</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-FILL:CAPS"></a>GDK_GC_FILL</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>fill</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-TILE:CAPS"></a>GDK_GC_TILE</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>tile</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-STIPPLE:CAPS"></a>GDK_GC_STIPPLE</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>stipple</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-CLIP-MASK:CAPS"></a>GDK_GC_CLIP_MASK</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>clip_mask</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-SUBWINDOW:CAPS"></a>GDK_GC_SUBWINDOW</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>subwindow_mode</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-TS-X-ORIGIN:CAPS"></a>GDK_GC_TS_X_ORIGIN</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>ts_x_origin</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-TS-Y-ORIGIN:CAPS"></a>GDK_GC_TS_Y_ORIGIN</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>ts_y_origin</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-CLIP-X-ORIGIN:CAPS"></a>GDK_GC_CLIP_X_ORIGIN</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>clip_x_origin</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-CLIP-Y-ORIGIN:CAPS"></a>GDK_GC_CLIP_Y_ORIGIN</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>clip_y_origin</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-EXPOSURES:CAPS"></a>GDK_GC_EXPOSURES</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>graphics_exposures</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-LINE-WIDTH:CAPS"></a>GDK_GC_LINE_WIDTH</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>line_width</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-LINE-STYLE:CAPS"></a>GDK_GC_LINE_STYLE</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>line_style</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-CAP-STYLE:CAPS"></a>GDK_GC_CAP_STYLE</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>cap_style</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-GC-JOIN-STYLE:CAPS"></a>GDK_GC_JOIN_STYLE</p></td>
-<td class="enum_member_description">
-<p>the <em class="parameter"><code>join_style</code></em>
- is set.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -1820,14 +1630,6 @@ A set of bit flags used to indicate which fields
 <hr>
 <div class="refsect2">
 <a name="GdkFunction"></a><h3>enum GdkFunction</h3>
-<p>
-Determines how the bit values for the source pixels are combined with
-the bit values for destination pixels to produce the final result. The
-sixteen values here correspond to the 16 different possible 2x2 truth
-tables.  Only a couple of these values are usually useful; for colored
-images, only <a class="link" href="gdk2-Graphics-Contexts.html#GDK-COPY:CAPS"><code class="literal">GDK_COPY</code></a>, <a class="link" href="gdk2-Graphics-Contexts.html#GDK-XOR:CAPS"><code class="literal">GDK_XOR</code></a> and <a class="link" href="gdk2-Graphics-Contexts.html#GDK-INVERT:CAPS"><code class="literal">GDK_INVERT</code></a> are generally
-useful. For bitmaps, <a class="link" href="gdk2-Graphics-Contexts.html#GDK-AND:CAPS"><code class="literal">GDK_AND</code></a> and <a class="link" href="gdk2-Graphics-Contexts.html#GDK-OR:CAPS"><code class="literal">GDK_OR</code></a> are also useful.
-</p>
 <div class="refsect3">
 <a name="GdkFunction.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1839,115 +1641,83 @@ useful. For bitmaps, <a class="link" href="gdk2-Graphics-Contexts.html#GDK-AND:C
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-COPY:CAPS"></a>GDK_COPY</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = src</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-INVERT:CAPS"></a>GDK_INVERT</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = NOT dst</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-XOR:CAPS"></a>GDK_XOR</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = src XOR dst</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-CLEAR:CAPS"></a>GDK_CLEAR</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = 0</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-AND:CAPS"></a>GDK_AND</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = dst AND src</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-AND-REVERSE:CAPS"></a>GDK_AND_REVERSE</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = src AND (NOT dst)</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-AND-INVERT:CAPS"></a>GDK_AND_INVERT</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = (NOT src) AND dst</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-NOOP:CAPS"></a>GDK_NOOP</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = dst</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-OR:CAPS"></a>GDK_OR</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = src OR dst</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-EQUIV:CAPS"></a>GDK_EQUIV</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = (NOT src) XOR dst</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-OR-REVERSE:CAPS"></a>GDK_OR_REVERSE</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = src OR (NOT dst)</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-COPY-INVERT:CAPS"></a>GDK_COPY_INVERT</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = NOT src</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-OR-INVERT:CAPS"></a>GDK_OR_INVERT</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = (NOT src) OR dst</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-NAND:CAPS"></a>GDK_NAND</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = (NOT src) OR (NOT dst)</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-NOR:CAPS"></a>GDK_NOR</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = (NOT src) AND (NOT dst)</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-SET:CAPS"></a>GDK_SET</p></td>
-<td class="enum_member_description">
-<p><code class="literal">dst = 1</code></p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -1958,20 +1728,11 @@ useful. For bitmaps, <a class="link" href="gdk2-Graphics-Contexts.html#GDK-AND:C
 <a name="gdk-gc-destroy"></a><h3>gdk_gc_destroy</h3>
 <pre class="programlisting">#define gdk_gc_destroy                 g_object_unref
 </pre>
-<div class="warning">
-<p><code class="literal">gdk_gc_destroy</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead</p>
-</div>
-<p>
-This function is obsolete and should not be used.
-</p>
+<div class="warning"><p><code class="literal">gdk_gc_destroy</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GdkFill"></a><h3>enum GdkFill</h3>
-<p>
-Determines how primitives are drawn.
-</p>
 <div class="refsect3">
 <a name="GdkFill.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1983,37 +1744,23 @@ Determines how primitives are drawn.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-SOLID:CAPS"></a>GDK_SOLID</p></td>
-<td class="enum_member_description">
-<p>draw with the foreground color.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-TILED:CAPS"></a>GDK_TILED</p></td>
-<td class="enum_member_description">
-<p>draw with a tiled pixmap.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-STIPPLED:CAPS"></a>GDK_STIPPLED</p></td>
-<td class="enum_member_description">
-<p>draw using the stipple bitmap. Pixels corresponding
-  to bits in the stipple bitmap that are set will be drawn in the
-  foreground color; pixels corresponding to bits that are
-  not set will be left untouched.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-OPAQUE-STIPPLED:CAPS"></a>GDK_OPAQUE_STIPPLED</p></td>
-<td class="enum_member_description">
-<p>draw using the stipple bitmap. Pixels corresponding
-  to bits in the stipple bitmap that are set will be drawn in the
-  foreground color; pixels corresponding to bits that are
-  not set will be drawn with the background color.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -2022,10 +1769,6 @@ Determines how primitives are drawn.
 <hr>
 <div class="refsect2">
 <a name="GdkSubwindowMode"></a><h3>enum GdkSubwindowMode</h3>
-<p>
-Determines how drawing onto a window will affect child
-windows of that window.
-</p>
 <div class="refsect3">
 <a name="GdkSubwindowMode.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -2037,17 +1780,13 @@ windows of that window.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-CLIP-BY-CHILDREN:CAPS"></a>GDK_CLIP_BY_CHILDREN</p></td>
-<td class="enum_member_description">
-<p>only draw onto the window itself.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-INCLUDE-INFERIORS:CAPS"></a>GDK_INCLUDE_INFERIORS</p></td>
-<td class="enum_member_description">
-<p>draw onto the window and child windows.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -2056,9 +1795,6 @@ windows of that window.
 <hr>
 <div class="refsect2">
 <a name="GdkLineStyle"></a><h3>enum GdkLineStyle</h3>
-<p>
-Determines how lines are drawn.
-</p>
 <div class="refsect3">
 <a name="GdkLineStyle.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -2070,26 +1806,18 @@ Determines how lines are drawn.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-LINE-SOLID:CAPS"></a>GDK_LINE_SOLID</p></td>
-<td class="enum_member_description">
-<p>lines are drawn solid.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-LINE-ON-OFF-DASH:CAPS"></a>GDK_LINE_ON_OFF_DASH</p></td>
-<td class="enum_member_description">
-<p>even segments are drawn; odd segments are not drawn.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-LINE-DOUBLE-DASH:CAPS"></a>GDK_LINE_DOUBLE_DASH</p></td>
-<td class="enum_member_description">
-<p>even segments are normally. Odd segments are drawn
-  in the background color if the fill style is <a class="link" href="gdk2-Graphics-Contexts.html#GDK-SOLID:CAPS"><code class="literal">GDK_SOLID</code></a>, or in the background
-  color masked by the stipple if the fill style is <a class="link" href="gdk2-Graphics-Contexts.html#GDK-STIPPLED:CAPS"><code class="literal">GDK_STIPPLED</code></a>.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -2098,9 +1826,6 @@ Determines how lines are drawn.
 <hr>
 <div class="refsect2">
 <a name="GdkCapStyle"></a><h3>enum GdkCapStyle</h3>
-<p>
-Determines how the end of lines are drawn.
-</p>
 <div class="refsect3">
 <a name="GdkCapStyle.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -2112,35 +1837,23 @@ Determines how the end of lines are drawn.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-CAP-NOT-LAST:CAPS"></a>GDK_CAP_NOT_LAST</p></td>
-<td class="enum_member_description">
-<p>the same as <a class="link" href="gdk2-Graphics-Contexts.html#GDK-CAP-BUTT:CAPS"><code class="literal">GDK_CAP_BUTT</code></a> for lines of non-zero width.
-       for zero width lines, the final point on the line will not be drawn.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-CAP-BUTT:CAPS"></a>GDK_CAP_BUTT</p></td>
-<td class="enum_member_description">
-<p>the ends of the lines are drawn squared off and extending
-       to the coordinates of the end point.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-CAP-ROUND:CAPS"></a>GDK_CAP_ROUND</p></td>
-<td class="enum_member_description">
-<p>the ends of the lines are drawn as semicircles with the
-       diameter equal to the line width and centered at the end point.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-CAP-PROJECTING:CAPS"></a>GDK_CAP_PROJECTING</p></td>
-<td class="enum_member_description">
-<p>the ends of the lines are drawn squared off and extending
-       half the width of the line beyond the end point.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -2149,9 +1862,6 @@ Determines how the end of lines are drawn.
 <hr>
 <div class="refsect2">
 <a name="GdkJoinStyle"></a><h3>enum GdkJoinStyle</h3>
-<p>
-Determines how the joins between segments of a polygon are drawn.
-</p>
 <div class="refsect3">
 <a name="GdkJoinStyle.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -2163,25 +1873,18 @@ Determines how the joins between segments of a polygon are drawn.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-JOIN-MITER:CAPS"></a>GDK_JOIN_MITER</p></td>
-<td class="enum_member_description">
-<p>the sides of each line are extended to meet at an angle.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-JOIN-ROUND:CAPS"></a>GDK_JOIN_ROUND</p></td>
-<td class="enum_member_description">
-<p>the sides of the two lines are joined by a circular arc.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-JOIN-BEVEL:CAPS"></a>GDK_JOIN_BEVEL</p></td>
-<td class="enum_member_description">
-<p>the sides of the two lines are joined by a straight line which
-       makes an equal angle with each line.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -2190,6 +1893,6 @@ Determines how the joins between segments of a polygon are drawn.
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

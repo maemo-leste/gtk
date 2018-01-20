@@ -730,6 +730,8 @@ EXPORTS
 	gdk_win32_hdc_get
 	gdk_win32_hdc_release
 	gdk_win32_selection_add_targets
+	gdk_win32_keymap_get_type 
+	gdk_win32_keymap_check_compose
 	gdk_app_launch_context_get_type 
 	gdk_app_launch_context_new
 	gdk_app_launch_context_set_display

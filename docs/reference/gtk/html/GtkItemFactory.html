@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkItemFactory: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkFileSelection.html" title="GtkFileSelection">
 <link rel="next" href="GtkList.html" title="GtkList">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -28,7 +28,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkItemFactory.top_of_page"></a>GtkItemFactory</span></h2>
-<p>GtkItemFactory — A factory for menus</p>
+<p>GtkItemFactory</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -50,7 +50,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
 <span class="c_punctuation">(</span><a class="link" href="GtkItemFactory.html#GtkTranslateFunc" title="GtkTranslateFunc ()">*GtkTranslateFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
@@ -113,7 +113,7 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkItemFactory.html#gtk-item-factory-path-from-widget" title="gtk_item_factory_path_from_widget ()">gtk_item_factory_path_from_widget</a> <span class="c_punctuation">()</span>
@@ -217,7 +217,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="GtkItemFactory.html#gtk-item-factory-popup-data" title="gtk_item_factory_popup_data ()">gtk_item_factory_popup_data</a> <span class="c_punctuation">()</span>
@@ -225,7 +225,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="GtkItemFactory.html#gtk-item-factory-popup-data-from-widget" title="gtk_item_factory_popup_data_from_widget ()">gtk_item_factory_popup_data_from_widget</a> <span class="c_punctuation">()</span>
@@ -291,8 +291,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkItemFactory.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> GtkItemFactory
 </pre>
@@ -304,59 +304,22 @@
 </div>
 <div class="refsect1">
 <a name="GtkItemFactory.description"></a><h2>Description</h2>
-<p>
-As of GTK+ 2.4, <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> has been deprecated in favour of <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a>.
-</p>
 </div>
 <div class="refsect1">
 <a name="GtkItemFactory.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="GtkPrintFunc"></a><h3>GtkPrintFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-<span class="c_punctuation">(</span>*GtkPrintFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> func_data</code></em>,
-                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);</pre>
+<span class="c_punctuation">(</span>*GtkPrintFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> func_data</code></em>,
+                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);</pre>
 <div class="warning"><p><code class="literal">GtkPrintFunc</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkTranslateFunc"></a><h3>GtkTranslateFunc ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-<span class="c_punctuation">(</span>*GtkTranslateFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
-                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> func_data</code></em>);</pre>
-<p>
-The function used to translate messages in e.g. <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconFactory"><span class="type">GtkIconFactory</span></a>
-and <a class="link" href="GtkActionGroup.html" title="GtkActionGroup"><span class="type">GtkActionGroup</span></a>.
-</p>
-<div class="refsect3">
-<a name="GtkTranslateFunc.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>path</p></td>
-<td class="parameter_description"><p>The id of the message. In <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> this will be a path
-from a <a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a>, in <a class="link" href="GtkActionGroup.html" title="GtkActionGroup"><span class="type">GtkActionGroup</span></a>, it will be a label
-or tooltip from a <a class="link" href="GtkActionGroup.html#GtkActionEntry" title="struct GtkActionEntry"><span class="type">GtkActionEntry</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>func_data</p></td>
-<td class="parameter_description"><p>user data passed in when registering the function</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="GtkTranslateFunc.returns"></a><h4>Returns</h4>
-<p>the translated message</p>
-</div>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<span class="c_punctuation">(</span>*GtkTranslateFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
+                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> func_data</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -364,37 +327,31 @@ or tooltip from a <a class="link" href="GtkActionGroup.html#GtkActionEntry" titl
 <pre class="programlisting"><span class="returnvalue">void</span>
 <span class="c_punctuation">(</span>*GtkItemFactoryCallback<span class="c_punctuation">)</span> ();</pre>
 <div class="warning"><p><code class="literal">GtkItemFactoryCallback</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkItemFactoryCallback1"></a><h3>GtkItemFactoryCallback1 ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-<span class="c_punctuation">(</span>*GtkItemFactoryCallback1<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
-                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_action</code></em>,
+<span class="c_punctuation">(</span>*GtkItemFactoryCallback1<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_action</code></em>,
                             <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
 <div class="warning"><p><code class="literal">GtkItemFactoryCallback1</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkItemFactoryCallback2"></a><h3>GtkItemFactoryCallback2 ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 <span class="c_punctuation">(</span>*GtkItemFactoryCallback2<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
-                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_action</code></em>);</pre>
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_action</code></em>);</pre>
 <div class="warning"><p><code class="literal">GtkItemFactoryCallback2</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-factory-new"></a><h3>gtk_item_factory_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="returnvalue">GtkItemFactory</span></a> *
-gtk_item_factory_new (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> container_type</code></em>,
-                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
+gtk_item_factory_new (<em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> container_type</code></em>,
+                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
                       <em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_new</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
@@ -425,16 +382,17 @@ gtk_item_factory_new (<em class="parameter"><code><a href="https://developer.gno
 </tr>
 <tr>
 <td class="parameter_name"><p>accel_group</p></td>
-<td class="parameter_description"><p> a <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> to which the accelerators for the
-menu items will be added, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to create a new one. </p></td>
+<td class="parameter_description"><p>a <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> to which the accelerators for the
+menu items will be added, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to create a new one. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>a new <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a></p></td>
+<td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-new.returns"></a><h4>Returns</h4>
-<p>a new <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a></p>
 </div>
 </div>
 <hr>
@@ -442,8 +400,8 @@ menu items will be added, or <a href="https://developer.gnome.org/glib/unstable/
 <a name="gtk-item-factory-construct"></a><h3>gtk_item_factory_construct ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_construct (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                            <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> container_type</code></em>,
-                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
+                            <em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> container_type</code></em>,
+                            <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
                             <em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_construct</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
@@ -480,7 +438,7 @@ gtk_item_factory_construct (<em class="parameter"><code><a class="link" href="Gt
 <tr>
 <td class="parameter_name"><p>accel_group</p></td>
 <td class="parameter_description"><p>a <a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> to which the accelerators for the
-menu items will be added, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to create a new one</p></td>
+menu items will be added, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to create a new one</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -492,9 +450,9 @@ menu items will be added, or <a href="https://developer.gnome.org/glib/unstable/
 <a name="gtk-item-factory-add-foreign"></a><h3>gtk_item_factory_add_foreign ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_add_foreign (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *accel_widget</code></em>,
-                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *full_path</code></em>,
+                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *full_path</code></em>,
                               <em class="parameter"><code><a class="link" href="gtk2-Keyboard-Accelerators.html#GtkAccelGroup"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>,
-                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> keyval</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> keyval</code></em>,
                               <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkModifierType"><span class="type">GdkModifierType</span></a> modifiers</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_add_foreign</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
@@ -568,24 +526,26 @@ gtk_item_factory_from_widget (<em class="parameter"><code><a class="link" href="
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>widget</p></td>
 <td class="parameter_description"><p>a widget</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the item factory from which <em class="parameter"><code>widget</code></em>
+was created, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-from-widget.returns"></a><h4>Returns</h4>
-<p> the item factory from which <em class="parameter"><code>widget</code></em>
-was created, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
-<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-factory-path-from-widget"></a><h3>gtk_item_factory_path_from_widget ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 gtk_item_factory_path_from_widget (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_path_from_widget</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
@@ -604,19 +564,22 @@ path specified in <a class="link" href="GtkItemFactory.html#gtk-item-factory-new
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>widget</p></td>
 <td class="parameter_description"><p>a widget</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-path-from-widget.returns"></a><h4>Returns</h4>
-<p>the full path to <em class="parameter"><code>widget</code></em>
+</tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the full path to <em class="parameter"><code>widget</code></em>
 if it has been created by an item
-factory, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> otherwise. This value is owned by GTK+ and must not be
-modified or freed.</p>
+factory, <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> otherwise. This value is owned by GTK+ and must not be
+modified or freed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 <hr>
@@ -624,7 +587,7 @@ modified or freed.</p>
 <a name="gtk-item-factory-get-item"></a><h3>gtk_item_factory_get_item ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_item_factory_get_item (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+                           <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_get_item</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -654,15 +617,15 @@ use <a class="link" href="GtkItemFactory.html#gtk-item-factory-get-widget" title
 <td class="parameter_description"><p>the path to the menu item</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the menu item for the given path, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
+doesn't
+lead to a menu item. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-get-item.returns"></a><h4>Returns</h4>
-<p> the menu item for the given path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
-doesn't
-lead to a menu item. </p>
-<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -670,7 +633,7 @@ lead to a menu item. </p>
 <a name="gtk-item-factory-get-widget"></a><h3>gtk_item_factory_get_widget ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_item_factory_get_widget (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_get_widget</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -700,15 +663,15 @@ item, use <a class="link" href="GtkItemFactory.html#gtk-item-factory-get-item" t
 <td class="parameter_description"><p>the path to the widget</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the widget for the given path, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
+doesn't lead
+to a widget. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-get-widget.returns"></a><h4>Returns</h4>
-<p> the widget for the given path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
-doesn't lead
-to a widget. </p>
-<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -716,7 +679,7 @@ to a widget. </p>
 <a name="gtk-item-factory-get-widget-by-action"></a><h3>gtk_item_factory_get_widget_by_action ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_item_factory_get_widget_by_action (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> action</code></em>);</pre>
+                                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> action</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_get_widget_by_action</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -747,14 +710,14 @@ field
 of <a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the widget which corresponds to the given action, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+if no widget was found. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-get-widget-by-action.returns"></a><h4>Returns</h4>
-<p> the widget which corresponds to the given action, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
-if no widget was found. </p>
-<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -762,7 +725,7 @@ if no widget was found. </p>
 <a name="gtk-item-factory-get-item-by-action"></a><h3>gtk_item_factory_get_item_by_action ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_item_factory_get_item_by_action (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> action</code></em>);</pre>
+                                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> action</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_get_item_by_action</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -791,14 +754,14 @@ field
 of <a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the menu item which corresponds to the given action, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+if no menu item was found. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-get-item-by-action.returns"></a><h4>Returns</h4>
-<p> the menu item which corresponds to the given action, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
-if no menu item was found. </p>
-<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -807,8 +770,8 @@ if no menu item was found. </p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_create_item (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
                               <em class="parameter"><code><a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a> *entry</code></em>,
-                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
-                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_type</code></em>);</pre>
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_type</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_create_item</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -856,9 +819,9 @@ is of type
 <a name="gtk-item-factory-create-items"></a><h3>gtk_item_factory_create_items ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_create_items (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
                                <em class="parameter"><code><a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a> *entries</code></em>,
-                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_create_items</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -906,10 +869,10 @@ must by of type <a class="link" href="GtkItemFactory.html#GtkItemFactoryCallback
 <a name="gtk-item-factory-create-items-ac"></a><h3>gtk_item_factory_create_items_ac ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_create_items_ac (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
                                   <em class="parameter"><code><a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a> *entries</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_type</code></em>);</pre>
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> callback_type</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_create_items_ac</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -962,7 +925,7 @@ are of type
 <a name="gtk-item-factory-delete-item"></a><h3>gtk_item_factory_delete_item ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_delete_item (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_delete_item</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -1034,7 +997,7 @@ item factory.</p>
 <a name="gtk-item-factory-delete-entries"></a><h3>gtk_item_factory_delete_entries ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_delete_entries (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
                                  <em class="parameter"><code><a class="link" href="GtkItemFactory.html#GtkItemFactoryEntry" title="struct GtkItemFactoryEntry"><span class="type">GtkItemFactoryEntry</span></a> *entries</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_delete_entries</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
@@ -1077,10 +1040,10 @@ item factory.</p>
 <a name="gtk-item-factory-popup"></a><h3>gtk_item_factory_popup ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_popup (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> mouse_button</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> mouse_button</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_popup</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -1147,12 +1110,12 @@ as the <em class="parameter"><code>button</code></em>
 <a name="gtk-item-factory-popup-with-data"></a><h3>gtk_item_factory_popup_with_data ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_popup_with_data (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> popup_data</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> mouse_button</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> popup_data</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> mouse_button</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_popup_with_data</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -1200,7 +1163,7 @@ as the <em class="parameter"><code>button</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>destroy</p></td>
-<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> function to be called on <em class="parameter"><code>popup_data</code></em>
+<td class="parameter_description"><p>a <a href="../glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> function to be called on <em class="parameter"><code>popup_data</code></em>
 when
 the menu is unposted</p></td>
 <td class="parameter_annotations"> </td>
@@ -1232,7 +1195,7 @@ the menu is unposted</p></td>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-factory-popup-data"></a><h3>gtk_item_factory_popup_data ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 gtk_item_factory_popup_data (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_popup_data</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
@@ -1250,24 +1213,27 @@ is popped down again.</p>
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>ifactory</p></td>
 <td class="parameter_description"><p>a <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a></p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-popup-data.returns"></a><h4>Returns</h4>
-<p><em class="parameter"><code>popup_data</code></em>
+</tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p><em class="parameter"><code>popup_data</code></em>
 associated with <em class="parameter"><code>ifactory</code></em>
-</p>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-factory-popup-data-from-widget"></a><h3>gtk_item_factory_popup_data_from_widget ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 gtk_item_factory_popup_data_from_widget
                                (<em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
 <div class="warning">
@@ -1286,28 +1252,31 @@ is popped down again.</p>
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>widget</p></td>
 <td class="parameter_description"><p>a widget</p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-popup-data-from-widget.returns"></a><h4>Returns</h4>
-<p><em class="parameter"><code>popup_data</code></em>
+</tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p><em class="parameter"><code>popup_data</code></em>
 associated with the item factory from
 which <em class="parameter"><code>widget</code></em>
-was created, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>widget</code></em>
+was created, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>widget</code></em>
 wasn't created
-by an item factory</p>
+by an item factory</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-factory-from-path"></a><h3>gtk_item_factory_from_path ()</h3>
 <pre class="programlisting"><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="returnvalue">GtkItemFactory</span></a> *
-gtk_item_factory_from_path (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+gtk_item_factory_from_path (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_from_path</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -1325,25 +1294,27 @@ for <a class="link" href="GtkItemFactory.html#gtk-item-factory-new" title="gtk_i
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="parameter_name"><p>path</p></td>
 <td class="parameter_description"><p>a string starting with a factory path of the form
 <code class="literal">"&lt;name&gt;"</code></p></td>
 <td class="parameter_annotations"> </td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> created for the given factory path, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
 </table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-item-factory-from-path.returns"></a><h4>Returns</h4>
-<p> the <a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> created for the given factory path, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
-<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-factory-create-menu-entries"></a><h3>gtk_item_factory_create_menu_entries ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_item_factory_create_menu_entries (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
+gtk_item_factory_create_menu_entries (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_entries</code></em>,
                                       <em class="parameter"><code><span class="type">GtkMenuEntry</span> *entries</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_create_menu_entries</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
@@ -1379,8 +1350,8 @@ gtk_item_factory_create_menu_entries (<em class="parameter"><code><a href="https
 <div class="refsect2">
 <a name="gtk-item-factories-path-delete"></a><h3>gtk_item_factories_path_delete ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_item_factories_path_delete (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *ifactory_path</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+gtk_item_factories_path_delete (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *ifactory_path</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factories_path_delete</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -1398,7 +1369,7 @@ gtk_item_factories_path_delete (<em class="parameter"><code>const <a href="https
 <tr>
 <td class="parameter_name"><p>ifactory_path</p></td>
 <td class="parameter_description"><p>a factory path to prepend to <em class="parameter"><code>path</code></em>
-. May be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
+. May be <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>path</code></em>
 starts with a factory path</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
@@ -1417,8 +1388,8 @@ starts with a factory path</p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_factory_set_translate_func (<em class="parameter"><code><a class="link" href="GtkItemFactory.html" title="GtkItemFactory"><span class="type">GtkItemFactory</span></a> *ifactory</code></em>,
                                      <em class="parameter"><code><a class="link" href="GtkItemFactory.html#GtkTranslateFunc" title="GtkTranslateFunc ()"><span class="type">GtkTranslateFunc</span></a> func</code></em>,
-                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
-                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> notify</code></em>);</pre>
+                                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
+                                     <em class="parameter"><code><a href="../glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> notify</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_item_factory_set_translate_func</code> has been deprecated since version 2.4 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkUIManager.html" title="GtkUIManager"><span class="type">GtkUIManager</span></a> instead.</p>
@@ -1453,7 +1424,7 @@ and <em class="parameter"><code>notify</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>notify</p></td>
-<td class="parameter_description"><p>a <a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> function to be called when <em class="parameter"><code>ifactory</code></em>
+<td class="parameter_description"><p>a <a href="../glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> function to be called when <em class="parameter"><code>ifactory</code></em>
 is
 destroyed and when the translation function is changed again</p></td>
 <td class="parameter_annotations"> </td>
@@ -1469,8 +1440,6 @@ destroyed and when the translation function is changed again</p></td>
 <a name="GtkItemFactory-struct"></a><h3>struct GtkItemFactory</h3>
 <pre class="programlisting">struct GtkItemFactory;</pre>
 <div class="warning"><p><code class="literal">GtkItemFactory</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1508,8 +1477,6 @@ destroyed and when the translation function is changed again</p></td>
 };
 </pre>
 <div class="warning"><p><code class="literal">GtkItemFactoryEntry</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1520,12 +1487,10 @@ destroyed and when the translation function is changed again</p></td>
 };
 </pre>
 <div class="warning"><p><code class="literal">GtkItemFactoryItem</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

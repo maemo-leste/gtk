@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkAccessible: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MiscObjects.html" title="Miscellaneous">
 <link rel="prev" href="GtkViewport.html" title="GtkViewport">
 <link rel="next" href="AbstractObjects.html" title="Abstract Base Classes">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -28,7 +28,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkAccessible.top_of_page"></a>GtkAccessible</span></h2>
-<p>GtkAccessible</p>
+<p>GtkAccessible — Accessibility support for widgets</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -82,7 +82,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkAccessible.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> AtkObject
         <span class="lineart">╰──</span> GtkAccessible
 </pre>
@@ -102,12 +102,52 @@
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_accessible_connect_widget_destroyed
                                (<em class="parameter"><code><a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a> *accessible</code></em>);</pre>
+<p>This function specifies the callback function to be called when the widget
+corresponding to a GtkAccessible is destroyed.</p>
+<div class="refsect3">
+<a name="gtk-accessible-connect-widget-destroyed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>accessible</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-accessible-get-widget"></a><h3>gtk_accessible_get_widget ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_accessible_get_widget (<em class="parameter"><code><a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a> *accessible</code></em>);</pre>
+<p>Gets the <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> corresponding to the <a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a>. The returned widget
+does not have a reference added, so you do not need to unref it.</p>
+<div class="refsect3">
+<a name="gtk-accessible-get-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>accessible</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtk-accessible-get-widget.returns"></a><h4>Returns</h4>
+<p>pointer to the <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> corresponding to
+the <a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a>, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
 <p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 <hr>
@@ -116,6 +156,29 @@ gtk_accessible_get_widget (<em class="parameter"><code><a class="link" href="Gtk
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_accessible_set_widget (<em class="parameter"><code><a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a> *accessible</code></em>,
                            <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>Sets the <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> corresponding to the <a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a>.</p>
+<div class="refsect3">
+<a name="gtk-accessible-set-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>accessible</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkAccessible.html" title="GtkAccessible"><span class="type">GtkAccessible</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
 </div>
 </div>
@@ -128,6 +191,6 @@ gtk_accessible_set_widget (<em class="parameter"><code><a class="link" href="Gtk
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

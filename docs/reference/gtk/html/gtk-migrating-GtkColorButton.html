@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Migrating from GnomeColorPicker to GtkColorButton: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="gtk-migrating-GtkAboutDialog.html" title="Migrating from GnomeAbout to GtkAboutDialog">
 <link rel="next" href="gtk-migrating-GtkAssistant.html" title="Migrating from GnomeDruid to GtkAssistant">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -42,9 +42,9 @@
         <td class="listing_lines" align="right"><pre>1
 2
 3</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="usertype">guint</span><span class="normal"> red</span><span class="symbol">,</span><span class="normal"> green</span><span class="symbol">,</span><span class="normal"> blue</span><span class="symbol">,</span><span class="normal"> alpha</span><span class="symbol">;</span>
+        <td class="listing_code"><pre class="programlisting">guint red<span class="gtkdoc opt">,</span> green<span class="gtkdoc opt">,</span> blue<span class="gtkdoc opt">,</span> alpha<span class="gtkdoc opt">;</span>
 <span class="comment">/* ... */</span>
-<span class="function">gnome_color_picker_set_i8</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">color_picker</span><span class="symbol">,</span><span class="normal"> red</span><span class="symbol">,</span><span class="normal"> green</span><span class="symbol">,</span><span class="normal"> blue</span><span class="symbol">,</span><span class="normal"> alpha</span><span class="symbol">);</span></pre></td>
+<span class="function">gnome_color_picker_set_i8</span> <span class="gtkdoc opt">(</span>color_picker<span class="gtkdoc opt">,</span> red<span class="gtkdoc opt">,</span> green<span class="gtkdoc opt">,</span> blue<span class="gtkdoc opt">,</span> alpha<span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -64,13 +64,13 @@
 5
 6
 7</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="usertype">GdkColor</span><span class="normal"> color</span><span class="symbol">;</span>
+        <td class="listing_code"><pre class="programlisting">GdkColor color<span class="gtkdoc opt">;</span>
 
-<span class="normal">color</span><span class="symbol">.</span><span class="normal">red </span><span class="symbol">=</span><span class="normal"> red </span><span class="symbol">&lt;&lt;</span><span class="normal"> </span><span class="number">8</span><span class="symbol">;</span>
-<span class="normal">color</span><span class="symbol">.</span><span class="normal">green </span><span class="symbol">=</span><span class="normal"> green </span><span class="symbol">&lt;&lt;</span><span class="normal"> </span><span class="number">8</span><span class="symbol">;</span>
-<span class="normal">color</span><span class="symbol">.</span><span class="normal">blue </span><span class="symbol">=</span><span class="normal"> blue </span><span class="symbol">&lt;&lt;</span><span class="normal"> </span><span class="number">8</span><span class="symbol">;</span>
-<span class="function"><a href="GtkColorButton.html#gtk-color-button-set-color">gtk_color_button_set_color</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">color_picker</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">color</span><span class="symbol">);</span>
-<span class="function"><a href="GtkColorButton.html#gtk-color-button-set-alpha">gtk_color_button_set_alpha</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">color_picker</span><span class="symbol">,</span><span class="normal"> alpha </span><span class="symbol">&lt;&lt;</span><span class="normal"> </span><span class="number">8</span><span class="symbol">);</span></pre></td>
+color<span class="gtkdoc opt">.</span>red <span class="gtkdoc opt">=</span> red <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">;</span>
+color<span class="gtkdoc opt">.</span>green <span class="gtkdoc opt">=</span> green <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">;</span>
+color<span class="gtkdoc opt">.</span>blue <span class="gtkdoc opt">=</span> blue <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">;</span>
+<span class="function"><a href="GtkColorButton.html#gtk-color-button-set-color">gtk_color_button_set_color</a></span> <span class="gtkdoc opt">(</span>color_picker<span class="gtkdoc opt">, &amp;</span>color<span class="gtkdoc opt">);</span>
+<span class="function"><a href="GtkColorButton.html#gtk-color-button-set-alpha">gtk_color_button_set_alpha</a></span> <span class="gtkdoc opt">(</span>color_picker<span class="gtkdoc opt">,</span> alpha <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -89,9 +89,9 @@
         <td class="listing_lines" align="right"><pre>1
 2
 3</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">color</span><span class="symbol">.</span><span class="normal">red </span><span class="symbol">=</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint16">guint16</a></span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">red </span><span class="symbol">*</span><span class="normal"> </span><span class="number">65535.0</span><span class="normal"> </span><span class="symbol">+</span><span class="normal"> </span><span class="number">0.5</span><span class="symbol">);</span>
-<span class="normal">color</span><span class="symbol">.</span><span class="normal">green </span><span class="symbol">=</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint16">guint16</a></span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">green </span><span class="symbol">*</span><span class="normal"> </span><span class="number">65535.0</span><span class="normal"> </span><span class="symbol">+</span><span class="normal"> </span><span class="number">0.5</span><span class="symbol">);</span>
-<span class="normal">color</span><span class="symbol">.</span><span class="normal">blue </span><span class="symbol">=</span><span class="normal"> </span><span class="symbol">(</span><span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint16">guint16</a></span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">blue </span><span class="symbol">*</span><span class="normal"> </span><span class="number">65535.0</span><span class="normal"> </span><span class="symbol">+</span><span class="normal"> </span><span class="number">0.5</span><span class="symbol">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting">color<span class="gtkdoc opt">.</span>red <span class="gtkdoc opt">= (</span>guint16<span class="gtkdoc opt">) (</span>red <span class="gtkdoc opt">*</span> <span class="number">65535.0</span> <span class="gtkdoc opt">+</span> <span class="number">0.5</span><span class="gtkdoc opt">);</span>
+color<span class="gtkdoc opt">.</span>green <span class="gtkdoc opt">= (</span>guint16<span class="gtkdoc opt">) (</span>green <span class="gtkdoc opt">*</span> <span class="number">65535.0</span> <span class="gtkdoc opt">+</span> <span class="number">0.5</span><span class="gtkdoc opt">);</span>
+color<span class="gtkdoc opt">.</span>blue <span class="gtkdoc opt">= (</span>guint16<span class="gtkdoc opt">) (</span>blue <span class="gtkdoc opt">*</span> <span class="number">65535.0</span> <span class="gtkdoc opt">+</span> <span class="number">0.5</span><span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -101,6 +101,6 @@
   </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

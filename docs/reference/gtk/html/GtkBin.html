@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkBin: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="AbstractObjects.html" title="Abstract Base Classes">
 <link rel="prev" href="AbstractObjects.html" title="Abstract Base Classes">
 <link rel="next" href="GtkBox.html" title="GtkBox">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkBin.top_of_page"></a>GtkBin</span></h2>
-<p>GtkBin</p>
+<p>GtkBin — A container with just one child</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -65,8 +65,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkBin.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -98,6 +98,11 @@ GtkBin implements
 </div>
 <div class="refsect1">
 <a name="GtkBin.description"></a><h2>Description</h2>
+<p>The <a class="link" href="GtkBin.html" title="GtkBin"><span class="type">GtkBin</span></a> widget is a container with just one child.
+It is not very useful itself, but it is useful for deriving subclasses,
+since it provides common code needed for handling a single child widget.</p>
+<p>Many GTK+ widgets are subclasses of <a class="link" href="GtkBin.html" title="GtkBin"><span class="type">GtkBin</span></a>, including <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a>,
+<a class="link" href="GtkButton.html" title="GtkButton"><span class="type">GtkButton</span></a>, <a class="link" href="GtkFrame.html" title="GtkFrame"><span class="type">GtkFrame</span></a>, <a class="link" href="GtkHandleBox.html" title="GtkHandleBox"><span class="type">GtkHandleBox</span></a> or <a class="link" href="GtkScrolledWindow.html" title="GtkScrolledWindow"><span class="type">GtkScrolledWindow</span></a>.</p>
 </div>
 <div class="refsect1">
 <a name="GtkBin.functions_details"></a><h2>Functions</h2>
@@ -105,6 +110,29 @@ GtkBin implements
 <a name="gtk-bin-get-child"></a><h3>gtk_bin_get_child ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_bin_get_child (<em class="parameter"><code><a class="link" href="GtkBin.html" title="GtkBin"><span class="type">GtkBin</span></a> *bin</code></em>);</pre>
+<p>Gets the child of the <a class="link" href="GtkBin.html" title="GtkBin"><span class="type">GtkBin</span></a>, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the bin contains
+no child widget. The returned widget does not have a reference
+added, so you do not need to unref it.</p>
+<div class="refsect3">
+<a name="gtk-bin-get-child.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bin</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkBin.html" title="GtkBin"><span class="type">GtkBin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtk-bin-get-child.returns"></a><h4>Returns</h4>
+<p>pointer to child of the <a class="link" href="GtkBin.html" title="GtkBin"><span class="type">GtkBin</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
 </div>
 </div>
 <div class="refsect1">
@@ -116,6 +144,6 @@ gtk_bin_get_child (<em class="parameter"><code><a class="link" href="GtkBin.html
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

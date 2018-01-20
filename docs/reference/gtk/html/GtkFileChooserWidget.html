@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkFileChooserWidget: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkFileChooserDialog.html" title="GtkFileChooserDialog">
-<link rel="next" href="gtk2-gtkfilefilter.html" title="GtkFileFilter">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<link rel="next" href="gtk2-gtkfilefilter.html" title="gtkfilefilter">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkFileChooserWidget.top_of_page"></a>GtkFileChooserWidget</span></h2>
-<p>GtkFileChooserWidget — File chooser widget that can be embedded in other widgets</p>
+<p>GtkFileChooserWidget</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -75,8 +75,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserWidget.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -98,18 +98,6 @@ GtkFileChooserWidget implements
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserWidget.description"></a><h2>Description</h2>
-<p>
-      <a class="link" href="GtkFileChooserWidget.html" title="GtkFileChooserWidget"><span class="type">GtkFileChooserWidget</span></a> is a widget suitable for selecting files.
-      It is the main building block of a <a class="link" href="GtkFileChooserDialog.html" title="GtkFileChooserDialog"><span class="type">GtkFileChooserDialog</span></a>.  Most
-      applications will only need to use the latter; you can use
-      <a class="link" href="GtkFileChooserWidget.html" title="GtkFileChooserWidget"><span class="type">GtkFileChooserWidget</span></a> as part of a larger window if you have
-      special needs.
-    </p>
-<p>
-      Note that <a class="link" href="GtkFileChooserWidget.html" title="GtkFileChooserWidget"><span class="type">GtkFileChooserWidget</span></a> does not have any methods of its
-      own.  Instead, you should use the functions that work on a
-      <a class="link" href="GtkFileChooser.html" title="GtkFileChooser"><span class="type">GtkFileChooser</span></a>.
-    </p>
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserWidget.functions_details"></a><h2>Functions</h2>
@@ -147,7 +135,7 @@ be embedded in custom windows, and it is the same widget that is used by
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_file_chooser_widget_new_with_backend
                                (<em class="parameter"><code><a class="link" href="GtkFileChooser.html#GtkFileChooserAction" title="enum GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *backend</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *backend</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_file_chooser_widget_new_with_backend</code> has been deprecated since version 2.14 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkFileChooserWidget.html#gtk-file-chooser-widget-new" title="gtk_file_chooser_widget_new ()"><code class="function">gtk_file_chooser_widget_new()</code></a> instead.</p>
@@ -191,18 +179,10 @@ custom windows and it is the same widget that is used by
 <div class="refsect2">
 <a name="GtkFileChooserWidget-struct"></a><h3>struct GtkFileChooserWidget</h3>
 <pre class="programlisting">struct GtkFileChooserWidget;</pre>
-<p>
-</p>
 </div>
-</div>
-<div class="refsect1">
-<a name="GtkFileChooserWidget.see-also"></a><h2>See Also</h2>
-<p>
-      <a class="link" href="GtkFileChooser.html" title="GtkFileChooser"><span class="type">GtkFileChooser</span></a>, <a class="link" href="GtkFileChooserDialog.html" title="GtkFileChooserDialog"><span class="type">GtkFileChooserDialog</span></a>
-    </p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

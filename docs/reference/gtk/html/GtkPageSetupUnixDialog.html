@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkPageSetupUnixDialog: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="Printing.html" title="Printing">
 <link rel="prev" href="GtkPrintUnixDialog.html" title="GtkPrintUnixDialog">
 <link rel="next" href="MiscObjects.html" title="Miscellaneous">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkPageSetupUnixDialog.top_of_page"></a>GtkPageSetupUnixDialog</span></h2>
-<p>GtkPageSetupUnixDialog — A page setup dialog</p>
+<p>GtkPageSetupUnixDialog</p>
 </td>
 <td class="gallery_image" valign="top" align="right"><img src="pagesetupdialog.png"></td>
 </tr></table></div>
@@ -99,8 +99,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkPageSetupUnixDialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -123,22 +123,13 @@ GtkPageSetupUnixDialog implements
 </div>
 <div class="refsect1">
 <a name="GtkPageSetupUnixDialog.description"></a><h2>Description</h2>
-<p>
-GtkPageSetupUnixDialog implements a page setup dialog for platforms
-which don't provide a native page setup dialog, like Unix. It can
-be used very much like any other GTK+ dialog, at the cost of
-the portability offered by the high-level printing API
-</p>
-<p>
-Printing support was added in GTK+ 2.10.
-</p>
 </div>
 <div class="refsect1">
 <a name="GtkPageSetupUnixDialog.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="gtk-page-setup-unix-dialog-new"></a><h3>gtk_page_setup_unix_dialog_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
-gtk_page_setup_unix_dialog_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+gtk_page_setup_unix_dialog_new (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
                                 <em class="parameter"><code><a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a> *parent</code></em>);</pre>
 <p>Creates a new page setup dialog.</p>
 <div class="refsect3">
@@ -152,12 +143,12 @@ gtk_page_setup_unix_dialog_new (<em class="parameter"><code>const <a href="https
 <tbody>
 <tr>
 <td class="parameter_name"><p>title</p></td>
-<td class="parameter_description"><p> the title of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>the title of the dialog, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>parent</p></td>
-<td class="parameter_description"><p> transient parent of the dialog, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>transient parent of the dialog, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -226,7 +217,7 @@ gtk_page_setup_unix_dialog_get_page_setup
 </div>
 <div class="refsect3">
 <a name="gtk-page-setup-unix-dialog-get-page-setup.returns"></a><h4>Returns</h4>
-<p> the current page setup. </p>
+<p>the current page setup. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
@@ -288,7 +279,7 @@ gtk_page_setup_unix_dialog_get_print_settings
 </div>
 <div class="refsect3">
 <a name="gtk-page-setup-unix-dialog-get-print-settings.returns"></a><h4>Returns</h4>
-<p> the current print settings. </p>
+<p>the current print settings. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
@@ -299,12 +290,10 @@ gtk_page_setup_unix_dialog_get_print_settings
 <div class="refsect2">
 <a name="GtkPageSetupUnixDialog-struct"></a><h3>struct GtkPageSetupUnixDialog</h3>
 <pre class="programlisting">struct GtkPageSetupUnixDialog;</pre>
-<p>
-</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

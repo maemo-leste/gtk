@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Displaying the Recently Used Documents: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtk-migrating-GtkRecentChooser.html" title="Migrating from EggRecent to GtkRecentChooser">
 <link rel="prev" href="gtk-migrating-GtkRecentChooser.html" title="Migrating from EggRecent to GtkRecentChooser">
 <link rel="next" href="gtkrecent-advanced.html" title="Advanced usage">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -57,31 +57,31 @@
 23
 24
 25</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">chooser</span><span class="symbol">;</span>
-<span class="normal">    </span><span class="usertype">gint</span><span class="normal"> response</span><span class="symbol">;</span>
+        <td class="listing_code"><pre class="programlisting">GtkWidget <span class="gtkdoc opt">*</span>chooser<span class="gtkdoc opt">;</span>
+	gint response<span class="gtkdoc opt">;</span>
 
-<span class="normal">    </span><span class="comment">/* create a new dialog with the recently used documents list shown</span>
-<span class="comment">     * using a GtkTreeView widget</span>
-<span class="comment">     */</span>
-<span class="normal">    chooser </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkRecentChooserDialog.html#gtk-recent-chooser-dialog-new">gtk_recent_chooser_dialog_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="string">"Recent Documents"</span><span class="symbol">,</span>
-<span class="normal">                                             parent_window</span><span class="symbol">,</span>
-<span class="normal">                         <a href="gtk2-Stock-Items.html#GTK-STOCK-CLOSE:CAPS">GTK_STOCK_CLOSE</a></span><span class="symbol">,</span><span class="normal"> <a href="GtkDialog.html#GTK-RESPONSE-CANCEL:CAPS">GTK_RESPONSE_CANCEL</a></span><span class="symbol">,</span>
-<span class="normal">                         <a href="gtk2-Stock-Items.html#GTK-STOCK-OPEN:CAPS">GTK_STOCK_OPEN</a></span><span class="symbol">,</span><span class="normal"> <a href="GtkDialog.html#GTK-RESPONSE-OK:CAPS">GTK_RESPONSE_OK</a></span><span class="symbol">,</span>
-<span class="normal">                         <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
-<span class="comment">/* set the sorting order to "most recently used first" */</span>
-<span class="normal">    </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">),</span><span class="normal"> <a href="GtkRecentChooser.html#GTK-RECENT-SORT-MRU:CAPS">GTK_RECENT_SORT_MRU</a></span><span class="symbol">);</span>
-<span class="normal">    response </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkDialog.html#gtk-dialog-run">gtk_dialog_run</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_DIALOG</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">));</span>
-<span class="normal">    </span><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">response </span><span class="symbol">==</span><span class="normal"> <a href="GtkDialog.html#GTK-RESPONSE-OK:CAPS">GTK_RESPONSE_OK</a></span><span class="symbol">)</span>
-<span class="normal">      </span><span class="cbracket">{</span>
-<span class="normal">        </span><span class="usertype">GtkRecentInfo</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">info</span><span class="symbol">;</span>
+	<span class="comment">/* create a new dialog with the recently used documents list shown</span>
+<span class="comment">	 * using a GtkTreeView widget</span>
+<span class="comment">	 */</span>
+	chooser <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentChooserDialog.html#gtk-recent-chooser-dialog-new">gtk_recent_chooser_dialog_new</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;Recent Documents&quot;</span><span class="gtkdoc opt">,</span>
+	                                         parent_window<span class="gtkdoc opt">,</span>
+						 GTK_STOCK_CLOSE<span class="gtkdoc opt">,</span> GTK_RESPONSE_CANCEL<span class="gtkdoc opt">,</span>
+						 GTK_STOCK_OPEN<span class="gtkdoc opt">,</span> GTK_RESPONSE_OK<span class="gtkdoc opt">,</span>
+						 NULL<span class="gtkdoc opt">);</span>
+<span class="comment">/* set the sorting order to &quot;most recently used first&quot; */</span>
+	<span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span> GTK_RECENT_SORT_MRU<span class="gtkdoc opt">);</span>
+	response <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkDialog.html#gtk-dialog-run">gtk_dialog_run</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_DIALOG</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">));</span>
+	<span class="keyword">if</span> <span class="gtkdoc opt">(</span>response <span class="gtkdoc opt">==</span> GTK_RESPONSE_OK<span class="gtkdoc opt">)</span>
+	  <span class="gtkdoc opt">{</span>
+	    GtkRecentInfo <span class="gtkdoc opt">*</span>info<span class="gtkdoc opt">;</span>
 
-<span class="normal">    info </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-get-current-item">gtk_recent_chooser_get_current_item</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_RECENT_CHOOSER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">));</span>
-<span class="normal">        </span><span class="function">do_something_with_the_item</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">info</span><span class="symbol">);</span>
+    info <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-get-current-item">gtk_recent_chooser_get_current_item</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">));</span>
+	    <span class="function">do_something_with_the_item</span> <span class="gtkdoc opt">(</span>info<span class="gtkdoc opt">);</span>
 
-<span class="normal">        </span><span class="function"><a href="GtkRecentManager.html#gtk-recent-info-unref">gtk_recent_info_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">info</span><span class="symbol">);</span>
-<span class="normal">      </span><span class="cbracket">}</span>
-<span class="normal">    </span>
-<span class="normal">    </span><span class="function"><a href="GtkWidget.html#gtk-widget-destroy">gtk_widget_destroy</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">chooser</span><span class="symbol">);</span></pre></td>
+	    <span class="function"><a href="GtkRecentManager.html#gtk-recent-info-unref">gtk_recent_info_unref</a></span> <span class="gtkdoc opt">(</span>info<span class="gtkdoc opt">);</span>
+	  <span class="gtkdoc opt">}</span>
+	
+	<span class="function"><a href="GtkWidget.html#gtk-widget-destroy">gtk_widget_destroy</a></span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -91,6 +91,6 @@
     </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

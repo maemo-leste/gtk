@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Points, Rectangles and Regions: GDK 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="GdkScreen.html" title="GdkScreen">
 <link rel="next" href="gdk2-Graphics-Contexts.html" title="Graphics Contexts">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -27,7 +27,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="gdk2-Points-Rectangles-and-Regions.top_of_page"></a>Points, Rectangles and Regions</span></h2>
-<p>Points, Rectangles and Regions — Simple graphical data types</p>
+<p>Points, Rectangles and Regions</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -41,7 +41,7 @@
 <tbody>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-rectangle-intersect" title="gdk_rectangle_intersect ()">gdk_rectangle_intersect</a> <span class="c_punctuation">()</span>
@@ -113,7 +113,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-empty" title="gdk_region_empty ()">gdk_region_empty</a> <span class="c_punctuation">()</span>
@@ -121,7 +121,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-equal" title="gdk_region_equal ()">gdk_region_equal</a> <span class="c_punctuation">()</span>
@@ -129,7 +129,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-rect-equal" title="gdk_region_rect_equal ()">gdk_region_rect_equal</a> <span class="c_punctuation">()</span>
@@ -137,7 +137,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-point-in" title="gdk_region_point_in ()">gdk_region_point_in</a> <span class="c_punctuation">()</span>
@@ -268,34 +268,12 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Points-Rectangles-and-Regions.description"></a><h2>Description</h2>
-<p>
-GDK provides the <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkPoint" title="struct GdkPoint"><span class="type">GdkPoint</span></a>, <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a>, <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> and <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkSpan" title="struct GdkSpan"><span class="type">GdkSpan</span></a> data types
-for representing pixels and sets of pixels on the screen.
-</p>
-<p>
-<a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkPoint" title="struct GdkPoint"><span class="type">GdkPoint</span></a> is a simple structure containing an x and y coordinate of a point.
-</p>
-<p>
-<a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> is a structure holding the position and size of a rectangle.
-The intersection of two rectangles can be computed with
-<a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-rectangle-intersect" title="gdk_rectangle_intersect ()"><code class="function">gdk_rectangle_intersect()</code></a>. To find the union of two rectangles use
-<a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-rectangle-union" title="gdk_rectangle_union ()"><code class="function">gdk_rectangle_union()</code></a>.
-</p>
-<p>
-<a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> is an opaque data type holding a set of arbitrary pixels, and is
-usually used for clipping graphical operations (see <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-clip-region" title="gdk_gc_set_clip_region ()"><code class="function">gdk_gc_set_clip_region()</code></a>).
-</p>
-<p>
-<a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkSpan" title="struct GdkSpan"><span class="type">GdkSpan</span></a> is a structure holding a spanline. A spanline is a horizontal line that
-is one pixel wide. It is mainly used when rasterizing other graphics primitives.
-It can be intersected to regions by using <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-spans-intersect-foreach" title="gdk_region_spans_intersect_foreach ()"><code class="function">gdk_region_spans_intersect_foreach()</code></a>.
-</p>
 </div>
 <div class="refsect1">
 <a name="gdk2-Points-Rectangles-and-Regions.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="gdk-rectangle-intersect"></a><h3>gdk_rectangle_intersect ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdk_rectangle_intersect (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> *src1</code></em>,
                          <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> *src2</code></em>,
                          <em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> *dest</code></em>);</pre>
@@ -308,7 +286,7 @@ do not intersect, <em class="parameter"><code>dest</code></em>
 's width and height is set to 0 and its x 
 and y values are undefined. If you are only interested in whether
 the rectangles intersect, but not in the intersecting area itself,
-pass <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for <em class="parameter"><code>dest</code></em>
+pass <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for <em class="parameter"><code>dest</code></em>
 .</p>
 <div class="refsect3">
 <a name="gdk-rectangle-intersect.parameters"></a><h4>Parameters</h4>
@@ -331,10 +309,10 @@ pass <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p> return location for the
+<td class="parameter_description"><p>return location for the
 intersection of <em class="parameter"><code>src1</code></em>
 and <em class="parameter"><code>src2</code></em>
-, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Out parameter, where caller must allocate storage."><span class="acronym">out caller-allocates</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -342,7 +320,7 @@ and <em class="parameter"><code>src2</code></em>
 </div>
 <div class="refsect3">
 <a name="gdk-rectangle-intersect.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the rectangles intersect.</p>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the rectangles intersect.</p>
 </div>
 </div>
 <hr>
@@ -384,7 +362,7 @@ It is allowed for <em class="parameter"><code>dest</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p> return location for the union of <em class="parameter"><code>src1</code></em>
+<td class="parameter_description"><p>return location for the union of <em class="parameter"><code>src1</code></em>
 and <em class="parameter"><code>src2</code></em>
 . </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
@@ -409,7 +387,7 @@ gdk_region_new (<em class="parameter"><code><span class="type">void</span></code
 <a name="gdk-region-polygon"></a><h3>gdk_region_polygon ()</h3>
 <pre class="programlisting"><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="returnvalue">GdkRegion</span></a> *
 gdk_region_polygon (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkPoint" title="struct GdkPoint"><span class="type">GdkPoint</span></a> *points</code></em>,
-                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_points</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_points</code></em>,
                     <em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkFillRule" title="enum GdkFillRule"><span class="type">GdkFillRule</span></a> fill_rule</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_region_polygon</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
@@ -565,10 +543,10 @@ gdk_region_get_clipbox (<em class="parameter"><code>const <a class="link" href="
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_region_get_rectangles (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>,
                            <em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> **rectangles</code></em>,
-                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *n_rectangles</code></em>);</pre>
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *n_rectangles</code></em>);</pre>
 <p>Obtains the area covered by the region as a list of rectangles.
 The array returned in <em class="parameter"><code>rectangles</code></em>
- must be freed with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+ must be freed with <a href="../glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
 <div class="refsect3">
 <a name="gdk-region-get-rectangles.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -585,7 +563,7 @@ The array returned in <em class="parameter"><code>rectangles</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>rectangles</p></td>
-<td class="parameter_description"><p> return location for an array of rectangles. </p></td>
+<td class="parameter_description"><p>return location for an array of rectangles. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_rectangles][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -600,7 +578,7 @@ The array returned in <em class="parameter"><code>rectangles</code></em>
 <hr>
 <div class="refsect2">
 <a name="gdk-region-empty"></a><h3>gdk_region_empty ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdk_region_empty (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>);</pre>
 <p>Finds out if the <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> is empty.</p>
 <div class="refsect3">
@@ -620,14 +598,14 @@ gdk_region_empty (<em class="parameter"><code>const <a class="link" href="gdk2-P
 </div>
 <div class="refsect3">
 <a name="gdk-region-empty.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region</code></em>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region</code></em>
 is empty.</p>
 </div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gdk-region-equal"></a><h3>gdk_region_equal ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdk_region_equal (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region1</code></em>,
                   <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region2</code></em>);</pre>
 <p>Finds out if the two regions are the same.</p>
@@ -655,7 +633,7 @@ gdk_region_equal (<em class="parameter"><code>const <a class="link" href="gdk2-P
 </div>
 <div class="refsect3">
 <a name="gdk-region-equal.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region1</code></em>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region1</code></em>
 and <em class="parameter"><code>region2</code></em>
 are equal.</p>
 </div>
@@ -663,7 +641,7 @@ are equal.</p>
 <hr>
 <div class="refsect2">
 <a name="gdk-region-rect-equal"></a><h3>gdk_region_rect_equal ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdk_region_rect_equal (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>,
                        <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> *rectangle</code></em>);</pre>
 <div class="warning">
@@ -696,7 +674,7 @@ gdk_region_rect_equal (<em class="parameter"><code>const <a class="link" href="g
 </div>
 <div class="refsect3">
 <a name="gdk-region-rect-equal.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region</code></em>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>region</code></em>
 and <em class="parameter"><code>rectangle</code></em>
 are equal.</p>
 </div>
@@ -705,7 +683,7 @@ are equal.</p>
 <hr>
 <div class="refsect2">
 <a name="gdk-region-point-in"></a><h3>gdk_region_point_in ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdk_region_point_in (<em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>,
                      <em class="parameter"><code><span class="type">int</span> x</code></em>,
                      <em class="parameter"><code><span class="type">int</span> y</code></em>);</pre>
@@ -739,7 +717,7 @@ gdk_region_point_in (<em class="parameter"><code>const <a class="link" href="gdk
 </div>
 <div class="refsect3">
 <a name="gdk-region-point-in.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the point is in <em class="parameter"><code>region</code></em>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the point is in <em class="parameter"><code>region</code></em>
 .</p>
 </div>
 </div>
@@ -784,8 +762,8 @@ outside, or partly inside the <a class="link" href="gdk2-Points-Rectangles-and-R
 <a name="gdk-region-offset"></a><h3>gdk_region_offset ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_region_offset (<em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dx</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dy</code></em>);</pre>
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dx</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dy</code></em>);</pre>
 <p>Moves a region the specified distance.</p>
 <div class="refsect3">
 <a name="gdk-region-offset.parameters"></a><h4>Parameters</h4>
@@ -820,8 +798,8 @@ gdk_region_offset (<em class="parameter"><code><a class="link" href="gdk2-Points
 <a name="gdk-region-shrink"></a><h3>gdk_region_shrink ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_region_shrink (<em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dx</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dy</code></em>);</pre>
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dx</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dy</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_region_shrink</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>There is no replacement for this function.</p>
@@ -1042,34 +1020,8 @@ or the other of the two sources but not in both.</p>
 <a name="GdkSpanFunc"></a><h3>GdkSpanFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 <span class="c_punctuation">(</span>*GdkSpanFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkSpan" title="struct GdkSpan"><span class="type">GdkSpan</span></a> *span</code></em>,
-                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
 <div class="warning"><p><code class="literal">GdkSpanFunc</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-This defines the type of the function passed to
-<a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-spans-intersect-foreach" title="gdk_region_spans_intersect_foreach ()"><code class="function">gdk_region_spans_intersect_foreach()</code></a>.
-</p>
-<div class="refsect3">
-<a name="GdkSpanFunc.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>span</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkSpan" title="struct GdkSpan"><span class="type">GdkSpan</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p>the user data passed to <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-spans-intersect-foreach" title="gdk_region_spans_intersect_foreach ()"><code class="function">gdk_region_spans_intersect_foreach()</code></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1078,9 +1030,9 @@ This defines the type of the function passed to
 gdk_region_spans_intersect_foreach (<em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>,
                                     <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkSpan" title="struct GdkSpan"><span class="type">GdkSpan</span></a> *spans</code></em>,
                                     <em class="parameter"><code><span class="type">int</span> n_spans</code></em>,
-                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sorted</code></em>,
+                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sorted</code></em>,
                                     <em class="parameter"><code><a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkSpanFunc" title="GdkSpanFunc ()"><span class="type">GdkSpanFunc</span></a> function</code></em>,
-                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_region_spans_intersect_foreach</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>There is no replacement.</p>
@@ -1115,7 +1067,7 @@ gdk_region_spans_intersect_foreach (<em class="parameter"><code><a class="link" 
 </tr>
 <tr>
 <td class="parameter_name"><p>sorted</p></td>
-<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>spans</code></em>
+<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>spans</code></em>
 is sorted wrt. the y coordinate</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
@@ -1145,31 +1097,6 @@ is sorted wrt. the y coordinate</p></td>
 };
 </pre>
 <div class="warning"><p><code class="literal">GdkPoint</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Defines the x and y coordinates of a point.
-</p>
-<div class="refsect3">
-<a name="GdkPoint.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="struct_members_name">
-<col class="struct_members_description">
-<col width="200px" class="struct_members_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkPoint.x"></a>x</code></em>;</p></td>
-<td class="struct_member_description"><p>the x coordinate of the point.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkPoint.y"></a>y</code></em>;</p></td>
-<td class="struct_member_description"><p>the y coordinate of the point.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1181,64 +1108,16 @@ Defines the x and y coordinates of a point.
   gint height;
 };
 </pre>
-<p>
-Defines the position and size of a rectangle.
-</p>
-<div class="refsect3">
-<a name="GdkRectangle.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="struct_members_name">
-<col class="struct_members_description">
-<col width="200px" class="struct_members_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkRectangle.x"></a>x</code></em>;</p></td>
-<td class="struct_member_description"><p>the x coordinate of the left edge of the rectangle.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkRectangle.y"></a>y</code></em>;</p></td>
-<td class="struct_member_description"><p>the y coordinate of the top of the rectangle.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkRectangle.width"></a>width</code></em>;</p></td>
-<td class="struct_member_description"><p>the width of the rectangle.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkRectangle.height"></a>height</code></em>;</p></td>
-<td class="struct_member_description"><p>the height of the rectangle.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GdkRegion"></a><h3>GdkRegion</h3>
 <pre class="programlisting">typedef struct _GdkRegion GdkRegion;</pre>
-<p>
-A GdkRegion represents a set of pixels on the screen.
-</p>
-<p>
-In GTK3, <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> will be replaced by <span class="type">cairo_region_t</span>. All the functions
-listed in this section will go away and you will have to use the relevant
-Cairo functions. The conversion can be done using simple serch and replace.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GdkFillRule"></a><h3>enum GdkFillRule</h3>
 <div class="warning"><p><code class="literal">GdkFillRule</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-The method for determining which pixels are included in a region, when
-creating a <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> from a polygon.
-The fill rule is only relevant for polygons which overlap themselves.
-</p>
 <div class="refsect3">
 <a name="GdkFillRule.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1250,18 +1129,13 @@ The fill rule is only relevant for polygons which overlap themselves.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-EVEN-ODD-RULE:CAPS"></a>GDK_EVEN_ODD_RULE</p></td>
-<td class="enum_member_description">
-<p>areas which are overlapped an odd number of times are
-included in the region, while areas overlapped an even number of times are not.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-WINDING-RULE:CAPS"></a>GDK_WINDING_RULE</p></td>
-<td class="enum_member_description">
-<p>overlapping areas are always included.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -1270,9 +1144,6 @@ included in the region, while areas overlapped an even number of times are not.<
 <hr>
 <div class="refsect2">
 <a name="GdkOverlapType"></a><h3>enum GdkOverlapType</h3>
-<p>
-Specifies the possible values returned by <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#gdk-region-rect-in" title="gdk_region_rect_in ()"><code class="function">gdk_region_rect_in()</code></a>.
-</p>
 <div class="refsect3">
 <a name="GdkOverlapType.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1284,24 +1155,18 @@ Specifies the possible values returned by <a class="link" href="gdk2-Points-Rect
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-OVERLAP-RECTANGLE-IN:CAPS"></a>GDK_OVERLAP_RECTANGLE_IN</p></td>
-<td class="enum_member_description">
-<p>if the rectangle is inside the <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-OVERLAP-RECTANGLE-OUT:CAPS"></a>GDK_OVERLAP_RECTANGLE_OUT</p></td>
-<td class="enum_member_description">
-<p>if the rectangle is outside the <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-OVERLAP-RECTANGLE-PART:CAPS"></a>GDK_OVERLAP_RECTANGLE_PART</p></td>
-<td class="enum_member_description">
-<p>if the rectangle is partly inside the <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a>.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -1316,41 +1181,10 @@ Specifies the possible values returned by <a class="link" href="gdk2-Points-Rect
   gint width;
 };
 </pre>
-<p>
-A GdkSpan represents a horizontal line of pixels starting
-at the pixel with coordinates <em class="parameter"><code>x</code></em>, <em class="parameter"><code>y</code></em> and ending before <em class="parameter"><code>x</code></em> + <em class="parameter"><code>width</code></em>, <em class="parameter"><code>y</code></em>.
-</p>
-<div class="refsect3">
-<a name="GdkSpan.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="struct_members_name">
-<col class="struct_members_description">
-<col width="200px" class="struct_members_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkSpan.x"></a>x</code></em>;</p></td>
-<td class="struct_member_description"><p>x coordinate of the first pixel.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkSpan.y"></a>y</code></em>;</p></td>
-<td class="struct_member_description"><p>y coordinate of the first pixel.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-<tr>
-<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkSpan.width"></a>width</code></em>;</p></td>
-<td class="struct_member_description"><p>number of pixels in the span.</p></td>
-<td class="struct_member_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

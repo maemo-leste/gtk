@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkTearoffMenuItem: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkSeparatorMenuItem.html" title="GtkSeparatorMenuItem">
 <link rel="next" href="GtkToolShell.html" title="GtkToolShell">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkTearoffMenuItem.top_of_page"></a>GtkTearoffMenuItem</span></h2>
-<p>GtkTearoffMenuItem — A menu item used to tear off and reattach its menu</p>
+<p>GtkTearoffMenuItem</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -65,8 +65,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkTearoffMenuItem.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -89,22 +89,6 @@ GtkTearoffMenuItem implements
 </div>
 <div class="refsect1">
 <a name="GtkTearoffMenuItem.description"></a><h2>Description</h2>
-<p>
-A <a class="link" href="GtkTearoffMenuItem.html" title="GtkTearoffMenuItem"><span class="type">GtkTearoffMenuItem</span></a> is a special <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a> which is used to
-tear off and reattach its menu.
-</p>
-<p>
-When its menu is shown normally, the <a class="link" href="GtkTearoffMenuItem.html" title="GtkTearoffMenuItem"><span class="type">GtkTearoffMenuItem</span></a> is drawn as a
-dotted line indicating that the menu can be torn off.  Activating it
-causes its menu to be torn off and displayed in its own window
-as a tearoff menu.
-</p>
-<p>
-When its menu is shown as a tearoff menu, the <a class="link" href="GtkTearoffMenuItem.html" title="GtkTearoffMenuItem"><span class="type">GtkTearoffMenuItem</span></a> is drawn
-as a dotted line which has a left pointing arrow graphic indicating that
-the tearoff menu can be reattached.  Activating it will erase the tearoff
-menu window.
-</p>
 </div>
 <div class="refsect1">
 <a name="GtkTearoffMenuItem.functions_details"></a><h2>Functions</h2>
@@ -112,13 +96,6 @@ menu window.
 <a name="gtk-tearoff-menu-item-new"></a><h3>gtk_tearoff_menu_item_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_tearoff_menu_item_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<p>
-Creates a new <a class="link" href="GtkTearoffMenuItem.html" title="GtkTearoffMenuItem"><span class="type">GtkTearoffMenuItem</span></a>.
-</p>
-<div class="refsect3">
-<a name="gtk-tearoff-menu-item-new.returns"></a><h4>Returns</h4>
-<p>a new <a class="link" href="GtkTearoffMenuItem.html" title="GtkTearoffMenuItem"><span class="type">GtkTearoffMenuItem</span></a>.</p>
-</div>
 </div>
 </div>
 <div class="refsect1">
@@ -126,31 +103,10 @@ Creates a new <a class="link" href="GtkTearoffMenuItem.html" title="GtkTearoffMe
 <div class="refsect2">
 <a name="GtkTearoffMenuItem-struct"></a><h3>struct GtkTearoffMenuItem</h3>
 <pre class="programlisting">struct GtkTearoffMenuItem;</pre>
-<p>
-The <a class="link" href="GtkTearoffMenuItem.html#GtkTearoffMenuItem-struct" title="struct GtkTearoffMenuItem"><span class="type">GtkTearoffMenuItem</span></a> struct contains private data only, and
-should be accessed using the functions below.
-</p>
 </div>
-</div>
-<div class="refsect1">
-<a name="GtkTearoffMenuItem.see-also"></a><h2>See Also</h2>
-<p>
-</p>
-<div class="variablelist"><table border="0" class="variablelist">
-<colgroup>
-<col align="left" valign="top">
-<col>
-</colgroup>
-<tbody><tr>
-<td><p><span class="term"><a class="link" href="GtkMenu.html" title="GtkMenu"><span class="type">GtkMenu</span></a></span></p></td>
-<td><p>for further discussion of menus in GTK.</p></td>
-</tr></tbody>
-</table></div>
-<p>
-</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

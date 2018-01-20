@@ -5956,17 +5956,35 @@ extern __typeof (gtk_marshal_INT__POINTER) gtk_marshal_INT__POINTER __attribute(
 #undef gtk_marshal_INT__POINTER_CHAR_CHAR 
 extern __typeof (gtk_marshal_INT__POINTER_CHAR_CHAR) gtk_marshal_INT__POINTER_CHAR_CHAR __attribute((alias("IA__gtk_marshal_INT__POINTER_CHAR_CHAR"), visibility("default")));
 
+#undef gtk_marshal_VOID__BOOLEAN 
+extern __typeof (gtk_marshal_VOID__BOOLEAN) gtk_marshal_VOID__BOOLEAN __attribute((alias("IA__gtk_marshal_VOID__BOOLEAN"), visibility("default")));
+
+#undef gtk_marshal_VOID__BOXED 
+extern __typeof (gtk_marshal_VOID__BOXED) gtk_marshal_VOID__BOXED __attribute((alias("IA__gtk_marshal_VOID__BOXED"), visibility("default")));
+
+#undef gtk_marshal_VOID__ENUM 
+extern __typeof (gtk_marshal_VOID__ENUM) gtk_marshal_VOID__ENUM __attribute((alias("IA__gtk_marshal_VOID__ENUM"), visibility("default")));
+
 #undef gtk_marshal_VOID__ENUM_FLOAT 
 extern __typeof (gtk_marshal_VOID__ENUM_FLOAT) gtk_marshal_VOID__ENUM_FLOAT __attribute((alias("IA__gtk_marshal_VOID__ENUM_FLOAT"), visibility("default")));
 
 #undef gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN 
 extern __typeof (gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN) gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN __attribute((alias("IA__gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN"), visibility("default")));
 
+#undef gtk_marshal_VOID__INT 
+extern __typeof (gtk_marshal_VOID__INT) gtk_marshal_VOID__INT __attribute((alias("IA__gtk_marshal_VOID__INT"), visibility("default")));
+
 #undef gtk_marshal_VOID__INT_INT 
 extern __typeof (gtk_marshal_VOID__INT_INT) gtk_marshal_VOID__INT_INT __attribute((alias("IA__gtk_marshal_VOID__INT_INT"), visibility("default")));
 
 #undef gtk_marshal_VOID__INT_INT_POINTER 
 extern __typeof (gtk_marshal_VOID__INT_INT_POINTER) gtk_marshal_VOID__INT_INT_POINTER __attribute((alias("IA__gtk_marshal_VOID__INT_INT_POINTER"), visibility("default")));
+
+#undef gtk_marshal_VOID__OBJECT 
+extern __typeof (gtk_marshal_VOID__OBJECT) gtk_marshal_VOID__OBJECT __attribute((alias("IA__gtk_marshal_VOID__OBJECT"), visibility("default")));
+
+#undef gtk_marshal_VOID__POINTER 
+extern __typeof (gtk_marshal_VOID__POINTER) gtk_marshal_VOID__POINTER __attribute((alias("IA__gtk_marshal_VOID__POINTER"), visibility("default")));
 
 #undef gtk_marshal_VOID__POINTER_INT 
 extern __typeof (gtk_marshal_VOID__POINTER_INT) gtk_marshal_VOID__POINTER_INT __attribute((alias("IA__gtk_marshal_VOID__POINTER_INT"), visibility("default")));
@@ -5995,8 +6013,14 @@ extern __typeof (gtk_marshal_VOID__POINTER_UINT_ENUM) gtk_marshal_VOID__POINTER_
 #undef gtk_marshal_VOID__POINTER_UINT_UINT 
 extern __typeof (gtk_marshal_VOID__POINTER_UINT_UINT) gtk_marshal_VOID__POINTER_UINT_UINT __attribute((alias("IA__gtk_marshal_VOID__POINTER_UINT_UINT"), visibility("default")));
 
+#undef gtk_marshal_VOID__STRING 
+extern __typeof (gtk_marshal_VOID__STRING) gtk_marshal_VOID__STRING __attribute((alias("IA__gtk_marshal_VOID__STRING"), visibility("default")));
+
 #undef gtk_marshal_VOID__STRING_INT_POINTER 
 extern __typeof (gtk_marshal_VOID__STRING_INT_POINTER) gtk_marshal_VOID__STRING_INT_POINTER __attribute((alias("IA__gtk_marshal_VOID__STRING_INT_POINTER"), visibility("default")));
+
+#undef gtk_marshal_VOID__UINT 
+extern __typeof (gtk_marshal_VOID__UINT) gtk_marshal_VOID__UINT __attribute((alias("IA__gtk_marshal_VOID__UINT"), visibility("default")));
 
 #undef gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER 
 extern __typeof (gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER) gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER __attribute((alias("IA__gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER"), visibility("default")));
@@ -6006,6 +6030,9 @@ extern __typeof (gtk_marshal_VOID__UINT_POINTER_UINT_UINT_ENUM) gtk_marshal_VOID
 
 #undef gtk_marshal_VOID__UINT_STRING 
 extern __typeof (gtk_marshal_VOID__UINT_STRING) gtk_marshal_VOID__UINT_STRING __attribute((alias("IA__gtk_marshal_VOID__UINT_STRING"), visibility("default")));
+
+#undef gtk_marshal_VOID__VOID 
+extern __typeof (gtk_marshal_VOID__VOID) gtk_marshal_VOID__VOID __attribute((alias("IA__gtk_marshal_VOID__VOID"), visibility("default")));
 
 #endif
 #endif

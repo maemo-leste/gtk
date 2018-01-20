@@ -2659,6 +2659,16 @@ extern __typeof (gdk_win32_selection_add_targets) IA__gdk_win32_selection_add_ta
 
 #endif
 #endif
+#if IN_HEADER(__GDK_WIN32_H__)
+#if IN_FILE(__GDK_KEYS_WIN32_C__)
+extern __typeof (gdk_win32_keymap_get_type) IA__gdk_win32_keymap_get_type __attribute((visibility("hidden"))) G_GNUC_CONST;
+#define gdk_win32_keymap_get_type IA__gdk_win32_keymap_get_type
+
+extern __typeof (gdk_win32_keymap_check_compose) IA__gdk_win32_keymap_check_compose __attribute((visibility("hidden")));
+#define gdk_win32_keymap_check_compose IA__gdk_win32_keymap_check_compose
+
+#endif
+#endif
 #endif
 #ifdef GDK_WINDOWING_X11
 #if IN_HEADER(__GDK_X_H__)
