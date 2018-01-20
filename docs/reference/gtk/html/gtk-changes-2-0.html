@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Changes from 1.2 to 2.0: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="gtk-changes-1-2.html" title="Changes from 1.0 to 1.2">
 <link rel="next" href="gtk-migrating-GtkFileChooser.html" title="Migrating from GtkFileSelection to GtkFileChooser">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -255,18 +255,18 @@ Object system changes:
 10
 11
 12</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">static</span><span class="normal"> </span><span class="type">void</span><span class="normal"> </span><span class="function">gtk_label_finalize</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GObject</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">gobject</span><span class="symbol">)</span>
-<span class="cbracket">{</span>
-<span class="normal">  </span><span class="usertype">GtkLabel</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">label </span><span class="symbol">=</span><span class="normal"> </span><span class="function">GTK_LABEL</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">gobject</span><span class="symbol">);</span>
-<span class="normal">  </span>
-<span class="normal">  </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#G-OBJECT-CLASS:CAPS">G_OBJECT_CLASS</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">parent_class</span><span class="symbol">)-&gt;</span><span class="function">finalize</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">object</span><span class="symbol">);</span>
-<span class="cbracket">}</span>
-<span class="keyword">static</span><span class="normal"> </span><span class="type">void</span><span class="normal"> </span><span class="function">gtk_label_class_init</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkLabelClass</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">class</span><span class="symbol">)</span>
-<span class="cbracket">{</span>
-<span class="normal">  </span><span class="usertype">GObjectClass</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">gobject_class </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#G-OBJECT-CLASS:CAPS">G_OBJECT_CLASS</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">class</span><span class="symbol">);</span>
-<span class="normal">  </span>
-<span class="normal">  gobject_class</span><span class="symbol">-&gt;</span><span class="normal">finalize </span><span class="symbol">=</span><span class="normal"> gtk_label_finalize</span><span class="symbol">;</span>
-<span class="cbracket">}</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">static void</span> <span class="function">gtk_label_finalize</span> <span class="gtkdoc opt">(</span>GObject <span class="gtkdoc opt">*</span>gobject<span class="gtkdoc opt">)</span>
+<span class="gtkdoc opt">{</span>
+  GtkLabel <span class="gtkdoc opt">*</span>label <span class="gtkdoc opt">=</span> <span class="function">GTK_LABEL</span> <span class="gtkdoc opt">(</span>gobject<span class="gtkdoc opt">);</span>
+  
+  <span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#G-OBJECT-CLASS:CAPS">G_OBJECT_CLASS</a></span> <span class="gtkdoc opt">(</span>parent_class<span class="gtkdoc opt">)-&gt;</span><span class="function">finalize</span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">}</span>
+<span class="gtkdoc kwb">static void</span> <span class="function">gtk_label_class_init</span> <span class="gtkdoc opt">(</span>GtkLabelClass <span class="gtkdoc opt">*</span><span class="gtkdoc kwc">class</span><span class="gtkdoc opt">)</span>
+<span class="gtkdoc opt">{</span>
+  GObjectClass <span class="gtkdoc opt">*</span>gobject_class <span class="gtkdoc opt">=</span> <span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#G-OBJECT-CLASS:CAPS">G_OBJECT_CLASS</a></span> <span class="gtkdoc opt">(</span><span class="gtkdoc kwc">class</span><span class="gtkdoc opt">);</span>
+  
+  gobject_class<span class="gtkdoc opt">-&gt;</span>finalize <span class="gtkdoc opt">=</span> gtk_label_finalize<span class="gtkdoc opt">;</span>
+<span class="gtkdoc opt">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -295,11 +295,11 @@ The GtkObject::destroy signal can now be emitted multiple times on an object.
 3
 4
 5</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">object</span><span class="symbol">-&gt;</span><span class="normal">foo_data</span><span class="symbol">)</span>
-<span class="normal">  </span><span class="cbracket">{</span><span class="normal"> </span>
-<span class="normal">    </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free">g_free</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">object</span><span class="symbol">-&gt;</span><span class="normal">foo_data</span><span class="symbol">);</span>
-<span class="normal">    object</span><span class="symbol">-&gt;</span><span class="normal">foo_data </span><span class="symbol">=</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">;</span>
-<span class="normal">  </span><span class="cbracket">}</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="keyword">if</span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>foo_data<span class="gtkdoc opt">)</span>
+  <span class="gtkdoc opt">{</span> 
+    <span class="function"><a href="../glib/glib-Memory-Allocation.html#g-free">g_free</a></span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>foo_data<span class="gtkdoc opt">);</span>
+    object<span class="gtkdoc opt">-&gt;</span>foo_data <span class="gtkdoc opt">=</span> NULL<span class="gtkdoc opt">;</span>
+  <span class="gtkdoc opt">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -319,11 +319,11 @@ The GtkObject::destroy signal can now be emitted multiple times on an object.
 3
 4
 5</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">if</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">object</span><span class="symbol">-&gt;</span><span class="normal">adjustment</span><span class="symbol">)</span>
-<span class="normal">  </span><span class="cbracket">{</span>
-<span class="normal">    </span><span class="function"><a href="GtkObject.html#gtk-object-unref">gtk_object_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">object</span><span class="symbol">-&gt;</span><span class="normal">adjustment</span><span class="symbol">);</span>
-<span class="normal">    object</span><span class="symbol">-&gt;</span><span class="normal">adjustment </span><span class="symbol">=</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">;</span>
-<span class="normal">  </span><span class="cbracket">}</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="keyword">if</span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>adjustment<span class="gtkdoc opt">)</span>
+  <span class="gtkdoc opt">{</span>
+    <span class="function"><a href="GtkObject.html#gtk-object-unref">gtk_object_unref</a></span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>adjustment<span class="gtkdoc opt">);</span>
+    object<span class="gtkdoc opt">-&gt;</span>adjustment <span class="gtkdoc opt">=</span> NULL<span class="gtkdoc opt">;</span>
+  <span class="gtkdoc opt">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -1169,6 +1169,6 @@ The rectangle passed in is the bounding box, instead of
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

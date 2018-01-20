@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Migrating from GnomeAbout to GtkAboutDialog: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="gtk-migrating-GtkIconView.html" title="Migrating from GnomeIconList to GtkIconView">
 <link rel="next" href="gtk-migrating-GtkColorButton.html" title="Migrating from GnomeColorPicker to GtkColorButton">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -61,25 +61,25 @@
 17
 18
 19</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">const</span><span class="normal"> </span><span class="usertype">gchar</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">documentors</span><span class="symbol">[]</span><span class="normal"> </span><span class="symbol">=</span><span class="normal"> </span><span class="cbracket">{</span><span class="normal"> </span>
-<span class="normal">  </span><span class="string">"Documenter 1"</span><span class="symbol">,</span><span class="normal"> </span>
-<span class="normal">  </span><span class="string">"Documenter 2"</span><span class="symbol">,</span><span class="normal"> </span>
-<span class="normal">  NULL </span>
-<span class="cbracket">}</span><span class="symbol">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">const</span> gchar <span class="gtkdoc opt">*</span>documentors<span class="gtkdoc opt">[] = {</span> 
+  <span class="string">&quot;Documenter 1&quot;</span><span class="gtkdoc opt">,</span> 
+  <span class="string">&quot;Documenter 2&quot;</span><span class="gtkdoc opt">,</span> 
+  NULL 
+<span class="gtkdoc opt">};</span>
 
-<span class="keyword">const</span><span class="normal"> </span><span class="usertype">gchar</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">documentors</span><span class="symbol">[]</span><span class="normal"> </span><span class="symbol">=</span><span class="normal"> </span><span class="cbracket">{</span><span class="normal"> </span>
-<span class="normal">  </span><span class="string">"Author 1"</span><span class="symbol">,</span><span class="normal"> </span>
-<span class="normal">  </span><span class="string">"Author 2"</span><span class="symbol">,</span><span class="normal"> </span>
-<span class="normal">  NULL </span>
-<span class="cbracket">}</span><span class="symbol">;</span>
+<span class="gtkdoc kwb">const</span> gchar <span class="gtkdoc opt">*</span>documentors<span class="gtkdoc opt">[] = {</span> 
+  <span class="string">&quot;Author 1&quot;</span><span class="gtkdoc opt">,</span> 
+  <span class="string">&quot;Author 2&quot;</span><span class="gtkdoc opt">,</span> 
+  NULL 
+<span class="gtkdoc opt">};</span>
 
-<span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">about </span><span class="symbol">=</span><span class="normal"> </span><span class="function">gnome_about_new</span><span class="normal"> </span><span class="symbol">(</span><span class="string">"GNOME Test Program"</span><span class="symbol">,</span><span class="normal"> VERSION</span><span class="symbol">,</span>
-<span class="normal">                    </span><span class="string">"(C) 1998-2001 The Free Software Foundation"</span><span class="symbol">,</span>
-<span class="normal">                    </span><span class="string">"Program to display GNOME functions."</span><span class="symbol">,</span>
-<span class="normal">                    authors</span><span class="symbol">,</span>
-<span class="normal">                    documenters</span><span class="symbol">,</span>
-<span class="normal">                    </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-I18N.html#gettext-macro">_</a></span><span class="symbol">(</span><span class="string">"translator-credits"</span><span class="symbol">),</span>
-<span class="normal">                    </span><span class="string">"logo.png"</span><span class="symbol">);</span></pre></td>
+GtkWidget <span class="gtkdoc opt">*</span>about <span class="gtkdoc opt">=</span> <span class="function">gnome_about_new</span> <span class="gtkdoc opt">(</span><span class="string">&quot;GNOME Test Program&quot;</span><span class="gtkdoc opt">,</span> VERSION<span class="gtkdoc opt">,</span>
+					<span class="string">&quot;(C) 1998-2001 The Free Software Foundation&quot;</span><span class="gtkdoc opt">,</span>
+					<span class="string">&quot;Program to display GNOME functions.&quot;</span><span class="gtkdoc opt">,</span>
+					authors<span class="gtkdoc opt">,</span>
+					documenters<span class="gtkdoc opt">,</span>
+					<span class="function">_</span><span class="gtkdoc opt">(</span><span class="string">&quot;translator-credits&quot;</span><span class="gtkdoc opt">),</span>
+					<span class="string">&quot;logo.png&quot;</span><span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -104,25 +104,25 @@
 10
 11
 12</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="usertype">GdkPixbuf</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">logo </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file">gdk_pixbuf_new_from_file</a></span><span class="normal"> </span><span class="symbol">(</span><span class="string">"logo.png"</span><span class="symbol">,</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
-<span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">about </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">GTK_TYPE_ABOUT_DIALOG</span><span class="symbol">,</span>
-<span class="normal">                                 </span><span class="string">"name"</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"GNOME Test Program"</span><span class="symbol">,</span><span class="normal"> </span>
-<span class="normal">                                 </span><span class="string">"version"</span><span class="symbol">,</span><span class="normal"> VERSION</span><span class="symbol">,</span>
-<span class="normal">                         </span><span class="string">"copyright"</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"(C) 1998-2001 The Free Software Foundation"</span><span class="symbol">,</span>
-<span class="normal">                     </span><span class="string">"comments"</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"Program to display GNOME functions."</span><span class="symbol">,</span>
-<span class="normal">                         </span><span class="string">"authors"</span><span class="symbol">,</span><span class="normal"> authors</span><span class="symbol">,</span>
-<span class="normal">                         </span><span class="string">"documenters"</span><span class="symbol">,</span><span class="normal"> documenters</span><span class="symbol">,</span>
-<span class="normal">                         </span><span class="string">"translator-credits"</span><span class="symbol">,</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-I18N.html#gettext-macro">_</a></span><span class="symbol">(</span><span class="string">"translator-credits"</span><span class="symbol">),</span>
-<span class="normal">                     </span><span class="string">"logo"</span><span class="symbol">,</span><span class="normal"> logo</span><span class="symbol">,</span>
-<span class="normal">                                 <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
-<span class="function"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">pixbuf</span><span class="symbol">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting">GdkPixbuf <span class="gtkdoc opt">*</span>logo <span class="gtkdoc opt">=</span> <span class="function"><a href="../gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file">gdk_pixbuf_new_from_file</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;logo.png&quot;</span><span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+GtkWidget <span class="gtkdoc opt">*</span>about <span class="gtkdoc opt">=</span> <span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a></span> <span class="gtkdoc opt">(</span>GTK_TYPE_ABOUT_DIALOG<span class="gtkdoc opt">,</span>
+                                 <span class="string">&quot;name&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;GNOME Test Program&quot;</span><span class="gtkdoc opt">,</span> 
+                                 <span class="string">&quot;version&quot;</span><span class="gtkdoc opt">,</span> VERSION<span class="gtkdoc opt">,</span>
+			             <span class="string">&quot;copyright&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;(C) 1998-2001 The Free Software Foundation&quot;</span><span class="gtkdoc opt">,</span>
+				     <span class="string">&quot;comments&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;Program to display GNOME functions.&quot;</span><span class="gtkdoc opt">,</span>
+			             <span class="string">&quot;authors&quot;</span><span class="gtkdoc opt">,</span> authors<span class="gtkdoc opt">,</span>
+			             <span class="string">&quot;documenters&quot;</span><span class="gtkdoc opt">,</span> documenters<span class="gtkdoc opt">,</span>
+			             <span class="string">&quot;translator-credits&quot;</span><span class="gtkdoc opt">,</span> <span class="function">_</span><span class="gtkdoc opt">(</span><span class="string">&quot;translator-credits&quot;</span><span class="gtkdoc opt">),</span>
+				     <span class="string">&quot;logo&quot;</span><span class="gtkdoc opt">,</span> logo<span class="gtkdoc opt">,</span>
+                                 NULL<span class="gtkdoc opt">);</span>
+<span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span> <span class="gtkdoc opt">(</span>pixbuf<span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
 </div>
 
 <p>
-    If the <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-new"><code class="function">g_object_new()</code></a> construction scares you, you can also use 
+    If the <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-new"><code class="function">g_object_new()</code></a> construction scares you, you can also use 
     <a class="link" href="GtkAboutDialog.html#gtk-about-dialog-new" title="gtk_about_dialog_new ()"><code class="function">gtk_about_dialog_new()</code></a> to construct the dialog and then use the 
     setters for the individual properties.
   </p>
@@ -154,6 +154,6 @@
   </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

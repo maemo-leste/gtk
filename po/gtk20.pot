@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-09 15:48-0400\n"
+"POT-Creation-Date: 2018-01-08 16:45-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -765,15 +765,15 @@ msgstr ""
 msgid "Paper Margins"
 msgstr ""
 
-#: gtk/gtkentry.c:8742 gtk/gtktextview.c:7976
+#: gtk/gtkentry.c:8784 gtk/gtktextview.c:8001
 msgid "Input _Methods"
 msgstr ""
 
-#: gtk/gtkentry.c:8756 gtk/gtktextview.c:7990
+#: gtk/gtkentry.c:8798 gtk/gtktextview.c:8015
 msgid "_Insert Unicode Control Character"
 msgstr ""
 
-#: gtk/gtkentry.c:10130
+#: gtk/gtkentry.c:10172
 msgid "Caps Lock is on"
 msgstr ""
 
@@ -781,7 +781,7 @@ msgstr ""
 msgid "Select a File"
 msgstr ""
 
-#: gtk/gtkfilechooserbutton.c:65 gtk/gtkfilechooserdefault.c:1847
+#: gtk/gtkfilechooserbutton.c:65 gtk/gtkfilechooserdefault.c:1846
 msgid "Desktop"
 msgstr ""
 
@@ -793,52 +793,52 @@ msgstr ""
 msgid "Other..."
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:151
+#: gtk/gtkfilechooserdefault.c:150
 msgid "Type name of new folder"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:952
+#: gtk/gtkfilechooserdefault.c:951
 msgid "Could not retrieve information about the file"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:963
+#: gtk/gtkfilechooserdefault.c:962
 msgid "Could not add a bookmark"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:974
+#: gtk/gtkfilechooserdefault.c:973
 msgid "Could not remove bookmark"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:985
+#: gtk/gtkfilechooserdefault.c:984
 msgid "The folder could not be created"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:998
+#: gtk/gtkfilechooserdefault.c:997
 msgid ""
 "The folder could not be created, as a file with the same name already "
 "exists.  Try using a different name for the folder, or rename the file first."
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:1012
+#: gtk/gtkfilechooserdefault.c:1011
 msgid "You need to choose a valid filename."
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:1015
+#: gtk/gtkfilechooserdefault.c:1014
 #, c-format
 msgid "Cannot create a file under %s as it is not a folder"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:1027
+#: gtk/gtkfilechooserdefault.c:1026
 msgid ""
 "You may only select folders.  The item that you selected is not a folder; "
 "try using a different item."
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:1037
+#: gtk/gtkfilechooserdefault.c:1036
 msgid "Invalid file name"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:1047
+#: gtk/gtkfilechooserdefault.c:1046
 msgid "The folder contents could not be displayed"
 msgstr ""
 
@@ -846,192 +846,192 @@ msgstr ""
 #. * is a hostname. Nautilus and the panel contain the same string
 #. * to translate.
 #.
-#: gtk/gtkfilechooserdefault.c:1580
+#: gtk/gtkfilechooserdefault.c:1579
 #, c-format
 msgid "%1$s on %2$s"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:1729
+#: gtk/gtkfilechooserdefault.c:1728
 msgid "Search"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:1753 gtk/gtkfilechooserdefault.c:4861
+#: gtk/gtkfilechooserdefault.c:1752 gtk/gtkfilechooserdefault.c:4860
 msgid "Recently Used"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:2383
+#: gtk/gtkfilechooserdefault.c:2382
 msgid "Select which types of files are shown"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:2742
+#: gtk/gtkfilechooserdefault.c:2741
 #, c-format
 msgid "Add the folder '%s' to the bookmarks"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:2786
+#: gtk/gtkfilechooserdefault.c:2785
 #, c-format
 msgid "Add the current folder to the bookmarks"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:2788
+#: gtk/gtkfilechooserdefault.c:2787
 #, c-format
 msgid "Add the selected folders to the bookmarks"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:2826
+#: gtk/gtkfilechooserdefault.c:2825
 #, c-format
 msgid "Remove the bookmark '%s'"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:2828
+#: gtk/gtkfilechooserdefault.c:2827
 #, c-format
 msgid "Bookmark '%s' cannot be removed"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:2835 gtk/gtkfilechooserdefault.c:3729
+#: gtk/gtkfilechooserdefault.c:2834 gtk/gtkfilechooserdefault.c:3728
 msgid "Remove the selected bookmark"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:3410
+#: gtk/gtkfilechooserdefault.c:3409
 msgid "Remove"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:3419
+#: gtk/gtkfilechooserdefault.c:3418
 msgid "Rename..."
 msgstr ""
 
 #. Accessible object name for the file chooser's shortcuts pane
-#: gtk/gtkfilechooserdefault.c:3586
+#: gtk/gtkfilechooserdefault.c:3585
 msgid "Places"
 msgstr ""
 
 #. Column header for the file chooser's shortcuts pane
-#: gtk/gtkfilechooserdefault.c:3643
+#: gtk/gtkfilechooserdefault.c:3642
 msgid "_Places"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:3717
+#: gtk/gtkfilechooserdefault.c:3716
 msgid "Add the selected folder to the Bookmarks"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:3861
+#: gtk/gtkfilechooserdefault.c:3860
 msgid "Could not select file"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4034
+#: gtk/gtkfilechooserdefault.c:4033
 msgid "_Add to Bookmarks"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4047
+#: gtk/gtkfilechooserdefault.c:4046
 msgid "Show _Hidden Files"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4054
+#: gtk/gtkfilechooserdefault.c:4053
 msgid "Show _Size Column"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4278 gtk/gtkfilesel.c:730
+#: gtk/gtkfilechooserdefault.c:4277 gtk/gtkfilesel.c:730
 msgid "Files"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4329
+#: gtk/gtkfilechooserdefault.c:4328
 msgid "Name"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4352
+#: gtk/gtkfilechooserdefault.c:4351
 msgid "Size"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4366
+#: gtk/gtkfilechooserdefault.c:4365
 msgid "Modified"
 msgstr ""
 
 #. Label
-#: gtk/gtkfilechooserdefault.c:4459 gtk/gtkprinteroptionwidget.c:841
+#: gtk/gtkfilechooserdefault.c:4458 gtk/gtkprinteroptionwidget.c:841
 msgid "_Name:"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4699
+#: gtk/gtkfilechooserdefault.c:4698
 msgid "Type a file name"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4746 gtk/gtkfilechooserdefault.c:4757
+#: gtk/gtkfilechooserdefault.c:4745 gtk/gtkfilechooserdefault.c:4756
 msgid "Please select a folder below"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4752
+#: gtk/gtkfilechooserdefault.c:4751
 msgid "Please type a file name"
 msgstr ""
 
 #. Create Folder
-#: gtk/gtkfilechooserdefault.c:4823
+#: gtk/gtkfilechooserdefault.c:4822
 msgid "Create Fo_lder"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4871
+#: gtk/gtkfilechooserdefault.c:4870
 msgid "Search:"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:4922
+#: gtk/gtkfilechooserdefault.c:4921
 msgid "_Location:"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:5372
+#: gtk/gtkfilechooserdefault.c:5371
 msgid "Save in _folder:"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:5374
+#: gtk/gtkfilechooserdefault.c:5373
 msgid "Create in _folder:"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:6468
+#: gtk/gtkfilechooserdefault.c:6467
 #, c-format
 msgid "Could not read the contents of %s"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:6472
+#: gtk/gtkfilechooserdefault.c:6471
 msgid "Could not read the contents of the folder"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:6565 gtk/gtkfilechooserdefault.c:6633
-#: gtk/gtkfilechooserdefault.c:6818
+#: gtk/gtkfilechooserdefault.c:6564 gtk/gtkfilechooserdefault.c:6632
+#: gtk/gtkfilechooserdefault.c:6817
 msgid "Unknown"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:6580
+#: gtk/gtkfilechooserdefault.c:6579
 msgid "%H:%M"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:6582
+#: gtk/gtkfilechooserdefault.c:6581
 msgid "Yesterday at %H:%M"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:7290
+#: gtk/gtkfilechooserdefault.c:7289
 msgid "Cannot change to folder because it is not local"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:7887 gtk/gtkfilechooserdefault.c:7908
+#: gtk/gtkfilechooserdefault.c:7886 gtk/gtkfilechooserdefault.c:7907
 #, c-format
 msgid "Shortcut %s already exists"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:7998
+#: gtk/gtkfilechooserdefault.c:7997
 #, c-format
 msgid "Shortcut %s does not exist"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:8239 gtk/gtkprintunixdialog.c:480
+#: gtk/gtkfilechooserdefault.c:8238 gtk/gtkprintunixdialog.c:480
 #, c-format
 msgid "A file named \"%s\" already exists.  Do you want to replace it?"
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:8242 gtk/gtkprintunixdialog.c:484
+#: gtk/gtkfilechooserdefault.c:8241 gtk/gtkprintunixdialog.c:484
 #, c-format
 msgid ""
 "The file already exists in \"%s\".  Replacing it will overwrite its contents."
 msgstr ""
 
-#: gtk/gtkfilechooserdefault.c:8247 gtk/gtkprintunixdialog.c:491
+#: gtk/gtkfilechooserdefault.c:8246 gtk/gtkprintunixdialog.c:491
 msgid "_Replace"
 msgstr ""
 
@@ -1263,7 +1263,7 @@ msgstr ""
 msgid "Icon '%s' not present in theme"
 msgstr ""
 
-#: gtk/gtkicontheme.c:3095
+#: gtk/gtkicontheme.c:3101
 msgid "Failed to load icon"
 msgstr ""
 
@@ -2070,36 +2070,36 @@ msgstr ""
 msgid "Select which type of documents are shown"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1134 gtk/gtkrecentchooserdefault.c:1171
+#: gtk/gtkrecentchooserdefault.c:1135 gtk/gtkrecentchooserdefault.c:1172
 #, c-format
 msgid "No item for URI '%s' found"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1298
+#: gtk/gtkrecentchooserdefault.c:1299
 msgid "Untitled filter"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1651
+#: gtk/gtkrecentchooserdefault.c:1652
 msgid "Could not remove item"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1695
+#: gtk/gtkrecentchooserdefault.c:1696
 msgid "Could not clear list"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1779
+#: gtk/gtkrecentchooserdefault.c:1780
 msgid "Copy _Location"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1792
+#: gtk/gtkrecentchooserdefault.c:1793
 msgid "_Remove From List"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1801
+#: gtk/gtkrecentchooserdefault.c:1802
 msgid "_Clear List"
 msgstr ""
 
-#: gtk/gtkrecentchooserdefault.c:1815
+#: gtk/gtkrecentchooserdefault.c:1816
 msgid "Show _Private Resources"
 msgstr ""
 
@@ -2151,10 +2151,10 @@ msgctxt "recent menu label"
 msgid "%d. %s"
 msgstr ""
 
-#: gtk/gtkrecentmanager.c:1173 gtk/gtkrecentmanager.c:1186
-#: gtk/gtkrecentmanager.c:1323 gtk/gtkrecentmanager.c:1333
-#: gtk/gtkrecentmanager.c:1386 gtk/gtkrecentmanager.c:1395
-#: gtk/gtkrecentmanager.c:1410
+#: gtk/gtkrecentmanager.c:1182 gtk/gtkrecentmanager.c:1195
+#: gtk/gtkrecentmanager.c:1332 gtk/gtkrecentmanager.c:1342
+#: gtk/gtkrecentmanager.c:1395 gtk/gtkrecentmanager.c:1404
+#: gtk/gtkrecentmanager.c:1419
 #, c-format
 msgid "Unable to find an item with URI '%s'"
 msgstr ""

@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkList: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkItemFactory.html" title="GtkItemFactory">
 <link rel="next" href="GtkListItem.html" title="GtkListItem">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -31,7 +31,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkList.top_of_page"></a>GtkList</span></h2>
-<p>GtkList — Widget for packing a list of selectable items</p>
+<p>GtkList</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -133,7 +133,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="GtkList.html#gtk-list-child-position" title="gtk_list_child_position ()">gtk_list_child_position</a> <span class="c_punctuation">()</span>
@@ -273,17 +273,17 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkList.html#GtkList-select-child" title="The “select-child” signal">select-child</a></td>
-<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkList.html#GtkList-selection-changed" title="The “selection-changed” signal">selection-changed</a></td>
-<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkList.html#GtkList-unselect-child" title="The “unselect-child” signal">unselect-child</a></td>
-<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -303,8 +303,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkList.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -324,16 +324,6 @@ GtkList implements
 </div>
 <div class="refsect1">
 <a name="GtkList.description"></a><h2>Description</h2>
-<p>
-The <a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> widget is a container whose children are displayed
-vertically in order, and can be selected.
-The list has many selection modes, which are programmer selective and
-depend on how many elements are able to be selected at the same time.
-</p>
-<p>
-GtkList has been deprecated since GTK+ 2.0 and should not be used
-in newly written code. Use <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a> instead.
-</p>
 </div>
 <div class="refsect1">
 <a name="GtkList.functions_details"></a><h2>Functions</h2>
@@ -342,299 +332,72 @@ in newly written code. Use <a class="link" href="GtkTreeView.html" title="GtkTre
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_list_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_new</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Creates a new <a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a>.
-</p>
-<div class="refsect3">
-<a name="gtk-list-new.returns"></a><h4>Returns</h4>
-<p>the newly-created <a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-insert-items"></a><h3>gtk_list_insert_items ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_insert_items (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>,
-                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+                       <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_insert_items</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Inserts <em class="parameter"><code>items</code></em> into the <em class="parameter"><code>list</code></em> at the position <em class="parameter"><code>position</code></em>. The <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> items
-must not be freed after.
-</p>
-<div class="refsect3">
-<a name="gtk-list-insert-items.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>items</p></td>
-<td class="parameter_description"><p>the items.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>position</p></td>
-<td class="parameter_description"><p>the position to insert <em class="parameter"><code>items</code></em>
-, starting at 0.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-append-items"></a><h3>gtk_list_append_items ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_append_items (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
+                       <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_append_items</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Adds <em class="parameter"><code>items</code></em> to the end of the <em class="parameter"><code>list</code></em>.
-</p>
-<div class="refsect3">
-<a name="gtk-list-append-items.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>items</p></td>
-<td class="parameter_description"><p>the items.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-prepend-items"></a><h3>gtk_list_prepend_items ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_prepend_items (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
+                        <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_prepend_items</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Inserts <em class="parameter"><code>items</code></em> at the beginning of the <em class="parameter"><code>list</code></em>.
-</p>
-<div class="refsect3">
-<a name="gtk-list-prepend-items.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>items</p></td>
-<td class="parameter_description"><p>the items.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-remove-items"></a><h3>gtk_list_remove_items ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_remove_items (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
+                       <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_remove_items</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Removes the <em class="parameter"><code>items</code></em> from the <em class="parameter"><code>list</code></em>.
-</p>
-<div class="refsect3">
-<a name="gtk-list-remove-items.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>items</p></td>
-<td class="parameter_description"><p>the items to remove.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-remove-items-no-unref"></a><h3>gtk_list_remove_items_no_unref ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_remove_items_no_unref (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
+                                <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *items</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_remove_items_no_unref</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Removes the <em class="parameter"><code>items</code></em> from the <em class="parameter"><code>list</code></em>, without unreferencing them. It
-may be useful if you want to move the items from one list to another.
-</p>
-<div class="refsect3">
-<a name="gtk-list-remove-items-no-unref.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>items</p></td>
-<td class="parameter_description"><p>the items.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-clear-items"></a><h3>gtk_list_clear_items ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_clear_items (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end</code></em>);</pre>
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start</code></em>,
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_clear_items</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Removes the items between index <em class="parameter"><code>start</code></em> (included) and <em class="parameter"><code>end</code></em> (excluded)
-from the <em class="parameter"><code>list</code></em>. If <em class="parameter"><code>end</code></em> is negative, or greater than the number of
-children of <em class="parameter"><code>list</code></em>, it's assumed to be exactly the number of
-elements. If <em class="parameter"><code>start</code></em> is greater than or equal to <em class="parameter"><code>end</code></em>, nothing is
-done.
-</p>
-<div class="refsect3">
-<a name="gtk-list-clear-items.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>start</p></td>
-<td class="parameter_description"><p>the index of the first item to remove.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>end</p></td>
-<td class="parameter_description"><p>the index of the lest item to remove plus one.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-select-item"></a><h3>gtk_list_select_item ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_select_item (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> item</code></em>);</pre>
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> item</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_select_item</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Selects the child number <em class="parameter"><code>item</code></em> of the <em class="parameter"><code>list</code></em>. Nothing happens if <em class="parameter"><code>item</code></em>
-is out of bounds. The signal GtkList::select-child will be emitted.
-</p>
-<div class="refsect3">
-<a name="gtk-list-select-item.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>the index of the child to select.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-unselect-item"></a><h3>gtk_list_unselect_item ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_unselect_item (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
-                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> item</code></em>);</pre>
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> item</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_unselect_item</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Unselects the child number <em class="parameter"><code>item</code></em> of the <em class="parameter"><code>list</code></em>. Nothing happens if
-<em class="parameter"><code>item</code></em> is out of bounds. The signal GtkList::unselect-child will be
-emitted.
-</p>
-<div class="refsect3">
-<a name="gtk-list-unselect-item.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>the index of the child to unselect.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -643,32 +406,6 @@ emitted.
 gtk_list_select_child (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                        <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *child</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_select_child</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Selects the given <em class="parameter"><code>child</code></em>. The signal GtkList::select-child will be
-emitted.
-</p>
-<div class="refsect3">
-<a name="gtk-list-select-child.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>child</p></td>
-<td class="parameter_description"><p>the child to select.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -677,69 +414,14 @@ emitted.
 gtk_list_unselect_child (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                          <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *child</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_unselect_child</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Unselects the given <em class="parameter"><code>child</code></em>. The signal GtkList::unselect-child will be
-emitted.
-</p>
-<div class="refsect3">
-<a name="gtk-list-unselect-child.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>child</p></td>
-<td class="parameter_description"><p>the child to unselect.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-list-child-position"></a><h3>gtk_list_child_position ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 gtk_list_child_position (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                          <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *child</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_child_position</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Searches the children of <em class="parameter"><code>list</code></em> for the index of <em class="parameter"><code>child</code></em>.
-</p>
-<div class="refsect3">
-<a name="gtk-list-child-position.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>child</p></td>
-<td class="parameter_description"><p>the child to look for.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-list-child-position.returns"></a><h4>Returns</h4>
-<p>the index of the child, -1 if not found.</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -748,70 +430,6 @@ Searches the children of <em class="parameter"><code>list</code></em> for the in
 gtk_list_set_selection_mode (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                              <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkSelectionMode" title="enum GtkSelectionMode"><span class="type">GtkSelectionMode</span></a> mode</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_set_selection_mode</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Set the list selection mode. The selection mode can be any value in
-<a class="link" href="gtk2-Standard-Enumerations.html#GtkSelectionMode" title="enum GtkSelectionMode"><span class="type">GtkSelectionMode</span></a>:
-</p>
-<div class="variablelist"><table border="0" class="variablelist">
-<colgroup>
-<col align="left" valign="top">
-<col>
-</colgroup>
-<tbody>
-<tr>
-<td><p><span class="term"><a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-SINGLE:CAPS"><span class="type">GTK_SELECTION_SINGLE</span></a></span></p></td>
-<td><p>
-Zero or one element may be selected.
-</p></td>
-</tr>
-<tr>
-<td><p><span class="term"><a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-BROWSE:CAPS"><span class="type">GTK_SELECTION_BROWSE</span></a></span></p></td>
-<td><p>
-Exactly one element is always selected (this can be false after you have
-changed the selection mode).
-</p></td>
-</tr>
-<tr>
-<td><p><span class="term"><a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-MULTIPLE:CAPS"><span class="type">GTK_SELECTION_MULTIPLE</span></a></span></p></td>
-<td><p>
-Any number of elements may be selected. Clicks toggle the state of an
-item.
-</p></td>
-</tr>
-<tr>
-<td><p><span class="term"><a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-EXTENDED:CAPS"><span class="type">GTK_SELECTION_EXTENDED</span></a></span></p></td>
-<td><p>
-Any number of elements may be selected. Click-drag selects a range of
-elements; the Ctrl key may be used to enlarge the selection, and
-Shift key to select between the focus and the child pointed to.
-</p></td>
-</tr>
-</tbody>
-</table></div>
-<p>
-</p>
-<div class="refsect3">
-<a name="gtk-list-set-selection-mode.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>mode</p></td>
-<td class="parameter_description"><p>the new selection mode.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -819,47 +437,9 @@ Shift key to select between the focus and the child pointed to.
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_extend_selection (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                            <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkScrollType" title="enum GtkScrollType"><span class="type">GtkScrollType</span></a> scroll_type</code></em>,
-                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> position</code></em>,
-                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> auto_start_selection</code></em>);</pre>
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> position</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> auto_start_selection</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_extend_selection</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Extends the selection by moving the anchor according to <em class="parameter"><code>scroll_type</code></em>. Only
-in <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-EXTENDED:CAPS"><span class="type">GTK_SELECTION_EXTENDED</span></a>.
-</p>
-<div class="refsect3">
-<a name="gtk-list-extend-selection.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>scroll_type</p></td>
-<td class="parameter_description"><p>the direction and length.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>position</p></td>
-<td class="parameter_description"><p>the position if <em class="parameter"><code>scroll_type</code></em>
-is <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-JUMP:CAPS"><span class="type">GTK_SCROLL_JUMP</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>auto_start_selection</p></td>
-<td class="parameter_description"><p>if <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <a class="link" href="GtkList.html#gtk-list-start-selection" title="gtk_list_start_selection ()"><code class="function">gtk_list_start_selection()</code></a> is automatically
-carried out before extending the selection.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -867,25 +447,6 @@ carried out before extending the selection.</p></td>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_start_selection (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_start_selection</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Starts a selection (or part of selection) at the focused child. Only in
-<a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-EXTENDED:CAPS"><span class="type">GTK_SELECTION_EXTENDED</span></a> mode.
-</p>
-<div class="refsect3">
-<a name="gtk-list-start-selection.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -893,25 +454,6 @@ Starts a selection (or part of selection) at the focused child. Only in
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_end_selection (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_end_selection</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Ends the selection. Used with <a class="link" href="GtkList.html#gtk-list-extend-selection" title="gtk_list_extend_selection ()"><code class="function">gtk_list_extend_selection()</code></a> and
-<a class="link" href="GtkList.html#gtk-list-start-selection" title="gtk_list_start_selection ()"><code class="function">gtk_list_start_selection()</code></a>. Only in <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-EXTENDED:CAPS"><span class="type">GTK_SELECTION_EXTENDED</span></a> mode.
-</p>
-<div class="refsect3">
-<a name="gtk-list-end-selection.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -919,25 +461,6 @@ Ends the selection. Used with <a class="link" href="GtkList.html#gtk-list-extend
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_select_all (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_select_all</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Selects all children of <em class="parameter"><code>list</code></em>. A signal will be emitted for each
-newly selected child.
-</p>
-<div class="refsect3">
-<a name="gtk-list-select-all.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -945,25 +468,6 @@ newly selected child.
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_unselect_all (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_unselect_all</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Unselects all children of <em class="parameter"><code>list</code></em>. A signal will be emitted for each
-newly unselected child.
-</p>
-<div class="refsect3">
-<a name="gtk-list-unselect-all.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -971,46 +475,8 @@ newly unselected child.
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_scroll_horizontal (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                             <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkScrollType" title="enum GtkScrollType"><span class="type">GtkScrollType</span></a> scroll_type</code></em>,
-                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> position</code></em>);</pre>
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> position</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_scroll_horizontal</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Scrolls <em class="parameter"><code>list</code></em> horizontaly. This supposes that the list is packed into a
-scrolled window or something similar, and adjustments are well
-set. Step and page increment are those from the horizontal adjustment
-of <em class="parameter"><code>list</code></em>. Backward means to the left, and forward to the
-right. Out of bounds values are truncated.
-<em class="parameter"><code>scroll_type</code></em> may be any valid <a class="link" href="gtk2-Standard-Enumerations.html#GtkScrollType" title="enum GtkScrollType"><span class="type">GtkScrollType</span></a>. If <em class="parameter"><code>scroll_type</code></em> is
-<a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-NONE:CAPS"><span class="type">GTK_SCROLL_NONE</span></a>, nothing is done. If it's <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-JUMP:CAPS"><span class="type">GTK_SCROLL_JUMP</span></a>, the list
-scrolls to the ratio <em class="parameter"><code>position</code></em>: 0 is full left, 1 is full right.
-</p>
-<div class="refsect3">
-<a name="gtk-list-scroll-horizontal.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>scroll_type</p></td>
-<td class="parameter_description"><p>the scrolling type.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>position</p></td>
-<td class="parameter_description"><p>the position if <em class="parameter"><code>scroll_type</code></em>
-is <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-JUMP:CAPS"><span class="type">GTK_SCROLL_JUMP</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1018,46 +484,8 @@ is <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-JUMP:CAPS"><
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_scroll_vertical (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                           <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkScrollType" title="enum GtkScrollType"><span class="type">GtkScrollType</span></a> scroll_type</code></em>,
-                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> position</code></em>);</pre>
+                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> position</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_scroll_vertical</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Scrolls <em class="parameter"><code>list</code></em> vertically. This supposes that the list is packed into a
-scrolled window or something similar, and adjustments are well
-set. Step and page increment are those from the vertical adjustment
-of <em class="parameter"><code>list</code></em>. Backward means up, and forward down. Out of bounds values are
-truncated.
-<em class="parameter"><code>scroll_type</code></em> may be any valid <a class="link" href="gtk2-Standard-Enumerations.html#GtkScrollType" title="enum GtkScrollType"><span class="type">GtkScrollType</span></a>. If <em class="parameter"><code>scroll_type</code></em> is
-<a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-NONE:CAPS"><span class="type">GTK_SCROLL_NONE</span></a>, nothing is done. If it's <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-JUMP:CAPS"><span class="type">GTK_SCROLL_JUMP</span></a>, the list
-scrolls to the ratio <em class="parameter"><code>position</code></em>: 0 is top, 1 is bottom.
-</p>
-<div class="refsect3">
-<a name="gtk-list-scroll-vertical.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>scroll_type</p></td>
-<td class="parameter_description"><p>the scrolling type.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>position</p></td>
-<td class="parameter_description"><p>the position if <em class="parameter"><code>scroll_type</code></em>
-is <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-JUMP:CAPS"><span class="type">GTK_SCROLL_JUMP</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1065,25 +493,6 @@ is <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SCROLL-JUMP:CAPS"><
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_toggle_add_mode (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_toggle_add_mode</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Toggles between adding to the selection and beginning a new selection. Only
-in <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-EXTENDED:CAPS"><span class="type">GTK_SELECTION_EXTENDED</span></a>. Useful with <a class="link" href="GtkList.html#gtk-list-extend-selection" title="gtk_list_extend_selection ()"><code class="function">gtk_list_extend_selection()</code></a>.
-</p>
-<div class="refsect3">
-<a name="gtk-list-toggle-add-mode.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1091,27 +500,6 @@ in <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-EXTENDED:
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_toggle_focus_row (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_toggle_focus_row</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Toggles the focus row. If the focus row is selected, it's
-unselected. If the focus row is unselected, it's selected. If the
-selection mode of <em class="parameter"><code>list</code></em> is <a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-BROWSE:CAPS"><span class="type">GTK_SELECTION_BROWSE</span></a>, this has no effect,
-as the selection is always at the focus row.
-</p>
-<div class="refsect3">
-<a name="gtk-list-toggle-focus-row.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1120,33 +508,6 @@ as the selection is always at the focus row.
 gtk_list_toggle_row (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>,
                      <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *item</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_toggle_row</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Toggles the child <em class="parameter"><code>item</code></em> of list. If the selection mode of <em class="parameter"><code>list</code></em> is
-<a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-BROWSE:CAPS"><span class="type">GTK_SELECTION_BROWSE</span></a>, the item is selected, and the others are
-unselected.
-</p>
-<div class="refsect3">
-<a name="gtk-list-toggle-row.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>the child to toggle.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1154,26 +515,6 @@ unselected.
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_undo_selection (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_undo_selection</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Restores the selection in the last state, only if selection mode is
-<a class="link" href="gtk2-Standard-Enumerations.html#GTK-SELECTION-EXTENDED:CAPS"><span class="type">GTK_SELECTION_EXTENDED</span></a>. If this function is called twice, the selection is
-cleared. This function sometimes gives stranges "last states".
-</p>
-<div class="refsect3">
-<a name="gtk-list-undo-selection.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1181,25 +522,6 @@ cleared. This function sometimes gives stranges "last states".
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_list_end_drag_selection (<em class="parameter"><code><a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_list_end_drag_selection</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Stops the drag selection mode and ungrabs the pointer. This has no
-effect if a drag selection is not active.
-</p>
-<div class="refsect3">
-<a name="gtk-list-end-drag-selection.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the list widget.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 </div>
 <div class="refsect1">
@@ -1208,8 +530,6 @@ effect if a drag selection is not active.
 <a name="GtkList-struct"></a><h3>struct GtkList</h3>
 <pre class="programlisting">struct GtkList;</pre>
 <div class="warning"><p><code class="literal">GtkList</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 </div>
 <div class="refsect1">
@@ -1228,71 +548,16 @@ effect if a drag selection is not active.
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a>   *list,
                <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget,
-               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
-<p>
-The child <em class="parameter"><code>widget</code></em> has just been selected.
-</p>
-<div class="refsect3">
-<a name="GtkList-select-child.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the object which received the signal.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>widget</p></td>
-<td class="parameter_description"><p>the newly selected child.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>user_data</p></td>
-<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkList-selection-changed"></a><h3>The <code class="literal">“selection-changed”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> *list,
-               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
-<p>
-The selection of the widget has just changed.
-</p>
-<div class="refsect3">
-<a name="GtkList-selection-changed.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the object which received the signal.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>user_data</p></td>
-<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1300,67 +565,12 @@ The selection of the widget has just changed.
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a>   *list,
                <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget,
-               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
-<p>
-The child <em class="parameter"><code>widget</code></em> has just been unselected.
-</p>
-<div class="refsect3">
-<a name="GtkList-unselect-child.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>the object which received the signal.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>widget</p></td>
-<td class="parameter_description"><p>the newly unselected child.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>user_data</p></td>
-<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
-<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
-</div>
-</div>
-<div class="refsect1">
-<a name="GtkList.see-also"></a><h2>See Also</h2>
-<p>
-</p>
-<div class="variablelist"><table border="0" class="variablelist">
-<colgroup>
-<col align="left" valign="top">
-<col>
-</colgroup>
-<tbody>
-<tr>
-<td><p><span class="term"><a class="link" href="GtkContainer.html" title="GtkContainer"><span class="type">GtkContainer</span></a></span></p></td>
-<td><p>For functions that apply to every <a class="link" href="GtkContainer.html" title="GtkContainer"><span class="type">GtkContainer</span></a>
-(like <a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a>).</p></td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="type">GtkListitem</span></span></p></td>
-<td><p>Children of a <a class="link" href="GtkList.html" title="GtkList"><span class="type">GtkList</span></a> widget must be of this
-type.</p></td>
-</tr>
-</tbody>
-</table></div>
-<p>
-</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

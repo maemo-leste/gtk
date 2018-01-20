@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkItem: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="AbstractObjects.html" title="Abstract Base Classes">
 <link rel="prev" href="GtkContainer.html" title="GtkContainer">
 <link rel="next" href="GtkMenuShell.html" title="GtkMenuShell">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -30,7 +30,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkItem.top_of_page"></a>GtkItem</span></h2>
-<p>GtkItem — Abstract base class for GtkMenuItem, GtkListItem and GtkTreeItem</p>
+<p>GtkItem</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -81,17 +81,17 @@
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkItem.html#GtkItem-deselect" title="The “deselect” signal">deselect</a></td>
-<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkItem.html#GtkItem-select" title="The “select” signal">select</a></td>
-<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkItem.html#GtkItem-toggle" title="The “toggle” signal">toggle</a></td>
-<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
 </table></div>
@@ -111,8 +111,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkItem.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -136,13 +136,6 @@ GtkItem implements
 </div>
 <div class="refsect1">
 <a name="GtkItem.description"></a><h2>Description</h2>
-<p>
-The <a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> widget is an abstract base class for <a class="link" href="GtkMenuItem.html" title="GtkMenuItem"><span class="type">GtkMenuItem</span></a>, <a class="link" href="GtkListItem.html" title="GtkListItem"><span class="type">GtkListItem</span></a>
-and <a class="link" href="GtkTreeItem.html" title="GtkTreeItem"><span class="type">GtkTreeItem</span></a>.
-</p>
-<p>
-<a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> is deprecated and will be removed in GTK+ 3.
-</p>
 </div>
 <div class="refsect1">
 <a name="GtkItem.functions_details"></a><h2>Functions</h2>
@@ -150,84 +143,21 @@ and <a class="link" href="GtkTreeItem.html" title="GtkTreeItem"><span class="typ
 <a name="gtk-item-select"></a><h3>gtk_item_select ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_select (<em class="parameter"><code><a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> *item</code></em>);</pre>
-<div class="warning">
-<p><code class="literal">gtk_item_select</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <a class="link" href="GtkMenuItem.html#gtk-menu-item-select" title="gtk_menu_item_select ()"><code class="function">gtk_menu_item_select()</code></a> instead</p>
-</div>
-<p>
-Emits the "select" signal on the given item.
-</p>
-<div class="refsect3">
-<a name="gtk-item-select.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
+<div class="warning"><p><code class="literal">gtk_item_select</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-deselect"></a><h3>gtk_item_deselect ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_deselect (<em class="parameter"><code><a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> *item</code></em>);</pre>
-<div class="warning">
-<p><code class="literal">gtk_item_deselect</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <a class="link" href="GtkMenuItem.html#gtk-menu-item-deselect" title="gtk_menu_item_deselect ()"><code class="function">gtk_menu_item_deselect()</code></a> instead</p>
-</div>
-<p>
-Emits the "deselect" signal on the given item.
-</p>
-<div class="refsect3">
-<a name="gtk-item-deselect.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
+<div class="warning"><p><code class="literal">gtk_item_deselect</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-item-toggle"></a><h3>gtk_item_toggle ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_item_toggle (<em class="parameter"><code><a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> *item</code></em>);</pre>
-<div class="warning">
-<p><code class="literal">gtk_item_toggle</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>This function will be removed in GTK+ 3</p>
-</div>
-<p>
-Emits the "toggle" signal on the given item.
-</p>
-<div class="refsect3">
-<a name="gtk-item-toggle.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
+<div class="warning"><p><code class="literal">gtk_item_toggle</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 </div>
 <div class="refsect1">
@@ -235,10 +165,6 @@ Emits the "toggle" signal on the given item.
 <div class="refsect2">
 <a name="GtkItem-struct"></a><h3>struct GtkItem</h3>
 <pre class="programlisting">struct GtkItem;</pre>
-<p>
-The <a class="link" href="GtkItem.html#GtkItem-struct" title="struct GtkItem"><span class="type">GtkItem</span></a> struct contains private data only, and
-should be accessed using the functions below.
-</p>
 </div>
 </div>
 <div class="refsect1">
@@ -247,103 +173,28 @@ should be accessed using the functions below.
 <a name="GtkItem-deselect"></a><h3>The <code class="literal">“deselect”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> *item,
-               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
-<p>
-Emitted when the item is deselected.
-</p>
-<div class="refsect3">
-<a name="GtkItem-deselect.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>the object which received the signal.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>user_data</p></td>
-<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkItem-select"></a><h3>The <code class="literal">“select”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> *item,
-               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
-<p>
-Emitted when the item is selected.
-</p>
-<div class="refsect3">
-<a name="GtkItem-select.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>the object which received the signal.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>user_data</p></td>
-<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkItem-toggle"></a><h3>The <code class="literal">“toggle”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkItem.html" title="GtkItem"><span class="type">GtkItem</span></a> *item,
-               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
-<p>
-Emitted when the item is toggled.
-</p>
-<div class="refsect3">
-<a name="GtkItem-toggle.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>item</p></td>
-<td class="parameter_description"><p>the object which received the signal.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>user_data</p></td>
-<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

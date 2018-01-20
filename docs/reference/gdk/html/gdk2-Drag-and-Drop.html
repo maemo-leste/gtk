@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Drag and Drop: GDK 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GDK 2 Reference Manual">
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Selections.html" title="Selections">
 <link rel="next" href="gdk2-Properties-and-Atoms.html" title="Properties and Atoms">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -27,7 +27,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="gdk2-Drag-and-Drop.top_of_page"></a>Drag and Drop</span></h2>
-<p>Drag and Drop — Functions for controlling drag and drop handling</p>
+<p>Drag and Drop</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -129,7 +129,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+<a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Drag-and-Drop.html#gdk-drag-context-list-targets" title="gdk_drag_context_list_targets ()">gdk_drag_context_list_targets</a> <span class="c_punctuation">()</span>
@@ -153,7 +153,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Drag-and-Drop.html#gdk-drag-motion" title="gdk_drag_motion ()">gdk_drag_motion</a> <span class="c_punctuation">()</span>
@@ -201,7 +201,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gdk2-Drag-and-Drop.html#gdk-drag-drop-succeeded" title="gdk_drag_drop_succeeded ()">gdk_drag_drop_succeeded</a> <span class="c_punctuation">()</span>
@@ -240,17 +240,6 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Drag-and-Drop.description"></a><h2>Description</h2>
-<p>
-These functions provide a low level interface for drag and drop.
-The X backend of GDK supports both the Xdnd and Motif drag and drop protocols
-transparently, the Win32 backend supports the WM_DROPFILES protocol.
-</p>
-<p>
-GTK+ provides a higher level abstraction based on top of these functions,
-and so they are not normally needed in GTK+ applications.
-See the Drag and Drop section of
-the GTK+ documentation for more information.
-</p>
 </div>
 <div class="refsect1">
 <a name="gdk2-Drag-and-Drop.functions_details"></a><h2>Functions</h2>
@@ -284,7 +273,7 @@ gdk_drag_get_selection (<em class="parameter"><code><a class="link" href="gdk2-D
 <a name="gdk-drag-abort"></a><h3>gdk_drag_abort ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_drag_abort (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
-                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Aborts a drag without dropping. </p>
 <p>This function is called by the drag source.</p>
 <div class="refsect3">
@@ -315,8 +304,8 @@ gdk_drag_abort (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-
 <a name="gdk-drop-reply"></a><h3>gdk_drop_reply ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_drop_reply (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
-                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> ok</code></em>,
-                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> ok</code></em>,
+                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Accepts or rejects a drop. </p>
 <p>This function is called by the drag destination in response
 to a drop initiated by the drag source.</p>
@@ -336,7 +325,7 @@ to a drop initiated by the drag source.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>ok</p></td>
-<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the drop is accepted.</p></td>
+<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the drop is accepted.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -369,7 +358,7 @@ gdk_drag_context_new (<em class="parameter"><code><span class="type">void</span>
 <a name="gdk-drag-drop"></a><h3>gdk_drag_drop ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_drag_drop (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
-               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Drops on the current destination.</p>
 <p>This function is called by the drag source.</p>
 <div class="refsect3">
@@ -401,8 +390,8 @@ gdk_drag_drop (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-D
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_drag_find_window (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                       <em class="parameter"><code><a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *drag_window</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_root</code></em>,
-                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_root</code></em>,
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_root</code></em>,
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_root</code></em>,
                       <em class="parameter"><code><a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> **dest_window</code></em>,
                       <em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragProtocol" title="enum GdkDragProtocol"><span class="type">GdkDragProtocol</span></a> *protocol</code></em>);</pre>
 <div class="warning">
@@ -447,12 +436,12 @@ should be ignored, since it is put up by the drag source as an icon.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest_window</p></td>
-<td class="parameter_description"><p> location to store the destination window in. </p></td>
+<td class="parameter_description"><p>location to store the destination window in. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>protocol</p></td>
-<td class="parameter_description"><p> location to store the DND protocol in. </p></td>
+<td class="parameter_description"><p>location to store the DND protocol in. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -466,8 +455,8 @@ should be ignored, since it is put up by the drag source as an icon.</p></td>
 gdk_drag_find_window_for_screen (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                                  <em class="parameter"><code><a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *drag_window</code></em>,
                                  <em class="parameter"><code><a class="link" href="GdkScreen.html" title="GdkScreen"><span class="type">GdkScreen</span></a> *screen</code></em>,
-                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_root</code></em>,
-                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_root</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_root</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_root</code></em>,
                                  <em class="parameter"><code><a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> **dest_window</code></em>,
                                  <em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragProtocol" title="enum GdkDragProtocol"><span class="type">GdkDragProtocol</span></a> *protocol</code></em>);</pre>
 <p>Finds the destination window and DND protocol to use at the
@@ -513,12 +502,12 @@ should be ignored, since it is put up by the drag source as an icon.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest_window</p></td>
-<td class="parameter_description"><p> location to store the destination window in. </p></td>
+<td class="parameter_description"><p>location to store the destination window in. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>protocol</p></td>
-<td class="parameter_description"><p> location to store the DND protocol in. </p></td>
+<td class="parameter_description"><p>location to store the DND protocol in. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -533,9 +522,9 @@ should be ignored, since it is put up by the drag source as an icon.</p></td>
 gdk_drag_context_ref (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_drag_context_ref</code> has been deprecated since version 2.2 and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
+<p>Use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
 </div>
-<p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
+<p>Deprecated function; use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
 <div class="refsect3">
 <a name="gdk-drag-context-ref.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -637,7 +626,7 @@ gdk_drag_context_get_suggested_action (<em class="parameter"><code><a class="lin
 <hr>
 <div class="refsect2">
 <a name="gdk-drag-context-list-targets"></a><h3>gdk_drag_context_list_targets ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+<pre class="programlisting"><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
 gdk_drag_context_list_targets (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Retrieves the list of targets of the context.</p>
 <div class="refsect3">
@@ -657,7 +646,7 @@ gdk_drag_context_list_targets (<em class="parameter"><code><a class="link" href=
 </div>
 <div class="refsect3">
 <a name="gdk-drag-context-list-targets.returns"></a><h4>Returns</h4>
-<p> a <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of targets. </p>
+<p>a <a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of targets. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GdkAtom]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
@@ -685,7 +674,7 @@ gdk_drag_context_get_source_window (<em class="parameter"><code><a class="link" 
 </div>
 <div class="refsect3">
 <a name="gdk-drag-context-get-source-window.returns"></a><h4>Returns</h4>
-<p> a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>. </p>
+<p>a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
@@ -695,7 +684,7 @@ gdk_drag_context_get_source_window (<em class="parameter"><code><a class="link" 
 <a name="gdk-drag-begin"></a><h3>gdk_drag_begin ()</h3>
 <pre class="programlisting"><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="returnvalue">GdkDragContext</span></a> *
 gdk_drag_begin (<em class="parameter"><code><a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
-                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *targets</code></em>);</pre>
+                <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *targets</code></em>);</pre>
 <p>Starts a drag and creates a new drag context for it.</p>
 <p>This function is called by the drag source.</p>
 <div class="refsect3">
@@ -714,7 +703,7 @@ gdk_drag_begin (<em class="parameter"><code><a class="link" href="gdk2-Windows.h
 </tr>
 <tr>
 <td class="parameter_name"><p>targets</p></td>
-<td class="parameter_description"><p> the offered targets,
+<td class="parameter_description"><p>the offered targets,
 as list of <a class="link" href="gdk2-Properties-and-Atoms.html#GdkAtom" title="GdkAtom"><span class="type">GdkAtom</span></a>s. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GdkAtom]</span></td>
 </tr>
@@ -729,15 +718,15 @@ as list of <a class="link" href="gdk2-Properties-and-Atoms.html#GdkAtom" title="
 <hr>
 <div class="refsect2">
 <a name="gdk-drag-motion"></a><h3>gdk_drag_motion ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdk_drag_motion (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                  <em class="parameter"><code><a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *dest_window</code></em>,
                  <em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragProtocol" title="enum GdkDragProtocol"><span class="type">GdkDragProtocol</span></a> protocol</code></em>,
-                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_root</code></em>,
-                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_root</code></em>,
+                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_root</code></em>,
+                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_root</code></em>,
                  <em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragAction" title="enum GdkDragAction"><span class="type">GdkDragAction</span></a> suggested_action</code></em>,
                  <em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragAction" title="enum GdkDragAction"><span class="type">GdkDragAction</span></a> possible_actions</code></em>,
-                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <div class="warning"><p><code class="literal">gdk_drag_motion</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Updates the drag context when the pointer moves or the 
 set of actions changes.</p>
@@ -805,8 +794,8 @@ set of actions changes.</p>
 <a name="gdk-drop-finish"></a><h3>gdk_drop_finish ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_drop_finish (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
-                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> success</code></em>,
-                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> success</code></em>,
+                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Ends the drag operation after a drop.</p>
 <p>This function is called by the drag destination.</p>
 <div class="refsect3">
@@ -825,7 +814,7 @@ gdk_drop_finish (<em class="parameter"><code><a class="link" href="gdk2-Drag-and
 </tr>
 <tr>
 <td class="parameter_name"><p>success</p></td>
-<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the data was successfully received.</p></td>
+<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the data was successfully received.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -911,16 +900,17 @@ gdk_drag_get_protocol_for_display (<em class="parameter"><code><a class="link" h
 <td class="parameter_description"><p>location where the supported DND protocol is returned.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gdk-drag-get-protocol-for-display.returns"></a><h4>Returns</h4>
-<p>the windowing system id of the window where the drop should happen. This
+<tr>
+<td class="parameter_name"><p>returns</p></td>
+<td class="parameter_description"><p>the windowing system id of the window where the drop should happen. This
 may be <em class="parameter"><code>xid</code></em>
 or the id of a proxy window, or zero if <em class="parameter"><code>xid</code></em>
 doesn't
-support Drag and Drop.</p>
+support Drag and Drop.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
@@ -931,9 +921,9 @@ support Drag and Drop.</p>
 gdk_drag_context_unref (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_drag_context_unref</code> has been deprecated since version 2.2 and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
+<p>Use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
 </div>
-<p>Deprecated function; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
+<p>Deprecated function; use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
 <div class="refsect3">
 <a name="gdk-drag-context-unref.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -956,7 +946,7 @@ gdk_drag_context_unref (<em class="parameter"><code><a class="link" href="gdk2-D
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_drag_status (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>,
                  <em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragAction" title="enum GdkDragAction"><span class="type">GdkDragAction</span></a> action</code></em>,
-                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
+                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time_</code></em>);</pre>
 <p>Selects one of the actions offered by the drag source.</p>
 <p>This function is called by the drag destination in response to
 <a class="link" href="gdk2-Drag-and-Drop.html#gdk-drag-motion" title="gdk_drag_motion ()"><code class="function">gdk_drag_motion()</code></a> called by the drag source.</p>
@@ -992,7 +982,7 @@ or 0 to indicate that a drop will not be accepted.</p></td>
 <hr>
 <div class="refsect2">
 <a name="gdk-drag-drop-succeeded"></a><h3>gdk_drag_drop_succeeded ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gdk_drag_drop_succeeded (<em class="parameter"><code><a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> *context</code></em>);</pre>
 <p>Returns whether the dropped data has been successfully 
 transferred. This function is intended to be used while 
@@ -1015,7 +1005,7 @@ meaningless at other times.</p>
 </div>
 <div class="refsect3">
 <a name="gdk-drag-drop-succeeded.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the drop was successful.</p>
+<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the drop was successful.</p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
 </div>
@@ -1024,10 +1014,6 @@ meaningless at other times.</p>
 <a name="gdk2-Drag-and-Drop.other_details"></a><h2>Types and Values</h2>
 <div class="refsect2">
 <a name="GdkDragProtocol"></a><h3>enum GdkDragProtocol</h3>
-<p>
-Used in <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> to indicate the protocol according to
-which DND is done.
-</p>
 <div class="refsect3">
 <a name="GdkDragProtocol.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1039,53 +1025,38 @@ which DND is done.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-DRAG-PROTO-MOTIF:CAPS"></a>GDK_DRAG_PROTO_MOTIF</p></td>
-<td class="enum_member_description">
-<p>The Motif DND protocol.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-DRAG-PROTO-XDND:CAPS"></a>GDK_DRAG_PROTO_XDND</p></td>
-<td class="enum_member_description">
-<p>The Xdnd protocol.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-DRAG-PROTO-ROOTWIN:CAPS"></a>GDK_DRAG_PROTO_ROOTWIN</p></td>
-<td class="enum_member_description">
-<p>An extension to the Xdnd protocol for
-  unclaimed root window drops.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-DRAG-PROTO-NONE:CAPS"></a>GDK_DRAG_PROTO_NONE</p></td>
-<td class="enum_member_description">
-<p>no protocol.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-DRAG-PROTO-WIN32-DROPFILES:CAPS"></a>GDK_DRAG_PROTO_WIN32_DROPFILES</p></td>
-<td class="enum_member_description">
-<p>The simple WM_DROPFILES protocol.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-DRAG-PROTO-OLE2:CAPS"></a>GDK_DRAG_PROTO_OLE2</p></td>
-<td class="enum_member_description">
-<p>The complex OLE2 DND protocol (not implemented).</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-DRAG-PROTO-LOCAL:CAPS"></a>GDK_DRAG_PROTO_LOCAL</p></td>
-<td class="enum_member_description">
-<p>Intra-application DND.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -1113,29 +1084,10 @@ which DND is done.
   guint32 GSEAL (start_time);
 };
 </pre>
-<p>
-A <span class="structname">GdkDragContext</span> holds information about a
-drag in progress. It is used on both source and destination sides.
-</p>
-<div class="refsect3">
-<a name="GdkDragContext.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="struct_members_name">
-<col class="struct_members_description">
-<col width="200px" class="struct_members_annotations">
-</colgroup>
-<tbody></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GdkDragAction"></a><h3>enum GdkDragAction</h3>
-<p>
-Used in <a class="link" href="gdk2-Drag-and-Drop.html#GdkDragContext" title="struct GdkDragContext"><span class="type">GdkDragContext</span></a> to indicate what the destination
-should do with the dropped data.
-</p>
 <div class="refsect3">
 <a name="GdkDragAction.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1147,48 +1099,33 @@ should do with the dropped data.
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-ACTION-DEFAULT:CAPS"></a>GDK_ACTION_DEFAULT</p></td>
-<td class="enum_member_description">
-<p>Means nothing, and should not be used.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-ACTION-COPY:CAPS"></a>GDK_ACTION_COPY</p></td>
-<td class="enum_member_description">
-<p>Copy the data.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-ACTION-MOVE:CAPS"></a>GDK_ACTION_MOVE</p></td>
-<td class="enum_member_description">
-<p>Move the data, i.e. first copy it, then delete
-  it from the source using the DELETE target of the X selection protocol.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-ACTION-LINK:CAPS"></a>GDK_ACTION_LINK</p></td>
-<td class="enum_member_description">
-<p>Add a link to the data. Note that this is only
-  useful if source and destination agree on what it means.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-ACTION-PRIVATE:CAPS"></a>GDK_ACTION_PRIVATE</p></td>
-<td class="enum_member_description">
-<p>Special action which tells the source that the
-  destination will do something that the source doesn't understand.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GDK-ACTION-ASK:CAPS"></a>GDK_ACTION_ASK</p></td>
-<td class="enum_member_description">
-<p>Ask the user what to do with the data.</p>
-</td>
-<td class="enum_member_annotations"> </td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
@@ -1197,6 +1134,6 @@ should do with the dropped data.
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

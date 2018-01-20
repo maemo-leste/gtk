@@ -21,7 +21,7 @@
       <sub name="Windows" link="gdk2-Windows.html"/>
       <sub name="Events" link="gdk2-Events.html"/>
       <sub name="Event Structures" link="gdk2-Event-Structures.html"/>
-      <sub name="Key Values" link="gdk2-Keyboard-Handling.html"/>
+      <sub name="Keyboard Handling" link="gdk2-Keyboard-Handling.html"/>
       <sub name="Selections" link="gdk2-Selections.html"/>
       <sub name="Drag and Drop" link="gdk2-Drag-and-Drop.html"/>
       <sub name="Properties and Atoms" link="gdk2-Properties-and-Atoms.html"/>
@@ -54,7 +54,7 @@
     <keyword type="function" name="gdk_init_check ()" link="gdk2-General.html#gdk-init-check"/>
     <keyword type="function" name="gdk_parse_args ()" link="gdk2-General.html#gdk-parse-args" since="2.2"/>
     <keyword type="function" name="gdk_get_display_arg_name ()" link="gdk2-General.html#gdk-get-display-arg-name" since="2.2"/>
-    <keyword type="function" name="gdk_set_locale ()" link="gdk2-General.html#gdk-set-locale" deprecated="2.24: Use setlocale() directly"/>
+    <keyword type="function" name="gdk_set_locale ()" link="gdk2-General.html#gdk-set-locale" deprecated=""/>
     <keyword type="function" name="gdk_set_sm_client_id ()" link="gdk2-General.html#gdk-set-sm-client-id" deprecated="2.24: Use gdk_x11_set_sm_client_id() instead"/>
     <keyword type="function" name="gdk_exit ()" link="gdk2-General.html#gdk-exit" deprecated=""/>
     <keyword type="function" name="gdk_notify_startup_complete ()" link="gdk2-General.html#gdk-notify-startup-complete" since="2.2"/>
@@ -118,7 +118,7 @@
     <keyword type="function" name="gdk_display_supports_input_shapes ()" link="GdkDisplay.html#gdk-display-supports-input-shapes" since="2.10"/>
     <keyword type="function" name="gdk_display_supports_composite ()" link="GdkDisplay.html#gdk-display-supports-composite" since="2.12"/>
     <keyword type="struct" name="GdkDisplay" link="GdkDisplay.html#GdkDisplay-struct"/>
-    <keyword type="struct" name="struct GdkDisplayPointerHooks" link="GdkDisplay.html#GdkDisplayPointerHooks" since="2.2"/>
+    <keyword type="struct" name="struct GdkDisplayPointerHooks" link="GdkDisplay.html#GdkDisplayPointerHooks"/>
     <keyword type="signal" name="The “closed” signal" link="GdkDisplay.html#GdkDisplay-closed"/>
     <keyword type="function" name="gdk_display_manager_get ()" link="GdkDisplayManager.html#gdk-display-manager-get" since="2.2"/>
     <keyword type="function" name="gdk_display_manager_get_default_display ()" link="GdkDisplayManager.html#gdk-display-manager-get-default-display" since="2.2"/>
@@ -235,7 +235,7 @@
     <keyword type="struct" name="struct GdkGCValues" link="gdk2-Graphics-Contexts.html#GdkGCValues"/>
     <keyword type="enum" name="enum GdkGCValuesMask" link="gdk2-Graphics-Contexts.html#GdkGCValuesMask"/>
     <keyword type="enum" name="enum GdkFunction" link="gdk2-Graphics-Contexts.html#GdkFunction"/>
-    <keyword type="macro" name="gdk_gc_destroy" link="gdk2-Graphics-Contexts.html#gdk-gc-destroy" deprecated="Use g_object_unref() instead"/>
+    <keyword type="macro" name="gdk_gc_destroy" link="gdk2-Graphics-Contexts.html#gdk-gc-destroy" deprecated=""/>
     <keyword type="enum" name="enum GdkFill" link="gdk2-Graphics-Contexts.html#GdkFill"/>
     <keyword type="enum" name="enum GdkSubwindowMode" link="gdk2-Graphics-Contexts.html#GdkSubwindowMode"/>
     <keyword type="enum" name="enum GdkLineStyle" link="gdk2-Graphics-Contexts.html#GdkLineStyle"/>
@@ -280,7 +280,7 @@
     <keyword type="struct" name="GdkDrawable" link="gdk2-Drawing-Primitives.html#GdkDrawable-struct"/>
     <keyword type="struct" name="struct GdkSegment" link="gdk2-Drawing-Primitives.html#GdkSegment"/>
     <keyword type="struct" name="struct GdkTrapezoid" link="gdk2-Drawing-Primitives.html#GdkTrapezoid"/>
-    <keyword type="macro" name="gdk_draw_pixmap" link="gdk2-Drawing-Primitives.html#gdk-draw-pixmap" deprecated="Use gdk_draw_drawable() instead."/>
+    <keyword type="macro" name="gdk_draw_pixmap" link="gdk2-Drawing-Primitives.html#gdk-draw-pixmap" deprecated=""/>
     <keyword type="function" name="gdk_pixmap_new ()" link="gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-new"/>
     <keyword type="function" name="gdk_bitmap_create_from_data ()" link="gdk2-Bitmaps-and-Pixmaps.html#gdk-bitmap-create-from-data" deprecated=""/>
     <keyword type="function" name="gdk_pixmap_create_from_data ()" link="gdk2-Bitmaps-and-Pixmaps.html#gdk-pixmap-create-from-data" deprecated=""/>
@@ -659,8 +659,8 @@
     <keyword type="struct" name="struct GdkEventNoExpose" link="gdk2-Event-Structures.html#GdkEventNoExpose"/>
     <keyword type="struct" name="struct GdkEventWindowState" link="gdk2-Event-Structures.html#GdkEventWindowState"/>
     <keyword type="struct" name="struct GdkEventSetting" link="gdk2-Event-Structures.html#GdkEventSetting"/>
-    <keyword type="struct" name="struct GdkEventOwnerChange" link="gdk2-Event-Structures.html#GdkEventOwnerChange" since="2.6"/>
-    <keyword type="struct" name="struct GdkEventGrabBroken" link="gdk2-Event-Structures.html#GdkEventGrabBroken" since="2.8"/>
+    <keyword type="struct" name="struct GdkEventOwnerChange" link="gdk2-Event-Structures.html#GdkEventOwnerChange"/>
+    <keyword type="struct" name="struct GdkEventGrabBroken" link="gdk2-Event-Structures.html#GdkEventGrabBroken"/>
     <keyword type="enum" name="enum GdkScrollDirection" link="gdk2-Event-Structures.html#GdkScrollDirection"/>
     <keyword type="enum" name="enum GdkVisibilityState" link="gdk2-Event-Structures.html#GdkVisibilityState"/>
     <keyword type="enum" name="enum GdkCrossingMode" link="gdk2-Event-Structures.html#GdkCrossingMode"/>
@@ -842,7 +842,7 @@
     <keyword type="function" name="gdk_cairo_reset_clip ()" link="gdk2-Cairo-Interaction.html#gdk-cairo-reset-clip" since="2.18"/>
     <keyword type="macro" name="GDK_ROOT_WINDOW" link="gdk2-X-Window-System-Interaction.html#GDK-ROOT-WINDOW:CAPS"/>
     <keyword type="macro" name="GDK_ROOT_PARENT" link="gdk2-X-Window-System-Interaction.html#GDK-ROOT-PARENT:CAPS" deprecated=""/>
-    <keyword type="macro" name="GDK_DISPLAY" link="gdk2-X-Window-System-Interaction.html#GDK-DISPLAY:CAPS" deprecated="2.22: Use gdk_display_get_default() to get the default #GdkDisplay or gdk_x11_get_default_xdisplay() to get the corresponding Xlib Display *"/>
+    <keyword type="macro" name="GDK_DISPLAY" link="gdk2-X-Window-System-Interaction.html#GDK-DISPLAY:CAPS"/>
     <keyword type="macro" name="GDK_WINDOW_XDISPLAY()" link="gdk2-X-Window-System-Interaction.html#GDK-WINDOW-XDISPLAY:CAPS"/>
     <keyword type="macro" name="GDK_WINDOW_XID()" link="gdk2-X-Window-System-Interaction.html#GDK-WINDOW-XID:CAPS"/>
     <keyword type="macro" name="GDK_PIXMAP_XDISPLAY()" link="gdk2-X-Window-System-Interaction.html#GDK-PIXMAP-XDISPLAY:CAPS"/>
@@ -1323,239 +1323,5 @@
     <keyword type="constant" name="GDK_EXTENSION_EVENTS_NONE" link="gdk2-Input-Devices.html#GDK-EXTENSION-EVENTS-NONE:CAPS"/>
     <keyword type="constant" name="GDK_EXTENSION_EVENTS_ALL" link="gdk2-Input-Devices.html#GDK-EXTENSION-EVENTS-ALL:CAPS"/>
     <keyword type="constant" name="GDK_EXTENSION_EVENTS_CURSOR" link="gdk2-Input-Devices.html#GDK-EXTENSION-EVENTS-CURSOR:CAPS"/>
-    <keyword type="member" name="GdkDisplayPointerHooks.get-pointer" link="GdkDisplay.html#GdkDisplayPointerHooks.get-pointer"/>
-    <keyword type="member" name="GdkDisplayPointerHooks.window-get-pointer" link="GdkDisplay.html#GdkDisplayPointerHooks.window-get-pointer"/>
-    <keyword type="member" name="GdkDisplayPointerHooks.window-at-pointer" link="GdkDisplay.html#GdkDisplayPointerHooks.window-at-pointer"/>
-    <keyword type="member" name="GdkPoint.x" link="gdk2-Points-Rectangles-and-Regions.html#GdkPoint.x"/>
-    <keyword type="member" name="GdkPoint.y" link="gdk2-Points-Rectangles-and-Regions.html#GdkPoint.y"/>
-    <keyword type="member" name="GdkRectangle.x" link="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle.x"/>
-    <keyword type="member" name="GdkRectangle.y" link="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle.y"/>
-    <keyword type="member" name="GdkRectangle.width" link="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle.width"/>
-    <keyword type="member" name="GdkRectangle.height" link="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle.height"/>
-    <keyword type="member" name="GdkSpan.x" link="gdk2-Points-Rectangles-and-Regions.html#GdkSpan.x"/>
-    <keyword type="member" name="GdkSpan.y" link="gdk2-Points-Rectangles-and-Regions.html#GdkSpan.y"/>
-    <keyword type="member" name="GdkSpan.width" link="gdk2-Points-Rectangles-and-Regions.html#GdkSpan.width"/>
-    <keyword type="member" name="GdkGCValues.foreground" link="gdk2-Graphics-Contexts.html#GdkGCValues.foreground"/>
-    <keyword type="member" name="GdkGCValues.background" link="gdk2-Graphics-Contexts.html#GdkGCValues.background"/>
-    <keyword type="member" name="GdkGCValues.font" link="gdk2-Graphics-Contexts.html#GdkGCValues.font"/>
-    <keyword type="member" name="GdkGCValues.function" link="gdk2-Graphics-Contexts.html#GdkGCValues.function"/>
-    <keyword type="member" name="GdkGCValues.fill" link="gdk2-Graphics-Contexts.html#GdkGCValues.fill"/>
-    <keyword type="member" name="GdkGCValues.tile" link="gdk2-Graphics-Contexts.html#GdkGCValues.tile"/>
-    <keyword type="member" name="GdkGCValues.stipple" link="gdk2-Graphics-Contexts.html#GdkGCValues.stipple"/>
-    <keyword type="member" name="GdkGCValues.clip-mask" link="gdk2-Graphics-Contexts.html#GdkGCValues.clip-mask"/>
-    <keyword type="member" name="GdkGCValues.subwindow-mode" link="gdk2-Graphics-Contexts.html#GdkGCValues.subwindow-mode"/>
-    <keyword type="member" name="GdkGCValues.ts-x-origin" link="gdk2-Graphics-Contexts.html#GdkGCValues.ts-x-origin"/>
-    <keyword type="member" name="GdkGCValues.ts-y-origin" link="gdk2-Graphics-Contexts.html#GdkGCValues.ts-y-origin"/>
-    <keyword type="member" name="GdkGCValues.clip-x-origin" link="gdk2-Graphics-Contexts.html#GdkGCValues.clip-x-origin"/>
-    <keyword type="member" name="GdkGCValues.clip-y-origin" link="gdk2-Graphics-Contexts.html#GdkGCValues.clip-y-origin"/>
-    <keyword type="member" name="GdkGCValues.graphics-exposures" link="gdk2-Graphics-Contexts.html#GdkGCValues.graphics-exposures"/>
-    <keyword type="member" name="GdkGCValues.line-width" link="gdk2-Graphics-Contexts.html#GdkGCValues.line-width"/>
-    <keyword type="member" name="GdkGCValues.line-style" link="gdk2-Graphics-Contexts.html#GdkGCValues.line-style"/>
-    <keyword type="member" name="GdkGCValues.cap-style" link="gdk2-Graphics-Contexts.html#GdkGCValues.cap-style"/>
-    <keyword type="member" name="GdkGCValues.join-style" link="gdk2-Graphics-Contexts.html#GdkGCValues.join-style"/>
-    <keyword type="member" name="GdkSegment.x1" link="gdk2-Drawing-Primitives.html#GdkSegment.x1"/>
-    <keyword type="member" name="GdkSegment.y1" link="gdk2-Drawing-Primitives.html#GdkSegment.y1"/>
-    <keyword type="member" name="GdkSegment.x2" link="gdk2-Drawing-Primitives.html#GdkSegment.x2"/>
-    <keyword type="member" name="GdkSegment.y2" link="gdk2-Drawing-Primitives.html#GdkSegment.y2"/>
-    <keyword type="member" name="GdkTrapezoid.y1" link="gdk2-Drawing-Primitives.html#GdkTrapezoid.y1"/>
-    <keyword type="member" name="GdkTrapezoid.x11" link="gdk2-Drawing-Primitives.html#GdkTrapezoid.x11"/>
-    <keyword type="member" name="GdkTrapezoid.x21" link="gdk2-Drawing-Primitives.html#GdkTrapezoid.x21"/>
-    <keyword type="member" name="GdkTrapezoid.y2" link="gdk2-Drawing-Primitives.html#GdkTrapezoid.y2"/>
-    <keyword type="member" name="GdkTrapezoid.x12" link="gdk2-Drawing-Primitives.html#GdkTrapezoid.x12"/>
-    <keyword type="member" name="GdkTrapezoid.x22" link="gdk2-Drawing-Primitives.html#GdkTrapezoid.x22"/>
-    <keyword type="member" name="GdkRgbCmap.colors" link="gdk2-GdkRGB.html#GdkRgbCmap.colors"/>
-    <keyword type="member" name="GdkRgbCmap.n-colors" link="gdk2-GdkRGB.html#GdkRgbCmap.n-colors"/>
-    <keyword type="member" name="GdkColor.pixel" link="gdk2-Colormaps-and-Colors.html#GdkColor.pixel"/>
-    <keyword type="member" name="GdkColor.red" link="gdk2-Colormaps-and-Colors.html#GdkColor.red"/>
-    <keyword type="member" name="GdkColor.green" link="gdk2-Colormaps-and-Colors.html#GdkColor.green"/>
-    <keyword type="member" name="GdkColor.blue" link="gdk2-Colormaps-and-Colors.html#GdkColor.blue"/>
-    <keyword type="member" name="GdkFont.type" link="gdk2-Fonts.html#GdkFont.type"/>
-    <keyword type="member" name="GdkFont.ascent" link="gdk2-Fonts.html#GdkFont.ascent"/>
-    <keyword type="member" name="GdkFont.descent" link="gdk2-Fonts.html#GdkFont.descent"/>
-    <keyword type="member" name="GdkGeometry.min-width" link="gdk2-Windows.html#GdkGeometry.min-width"/>
-    <keyword type="member" name="GdkGeometry.min-height" link="gdk2-Windows.html#GdkGeometry.min-height"/>
-    <keyword type="member" name="GdkGeometry.max-width" link="gdk2-Windows.html#GdkGeometry.max-width"/>
-    <keyword type="member" name="GdkGeometry.max-height" link="gdk2-Windows.html#GdkGeometry.max-height"/>
-    <keyword type="member" name="GdkGeometry.base-width" link="gdk2-Windows.html#GdkGeometry.base-width"/>
-    <keyword type="member" name="GdkGeometry.base-height" link="gdk2-Windows.html#GdkGeometry.base-height"/>
-    <keyword type="member" name="GdkGeometry.width-inc" link="gdk2-Windows.html#GdkGeometry.width-inc"/>
-    <keyword type="member" name="GdkGeometry.height-inc" link="gdk2-Windows.html#GdkGeometry.height-inc"/>
-    <keyword type="member" name="GdkGeometry.min-aspect" link="gdk2-Windows.html#GdkGeometry.min-aspect"/>
-    <keyword type="member" name="GdkGeometry.max-aspect" link="gdk2-Windows.html#GdkGeometry.max-aspect"/>
-    <keyword type="member" name="GdkGeometry.win-gravity" link="gdk2-Windows.html#GdkGeometry.win-gravity"/>
-    <keyword type="member" name="GdkWindowAttr.title" link="gdk2-Windows.html#GdkWindowAttr.title"/>
-    <keyword type="member" name="GdkWindowAttr.event-mask" link="gdk2-Windows.html#GdkWindowAttr.event-mask"/>
-    <keyword type="member" name="GdkWindowAttr.x" link="gdk2-Windows.html#GdkWindowAttr.x"/>
-    <keyword type="member" name="GdkWindowAttr.y" link="gdk2-Windows.html#GdkWindowAttr.y"/>
-    <keyword type="member" name="GdkWindowAttr.width" link="gdk2-Windows.html#GdkWindowAttr.width"/>
-    <keyword type="member" name="GdkWindowAttr.height" link="gdk2-Windows.html#GdkWindowAttr.height"/>
-    <keyword type="member" name="GdkWindowAttr.wclass" link="gdk2-Windows.html#GdkWindowAttr.wclass"/>
-    <keyword type="member" name="GdkWindowAttr.visual" link="gdk2-Windows.html#GdkWindowAttr.visual"/>
-    <keyword type="member" name="GdkWindowAttr.colormap" link="gdk2-Windows.html#GdkWindowAttr.colormap"/>
-    <keyword type="member" name="GdkWindowAttr.window-type" link="gdk2-Windows.html#GdkWindowAttr.window-type"/>
-    <keyword type="member" name="GdkWindowAttr.cursor" link="gdk2-Windows.html#GdkWindowAttr.cursor"/>
-    <keyword type="member" name="GdkWindowAttr.wmclass-name" link="gdk2-Windows.html#GdkWindowAttr.wmclass-name"/>
-    <keyword type="member" name="GdkWindowAttr.wmclass-class" link="gdk2-Windows.html#GdkWindowAttr.wmclass-class"/>
-    <keyword type="member" name="GdkWindowAttr.override-redirect" link="gdk2-Windows.html#GdkWindowAttr.override-redirect"/>
-    <keyword type="member" name="GdkWindowAttr.type-hint" link="gdk2-Windows.html#GdkWindowAttr.type-hint"/>
-    <keyword type="member" name="GdkPointerHooks.get-pointer" link="gdk2-Windows.html#GdkPointerHooks.get-pointer"/>
-    <keyword type="member" name="GdkPointerHooks.window-at-pointer" link="gdk2-Windows.html#GdkPointerHooks.window-at-pointer"/>
-    <keyword type="member" name="GdkEventAny.type" link="gdk2-Event-Structures.html#GdkEventAny.type"/>
-    <keyword type="member" name="GdkEventAny.window" link="gdk2-Event-Structures.html#GdkEventAny.window"/>
-    <keyword type="member" name="GdkEventAny.send-event" link="gdk2-Event-Structures.html#GdkEventAny.send-event"/>
-    <keyword type="member" name="GdkEventKey.type" link="gdk2-Event-Structures.html#GdkEventKey.type"/>
-    <keyword type="member" name="GdkEventKey.window" link="gdk2-Event-Structures.html#GdkEventKey.window"/>
-    <keyword type="member" name="GdkEventKey.send-event" link="gdk2-Event-Structures.html#GdkEventKey.send-event"/>
-    <keyword type="member" name="GdkEventKey.time" link="gdk2-Event-Structures.html#GdkEventKey.time"/>
-    <keyword type="member" name="GdkEventKey.state" link="gdk2-Event-Structures.html#GdkEventKey.state"/>
-    <keyword type="member" name="GdkEventKey.keyval" link="gdk2-Event-Structures.html#GdkEventKey.keyval"/>
-    <keyword type="member" name="GdkEventKey.length" link="gdk2-Event-Structures.html#GdkEventKey.length"/>
-    <keyword type="member" name="GdkEventKey.string" link="gdk2-Event-Structures.html#GdkEventKey.string"/>
-    <keyword type="member" name="GdkEventKey.hardware-keycode" link="gdk2-Event-Structures.html#GdkEventKey.hardware-keycode"/>
-    <keyword type="member" name="GdkEventKey.group" link="gdk2-Event-Structures.html#GdkEventKey.group"/>
-    <keyword type="member" name="GdkEventKey.is-modifier" link="gdk2-Event-Structures.html#GdkEventKey.is-modifier"/>
-    <keyword type="member" name="GdkEventButton.type" link="gdk2-Event-Structures.html#GdkEventButton.type"/>
-    <keyword type="member" name="GdkEventButton.window" link="gdk2-Event-Structures.html#GdkEventButton.window"/>
-    <keyword type="member" name="GdkEventButton.send-event" link="gdk2-Event-Structures.html#GdkEventButton.send-event"/>
-    <keyword type="member" name="GdkEventButton.time" link="gdk2-Event-Structures.html#GdkEventButton.time"/>
-    <keyword type="member" name="GdkEventButton.x" link="gdk2-Event-Structures.html#GdkEventButton.x"/>
-    <keyword type="member" name="GdkEventButton.y" link="gdk2-Event-Structures.html#GdkEventButton.y"/>
-    <keyword type="member" name="GdkEventButton.axes" link="gdk2-Event-Structures.html#GdkEventButton.axes"/>
-    <keyword type="member" name="GdkEventButton.state" link="gdk2-Event-Structures.html#GdkEventButton.state"/>
-    <keyword type="member" name="GdkEventButton.button" link="gdk2-Event-Structures.html#GdkEventButton.button"/>
-    <keyword type="member" name="GdkEventButton.device" link="gdk2-Event-Structures.html#GdkEventButton.device"/>
-    <keyword type="member" name="GdkEventButton.x-root" link="gdk2-Event-Structures.html#GdkEventButton.x-root"/>
-    <keyword type="member" name="GdkEventButton.y-root" link="gdk2-Event-Structures.html#GdkEventButton.y-root"/>
-    <keyword type="member" name="GdkEventScroll.type" link="gdk2-Event-Structures.html#GdkEventScroll.type"/>
-    <keyword type="member" name="GdkEventScroll.window" link="gdk2-Event-Structures.html#GdkEventScroll.window"/>
-    <keyword type="member" name="GdkEventScroll.send-event" link="gdk2-Event-Structures.html#GdkEventScroll.send-event"/>
-    <keyword type="member" name="GdkEventScroll.time" link="gdk2-Event-Structures.html#GdkEventScroll.time"/>
-    <keyword type="member" name="GdkEventScroll.x" link="gdk2-Event-Structures.html#GdkEventScroll.x"/>
-    <keyword type="member" name="GdkEventScroll.y" link="gdk2-Event-Structures.html#GdkEventScroll.y"/>
-    <keyword type="member" name="GdkEventScroll.state" link="gdk2-Event-Structures.html#GdkEventScroll.state"/>
-    <keyword type="member" name="GdkEventScroll.direction" link="gdk2-Event-Structures.html#GdkEventScroll.direction"/>
-    <keyword type="member" name="GdkEventScroll.device" link="gdk2-Event-Structures.html#GdkEventScroll.device"/>
-    <keyword type="member" name="GdkEventScroll.x-root" link="gdk2-Event-Structures.html#GdkEventScroll.x-root"/>
-    <keyword type="member" name="GdkEventScroll.y-root" link="gdk2-Event-Structures.html#GdkEventScroll.y-root"/>
-    <keyword type="member" name="GdkEventMotion.type" link="gdk2-Event-Structures.html#GdkEventMotion.type"/>
-    <keyword type="member" name="GdkEventMotion.window" link="gdk2-Event-Structures.html#GdkEventMotion.window"/>
-    <keyword type="member" name="GdkEventMotion.send-event" link="gdk2-Event-Structures.html#GdkEventMotion.send-event"/>
-    <keyword type="member" name="GdkEventMotion.time" link="gdk2-Event-Structures.html#GdkEventMotion.time"/>
-    <keyword type="member" name="GdkEventMotion.x" link="gdk2-Event-Structures.html#GdkEventMotion.x"/>
-    <keyword type="member" name="GdkEventMotion.y" link="gdk2-Event-Structures.html#GdkEventMotion.y"/>
-    <keyword type="member" name="GdkEventMotion.axes" link="gdk2-Event-Structures.html#GdkEventMotion.axes"/>
-    <keyword type="member" name="GdkEventMotion.state" link="gdk2-Event-Structures.html#GdkEventMotion.state"/>
-    <keyword type="member" name="GdkEventMotion.is-hint" link="gdk2-Event-Structures.html#GdkEventMotion.is-hint"/>
-    <keyword type="member" name="GdkEventMotion.device" link="gdk2-Event-Structures.html#GdkEventMotion.device"/>
-    <keyword type="member" name="GdkEventMotion.x-root" link="gdk2-Event-Structures.html#GdkEventMotion.x-root"/>
-    <keyword type="member" name="GdkEventMotion.y-root" link="gdk2-Event-Structures.html#GdkEventMotion.y-root"/>
-    <keyword type="member" name="GdkEventExpose.type" link="gdk2-Event-Structures.html#GdkEventExpose.type"/>
-    <keyword type="member" name="GdkEventExpose.window" link="gdk2-Event-Structures.html#GdkEventExpose.window"/>
-    <keyword type="member" name="GdkEventExpose.send-event" link="gdk2-Event-Structures.html#GdkEventExpose.send-event"/>
-    <keyword type="member" name="GdkEventExpose.area" link="gdk2-Event-Structures.html#GdkEventExpose.area"/>
-    <keyword type="member" name="GdkEventExpose.region" link="gdk2-Event-Structures.html#GdkEventExpose.region"/>
-    <keyword type="member" name="GdkEventExpose.count" link="gdk2-Event-Structures.html#GdkEventExpose.count"/>
-    <keyword type="member" name="GdkEventVisibility.type" link="gdk2-Event-Structures.html#GdkEventVisibility.type"/>
-    <keyword type="member" name="GdkEventVisibility.window" link="gdk2-Event-Structures.html#GdkEventVisibility.window"/>
-    <keyword type="member" name="GdkEventVisibility.send-event" link="gdk2-Event-Structures.html#GdkEventVisibility.send-event"/>
-    <keyword type="member" name="GdkEventVisibility.state" link="gdk2-Event-Structures.html#GdkEventVisibility.state"/>
-    <keyword type="member" name="GdkEventCrossing.type" link="gdk2-Event-Structures.html#GdkEventCrossing.type"/>
-    <keyword type="member" name="GdkEventCrossing.window" link="gdk2-Event-Structures.html#GdkEventCrossing.window"/>
-    <keyword type="member" name="GdkEventCrossing.send-event" link="gdk2-Event-Structures.html#GdkEventCrossing.send-event"/>
-    <keyword type="member" name="GdkEventCrossing.subwindow" link="gdk2-Event-Structures.html#GdkEventCrossing.subwindow"/>
-    <keyword type="member" name="GdkEventCrossing.time" link="gdk2-Event-Structures.html#GdkEventCrossing.time"/>
-    <keyword type="member" name="GdkEventCrossing.x" link="gdk2-Event-Structures.html#GdkEventCrossing.x"/>
-    <keyword type="member" name="GdkEventCrossing.y" link="gdk2-Event-Structures.html#GdkEventCrossing.y"/>
-    <keyword type="member" name="GdkEventCrossing.x-root" link="gdk2-Event-Structures.html#GdkEventCrossing.x-root"/>
-    <keyword type="member" name="GdkEventCrossing.y-root" link="gdk2-Event-Structures.html#GdkEventCrossing.y-root"/>
-    <keyword type="member" name="GdkEventCrossing.mode" link="gdk2-Event-Structures.html#GdkEventCrossing.mode"/>
-    <keyword type="member" name="GdkEventCrossing.detail" link="gdk2-Event-Structures.html#GdkEventCrossing.detail"/>
-    <keyword type="member" name="GdkEventCrossing.focus" link="gdk2-Event-Structures.html#GdkEventCrossing.focus"/>
-    <keyword type="member" name="GdkEventCrossing.state" link="gdk2-Event-Structures.html#GdkEventCrossing.state"/>
-    <keyword type="member" name="GdkEventFocus.type" link="gdk2-Event-Structures.html#GdkEventFocus.type"/>
-    <keyword type="member" name="GdkEventFocus.window" link="gdk2-Event-Structures.html#GdkEventFocus.window"/>
-    <keyword type="member" name="GdkEventFocus.send-event" link="gdk2-Event-Structures.html#GdkEventFocus.send-event"/>
-    <keyword type="member" name="GdkEventFocus.in" link="gdk2-Event-Structures.html#GdkEventFocus.in"/>
-    <keyword type="member" name="GdkEventConfigure.type" link="gdk2-Event-Structures.html#GdkEventConfigure.type"/>
-    <keyword type="member" name="GdkEventConfigure.window" link="gdk2-Event-Structures.html#GdkEventConfigure.window"/>
-    <keyword type="member" name="GdkEventConfigure.send-event" link="gdk2-Event-Structures.html#GdkEventConfigure.send-event"/>
-    <keyword type="member" name="GdkEventConfigure.x" link="gdk2-Event-Structures.html#GdkEventConfigure.x"/>
-    <keyword type="member" name="GdkEventConfigure.y" link="gdk2-Event-Structures.html#GdkEventConfigure.y"/>
-    <keyword type="member" name="GdkEventConfigure.width" link="gdk2-Event-Structures.html#GdkEventConfigure.width"/>
-    <keyword type="member" name="GdkEventConfigure.height" link="gdk2-Event-Structures.html#GdkEventConfigure.height"/>
-    <keyword type="member" name="GdkEventProperty.type" link="gdk2-Event-Structures.html#GdkEventProperty.type"/>
-    <keyword type="member" name="GdkEventProperty.window" link="gdk2-Event-Structures.html#GdkEventProperty.window"/>
-    <keyword type="member" name="GdkEventProperty.send-event" link="gdk2-Event-Structures.html#GdkEventProperty.send-event"/>
-    <keyword type="member" name="GdkEventProperty.atom" link="gdk2-Event-Structures.html#GdkEventProperty.atom"/>
-    <keyword type="member" name="GdkEventProperty.time" link="gdk2-Event-Structures.html#GdkEventProperty.time"/>
-    <keyword type="member" name="GdkEventProperty.state" link="gdk2-Event-Structures.html#GdkEventProperty.state"/>
-    <keyword type="member" name="GdkEventSelection.type" link="gdk2-Event-Structures.html#GdkEventSelection.type"/>
-    <keyword type="member" name="GdkEventSelection.window" link="gdk2-Event-Structures.html#GdkEventSelection.window"/>
-    <keyword type="member" name="GdkEventSelection.send-event" link="gdk2-Event-Structures.html#GdkEventSelection.send-event"/>
-    <keyword type="member" name="GdkEventSelection.selection" link="gdk2-Event-Structures.html#GdkEventSelection.selection"/>
-    <keyword type="member" name="GdkEventSelection.target" link="gdk2-Event-Structures.html#GdkEventSelection.target"/>
-    <keyword type="member" name="GdkEventSelection.property" link="gdk2-Event-Structures.html#GdkEventSelection.property"/>
-    <keyword type="member" name="GdkEventSelection.time" link="gdk2-Event-Structures.html#GdkEventSelection.time"/>
-    <keyword type="member" name="GdkEventSelection.requestor" link="gdk2-Event-Structures.html#GdkEventSelection.requestor"/>
-    <keyword type="member" name="GdkEventDND.type" link="gdk2-Event-Structures.html#GdkEventDND.type"/>
-    <keyword type="member" name="GdkEventDND.window" link="gdk2-Event-Structures.html#GdkEventDND.window"/>
-    <keyword type="member" name="GdkEventDND.send-event" link="gdk2-Event-Structures.html#GdkEventDND.send-event"/>
-    <keyword type="member" name="GdkEventDND.context" link="gdk2-Event-Structures.html#GdkEventDND.context"/>
-    <keyword type="member" name="GdkEventDND.time" link="gdk2-Event-Structures.html#GdkEventDND.time"/>
-    <keyword type="member" name="GdkEventDND.x-root" link="gdk2-Event-Structures.html#GdkEventDND.x-root"/>
-    <keyword type="member" name="GdkEventDND.y-root" link="gdk2-Event-Structures.html#GdkEventDND.y-root"/>
-    <keyword type="member" name="GdkEventProximity.type" link="gdk2-Event-Structures.html#GdkEventProximity.type"/>
-    <keyword type="member" name="GdkEventProximity.window" link="gdk2-Event-Structures.html#GdkEventProximity.window"/>
-    <keyword type="member" name="GdkEventProximity.send-event" link="gdk2-Event-Structures.html#GdkEventProximity.send-event"/>
-    <keyword type="member" name="GdkEventProximity.time" link="gdk2-Event-Structures.html#GdkEventProximity.time"/>
-    <keyword type="member" name="GdkEventProximity.device" link="gdk2-Event-Structures.html#GdkEventProximity.device"/>
-    <keyword type="member" name="GdkEventClient.type" link="gdk2-Event-Structures.html#GdkEventClient.type"/>
-    <keyword type="member" name="GdkEventClient.window" link="gdk2-Event-Structures.html#GdkEventClient.window"/>
-    <keyword type="member" name="GdkEventClient.send-event" link="gdk2-Event-Structures.html#GdkEventClient.send-event"/>
-    <keyword type="member" name="GdkEventClient.message-type" link="gdk2-Event-Structures.html#GdkEventClient.message-type"/>
-    <keyword type="member" name="GdkEventClient.data-format" link="gdk2-Event-Structures.html#GdkEventClient.data-format"/>
-    <keyword type="member" name="GdkEventNoExpose.type" link="gdk2-Event-Structures.html#GdkEventNoExpose.type"/>
-    <keyword type="member" name="GdkEventNoExpose.window" link="gdk2-Event-Structures.html#GdkEventNoExpose.window"/>
-    <keyword type="member" name="GdkEventNoExpose.send-event" link="gdk2-Event-Structures.html#GdkEventNoExpose.send-event"/>
-    <keyword type="member" name="GdkEventWindowState.type" link="gdk2-Event-Structures.html#GdkEventWindowState.type"/>
-    <keyword type="member" name="GdkEventWindowState.window" link="gdk2-Event-Structures.html#GdkEventWindowState.window"/>
-    <keyword type="member" name="GdkEventWindowState.send-event" link="gdk2-Event-Structures.html#GdkEventWindowState.send-event"/>
-    <keyword type="member" name="GdkEventWindowState.changed-mask" link="gdk2-Event-Structures.html#GdkEventWindowState.changed-mask"/>
-    <keyword type="member" name="GdkEventWindowState.new-window-state" link="gdk2-Event-Structures.html#GdkEventWindowState.new-window-state"/>
-    <keyword type="member" name="GdkEventSetting.type" link="gdk2-Event-Structures.html#GdkEventSetting.type"/>
-    <keyword type="member" name="GdkEventSetting.window" link="gdk2-Event-Structures.html#GdkEventSetting.window"/>
-    <keyword type="member" name="GdkEventSetting.send-event" link="gdk2-Event-Structures.html#GdkEventSetting.send-event"/>
-    <keyword type="member" name="GdkEventSetting.action" link="gdk2-Event-Structures.html#GdkEventSetting.action"/>
-    <keyword type="member" name="GdkEventSetting.name" link="gdk2-Event-Structures.html#GdkEventSetting.name"/>
-    <keyword type="member" name="GdkEventOwnerChange.type" link="gdk2-Event-Structures.html#GdkEventOwnerChange.type"/>
-    <keyword type="member" name="GdkEventOwnerChange.window" link="gdk2-Event-Structures.html#GdkEventOwnerChange.window"/>
-    <keyword type="member" name="GdkEventOwnerChange.send-event" link="gdk2-Event-Structures.html#GdkEventOwnerChange.send-event"/>
-    <keyword type="member" name="GdkEventOwnerChange.owner" link="gdk2-Event-Structures.html#GdkEventOwnerChange.owner"/>
-    <keyword type="member" name="GdkEventOwnerChange.reason" link="gdk2-Event-Structures.html#GdkEventOwnerChange.reason"/>
-    <keyword type="member" name="GdkEventOwnerChange.selection" link="gdk2-Event-Structures.html#GdkEventOwnerChange.selection"/>
-    <keyword type="member" name="GdkEventOwnerChange.time" link="gdk2-Event-Structures.html#GdkEventOwnerChange.time"/>
-    <keyword type="member" name="GdkEventOwnerChange.selection-time" link="gdk2-Event-Structures.html#GdkEventOwnerChange.selection-time"/>
-    <keyword type="member" name="GdkEventGrabBroken.type" link="gdk2-Event-Structures.html#GdkEventGrabBroken.type"/>
-    <keyword type="member" name="GdkEventGrabBroken.window" link="gdk2-Event-Structures.html#GdkEventGrabBroken.window"/>
-    <keyword type="member" name="GdkEventGrabBroken.send-event" link="gdk2-Event-Structures.html#GdkEventGrabBroken.send-event"/>
-    <keyword type="member" name="GdkEventGrabBroken.keyboard" link="gdk2-Event-Structures.html#GdkEventGrabBroken.keyboard"/>
-    <keyword type="member" name="GdkEventGrabBroken.implicit" link="gdk2-Event-Structures.html#GdkEventGrabBroken.implicit"/>
-    <keyword type="member" name="GdkEventGrabBroken.grab-window" link="gdk2-Event-Structures.html#GdkEventGrabBroken.grab-window"/>
-    <keyword type="member" name="GdkKeymapKey.keycode" link="gdk2-Keyboard-Handling.html#GdkKeymapKey.keycode"/>
-    <keyword type="member" name="GdkKeymapKey.group" link="gdk2-Keyboard-Handling.html#GdkKeymapKey.group"/>
-    <keyword type="member" name="GdkKeymapKey.level" link="gdk2-Keyboard-Handling.html#GdkKeymapKey.level"/>
-    <keyword type="member" name="GdkDeviceKey.keyval" link="gdk2-Input-Devices.html#GdkDeviceKey.keyval"/>
-    <keyword type="member" name="GdkDeviceKey.modifiers" link="gdk2-Input-Devices.html#GdkDeviceKey.modifiers"/>
-    <keyword type="member" name="GdkDeviceAxis.use" link="gdk2-Input-Devices.html#GdkDeviceAxis.use"/>
-    <keyword type="member" name="GdkDeviceAxis.min" link="gdk2-Input-Devices.html#GdkDeviceAxis.min"/>
-    <keyword type="member" name="GdkDeviceAxis.max" link="gdk2-Input-Devices.html#GdkDeviceAxis.max"/>
-    <keyword type="member" name="GdkTimeCoord.time" link="gdk2-Input-Devices.html#GdkTimeCoord.time"/>
-    <keyword type="member" name="GdkTimeCoord.axes" link="gdk2-Input-Devices.html#GdkTimeCoord.axes"/>
-    <keyword type="member" name="GdkPangoAttrEmbossed.attr" link="gdk2-Pango-Interaction.html#GdkPangoAttrEmbossed.attr"/>
-    <keyword type="member" name="GdkPangoAttrEmbossed.embossed" link="gdk2-Pango-Interaction.html#GdkPangoAttrEmbossed.embossed"/>
-    <keyword type="member" name="GdkPangoAttrEmbossColor.attr" link="gdk2-Pango-Interaction.html#GdkPangoAttrEmbossColor.attr"/>
-    <keyword type="member" name="GdkPangoAttrEmbossColor.color" link="gdk2-Pango-Interaction.html#GdkPangoAttrEmbossColor.color"/>
-    <keyword type="member" name="GdkPangoAttrStipple.attr" link="gdk2-Pango-Interaction.html#GdkPangoAttrStipple.attr"/>
-    <keyword type="member" name="GdkPangoAttrStipple.stipple" link="gdk2-Pango-Interaction.html#GdkPangoAttrStipple.stipple"/>
   </functions>
 </book>

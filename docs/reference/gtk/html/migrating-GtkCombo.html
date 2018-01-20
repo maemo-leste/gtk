@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Migrating from GtkCombo to GtkComboBoxEntry: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtk-migrating-GtkComboBox.html" title="Migrating from GtkOptionMenu and GtkCombo to GtkComboBox and GtkComboBoxEntry">
 <link rel="prev" href="gtk-migrating-GtkComboBox.html" title="Migrating from GtkOptionMenu and GtkCombo to GtkComboBox and GtkComboBoxEntry">
 <link rel="next" href="new-features-GtkComboBox.html" title="New features">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,15 +38,15 @@
 7
 8
 9</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">combo</span><span class="symbol">;</span>
-<span class="usertype">GList</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">items </span><span class="symbol">=</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">;</span>
+        <td class="listing_code"><pre class="programlisting">GtkWidget <span class="gtkdoc opt">*</span>combo<span class="gtkdoc opt">;</span>
+GList <span class="gtkdoc opt">*</span>items <span class="gtkdoc opt">=</span> NULL<span class="gtkdoc opt">;</span>
 
-<span class="normal">items </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-append">g_list_append</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">items</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"First Item"</span><span class="symbol">);</span>
-<span class="normal">items </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-append">g_list_append</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">items</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"Second Item"</span><span class="symbol">);</span>
-<span class="normal">items </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-append">g_list_append</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">items</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"Third Item"</span><span class="symbol">);</span>
+items <span class="gtkdoc opt">=</span> <span class="function"><a href="../glib/glib-Doubly-Linked-Lists.html#g-list-append">g_list_append</a></span> <span class="gtkdoc opt">(</span>items<span class="gtkdoc opt">,</span> <span class="string">&quot;First Item&quot;</span><span class="gtkdoc opt">);</span>
+items <span class="gtkdoc opt">=</span> <span class="function"><a href="../glib/glib-Doubly-Linked-Lists.html#g-list-append">g_list_append</a></span> <span class="gtkdoc opt">(</span>items<span class="gtkdoc opt">,</span> <span class="string">&quot;Second Item&quot;</span><span class="gtkdoc opt">);</span>
+items <span class="gtkdoc opt">=</span> <span class="function"><a href="../glib/glib-Doubly-Linked-Lists.html#g-list-append">g_list_append</a></span> <span class="gtkdoc opt">(</span>items<span class="gtkdoc opt">,</span> <span class="string">&quot;Third Item&quot;</span><span class="gtkdoc opt">);</span>
 
-<span class="normal">combo </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkCombo.html#gtk-combo-new">gtk_combo_new</a></span><span class="normal"> </span><span class="symbol">();</span>
-<span class="function"><a href="GtkCombo.html#gtk-combo-set-popdown-strings">gtk_combo_set_popdown_strings</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_COMBO</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">combo</span><span class="symbol">),</span><span class="normal"> items</span><span class="symbol">);</span></pre></td>
+combo <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkCombo.html#gtk-combo-new">gtk_combo_new</a></span> <span class="gtkdoc opt">();</span>
+<span class="function"><a href="GtkCombo.html#gtk-combo-set-popdown-strings">gtk_combo_set_popdown_strings</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_COMBO</span> <span class="gtkdoc opt">(</span>combo<span class="gtkdoc opt">),</span> items<span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -70,11 +70,11 @@
 3
 4
 5</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">combo_box </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="GtkComboBoxText.html#gtk-combo-box-text-new-with-entry">gtk_combo_box_text_new_with_entry</a></span><span class="normal"> </span><span class="symbol">();</span>
+        <td class="listing_code"><pre class="programlisting">combo_box <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkComboBoxText.html#gtk-combo-box-text-new-with-entry">gtk_combo_box_text_new_with_entry</a></span> <span class="gtkdoc opt">();</span>
 
-<span class="function"><a href="http://developer.gnome.org/gtk3/GtkComboBoxText.html#gtk-combo-box-text-append">gtk_combo_box_text_append</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_COMBO_BOX_TEXT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">combo_box</span><span class="symbol">),</span><span class="normal"> </span><span class="string">"First Item"</span><span class="symbol">);</span>
-<span class="function"><a href="http://developer.gnome.org/gtk3/GtkComboBoxText.html#gtk-combo-box-text-append">gtk_combo_box_text_append</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_COMBO_BOX_TEXT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">combo_box</span><span class="symbol">),</span><span class="normal"> </span><span class="string">"Second Item"</span><span class="symbol">);</span>
-<span class="function"><a href="http://developer.gnome.org/gtk3/GtkComboBoxText.html#gtk-combo-box-text-append">gtk_combo_box_text_append</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_COMBO_BOX_TEXT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">combo_box</span><span class="symbol">),</span><span class="normal"> </span><span class="string">"Third Item"</span><span class="symbol">);</span></pre></td>
+<span class="function"><a href="../gtk4/GtkComboBoxText.html#gtk-combo-box-text-append">gtk_combo_box_text_append</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_COMBO_BOX_TEXT</span> <span class="gtkdoc opt">(</span>combo_box<span class="gtkdoc opt">),</span> <span class="string">&quot;First Item&quot;</span><span class="gtkdoc opt">);</span>
+<span class="function"><a href="../gtk4/GtkComboBoxText.html#gtk-combo-box-text-append">gtk_combo_box_text_append</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_COMBO_BOX_TEXT</span> <span class="gtkdoc opt">(</span>combo_box<span class="gtkdoc opt">),</span> <span class="string">&quot;Second Item&quot;</span><span class="gtkdoc opt">);</span>
+<span class="function"><a href="../gtk4/GtkComboBoxText.html#gtk-combo-box-text-append">gtk_combo_box_text_append</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_COMBO_BOX_TEXT</span> <span class="gtkdoc opt">(</span>combo_box<span class="gtkdoc opt">),</span> <span class="string">&quot;Third Item&quot;</span><span class="gtkdoc opt">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -88,6 +88,6 @@
     </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

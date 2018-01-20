@@ -31,7 +31,6 @@
 #include "gtkclipboard.h"
 #include "gtkcomboboxtext.h"
 #include "gtkentry.h"
-#include "gtkexpander.h"
 #include "gtkfilechooserprivate.h"
 #include "gtkfilechooserdefault.h"
 #include "gtkfilechooserdialog.h"
@@ -4206,7 +4205,7 @@ file_list_query_tooltip_cb (GtkWidget  *widget,
   GtkTreePath *path;
   GtkTreeIter iter;
   GFile *file;
-  gchar *filename;
+  char *parse_name;
 
   if (impl->operation_mode == OPERATION_MODE_BROWSE)
     return FALSE;
@@ -4228,13 +4227,13 @@ file_list_query_tooltip_cb (GtkWidget  *widget,
       return FALSE;
     }
 
-  filename = g_file_get_path (file);
-  gtk_tooltip_set_text (tooltip, filename);
+  parse_name = g_file_get_parse_name (file);
+  gtk_tooltip_set_text (tooltip, parse_name);
   gtk_tree_view_set_tooltip_row (GTK_TREE_VIEW (impl->browse_files_tree_view),
                                  tooltip,
                                  path);
 
-  g_free (filename);
+  g_free (parse_name);
   g_object_unref (file);
   gtk_tree_path_free (path);
 
@@ -8558,14 +8557,15 @@ file_exists_get_info_cb (GCancellable *cancellable,
       g_assert_not_reached();
     }
 
-  if (needs_parent_check) {
-    /* check that everything up to the last path component exists (i.e. the parent) */
+  if (needs_parent_check)
+    {
+      /* check that everything up to the last path component exists (i.e. the parent) */
 
-    data->file_exists_and_is_not_folder = file_exists && !is_folder;
-    data_ownership_taken = TRUE;
+      data->file_exists_and_is_not_folder = file_exists && !is_folder;
+      data_ownership_taken = TRUE;
 
-    if (data->impl->should_respond_get_info_cancellable)
-      g_cancellable_cancel (data->impl->should_respond_get_info_cancellable);
+      if (data->impl->should_respond_get_info_cancellable)
+        g_cancellable_cancel (data->impl->should_respond_get_info_cancellable);
 
       data->impl->should_respond_get_info_cancellable =
 	_gtk_file_system_get_info (data->impl->file_system,

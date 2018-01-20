@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GtkHScrollbar: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="ScrollingWidgets.html" title="Scrolling">
 <link rel="prev" href="ScrollingWidgets.html" title="Scrolling">
 <link rel="next" href="GtkVScrollbar.html" title="GtkVScrollbar">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -29,7 +29,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkHScrollbar.top_of_page"></a>GtkHScrollbar</span></h2>
-<p>GtkHScrollbar — A horizontal scrollbar</p>
+<p>GtkHScrollbar</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -65,8 +65,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkHScrollbar.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkRange.html" title="GtkRange">GtkRange</a>
@@ -87,14 +87,6 @@ GtkHScrollbar implements
 </div>
 <div class="refsect1">
 <a name="GtkHScrollbar.description"></a><h2>Description</h2>
-<p>
-The <a class="link" href="GtkHScrollbar.html" title="GtkHScrollbar"><span class="type">GtkHScrollbar</span></a> widget is a widget arranged horizontally creating a
-scrollbar. See <a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="type">GtkScrollbar</span></a> for details on
-scrollbars. <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> pointers may be added to handle the
-adjustment of the scrollbar or it may be left <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> in which case one
-will be created for you. See <a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="type">GtkScrollbar</span></a> for a description of what the
-fields in an adjustment represent for a scrollbar.
-</p>
 </div>
 <div class="refsect1">
 <a name="GtkHScrollbar.functions_details"></a><h2>Functions</h2>
@@ -113,7 +105,7 @@ gtk_hscrollbar_new (<em class="parameter"><code><a class="link" href="GtkAdjustm
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>adjustment</p></td>
-<td class="parameter_description"><p> the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> to use, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to create a new adjustment. </p></td>
+<td class="parameter_description"><p>the <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> to use, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to create a new adjustment. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
@@ -129,20 +121,10 @@ gtk_hscrollbar_new (<em class="parameter"><code><a class="link" href="GtkAdjustm
 <div class="refsect2">
 <a name="GtkHScrollbar-struct"></a><h3>struct GtkHScrollbar</h3>
 <pre class="programlisting">struct GtkHScrollbar;</pre>
-<p>
-The <a class="link" href="GtkHScrollbar.html" title="GtkHScrollbar"><span class="type">GtkHScrollbar</span></a> struct contains private data and should be accessed
-using the functions below.
-</p>
 </div>
-</div>
-<div class="refsect1">
-<a name="GtkHScrollbar.see-also"></a><h2>See Also</h2>
-<p>
-<a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="type">GtkScrollbar</span></a>, <a class="link" href="GtkScrolledWindow.html" title="GtkScrolledWindow"><span class="type">GtkScrolledWindow</span></a>
-</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

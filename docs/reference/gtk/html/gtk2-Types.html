@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Types: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Signals.html" title="Signals">
 <link rel="next" href="gtk2-Testing.html" title="Testing">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -27,7 +27,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="gtk2-Types.top_of_page"></a>Types</span></h2>
-<p>Types — Handle run-time type creation</p>
+<p>Types</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <span class="c_punctuation">(</span><a class="link" href="gtk2-Types.html#GtkFunction" title="GtkFunction ()">*GtkFunction</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
@@ -317,7 +317,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Types.html#gtk-type-class" title="gtk_type_class ()">gtk_type_class</a> <span class="c_punctuation">()</span>
@@ -325,7 +325,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Types.html#gtk-type-new" title="gtk_type_new ()">gtk_type_new</a> <span class="c_punctuation">()</span>
@@ -470,10 +470,6 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Types.description"></a><h2>Description</h2>
-<p>
-The GTK+ type system is extensible.  Because of that, types have to be
-managed at runtime.
-</p>
 </div>
 <div class="refsect1">
 <a name="gtk2-Types.functions_details"></a><h2>Functions</h2>
@@ -481,84 +477,21 @@ managed at runtime.
 <a name="GTK-CLASS-NAME:CAPS"></a><h3>GTK_CLASS_NAME()</h3>
 <pre class="programlisting">#define GTK_CLASS_NAME(class)		(g_type_name (G_TYPE_FROM_CLASS (class)))
 </pre>
-<div class="warning">
-<p><code class="literal">GTK_CLASS_NAME</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#g-type-name"><code class="function">g_type_name()</code></a> and <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-FROM-CLASS:CAPS"><code class="function">G_TYPE_FROM_CLASS()</code></a> instead.</p>
-</div>
-<p>
-Returns the type name of <em class="parameter"><code>class</code></em>.
-</p>
-<div class="refsect3">
-<a name="GTK-CLASS-NAME.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>class</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkTypeClass" title="GtkTypeClass"><span class="type">GtkTypeClass</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
+<div class="warning"><p><code class="literal">GTK_CLASS_NAME</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-CLASS-TYPE:CAPS"></a><h3>GTK_CLASS_TYPE()</h3>
 <pre class="programlisting">#define GTK_CLASS_TYPE(class)		(G_TYPE_FROM_CLASS (class))
 </pre>
-<div class="warning">
-<p><code class="literal">GTK_CLASS_TYPE</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-FROM-CLASS:CAPS"><code class="function">G_TYPE_FROM_CLASS()</code></a> instead.</p>
-</div>
-<p>
-Returns the type of <em class="parameter"><code>class</code></em>.
-</p>
-<div class="refsect3">
-<a name="GTK-CLASS-TYPE.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>class</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkTypeClass" title="GtkTypeClass"><span class="type">GtkTypeClass</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
+<div class="warning"><p><code class="literal">GTK_CLASS_TYPE</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-TYPE-IS-OBJECT:CAPS"></a><h3>GTK_TYPE_IS_OBJECT()</h3>
 <pre class="programlisting">#define GTK_TYPE_IS_OBJECT(type) (g_type_is_a ((type), GTK_TYPE_OBJECT))
 </pre>
-<div class="warning">
-<p><code class="literal">GTK_TYPE_IS_OBJECT</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#G-TYPE-IS-OBJECT:CAPS"><code class="function">G_TYPE_IS_OBJECT()</code></a> instead.</p>
-</div>
-<p>
-Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>type</code></em> is a <code class="literal">GTK_TYPE_OBJECT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-TYPE-IS-OBJECT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
+<div class="warning"><p><code class="literal">GTK_TYPE_IS_OBJECT</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
@@ -566,9 +499,6 @@ Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.
 <pre class="programlisting">#define GTK_SIGNAL_FUNC(f)	    G_CALLBACK(f)
 </pre>
 <div class="warning"><p><code class="literal">GTK_SIGNAL_FUNC</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Just a macroized cast into a <a class="link" href="gtk2-Types.html#GtkSignalFunc" title="GtkSignalFunc ()"><span class="type">GtkSignalFunc</span></a>.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -576,111 +506,30 @@ Just a macroized cast into a <a class="link" href="gtk2-Types.html#GtkSignalFunc
 <pre class="programlisting"><span class="returnvalue">void</span>
 <span class="c_punctuation">(</span>*GtkSignalFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="warning"><p><code class="literal">GtkSignalFunc</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Defines a function pointer.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkFunction"></a><h3>GtkFunction ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-<span class="c_punctuation">(</span>*GtkFunction<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
-<div class="warning">
-<p><code class="literal">GtkFunction</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/glib/unstable/glib-The-Main-Event-Loop.html#GSourceFunc"><code class="function">GSourceFunc()</code></a> instead.</p>
-</div>
-<p>
-Defines a function pointer.
-</p>
-<div class="refsect3">
-<a name="GtkFunction.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="GtkFunction.returns"></a><h4>Returns</h4>
-<p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></p>
-</div>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*GtkFunction<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="warning"><p><code class="literal">GtkFunction</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkDestroyNotify"></a><h3>GtkDestroyNotify ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-<span class="c_punctuation">(</span>*GtkDestroyNotify<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<span class="c_punctuation">(</span>*GtkDestroyNotify<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
 <div class="warning"><p><code class="literal">GtkDestroyNotify</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Defines a function pointer.
-</p>
-<div class="refsect3">
-<a name="GtkDestroyNotify.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkCallbackMarshal"></a><h3>GtkCallbackMarshal ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 <span class="c_punctuation">(</span>*GtkCallbackMarshal<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a> *object</code></em>,
-                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
-                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_args</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_args</code></em>,
                        <em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> *args</code></em>);</pre>
-<div class="warning"><p><code class="literal">GtkCallbackMarshal</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p></div>
-<p>
-Defines a function pointer.
-</p>
-<div class="refsect3">
-<a name="GtkCallbackMarshal.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>object</p></td>
-<td class="parameter_description"><p><a class="link" href="GtkObject.html" title="GtkObject"><span class="type">GtkObject</span></a>*</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>n_args</p></td>
-<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>args</p></td>
-<td class="parameter_description"><p><a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>*</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
+<div class="warning"><p><code class="literal">GtkCallbackMarshal</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
@@ -688,24 +537,6 @@ Defines a function pointer.
 <pre class="programlisting">#define GTK_VALUE_CHAR(a) ((a).d.char_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_CHAR</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_CHAR</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-CHAR.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -713,24 +544,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_UCHAR(a) ((a).d.uchar_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_UCHAR</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_UCHAR</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-UCHAR.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -738,24 +551,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_BOOL(a) ((a).d.bool_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_BOOL</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_BOOL</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-BOOL.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -763,24 +558,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_INT(a) ((a).d.int_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_INT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_INT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-INT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -788,24 +565,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_UINT(a) ((a).d.uint_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_UINT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_UINT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-UINT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -813,24 +572,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_LONG(a) ((a).d.long_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_LONG</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_LONG</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-LONG.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -838,24 +579,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_ULONG(a) ((a).d.ulong_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_ULONG</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_ULONG</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-ULONG.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -863,24 +586,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_FLOAT(a) ((a).d.float_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_FLOAT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_FLOAT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-FLOAT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -888,24 +593,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_DOUBLE(a) ((a).d.double_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_DOUBLE</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_DOUBLE</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-DOUBLE.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -913,24 +600,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_STRING(a) ((a).d.string_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_STRING</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_STRING</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-STRING.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -938,24 +607,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_ENUM(a) ((a).d.int_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_ENUM</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_ENUM</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-ENUM.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -963,24 +614,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_FLAGS(a) ((a).d.uint_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_FLAGS</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_FLAGS</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-FLAGS.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -988,24 +621,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_BOXED(a) ((a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_BOXED</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_BOXED</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-BOXED.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1013,24 +628,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_POINTER(a) ((a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_POINTER</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_POINTER</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-POINTER.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1038,24 +635,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_OBJECT(a) ((a).d.object_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_OBJECT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_OBJECT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-OBJECT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1063,24 +642,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_VALUE_SIGNAL(a) ((a).d.signal_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_VALUE_SIGNAL</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> whose <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is <code class="literal">GTK_TYPE_SIGNAL</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-VALUE-SIGNAL.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1088,24 +649,6 @@ Gets the value of a <a class="link" href="gtk2-Types.html#GtkArg" title="struct 
 <pre class="programlisting">#define GTK_RETLOC_CHAR(a) ((gchar*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_CHAR</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_CHAR</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-CHAR.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1113,24 +656,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_UCHAR(a) ((guchar*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_UCHAR</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_UCHAR</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-UCHAR.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1138,24 +663,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_BOOL(a) ((gboolean*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_BOOL</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_BOOL</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-BOOL.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1163,24 +670,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_INT(a) ((gint*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_INT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_INT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-INT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1188,24 +677,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_UINT(a) ((guint*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_UINT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_UINT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-UINT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1213,24 +684,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_LONG(a) ((glong*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_LONG</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_LONG</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-LONG.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1238,24 +691,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_ULONG(a) ((gulong*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_ULONG</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_ULONG</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-ULONG.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1263,24 +698,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_FLOAT(a) ((gfloat*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_FLOAT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_FLOAT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-FLOAT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1288,24 +705,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_DOUBLE(a) ((gdouble*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_DOUBLE</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_DOUBLE</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-DOUBLE.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1313,24 +712,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_STRING(a) ((gchar**) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_STRING</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_STRING</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-STRING.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1338,24 +719,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_ENUM(a) ((gint*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_ENUM</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_ENUM</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-ENUM.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1363,24 +726,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_FLAGS(a) ((guint*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_FLAGS</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_FLAGS</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-FLAGS.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1388,24 +733,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_BOXED(a) ((gpointer*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_BOXED</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_BOXED</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-BOXED.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1413,24 +740,6 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_POINTER(a) ((gpointer*) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_POINTER</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_POINTER</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-POINTER.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1438,49 +747,13 @@ If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span
 <pre class="programlisting">#define GTK_RETLOC_OBJECT(a) ((GtkObject**) (a).d.pointer_data)
 </pre>
 <div class="warning"><p><code class="literal">GTK_RETLOC_OBJECT</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If the <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a> contains a pointer to the value, this macro will be a pointer to a <code class="literal">GTK_TYPE_OBJECT</code>.
-</p>
-<div class="refsect3">
-<a name="GTK-RETLOC-OBJECT.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkArg" title="struct GtkArg"><span class="type">GtkArg</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-type-init"></a><h3>gtk_type_init ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-gtk_type_init (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GTypeDebugFlags"><span class="type">GTypeDebugFlags</span></a> debug_flags</code></em>);</pre>
+gtk_type_init (<em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GTypeDebugFlags"><span class="type">GTypeDebugFlags</span></a> debug_flags</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_type_init</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Initializes the data structures associated with GTK+ types.
-</p>
-<div class="refsect3">
-<a name="gtk-type-init.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>debug_flags</p></td>
-<td class="parameter_description"><p>debug flags</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1489,36 +762,6 @@ Initializes the data structures associated with GTK+ types.
 gtk_type_unique (<em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> parent_type</code></em>,
                  <em class="parameter"><code>const <a class="link" href="gtk2-Types.html#GtkTypeInfo" title="struct GtkTypeInfo"><span class="type">GtkTypeInfo</span></a> *gtkinfo</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_type_unique</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Creates a new, unique type.
-</p>
-<div class="refsect3">
-<a name="gtk-type-unique.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>parent_type</p></td>
-<td class="parameter_description"><p>if zero, a fundamental type is created</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>gtkinfo</p></td>
-<td class="parameter_description"><p>must not be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, and <em class="parameter"><code>type_info-&gt;type_name</code></em>
-must also not be <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-unique.returns"></a><h4>Returns</h4>
-<p>the new <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a></p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1526,28 +769,6 @@ must also not be <a href="https://developer.gnome.org/glib/unstable/glib-Standar
 <pre class="programlisting">#define gtk_type_name(type)		 g_type_name (type)
 </pre>
 <div class="warning"><p><code class="literal">gtk_type_name</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Returns a pointer to the name of a type, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it has none.
-</p>
-<div class="refsect3">
-<a name="gtk-type-name.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-name.returns"></a><h4>Returns</h4>
-<p>a pointer to the name of a type, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it has none.</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1555,28 +776,6 @@ Returns a pointer to the name of a type, or <a href="https://developer.gnome.org
 <pre class="programlisting">#define gtk_type_from_name(name)	 g_type_from_name (name)
 </pre>
 <div class="warning"><p><code class="literal">gtk_type_from_name</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the internal representation of a type, given its name.
-</p>
-<div class="refsect3">
-<a name="gtk-type-from-name.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>name</p></td>
-<td class="parameter_description"><p>the name of a GTK+ type</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-from-name.returns"></a><h4>Returns</h4>
-<p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1584,49 +783,21 @@ Gets the internal representation of a type, given its name.
 <pre class="programlisting">#define gtk_type_parent(type)		 g_type_parent (type)
 </pre>
 <div class="warning"><p><code class="literal">gtk_type_parent</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Returns the parent type of a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.
-</p>
-<div class="refsect3">
-<a name="gtk-type-parent.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-parent.returns"></a><h4>Returns</h4>
-<p>the <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> of the parent.</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-type-class"></a><h3>gtk_type_class ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 gtk_type_class (<em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> type</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_type_class</code> has been deprecated since version 2.14 and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#g-type-class-peek"><code class="function">g_type_class_peek()</code></a> or <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#g-type-class-ref"><code class="function">g_type_class_ref()</code></a> instead.</p>
+<p>Use <a href="../gobject/gobject-Type-Information.html#g-type-class-peek"><code class="function">g_type_class_peek()</code></a> or <a href="../gobject/gobject-Type-Information.html#g-type-class-ref"><code class="function">g_type_class_ref()</code></a> instead.</p>
 </div>
 <p>Returns a pointer pointing to the class of <em class="parameter"><code>type</code></em>
- or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there
+ or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there
 was any trouble identifying <em class="parameter"><code>type</code></em>
 .  Initializes the class if
 necessary.</p>
-<p>
-Returns a pointer pointing to the class of <em class="parameter"><code>type</code></em>
- or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there was
-any trouble identifying <em class="parameter"><code>type</code></em>
-.  Initializes the class if necessary.
-</p>
 <div class="refsect3">
 <a name="gtk-type-class.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1650,34 +821,9 @@ any trouble identifying <em class="parameter"><code>type</code></em>
 <hr>
 <div class="refsect2">
 <a name="gtk-type-new"></a><h3>gtk_type_new ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
 gtk_type_new (<em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> type</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_type_new</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Creates a new object of a given type, and return a pointer to it.
-Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you give it an invalid type.  It allocates the object
-out of the type's memory chunk if there is a memory chunk.  The object
-has all the proper initializers called.
-</p>
-<div class="refsect3">
-<a name="gtk-type-new.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-new.returns"></a><h4>Returns</h4>
-<p>pointer to a <a class="link" href="gtk2-Types.html#GtkTypeObject" title="GtkTypeObject"><span class="type">GtkTypeObject</span></a>.</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1685,38 +831,6 @@ has all the proper initializers called.
 <pre class="programlisting">#define gtk_type_is_a(type, is_a_type)	 g_type_is_a ((type), (is_a_type))
 </pre>
 <div class="warning"><p><code class="literal">gtk_type_is_a</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Looks in the type hierarchy to see if <em class="parameter"><code>type</code></em> has <em class="parameter"><code>is_a_type</code></em> among its
-ancestors.  Do so with a simple lookup, not a loop.
-</p>
-<div class="refsect3">
-<a name="gtk-type-is-a.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>is_a_type</p></td>
-<td class="parameter_description"><p>another <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-is-a.returns"></a><h4>Returns</h4>
-<p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>type</code></em>
-is a <em class="parameter"><code>is_a_type</code></em>
-.</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1724,28 +838,6 @@ is a <em class="parameter"><code>is_a_type</code></em>
 <pre class="programlisting"><a class="link" href="gtk2-Types.html#GtkEnumValue" title="GtkEnumValue"><span class="returnvalue">GtkEnumValue</span></a> *
 gtk_type_enum_get_values (<em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> enum_type</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_type_enum_get_values</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If <em class="parameter"><code>enum_type</code></em> has values, then return a pointer to all of them.
-</p>
-<div class="refsect3">
-<a name="gtk-type-enum-get-values.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>enum_type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-enum-get-values.returns"></a><h4>Returns</h4>
-<p><a class="link" href="gtk2-Types.html#GtkEnumValue" title="GtkEnumValue"><span class="type">GtkEnumValue</span></a>*</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1753,102 +845,22 @@ If <em class="parameter"><code>enum_type</code></em> has values, then return a p
 <pre class="programlisting"><a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="returnvalue">GtkFlagValue</span></a> *
 gtk_type_flags_get_values (<em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> flags_type</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_type_flags_get_values</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-If <em class="parameter"><code>flags_type</code></em> has values, then return a pointer to all of them.
-</p>
-<div class="refsect3">
-<a name="gtk-type-flags-get-values.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>flags_type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-flags-get-values.returns"></a><h4>Returns</h4>
-<p><a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="type">GtkFlagValue</span></a>*</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-type-enum-find-value"></a><h3>gtk_type_enum_find_value ()</h3>
 <pre class="programlisting"><a class="link" href="gtk2-Types.html#GtkEnumValue" title="GtkEnumValue"><span class="returnvalue">GtkEnumValue</span></a> *
 gtk_type_enum_find_value (<em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> enum_type</code></em>,
-                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value_name</code></em>);</pre>
+                          <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value_name</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_type_enum_find_value</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Returns a pointer to one of <em class="parameter"><code>enum_type</code></em>'s <a href="gtk2-Types.html#GtkEnumValue"><span class="type">GtkEnumValues</span></a>'s whose name (or nickname) matches <em class="parameter"><code>value_name</code></em>.
-</p>
-<div class="refsect3">
-<a name="gtk-type-enum-find-value.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>enum_type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>value_name</p></td>
-<td class="parameter_description"><p>the name to look for.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-enum-find-value.returns"></a><h4>Returns</h4>
-<p><a class="link" href="gtk2-Types.html#GtkEnumValue" title="GtkEnumValue"><span class="type">GtkEnumValue</span></a>*</p>
-</div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-type-flags-find-value"></a><h3>gtk_type_flags_find_value ()</h3>
 <pre class="programlisting"><a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="returnvalue">GtkFlagValue</span></a> *
 gtk_type_flags_find_value (<em class="parameter"><code><a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> flags_type</code></em>,
-                           <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value_name</code></em>);</pre>
+                           <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value_name</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_type_flags_find_value</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Returns a pointer to one of <em class="parameter"><code>flag_type</code></em>'s <a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="type">GtkFlagValue</span></a>'s whose name (or nickname) matches <em class="parameter"><code>value_name</code></em>.
-</p>
-<div class="refsect3">
-<a name="gtk-type-flags-find-value.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>flags_type</p></td>
-<td class="parameter_description"><p>a <a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>value_name</p></td>
-<td class="parameter_description"><p>the name to look for.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-type-flags-find-value.returns"></a><h4>Returns</h4>
-<p><a class="link" href="gtk2-Types.html#GtkFlagValue" title="GtkFlagValue"><span class="type">GtkFlagValue</span></a>*</p>
-</div>
 </div>
 </div>
 <div class="refsect1">
@@ -1858,11 +870,6 @@ Returns a pointer to one of <em class="parameter"><code>flag_type</code></em>'s 
 <pre class="programlisting">typedef GType                   GtkType;
 </pre>
 <div class="warning"><p><code class="literal">GtkType</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-<a class="link" href="gtk2-Types.html#GtkType" title="GtkType"><span class="type">GtkType</span></a> is unique integer identifying the type.  The guts of the
-information about the type is held in a private struct named
-<span class="type">GtkTypeNode</span>.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1870,50 +877,27 @@ information about the type is held in a private struct named
 <pre class="programlisting">typedef GType GtkFundamentalType;
 </pre>
 <div class="warning"><p><code class="literal">GtkFundamentalType</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-<a class="link" href="gtk2-Types.html#GtkFundamentalType" title="GtkFundamentalType"><span class="type">GtkFundamentalType</span></a> is an enumerated type which lists all the possible
-fundamental types (e.g. <span class="type">char</span>, <span class="type">uchar</span>, <span class="type">int</span>,
-<span class="type">long</span>, <span class="type">float</span>, etc).
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-TYPE-FUNDAMENTAL-LAST:CAPS"></a><h3>GTK_TYPE_FUNDAMENTAL_LAST</h3>
 <pre class="programlisting">#define GTK_TYPE_FUNDAMENTAL_LAST        (G_TYPE_LAST_RESERVED_FUNDAMENTAL - 1)
 </pre>
-<div class="warning">
-<p><code class="literal">GTK_TYPE_FUNDAMENTAL_LAST</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <span class="type">G_TYPE_LAST_RESERVED_FUNDAMENTAL</span> - 1 instead.</p>
-</div>
-<p>
-The highest-numbered structured or flat enumerated type value.
-</p>
+<div class="warning"><p><code class="literal">GTK_TYPE_FUNDAMENTAL_LAST</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-TYPE-FUNDAMENTAL-MAX:CAPS"></a><h3>GTK_TYPE_FUNDAMENTAL_MAX</h3>
 <pre class="programlisting">#define GTK_TYPE_FUNDAMENTAL_MAX         (G_TYPE_FUNDAMENTAL_MAX)
 </pre>
-<div class="warning">
-<p><code class="literal">GTK_TYPE_FUNDAMENTAL_MAX</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#G-TYPE-FUNDAMENTAL-MAX:CAPS"><span class="type">G_TYPE_FUNDAMENTAL_MAX</span></a> instead.</p>
-</div>
-<p>
-The maximum fundamental enumerated type value.
-</p>
+<div class="warning"><p><code class="literal">GTK_TYPE_FUNDAMENTAL_MAX</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-STRUCT-OFFSET:CAPS"></a><h3>GTK_STRUCT_OFFSET</h3>
 <pre class="programlisting">#define GTK_STRUCT_OFFSET G_STRUCT_OFFSET
 </pre>
-<div class="warning">
-<p><code class="literal">GTK_STRUCT_OFFSET</code> is deprecated and should not be used in newly-written code.</p>
-<p>Use <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#G-STRUCT-OFFSET:CAPS"><code class="function">G_STRUCT_OFFSET()</code></a> instead.</p>
-</div>
-<p>
-Use in place of <code class="function"><code class="function">offsetof()</code></code>, which is used if it exists.
-</p>
+<div class="warning"><p><code class="literal">GTK_STRUCT_OFFSET</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
 <div class="refsect2">
@@ -1921,11 +905,6 @@ Use in place of <code class="function"><code class="function">offsetof()</code><
 <pre class="programlisting">#define GTK_CHECK_CAST		G_TYPE_CHECK_INSTANCE_CAST
 </pre>
 <div class="warning"><p><code class="literal">GTK_CHECK_CAST</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Casts the object in <em class="parameter"><code>tobj</code></em> into <em class="parameter"><code>cast</code></em>.  If <code class="literal">G_DISABLE_CAST_CHECKS</code> is
-defined, just cast it.  Otherwise, check to see if we can cast <em class="parameter"><code>tobj</code></em>
-into a <em class="parameter"><code>cast</code></em>.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1933,11 +912,6 @@ into a <em class="parameter"><code>cast</code></em>.
 <pre class="programlisting">#define GTK_CHECK_CLASS_CAST G_TYPE_CHECK_CLASS_CAST
 </pre>
 <div class="warning"><p><code class="literal">GTK_CHECK_CLASS_CAST</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Casts the object in <em class="parameter"><code>tobj</code></em> into <em class="parameter"><code>cast</code></em>.  If <code class="literal">G_DISABLE_CAST_CHECKS</code> is
-defined, just cast it.  Otherwise, check to see if we can cast <em class="parameter"><code>tobj</code></em>
-into a <em class="parameter"><code>cast</code></em>.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1945,9 +919,6 @@ into a <em class="parameter"><code>cast</code></em>.
 <pre class="programlisting">#define GTK_CHECK_TYPE		G_TYPE_CHECK_INSTANCE_TYPE
 </pre>
 <div class="warning"><p><code class="literal">GTK_CHECK_TYPE</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Determines whether <em class="parameter"><code>type_object</code></em> is a type of <em class="parameter"><code>otype</code></em>.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1955,9 +926,6 @@ Determines whether <em class="parameter"><code>type_object</code></em> is a type
 <pre class="programlisting">#define GTK_CHECK_CLASS_TYPE G_TYPE_CHECK_CLASS_TYPE
 </pre>
 <div class="warning"><p><code class="literal">GTK_CHECK_CLASS_TYPE</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Determines whether <em class="parameter"><code>type_class</code></em> is a type of <em class="parameter"><code>otype</code></em>.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1965,9 +933,6 @@ Determines whether <em class="parameter"><code>type_class</code></em> is a type 
 <pre class="programlisting">#define GTK_CHECK_GET_CLASS G_TYPE_INSTANCE_GET_CLASS
 </pre>
 <div class="warning"><p><code class="literal">GTK_CHECK_GET_CLASS</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Gets the class of <em class="parameter"><code>tobj</code></em>.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1975,9 +940,6 @@ Gets the class of <em class="parameter"><code>tobj</code></em>.
 <pre class="programlisting">#define GTK_FUNDAMENTAL_TYPE G_TYPE_FUNDAMENTAL
 </pre>
 <div class="warning"><p><code class="literal">GTK_FUNDAMENTAL_TYPE</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Converts a GTK+ type into a fundamental type.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1985,9 +947,6 @@ Converts a GTK+ type into a fundamental type.
 <pre class="programlisting">typedef GBaseInitFunc           GtkClassInitFunc;
 </pre>
 <div class="warning"><p><code class="literal">GtkClassInitFunc</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Defines a function pointer.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1995,9 +954,6 @@ Defines a function pointer.
 <pre class="programlisting">typedef GInstanceInitFunc       GtkObjectInitFunc;
 </pre>
 <div class="warning"><p><code class="literal">GtkObjectInitFunc</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Defines a function pointer.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2005,9 +961,6 @@ Defines a function pointer.
 <pre class="programlisting">typedef GSignalCMarshaller      GtkSignalMarshaller;
 </pre>
 <div class="warning"><p><code class="literal">GtkSignalMarshaller</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Defines a function pointer.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2015,12 +968,6 @@ Defines a function pointer.
 <pre class="programlisting">typedef GTypeInstance           GtkTypeObject;
 </pre>
 <div class="warning"><p><code class="literal">GtkTypeObject</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-A <a class="link" href="gtk2-Types.html#GtkTypeObject" title="GtkTypeObject"><span class="type">GtkTypeObject</span></a> defines the minimum structure requirements
-for type instances. Type instances returned from <a class="link" href="gtk2-Types.html#gtk-type-new" title="gtk_type_new ()"><code class="function">gtk_type_new()</code></a>
-and initialized through a <a class="link" href="gtk2-Types.html#GtkObjectInitFunc" title="GtkObjectInitFunc"><span class="type">GtkObjectInitFunc</span></a> need to directly inherit
-from this structure or at least copy its fields one by one.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2059,9 +1006,6 @@ from this structure or at least copy its fields one by one.
 };
 </pre>
 <div class="warning"><p><code class="literal">GtkArg</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-This is a structure that we use to pass in typed values (and names).
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2078,14 +1022,6 @@ This is a structure that we use to pass in typed values (and names).
 };
 </pre>
 <div class="warning"><p><code class="literal">GtkTypeInfo</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-Holds information about the type.  <a class="link" href="gtk2-Types.html#gtk-type-name" title="gtk_type_name()"><code class="function">gtk_type_name()</code></a> returns the name.
-<em class="parameter"><code>object_size</code></em> is somehow set to the number of bytes that an instance of
-the object will occupy.  <em class="parameter"><code>class_init_func</code></em> holds the type's
-initialization function.  <em class="parameter"><code>object_init_func</code></em> holds the initialization
-function for an instance of the object.  <em class="parameter"><code>reserved_1</code></em> is used for
-<a class="link" href="gtk2-Types.html#GtkEnumValue" title="GtkEnumValue"><span class="type">GtkEnumValue</span></a> to hold the enumerated values.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2093,9 +1029,6 @@ function for an instance of the object.  <em class="parameter"><code>reserved_1<
 <pre class="programlisting">typedef GTypeClass              GtkTypeClass;
 </pre>
 <div class="warning"><p><code class="literal">GtkTypeClass</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-The base structure for a GTK+ type. Every type inherits this as a base structure.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2103,10 +1036,6 @@ The base structure for a GTK+ type. Every type inherits this as a base structure
 <pre class="programlisting">typedef GEnumValue  GtkEnumValue;
 </pre>
 <div class="warning"><p><code class="literal">GtkEnumValue</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-A structure which contains a single enum value, and its name, and its
-nickname.
-</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2114,12 +1043,10 @@ nickname.
 <pre class="programlisting">typedef GFlagsValue GtkFlagValue;
 </pre>
 <div class="warning"><p><code class="literal">GtkFlagValue</code> is deprecated and should not be used in newly-written code.</p></div>
-<p>
-</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>

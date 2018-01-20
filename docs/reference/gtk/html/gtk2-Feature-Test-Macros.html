@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Version Information: GTK+ 2 Reference Manual</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<title>Feature Test Macros: GTK+ 2 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Selections.html" title="Selections">
 <link rel="next" href="gtk2-Signals.html" title="Signals">
-<meta name="generator" content="GTK-Doc V1.25.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -26,8 +26,8 @@
 <a name="gtk2-Feature-Test-Macros"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
-<h2><span class="refentrytitle"><a name="gtk2-Feature-Test-Macros.top_of_page"></a>Version Information</span></h2>
-<p>Version Information — Variables and functions to check the GTK+ version</p>
+<h2><span class="refentrytitle"><a name="gtk2-Feature-Test-Macros.top_of_page"></a>Feature Test Macros</span></h2>
+<p>Feature Test Macros</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -40,7 +40,7 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="gtk2-Feature-Test-Macros.html#gtk-check-version" title="gtk_check_version ()">gtk_check_version</a> <span class="c_punctuation">()</span>
@@ -113,20 +113,15 @@
 </div>
 <div class="refsect1">
 <a name="gtk2-Feature-Test-Macros.description"></a><h2>Description</h2>
-<p>
-GTK+ provides version information, primarily useful in configure checks
-for builds that have a configure script. Applications will not
-typically use the features described here.
-</p>
 </div>
 <div class="refsect1">
 <a name="gtk2-Feature-Test-Macros.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="gtk-check-version"></a><h3>gtk_check_version ()</h3>
-<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-gtk_check_version (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> required_major</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> required_minor</code></em>,
-                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> required_micro</code></em>);</pre>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gtk_check_version (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> required_major</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> required_minor</code></em>,
+                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> required_micro</code></em>);</pre>
 <p>Checks that the GTK+ library in use is compatible with the
 given version. Generally you would pass in the constants
 <a class="link" href="gtk2-Feature-Test-Macros.html#GTK-MAJOR-VERSION:CAPS" title="GTK_MAJOR_VERSION"><span class="type">GTK_MAJOR_VERSION</span></a>, <a class="link" href="gtk2-Feature-Test-Macros.html#GTK-MINOR-VERSION:CAPS" title="GTK_MINOR_VERSION"><span class="type">GTK_MINOR_VERSION</span></a>, <a class="link" href="gtk2-Feature-Test-Macros.html#GTK-MICRO-VERSION:CAPS" title="GTK_MICRO_VERSION"><span class="type">GTK_MICRO_VERSION</span></a>
@@ -180,7 +175,7 @@ into an application using a newer version of GTK+.</p>
 </div>
 <div class="refsect3">
 <a name="gtk-check-version.returns"></a><h4>Returns</h4>
-<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the GTK+ library is compatible with the
+<p> <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the GTK+ library is compatible with the
 given version, or a string describing the version mismatch.
 The returned string is owned by GTK+ and should not be modified
 or freed.</p>
@@ -190,37 +185,6 @@ or freed.</p>
 <div class="refsect2">
 <a name="GTK-CHECK-VERSION:CAPS"></a><h3>GTK_CHECK_VERSION()</h3>
 <pre class="programlisting">#define             GTK_CHECK_VERSION(major,minor,micro)</pre>
-<p>
-Returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the version of the GTK+ header files is the same
-as or newer than the passed-in version.
-</p>
-<div class="refsect3">
-<a name="GTK-CHECK-VERSION.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>major</p></td>
-<td class="parameter_description"><p>major version (e.g. 1 for version 1.2.5)</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>minor</p></td>
-<td class="parameter_description"><p>minor version (e.g. 2 for version 1.2.5)</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>micro</p></td>
-<td class="parameter_description"><p>micro version (e.g. 5 for version 1.2.5)</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
 </div>
 </div>
 <div class="refsect1">
@@ -229,128 +193,64 @@ as or newer than the passed-in version.
 <a name="gtk-major-version"></a><h3>gtk_major_version</h3>
 <pre class="programlisting">extern const guint gtk_major_version;
 </pre>
-<p>
-The major version number of the GTK+ library.  (e.g. in GTK+ version
-1.2.5 this is 1.)
-</p>
-<p>
-This variable is in the library, so represents the
-GTK+ library you have linked against. Contrast with the
-<a class="link" href="gtk2-Feature-Test-Macros.html#GTK-MAJOR-VERSION:CAPS" title="GTK_MAJOR_VERSION"><span class="type">GTK_MAJOR_VERSION</span></a> macro, which represents the major version of the
-GTK+ headers you have included.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-minor-version"></a><h3>gtk_minor_version</h3>
 <pre class="programlisting">extern const guint gtk_minor_version;
 </pre>
-<p>
-The minor version number of the GTK+ library.
-(e.g. in GTK+ version 1.2.5 this is 2.)
-</p>
-<p>
-This variable is in the library, so represents the
-GTK+ library you have linked against. Contrast with the
-<a class="link" href="gtk2-Feature-Test-Macros.html#GTK-MINOR-VERSION:CAPS" title="GTK_MINOR_VERSION"><span class="type">GTK_MINOR_VERSION</span></a> macro, which represents the minor version of the
-GTK+ headers you have included.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-micro-version"></a><h3>gtk_micro_version</h3>
 <pre class="programlisting">extern const guint gtk_micro_version;
 </pre>
-<p>
-The micro version number of the GTK+ library.
-(e.g. in GTK+ version 1.2.5 this is 5.)
-</p>
-<p>
-This variable is in the library, so represents the GTK+ library you
-have linked against. Contrast with the <a class="link" href="gtk2-Feature-Test-Macros.html#GTK-MICRO-VERSION:CAPS" title="GTK_MICRO_VERSION"><span class="type">GTK_MICRO_VERSION</span></a> macro, which
-represents the micro version of the GTK+ headers you have included.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-binary-age"></a><h3>gtk_binary_age</h3>
 <pre class="programlisting">extern const guint gtk_binary_age;
 </pre>
-<p>
-This is the binary age passed to <span class="application">libtool</span>. If
-<span class="application">libtool</span> means nothing to you, don't worry
-about it. ;-)
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-interface-age"></a><h3>gtk_interface_age</h3>
 <pre class="programlisting">extern const guint gtk_interface_age;
 </pre>
-<p>
-This is the interface age passed to <span class="application">libtool</span>. If
-<span class="application">libtool</span> means nothing to you, don't worry
-about it. ;-)
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-MAJOR-VERSION:CAPS"></a><h3>GTK_MAJOR_VERSION</h3>
 <pre class="programlisting">#define GTK_MAJOR_VERSION				(2)
 </pre>
-<p>
-Like <a class="link" href="gtk2-Feature-Test-Macros.html#gtk-major-version" title="gtk_major_version"><span class="type">gtk_major_version</span></a>, but from the headers used at
-application compile time, rather than from the library linked against
-at application run time.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-MINOR-VERSION:CAPS"></a><h3>GTK_MINOR_VERSION</h3>
 <pre class="programlisting">#define GTK_MINOR_VERSION				(24)
 </pre>
-<p>
-Like <a class="link" href="gtk2-Feature-Test-Macros.html#gtk-minor-version" title="gtk_minor_version"><span class="type">gtk_minor_version</span></a>, but from the headers used at
-application compile time, rather than from the library linked against
-at application run time.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-MICRO-VERSION:CAPS"></a><h3>GTK_MICRO_VERSION</h3>
-<pre class="programlisting">#define GTK_MICRO_VERSION				(31)
+<pre class="programlisting">#define GTK_MICRO_VERSION				(32)
 </pre>
-<p>
-Like <a class="link" href="gtk2-Feature-Test-Macros.html#gtk-micro-version" title="gtk_micro_version"><span class="type">gtk_micro_version</span></a>, but from the headers used at
-application compile time, rather than from the library linked against
-at application run time.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-BINARY-AGE:CAPS"></a><h3>GTK_BINARY_AGE</h3>
-<pre class="programlisting">#define GTK_BINARY_AGE					(2431)
+<pre class="programlisting">#define GTK_BINARY_AGE					(2432)
 </pre>
-<p>
-Like <a class="link" href="gtk2-Feature-Test-Macros.html#gtk-binary-age" title="gtk_binary_age"><span class="type">gtk_binary_age</span></a>, but from the headers used at
-application compile time, rather than from the library linked against
-at application run time.
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-INTERFACE-AGE:CAPS"></a><h3>GTK_INTERFACE_AGE</h3>
-<pre class="programlisting">#define GTK_INTERFACE_AGE				(31)
+<pre class="programlisting">#define GTK_INTERFACE_AGE				(32)
 </pre>
-<p>
-Like <a class="link" href="gtk2-Feature-Test-Macros.html#gtk-interface-age" title="gtk_interface_age"><span class="type">gtk_interface_age</span></a>, but from the headers used at
-application compile time, rather than from the library linked against
-at application run time.
-</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.25.1</div>
+<hr>Generated by GTK-Doc V1.26.1</div>
 </body>
 </html>
