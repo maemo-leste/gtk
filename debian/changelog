@@ -2,6 +2,9 @@ gtk+2.0 (2.24.32-1) UNRELEASED; urgency=medium
 
   * New upstream release
   * Update Vcs fields for migration to https://salsa.debian.org/
+  * Drop patches applied in new release:
+    - 0001-Don-t-use-guint32-with-XChangeProperty.patch
+    - 0002-GtkMenuShell-always-activate-menu-shells.patch
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 19 Jan 2018 21:59:26 -0500
 
