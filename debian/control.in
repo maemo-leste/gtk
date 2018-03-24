@@ -54,7 +54,7 @@ Architecture: any
 Depends: @COMMON_PKG@,
          ${misc:Depends},
          ${shlibs:Depends},
-         gnome-icon-theme | adwaita-icon-theme,
+         adwaita-icon-theme | gnome-icon-theme,
          hicolor-icon-theme,
          shared-mime-info
 Provides: @GTK_BINVER_DEP@
