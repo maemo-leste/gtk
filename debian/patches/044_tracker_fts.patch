@@ -6,7 +6,7 @@ Tracker in Debian is compiled with FTS support, so we make use of that in
 GTK3's file selector dialog.
 This way files can be found by their content and not only their file name.
 
-Forwarded: no
+Applied-upstream: 3.15.10, commit:d87041bfe38368982b6b72f6812972b6a1d29a21
 ---
  gtk/gtksearchenginetracker.c | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
