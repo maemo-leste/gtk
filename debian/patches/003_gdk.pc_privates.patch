@@ -1,8 +1,20 @@
-Index: gtk+-2.24.31/configure.ac
-===================================================================
---- gtk+-2.24.31.orig/configure.ac	2016-09-09 23:26:44.806340819 +0200
-+++ gtk+-2.24.31/configure.ac	2016-09-09 23:26:44.806340819 +0200
-@@ -1325,23 +1325,27 @@
+From: Josselin Mouette <joss@debian.org>
+Date: Sun, 18 Nov 2007 01:30:52 +0100
+Subject: Generate correct Requires.private for gdk-2.0.pc
+
+This contains all necessary dependencies for static linking.
+
+Forwarded: no
+---
+ configure.ac  | 14 +++++++++-----
+ gdk-2.0.pc.in |  1 +
+ 2 files changed, 10 insertions(+), 5 deletions(-)
+
+diff --git a/configure.ac b/configure.ac
+index 1d36929..d967e20 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -1325,23 +1325,27 @@ LDFLAGS="$saved_ldflags"
  
  # Pull in gio-unix for GDesktopAppInfo usage, see at least gdkapplaunchcontext-x11.c
  if test "x$gdktarget" = "xx11"; then
@@ -35,11 +47,11 @@ Index: gtk+-2.24.31/configure.ac
  AC_SUBST(GDK_EXTRA_LIBS)
  AC_SUBST(GDK_EXTRA_CFLAGS)
  AC_SUBST(GDK_DEP_LIBS)
-Index: gtk+-2.24.31/gdk-2.0.pc.in
-===================================================================
---- gtk+-2.24.31.orig/gdk-2.0.pc.in	2016-09-09 23:26:44.806340819 +0200
-+++ gtk+-2.24.31/gdk-2.0.pc.in	2016-09-09 23:26:44.806340819 +0200
-@@ -8,5 +8,6 @@
+diff --git a/gdk-2.0.pc.in b/gdk-2.0.pc.in
+index 5b2a5d8..9acba30 100644
+--- a/gdk-2.0.pc.in
++++ b/gdk-2.0.pc.in
+@@ -8,5 +8,6 @@ Name: GDK
  Description: GTK+ Drawing Kit (${target} target)
  Version: @VERSION@
  Requires: @GDK_PACKAGES@

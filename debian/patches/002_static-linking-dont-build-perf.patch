@@ -1,10 +1,16 @@
-Description: don't build perf measurement tools in static builds
-Bug: http://bugzilla.gnome.org/show_bug.cgi?id=346559
+From: =?utf-8?q?Lo=C3=AFc_Minier?= <lool@dooz.org>
+Date: Tue, 15 Aug 2006 09:54:12 +0000
+Subject: Don't build perf measurement tools in static builds
 
-Index: gtk+2.0-2.22.0/Makefile.am
-===================================================================
---- gtk+2.0-2.22.0.orig/Makefile.am	2010-09-23 05:00:34.000000000 +0200
-+++ gtk+2.0-2.22.0/Makefile.am	2010-09-23 20:29:24.497578749 +0200
+Bug: http://bugzilla.gnome.org/show_bug.cgi?id=346559
+---
+ Makefile.am | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/Makefile.am b/Makefile.am
+index 8e3a2f1..1b26957 100644
+--- a/Makefile.am
++++ b/Makefile.am
 @@ -1,7 +1,12 @@
  ## Makefile.am for GTK+
  include $(top_srcdir)/Makefile.decl

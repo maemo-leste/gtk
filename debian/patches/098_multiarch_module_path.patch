@@ -1,15 +1,21 @@
-Description: Fall back to the hard-coded pre-multiarch module directory
- Include /usr/lib/gtk-2.0 in the path as a fallback when building for
- multiarch, to maintain compatibility with packages installing modules to
- the old directories.
-Author: Steve Langasek <steve.langasek@linaro.org>
-Forwarded: not-needed
+From: Steve Langasek <steve.langasek@linaro.org>
+Date: Fri, 22 Jul 2011 18:43:29 +0000
+Subject: Fall back to the hard-coded pre-multiarch module directory
 
-Index: gtk+2.0-2.24.3/gtk/gtkmodules.c
-===================================================================
---- gtk+2.0-2.24.3.orig/gtk/gtkmodules.c
-+++ gtk+2.0-2.24.3/gtk/gtkmodules.c
-@@ -60,6 +60,7 @@
+Include /usr/lib/gtk-2.0 in the path as a fallback when building for
+multiarch, to maintain compatibility with packages installing modules to
+the old directories.
+
+Forwarded: not-needed
+---
+ gtk/gtkmodules.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+
+diff --git a/gtk/gtkmodules.c b/gtk/gtkmodules.c
+index 50729b6..7877557 100644
+--- a/gtk/gtkmodules.c
++++ b/gtk/gtkmodules.c
+@@ -60,6 +60,7 @@ get_module_path (void)
    gchar *home_gtk_dir = NULL;
    gchar *module_path;
    gchar *default_dir;
@@ -17,7 +23,7 @@ Index: gtk+2.0-2.24.3/gtk/gtkmodules.c
    static gchar **result = NULL;
  
    if (result)
-@@ -74,21 +75,23 @@
+@@ -74,21 +75,23 @@ get_module_path (void)
  
    if (exe_prefix)
      default_dir = g_build_filename (exe_prefix, "lib", "gtk-2.0", NULL);

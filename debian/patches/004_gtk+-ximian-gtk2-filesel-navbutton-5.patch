@@ -1,7 +1,25 @@
-Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
-===================================================================
---- gtk+2.0-2.22.0.orig/gtk/gtkfilesel.c	2010-09-23 05:00:36.000000000 +0200
-+++ gtk+2.0-2.22.0/gtk/gtkfilesel.c	2010-09-23 20:29:26.590578775 +0200
+From: Debian GNOME Maintainers
+ <pkg-gnome-maintainers@lists.alioth.debian.org>
+Date: Sun, 13 Jul 2003 21:26:49 +0900
+Subject: Ximian patch to improve the GtkFileSel UI
+
+Requested by Ross Burton in 2003.
+
+TODO: What does this patch do and why do we have it?
+
+[Jonathan Brandmeyer: Use ~/Desktop instead of ~/.gnome2-desktop]
+
+Forwarded: no
+---
+ gtk/gtkfilesel.c               | 291 +++++++++++++--
+ gtk/stock-icons/ximian-icons.h | 825 +++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 1089 insertions(+), 27 deletions(-)
+ create mode 100644 gtk/stock-icons/ximian-icons.h
+
+diff --git a/gtk/gtkfilesel.c b/gtk/gtkfilesel.c
+index d18c307..96e708a 100644
+--- a/gtk/gtkfilesel.c
++++ b/gtk/gtkfilesel.c
 @@ -80,9 +80,13 @@
  #include "gtkeventbox.h"
  #include "gtkoptionmenu.h"
@@ -16,7 +34,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
  #include "gtkalias.h"
  
  #ifdef G_OS_WIN32
-@@ -318,6 +322,9 @@
+@@ -318,6 +322,9 @@ static gint                cmpl_last_valid_char    (CompletionState* cmpl_state)
   */
  static gchar*              cmpl_completion_fullname (const gchar*, CompletionState* cmpl_state);
  
@@ -26,7 +44,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
  
  /* Directory operations. */
  static CompletionDir* open_ref_dir         (gchar* text_to_complete,
-@@ -627,6 +634,10 @@
+@@ -627,6 +634,10 @@ gtk_file_selection_init (GtkFileSelection *filesel)
    GtkWidget *spacer;
    GtkDialog *dialog;
  
@@ -37,7 +55,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
    GtkListStore *model;
    GtkTreeViewColumn *column;
    
-@@ -640,18 +651,9 @@
+@@ -640,18 +651,9 @@ gtk_file_selection_init (GtkFileSelection *filesel)
    filesel->main_vbox = dialog->vbox;
    gtk_container_set_border_width (GTK_CONTAINER (filesel), 10);
  
@@ -57,7 +75,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
    gtk_box_pack_start (GTK_BOX (filesel->main_vbox), pulldown_hbox, FALSE, FALSE, 0);
    gtk_widget_show (pulldown_hbox);
    
-@@ -663,14 +665,27 @@
+@@ -663,14 +665,27 @@ gtk_file_selection_init (GtkFileSelection *filesel)
      
    /*  The horizontal box containing the directory and file listboxes  */
  
@@ -87,7 +105,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
    if (WANT_HPANED)
      list_container = g_object_new (GTK_TYPE_HPANED,
  				   "visible", TRUE,
-@@ -682,9 +697,78 @@
+@@ -682,9 +697,78 @@ gtk_file_selection_init (GtkFileSelection *filesel)
  
    spacer = gtk_hbox_new (FALSE, 0);
    gtk_widget_set_size_request (spacer, -1, 5);
@@ -167,7 +185,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
    /* The directories list */
  
    model = gtk_list_store_new (1, G_TYPE_STRING);
-@@ -757,6 +841,15 @@
+@@ -757,6 +841,15 @@ gtk_file_selection_init (GtkFileSelection *filesel)
    gtk_widget_show (filesel->file_list);
    gtk_widget_show (scrolled_win);
  
@@ -183,7 +201,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
    /* action area for packing buttons into. */
    filesel->action_area = gtk_hbox_new (TRUE, 0);
    gtk_box_pack_start (GTK_BOX (filesel->main_vbox), filesel->action_area, 
-@@ -1012,39 +1105,94 @@
+@@ -1012,39 +1105,94 @@ gtk_file_selection_new (const gchar *title)
  void
  gtk_file_selection_show_fileop_buttons (GtkFileSelection *filesel)
  {
@@ -292,7 +310,7 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
        gtk_widget_show (filesel->fileop_ren_file);
      }
    
-@@ -1752,6 +1900,95 @@
+@@ -1752,6 +1900,95 @@ gtk_file_selection_update_fileops (GtkFileSelection *fs)
      gtk_widget_set_sensitive (fs->fileop_ren_file, sensitive);
  }
  
@@ -388,10 +406,11 @@ Index: gtk+2.0-2.22.0/gtk/gtkfilesel.c
  static gint
  gtk_file_selection_key_press (GtkWidget   *widget,
  			      GdkEventKey *event,
-Index: gtk+2.0-2.22.0/gtk/stock-icons/ximian-icons.h
-===================================================================
---- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ gtk+2.0-2.22.0/gtk/stock-icons/ximian-icons.h	2010-09-23 20:29:26.817579822 +0200
+diff --git a/gtk/stock-icons/ximian-icons.h b/gtk/stock-icons/ximian-icons.h
+new file mode 100644
+index 0000000..e8173a8
+--- /dev/null
++++ b/gtk/stock-icons/ximian-icons.h
 @@ -0,0 +1,825 @@
 +/* GdkPixbuf RGBA C-Source image dump 1-byte-run-length-encoded */
 +

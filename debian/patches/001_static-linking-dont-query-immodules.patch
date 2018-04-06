@@ -1,12 +1,21 @@
-Description: Don't query immodules for the local tree when cross-compiling or
-             when --disable-shared was given
-Bug: http://bugzilla.gnome.org/show_bug.cgi?id=346531
+From: =?utf-8?q?Lo=C3=AFc_Minier?= <lool@dooz.org>
+Date: Sat, 21 Sep 2013 23:37:03 +0200
+Subject: Don't query immodules for the local tree when building statically or
+ cross-compiling
 
-Index: gtk+-2.24.19/configure.ac
-===================================================================
---- gtk+-2.24.19.orig/configure.ac	2013-06-28 23:39:49.071200389 +0200
-+++ gtk+-2.24.19/configure.ac	2013-06-28 23:39:49.063200297 +0200
-@@ -150,6 +150,7 @@
+[mbiebl: follow upstream and use immodules.cache instead of gtk.immodules]
+
+Bug: http://bugzilla.gnome.org/show_bug.cgi?id=346531
+---
+ configure.ac              |  1 +
+ modules/input/Makefile.am | 17 ++++++++++++++++-
+ 2 files changed, 17 insertions(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index b75f9c6..1d36929 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -150,6 +150,7 @@ esac
  dnl Initialize libtool
  AC_PROG_CC
  AM_DISABLE_STATIC
@@ -14,11 +23,11 @@ Index: gtk+-2.24.19/configure.ac
  
  dnl 
  dnl Check for a working C++ compiler, but do not bail out, if none is found.
-Index: gtk+-2.24.19/modules/input/Makefile.am
-===================================================================
---- gtk+-2.24.19.orig/modules/input/Makefile.am	2013-06-28 23:39:49.071200389 +0200
-+++ gtk+-2.24.19/modules/input/Makefile.am	2013-06-28 23:39:49.063200297 +0200
-@@ -189,8 +189,12 @@
+diff --git a/modules/input/Makefile.am b/modules/input/Makefile.am
+index c8610fa..091ce70 100644
+--- a/modules/input/Makefile.am
++++ b/modules/input/Makefile.am
+@@ -189,8 +189,12 @@ dist_imconffile_DATA = im-multipress.conf
  if CROSS_COMPILING
  RUN_QUERY_IMMODULES_TEST=false
  else
@@ -31,7 +40,7 @@ Index: gtk+-2.24.19/modules/input/Makefile.am
  
  # Running this if cross compiling or if DESTDIR is set is going to
  # not work at all, so skip it.
-@@ -253,7 +257,18 @@
+@@ -253,7 +257,18 @@ noinst_LTLIBRARIES =				\
  included-modules: $(noinst_LTLIBRARIES)
  
  immodules.cache: Makefile.am $(module_LTLIBRARIES)
