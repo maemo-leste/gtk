@@ -11,7 +11,7 @@ Forwarded: no
  2 files changed, 10 insertions(+), 5 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index 1d36929..d967e20 100644
+index 58d3492..7eb26f1 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -1325,23 +1325,27 @@ LDFLAGS="$saved_ldflags"

@@ -9,6 +9,10 @@ gtk+2.0 (2.24.32-2) UNRELEASED; urgency=medium
   [ Simon McVittie ]
   * d/patches: Add DEP-3 patch metadata and convert existing metadata
     to gbp pq format
+  * d/p/001_static-linking-dont-query-immodules.patch:
+    Update to the latest version that was proposed upstream (in 2007)
+    - d/p/002_static-linking-dont-build-perf.patch: Adjust for
+      different AM_CONDITIONAL
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 24 Mar 2018 16:29:10 -0400
 

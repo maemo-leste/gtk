@@ -8,7 +8,7 @@ Bug: http://bugzilla.gnome.org/show_bug.cgi?id=346559
  1 file changed, 6 insertions(+), 1 deletion(-)
 
 diff --git a/Makefile.am b/Makefile.am
-index 8e3a2f1..1b26957 100644
+index 8e3a2f1..1fdcbc4 100644
 --- a/Makefile.am
 +++ b/Makefile.am
 @@ -1,7 +1,12 @@
@@ -17,7 +17,7 @@ index 8e3a2f1..1b26957 100644
  
 -SRC_SUBDIRS = gdk gtk modules demos tests perf
 +# don't build perf measurement tools in static builds
-+if !ENABLE_STATIC
++if ENABLE_SHARED
 +MAYBE_PERF = perf
 +endif
 +
