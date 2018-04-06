@@ -2,9 +2,13 @@ From: Josselin Mouette <joss@debian.org>
 Date: Sun, 18 Nov 2007 01:30:52 +0100
 Subject: Generate correct Requires.private for gdk-2.0.pc
 
-This contains all necessary dependencies for static linking.
+This contains all necessary dependencies for static linking, moving them
+out of Requires.
 
-Forwarded: no
+Based on a GTK+ 3 commit by Matthias Clasen.
+
+Origin: upstream, 3.3.6, commit:b558885221afa5cce0abbd42410877d58d8d2d9a
+Bug: https://bugzilla.gnome.org/show_bug.cgi?id=665326
 ---
  configure.ac  | 14 +++++++++-----
  gdk-2.0.pc.in |  1 +
