@@ -6,7 +6,18 @@ Include /usr/lib/gtk-2.0 in the path as a fallback when building for
 multiarch, to maintain compatibility with packages installing modules to
 the old directories.
 
-Forwarded: not-needed
+As of April 2018 this is still required by:
+- gtk2-engines-cleanice
+- gtk2-engines-magicchicken
+- gtk2-engines-moblin
+- gtk2-engines-nodoka
+- gtk2-engines-wonderland
+- sugar-artwork-0.88 (no longer in unstable)
+- tamil-gtk2im
+
+The equivalent patch in GTK+ 3 was removed in 3.18.0-1.
+
+Forwarded: not-needed, Debian-specific
 ---
  gtk/gtkmodules.c | 13 ++++++++-----
  1 file changed, 8 insertions(+), 5 deletions(-)
