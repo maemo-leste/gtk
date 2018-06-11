@@ -1,3 +1,10 @@
+gtk+2.0 (2:2.24.31-4) unstable; urgency=medium
+
+  [Ivaylo Dimitrov]
+  * Add hildonize-gtk-immulticontext.diff
+
+ -- Ivan J. <parazyd@dyne.org>  Mon, 11 Jun 2018 23:07:00 +0200
+
 gtk+2.0 (2:2.24.31-3) unstable; urgency=medium
 
   * Bump version to make the build pass
