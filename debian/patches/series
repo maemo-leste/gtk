@@ -41,3 +41,4 @@ hildonize-gtk-textview.diff
 hildonize-gtk-rbtree.diff
 hildonize-gtk-treeview.diff
 hildonize-gtk-iconview.diff
+hildonize-gtk-immulticontext.diff
