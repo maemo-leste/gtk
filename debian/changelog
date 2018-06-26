@@ -17,6 +17,10 @@ gtk+2.0 (2.24.32-2) UNRELEASED; urgency=medium
     Add reference to Ubuntu bug 191451, summarize the reason why this
     is applied, and correctly attribute the patch to Ming Hua
     (see #895043)
+  * d/p/m4macros-Set-a-serial-number.patch:
+    Add patch from upstream to give gtk-2.0.m4 a serial number so that
+    it will override older copies bundled with other packages, typically
+    in the m4 directory (Closes: #895018)
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 24 Mar 2018 16:29:10 -0400
 
