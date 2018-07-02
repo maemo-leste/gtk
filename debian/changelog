@@ -1,3 +1,16 @@
+gtk+2.0 (2.24.32-3) UNRELEASED; urgency=medium
+
+  * debian/control.in:
+    - Mark libgtk2.0-dev Multi-Arch: same (Closes: #689097).
+    - Mark gir1.2-gtk-2.0 Multi-Arch: same.
+  * gir1.2-gtk-2.0:
+    - Install the typelibs into an arch-specific libdir (Closes: #898111).
+  * libgtk2.0-dev:
+    - Add multi-arch support by no longer packaging the deprecated
+      dh_gtkmodules script (Closes: #875728).
+
+ -- Hugh McMaster <hugh.mcmaster@outlook.com>  Mon, 18 Jun 2018 22:08:24 +1000
+
 gtk+2.0 (2.24.32-2) unstable; urgency=medium
 
   * Team upload

@@ -123,6 +123,7 @@ Description: programs for the GTK+ graphical user interface library
 Package: @DEV_PKG@
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: @SHARED_PKG@ (= ${binary:Version}),
          gir1.2-gtk-2.0 (= ${binary:Version}),
          @COMMON_PKG@,
@@ -206,6 +207,7 @@ Description: pixbuf-based theme for GTK+ 2.x
 Package: gir1.2-gtk-2.0
 Section: introspection
 Architecture: any
+Multi-Arch: same
 Depends: @COMMON_PKG@,
          ${misc:Depends},
          ${shlibs:Depends},
