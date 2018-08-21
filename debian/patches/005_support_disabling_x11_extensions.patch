@@ -13,7 +13,7 @@ Applied-upstream: 2.99.1, commit:ec15c405cf6354e9267e7e6b7ce878c519bffe4c
  1 file changed, 19 insertions(+), 4 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index 7eb26f1..560afbf 100644
+index 3eaa305..9797b79 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -241,6 +241,18 @@ AC_ARG_ENABLE(xinerama,

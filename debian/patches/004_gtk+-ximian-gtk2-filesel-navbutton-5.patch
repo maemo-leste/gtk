@@ -17,7 +17,7 @@ Forwarded: no
  create mode 100644 gtk/stock-icons/ximian-icons.h
 
 diff --git a/gtk/gtkfilesel.c b/gtk/gtkfilesel.c
-index d18c307..96e708a 100644
+index 245bdf1..084bb63 100644
 --- a/gtk/gtkfilesel.c
 +++ b/gtk/gtkfilesel.c
 @@ -80,9 +80,13 @@

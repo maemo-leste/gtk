@@ -13,7 +13,7 @@ Applied-upstream: no, bug was closed due to lack of feedback
  2 files changed, 17 insertions(+), 1 deletion(-)
 
 diff --git a/configure.ac b/configure.ac
-index b75f9c6..58d3492 100644
+index 44d3056..0294160 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -182,6 +182,7 @@ fi

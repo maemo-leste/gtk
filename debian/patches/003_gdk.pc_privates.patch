@@ -15,7 +15,7 @@ Bug: https://bugzilla.gnome.org/show_bug.cgi?id=665326
  2 files changed, 10 insertions(+), 5 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index 58d3492..7eb26f1 100644
+index 0294160..3eaa305 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -1325,23 +1325,27 @@ LDFLAGS="$saved_ldflags"

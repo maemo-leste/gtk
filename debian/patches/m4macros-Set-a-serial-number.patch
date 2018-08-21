@@ -12,7 +12,7 @@ be overwritten, even if it is outdated.
 Signed-off-by: Simon McVittie <smcv@debian.org>
 Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=895018
 Forwarded: https://gitlab.gnome.org/GNOME/gtk/merge_requests/104
-Applied-upstream: 2.24.33, commit:e5c3b62dddd38a9958f1e2521c7abc91a17b0079
+Applied-upstream: 2.24.33, commit:acb78c9c6086f0d3a0eba06cc9becf2eb849e615
 ---
  m4macros/gtk-2.0.m4 | 4 ++++
  1 file changed, 4 insertions(+)

@@ -20,7 +20,7 @@ Applied-upstream: no
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/gtk/updateiconcache.c b/gtk/updateiconcache.c
-index 32c8f41..a65c855 100644
+index 39e1345..9fecf12 100644
 --- a/gtk/updateiconcache.c
 +++ b/gtk/updateiconcache.c
 @@ -679,7 +679,7 @@ scan_directory (const gchar *base_path,

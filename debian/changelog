@@ -1,5 +1,6 @@
 gtk+2.0 (2.24.32-3) UNRELEASED; urgency=medium
 
+  [ Hugh McMaster ]
   * debian/control.in:
     - Mark libgtk2.0-dev Multi-Arch: same (Closes: #689097).
     - Mark gir1.2-gtk-2.0 Multi-Arch: same.
@@ -8,6 +9,13 @@ gtk+2.0 (2.24.32-3) UNRELEASED; urgency=medium
   * libgtk2.0-dev:
     - Add multi-arch support by no longer packaging the deprecated
       dh_gtkmodules script (Closes: #875728).
+
+  [ Simon McVittie ]
+  * d/patches: Update to upstream gtk-2-24 branch, commit
+    2.24.32-32-geec3ce0b4e
+    - Includes patch from Chris Lamb to make immodules.cache reproducible
+      (Closes: #872729)
+  * d/copyright: Update
 
  -- Hugh McMaster <hugh.mcmaster@outlook.com>  Mon, 18 Jun 2018 22:08:24 +1000
 
