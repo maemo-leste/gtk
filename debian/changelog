@@ -1,4 +1,6 @@
-gtk+2.0 (2.24.32-3) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.32-3) unstable; urgency=medium
+
+  * Team upload
 
   [ Hugh McMaster ]
   * debian/control.in:
@@ -20,7 +22,7 @@ gtk+2.0 (2.24.32-3) UNRELEASED; urgency=medium
     which contains user-facing release notes, instead)
   * d/copyright: Update
 
- -- Hugh McMaster <hugh.mcmaster@outlook.com>  Mon, 18 Jun 2018 22:08:24 +1000
+ -- Simon McVittie <smcv@debian.org>  Tue, 21 Aug 2018 14:33:00 +0100
 
 gtk+2.0 (2.24.32-2) unstable; urgency=medium
 
