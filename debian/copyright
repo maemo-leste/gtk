@@ -13,51 +13,51 @@ Copyright:
   Copyright: 1985, 1986, 1987, 1988, 1998 The Open Group
   Copyright: 1987, 1988 by Digital Equipment Corporation, Maynard, Massachusetts
   Copyright: 1987 by Digital Equipment Corporation, Maynard, Massachusetts
-  Copyright: 1991-2014 Free Software Foundation, Inc
+  Copyright: 1991-2017 Free Software Foundation, Inc
   Copyright: 1991-1998 by LCS/Telegraphics
   Copyright: 1992-1994 The Regents of the University of California
   Copyright: 1993, Robert Nation
   Copyright: 1994-2007 Sun Microsystems, Inc
   Copyright: 1995, 1996, 1997, 1998 by Steffen Beyer
-  Copyright: 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald
-  Copyright: 1995-2007 Peter Mattis, Spencer Kimball
+  Copyright: 1995-1999 Josh MacDonald
+  Copyright: 1995-2007 Peter Mattis
+  Copyright: 1995-2007 Spencer Kimball
   Copyright: 1997-1998 Jay Painter
   Copyright: 1997-2009 The GTK+ Team
   Copyright: 1997 David Mosberger
   Copyright: 1997-1998 Owen Taylor
   Copyright: 1997 Paolo Molaro
-  Copyright: 1997-2010 Red Hat, Inc
-  Copyright: 1998-2002 James Henstridge
+  Copyright: 1997-2013 Red Hat, Inc
+  Copyright: 1998-2003 James Henstridge
   Copyright: 1998-2006 Tim Janik
   Copyright: 1998-2007 Tor Lillqvist
-  Copyright: 1998 Cesar Miquel, Shawn T. Amundson and Mattias Groenlund
+  Copyright: 1998 Cesar Miquel
+  Copyright: 1998 Mattias Groenlund
   Copyright: 1998 David Abilleira Freijeiro
   Copyright: 1998 Elliot Lee
-  Copyright: 1998 Lars Hamann and Stefan Jeske
+  Copyright: 1998 Lars Hamann
+  Copyright: 1998 Stefan Jeske
   Copyright: 1998 Shawn T. Amundson
   Copyright: 1999 Mark Crichton, Larry Ewing
   Copyright: 1999 Michael Zucchi
   Copyright: 2000,2001 Jonathan Blandford
   Copyright: 2000-2004 Hans Breuer
   Copyright: 2000 Keith Packard
-  Copyright: 2000 Jonathan Blandford
   Copyright: 2000 SuSE Linux Ltd
-  Copyright: 2000 Tony Gale
-  Copyright: 2001, 2002 Anders Carlsson
+  Copyright: 1998-2000 Tony Gale
+  Copyright: 1999-2000 Jesus Bravo Alvarez
+  Copyright: 2001-2004 Anders Carlsson
   Copyright: 2001-2002 convergence integrated media GmbH
   Copyright: 2001-2009 Kristian Rietveld
   Copyright: 2001-2009 Hans Breuer
-  Copyright: 2001 Anders Carlsson
   Copyright: 2001 Archaeopteryx Software Inc
   Copyright: 2001 CodeFactory AB
   Copyright: 2001 Havoc Pennington
   Copyright: 2001 Stefan Ondrejicka
-  Copyright: 2002, 2004 Anders Carlsson
   Copyright: 2002-2004 convergence GmbH
-  Copyright: 2002 Anders Carlsson
   Copyright: 2002 convergence GmbH
-  Copyright: 2002 James Henstridge
   Copyright: 2002 Naba Kumar
+  Copyright: 2002-2005 Sharif FarsiWeb, Inc.
   Copyright: 2003, 2004 Dom Lachowicz
   Copyright: 2003-2004 Kazuki IWAMOTO
   Copyright: 2003-2009 Matthias Clasen
@@ -65,23 +65,30 @@ Copyright:
   Copyright: 2003, 2004 Soeren Sandmann
   Copyright: 2003 Alex Graveley
   Copyright: 2003 Apple Computer, Inc. All rights reserved
-  Copyright: 2003 James Henstridge
   Copyright: 2003 Kazuki IWAMOTO
   Copyright: 2003 Ricardo Fernandez Pascual
-  Copyright: 2003 Soeren Sandmann
   Copyright: 2003 Takuro Ashie
+  Copyright: 2003 OpenMN team
+  Copyright: 2003-2005 Miloslav Trmac
   Copyright: 2004-2006 Christian Hammond
-  Copyright: 2004 Anders Carlsson
   Copyright: 2004 James M. Cape
   Copyright: 2004 Lorenzo Gil Sanchez
   Copyright: 2004 Morten Welinder
   Copyright: 2004 Paolo Borelli
-  Copyright: 2005, 2006, 2007, 2008, 2009 GNOME Foundation
+  Copyright: 2004-2008 Canonical Ltd.
+  Copyright: 2004-2008 Rosetta contributors
+  Copyright: 2004 Adam Weinberger
+  Copyright: 2004 Gurban Mühemmet Tewekgeli
+  Copyright: 2004 Kakilik - Turkmen free software developers community
+  Copyright: 2004 Zuza Software Foundation
+  Copyright: 2004 Amir Hedayaty
+  Copyright: 2004 Thierry Vignaud
+  Copyright: 2004-2009 GNOME Foundation
   Copyright: 2005-2007, Emmanuele Bassi
   Copyright: 2005-2007 Vincent Untz
+  Copyright: 2005-2007 Free Software Foundation, Andhra Pradesh
   Copyright: 2005-2008 Imendio AB
   Copyright: 2005 Jamie McCracken
-  Copyright: 2005 Mr Jamie McCracken
   Copyright: 2005-2008 Novell, Inc
   Copyright: 2005 - Paolo Maggi
   Copyright: 2005 Ronald S. Bultje
@@ -92,10 +99,12 @@ Copyright:
   Copyright: 2006 Hong Jen Yee (PCMan)
   Copyright: 2006-2008 Jan Arne Petersen
   Copyright: 2006 John (J5) Palmieri
+  Copyright: 2006 Lukas Novotny
   Copyright: 2004-2010 Nokia Corporation
   Copyright: 2005-2008 Carlos Garnacho
   Copyright: 2007-2009 Cody Russell
-  Copyright: 2007 John Stowers, Neil Jagdish Patel
+  Copyright: 2007 John Stowers
+  Copyright: 2007 Neil Jagdish Patel
   Copyright: 2007 Xan López
   Copyright: 2008 Christian Kellner
   Copyright: 2008 Cody Russell
@@ -108,9 +117,11 @@ Copyright:
   Copyright: 2009 Stefan Walter
   Copyright: 2009 Johan Dahlin
   Copyright: 2010 Christian Dywan
-  Copyright: Christian Kellner
+  Copyright: 2010 HZ
+  Copyright: 2010 GNOME i18n Project for Vietnamese
+  Copyright: 2011 Hiroyuki Yamamoto
   Copyright: Federico Mena
-
+  Copyright: Croatiann team
 
 Original Authors
 ----------------
