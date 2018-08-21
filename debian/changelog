@@ -16,6 +16,8 @@ gtk+2.0 (2.24.32-3) UNRELEASED; urgency=medium
     - Includes patch from Chris Lamb to make immodules.cache reproducible
       (Closes: #872729)
   * d/copyright: Update
+  * Stop installing stub ChangeLog as per Policy §12.7 (we install NEWS,
+    which contains user-facing release notes, instead)
 
  -- Hugh McMaster <hugh.mcmaster@outlook.com>  Mon, 18 Jun 2018 22:08:24 +1000
 
