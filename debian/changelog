@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
+
+  * d/*.links.in: Remove dangling symlinks to changelog.gz, which is
+    no longer installed since 2.24.32-3 (Closes: #907848)
+
+ -- Simon McVittie <smcv@debian.org>  Mon, 03 Sep 2018 07:40:11 +0100
+
 gtk+2.0 (2.24.32-3) unstable; urgency=medium
 
   * Team upload
