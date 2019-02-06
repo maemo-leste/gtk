@@ -72,6 +72,7 @@ Description: GTK+ graphical user interface library
  This package contains the shared libraries.
 
 Package: @UDEB_PKG@
+Build-Profiles: <!noudeb>
 Package-Type: udeb
 Section: debian-installer
 Architecture: any
@@ -238,6 +239,7 @@ Description: GNOME Accessibility Implementation Library -- shared libraries
  This package contains the shared library.
 
 Package: libgail18-udeb
+Build-Profiles: <!noudeb>
 Package-Type: udeb
 Section: debian-installer
 Architecture: any
