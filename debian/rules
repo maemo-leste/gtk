@@ -165,7 +165,7 @@ $(STAMP_DIR)/configure-stamp-%: $(STAMP_DIR)/patch-stamp
 	cd $(builddir) && \
 		CFLAGS="$(call flavor_get,CFLAGS)" \
 		LDFLAGS="$(call flavor_get,LDFLAGS)" \
-			$(CURDIR)/configure $(call flavor_get,configure_flags)
+			../../../configure $(call flavor_get,configure_flags)
 	touch $@
 
 configure: $(addprefix $(STAMP_DIR)/configure-stamp-, $(FLAVORS))
