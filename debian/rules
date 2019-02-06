@@ -25,13 +25,7 @@ PATCH_DIR := debian/patches
 DEB_BUILD_OPTIONS_PARALLEL ?= $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
 PARALLEL_FLAGS += $(if $(DEB_BUILD_OPTIONS_PARALLEL),-j$(DEB_BUILD_OPTIONS_PARALLEL))
 
-DEB_BUILD_OPTIONS += multiarch
-# relative libdir
-ifneq (,$(findstring multiarch,$(DEB_BUILD_OPTIONS)))
 LIBDIR := usr/lib/$(DEB_HOST_MULTIARCH)
-else
-LIBDIR := usr/lib
-endif
 
 # ppc64 support; see #386815
 ifeq ($(DEB_HOST_GNU_CPU),powerpc64)
