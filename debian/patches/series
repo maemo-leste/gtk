@@ -16,9 +16,6 @@ modules-other-gail-gailtreeview.c-Fix-Waddress-warning.patch
 modules-other-gail-gailtreeview.c-Fix-Wunused-but-set-var.patch
 modules-other-gail-gailtreeview.c-Incorporate-review-sugg.patch
 Consistently-use-g_stat-and-GStatBuf.patch
-001_static-linking-dont-query-immodules.patch
-002_static-linking-dont-build-perf.patch
-003_gdk.pc_privates.patch
 004_gtk+-ximian-gtk2-filesel-navbutton-5.patch
 005_support_disabling_x11_extensions.patch
 015_default-fallback-icon-theme.patch
