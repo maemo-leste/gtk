@@ -3,12 +3,12 @@
 # Debian GNOME Maintainers
 DISABLE_UPDATE_UPLOADERS := 1
 include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
-include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
 DPKG_EXPORT_BUILDFLAGS = 1
--include /usr/share/dpkg/buildflags.mk
+include /usr/share/dpkg/default.mk
+include /usr/share/dpkg/pkg-info.mk
 
-GNOME_MODULE := gtk+
+built_binaries := $(shell dh_listpackages)
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
@@ -25,20 +25,7 @@ PATCH_DIR := debian/patches
 DEB_BUILD_OPTIONS_PARALLEL ?= $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
 PARALLEL_FLAGS += $(if $(DEB_BUILD_OPTIONS_PARALLEL),-j$(DEB_BUILD_OPTIONS_PARALLEL))
 
-DEB_HOST_ARCH      ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
-DEB_HOST_ARCH_OS   ?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
-DEB_HOST_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
-DEB_BUILD_GNU_CPU  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_CPU)
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
-DEB_BUILD_OPTIONS += multiarch
-# relative libdir
-ifneq (,$(findstring multiarch,$(DEB_BUILD_OPTIONS)))
 LIBDIR := usr/lib/$(DEB_HOST_MULTIARCH)
-else
-LIBDIR := usr/lib
-endif
 
 # ppc64 support; see #386815
 ifeq ($(DEB_HOST_GNU_CPU),powerpc64)
@@ -52,8 +39,6 @@ CFLAGS += -Wall -g -O$(if $(findstring noopt,$(DEB_BUILD_OPTIONS)),0,2)
 # currently fails in the cups gtkprint backend
 #LDFLAGS += -Wl,-z,defs
 
-DEBVERSION := $(shell dpkg-parsechangelog | sed -n -e 's/^Version: //p')
-VERSION := $(shell echo $(DEBVERSION) | sed -e 's/-[^-]*$$//')
 APIVER := 2.0
 SONAME := 0
 SHVER := 2.24.0
@@ -75,19 +60,22 @@ DEV_PKG := libgtk$(APIVER)-dev
 UDEB_PKG := $(SHARED_PKG)-udeb
 DOC_PKG := libgtk$(APIVER)-doc
 BIN_PKG := libgtk$(APIVER)-bin
-DEBUG_PKG := $(SHARED_PKG)-dbg
 EXAMPLES_PKG := gtk$(APIVER)-examples
 PIXBUF_PKG := gtk2-engines-pixbuf
 
 # package groups, used in rule dependencies and in cleanup
 BINARY_INDEP_PKGS := $(COMMON_PKG) $(DOC_PKG) libgail-doc
-BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(DEBUG_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail-dbg libgail-dev libgail-common
+BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail18-udeb libgail-dbg libgail-dev libgail-common
 ALL_PKGS := $(BINARY_INDEP_PKGS) $(BINARY_ARCH_PKGS)
 
 # list of flavors we build; each gets a builddir, a configure pass (configure
 # args are defined below), a build pass, and an install pass (in two steps)
 # Note: the shared flavor is required
-FLAVORS := shared shared_udeb static
+FLAVORS := shared static
+
+ifneq ($(filter %-udeb,$(built_binaries)),)
+FLAVORS += shared_udeb
+endif
 
 # current flavor we're building; this is only expanded in flavor specific
 # targets
@@ -127,9 +115,13 @@ endif
 
 shared_configure_flags := $(configure_flags) \
 			--enable-shared \
-			--enable-introspection=yes \
+			--enable-introspection \
+			--enable-man \
 			--disable-static
-shared_udeb_configure_flags := $(shared_configure_flags) \
+shared_udeb_configure_flags := $(configure_flags) \
+			--enable-shared \
+			--disable-static \
+			--disable-introspection \
 			--disable-xcomposite \
 			--disable-xdamage \
 			--disable-xfixes \
@@ -155,7 +147,7 @@ debian/gtk-%.devhelp: docs/%/html/index.html
 devhelpfiles: debian/gtk-faq.devhelp debian/gtk-tutorial.devhelp
 
 debian/dh_gtkmodules.1: debian/dh_gtkmodules
-	cd debian && pod2man -c "Gtk" -r "$(DEBVERSION)" dh_gtkmodules dh_gtkmodules.1
+	cd debian && pod2man -c "Gtk" -r "$(DEB_VERSION)" dh_gtkmodules dh_gtkmodules.1
 
 patch: $(STAMP_DIR)/patch-stamp
 
@@ -173,18 +165,21 @@ $(STAMP_DIR)/configure-stamp-%: $(STAMP_DIR)/patch-stamp
 	cd $(builddir) && \
 		CFLAGS="$(call flavor_get,CFLAGS)" \
 		LDFLAGS="$(call flavor_get,LDFLAGS)" \
-			$(CURDIR)/configure $(call flavor_get,configure_flags)
+			../../../configure $(call flavor_get,configure_flags)
 	touch $@
 
 configure: $(addprefix $(STAMP_DIR)/configure-stamp-, $(FLAVORS))
 
+.NOTPARALLEL: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
 $(STAMP_DIR)/build-stamp-%: $(STAMP_DIR)/configure-stamp-%
 	dh_testdir
 	LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH) \
 		$(MAKE) $(PARALLEL_FLAGS) -C $(builddir)
 	touch $@
 
-build: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
+build-arch: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
+build-indep: $(addprefix $(STAMP_DIR)/build-stamp-, shared)
+build: build-arch build-indep
 
 $(STAMP_DIR)/check-stamp-%: $(STAMP_DIR)/build-stamp-%
 	dh_testdir
@@ -203,7 +198,8 @@ $(STAMP_DIR)/install-stamp-%: $(STAMP_DIR)/build-stamp-%
 		DESTDIR=$(installdir)
 	touch $@
 
-install: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
+install-arch: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
+install-indep: $(addprefix $(STAMP_DIR)/install-stamp-, shared)
 
 # gross kludge to force control generation with the %.in target
 clean::
@@ -214,7 +210,7 @@ debian/%: debian/%.in
 	sed \
 		-e "s#@SONAME@#$(SONAME)#g" \
 		-e "s#@APIVER@#$(APIVER)#g" \
-		-e "s#@VERSION@#$(VERSION)#g" \
+		-e "s#@VERSION@#$(DEB_VERSION_UPSTREAM)#g" \
 		-e "s#@GTK_BINVER_DEP@#$(GTK_BINVER_DEP)#g" \
 		-e "s#@SHARED_PKG@#$(SHARED_PKG)#g" \
 		-e "s#@COMMON_PKG@#$(COMMON_PKG)#g" \
@@ -222,7 +218,6 @@ debian/%: debian/%.in
 		-e "s#@UDEB_PKG@#$(UDEB_PKG)#g" \
 		-e "s#@DOC_PKG@#$(DOC_PKG)#g" \
 		-e "s#@BIN_PKG@#$(BIN_PKG)#g" \
-		-e "s#@DEBUG_PKG@#$(DEBUG_PKG)#g" \
 		-e "s#@EXAMPLES_PKG@#$(EXAMPLES_PKG)#g" \
 		-e "s#@PIXBUF_PKG@#$(PIXBUF_PKG)#g" \
 		-e "s#@GNOME_TEAM@#$(UPLOADERS)#g" \
@@ -249,12 +244,12 @@ clean:: debian/control
 
 maybe_check = $(if $(findstring nocheck,$(DEB_BUILD_OPTIONS)),,check)
 
-binary-indep: build $(maybe_check) install $(call dh_subst_files,$(BINARY_INDEP_PKGS)) devhelpfiles
+binary-indep: build-indep install-indep $(call dh_subst_files,$(BINARY_INDEP_PKGS)) devhelpfiles
 	dh_testdir
 	dh_testroot
 	dh_install -i
 	# changelog.gz symlinks will be overwritten by dh_link
-	dh_installchangelogs -i ChangeLog
+	dh_installchangelogs -i -XChangeLog
 	# do not merge the calls: dh_installdocs will only install some files
 	# in the first package
 	dh_installdocs -p$(COMMON_PKG) $(DH_INSTALLDOCS_FILES)
@@ -269,23 +264,23 @@ binary-indep: build $(maybe_check) install $(call dh_subst_files,$(BINARY_INDEP_
 	dh_installdeb -i
 	dh_gencontrol -i
 	dh_md5sums -i
-	dh_builddeb -i -- -Zxz
+	dh_builddeb -i
 
-binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PKGS)) debian/dh_gtkmodules debian/dh_gtkmodules.1
+binary-arch: build-arch $(maybe_check) install-arch $(call dh_subst_files,$(BINARY_ARCH_PKGS)) debian/dh_gtkmodules debian/dh_gtkmodules.1
 	dh_testdir
 	dh_testroot
 	dh_install -s
 	# changelog.gz symlinks will be overwritten by dh_link
-	dh_installchangelogs -s ChangeLog
+	dh_installchangelogs -s -XChangeLog
 	# install copyright in all packages; the -p is for the special behavior
 	# of dh_installdocs (ship README.Debian etc. in the first package)
 	dh_installdocs -p$(PIXBUF_PKG) -s
 	dh_installman -s
 	dh_installexamples -s
 	dh_link -s
-	dh_strip -s --dbg-package=$(DEBUG_PKG) -N$(UDEB_PKG) -Nlibgail18 -Nlibgail-common
-	dh_strip -plibgail18 -plibgail-common --dbg-package=libgail-dbg
-	dh_strip -p$(UDEB_PKG)
+	dh_strip -s --dbgsym-migration="libgtk2.0-0-dbg (<< 2.24.31-3~)" -N$(UDEB_PKG) -Nlibgail18 -Nlibgail18-udeb -Nlibgail-common
+	dh_strip -plibgail18 -plibgail-common --dbgsym-migration="libgail-dbg (<< 2.24.31-3~)"
+	dh_strip -p$(UDEB_PKG) -plibgail18-udeb
 	dh_compress -s -X.sgml -X.devhelp
 	dh_fixperms -s -X$(LIBDIR)/$(SHARED_PKG)
 	dh_makeshlibs -p$(SHARED_PKG) \
@@ -295,26 +290,22 @@ binary-arch: build $(maybe_check) install $(call dh_subst_files,$(BINARY_ARCH_PK
 		-- -c4
 	dh_makeshlibs -plibgail18 \
 		-X$(MODULES_BASE_PATH) \
-		-V"libgail18 (>= $(SHVER)), libgail-common (>= $(SHVER))" \
+		-V"libgail18 (>= $(SHVER))" \
+		--add-udeb=libgail18-udeb \
 		-- -c4
 	dh_girepository -pgir1.2-gtk-2.0
 	dh_installdeb -s
-	# override shlibs for libraries from this source before computing
-	# dependencies of packages generated from this source; we already have
-	# inter-dependencies expressed manually in the control file, we do not
-	# need the shlibs to add duplicates
-	cat debian/*/DEBIAN/shlibs | \
-		sed -n -r -e 's/(([^ ]+: )?([^ ]+) ([^ ]+)) .*/\1/p' \
-			> debian/shlibs.local
-	dh_shlibdeps
-	-rm -f debian/shlibs.local
+	dh_shlibdeps -p$(PIXBUF_PKG) -- -xlibgtk2.0-0
+	# --remaining-packages didn't work right so let's at least make sure
+	# it doesn't run a second time for the pixbuf .so
+	dh_shlibdeps --remaining-packages -Xlibpixmap.so
 	dh_gencontrol -s
 	dh_md5sums -s
-	dh_builddeb -s -- -Zxz
+	dh_builddeb -s
 
 list-missing:
 	perl -w debian/dh_listmissing.pl $(foreach f,$(FLAVORS),$(subst $(CURDIR)/,,$(installbasedir))/$(f)) 2>&1 | \
 	    egrep -v '(\.la|$(LIBDIR)/gtk-2.0/$(GTK_BINARY_VERSION)/[^/]+/[^/]+\.a) has been installed' >&2
 
 binary: binary-indep binary-arch
-.PHONY: patch configure build check install clean binary-indep binary-arch list-missing binary devhelpfiles
+.PHONY: patch configure build build-indep build-arch check install clean binary binary-indep binary-arch list-missing devhelpfiles

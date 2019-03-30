@@ -2,13 +2,12 @@ Source: gtk+2.0
 Section: libs
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Iain Lane <laney@debian.org>, Michael Biebl <biebl@debian.org>
-Build-Depends: debhelper (>= 8.1.3),
+Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Jeremy Bicha <jbicha@debian.org>, Michael Biebl <biebl@debian.org>
+Build-Depends: debhelper (>= 10~),
                gettext,
                gtk-doc-tools (>= 1.11),
+               xsltproc,
                pkg-config,
-               autotools-dev,
-               dh-autoreconf,
                libglib2.0-dev (>= 2.27.3),
                libgdk-pixbuf2.0-dev (>= 2.22.1),
                libpango1.0-dev (>= 1.28.3),
@@ -28,23 +27,26 @@ Build-Depends: debhelper (>= 8.1.3),
                libxfixes-dev (>= 1:3.0.0-3),
                libcairo2-dev (>= 1.6.4-6.1),
                gnome-pkg-tools (>= 0.11),
-               dpkg-dev (>= 1.16.0),
+               dpkg-dev (>= 1.16.1),
                x11proto-xext-dev,
                libcups2-dev (>= 1.2),
                gobject-introspection (>= 0.10.8-2),
                libgirepository1.0-dev (>= 0.9.3),
                quilt,
                gawk,
-               shared-mime-info
-Build-Depends-Indep: docbook-xml,
-                     docbook-utils,
-                     libglib2.0-doc,
+               shared-mime-info,
+               docbook-xml,
+               docbook-xsl,
+               docbook-utils,
+               libxml2-utils
+Build-Depends-Indep: libglib2.0-doc,
                      libatk1.0-doc,
                      libpango1.0-doc,
                      libcairo2-doc
-Standards-Version: 3.9.5
-Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gtk+2.0/
-Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gtk+2.0/
+Rules-Requires-Root: no
+Standards-Version: 4.1.2
+Vcs-Browser: https://salsa.debian.org/gnome-team/gtk2
+Vcs-Git: https://salsa.debian.org/gnome-team/gtk2.git
 Homepage: http://www.gtk.org/
 
 Package: libgtk2.0-0
@@ -52,14 +54,15 @@ Architecture: any
 Depends: libgtk2.0-common,
          ${misc:Depends},
          ${shlibs:Depends},
+         adwaita-icon-theme | gnome-icon-theme,
+         hicolor-icon-theme,
          shared-mime-info
 Provides: gtk2.0-binver-2.10.0
-Recommends: hicolor-icon-theme,
+Recommends: libgail-common,
             libgtk2.0-bin
 Suggests: librsvg2-common,
           gvfs
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
 Description: GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -68,13 +71,30 @@ Description: GTK+ graphical user interface library
  .
  This package contains the shared libraries.
 
+Package: libgtk2.0-0-udeb
+Build-Profiles: <!noudeb>
+Package-Type: udeb
+Section: debian-installer
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Provides: gtk2.0-binver-2.10.0
+Description: GTK+ graphical user interface library - minimal runtime
+ This is a udeb, or a microdeb, for the debian-installer.
+ .
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the minimal runtime library using X11 needed
+ by the Debian installer.
+
 Package: libgtk2.0-common
 Section: misc
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: libgtk2.0-0
-Replaces: libgtk2.0-0 (<< 2.24.8-2)
-Breaks: libgtk2.0-0 (<< 2.24.8-2)
 Multi-Arch: foreign
 Description: common files for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
@@ -89,7 +109,8 @@ Section: misc
 Architecture: any
 Depends: ${misc:Depends},
          libgtk2.0-0 (= ${binary:Version}),
-         libgtk2.0-common
+         libgtk2.0-common,
+         gtk-update-icon-cache
 Multi-Arch: foreign
 Description: programs for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
@@ -103,6 +124,7 @@ Description: programs for the GTK+ graphical user interface library
 Package: libgtk2.0-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: libgtk2.0-0 (= ${binary:Version}),
          gir1.2-gtk-2.0 (= ${binary:Version}),
          libgtk2.0-common,
@@ -127,7 +149,6 @@ Depends: libgtk2.0-0 (= ${binary:Version}),
 Recommends: python (>= 2.4),
             debhelper
 Suggests: libgtk2.0-doc
-Replaces: gir-repository-dev
 Description: development files for the GTK+ library
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -136,23 +157,6 @@ Description: development files for the GTK+ library
  .
  This package contains the header files and static libraries which are
  needed for developing GTK+ applications.
-
-Package: libgtk2.0-0-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: libgtk2.0-0 (= ${binary:Version}),
-         libgtk2.0-common,
-         ${misc:Depends}
-Description: GTK+ libraries and debugging symbols
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains detached debugging symbols.
- .
- Most people will not need this package.
 
 Package: libgtk2.0-doc
 Section: doc
@@ -174,7 +178,6 @@ Description: documentation for the GTK+ graphical user interface library
 
 Package: gtk2.0-examples
 Section: x11
-Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
@@ -193,9 +196,7 @@ Section: graphics
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
-         ${shlibs:Depends},
-         libgtk2.0-0 (= ${binary:Version}),
-         libgtk2.0-common
+         ${shlibs:Depends}
 Description: pixbuf-based theme for GTK+ 2.x
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -207,13 +208,13 @@ Description: pixbuf-based theme for GTK+ 2.x
 Package: gir1.2-gtk-2.0
 Section: introspection
 Architecture: any
+Multi-Arch: same
 Depends: libgtk2.0-common,
          ${misc:Depends},
          ${shlibs:Depends},
          ${gir:Depends}
-Conflicts: gobject-introspection-repository,
-           gir1.0-gtk-2.0
-Replaces: gir1.0-gtk-2.0
+Provides: gir1.2-gdk-2.0 (= ${binary:Version}),
+          gir1.2-gdkx11-2.0 (= ${binary:Version})
 Description: GTK+ graphical user interface library -- gir bindings
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -229,7 +230,6 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libgtk2.0-0 (= ${binary:Version})
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
 Description: GNOME Accessibility Implementation Library -- shared libraries
  Gail implements ATK interfaces for GTK+ widgets which are dynamically
  loadable at runtime by a GTK+ application. Once loaded, those parts of
@@ -238,12 +238,28 @@ Description: GNOME Accessibility Implementation Library -- shared libraries
  .
  This package contains the shared library.
 
+Package: libgail18-udeb
+Build-Profiles: <!noudeb>
+Package-Type: udeb
+Section: debian-installer
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libgtk2.0-0-udeb (= ${binary:Version})
+Multi-Arch: same
+Description: GNOME Accessibility Implementation Library -- shared libraries
+ Gail implements ATK interfaces for GTK+ widgets which are dynamically
+ loadable at runtime by a GTK+ application. Once loaded, those parts of
+ an application that use standard GTK+ widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the shared library for the Debian installer.
+
 Package: libgail-common
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libgail18 (= ${binary:Version})
-Breaks: libgnome2-0 (<< 2.32.1-2)
 Multi-Arch: same
 Description: GNOME Accessibility Implementation Library -- common modules
  Gail implements ATK interfaces for GTK+ widgets which are dynamically
@@ -255,6 +271,7 @@ Description: GNOME Accessibility Implementation Library -- common modules
 
 Package: libgail-dev
 Architecture: any
+Multi-Arch: same
 Section: libdevel
 Depends: ${misc:Depends},
          libgail18 (= ${binary:Version}),
@@ -270,20 +287,6 @@ Description: GNOME Accessibility Implementation Library -- development files
  of accessibility, without the need to modify the application at all.
  .
  This package contains the development files for Gail.
-
-Package: libgail-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: ${misc:Depends}, libgail18 (= ${binary:Version})
-Recommends: libgtk2.0-0-dbg
-Multi-Arch: same
-Description: Gail libraries and debugging symbols
- Gail is the "GNOME Accessibility Implementation Library".
- .
- This package contains detached debugging symbols.
- .
- Most people will not need this package.
 
 Package: libgail-doc
 Architecture: all
