@@ -1,3 +1,21 @@
+gtk+2.0 (2:2.24.32-3) unstable; urgency=medium
+
+  [Ivaylo Dimitrov]
+  * add hildon patches needed to build libhildon
+  * fix some compiler warnings
+  * hildonize GtkIconView
+  * hildonize gtktreeselection and add it to gtk-treeview patch
+  * GtkTreeView: fix selection
+  * add hildon_icon_view symbols
+  * add hildonize-gtk-immulticontext.diff
+
+  [Merlijn Wajer]
+  * Add hildon patches
+  * port hildonize-gtk-container to buster gtk
+  * port libgtk-2.0-0.symbols to buster gtk
+
+ -- Ivan J. <parazyd@dyne.org>  Thu, 04 Apr 2019 13:22:17 +0200
+
 gtk+2.0 (2.24.32-3) unstable; urgency=medium
 
   * Team upload
