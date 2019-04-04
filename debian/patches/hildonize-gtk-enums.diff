@@ -1,5 +1,7 @@
---- a/gtk/gtkenums.h
-+++ b/gtk/gtkenums.h
+Index: gtk/gtk/gtkenums.h
+===================================================================
+--- gtk.orig/gtk/gtkenums.h	2018-01-03 19:09:53.099961788 +0200
++++ gtk/gtk/gtkenums.h	2018-01-03 19:09:53.099961788 +0200
 @@ -579,6 +579,52 @@
    GTK_DRAG_RESULT_ERROR
  } GtkDragResult;
@@ -53,9 +55,11 @@
  G_END_DECLS
  
  #endif /* __GTK_ENUMS_H__ */
---- a/gtk/Makefile.am
-+++ b/gtk/Makefile.am
-@@ -837,6 +837,7 @@
+Index: gtk/gtk/Makefile.am
+===================================================================
+--- gtk.orig/gtk/Makefile.am	2018-01-03 19:09:53.099961788 +0200
++++ gtk/gtk/Makefile.am	2018-01-03 19:09:53.099961788 +0200
+@@ -845,6 +845,7 @@
  # versions in the build dir. thus a development setup requires
  # srcdir to be writable, passing --disable-rebuilds to
  # ../configure will supress all autogeneration rules.
@@ -63,7 +67,7 @@
  gtkmarshalers.h: stamp-gtkmarshalers.h
  	@true
  stamp-gtkmarshalers.h: @REBUILD@ gtkmarshalers.list
-@@ -844,7 +845,7 @@
+@@ -852,7 +853,7 @@
  	&& (cmp -s xgen-gmlh gtkmarshalers.h || cp xgen-gmlh gtkmarshalers.h) \
  	&& rm -f xgen-gmlh \
  	&& echo timestamp > $(@F)	
@@ -72,7 +76,7 @@
  	(echo "#include \"gtkmarshalers.h\""; \
  	 echo "#include \"gtkalias.h\""; \
  	 $(GLIB_GENMARSHAL) --prefix=_gtk_marshal $(srcdir)/gtkmarshalers.list --body) >> xgen-gmlc \
-@@ -860,7 +861,7 @@
+@@ -868,7 +869,7 @@
  	&& (cmp -s xgen-gmh gtkmarshal.h || cp xgen-gmh gtkmarshal.h) \
  	&& rm -f xgen-gmh \
  	&& echo timestamp > $(@F)
@@ -81,7 +85,7 @@
  	(echo "#include \"gtkmarshal.h\""; \
  	 echo "#include \"gtkalias.h\""; \
  	 $(GLIB_GENMARSHAL) --prefix=gtk_marshal $(srcdir)/gtkmarshal.list --body; \
-@@ -877,7 +878,7 @@
+@@ -885,7 +886,7 @@
  	&& (cmp -s xgen-gtbh gtktypebuiltins.h || cp xgen-gtbh gtktypebuiltins.h ) \
  	&& rm -f xgen-gtbh \
  	&& echo timestamp > $(@F)

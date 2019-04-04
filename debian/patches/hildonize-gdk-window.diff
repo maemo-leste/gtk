@@ -1,6 +1,8 @@
---- a/gdk/gdkwindow.c
-+++ b/gdk/gdkwindow.c
-@@ -6372,6 +6372,32 @@
+Index: gtk/gdk/gdkwindow.c
+===================================================================
+--- gtk.orig/gdk/gdkwindow.c	2018-01-03 19:10:01.663961738 +0200
++++ gtk/gdk/gdkwindow.c	2018-01-03 19:10:01.659961738 +0200
+@@ -6367,6 +6367,32 @@
  }
  
  /**
@@ -33,8 +35,10 @@
   * gdk_window_set_debug_updates:
   * @setting: %TRUE to turn on update debugging
   *
---- a/gdk/gdkwindow.h
-+++ b/gdk/gdkwindow.h
+Index: gtk/gdk/gdkwindow.h
+===================================================================
+--- gtk.orig/gdk/gdkwindow.h	2018-01-03 19:10:01.663961738 +0200
++++ gtk/gdk/gdkwindow.h	2018-01-03 19:10:01.659961738 +0200
 @@ -679,6 +679,7 @@
  
  void       gdk_window_freeze_toplevel_updates_libgtk_only (GdkWindow *window);

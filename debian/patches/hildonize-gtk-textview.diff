@@ -1,5 +1,7 @@
---- a/gtk/gtktextview.c
-+++ b/gtk/gtktextview.c
+Index: gtk/gtk/gtktextview.c
+===================================================================
+--- gtk.orig/gtk/gtktextview.c	2018-01-03 19:10:23.227961613 +0200
++++ gtk/gtk/gtktextview.c	2018-01-03 19:10:23.227961613 +0200
 @@ -89,6 +89,8 @@
  #define DEBUG_VALIDATION_AND_SCROLLING
  #endif
@@ -788,8 +790,10 @@
 +
  #define __GTK_TEXT_VIEW_C__
  #include "gtkaliasdef.c"
---- a/gtk/gtktextview.h
-+++ b/gtk/gtktextview.h
+Index: gtk/gtk/gtktextview.h
+===================================================================
+--- gtk.orig/gtk/gtktextview.h	2018-01-03 19:10:23.227961613 +0200
++++ gtk/gtk/gtktextview.h	2018-01-03 19:10:23.227961613 +0200
 @@ -371,6 +371,18 @@
  /* note that the return value of this changes with the theme */
  GtkTextAttributes* gtk_text_view_get_default_attributes (GtkTextView    *text_view);

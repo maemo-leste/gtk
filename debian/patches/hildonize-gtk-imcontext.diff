@@ -1,5 +1,7 @@
---- a/gtk/gtkimcontext.c
-+++ b/gtk/gtkimcontext.c
+Index: gtk/gtk/gtkimcontext.c
+===================================================================
+--- gtk.orig/gtk/gtkimcontext.c	2018-01-03 19:10:15.171961660 +0200
++++ gtk/gtk/gtkimcontext.c	2018-01-03 19:10:15.167961660 +0200
 @@ -100,6 +100,17 @@
   * in order for the new input method to become available to GTK+ applications.
   */
@@ -425,8 +427,10 @@
 +
  #define __GTK_IM_CONTEXT_C__
  #include "gtkaliasdef.c"
---- a/gtk/gtkimcontext.h
-+++ b/gtk/gtkimcontext.h
+Index: gtk/gtk/gtkimcontext.h
+===================================================================
+--- gtk.orig/gtk/gtkimcontext.h	2018-01-03 19:10:15.171961660 +0200
++++ gtk/gtk/gtkimcontext.h	2018-01-03 19:10:15.167961660 +0200
 @@ -31,6 +31,13 @@
  
  G_BEGIN_DECLS

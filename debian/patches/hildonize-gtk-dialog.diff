@@ -1,5 +1,7 @@
---- a/gtk/gtkdialog.c
-+++ b/gtk/gtkdialog.c
+Index: gtk/gtk/gtkdialog.c
+===================================================================
+--- gtk.orig/gtk/gtkdialog.c	2018-01-03 19:10:20.619961628 +0200
++++ gtk/gtk/gtkdialog.c	2018-01-03 19:10:20.619961628 +0200
 @@ -29,13 +29,20 @@
  #include <stdlib.h>
  #include <string.h>
@@ -616,8 +618,10 @@
   * gtk_dialog_response:
   * @dialog: a #GtkDialog
   * @response_id: response ID 
---- a/gtk/gtkdialog.h
-+++ b/gtk/gtkdialog.h
+Index: gtk/gtk/gtkdialog.h
+===================================================================
+--- gtk.orig/gtk/gtkdialog.h	2018-01-03 19:10:20.619961628 +0200
++++ gtk/gtk/gtkdialog.h	2018-01-03 19:10:20.619961628 +0200
 @@ -159,6 +159,21 @@
  gboolean gtk_dialog_get_has_separator (GtkDialog *dialog);
  #endif

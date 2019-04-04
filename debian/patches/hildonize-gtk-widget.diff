@@ -1,5 +1,7 @@
---- a/gtk/gtkwidget.c
-+++ b/gtk/gtkwidget.c
+Index: gtk/gtk/gtkwidget.c
+===================================================================
+--- gtk.orig/gtk/gtkwidget.c	2018-01-03 19:10:12.707961674 +0200
++++ gtk/gtk/gtkwidget.c	2018-01-03 19:10:12.703961674 +0200
 @@ -54,6 +54,12 @@
  #include "gtkbuildable.h"
  #include "gtkbuilderprivate.h"
@@ -892,8 +894,10 @@
 +
  #define __GTK_WIDGET_C__
  #include "gtkaliasdef.c"
---- a/gtk/gtkwidget.h
-+++ b/gtk/gtkwidget.h
+Index: gtk/gtk/gtkwidget.h
+===================================================================
+--- gtk.orig/gtk/gtkwidget.h	2018-01-03 19:10:12.707961674 +0200
++++ gtk/gtk/gtkwidget.h	2018-01-03 19:10:12.703961674 +0200
 @@ -130,6 +130,14 @@
    GTK_WIDGET_HELP_WHATS_THIS
  } GtkWidgetHelpType;
