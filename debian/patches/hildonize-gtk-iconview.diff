@@ -1,5 +1,7 @@
---- a/gtk/gtkiconview.c
-+++ b/gtk/gtkiconview.c
+Index: gtk/gtk/gtkiconview.c
+===================================================================
+--- gtk.orig/gtk/gtkiconview.c	2018-01-03 19:10:31.039961568 +0200
++++ gtk/gtk/gtkiconview.c	2018-01-03 19:10:31.039961568 +0200
 @@ -40,12 +40,15 @@
  #include "gtkcombobox.h"
  #include "gtktextbuffer.h"
@@ -1281,8 +1283,10 @@
  
  /* Accessibility Support */
  
---- a/gtk/gtkiconview.h
-+++ b/gtk/gtkiconview.h
+Index: gtk/gtk/gtkiconview.h
+===================================================================
+--- gtk.orig/gtk/gtkiconview.h	2018-01-03 19:10:31.039961568 +0200
++++ gtk/gtk/gtkiconview.h	2018-01-03 19:10:31.039961568 +0200
 @@ -46,6 +46,10 @@
  typedef void (* GtkIconViewForeachFunc)     (GtkIconView      *icon_view,
  					     GtkTreePath      *path,

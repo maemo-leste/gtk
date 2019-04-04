@@ -1,5 +1,7 @@
---- a/gtk/gtkcontainer.c
-+++ b/gtk/gtkcontainer.c
+Index: gtk/gtk/gtkcontainer.c
+===================================================================
+--- gtk.orig/gtk/gtkcontainer.c	2018-01-03 19:10:04.983961719 +0200
++++ gtk/gtk/gtkcontainer.c	2018-01-03 19:10:04.979961719 +0200
 @@ -41,7 +41,7 @@
  #include <gobject/gobjectnotifyqueue.c>
  #include <gobject/gvaluecollector.h>
@@ -264,9 +266,11 @@
 +
  #define __GTK_CONTAINER_C__
  #include "gtkaliasdef.c"
---- a/gtk/gtkcontainer.h
-+++ b/gtk/gtkcontainer.h
-@@ -219,6 +219,7 @@
+Index: gtk/gtk/gtkcontainer.h
+===================================================================
+--- gtk.orig/gtk/gtkcontainer.h	2018-01-03 19:10:04.983961719 +0200
++++ gtk/gtk/gtkcontainer.h	2018-01-03 19:10:04.979961719 +0200
+@@ -220,6 +220,7 @@
  					      GList            *children,
  					      GtkDirectionType  direction,
  					      GtkWidget        *old_focus);
