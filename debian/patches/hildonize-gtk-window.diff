@@ -1,5 +1,7 @@
---- a/gtk/gtkwindow.c
-+++ b/gtk/gtkwindow.c
+Index: gtk/gtk/gtkwindow.c
+===================================================================
+--- gtk.orig/gtk/gtkwindow.c	2018-01-03 19:10:07.635961703 +0200
++++ gtk/gtk/gtkwindow.c	2018-01-03 19:10:07.635961703 +0200
 @@ -103,6 +103,7 @@
    PROP_STARTUP_ID,
    
@@ -260,8 +262,10 @@
 +
  #define __GTK_WINDOW_C__
  #include "gtkaliasdef.c"
---- a/gtk/gtkwindow.h
-+++ b/gtk/gtkwindow.h
+Index: gtk/gtk/gtkwindow.h
+===================================================================
+--- gtk.orig/gtk/gtkwindow.h	2018-01-03 19:10:07.635961703 +0200
++++ gtk/gtk/gtkwindow.h	2018-01-03 19:10:07.635961703 +0200
 @@ -279,6 +279,13 @@
                                                  gboolean   setting);
  gboolean   gtk_window_get_deletable            (GtkWindow *window);
