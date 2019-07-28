@@ -98,20 +98,11 @@ installbasedir = $(CURDIR)/debian/install
 
 # configure flags
 configure_flags := \
-			--prefix=/usr \
-			--libdir=/$(LIBDIR) \
-			--mandir=\$${prefix}/share/man \
-			--infodir=\$${prefix}/share/info \
-			--sysconfdir=/etc \
 			--enable-test-print-backend \
 			--enable-introspection=no \
 			--enable-shared \
 			--disable-static \
-			--with-xinput=yes \
-			--build=$(DEB_BUILD_GNU_TYPE)
-ifneq ($(DEB_BUILD_GNU_TYPE),$(DEB_HOST_GNU_TYPE))
-	configure_flags += --host=$(DEB_HOST_GNU_TYPE)
-endif
+			--with-xinput=yes
 
 shared_configure_flags := $(configure_flags) \
 			--enable-introspection \
@@ -150,16 +141,16 @@ override_dh_auto_configure: $(addprefix $(STAMP_DIR)/configure-stamp-, $(FLAVORS
 $(STAMP_DIR)/configure-stamp-%:
 	mkdir -p $(STAMP_DIR)
 	mkdir -p $(builddir)
-	cd $(builddir) && \
-		CFLAGS="$(CFLAGS)" \
-		LDFLAGS="$(LDFLAGS)" \
-			../../../configure $(call flavor_get,configure_flags)
+	dh_auto_configure \
+		--builddirectory=$(builddir) \
+		-- \
+		$(call flavor_get,configure_flags)
 	touch $@
 
 .NOTPARALLEL: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
 $(STAMP_DIR)/build-stamp-%: $(STAMP_DIR)/configure-stamp-%
 	LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH) \
-		$(MAKE) $(PARALLEL_FLAGS) -C $(builddir)
+		dh_auto_build --builddirectory=$(builddir)
 	touch $@
 
 override_dh_auto_build-arch: $(addprefix $(STAMP_DIR)/build-stamp-, $(FLAVORS))
@@ -169,17 +160,17 @@ override_dh_auto_build-indep: $(addprefix $(STAMP_DIR)/build-stamp-, shared)
 	:
 
 override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	# setting LD_LIBRARY_PATH for "make check" might be needed in the
 	# future, but doesn't seem necessary right now
 	#LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH)
 	# testsuite failures are ignored
-	-$(MAKE) -C $(CURDIR)/debian/build/shared check
-	touch $@
+	-dh_auto_test --builddirectory=$(CURDIR)/debian/build/shared
+endif
 
 $(STAMP_DIR)/install-stamp-%: $(STAMP_DIR)/build-stamp-%
 	mkdir -p $(installdir)
-	$(MAKE) -C $(builddir) install \
-		DESTDIR=$(installdir)
+	dh_auto_install --builddirectory=$(builddir) --destdir=$(installdir)
 	touch $@
 
 override_dh_auto_install-arch: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))
