@@ -21,6 +21,9 @@ gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
       d/p/002_static-linking-dont-build-perf.patch,
       d/p/003_gdk.pc_privates.patch:
       Drop patches relating to static linking, which are no longer useful
+  * d/patches: Update to upstream gtk-2-24 branch, commit
+    2.24.32-56-gcd196c4f1d (disregarding Windows- and macOS-specific
+    changes which are not relevant for Debian)
 
  -- Simon McVittie <smcv@debian.org>  Sun, 28 Jul 2019 17:35:05 +0100
 
