@@ -24,6 +24,7 @@ gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
   * d/patches: Update to upstream gtk-2-24 branch, commit
     2.24.32-56-gcd196c4f1d (disregarding Windows- and macOS-specific
     changes which are not relevant for Debian)
+  * d/rules: Rewrite using dh
 
  -- Simon McVittie <smcv@debian.org>  Sun, 28 Jul 2019 17:35:05 +0100
 
