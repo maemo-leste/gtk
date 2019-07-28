@@ -1,0 +1,4 @@
+dir_to_symlink /usr/share/doc/libgtk2.0-doc/gdk2 ../../gtk-doc/html/gdk2 2.24.32-4~
+dir_to_symlink /usr/share/doc/libgtk2.0-doc/gtk2 ../../gtk-doc/html/gtk2 2.24.32-4~
+symlink_to_dir /usr/share/gtk-doc/html/gdk2 ../../doc/libgtk2.0-doc/gdk2 2.24.32-4~
+symlink_to_dir /usr/share/gtk-doc/html/gtk2 ../../doc/libgtk2.0-doc/gtk2 2.24.32-4~
