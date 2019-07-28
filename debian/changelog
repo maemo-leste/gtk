@@ -1,9 +1,28 @@
 gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
 
+  [ Jeremy Bicha ]
+  * Stop using gnome-get-source
+
+  [ Simon McVittie ]
   * d/*.links.in: Remove dangling symlinks to changelog.gz, which is
     no longer installed since 2.24.32-3 (Closes: #907848)
+  * d/tests/build: Add a basic autopkgtest
+  * Skip building udebs under the noudeb build profile
+  * Unconditionally use multiarch libdir
+  * Call configure by relative path, for more reproducible builds.
+    This avoids hard-coding the build path into the binaries.
+  * Stop forcing xz compression, let dpkg-deb decide
+  * Disable the static library.
+    The static library is not useful in practice, because its dependencies
+    atk, gdk-pixbuf and pangocairo are only available as shared libraries.
+    If a derived executable can use those shared libraries, then it can
+    equally well use the shared GTK library.
+    - d/p/001_static-linking-dont-query-immodules.patch,
+      d/p/002_static-linking-dont-build-perf.patch,
+      d/p/003_gdk.pc_privates.patch:
+      Drop patches relating to static linking, which are no longer useful
 
- -- Simon McVittie <smcv@debian.org>  Mon, 03 Sep 2018 07:40:11 +0100
+ -- Simon McVittie <smcv@debian.org>  Sun, 28 Jul 2019 17:35:05 +0100
 
 gtk+2.0 (2.24.32-3) unstable; urgency=medium
 
