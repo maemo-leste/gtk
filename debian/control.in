@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: @GNOME_TEAM@
-Build-Depends: debhelper (>= 10~),
+Build-Depends: debhelper (>= 11~),
                gettext,
                gtk-doc-tools (>= 1.11),
                xsltproc,

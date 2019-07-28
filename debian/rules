@@ -228,7 +228,10 @@ override_dh_installdocs-indep:
 	# do not merge the calls: dh_installdocs will only install some files
 	# in the first package
 	dh_installdocs -p$(COMMON_PKG) $(DH_INSTALLDOCS_FILES)
-	dh_installdocs -p$(DOC_PKG) -X.in $(DH_INSTALLDOCS_FILES)
+	# We need to install AUTHORS, NEWS.gz and README.gz in /u/s/d/l-doc,
+	# not -dev according to debhelper 11's defaults, otherwise it would
+	# have file conflicts
+	dh_installdocs -p$(DOC_PKG) --doc-main-package=$(DOC_PKG) -X.in $(DH_INSTALLDOCS_FILES)
 	# install copyright in all packages; the -p is for the special behavior
 	# of dh_installdocs (ship README.Debian etc. in the first package)
 	dh_installdocs -p$(COMMON_PKG) -X.in -i
