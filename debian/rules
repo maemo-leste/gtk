@@ -271,5 +271,8 @@ override_dh_shlibdeps:
 	dh_shlibdeps --remaining-packages -Xlibpixmap.so
 
 override_dh_missing:
-	perl -w debian/dh_listmissing.pl $(foreach f,$(FLAVORS),$(subst $(CURDIR)/,,$(installbasedir))/$(f)) 2>&1 | \
-	    egrep -v '(\.la|$(LIBDIR)/gtk-2.0/$(GTK_BINARY_VERSION)/[^/]+/[^/]+\.a) has been installed' >&2
+	# We use the GTK 3 version of gtk-update-icon-cache
+	rm -f debian/install/*/usr/bin/gtk-update-icon-cache
+	rm -f debian/install/*/usr/share/man/man1/gtk-update-icon-cache.1
+	# Failing to install anything else is an error
+	dh_missing --fail-missing
