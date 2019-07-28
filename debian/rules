@@ -124,11 +124,6 @@ shared_udeb_configure_flags := $(configure_flags) \
 			--disable-xdamage \
 			--disable-xfixes \
 			--disable-xrandr
-static_configure_flags := $(configure_flags) \
-			--with-included-loaders=yes \
-			--disable-modules \
-			--disable-shared \
-			--enable-static
 
 DH_INSTALLDOCS_FILES := NEWS README AUTHORS
 
