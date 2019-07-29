@@ -61,6 +61,17 @@ BIN_PKG := libgtk$(APIVER)-bin
 EXAMPLES_PKG := gtk$(APIVER)-examples
 PIXBUF_PKG := gtk2-engines-pixbuf
 
+# Avoid test failures on buildd environments
+export HOME=$(CURDIR)/debian/build
+export XDG_RUNTIME_DIR=$(HOME)
+# Put these back to their defaults if we are not running with a clean
+# environment, so that they are based on the temporary $HOME above
+unexport XDG_CACHE_HOME
+unexport XDG_CONFIG_DIRS
+unexport XDG_CONFIG_HOME
+unexport XDG_DATA_HOME
+unexport XDG_DATA_DIRS
+
 # package groups, used in rule dependencies and in cleanup
 BINARY_INDEP_PKGS := $(COMMON_PKG) $(DOC_PKG) libgail-doc
 BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail18-udeb libgail-dbg libgail-dev libgail-common
