@@ -1,8 +1,16 @@
+usr/share/doc/@DOC_PKG@/faq usr/share/doc/@DEV_PKG@/faq
 usr/share/doc/@DOC_PKG@/faq usr/share/gtk-doc/html/gtk-faq
+usr/share/doc/@DOC_PKG@/tutorial usr/share/doc/@DEV_PKG@/tutorial
 usr/share/doc/@DOC_PKG@/tutorial usr/share/gtk-doc/html/gtk-tutorial
+usr/share/gtk-doc/html/atk usr/share/doc/@DEV_PKG@/atk
 usr/share/gtk-doc/html/atk usr/share/doc/@DOC_PKG@/atk
+usr/share/gtk-doc/html/gdk2 usr/share/doc/@DEV_PKG@/gdk2
 usr/share/gtk-doc/html/gdk2 usr/share/doc/@DOC_PKG@/gdk2
+usr/share/gtk-doc/html/glib usr/share/doc/@DEV_PKG@/glib
 usr/share/gtk-doc/html/glib usr/share/doc/@DOC_PKG@/glib
+usr/share/gtk-doc/html/gobject usr/share/doc/@DEV_PKG@/gobject
 usr/share/gtk-doc/html/gobject usr/share/doc/@DOC_PKG@/gobject
+usr/share/gtk-doc/html/gtk2 usr/share/doc/@DEV_PKG@/gtk2
 usr/share/gtk-doc/html/gtk2 usr/share/doc/@DOC_PKG@/gtk2
+usr/share/gtk-doc/html/pango usr/share/doc/@DEV_PKG@/pango
 usr/share/gtk-doc/html/pango usr/share/doc/@DOC_PKG@/pango
