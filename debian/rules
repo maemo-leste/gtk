@@ -176,7 +176,7 @@ ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	# future, but doesn't seem necessary right now
 	#LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH)
 	# testsuite failures are ignored
-	-dh_auto_test --builddirectory=$(CURDIR)/debian/build/shared
+	-dh_auto_test --builddirectory=$(CURDIR)/debian/build/shared -- -k
 endif
 
 $(STAMP_DIR)/install-stamp-%: $(STAMP_DIR)/build-stamp-%
