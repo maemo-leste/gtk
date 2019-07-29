@@ -290,3 +290,6 @@ override_dh_missing:
 	rm -f debian/install/*/usr/share/man/man1/gtk-update-icon-cache.1
 	# Failing to install anything else is an error
 	dh_missing --fail-missing
+
+# Skipped for now to make diffoscope work better
+override_dh_dwz:
