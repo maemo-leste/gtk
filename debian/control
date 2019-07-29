@@ -38,7 +38,9 @@ Build-Depends: debhelper (>= 11~),
                docbook-xml,
                docbook-xsl,
                docbook-utils,
-               libxml2-utils
+               libxml2-utils,
+               xauth <!nocheck>,
+               xvfb <!nocheck>
 Build-Depends-Indep: libglib2.0-doc,
                      libatk1.0-doc,
                      libpango1.0-doc,
