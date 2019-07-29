@@ -9,8 +9,6 @@ gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
   * d/tests/build: Add a basic autopkgtest
   * Skip building udebs under the noudeb build profile
   * Unconditionally use multiarch libdir
-  * Call configure by relative path, for more reproducible builds.
-    This avoids hard-coding the build path into the binaries.
   * Stop forcing xz compression, let dpkg-deb decide
   * Disable the static library.
     The static library is not useful in practice, because its dependencies
@@ -25,8 +23,20 @@ gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
     2.24.32-56-gcd196c4f1d (disregarding Windows- and macOS-specific
     changes which are not relevant for Debian)
   * d/rules: Rewrite using dh
+  * Install documentation in /usr/share/gtk-doc, with symlinks in /u/s/doc.
+    gtk-doc documentation is technically a functional interface (which
+    Policy §12.3 says can't be in /usr/share/doc), because other packages
+    can build-depend on it and use it to fix cross-references.
+  * libgail-doc: Use /usr/share/doc symlink in doc-base registration.
+    Otherwise Lintian complains.
+  * Build-depend on xauth and xvfb for build-time tests
+  * Set up HOME, XDG_RUNTIME_DIR so test have some chance of succeeding
+  * Run tests to completion instead of stopping at first failure
+  * Use debhelper-compat 12.
+    Disable dwz for now so that diffoscope doesn't report spurious
+    differences.
 
- -- Simon McVittie <smcv@debian.org>  Sun, 28 Jul 2019 17:35:05 +0100
+ -- Simon McVittie <smcv@debian.org>  Mon, 29 Jul 2019 10:53:33 +0100
 
 gtk+2.0 (2.24.32-3) unstable; urgency=medium
 
