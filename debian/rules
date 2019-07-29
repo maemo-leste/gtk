@@ -255,6 +255,10 @@ override_dh_installdocs-arch:
 	# of dh_installdocs (ship README.Debian etc. in the first package)
 	dh_installdocs -p$(PIXBUF_PKG) -a
 
+override_dh_dwz:
+	# Skip udebs to work around #933212
+	dh_dwz -N$(UDEB_PKG) -Nlibgail18-udeb
+
 override_dh_strip:
 	dh_strip --dbgsym-migration="libgtk2.0-0-dbg (<< 2.24.31-3~)" -N$(UDEB_PKG) -Nlibgail18 -Nlibgail18-udeb -Nlibgail-common
 	dh_strip -plibgail18 -plibgail-common --dbgsym-migration="libgail-dbg (<< 2.24.31-3~)"
@@ -290,6 +294,3 @@ override_dh_missing:
 	rm -f debian/install/*/usr/share/man/man1/gtk-update-icon-cache.1
 	# Failing to install anything else is an error
 	dh_missing --fail-missing
-
-# Skipped for now to make diffoscope work better
-override_dh_dwz:
