@@ -172,6 +172,7 @@ override_dh_auto_build-indep: $(addprefix $(STAMP_DIR)/build-stamp-, shared)
 
 override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	mkdir -p debian/build/.local/share
 	# setting LD_LIBRARY_PATH for "make check" might be needed in the
 	# future, but doesn't seem necessary right now
 	#LD_LIBRARY_PATH=$(builddir)/gtk/.libs:$(builddir)/gdk/.libs:$(LD_LIBRARY_PATH)
