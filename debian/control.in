@@ -248,7 +248,6 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          @UDEB_PKG@ (= ${binary:Version})
-Multi-Arch: same
 Description: GNOME Accessibility Implementation Library -- shared libraries
  Gail implements ATK interfaces for GTK+ widgets which are dynamically
  loadable at runtime by a GTK+ application. Once loaded, those parts of
