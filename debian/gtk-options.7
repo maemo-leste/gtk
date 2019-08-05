@@ -2,22 +2,22 @@
 .\" Copyright 2003  Jochen Voss <voss@debian.org>
 .\" You may redistribute and modify this manual page
 .\" under the terms of the GPL.
-.TH gtk\-options 7 "2003\-10\-20" "GTK+ 1.2" "GTK+ User\'s Manual"
+.TH gtk\-options 7 "2003\-10\-20" "GTK 2" "GTK User\'s Manual"
 .SH NAME
-gtk\-options \- Standard Command Line Options for GTK+ Programs
+gtk\-options \- Standard Command Line Options for GTK Programs
 .SH SYNOPSIS
 .IR "program " [ "standard options" "] [" "specific options" "] " arguments
 .SH DESCRIPTION
 This manual page describes the command line options, which are common
-to all GTK+ based applications.
+to all GTK based applications.
 .SH OPTIONS
-.SS GTK+ OPTIONS
+.SS GTK OPTIONS
 .TP
 \fB\-\-gtk\-module\fR=\fIMODULE\fR
 Load an additional Gtk module.
 .TP
 \fB\-\-gtk\-debug\fR=\fIFLAGS\fR
-A colon separated list of GTK+ debugging flags to set.
+A colon separated list of GTK debugging flags to set.
 Valid flags are
 .IR objects ,
 .IR misc ,
@@ -30,7 +30,7 @@ The special value
 enables all flags.
 .TP
 \fB\-\-gtk\-no\-debug\fR=\fIFLAGS\fR
-GTK+ debugging flags to unset.  Use this options to override the
+GTK debugging flags to unset.  Use this options to override the
 .I GTK_DEBUG
 environment variable.
 .TP
@@ -97,10 +97,10 @@ Use this options to override the
 environment variable.
 .SH "SEE ALSO"
 .BR X (7x),
-the GTK+ documentation, and
+the GTK documentation, and
 the GDK documentation.
 .PP
-For most GTK+ programs there will be additional command line options,
+For most GTK programs there will be additional command line options,
 which are specific to the program.  These will be explained in the
 application\'s documentation.
 .SH AUTHOR

@@ -4,7 +4,7 @@ Subject: Set the default gtk-fallback-icon-theme
 
 [jbicha: Use Adwaita instead of gnome to match gtk3]
 
-Similar to GTK+ 3 commit 2488b954f24c01f99995ff22898628c57b4aedc1 in
+Similar to GTK 3 commit 2488b954f24c01f99995ff22898628c57b4aedc1 in
 3.13.2.
 
 Bug-Debian: https://bugs.debian.org/421353

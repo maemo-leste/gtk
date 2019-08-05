@@ -15,7 +15,7 @@ As of April 2018 this is still required by:
 - sugar-artwork-0.88 (no longer in unstable)
 - tamil-gtk2im
 
-The equivalent patch in GTK+ 3 was removed in 3.18.0-1.
+The equivalent patch in GTK 3 was removed in 3.18.0-1.
 
 Forwarded: not-needed, Debian-specific
 ---

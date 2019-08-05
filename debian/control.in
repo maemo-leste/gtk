@@ -65,9 +65,9 @@ Recommends: libgail-common,
 Suggests: librsvg2-common,
           gvfs
 Multi-Arch: same
-Description: GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: GTK graphical user interface library - old version
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
@@ -81,11 +81,11 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Provides: @GTK_BINVER_DEP@
-Description: GTK+ graphical user interface library - minimal runtime
+Description: GTK graphical user interface library - minimal runtime
  This is a udeb, or a microdeb, for the debian-installer.
  .
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
@@ -98,9 +98,9 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: @SHARED_PKG@
 Multi-Arch: foreign
-Description: common files for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: common files for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
@@ -114,9 +114,9 @@ Depends: ${misc:Depends},
          @COMMON_PKG@,
          gtk-update-icon-cache
 Multi-Arch: foreign
-Description: programs for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: programs for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
@@ -151,14 +151,14 @@ Depends: @SHARED_PKG@ (= ${binary:Version}),
 Recommends: python (>= 2.4),
             debhelper
 Suggests: @DOC_PKG@
-Description: development files for the GTK+ library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: development files for the GTK library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
  This package contains the header files and static libraries which are
- needed for developing GTK+ applications.
+ needed for developing GTK applications.
 
 Package: @DOC_PKG@
 Section: doc
@@ -169,13 +169,13 @@ Recommends: libglib2.0-doc,
             libpango1.0-doc
 Suggests: devhelp
 Multi-Arch: foreign
-Description: documentation for the GTK+ graphical user interface library
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: documentation for the GTK graphical user interface library
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
- This package contains the HTML documentation for the GTK+ library
+ This package contains the HTML documentation for the GTK library
  in /usr/share/doc/@DOC_PKG@/ .
 
 Package: @EXAMPLES_PKG@
@@ -184,14 +184,14 @@ Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          @SHARED_PKG@ (= ${binary:Version})
-Description: example files for GTK+ 2.0
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: example files for GTK 2
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
  This package contains the example files and a demonstration program
- for GTK+-2.0.
+ for GTK 2.
 
 Package: @PIXBUF_PKG@
 Section: graphics
@@ -199,9 +199,9 @@ Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Description: pixbuf-based theme for GTK+ 2.x
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: pixbuf-based theme for GTK 2
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
@@ -217,9 +217,9 @@ Depends: @COMMON_PKG@,
          ${gir:Depends}
 Provides: gir1.2-gdk-2.0 (= ${binary:Version}),
           gir1.2-gdkx11-2.0 (= ${binary:Version})
-Description: GTK+ graphical user interface library -- gir bindings
- GTK+ is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK+ is suitable
+Description: GTK graphical user interface library -- gir bindings
+ GTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK is suitable
  for projects ranging from small one-off tools to complete application
  suites.
  .
@@ -233,9 +233,9 @@ Depends: ${misc:Depends},
          @SHARED_PKG@ (= ${binary:Version})
 Multi-Arch: same
 Description: GNOME Accessibility Implementation Library -- shared libraries
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
+ Gail implements ATK interfaces for GTK widgets which are dynamically
+ loadable at runtime by a GTK application. Once loaded, those parts of
+ an application that use standard GTK widgets will have a basic level
  of accessibility, without the need to modify the application at all.
  .
  This package contains the shared library.
@@ -249,9 +249,9 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          @UDEB_PKG@ (= ${binary:Version})
 Description: GNOME Accessibility Implementation Library -- shared libraries
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
+ Gail implements ATK interfaces for GTK widgets which are dynamically
+ loadable at runtime by a GTK application. Once loaded, those parts of
+ an application that use standard GTK widgets will have a basic level
  of accessibility, without the need to modify the application at all.
  .
  This package contains the shared library for the Debian installer.
@@ -263,9 +263,9 @@ Depends: ${misc:Depends},
          libgail18 (= ${binary:Version})
 Multi-Arch: same
 Description: GNOME Accessibility Implementation Library -- common modules
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
+ Gail implements ATK interfaces for GTK widgets which are dynamically
+ loadable at runtime by a GTK application. Once loaded, those parts of
+ an application that use standard GTK widgets will have a basic level
  of accessibility, without the need to modify the application at all.
  .
  This package contains core shared libraries.
@@ -282,9 +282,9 @@ Depends: ${misc:Depends},
          libatk1.0-dev (>= 1.13.0)
 Suggests: libgail-doc
 Description: GNOME Accessibility Implementation Library -- development files
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
+ Gail implements ATK interfaces for GTK widgets which are dynamically
+ loadable at runtime by a GTK application. Once loaded, those parts of
+ an application that use standard GTK widgets will have a basic level
  of accessibility, without the need to modify the application at all.
  .
  This package contains the development files for Gail.
@@ -296,9 +296,9 @@ Depends: ${misc:Depends}
 Suggests: devhelp
 Multi-Arch: foreign
 Description: documentation files of the Gail library
- Gail implements ATK interfaces for GTK+ widgets which are dynamically
- loadable at runtime by a GTK+ application. Once loaded, those parts of
- an application that use standard GTK+ widgets will have a basic level
+ Gail implements ATK interfaces for GTK widgets which are dynamically
+ loadable at runtime by a GTK application. Once loaded, those parts of
+ an application that use standard GTK widgets will have a basic level
  of accessibility, without the need to modify the application at all.
  .
  This package contains the documentation files for Gail.

@@ -2,7 +2,7 @@ From: Cyril Brulebois <kibi@debian.org>
 Date: Fri, 6 Apr 2018 09:22:20 +0100
 Subject: Support disabling X11 extensions
 
-We want this in Debian as we build GTK+ with extensions enabled for the
+We want this in Debian as we build GTK with extensions enabled for the
 normal build, but disable them for the special build that will be used
 in the graphical installer, because it needs to be as small as possible.
 

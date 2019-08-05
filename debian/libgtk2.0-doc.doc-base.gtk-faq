@@ -1,10 +1,10 @@
 Document: gtk2-faq
-Title: GTK+2.0 Frequently Asked Questions
+Title: GTK 2 Frequently Asked Questions
 Author: Tony Gale, Shawn Amundson, and Emmanuel Deloget
 Abstract: This document is intended to answer questions that are
- likely to be frequently asked by programmers using the GTK+ 
- graphical user interface library, or people who are just looking at 
- using GTK+, GNOME, or GIMP.
+ likely to be frequently asked by programmers using the GTK
+ graphical user interface library, or people who are just looking at
+ using GTK, GNOME, or GIMP.
 Section: Programming/C
 
 Format: HTML
