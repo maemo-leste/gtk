@@ -23,20 +23,30 @@ gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
     2.24.32-56-gcd196c4f1d (disregarding Windows- and macOS-specific
     changes which are not relevant for Debian)
   * d/rules: Rewrite using dh
-  * Install documentation in /usr/share/gtk-doc, with symlinks in /u/s/doc.
-    gtk-doc documentation is technically a functional interface (which
-    Policy §12.3 says can't be in /usr/share/doc), because other packages
-    can build-depend on it and use it to fix cross-references.
-  * libgail-doc: Use /usr/share/doc symlink in doc-base registration.
-    Otherwise Lintian complains.
-  * Build-depend on xauth and xvfb for build-time tests
-  * Set up HOME, XDG_RUNTIME_DIR so test have some chance of succeeding
-  * Run tests to completion instead of stopping at first failure
-  * Use debhelper-compat 12.
-    Disable dwz for now so that diffoscope doesn't report spurious
-    differences.
+  * Use debhelper-compat 12
+  * API documentation:
+    - Install documentation in /usr/share/gtk-doc, with symlinks in /u/s/doc.
+      gtk-doc documentation is technically a functional interface (which
+      Policy §12.3 says can't be in /usr/share/doc), because other packages
+      can build-depend on it and use it to fix cross-references.
+    - Install symlinks to gtk-doc in both /usr/share/doc/libgtk2.0-doc
+      (traditional location) and /usr/share/doc/libgtk2.0-dev ("main package"
+      for developer documentation, as recommended in Policy §12.3).
+    - libgail-doc: Use /usr/share/doc symlink in doc-base registration.
+      Otherwise Lintian complains.
+  * Build-time tests:
+    - Build-depend on xauth and xvfb for build-time tests
+    - Set up HOME, XDG_RUNTIME_DIR so tests have some chance of succeeding
+    - Run tests to completion instead of stopping at first failure
+    - Pre-create .local/share in temporary home directory.
+      In GTK 2, the recent-manager doesn't automatically do this (upstream
+      commit 3d7a2d78 in GTK 3).
+  * Remove Multi-Arch field from libgail18-udeb
+    udebs don't participate in Multi-Arch, so this causes Lintian warnings.
+  * Refer to GTK 2, not GTK+2.0, in packaging files.
+    GTK+ was renamed to GTK in February 2019.
 
- -- Simon McVittie <smcv@debian.org>  Mon, 29 Jul 2019 10:53:33 +0100
+ -- Simon McVittie <smcv@debian.org>  Mon, 05 Aug 2019 07:53:08 +0100
 
 gtk+2.0 (2.24.32-3) unstable; urgency=medium
 
