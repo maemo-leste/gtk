@@ -1,0 +1,26 @@
+From: Petr Viktorin <encukou@gmail.com>
+Date: Tue, 3 Sep 2019 14:56:14 +0200
+Subject: gtk-builder-convert: Update bug report URL
+
+Also, use a newline instead of period at the end to make the
+URL easy to copy
+
+Origin: upstream, 2.24.33, commit:b5ea5a0cf1f12be5072b9f06d1127a8977414916
+---
+ gtk/gtk-builder-convert | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/gtk/gtk-builder-convert b/gtk/gtk-builder-convert
+index a16f83b..b1faba8 100755
+--- a/gtk/gtk-builder-convert
++++ b/gtk/gtk-builder-convert
+@@ -34,7 +34,8 @@ When OUTPUT is -, write to standard output.
+ Examples:
+   gtk-builder-convert preference.glade preferences.ui
+ 
+-Report bugs to http://bugzilla.gnome.org/."""
++Report bugs to https://gitlab.gnome.org/GNOME/gtk/issues/new
++"""
+ 
+ from __future__ import print_function
+ import getopt

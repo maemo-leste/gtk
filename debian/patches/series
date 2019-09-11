@@ -19,6 +19,10 @@ Consistently-use-g_stat-and-GStatBuf.patch
 Revert-gdk-deactivation-activate-window-on-keyboard-grabs.patch
 icontheme-Fix-annotations-on-array-arguments.patch
 atk-key-Always-convert-control-character-events-into-key-.patch
+Fix-use-after-free-due-to-unexpected-unref-of-context-def.patch
+Make-gtk-builder-convert-compatible-with-Python-3.patch
+gtk-builder-convert-Remove-compat-code-for-Python-2.3-and.patch
+gtk-builder-convert-Update-bug-report-URL.patch
 004_gtk+-ximian-gtk2-filesel-navbutton-5.patch
 005_support_disabling_x11_extensions.patch
 015_default-fallback-icon-theme.patch

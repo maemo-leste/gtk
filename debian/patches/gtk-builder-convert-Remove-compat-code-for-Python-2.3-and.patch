@@ -1,0 +1,40 @@
+From: Petr Viktorin <encukou@gmail.com>
+Date: Tue, 3 Sep 2019 14:53:05 +0200
+Subject: gtk-builder-convert: Remove compat code for Python 2.3 and below
+
+Origin: upstream, 2.24.33, commit:4f8efe3ae09ee69657b83399a118b5252f25d830
+---
+ gtk/gtk-builder-convert | 13 +------------
+ 1 file changed, 1 insertion(+), 12 deletions(-)
+
+diff --git a/gtk/gtk-builder-convert b/gtk/gtk-builder-convert
+index 41f7a8c..a16f83b 100755
+--- a/gtk/gtk-builder-convert
++++ b/gtk/gtk-builder-convert
+@@ -48,12 +48,7 @@ DIALOGS = ['GtkDialog',
+            'GtkMessageDialog']
+ WINDOWS = ['GtkWindow'] + DIALOGS
+ 
+-# The subprocess is only available in Python 2.4+
+-try:
+-    import subprocess
+-    subprocess # pyflakes
+-except ImportError:
+-    subprocess = None
++import subprocess
+ 
+ def get_child_nodes(node):
+     assert node.tagName == 'object'
+@@ -271,12 +266,6 @@ class GtkBuilderConverter(object):
+         for node in self._dom.getElementsByTagName("accessibility"):
+             self._convert_accessibility(node)
+ 
+-        # Output the newly created root objects and sort them
+-        # by attribute id
+-        # FIXME: Use sorted(self.root_objects,
+-        #                   key=lambda n: n.getAttribute('id'),
+-        #                   reverse=True):
+-        # when we can depend on python 2.4 or higher
+         root_objects = self.root_objects[:]
+         root_objects.sort(key=lambda a: a.getAttribute('id'), reverse=True)
+         for obj in root_objects:
