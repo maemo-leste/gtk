@@ -139,7 +139,7 @@ debian/dh_gtkmodules.1: debian/dh_gtkmodules
 	cd debian && pod2man -c "Gtk" -r "$(DEB_VERSION)" dh_gtkmodules dh_gtkmodules.1
 
 %:
-	dh $@ --with=autoreconf --with=gir
+	dh $@ --with=autoreconf --with=gir --with=python3
 
 override_dh_autoreconf:
 	mkdir -p m4
@@ -183,6 +183,7 @@ endif
 $(STAMP_DIR)/install-stamp-%: $(STAMP_DIR)/build-stamp-%
 	mkdir -p $(installdir)
 	dh_auto_install --builddirectory=$(builddir) --destdir=$(installdir)
+	sed -i -e '1s,^#!.*python.*,#!/usr/bin/python3,' debian/install/shared/usr/bin/gtk-builder-convert
 	touch $@
 
 override_dh_auto_install-arch: $(addprefix $(STAMP_DIR)/install-stamp-, $(FLAVORS))

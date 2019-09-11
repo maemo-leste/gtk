@@ -45,6 +45,10 @@ gtk+2.0 (2.24.32-4) UNRELEASED; urgency=medium
     udebs don't participate in Multi-Arch, so this causes Lintian warnings.
   * Refer to GTK 2, not GTK+2.0, in packaging files.
     GTK+ was renamed to GTK in February 2019.
+  * Convert gtk-builder-convert into a Python 3 script.
+    Run dh_python3 for it: downgrading its dependency to a Recommends no
+    longer seems appropriate when libglib2.0-dev-bin Depends on python3
+    anyway.
 
  -- Simon McVittie <smcv@debian.org>  Mon, 05 Aug 2019 07:53:08 +0100
 
