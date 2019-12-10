@@ -1,6 +1,6 @@
 gtk+2.0 (2.24.32-5) UNRELEASED; urgency=medium
 
-  * debian/tests/build: 
+  * debian/tests/build:
     - Use the correct compiler for proposed autopkgtest cross-architecture
       testing support.
 
