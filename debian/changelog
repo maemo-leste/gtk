@@ -7,6 +7,7 @@ gtk+2.0 (2.24.32-5) UNRELEASED; urgency=medium
 
   [ Simon McVittie ]
   * d/tests/build: Fix shellcheck warnings
+  * d/upstream/metadata: Add upstream URLs
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 10 Dec 2019 11:51:15 +0100
 
