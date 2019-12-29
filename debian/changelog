@@ -3,7 +3,7 @@ gtk+2.0 (2.24.32-5) UNRELEASED; urgency=medium
   [ Sebastien Bacher ]
   * debian/tests/build:
     - Use the correct compiler for proposed autopkgtest cross-architecture
-      testing support.
+      testing support (Closes: #946295)
 
   [ Simon McVittie ]
   * d/tests/build: Fix shellcheck warnings
