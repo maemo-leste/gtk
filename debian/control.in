@@ -149,7 +149,7 @@ Depends: @SHARED_PKG@ (= ${binary:Version}),
          libxfixes-dev (>= 1:3.0.0-3),
          libxcomposite-dev (>= 1:0.2.0-3),
          libxdamage-dev (>= 1:1.0.1-3),
-         pkg-config (>= 0.26-1),
+         pkg-config,
          libxml2-utils
 Recommends: debhelper
 Suggests: @DOC_PKG@
@@ -280,7 +280,7 @@ Depends: ${misc:Depends},
          libgail18 (= ${binary:Version}),
          libgail-common (= ${binary:Version}),
          @DEV_PKG@ (= ${binary:Version}),
-         pkg-config (>= 0.26-1),
+         pkg-config,
          libatk1.0-dev (>= 1.13.0)
 Suggests: libgail-doc
 Description: GNOME Accessibility Implementation Library -- development files
