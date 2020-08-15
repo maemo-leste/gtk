@@ -18,9 +18,12 @@ to be readily available, but is not a popular choice within Vietnam,
 where the Telex or VNI input modes are preferred.
 
 [smcv: Add a summary of the Ubuntu bug]
+
+Bug: https://gitlab.gnome.org/GNOME/gtk/-/issues/183
 Bug-Debian: https://bugs.debian.org/895043
 Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/gtk+2.0/+bug/191451
-Forwarded: no
+Signed-off-by: Emmanuele Bassi <ebassi@gnome.org>
+Applied-upstream: 2.24.33, commit:88ac9188a30346672731c4336ae92186f21cf3a0
 ---
  modules/input/imviqr.c | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)

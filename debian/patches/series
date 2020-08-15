@@ -23,10 +23,12 @@ Fix-use-after-free-due-to-unexpected-unref-of-context-def.patch
 Make-gtk-builder-convert-compatible-with-Python-3.patch
 gtk-builder-convert-Remove-compat-code-for-Python-2.3-and.patch
 gtk-builder-convert-Update-bug-report-URL.patch
+022_disable-viqr-im-for-vi-locale.patch
+Resolve-GIMP-segfault-from-accessing-memory-past-end-of-p.patch
+build-Fix-out-of-source-make-dist.patch
 004_gtk+-ximian-gtk2-filesel-navbutton-5.patch
 005_support_disabling_x11_extensions.patch
 015_default-fallback-icon-theme.patch
-022_disable-viqr-im-for-vi-locale.patch
 042_treeview_single-focus.patch
 044_tracker_fts.patch
 060_ignore-random-icons.patch
