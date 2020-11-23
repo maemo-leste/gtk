@@ -1,4 +1,6 @@
-gtk+2.0 (2.24.32-5) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.32-5) unstable; urgency=medium
+
+  * Team upload
 
   [ Sebastien Bacher ]
   * debian/tests/build:
@@ -8,8 +10,20 @@ gtk+2.0 (2.24.32-5) UNRELEASED; urgency=medium
   [ Simon McVittie ]
   * d/tests/build: Fix shellcheck warnings
   * d/upstream/metadata: Add upstream URLs
+  * Drop version qualifier from pkg-config dependency.
+    This is mainly to be nice to pkgconf. The versioned dependency was
+    there to ensure multiarch support, and both pkgconf and pkg-config had
+    multiarch support in oldstable. (Closes: #734480)
+  * Update patches from upstream git up to 2.24.32-79-g53d0759d3e
+    - Windows-, macOS- and CI-specific changes not included here
+    - Update metadata for #895043 patch, applied upstream
+    - Add a new patch to fix a GIMP segfault after switching themes
+    - Add a new patch for a build fix
+  * Preferentially build-depend on libgdk-pixbuf-2.0-dev.
+    We don't need the deprecated Xlib integration that is also pulled in
+    by the older libgdk-pixbuf2.0-dev package (see #974870).
 
- -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 10 Dec 2019 11:51:15 +0100
+ -- Simon McVittie <smcv@debian.org>  Mon, 23 Nov 2020 14:56:29 +0000
 
 gtk+2.0 (2.24.32-4) unstable; urgency=medium
 
