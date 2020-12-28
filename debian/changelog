@@ -1,6 +1,7 @@
-gtk+2.0 (2.24.32-6) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.33-1) UNRELEASED; urgency=medium
 
   * d/watch: Cope with "+" being escaped to "%2B" in links to tarballs
+  * New upstream release
 
  -- Simon McVittie <smcv@debian.org>  Mon, 28 Dec 2020 12:15:27 +0000
 
