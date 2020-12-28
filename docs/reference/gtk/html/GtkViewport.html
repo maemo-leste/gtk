@@ -8,7 +8,7 @@
 <link rel="up" href="MiscObjects.html" title="Miscellaneous">
 <link rel="prev" href="GtkTooltip.html" title="GtkTooltip">
 <link rel="next" href="GtkAccessible.html" title="GtkAccessible">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -39,8 +39,8 @@
 <a name="GtkViewport.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -151,14 +151,14 @@
 <a name="GtkViewport.signals"></a><h2>Signals</h2>
 <div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
-<col width="150px" class="signals_return">
-<col width="300px" class="signals_name">
-<col width="200px" class="signals_flags">
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
 </colgroup>
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkViewport.html#GtkViewport-set-scroll-adjustments" title="The “set-scroll-adjustments” signal">set-scroll-adjustments</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+<td class="signal_flags">Action</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -166,8 +166,8 @@
 <a name="GtkViewport.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -177,8 +177,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkViewport.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -489,6 +489,7 @@ gtk_viewport_get_view_window (<em class="parameter"><code><a class="link" href="
 <a name="GtkViewport--hadjustment"></a><h3>The <code class="literal">“hadjustment”</code> property</h3>
 <pre class="programlisting">  “hadjustment”              <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *</pre>
 <p>The GtkAdjustment that determines the values of the horizontal position for this viewport.</p>
+<p>Owner: GtkViewport</p>
 <p>Flags: Read / Write / Construct</p>
 </div>
 <hr>
@@ -496,6 +497,7 @@ gtk_viewport_get_view_window (<em class="parameter"><code><a class="link" href="
 <a name="GtkViewport--shadow-type"></a><h3>The <code class="literal">“shadow-type”</code> property</h3>
 <pre class="programlisting">  “shadow-type”              <a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a></pre>
 <p>Determines how the shadowed box around the viewport is drawn.</p>
+<p>Owner: GtkViewport</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_SHADOW_IN</p>
 </div>
@@ -504,6 +506,7 @@ gtk_viewport_get_view_window (<em class="parameter"><code><a class="link" href="
 <a name="GtkViewport--vadjustment"></a><h3>The <code class="literal">“vadjustment”</code> property</h3>
 <pre class="programlisting">  “vadjustment”              <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *</pre>
 <p>The GtkAdjustment that determines the values of the vertical position for this viewport.</p>
+<p>Owner: GtkViewport</p>
 <p>Flags: Read / Write / Construct</p>
 </div>
 </div>
@@ -515,7 +518,7 @@ gtk_viewport_get_view_window (<em class="parameter"><code><a class="link" href="
 user_function (<a class="link" href="GtkViewport.html" title="GtkViewport"><span class="type">GtkViewport</span></a>   *horizontal,
                <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *vertical,
                <a class="link" href="GtkAdjustment.html" title="GtkAdjustment"><span class="type">GtkAdjustment</span></a> *arg2,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+               <span class="type">gpointer</span>       user_data)</pre>
 <p>Set the scroll adjustments for the viewport. Usually scrolled containers
 like <a class="link" href="GtkScrolledWindow.html" title="GtkScrolledWindow"><span class="type">GtkScrolledWindow</span></a> will emit this signal to connect two instances
 of <a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="type">GtkScrollbar</span></a> to the scroll directions of the <a class="link" href="GtkViewport.html" title="GtkViewport"><span class="type">GtkViewport</span></a>.</p>
@@ -546,7 +549,7 @@ of <a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="ty
 </tbody>
 </table></div>
 </div>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+<p>Flags: Action</p>
 </div>
 </div>
 <div class="refsect1">
@@ -555,6 +558,6 @@ of <a class="link" href="GtkScrollbar.html" title="GtkScrollbar"><span class="ty
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

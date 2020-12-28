@@ -11,7 +11,7 @@ INTROSPECTION_COMPILER_ARGS = \
     --includedir=../gdk
 
 if USE_QUARTZ
-GTK_PRINT_PREVIEW_COMMAND="open -a /Applications/Preview.app %f"
+GTK_PRINT_PREVIEW_COMMAND="open -b com.apple.Preview %f"
 else
 GTK_PRINT_PREVIEW_COMMAND="evince --unlink-tempfile --preview --print-settings %s %f"
 endif
@@ -34,7 +34,6 @@ endif
 endif
 
 GTK_BASE_CFLAGS_DEFINES =				\
-	-DG_LOG_DOMAIN=\"Gtk\"				\
 	-DGTK_VERSION=\"$(GTK_VERSION)\"		\
 	-DGTK_BINARY_VERSION=\"$(GTK_BINARY_VERSION)\"	\
 	-DGTK_COMPILATION				\
@@ -54,6 +53,7 @@ GTK_PLAT_CFLAGS_DEFINES =				\
 INCLUDES =						\
 	$(GTK_BASE_CFLAGS_DEFINES)			\
 	$(GTK_PLAT_CFLAGS_DEFINES)			\
+	-DG_LOG_DOMAIN=\"Gtk\"				\
 	-I$(top_builddir)				\
 	-I$(top_builddir)/gtk				\
 	-I$(top_srcdir) -I../gdk			\
@@ -71,7 +71,7 @@ endif
 
 if OS_WIN32
 gtk_def = gtk.def
-gtk_win32_symbols = -export-symbols $(srcdir)/gtk.def
+gtk_win32_symbols = -export-symbols gtk.def
 
 gtk_win32_res = gtk-win32-res.o
 gtk_win32_res_ldflag = -Wl,gtk-win32-res.o
@@ -81,7 +81,7 @@ gtk-win32-res.o : gtk-win32.rc
 
 install-def-file: gtk.def
 	$(mkinstalldirs) $(DESTDIR)$(libdir)
-	$(INSTALL) $(srcdir)/gtk.def $(DESTDIR)$(libdir)/gtk-win32-2.0.def
+	$(INSTALL) gtk.def $(DESTDIR)$(libdir)/gtk-win32-2.0.def
 uninstall-def-file:
 	-rm $(DESTDIR)$(libdir)/gtk-win32-2.0.def
 else
@@ -106,10 +106,10 @@ install-ms-lib:
 uninstall-ms-lib:
 endif
 
-# This places the generated .def file in srcdir, since it is expected to be there.
-# (The one from a tarball is)
+# gtk.def has to be put in builddir and should not be included in a source
+# tarball because it differs in 32-bit and 64-bit Windows builds.
 gtk.def: gtk.symbols
-	(echo -e EXPORTS; $(CPP) -P -DINCLUDE_VARIABLES -DG_OS_WIN32 -DALL_FILES - <$(srcdir)/gtk.symbols | sed -e '/^$$/d' -e 's/^/	/' -e 's/G_GNUC_[^ ]*//g') > $(srcdir)/gtk.def
+	(echo -e EXPORTS; $(CPP) -P -DINCLUDE_VARIABLES -DG_OS_WIN32 -DALL_FILES - <$(srcdir)/gtk.symbols | sed -e '/^$$/d' -e 's/^/	/' -e 's/G_GNUC_[^ ]*//g') > gtk.def
 
 gtkalias.h: gtk.symbols
 	  $(PERL) $(srcdir)/makegtkalias.pl < $(srcdir)/gtk.symbols > gtkalias.h
@@ -836,7 +836,7 @@ EXTRA_DIST += $(STOCK_ICONS)
 #
 # setup autogeneration dependencies
 gen_sources = xgen-gdef xgen-gtbh xgen-gtic xgen-gmh xgen-gmc xgen-gmlh xgen-gmlc xgen-gtfsrc.c xgen-gtf
-CLEANFILES = $(gen_sources)
+CLEANFILES = $(gen_sources) $(gtk_def)
 
 BUILT_SOURCES = $(gtk_built_sources)
 
@@ -1007,7 +1007,9 @@ Gtk_2_0_gir_MSVC_EXPORT_PACKAGES = $(Gtk_2_0_gir_EXPORT_PACKAGES)
 Gtk_2_0_gir_MSVC_INCLUDE_GIRS = Atk-1.0
 Gtk_2_0_gir_MSVC_LIBS = gtk-win32-2.0 gdk-win32-2.0
 Gtk_2_0_gir_MSVC_CFLAGS = $(GTK_MSVC_GIR_CFLAGS)
-Gtk_2_0_gir_MSVC_SCANNERFLAGS = --warn-all --add-include-path=. --include-uninstalled=./Gdk-2.0.gir
+Gtk_2_0_gir_MSVC_SCANNERFLAGS =	\
+	--warn-all	\
+	--include-uninstalled='./vs$$$$(VSVER)/$$$$(CFG)/$$$$(PLAT)/bin/Gdk-2.0.gir'
 
 include $(top_srcdir)/build/Makefile.msvc-introspection
 
@@ -1123,7 +1125,7 @@ $(GTK_UPDATE_ICON_CACHE_MANIFEST):
 	 echo '</assembly>' ) >$@
 
 $(GTK_UPDATE_ICON_CACHE_RC):
-	(echo 'CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST '$(GTK_UPDATE_ICON_CACHE_MANIFEST)) >$@
+	(echo -e '#include <winbase.h>\nCREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST '$(GTK_UPDATE_ICON_CACHE_MANIFEST)) >$@
 
 $(GTK_UPDATE_ICON_CACHE_MANIFEST_OBJECT): $(GTK_UPDATE_ICON_CACHE_RC) $(GTK_UPDATE_ICON_CACHE_MANIFEST)
 	$(WINDRES) --input $< --output $@ --output-format=coff
@@ -1461,7 +1463,6 @@ EXTRA_DIST +=                   \
 	tree_minus.xbm          \
 	tree_minus.xpm		\
 	tree_plus.xpm		\
-	gtk.def			\
 	gtk-builder-convert	\
 	gtk-win32.rc		\
 	gtk-win32.rc.in		\

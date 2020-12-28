@@ -109,8 +109,14 @@ gdk_window_impl_quartz_get_context (GdkDrawable *drawable,
       if (![window_impl->view lockFocusIfCanDraw])
         return NULL;
     }
+  if (gdk_quartz_osx_version () < GDK_OSX_YOSEMITE)
+       cg_context = [[NSGraphicsContext currentContext] graphicsPort];
+  else
+       cg_context = [[NSGraphicsContext currentContext] CGContext];
 
-  cg_context = [[NSGraphicsContext currentContext] graphicsPort];
+  if (!cg_context)
+    return NULL;
+
   CGContextSaveGState (cg_context);
   CGContextSetAllowsAntialiasing (cg_context, antialias);
 
@@ -270,6 +276,10 @@ gdk_window_impl_quartz_begin_paint_region (GdkPaintable    *paintable,
       gint i;
 
       cg_context = gdk_quartz_drawable_get_context (GDK_DRAWABLE (impl), FALSE);
+
+      if (!cg_context)
+        goto done;
+
       color = _gdk_quartz_colormap_get_cgcolor_from_pixel (window,
                                                            private->bg_color.pixel);
       CGContextSetFillColorWithColor (cg_context, color);
@@ -477,6 +487,10 @@ _gdk_windowing_after_process_all_updates (void)
 
       _gdk_quartz_drawable_flush (NULL);
 
+      /* 10.14 needs to be told that the view needs to be redrawn, see
+       * https://gitlab.gnome.org/GNOME/gtk/issues/1479 */
+      if (gdk_quartz_osx_version() >= GDK_OSX_MOJAVE)
+           [[nswindow contentView] setNeedsDisplay:YES];
       [nswindow enableFlushWindow];
       [nswindow flushWindow];
       [nswindow release];

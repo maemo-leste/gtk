@@ -8,7 +8,7 @@
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkCombo.html" title="GtkCombo">
 <link rel="next" href="GtkItemFactory.html" title="GtkItemFactory">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,8 +38,8 @@
 <a name="GtkFileSelection.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -84,7 +84,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="returnvalue">gboolean</span>
 </td>
 <td class="function_name">
 <a class="link" href="GtkFileSelection.html#gtk-file-selection-get-select-multiple" title="gtk_file_selection_get_select_multiple ()">gtk_file_selection_get_select_multiple</a> <span class="c_punctuation">()</span>
@@ -104,17 +104,17 @@
 <tbody>
 <tr>
 <td class="property_type">
-<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="GtkFileSelection.html#GtkFileSelection--filename" title="The “filename” property">filename</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_type"><span class="type">gboolean</span></td>
 <td class="property_name"><a class="link" href="GtkFileSelection.html#GtkFileSelection--select-multiple" title="The “select-multiple” property">select-multiple</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_type"><span class="type">gboolean</span></td>
 <td class="property_name"><a class="link" href="GtkFileSelection.html#GtkFileSelection--show-fileops" title="The “show-fileops” property">show-fileops</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -125,8 +125,8 @@
 <a name="GtkFileSelection.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -150,8 +150,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkFileSelection.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -180,7 +180,7 @@ GtkFileSelection implements
 <div class="refsect2">
 <a name="gtk-file-selection-new"></a><h3>gtk_file_selection_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
-gtk_file_selection_new (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>);</pre>
+gtk_file_selection_new (<em class="parameter"><code>const <span class="type">gchar</span> *title</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_file_selection_new</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
@@ -188,7 +188,7 @@ gtk_file_selection_new (<em class="parameter"><code>const <a href="../glib/glib-
 <a name="gtk-file-selection-complete"></a><h3>gtk_file_selection_complete ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_file_selection_complete (<em class="parameter"><code><a class="link" href="GtkFileSelection.html" title="GtkFileSelection"><span class="type">GtkFileSelection</span></a> *filesel</code></em>,
-                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pattern</code></em>);</pre>
+                             <em class="parameter"><code>const <span class="type">gchar</span> *pattern</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_file_selection_complete</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
@@ -213,7 +213,7 @@ gtk_file_selection_hide_fileop_buttons
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_file_selection_set_select_multiple
                                (<em class="parameter"><code><a class="link" href="GtkFileSelection.html" title="GtkFileSelection"><span class="type">GtkFileSelection</span></a> *filesel</code></em>,
-                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> select_multiple</code></em>);</pre>
+                                <em class="parameter"><code><span class="type">gboolean</span> select_multiple</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_file_selection_set_select_multiple</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Sets whether the user is allowed to select multiple files in the file list.
 Use <a class="link" href="GtkFileSelection.html#gtk-file-selection-get-selections" title="gtk_file_selection_get_selections"><code class="function">gtk_file_selection_get_selections()</code></a> to get the list of selected files.</p>
@@ -244,7 +244,7 @@ files in the file list.</p></td>
 <hr>
 <div class="refsect2">
 <a name="gtk-file-selection-get-select-multiple"></a><h3>gtk_file_selection_get_select_multiple ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
 gtk_file_selection_get_select_multiple
                                (<em class="parameter"><code><a class="link" href="GtkFileSelection.html" title="GtkFileSelection"><span class="type">GtkFileSelection</span></a> *filesel</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_file_selection_get_select_multiple</code> is deprecated and should not be used in newly-written code.</p></div>
@@ -267,7 +267,7 @@ the file list. See <a class="link" href="GtkFileSelection.html#gtk-file-selectio
 </div>
 <div class="refsect3">
 <a name="gtk-file-selection-get-select-multiple.returns"></a><h4>Returns</h4>
-<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the user is allowed to select multiple files in the
+<p> <code class="literal">TRUE</code> if the user is allowed to select multiple files in the
 file list</p>
 </div>
 </div>
@@ -292,11 +292,11 @@ file list</p>
   GtkWidget *fileop_entry;
   gchar     *fileop_file;
   gpointer   cmpl_state;
-  
+
   GtkWidget *fileop_c_dir;
   GtkWidget *fileop_del_file;
   GtkWidget *fileop_ren_file;
-  
+
   GtkWidget *button_area;
   GtkWidget *action_area;
 };
@@ -313,13 +313,14 @@ file list</p>
  includes a
 directory path, then the requestor will open with that path as its
 current working directory.</p>
-<p>This has the consequence that in order to open the requestor with a 
+<p>This has the consequence that in order to open the requestor with a
+
 working directory and an empty filename, <em class="parameter"><code>filename</code></em>
  must have a trailing
 directory separator.</p>
 <p>The encoding of <em class="parameter"><code>filename</code></em>
  is preferred GLib file name encoding, which
-may not be UTF-8. See <a href="../glib/glib-Character-Set-Conversion.html#g-filename-from-utf8"><code class="function">g_filename_from_utf8()</code></a>.</p>
+may not be UTF-8. See <code class="function">g_filename_from_utf8()</code>.</p>
 <div class="refsect3">
 <a name="gtk-file-selection-set-filename.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -350,7 +351,7 @@ may not be UTF-8. See <a href="../glib/glib-Character-Set-Conversion.html#g-file
 </pre>
 <div class="warning"><p><code class="literal">gtk_file_selection_get_filename</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>This function returns the selected filename in the GLib file name
-encoding. To convert to UTF-8, call <a href="../glib/glib-Character-Set-Conversion.html#g-filename-to-utf8"><code class="function">g_filename_to_utf8()</code></a>. The
+encoding. To convert to UTF-8, call <code class="function">g_filename_to_utf8()</code>. The
 returned string points to a statically allocated buffer and should
 be copied if you plan to keep it around.</p>
 <p>If no file is selected then the selected directory path is returned.</p>
@@ -384,7 +385,7 @@ be copied if you plan to keep it around.</p>
 This function is intended for use when the user can select multiple files
 in the file list. </p>
 <p>The filenames are in the GLib file name encoding. To convert to
-UTF-8, call <a href="../glib/glib-Character-Set-Conversion.html#g-filename-to-utf8"><code class="function">g_filename_to_utf8()</code></a> on each string.</p>
+UTF-8, call <code class="function">g_filename_to_utf8()</code> on each string.</p>
 <div class="refsect3">
 <a name="gtk-file-selection-get-selections.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -402,8 +403,8 @@ UTF-8, call <a href="../glib/glib-Character-Set-Conversion.html#g-filename-to-ut
 </div>
 <div class="refsect3">
 <a name="gtk-file-selection-get-selections.returns"></a><h4>Returns</h4>
-<p> a newly-allocated <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of strings. Use
-<a href="../glib/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a> to free it.</p>
+<p> a newly-allocated <code class="literal">NULL</code>-terminated array of strings. Use
+<code class="function">g_strfreev()</code> to free it.</p>
 </div>
 </div>
 </div>
@@ -411,30 +412,33 @@ UTF-8, call <a href="../glib/glib-Character-Set-Conversion.html#g-filename-to-ut
 <a name="GtkFileSelection.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GtkFileSelection--filename"></a><h3>The <code class="literal">“filename”</code> property</h3>
-<pre class="programlisting">  “filename”                 <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “filename”                 <span class="type">char</span> *</pre>
 <p>The currently selected filename.</p>
+<p>Owner: GtkFileSelection</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkFileSelection--select-multiple"></a><h3>The <code class="literal">“select-multiple”</code> property</h3>
-<pre class="programlisting">  “select-multiple”          <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<pre class="programlisting">  “select-multiple”          <span class="type">gboolean</span></pre>
 <p>Whether to allow multiple files to be selected.</p>
+<p>Owner: GtkFileSelection</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkFileSelection--show-fileops"></a><h3>The <code class="literal">“show-fileops”</code> property</h3>
-<pre class="programlisting">  “show-fileops”             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<pre class="programlisting">  “show-fileops”             <span class="type">gboolean</span></pre>
 <p>Whether buttons for creating/manipulating files should be displayed.</p>
+<p>Owner: GtkFileSelection</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

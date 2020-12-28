@@ -8,7 +8,7 @@
 <link rel="up" href="SpecialObjects.html" title="Special-purpose features">
 <link rel="prev" href="SpecialObjects.html" title="Special-purpose features">
 <link rel="next" href="GtkGammaCurve.html" title="GtkGammaCurve">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -39,8 +39,8 @@
 <a name="GtkCurve.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -117,22 +117,22 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkCurve.html#GtkCurve--max-x" title="The “max-x” property">max-x</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkCurve.html#GtkCurve--max-y" title="The “max-y” property">max-y</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkCurve.html#GtkCurve--min-x" title="The “min-x” property">min-x</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkCurve.html#GtkCurve--min-y" title="The “min-y” property">min-y</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -143,14 +143,14 @@
 <a name="GtkCurve.signals"></a><h2>Signals</h2>
 <div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
-<col width="150px" class="signals_return">
-<col width="300px" class="signals_name">
-<col width="200px" class="signals_flags">
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
 </colgroup>
 <tbody><tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkCurve.html#GtkCurve-curve-type-changed" title="The “curve-type-changed” signal">curve-type-changed</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags">Run First</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -158,8 +158,8 @@
 <a name="GtkCurve.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -169,8 +169,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkCurve.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkDrawingArea.html" title="GtkDrawingArea">GtkDrawingArea</a>
@@ -211,7 +211,7 @@ gtk_curve_reset (<em class="parameter"><code><a class="link" href="GtkCurve.html
 <a name="gtk-curve-set-gamma"></a><h3>gtk_curve_set_gamma ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_curve_set_gamma (<em class="parameter"><code><a class="link" href="GtkCurve.html" title="GtkCurve"><span class="type">GtkCurve</span></a> *curve</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> gamma_</code></em>);</pre>
+                     <em class="parameter"><code><span class="type">gfloat</span> gamma_</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_curve_set_gamma</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
@@ -219,10 +219,10 @@ gtk_curve_set_gamma (<em class="parameter"><code><a class="link" href="GtkCurve.
 <a name="gtk-curve-set-range"></a><h3>gtk_curve_set_range ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_curve_set_range (<em class="parameter"><code><a class="link" href="GtkCurve.html" title="GtkCurve"><span class="type">GtkCurve</span></a> *curve</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> min_x</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> max_x</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> min_y</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> max_y</code></em>);</pre>
+                     <em class="parameter"><code><span class="type">gfloat</span> min_x</code></em>,
+                     <em class="parameter"><code><span class="type">gfloat</span> max_x</code></em>,
+                     <em class="parameter"><code><span class="type">gfloat</span> min_y</code></em>,
+                     <em class="parameter"><code><span class="type">gfloat</span> max_y</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_curve_set_range</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
@@ -231,7 +231,7 @@ gtk_curve_set_range (<em class="parameter"><code><a class="link" href="GtkCurve.
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_curve_get_vector (<em class="parameter"><code><a class="link" href="GtkCurve.html" title="GtkCurve"><span class="type">GtkCurve</span></a> *curve</code></em>,
                       <em class="parameter"><code><span class="type">int</span> veclen</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> vector[]</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gfloat</span> vector[]</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_curve_get_vector</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
@@ -240,7 +240,7 @@ gtk_curve_get_vector (<em class="parameter"><code><a class="link" href="GtkCurve
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_curve_set_vector (<em class="parameter"><code><a class="link" href="GtkCurve.html" title="GtkCurve"><span class="type">GtkCurve</span></a> *curve</code></em>,
                       <em class="parameter"><code><span class="type">int</span> veclen</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> vector[]</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gfloat</span> vector[]</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_curve_set_vector</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 <hr>
@@ -266,38 +266,43 @@ gtk_curve_set_curve_type (<em class="parameter"><code><a class="link" href="GtkC
 <a name="GtkCurve--curve-type"></a><h3>The <code class="literal">“curve-type”</code> property</h3>
 <pre class="programlisting">  “curve-type”               <a class="link" href="gtk2-Standard-Enumerations.html#GtkCurveType" title="enum GtkCurveType"><span class="type">GtkCurveType</span></a></pre>
 <p>Is this curve linear, spline interpolated, or free-form.</p>
+<p>Owner: GtkCurve</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_CURVE_TYPE_SPLINE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkCurve--max-x"></a><h3>The <code class="literal">“max-x”</code> property</h3>
-<pre class="programlisting">  “max-x”                    <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “max-x”                    <span class="type">float</span></pre>
 <p>Maximum possible X value.</p>
+<p>Owner: GtkCurve</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 1</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkCurve--max-y"></a><h3>The <code class="literal">“max-y”</code> property</h3>
-<pre class="programlisting">  “max-y”                    <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “max-y”                    <span class="type">float</span></pre>
 <p>Maximum possible value for Y.</p>
+<p>Owner: GtkCurve</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 1</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkCurve--min-x"></a><h3>The <code class="literal">“min-x”</code> property</h3>
-<pre class="programlisting">  “min-x”                    <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “min-x”                    <span class="type">float</span></pre>
 <p>Minimum possible value for X.</p>
+<p>Owner: GtkCurve</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkCurve--min-y"></a><h3>The <code class="literal">“min-y”</code> property</h3>
-<pre class="programlisting">  “min-y”                    <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “min-y”                    <span class="type">float</span></pre>
 <p>Minimum possible value for Y.</p>
+<p>Owner: GtkCurve</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
@@ -308,12 +313,12 @@ gtk_curve_set_curve_type (<em class="parameter"><code><a class="link" href="GtkC
 <a name="GtkCurve-curve-type-changed"></a><h3>The <code class="literal">“curve-type-changed”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkCurve.html" title="GtkCurve"><span class="type">GtkCurve</span></a> *curve,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <span class="type">gpointer</span>  user_data)</pre>
+<p>Flags: Run First</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

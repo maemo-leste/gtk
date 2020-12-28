@@ -747,7 +747,7 @@ gtk_icon_theme_set_search_path (GtkIconTheme *icon_theme,
 /**
  * gtk_icon_theme_get_search_path:
  * @icon_theme: a #GtkIconTheme
- * @path: (allow-none): (array length=n_elements) (out): location to store a list of icon theme path directories or %NULL
+ * @path: (allow-none) (array length=n_elements) (out): location to store a list of icon theme path directories or %NULL
  *        The stored value should be freed with g_strfreev().
  * @n_elements: location to store number of elements
  *              in @path, or %NULL
@@ -902,7 +902,7 @@ insert_theme (GtkIconTheme *icon_theme, const char *theme_name)
   GKeyFile *theme_file;
   GError *error = NULL;
   IconThemeDirMtime *dir_mtime;
-  struct stat stat_buf;
+  GStatBuf stat_buf;
   
   priv = icon_theme->priv;
 
@@ -1052,7 +1052,7 @@ load_themes (GtkIconTheme *icon_theme)
   IconSuffix old_suffix, new_suffix;
   GTimeVal tv;
   IconThemeDirMtime *dir_mtime;
-  struct stat stat_buf;
+  GStatBuf stat_buf;
   
   priv = icon_theme->priv;
 
@@ -1898,7 +1898,7 @@ rescan_themes (GtkIconTheme *icon_theme)
   IconThemeDirMtime *dir_mtime;
   GList *d;
   int stat_res;
-  struct stat stat_buf;
+  GStatBuf stat_buf;
   GTimeVal tv;
 
   priv = icon_theme->priv;
@@ -3219,7 +3219,7 @@ gtk_icon_info_get_embedded_rect (GtkIconInfo  *icon_info,
 /**
  * gtk_icon_info_get_attach_points:
  * @icon_info: a #GtkIconInfo
- * @points: (allow-none): (array length=n_points) (out): location to store pointer to an array of points, or %NULL
+ * @points: (allow-none) (array length=n_points) (out): location to store pointer to an array of points, or %NULL
  *          free the array of points with g_free().
  * @n_points: (allow-none): location to store the number of points in @points, or %NULL
  * 
@@ -3396,6 +3396,7 @@ find_builtin_icon (const gchar *icon_name,
       
       if (difference == 0)
 	{
+	  min_difference = 0;
 	  min_icon = default_icon;
 	  break;
 	}

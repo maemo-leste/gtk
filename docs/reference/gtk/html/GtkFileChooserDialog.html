@@ -8,7 +8,7 @@
 <link rel="up" href="SelectorWidgets.html" title="Selectors (File/Font/Color/Input Devices)">
 <link rel="prev" href="GtkFileChooserButton.html" title="GtkFileChooserButton">
 <link rel="next" href="GtkFileChooserWidget.html" title="GtkFileChooserWidget">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,8 +37,8 @@
 <a name="GtkFileChooserDialog.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -64,8 +64,8 @@
 <a name="GtkFileChooserDialog.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -75,8 +75,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkFileChooserDialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -105,10 +105,10 @@ GtkFileChooserDialog implements
 <div class="refsect2">
 <a name="gtk-file-chooser-dialog-new"></a><h3>gtk_file_chooser_dialog_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
-gtk_file_chooser_dialog_new (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+gtk_file_chooser_dialog_new (<em class="parameter"><code>const <span class="type">gchar</span> *title</code></em>,
                              <em class="parameter"><code><a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a> *parent</code></em>,
                              <em class="parameter"><code><a class="link" href="GtkFileChooser.html#GtkFileChooserAction" title="enum GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>,
-                             <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_button_text</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *first_button_text</code></em>,
                              <em class="parameter"><code>...</code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkFileChooserDialog.html" title="GtkFileChooserDialog"><span class="type">GtkFileChooserDialog</span></a>.  This function is analogous to
 <a class="link" href="GtkDialog.html#gtk-dialog-new-with-buttons" title="gtk_dialog_new_with_buttons ()"><code class="function">gtk_dialog_new_with_buttons()</code></a>.</p>
@@ -123,12 +123,12 @@ gtk_file_chooser_dialog_new (<em class="parameter"><code>const <a href="../glib/
 <tbody>
 <tr>
 <td class="parameter_name"><p>title</p></td>
-<td class="parameter_description"><p>Title of the dialog, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>Title of the dialog, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>parent</p></td>
-<td class="parameter_description"><p>Transient parent of the dialog, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>Transient parent of the dialog, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -138,12 +138,12 @@ gtk_file_chooser_dialog_new (<em class="parameter"><code>const <a href="../glib/
 </tr>
 <tr>
 <td class="parameter_name"><p>first_button_text</p></td>
-<td class="parameter_description"><p>stock ID or text to go in the first button, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>stock ID or text to go in the first button, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>Varargs</p></td>
-<td class="parameter_description"><p>response ID for the first button, then additional (button, id) pairs, ending with <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_description"><p>response ID for the first button, then additional (button, id) pairs, ending with <code class="literal">NULL</code></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -160,11 +160,11 @@ gtk_file_chooser_dialog_new (<em class="parameter"><code>const <a href="../glib/
 <a name="gtk-file-chooser-dialog-new-with-backend"></a><h3>gtk_file_chooser_dialog_new_with_backend ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_file_chooser_dialog_new_with_backend
-                               (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                               (<em class="parameter"><code>const <span class="type">gchar</span> *title</code></em>,
                                 <em class="parameter"><code><a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a> *parent</code></em>,
                                 <em class="parameter"><code><a class="link" href="GtkFileChooser.html#GtkFileChooserAction" title="enum GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *backend</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_button_text</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *backend</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *first_button_text</code></em>,
                                 <em class="parameter"><code>...</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_file_chooser_dialog_new_with_backend</code> has been deprecated since version 2.14 and should not be used in newly-written code.</p>
@@ -185,12 +185,12 @@ to load files.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>title</p></td>
-<td class="parameter_description"><p>Title of the dialog, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>Title of the dialog, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>parent</p></td>
-<td class="parameter_description"><p>Transient parent of the dialog, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>Transient parent of the dialog, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -205,12 +205,12 @@ to load files.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>first_button_text</p></td>
-<td class="parameter_description"><p>stock ID or text to go in the first button, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>stock ID or text to go in the first button, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>Varargs</p></td>
-<td class="parameter_description"><p>response ID for the first button, then additional (button, id) pairs, ending with <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_description"><p>response ID for the first button, then additional (button, id) pairs, ending with <code class="literal">NULL</code></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -232,6 +232,6 @@ to load files.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

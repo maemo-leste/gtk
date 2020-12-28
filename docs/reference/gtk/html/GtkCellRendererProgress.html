@@ -8,7 +8,7 @@
 <link rel="up" href="TreeWidgetObjects.html" title="Tree, List and Icon Grid Widgets">
 <link rel="prev" href="GtkCellRendererPixbuf.html" title="GtkCellRendererPixbuf">
 <link rel="next" href="GtkCellRendererSpin.html" title="GtkCellRendererSpin">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,8 +37,8 @@
 <a name="GtkCellRendererProgress.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="function_type">
@@ -65,28 +65,28 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="GtkCellRendererProgress.html#GtkCellRendererProgress--pulse" title="The “pulse” property">pulse</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="GtkCellRendererProgress.html#GtkCellRendererProgress--text" title="The “text” property">text</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkCellRendererProgress.html#GtkCellRendererProgress--text-xalign" title="The “text-xalign” property">text-xalign</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkCellRendererProgress.html#GtkCellRendererProgress--text-yalign" title="The “text-yalign” property">text-yalign</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="GtkCellRendererProgress.html#GtkCellRendererProgress--value" title="The “value” property">value</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -97,8 +97,8 @@
 <a name="GtkCellRendererProgress.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -108,8 +108,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkCellRendererProgress.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkCellRenderer.html" title="GtkCellRenderer">GtkCellRenderer</a>
                 <span class="lineart">╰──</span> GtkCellRendererProgress
@@ -152,6 +152,7 @@ gtk_cell_renderer_progress_new (<em class="parameter"><code><span class="type">v
 <p>The "orientation" property controls the direction and growth
 direction of the progress bar (left-to-right, right-to-left,
 top-to-bottom or bottom-to-top).</p>
+<p>Owner: GtkCellRendererProgress</p>
 <p>Flags: Read / Write</p>
 <p>Default value: GTK_PROGRESS_LEFT_TO_RIGHT</p>
 <p class="since">Since: <a class="link" href="api-index-2-12.html#api-index-2.12">2.12</a></p>
@@ -159,7 +160,7 @@ top-to-bottom or bottom-to-top).</p>
 <hr>
 <div class="refsect2">
 <a name="GtkCellRendererProgress--pulse"></a><h3>The <code class="literal">“pulse”</code> property</h3>
-<pre class="programlisting">  “pulse”                    <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “pulse”                    <span class="type">int</span></pre>
 <p>Setting this to a non-negative value causes the cell renderer to
 enter "activity mode", where a block bounces back and forth to
 
@@ -169,7 +170,8 @@ much.</p>
 
 bit.</p>
 <p>To indicate that the activity has not started yet, set the property
-to zero. To indicate completion, set the property to <a href="../glib/glib-Basic-Types.html#G-MAXINT:CAPS"><code class="literal">G_MAXINT</code></a>.</p>
+to zero. To indicate completion, set the property to <code class="literal">G_MAXINT</code>.</p>
+<p>Owner: GtkCellRendererProgress</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
@@ -178,13 +180,14 @@ to zero. To indicate completion, set the property to <a href="../glib/glib-Basic
 <hr>
 <div class="refsect2">
 <a name="GtkCellRendererProgress--text"></a><h3>The <code class="literal">“text”</code> property</h3>
-<pre class="programlisting">  “text”                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “text”                     <span class="type">char</span> *</pre>
 <p>The "text" property determines the label which will be drawn
-over the progress bar. Setting this property to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> causes the default
+over the progress bar. Setting this property to <code class="literal">NULL</code> causes the default
 
 label to be displayed. Setting this property to an empty string causes
 
 no label to be displayed.</p>
+<p>Owner: GtkCellRendererProgress</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
 <p class="since">Since: <a class="link" href="api-index-2-6.html#api-index-2.6">2.6</a></p>
@@ -192,10 +195,11 @@ no label to be displayed.</p>
 <hr>
 <div class="refsect2">
 <a name="GtkCellRendererProgress--text-xalign"></a><h3>The <code class="literal">“text-xalign”</code> property</h3>
-<pre class="programlisting">  “text-xalign”              <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “text-xalign”              <span class="type">float</span></pre>
 <p>The "text-xalign" property controls the horizontal alignment of the
 text in the progress bar.  Valid values range from 0 (left) to 1
 (right).  Reserved for RTL layouts.</p>
+<p>Owner: GtkCellRendererProgress</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,1]</p>
 <p>Default value: 0.5</p>
@@ -204,10 +208,11 @@ text in the progress bar.  Valid values range from 0 (left) to 1
 <hr>
 <div class="refsect2">
 <a name="GtkCellRendererProgress--text-yalign"></a><h3>The <code class="literal">“text-yalign”</code> property</h3>
-<pre class="programlisting">  “text-yalign”              <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “text-yalign”              <span class="type">float</span></pre>
 <p>The "text-yalign" property controls the vertical alignment of the
 text in the progress bar.  Valid values range from 0 (top) to 1
 (bottom).</p>
+<p>Owner: GtkCellRendererProgress</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,1]</p>
 <p>Default value: 0.5</p>
@@ -216,9 +221,10 @@ text in the progress bar.  Valid values range from 0 (top) to 1
 <hr>
 <div class="refsect2">
 <a name="GtkCellRendererProgress--value"></a><h3>The <code class="literal">“value”</code> property</h3>
-<pre class="programlisting">  “value”                    <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “value”                    <span class="type">int</span></pre>
 <p>The "value" property determines the percentage to which the
 progress bar will be "filled in".</p>
+<p>Owner: GtkCellRendererProgress</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,100]</p>
 <p>Default value: 0</p>
@@ -227,6 +233,6 @@ progress bar will be "filled in".</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

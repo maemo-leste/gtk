@@ -8,7 +8,7 @@
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="setting-the-page-flow.html" title="Setting the page flow">
 <link rel="next" href="gtkrecent-chooser.html" title="Displaying the Recently Used Documents">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -101,16 +101,16 @@
 8
 9
 10</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkRecentManager <span class="gtkdoc opt">*</span>manager<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkRecentManager</span> <span class="o">*</span><span class="n">manager</span><span class="p">;</span>
 
-	manager <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentManager.html#gtk-recent-manager-new">gtk_recent_manager_new</a></span> <span class="gtkdoc opt">();</span>
+	<span class="n">manager</span> <span class="o">=</span> <span class="n">gtk_recent_manager_new</span> <span class="p">();</span>
 
-	<span class="keyword">if</span> <span class="gtkdoc opt">(!</span><span class="function"><a href="GtkRecentManager.html#gtk-recent-manager-add-item">gtk_recent_manager_add_item</a></span> <span class="gtkdoc opt">(</span>manager<span class="gtkdoc opt">,</span> document_uri<span class="gtkdoc opt">))</span>
-	  <span class="gtkdoc opt">{</span>
-	    <span class="comment">/* warn about the error */</span>
-	  <span class="gtkdoc opt">}</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">gtk_recent_manager_add_item</span> <span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">document_uri</span><span class="p">))</span>
+	  <span class="p">{</span>
+	    <span class="cm">/* warn about the error */</span>
+	  <span class="p">}</span>
 	
-	<span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span> <span class="gtkdoc opt">(</span>manager<span class="gtkdoc opt">);</span></pre></td>
+	<span class="n">g_object_unref</span> <span class="p">(</span><span class="n">manager</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -161,41 +161,41 @@
 33
 34
 35</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkRecentManager <span class="gtkdoc opt">*</span>manager<span class="gtkdoc opt">;</span>
-GtkRecentData <span class="gtkdoc opt">*</span>recent_data<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkRecentManager</span> <span class="o">*</span><span class="n">manager</span><span class="p">;</span>
+<span class="n">GtkRecentData</span> <span class="o">*</span><span class="n">recent_data</span><span class="p">;</span>
 
-	manager <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentManager.html#gtk-recent-manager-new">gtk_recent_manager_new</a></span> <span class="gtkdoc opt">();</span>
+	<span class="n">manager</span> <span class="o">=</span> <span class="n">gtk_recent_manager_new</span> <span class="p">();</span>
 	
-	recent_data <span class="gtkdoc opt">=</span> <span class="function"><a href="../glib/glib-Memory-Allocation.html#g-new0">g_new0</a></span> <span class="gtkdoc opt">(</span>GtkRecentData<span class="gtkdoc opt">,</span> <span class="number">1</span><span class="gtkdoc opt">);</span>
-	<span class="comment">/* the user visible name of the document (maybe its title); should</span>
-<span class="comment">	 * be preferred when displaying the item into the list</span>
-<span class="comment">	 */</span>
-recent_data<span class="gtkdoc opt">-&gt;</span>display_name <span class="gtkdoc opt">=</span> document_name<span class="gtkdoc opt">;</span>
+	<span class="n">recent_data</span> <span class="o">=</span> <span class="n">g_new0</span> <span class="p">(</span><span class="n">GtkRecentData</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+	<span class="cm">/* the user visible name of the document (maybe its title); should</span>
+<span class="cm">	 * be preferred when displaying the item into the list</span>
+<span class="cm">	 */</span>
+<span class="n">recent_data</span><span class="o">-&gt;</span><span class="n">display_name</span> <span class="o">=</span> <span class="n">document_name</span><span class="p">;</span>
 	
-	<span class="comment">/* the MIME type is mandatory */</span>
-	recent_data<span class="gtkdoc opt">-&gt;</span>mime_type <span class="gtkdoc opt">=</span> document_mime_type<span class="gtkdoc opt">;</span>
+	<span class="cm">/* the MIME type is mandatory */</span>
+	<span class="n">recent_data</span><span class="o">-&gt;</span><span class="n">mime_type</span> <span class="o">=</span> <span class="n">document_mime_type</span><span class="p">;</span>
 
-	<span class="comment">/* the name of the application that is registering the document</span>
-<span class="comment">	 * (also mandatory); usually, the same name you used with</span>
-<span class="comment">	 * the g_set_application_name () function.</span>
-<span class="comment">	 */</span>
-	recent_data<span class="gtkdoc opt">-&amp;</span>app_name <span class="gtkdoc opt">=</span> APP_NAME<span class="gtkdoc opt">;</span>
+	<span class="cm">/* the name of the application that is registering the document</span>
+<span class="cm">	 * (also mandatory); usually, the same name you used with</span>
+<span class="cm">	 * the g_set_application_name () function.</span>
+<span class="cm">	 */</span>
+	<span class="n">recent_data</span><span class="o">-&amp;</span><span class="n">app_name</span> <span class="o">=</span> <span class="n">APP_NAME</span><span class="p">;</span>
 
-	<span class="comment">/* the command to open a file; the %u string will be automagically</span>
-<span class="comment">	 * expanded to the document&apos;s URI when getting the application&apos;s</span>
-<span class="comment">	 * command line from the GtkRecentInfo object with</span>
-<span class="comment">	 * gtk_recent_info_get_application_info ()</span>
-<span class="comment">	 */</span>
-	recent_data<span class="gtkdoc opt">-&amp;</span>app_exec <span class="gtkdoc opt">=</span> <span class="function"><a href="../glib/glib-String-Utility-Functions.html#g-strjoin">g_strjoin</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot; &quot;</span><span class="gtkdoc opt">,</span> <span class="function"><a href="../glib/glib-Miscellaneous-Utility-Functions.html#g-get-prgname">g_get_prgname</a></span> <span class="gtkdoc opt">(),</span> <span class="string">&quot;--open-file&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;%u&quot;</span><span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+	<span class="cm">/* the command to open a file; the %u string will be automagically</span>
+<span class="cm">	 * expanded to the document&#39;s URI when getting the application&#39;s</span>
+<span class="cm">	 * command line from the GtkRecentInfo object with</span>
+<span class="cm">	 * gtk_recent_info_get_application_info ()</span>
+<span class="cm">	 */</span>
+	<span class="n">recent_data</span><span class="o">-&amp;</span><span class="n">app_exec</span> <span class="o">=</span> <span class="n">g_strjoin</span> <span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">,</span> <span class="n">g_get_prgname</span> <span class="p">(),</span> <span class="s">&quot;--open-file&quot;</span><span class="p">,</span> <span class="s">&quot;%u&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
-	<span class="keyword">if</span> <span class="gtkdoc opt">(!</span><span class="function"><a href="GtkRecentManager.html#gtk-recent-manager-add-full">gtk_recent_manager_add_full</a></span> <span class="gtkdoc opt">(</span>manager<span class="gtkdoc opt">,</span> document_uri<span class="gtkdoc opt">,</span> recent_data<span class="gtkdoc opt">))</span>
-	  <span class="gtkdoc opt">{</span>
-	    <span class="comment">/* warn about the error */</span>
-	  <span class="gtkdoc opt">}</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">gtk_recent_manager_add_full</span> <span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">document_uri</span><span class="p">,</span> <span class="n">recent_data</span><span class="p">))</span>
+	  <span class="p">{</span>
+	    <span class="cm">/* warn about the error */</span>
+	  <span class="p">}</span>
 
-	<span class="function"><a href="../glib/glib-Memory-Allocation.html#g-free">g_free</a></span> <span class="gtkdoc opt">(</span>recent_data<span class="gtkdoc opt">-&gt;</span>app_exec<span class="gtkdoc opt">);</span>
-	<span class="function"><a href="../glib/glib-Memory-Allocation.html#g-free">g_free</a></span> <span class="gtkdoc opt">(</span>recent_data<span class="gtkdoc opt">);</span>
-	<span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span> <span class="gtkdoc opt">(</span>manager<span class="gtkdoc opt">);</span></pre></td>
+	<span class="n">g_free</span> <span class="p">(</span><span class="n">recent_data</span><span class="o">-&gt;</span><span class="n">app_exec</span><span class="p">);</span>
+	<span class="n">g_free</span> <span class="p">(</span><span class="n">recent_data</span><span class="p">);</span>
+	<span class="n">g_object_unref</span> <span class="p">(</span><span class="n">manager</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -230,22 +230,22 @@ recent_data<span class="gtkdoc opt">-&gt;</span>display_name <span class="gtkdoc
 14
 15
 16</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkRecentManager <span class="gtkdoc opt">*</span>manager<span class="gtkdoc opt">;</span>
-GList <span class="gtkdoc opt">*</span>recent_items<span class="gtkdoc opt">, *</span>l<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkRecentManager</span> <span class="o">*</span><span class="n">manager</span><span class="p">;</span>
+<span class="n">GList</span> <span class="o">*</span><span class="n">recent_items</span><span class="p">,</span> <span class="o">*</span><span class="n">l</span><span class="p">;</span>
 
-	manager <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentManager.html#gtk-recent-manager-get-default">gtk_recent_manager_get_default</a></span><span class="gtkdoc opt">();</span>
+	<span class="n">manager</span> <span class="o">=</span> <span class="n">gtk_recent_manager_get_default</span><span class="p">();</span>
 
-	recent_items <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentManager.html#gtk-recent-manager-get-items">gtk_recent_manager_get_items</a></span> <span class="gtkdoc opt">(</span>manager<span class="gtkdoc opt">);</span>
-	<span class="keyword">for</span> <span class="gtkdoc opt">(</span>l <span class="gtkdoc opt">=</span> recent_items<span class="gtkdoc opt">;</span> l <span class="gtkdoc opt">!=</span> NULL<span class="gtkdoc opt">;</span> l <span class="gtkdoc opt">=</span> l<span class="gtkdoc opt">-&gt;</span>next<span class="gtkdoc opt">)</span>
-	  <span class="gtkdoc opt">{</span>
-	    GtkRecentInfo <span class="gtkdoc opt">*</span>recent_info <span class="gtkdoc opt">=</span> l<span class="gtkdoc opt">-&gt;</span>data<span class="gtkdoc opt">;</span>
+	<span class="n">recent_items</span> <span class="o">=</span> <span class="n">gtk_recent_manager_get_items</span> <span class="p">(</span><span class="n">manager</span><span class="p">);</span>
+	<span class="k">for</span> <span class="p">(</span><span class="n">l</span> <span class="o">=</span> <span class="n">recent_items</span><span class="p">;</span> <span class="n">l</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">;</span> <span class="n">l</span> <span class="o">=</span> <span class="n">l</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">)</span>
+	  <span class="p">{</span>
+	    <span class="n">GtkRecentInfo</span> <span class="o">*</span><span class="n">recent_info</span> <span class="o">=</span> <span class="n">l</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
 
-	    <span class="function">do_something_with_the_item</span> <span class="gtkdoc opt">(</span>recent_info<span class="gtkdoc opt">);</span>
-	  <span class="gtkdoc opt">}</span>
+	    <span class="n">do_something_with_the_item</span> <span class="p">(</span><span class="n">recent_info</span><span class="p">);</span>
+	  <span class="p">}</span>
 	
-	<span class="comment">/* free everything and the list */</span>
-	<span class="function"><a href="../glib/glib-Doubly-Linked-Lists.html#g-list-foreach">g_list_foreach</a></span> <span class="gtkdoc opt">(</span>recent_items<span class="gtkdoc opt">, (</span>GFunc<span class="gtkdoc opt">)</span> gtk_recent_info_unref<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
-	<span class="function"><a href="../glib/glib-Doubly-Linked-Lists.html#g-list-free">g_list_free</a></span> <span class="gtkdoc opt">(</span>recent_items<span class="gtkdoc opt">);</span></pre></td>
+	<span class="cm">/* free everything and the list */</span>
+	<span class="n">g_list_foreach</span> <span class="p">(</span><span class="n">recent_items</span><span class="p">,</span> <span class="p">(</span><span class="n">GFunc</span><span class="p">)</span> <span class="n">gtk_recent_info_unref</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">g_list_free</span> <span class="p">(</span><span class="n">recent_items</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -274,22 +274,22 @@ GList <span class="gtkdoc opt">*</span>recent_items<span class="gtkdoc opt">, *<
 14
 15
 16</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkRecentInfo <span class="gtkdoc opt">*</span>recent_info<span class="gtkdoc opt">;</span>
-	GError <span class="gtkdoc opt">*</span>error <span class="gtkdoc opt">=</span> NULL<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkRecentInfo</span> <span class="o">*</span><span class="n">recent_info</span><span class="p">;</span>
+	<span class="n">GError</span> <span class="o">*</span><span class="n">error</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
 
-	recent_info <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentManager.html#gtk-recent-manager-lookup-item">gtk_recent_manager_lookup_item</a></span> <span class="gtkdoc opt">(</span>manager<span class="gtkdoc opt">,</span> document_uri<span class="gtkdoc opt">, &amp;</span>error<span class="gtkdoc opt">);</span>
-	<span class="keyword">if</span> <span class="gtkdoc opt">(</span>error<span class="gtkdoc opt">)</span>
-	  <span class="gtkdoc opt">{</span>
-	    <span class="function">display_error</span> <span class="gtkdoc opt">(</span>error<span class="gtkdoc opt">);</span>
+	<span class="n">recent_info</span> <span class="o">=</span> <span class="n">gtk_recent_manager_lookup_item</span> <span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">document_uri</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span>
+	  <span class="p">{</span>
+	    <span class="n">display_error</span> <span class="p">(</span><span class="n">error</span><span class="p">);</span>
 
-	    <span class="function"><a href="../glib/glib-Error-Reporting.html#g-error-free">g_error_free</a></span> <span class="gtkdoc opt">(</span>error<span class="gtkdoc opt">);</span>
-	  <span class="gtkdoc opt">}</span>
-	<span class="keyword">else</span>
-	  <span class="gtkdoc opt">{</span>
-	    <span class="function">do_something_with_the_item</span> <span class="gtkdoc opt">(</span>recent_info<span class="gtkdoc opt">);</span>
+	    <span class="n">g_error_free</span> <span class="p">(</span><span class="n">error</span><span class="p">);</span>
+	  <span class="p">}</span>
+	<span class="k">else</span>
+	  <span class="p">{</span>
+	    <span class="n">do_something_with_the_item</span> <span class="p">(</span><span class="n">recent_info</span><span class="p">);</span>
 
-	    <span class="function"><a href="GtkRecentManager.html#gtk-recent-info-unref">gtk_recent_info_unref</a></span> <span class="gtkdoc opt">(</span>recent_info<span class="gtkdoc opt">);</span>
-	  <span class="gtkdoc opt">}</span></pre></td>
+	    <span class="n">gtk_recent_info_unref</span> <span class="p">(</span><span class="n">recent_info</span><span class="p">);</span>
+	  <span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -304,6 +304,6 @@ GList <span class="gtkdoc opt">*</span>recent_items<span class="gtkdoc opt">, *<
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

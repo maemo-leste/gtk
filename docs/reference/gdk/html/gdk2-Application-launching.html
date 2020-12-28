@@ -8,7 +8,7 @@
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-X-Window-System-Interaction.html" title="X Window System Interaction">
 <link rel="next" href="gdk2-Testing.html" title="Testing">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -35,8 +35,8 @@
 <a name="gdk2-Application-launching.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -102,8 +102,8 @@
 <a name="gdk2-Application-launching.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="typedef_keyword">typedef</td>
@@ -209,7 +209,7 @@ display are used.</p>
 <a name="gdk-app-launch-context-set-desktop"></a><h3>gdk_app_launch_context_set_desktop ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_app_launch_context_set_desktop (<em class="parameter"><code><a class="link" href="gdk2-Application-launching.html#GdkAppLaunchContext" title="GdkAppLaunchContext"><span class="type">GdkAppLaunchContext</span></a> *context</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> desktop</code></em>);</pre>
+                                    <em class="parameter"><code><span class="type">gint</span> desktop</code></em>);</pre>
 <p>Sets the workspace on which applications will be launched when
 using this context when running under a window manager that 
 supports multiple workspaces, as described in the </p>
@@ -248,7 +248,7 @@ be the current workspace.</p>
 <a name="gdk-app-launch-context-set-timestamp"></a><h3>gdk_app_launch_context_set_timestamp ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_app_launch_context_set_timestamp (<em class="parameter"><code><a class="link" href="gdk2-Application-launching.html#GdkAppLaunchContext" title="GdkAppLaunchContext"><span class="type">GdkAppLaunchContext</span></a> *context</code></em>,
-                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> timestamp</code></em>);</pre>
+                                      <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
 <p>Sets the timestamp of <em class="parameter"><code>context</code></em>
 . The timestamp should ideally
 be taken from the event that triggered the launch. </p>
@@ -285,7 +285,7 @@ prevention'.</p>
 <a name="gdk-app-launch-context-set-icon"></a><h3>gdk_app_launch_context_set_icon ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_app_launch_context_set_icon (<em class="parameter"><code><a class="link" href="gdk2-Application-launching.html#GdkAppLaunchContext" title="GdkAppLaunchContext"><span class="type">GdkAppLaunchContext</span></a> *context</code></em>,
-                                 <em class="parameter"><code><a href="../gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a> *icon</code></em>);</pre>
+                                 <em class="parameter"><code><span class="type">GIcon</span> *icon</code></em>);</pre>
 <p>Sets the icon for applications that are launched with this
 context.</p>
 <p>Window Managers can use this information when displaying startup
@@ -307,7 +307,7 @@ notification.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>icon</p></td>
-<td class="parameter_description"><p>a <a href="../gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a>, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>a <span class="type">GIcon</span>, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -332,7 +332,7 @@ in desktop files. See also <a class="link" href="gdk2-Application-launching.html
 If neither <em class="parameter"><code>icon</code></em>
  or <em class="parameter"><code>icon_name</code></em>
  is set, the icon is taken from either 
-the file that is passed to launched application or from the <a href="../gio/GAppInfo.html#GAppInfo-struct"><span class="type">GAppInfo</span></a> 
+the file that is passed to launched application or from the <span class="type">GAppInfo</span> 
 for the launched application itself.</p>
 <div class="refsect3">
 <a name="gdk-app-launch-context-set-icon-name.parameters"></a><h4>Parameters</h4>
@@ -350,7 +350,7 @@ for the launched application itself.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>icon_name</p></td>
-<td class="parameter_description"><p>an icon name, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>an icon name, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -369,6 +369,6 @@ for the launched application itself.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

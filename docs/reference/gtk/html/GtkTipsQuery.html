@@ -8,7 +8,7 @@
 <link rel="up" href="DeprecatedObjects.html" title="Deprecated">
 <link rel="prev" href="GtkTooltips.html" title="GtkTooltips">
 <link rel="next" href="GtkTree.html" title="GtkTree">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -39,8 +39,8 @@
 <a name="GtkTipsQuery.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -102,19 +102,19 @@
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_type"><span class="type">gboolean</span></td>
 <td class="property_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery--emit-always" title="The “emit-always” property">emit-always</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery--label-inactive" title="The “label-inactive” property">label-inactive</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery--label-no-tip" title="The “label-no-tip” property">label-no-tip</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -125,30 +125,30 @@
 <a name="GtkTipsQuery.signals"></a><h2>Signals</h2>
 <div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
-<col width="150px" class="signals_return">
-<col width="300px" class="signals_name">
-<col width="200px" class="signals_flags">
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
 </colgroup>
 <tbody>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-start-query" title="The “start-query” signal">start-query</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags">Run First</td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-stop-query" title="The “stop-query” signal">stop-query</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags">Run First</td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-widget-entered" title="The “widget-entered” signal">widget-entered</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+<td class="signal_flags">Run Last</td>
 </tr>
 <tr>
-<td class="signal_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_type"><span class="returnvalue">gboolean</span></td>
 <td class="signal_name"><a class="link" href="GtkTipsQuery.html#GtkTipsQuery-widget-selected" title="The “widget-selected” signal">widget-selected</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+<td class="signal_flags">Run Last</td>
 </tr>
 </tbody>
 </table></div>
@@ -157,8 +157,8 @@
 <a name="GtkTipsQuery.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -168,8 +168,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkTipsQuery.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkMisc.html" title="GtkMisc">GtkMisc</a>
@@ -226,8 +226,8 @@ gtk_tips_query_set_caller (<em class="parameter"><code><a class="link" href="Gtk
 <a name="gtk-tips-query-set-labels"></a><h3>gtk_tips_query_set_labels ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tips_query_set_labels (<em class="parameter"><code><a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="type">GtkTipsQuery</span></a> *tips_query</code></em>,
-                           <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label_inactive</code></em>,
-                           <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label_no_tip</code></em>);</pre>
+                           <em class="parameter"><code>const <span class="type">gchar</span> *label_inactive</code></em>,
+                           <em class="parameter"><code>const <span class="type">gchar</span> *label_no_tip</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_tips_query_set_labels</code> is deprecated and should not be used in newly-written code.</p></div>
 </div>
 </div>
@@ -244,26 +244,30 @@ gtk_tips_query_set_labels (<em class="parameter"><code><a class="link" href="Gtk
 <div class="refsect2">
 <a name="GtkTipsQuery--caller"></a><h3>The <code class="literal">“caller”</code> property</h3>
 <pre class="programlisting">  “caller”                   <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *</pre>
+<p>Owner: GtkTipsQuery</p>
 <p>Flags: Read / Write</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkTipsQuery--emit-always"></a><h3>The <code class="literal">“emit-always”</code> property</h3>
-<pre class="programlisting">  “emit-always”              <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<pre class="programlisting">  “emit-always”              <span class="type">gboolean</span></pre>
+<p>Owner: GtkTipsQuery</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkTipsQuery--label-inactive"></a><h3>The <code class="literal">“label-inactive”</code> property</h3>
-<pre class="programlisting">  “label-inactive”           <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “label-inactive”           <span class="type">char</span> *</pre>
+<p>Owner: GtkTipsQuery</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkTipsQuery--label-no-tip"></a><h3>The <code class="literal">“label-no-tip”</code> property</h3>
-<pre class="programlisting">  “label-no-tip”             <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “label-no-tip”             <span class="type">char</span> *</pre>
+<p>Owner: GtkTipsQuery</p>
 <p>Flags: Read / Write</p>
 <p>Default value: NULL</p>
 </div>
@@ -274,16 +278,16 @@ gtk_tips_query_set_labels (<em class="parameter"><code><a class="link" href="Gtk
 <a name="GtkTipsQuery-start-query"></a><h3>The <code class="literal">“start-query”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="type">GtkTipsQuery</span></a> *tipsquery,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <span class="type">gpointer</span>      user_data)</pre>
+<p>Flags: Run First</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkTipsQuery-stop-query"></a><h3>The <code class="literal">“stop-query”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="type">GtkTipsQuery</span></a> *tipsquery,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+               <span class="type">gpointer</span>      user_data)</pre>
+<p>Flags: Run First</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -291,26 +295,26 @@ user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><sp
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="type">GtkTipsQuery</span></a> *tipsquery,
                <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a>    *widget,
-               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg1,
-               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg2,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+               <span class="type">char</span>         *arg1,
+               <span class="type">char</span>         *arg2,
+               <span class="type">gpointer</span>      user_data)</pre>
+<p>Flags: Run Last</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkTipsQuery-widget-selected"></a><h3>The <code class="literal">“widget-selected”</code> signal</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
 user_function (<a class="link" href="GtkTipsQuery.html" title="GtkTipsQuery"><span class="type">GtkTipsQuery</span></a> *tipsquery,
                <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a>    *widget,
-               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg1,
-               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg2,
+               <span class="type">char</span>         *arg1,
+               <span class="type">char</span>         *arg2,
                <a href="../html/gdk2-Event-Structures.html#GdkEvent"><span class="type">GdkEvent</span></a>     *arg3,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+               <span class="type">gpointer</span>      user_data)</pre>
+<p>Flags: Run Last</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <CopyDir>$(GlibEtcInstallRoot)</CopyDir>
     <DefDir>$(SolutionDir)$(Configuration)\$(Platform)\obj\$(ProjectName)</DefDir>
     <ApiVersion>2.0</ApiVersion>
-    <GtkVersion>2.24.32</GtkVersion>
+    <GtkVersion>2.24.33</GtkVersion>
     <GtkLibtoolCompatibleDllPrefix>lib</GtkLibtoolCompatibleDllPrefix>
     <GtkLibtoolCompatibleDllSuffix>-$(ApiVersion)-0</GtkLibtoolCompatibleDllSuffix>
     <GtkSeparateVSDllPrefix />

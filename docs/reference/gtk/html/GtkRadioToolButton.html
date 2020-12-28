@@ -8,7 +8,7 @@
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkToggleToolButton.html" title="GtkToggleToolButton">
 <link rel="next" href="Actions.html" title="Action-based menus and toolbars">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,8 +38,8 @@
 <a name="GtkRadioToolButton.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -76,7 +76,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+<span class="returnvalue">GSList</span> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkRadioToolButton.html#gtk-radio-tool-button-get-group" title="gtk_radio_tool_button_get_group ()">gtk_radio_tool_button_get_group</a> <span class="c_punctuation">()</span>
@@ -113,8 +113,8 @@
 <a name="GtkRadioToolButton.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -124,8 +124,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkRadioToolButton.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -155,7 +155,7 @@ GtkRadioToolButton implements
 <div class="refsect2">
 <a name="gtk-radio-tool-button-new"></a><h3>gtk_radio_tool_button_new ()</h3>
 <pre class="programlisting"><a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="returnvalue">GtkToolItem</span></a> *
-gtk_radio_tool_button_new (<em class="parameter"><code><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *group</code></em>);</pre>
+gtk_radio_tool_button_new (<em class="parameter"><code><span class="type">GSList</span> *group</code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a>, adding it to <em class="parameter"><code>group</code></em>
 .</p>
 <div class="refsect3">
@@ -168,7 +168,7 @@ gtk_radio_tool_button_new (<em class="parameter"><code><a href="../glib/glib-Sin
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>group</p></td>
-<td class="parameter_description"><p>An existing radio button group, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you are creating a new group. </p></td>
+<td class="parameter_description"><p>An existing radio button group, or <code class="literal">NULL</code> if you are creating a new group. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
@@ -183,8 +183,8 @@ gtk_radio_tool_button_new (<em class="parameter"><code><a href="../glib/glib-Sin
 <div class="refsect2">
 <a name="gtk-radio-tool-button-new-from-stock"></a><h3>gtk_radio_tool_button_new_from_stock ()</h3>
 <pre class="programlisting"><a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="returnvalue">GtkToolItem</span></a> *
-gtk_radio_tool_button_new_from_stock (<em class="parameter"><code><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *group</code></em>,
-                                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>);</pre>
+gtk_radio_tool_button_new_from_stock (<em class="parameter"><code><span class="type">GSList</span> *group</code></em>,
+                                      <em class="parameter"><code>const <span class="type">gchar</span> *stock_id</code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a>, adding it to <em class="parameter"><code>group</code></em>
 . 
 The new <a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a> will contain an icon and label from the
@@ -201,7 +201,7 @@ stock item indicated by <em class="parameter"><code>stock_id</code></em>
 <tbody>
 <tr>
 <td class="parameter_name"><p>group</p></td>
-<td class="parameter_description"><p>an existing radio button group, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you are creating a new group. </p></td>
+<td class="parameter_description"><p>an existing radio button group, or <code class="literal">NULL</code> if you are creating a new group. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -253,7 +253,7 @@ gtk_radio_tool_button_new_from_widget (<em class="parameter"><code><a class="lin
 <pre class="programlisting"><a class="link" href="GtkToolItem.html" title="GtkToolItem"><span class="returnvalue">GtkToolItem</span></a> *
 gtk_radio_tool_button_new_with_stock_from_widget
                                (<em class="parameter"><code><a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a> *group</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>);</pre>
+                                <em class="parameter"><code>const <span class="type">gchar</span> *stock_id</code></em>);</pre>
 <p>Creates a new <a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a> adding it to the same group as <em class="parameter"><code>group</code></em>
 .
 The new <a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a> will contain an icon and label from the
@@ -291,7 +291,7 @@ stock item indicated by <em class="parameter"><code>stock_id</code></em>
 <hr>
 <div class="refsect2">
 <a name="gtk-radio-tool-button-get-group"></a><h3>gtk_radio_tool_button_get_group ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+<pre class="programlisting"><span class="returnvalue">GSList</span> *
 gtk_radio_tool_button_get_group (<em class="parameter"><code><a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a> *button</code></em>);</pre>
 <p>Returns the radio button group <em class="parameter"><code>button</code></em>
  belongs to.</p>
@@ -323,7 +323,7 @@ belongs to. </p>
 <a name="gtk-radio-tool-button-set-group"></a><h3>gtk_radio_tool_button_set_group ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_radio_tool_button_set_group (<em class="parameter"><code><a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a> *button</code></em>,
-                                 <em class="parameter"><code><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *group</code></em>);</pre>
+                                 <em class="parameter"><code><span class="type">GSList</span> *group</code></em>);</pre>
 <p>Adds <em class="parameter"><code>button</code></em>
  to <em class="parameter"><code>group</code></em>
 , removing it from the group it belonged to before.</p>
@@ -365,12 +365,13 @@ gtk_radio_tool_button_set_group (<em class="parameter"><code><a class="link" hre
 <a name="GtkRadioToolButton--group"></a><h3>The <code class="literal">“group”</code> property</h3>
 <pre class="programlisting">  “group”                    <a class="link" href="GtkRadioToolButton.html" title="GtkRadioToolButton"><span class="type">GtkRadioToolButton</span></a> *</pre>
 <p>Sets a new group for a radio tool button.</p>
+<p>Owner: GtkRadioToolButton</p>
 <p>Flags: Write</p>
 <p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

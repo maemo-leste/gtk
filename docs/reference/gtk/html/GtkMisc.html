@@ -8,7 +8,7 @@
 <link rel="up" href="AbstractObjects.html" title="Abstract Base Classes">
 <link rel="prev" href="GtkMenuShell.html" title="GtkMenuShell">
 <link rel="next" href="GtkObject.html" title="GtkObject">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,8 +38,8 @@
 <a name="GtkMisc.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -87,22 +87,22 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkMisc.html#GtkMisc--xalign" title="The “xalign” property">xalign</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="GtkMisc.html#GtkMisc--xpad" title="The “xpad” property">xpad</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_type"><span class="type">float</span></td>
 <td class="property_name"><a class="link" href="GtkMisc.html#GtkMisc--yalign" title="The “yalign” property">yalign</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="GtkMisc.html#GtkMisc--ypad" title="The “ypad” property">ypad</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -113,8 +113,8 @@
 <a name="GtkMisc.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -124,8 +124,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkMisc.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> GtkMisc
@@ -155,24 +155,24 @@ GtkMisc implements
 <a name="gtk-misc-set-alignment"></a><h3>gtk_misc_set_alignment ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_misc_set_alignment (<em class="parameter"><code><a class="link" href="GtkMisc.html" title="GtkMisc"><span class="type">GtkMisc</span></a> *misc</code></em>,
-                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> xalign</code></em>,
-                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> yalign</code></em>);</pre>
+                        <em class="parameter"><code><span class="type">gfloat</span> xalign</code></em>,
+                        <em class="parameter"><code><span class="type">gfloat</span> yalign</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-misc-set-padding"></a><h3>gtk_misc_set_padding ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_misc_set_padding (<em class="parameter"><code><a class="link" href="GtkMisc.html" title="GtkMisc"><span class="type">GtkMisc</span></a> *misc</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> xpad</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ypad</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gint</span> xpad</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> ypad</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-misc-get-alignment"></a><h3>gtk_misc_get_alignment ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_misc_get_alignment (<em class="parameter"><code><a class="link" href="GtkMisc.html" title="GtkMisc"><span class="type">GtkMisc</span></a> *misc</code></em>,
-                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *xalign</code></em>,
-                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *yalign</code></em>);</pre>
+                        <em class="parameter"><code><span class="type">gfloat</span> *xalign</code></em>,
+                        <em class="parameter"><code><span class="type">gfloat</span> *yalign</code></em>);</pre>
 <p>Gets the X and Y alignment of the widget within its allocation. 
 See <a class="link" href="GtkMisc.html#gtk-misc-set-alignment" title="gtk_misc_set_alignment ()"><code class="function">gtk_misc_set_alignment()</code></a>.</p>
 <div class="refsect3">
@@ -192,13 +192,13 @@ See <a class="link" href="GtkMisc.html#gtk-misc-set-alignment" title="gtk_misc_s
 <tr>
 <td class="parameter_name"><p>xalign</p></td>
 <td class="parameter_description"><p>location to store X alignment of <em class="parameter"><code>misc</code></em>
-, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>yalign</p></td>
 <td class="parameter_description"><p>location to store Y alignment of <em class="parameter"><code>misc</code></em>
-, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -210,8 +210,8 @@ See <a class="link" href="GtkMisc.html#gtk-misc-set-alignment" title="gtk_misc_s
 <a name="gtk-misc-get-padding"></a><h3>gtk_misc_get_padding ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_misc_get_padding (<em class="parameter"><code><a class="link" href="GtkMisc.html" title="GtkMisc"><span class="type">GtkMisc</span></a> *misc</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *xpad</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *ypad</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gint</span> *xpad</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> *ypad</code></em>);</pre>
 <p>Gets the padding in the X and Y directions of the widget. 
 See <a class="link" href="GtkMisc.html#gtk-misc-set-padding" title="gtk_misc_set_padding ()"><code class="function">gtk_misc_set_padding()</code></a>.</p>
 <div class="refsect3">
@@ -231,13 +231,13 @@ See <a class="link" href="GtkMisc.html#gtk-misc-set-padding" title="gtk_misc_set
 <tr>
 <td class="parameter_name"><p>xpad</p></td>
 <td class="parameter_description"><p>location to store padding in the X
-direction, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+direction, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>ypad</p></td>
 <td class="parameter_description"><p>location to store padding in the Y
-direction, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+direction, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -256,8 +256,9 @@ direction, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class=
 <a name="GtkMisc.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GtkMisc--xalign"></a><h3>The <code class="literal">“xalign”</code> property</h3>
-<pre class="programlisting">  “xalign”                   <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “xalign”                   <span class="type">float</span></pre>
 <p>The horizontal alignment, from 0 (left) to 1 (right). Reversed for RTL layouts.</p>
+<p>Owner: GtkMisc</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,1]</p>
 <p>Default value: 0.5</p>
@@ -265,8 +266,9 @@ direction, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class=
 <hr>
 <div class="refsect2">
 <a name="GtkMisc--xpad"></a><h3>The <code class="literal">“xpad”</code> property</h3>
-<pre class="programlisting">  “xpad”                     <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “xpad”                     <span class="type">int</span></pre>
 <p>The amount of space to add on the left and right of the widget, in pixels.</p>
+<p>Owner: GtkMisc</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -274,8 +276,9 @@ direction, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class=
 <hr>
 <div class="refsect2">
 <a name="GtkMisc--yalign"></a><h3>The <code class="literal">“yalign”</code> property</h3>
-<pre class="programlisting">  “yalign”                   <a href="../glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<pre class="programlisting">  “yalign”                   <span class="type">float</span></pre>
 <p>The vertical alignment, from 0 (top) to 1 (bottom).</p>
+<p>Owner: GtkMisc</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [0,1]</p>
 <p>Default value: 0.5</p>
@@ -283,8 +286,9 @@ direction, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class=
 <hr>
 <div class="refsect2">
 <a name="GtkMisc--ypad"></a><h3>The <code class="literal">“ypad”</code> property</h3>
-<pre class="programlisting">  “ypad”                     <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “ypad”                     <span class="type">int</span></pre>
 <p>The amount of space to add on the top and bottom of the widget, in pixels.</p>
+<p>Owner: GtkMisc</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= 0</p>
 <p>Default value: 0</p>
@@ -292,6 +296,6 @@ direction, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class=
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

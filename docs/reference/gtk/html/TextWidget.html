@@ -8,7 +8,7 @@
 <link rel="up" href="TextWidgetObjects.html" title="Multiline Text Editor">
 <link rel="prev" href="TextWidgetObjects.html" title="Multiline Text Editor">
 <link rel="next" href="GtkTextIter.html" title="GtkTextIter">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -132,19 +132,19 @@ The simplest usage of <a class="link" href="GtkTextView.html" title="GtkTextView
 11
 12
 13</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkWidget <span class="gtkdoc opt">*</span>view<span class="gtkdoc opt">;</span>
-GtkTextBuffer <span class="gtkdoc opt">*</span>buffer<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkWidget</span> <span class="o">*</span><span class="n">view</span><span class="p">;</span>
+<span class="n">GtkTextBuffer</span> <span class="o">*</span><span class="n">buffer</span><span class="p">;</span>
 
-view <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkTextView.html#gtk-text-view-new">gtk_text_view_new</a></span> <span class="gtkdoc opt">();</span>
+<span class="n">view</span> <span class="o">=</span> <span class="n">gtk_text_view_new</span> <span class="p">();</span>
 
-buffer <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkTextView.html#gtk-text-view-get-buffer">gtk_text_view_get_buffer</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_TEXT_VIEW</span> <span class="gtkdoc opt">(</span>view<span class="gtkdoc opt">));</span>
+<span class="n">buffer</span> <span class="o">=</span> <span class="n">gtk_text_view_get_buffer</span> <span class="p">(</span><span class="n">GTK_TEXT_VIEW</span> <span class="p">(</span><span class="n">view</span><span class="p">));</span>
 
-<span class="function"><a href="GtkTextBuffer.html#gtk-text-buffer-set-text">gtk_text_buffer_set_text</a></span> <span class="gtkdoc opt">(</span>buffer<span class="gtkdoc opt">,</span> <span class="string">&quot;Hello, this is some text&quot;</span><span class="gtkdoc opt">, -</span><span class="number">1</span><span class="gtkdoc opt">);</span>
+<span class="n">gtk_text_buffer_set_text</span> <span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="s">&quot;Hello, this is some text&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
 
-<span class="comment">/* Now you might put the view in a container and display it on the</span>
-<span class="comment"> * screen; when the user edits the text, signals on the buffer</span>
-<span class="comment"> * will be emitted, such as &quot;changed&quot;, &quot;insert_text&quot;, and so on.</span>
-<span class="comment"> */</span></pre></td>
+<span class="cm">/* Now you might put the view in a container and display it on the</span>
+<span class="cm"> * screen; when the user edits the text, signals on the buffer</span>
+<span class="cm"> * will be emitted, such as &quot;changed&quot;, &quot;insert_text&quot;, and so on.</span>
+<span class="cm"> */</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -205,37 +205,37 @@ standard <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="ty
 29
 30
 31</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkWidget <span class="gtkdoc opt">*</span>view<span class="gtkdoc opt">;</span>
-GtkTextBuffer <span class="gtkdoc opt">*</span>buffer<span class="gtkdoc opt">;</span>
-GtkTextIter start<span class="gtkdoc opt">,</span> end<span class="gtkdoc opt">;</span>
-PangoFontDescription <span class="gtkdoc opt">*</span>font_desc<span class="gtkdoc opt">;</span>
-GdkColor color<span class="gtkdoc opt">;</span>
-GtkTextTag <span class="gtkdoc opt">*</span>tag<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkWidget</span> <span class="o">*</span><span class="n">view</span><span class="p">;</span>
+<span class="n">GtkTextBuffer</span> <span class="o">*</span><span class="n">buffer</span><span class="p">;</span>
+<span class="n">GtkTextIter</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">;</span>
+<span class="n">PangoFontDescription</span> <span class="o">*</span><span class="n">font_desc</span><span class="p">;</span>
+<span class="n">GdkColor</span> <span class="n">color</span><span class="p">;</span>
+<span class="n">GtkTextTag</span> <span class="o">*</span><span class="n">tag</span><span class="p">;</span>
 
-view <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkTextView.html#gtk-text-view-new">gtk_text_view_new</a></span> <span class="gtkdoc opt">();</span>
+<span class="n">view</span> <span class="o">=</span> <span class="n">gtk_text_view_new</span> <span class="p">();</span>
 
-buffer <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkTextView.html#gtk-text-view-get-buffer">gtk_text_view_get_buffer</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_TEXT_VIEW</span> <span class="gtkdoc opt">(</span>view<span class="gtkdoc opt">));</span>
+<span class="n">buffer</span> <span class="o">=</span> <span class="n">gtk_text_view_get_buffer</span> <span class="p">(</span><span class="n">GTK_TEXT_VIEW</span> <span class="p">(</span><span class="n">view</span><span class="p">));</span>
 
-<span class="function"><a href="GtkTextBuffer.html#gtk-text-buffer-set-text">gtk_text_buffer_set_text</a></span> <span class="gtkdoc opt">(</span>buffer<span class="gtkdoc opt">,</span> <span class="string">&quot;Hello, this is some text&quot;</span><span class="gtkdoc opt">, -</span><span class="number">1</span><span class="gtkdoc opt">);</span>
+<span class="n">gtk_text_buffer_set_text</span> <span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="s">&quot;Hello, this is some text&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
 
-<span class="comment">/* Change default font throughout the widget */</span>
-font_desc <span class="gtkdoc opt">=</span> <span class="function"><a href="../pango/pango-Fonts.html#pango-font-description-from-string">pango_font_description_from_string</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;Serif 15&quot;</span><span class="gtkdoc opt">);</span>
-<span class="function"><a href="GtkWidget.html#gtk-widget-modify-font">gtk_widget_modify_font</a></span> <span class="gtkdoc opt">(</span>view<span class="gtkdoc opt">,</span> font_desc<span class="gtkdoc opt">);</span>
-<span class="function"><a href="../pango/pango-Fonts.html#pango-font-description-free">pango_font_description_free</a></span> <span class="gtkdoc opt">(</span>font_desc<span class="gtkdoc opt">);</span>
+<span class="cm">/* Change default font throughout the widget */</span>
+<span class="n">font_desc</span> <span class="o">=</span> <span class="n">pango_font_description_from_string</span> <span class="p">(</span><span class="s">&quot;Serif 15&quot;</span><span class="p">);</span>
+<span class="n">gtk_widget_modify_font</span> <span class="p">(</span><span class="n">view</span><span class="p">,</span> <span class="n">font_desc</span><span class="p">);</span>
+<span class="n">pango_font_description_free</span> <span class="p">(</span><span class="n">font_desc</span><span class="p">);</span>
 
-<span class="comment">/* Change default color throughout the widget */</span>
-<span class="function"><a href="../html/gdk2-Colormaps-and-Colors.html#gdk-color-parse">gdk_color_parse</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;green&quot;</span><span class="gtkdoc opt">, &amp;</span>color<span class="gtkdoc opt">);</span>
-<span class="function"><a href="GtkWidget.html#gtk-widget-modify-text">gtk_widget_modify_text</a></span> <span class="gtkdoc opt">(</span>view<span class="gtkdoc opt">,</span> GTK_STATE_NORMAL<span class="gtkdoc opt">, &amp;</span>color<span class="gtkdoc opt">);</span>
+<span class="cm">/* Change default color throughout the widget */</span>
+<span class="n">gdk_color_parse</span> <span class="p">(</span><span class="s">&quot;green&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">color</span><span class="p">);</span>
+<span class="n">gtk_widget_modify_text</span> <span class="p">(</span><span class="n">view</span><span class="p">,</span> <span class="n">GTK_STATE_NORMAL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">color</span><span class="p">);</span>
 
-<span class="comment">/* Change left margin throughout the widget */</span>
-<span class="function"><a href="GtkTextView.html#gtk-text-view-set-left-margin">gtk_text_view_set_left_margin</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_TEXT_VIEW</span> <span class="gtkdoc opt">(</span>view<span class="gtkdoc opt">),</span> <span class="number">30</span><span class="gtkdoc opt">);</span>
+<span class="cm">/* Change left margin throughout the widget */</span>
+<span class="n">gtk_text_view_set_left_margin</span> <span class="p">(</span><span class="n">GTK_TEXT_VIEW</span> <span class="p">(</span><span class="n">view</span><span class="p">),</span> <span class="mi">30</span><span class="p">);</span>
 
-<span class="comment">/* Use a tag to change the color for just one part of the widget */</span>
-tag <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkTextBuffer.html#gtk-text-buffer-create-tag">gtk_text_buffer_create_tag</a></span> <span class="gtkdoc opt">(</span>buffer<span class="gtkdoc opt">,</span> <span class="string">&quot;blue_foreground&quot;</span><span class="gtkdoc opt">,</span>
-	   		            <span class="string">&quot;foreground&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;blue&quot;</span><span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>  
-<span class="function"><a href="GtkTextBuffer.html#gtk-text-buffer-get-iter-at-offset">gtk_text_buffer_get_iter_at_offset</a></span> <span class="gtkdoc opt">(</span>buffer<span class="gtkdoc opt">, &amp;</span>start<span class="gtkdoc opt">,</span> <span class="number">7</span><span class="gtkdoc opt">);</span>
-<span class="function"><a href="GtkTextBuffer.html#gtk-text-buffer-get-iter-at-offset">gtk_text_buffer_get_iter_at_offset</a></span> <span class="gtkdoc opt">(</span>buffer<span class="gtkdoc opt">, &amp;</span>end<span class="gtkdoc opt">,</span> <span class="number">12</span><span class="gtkdoc opt">);</span>
-<span class="function"><a href="GtkTextBuffer.html#gtk-text-buffer-apply-tag">gtk_text_buffer_apply_tag</a></span> <span class="gtkdoc opt">(</span>buffer<span class="gtkdoc opt">,</span> tag<span class="gtkdoc opt">, &amp;</span>start<span class="gtkdoc opt">, &amp;</span>end<span class="gtkdoc opt">);</span></pre></td>
+<span class="cm">/* Use a tag to change the color for just one part of the widget */</span>
+<span class="n">tag</span> <span class="o">=</span> <span class="n">gtk_text_buffer_create_tag</span> <span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="s">&quot;blue_foreground&quot;</span><span class="p">,</span>
+	   		            <span class="s">&quot;foreground&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>  
+<span class="n">gtk_text_buffer_get_iter_at_offset</span> <span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">start</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+<span class="n">gtk_text_buffer_get_iter_at_offset</span> <span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">end</span><span class="p">,</span> <span class="mi">12</span><span class="p">);</span>
+<span class="n">gtk_text_buffer_apply_tag</span> <span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">start</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">end</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -260,6 +260,6 @@ between the old and new positions).
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

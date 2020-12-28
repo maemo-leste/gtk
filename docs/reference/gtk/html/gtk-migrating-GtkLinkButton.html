@@ -8,7 +8,7 @@
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="gtkrecent-advanced.html" title="Advanced usage">
 <link rel="next" href="gtk-migrating-GtkBuilder.html" title="Migrating from libglade to GtkBuilder">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -40,9 +40,9 @@
         <td class="listing_lines" align="right"><pre>1
 2
 3</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkWidget <span class="gtkdoc opt">*</span>button<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkWidget</span> <span class="o">*</span><span class="n">button</span><span class="p">;</span>
 
-button <span class="gtkdoc opt">=</span> <span class="function">gnome_href_new</span> <span class="gtkdoc opt">(</span>url<span class="gtkdoc opt">,</span> <span class="string">&quot;&quot;</span><span class="gtkdoc opt">);</span></pre></td>
+<span class="n">button</span> <span class="o">=</span> <span class="n">gnome_href_new</span> <span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -73,23 +73,23 @@ button <span class="gtkdoc opt">=</span> <span class="function">gnome_href_new</
 15
 16
 17</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">static void</span>
-<span class="function">link_button_clicked_cb</span> <span class="gtkdoc opt">(</span>GtkWidget <span class="gtkdoc opt">*</span>widget<span class="gtkdoc opt">,</span>
-                        gpointer   data<span class="gtkdoc opt">)</span>
-<span class="gtkdoc opt">{</span>
-  <span class="gtkdoc kwb">const</span> gchar <span class="gtkdoc opt">*</span>link<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">link_button_clicked_cb</span> <span class="p">(</span><span class="n">GtkWidget</span> <span class="o">*</span><span class="n">widget</span><span class="p">,</span>
+                        <span class="n">gpointer</span>   <span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">const</span> <span class="n">gchar</span> <span class="o">*</span><span class="n">link</span><span class="p">;</span>
 
-	link <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkLinkButton.html#gtk-link-button-get-uri">gtk_link_button_get_uri</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_LINK_BUTTON</span> <span class="gtkdoc opt">(</span>widget<span class="gtkdoc opt">));</span>
-	<span class="function">open_browser_at_url</span> <span class="gtkdoc opt">(</span>link<span class="gtkdoc opt">);</span>
-<span class="gtkdoc opt">}</span>
+	<span class="n">link</span> <span class="o">=</span> <span class="n">gtk_link_button_get_uri</span> <span class="p">(</span><span class="n">GTK_LINK_BUTTON</span> <span class="p">(</span><span class="n">widget</span><span class="p">));</span>
+	<span class="n">open_browser_at_url</span> <span class="p">(</span><span class="n">link</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="comment">/* ... */</span>
+<span class="cm">/* ... */</span>
 
-  GtkWidget <span class="gtkdoc opt">*</span>button<span class="gtkdoc opt">;</span>
+  <span class="n">GtkWidget</span> <span class="o">*</span><span class="n">button</span><span class="p">;</span>
 
-	button <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkLinkButton.html#gtk-link-button-new">gtk_link_button_new</a></span> <span class="gtkdoc opt">(</span>url<span class="gtkdoc opt">);</span>
-	<span class="function"><a href="../gobject/gobject-Signals.html#g-signal-connect">g_signal_connect</a></span> <span class="gtkdoc opt">(</span>button<span class="gtkdoc opt">,</span> <span class="string">&quot;clicked&quot;</span><span class="gtkdoc opt">,</span>
-	                  <span class="function"><a href="../gobject/gobject-Closures.html#G-CALLBACK:CAPS">G_CALLBACK</a></span> <span class="gtkdoc opt">(</span>link_button_clicked_cb<span class="gtkdoc opt">),</span> NULL<span class="gtkdoc opt">);</span></pre></td>
+	<span class="n">button</span> <span class="o">=</span> <span class="n">gtk_link_button_new</span> <span class="p">(</span><span class="n">url</span><span class="p">);</span>
+	<span class="n">g_signal_connect</span> <span class="p">(</span><span class="n">button</span><span class="p">,</span> <span class="s">&quot;clicked&quot;</span><span class="p">,</span>
+	                  <span class="n">G_CALLBACK</span> <span class="p">(</span><span class="n">link_button_clicked_cb</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -119,21 +119,21 @@ button <span class="gtkdoc opt">=</span> <span class="function">gnome_href_new</
 13
 14
 15</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">static void</span>
-<span class="function">link_button_hook</span> <span class="gtkdoc opt">(</span>GtkLinkButton <span class="gtkdoc opt">*</span>button<span class="gtkdoc opt">,</span>
-                  <span class="gtkdoc kwb">const</span> gchar   <span class="gtkdoc opt">*</span>link<span class="gtkdoc opt">,</span>
-			gpointer       user_data<span class="gtkdoc opt">)</span>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">link_button_hook</span> <span class="p">(</span><span class="n">GtkLinkButton</span> <span class="o">*</span><span class="n">button</span><span class="p">,</span>
+                  <span class="k">const</span> <span class="n">gchar</span>   <span class="o">*</span><span class="n">link</span><span class="p">,</span>
+			<span class="n">gpointer</span>       <span class="n">user_data</span><span class="p">)</span>
 
-<span class="gtkdoc opt">{</span>
-  <span class="function">open_browser_at_url</span> <span class="gtkdoc opt">(</span>link<span class="gtkdoc opt">);</span>
-<span class="gtkdoc opt">}</span>
+<span class="p">{</span>
+  <span class="n">open_browser_at_url</span> <span class="p">(</span><span class="n">link</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="comment">/* ... */</span>
+<span class="cm">/* ... */</span>
 
-  GtkWidget <span class="gtkdoc opt">*</span>button1 <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkLinkButton.html#gtk-link-button-new">gtk_link_button_new</a></span> <span class="gtkdoc opt">(</span>uri1<span class="gtkdoc opt">);</span>
-	GtkWidget <span class="gtkdoc opt">*</span>button2 <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkLinkButton.html#gtk-link-button-new">gtk_link_button_new</a></span> <span class="gtkdoc opt">(</span>uri2<span class="gtkdoc opt">);</span>
+  <span class="n">GtkWidget</span> <span class="o">*</span><span class="n">button1</span> <span class="o">=</span> <span class="n">gtk_link_button_new</span> <span class="p">(</span><span class="n">uri1</span><span class="p">);</span>
+	<span class="n">GtkWidget</span> <span class="o">*</span><span class="n">button2</span> <span class="o">=</span> <span class="n">gtk_link_button_new</span> <span class="p">(</span><span class="n">uri2</span><span class="p">);</span>
 
-  <span class="function"><a href="GtkLinkButton.html#gtk-link-button-set-uri-hook">gtk_link_button_set_uri_hook</a></span> <span class="gtkdoc opt">(</span>link_button_hook<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span></pre></td>
+  <span class="n">gtk_link_button_set_uri_hook</span> <span class="p">(</span><span class="n">link_button_hook</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -149,6 +149,6 @@ button <span class="gtkdoc opt">=</span> <span class="function">gnome_href_new</
   </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

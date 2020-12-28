@@ -8,7 +8,7 @@
 <link rel="up" href="DisplayWidgets.html" title="Display Widgets">
 <link rel="prev" href="GtkProgressBar.html" title="GtkProgressBar">
 <link rel="next" href="GtkInfoBar.html" title="GtkInfoBar">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -40,8 +40,8 @@
 <a name="GtkStatusbar.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -54,7 +54,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+<span class="returnvalue">guint</span>
 </td>
 <td class="function_name">
 <a class="link" href="GtkStatusbar.html#gtk-statusbar-get-context-id" title="gtk_statusbar_get_context_id ()">gtk_statusbar_get_context_id</a> <span class="c_punctuation">()</span>
@@ -62,7 +62,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+<span class="returnvalue">guint</span>
 </td>
 <td class="function_name">
 <a class="link" href="GtkStatusbar.html#gtk-statusbar-push" title="gtk_statusbar_push ()">gtk_statusbar_push</a> <span class="c_punctuation">()</span>
@@ -102,7 +102,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="returnvalue">gboolean</span>
 </td>
 <td class="function_name">
 <a class="link" href="GtkStatusbar.html#gtk-statusbar-get-has-resize-grip" title="gtk_statusbar_get_has_resize_grip ()">gtk_statusbar_get_has_resize_grip</a> <span class="c_punctuation">()</span>
@@ -128,7 +128,7 @@
 <col width="200px" class="properties_flags">
 </colgroup>
 <tbody><tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_type"><span class="type">gboolean</span></td>
 <td class="property_name"><a class="link" href="GtkStatusbar.html#GtkStatusbar--has-resize-grip" title="The “has-resize-grip” property">has-resize-grip</a></td>
 <td class="property_flags">Read / Write</td>
 </tr></tbody>
@@ -153,20 +153,20 @@
 <a name="GtkStatusbar.signals"></a><h2>Signals</h2>
 <div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
-<col width="150px" class="signals_return">
-<col width="300px" class="signals_name">
-<col width="200px" class="signals_flags">
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
 </colgroup>
 <tbody>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStatusbar.html#GtkStatusbar-text-popped" title="The “text-popped” signal">text-popped</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+<td class="signal_flags">Run Last</td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStatusbar.html#GtkStatusbar-text-pushed" title="The “text-pushed” signal">text-pushed</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+<td class="signal_flags">Run Last</td>
 </tr>
 </tbody>
 </table></div>
@@ -175,8 +175,8 @@
 <a name="GtkStatusbar.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -186,8 +186,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkStatusbar.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -225,9 +225,9 @@ gtk_statusbar_new (<em class="parameter"><code><span class="type">void</span></c
 <hr>
 <div class="refsect2">
 <a name="gtk-statusbar-get-context-id"></a><h3>gtk_statusbar_get_context_id ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+<pre class="programlisting"><span class="returnvalue">guint</span>
 gtk_statusbar_get_context_id (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>,
-                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context_description</code></em>);</pre>
+                              <em class="parameter"><code>const <span class="type">gchar</span> *context_description</code></em>);</pre>
 <p>Returns a new context identifier, given a description 
 of the actual context. Note that the description is 
 <span class="emphasis"><em>not</em></span> shown in the UI.</p>
@@ -262,10 +262,10 @@ the new message is being used in</p></td>
 <hr>
 <div class="refsect2">
 <a name="gtk-statusbar-push"></a><h3>gtk_statusbar_push ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+<pre class="programlisting"><span class="returnvalue">guint</span>
 gtk_statusbar_push (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> context_id</code></em>,
-                    <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+                    <em class="parameter"><code><span class="type">guint</span> context_id</code></em>,
+                    <em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>);</pre>
 <p>Pushes a new message onto a statusbar's stack.</p>
 <div class="refsect3">
 <a name="gtk-statusbar-push.parameters"></a><h4>Parameters</h4>
@@ -306,7 +306,7 @@ gtk_statusbar_push (<em class="parameter"><code><a class="link" href="GtkStatusb
 <a name="gtk-statusbar-pop"></a><h3>gtk_statusbar_pop ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_statusbar_pop (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> context_id</code></em>);</pre>
+                   <em class="parameter"><code><span class="type">guint</span> context_id</code></em>);</pre>
 <p>Removes the first message in the <span class="type">GtkStatusBar</span>'s stack
 with the given context id. </p>
 <p>Note that this may not change the displayed message, if 
@@ -340,8 +340,8 @@ context id.</p>
 <a name="gtk-statusbar-remove"></a><h3>gtk_statusbar_remove ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_statusbar_remove (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> context_id</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> message_id</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">guint</span> context_id</code></em>,
+                      <em class="parameter"><code><span class="type">guint</span> message_id</code></em>);</pre>
 <p>Forces the removal of a message from a statusbar's stack. 
 The exact <em class="parameter"><code>context_id</code></em>
  and <em class="parameter"><code>message_id</code></em>
@@ -379,7 +379,7 @@ The exact <em class="parameter"><code>context_id</code></em>
 <a name="gtk-statusbar-remove-all"></a><h3>gtk_statusbar_remove_all ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_statusbar_remove_all (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>,
-                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> context_id</code></em>);</pre>
+                          <em class="parameter"><code><span class="type">guint</span> context_id</code></em>);</pre>
 <p>Forces the removal of all messages from a statusbar's
 stack with the exact <em class="parameter"><code>context_id</code></em>
 .</p>
@@ -412,9 +412,9 @@ stack with the exact <em class="parameter"><code>context_id</code></em>
 <a name="gtk-statusbar-set-has-resize-grip"></a><h3>gtk_statusbar_set_has_resize_grip ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_statusbar_set_has_resize_grip (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>,
-                                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+                                   <em class="parameter"><code><span class="type">gboolean</span> setting</code></em>);</pre>
 <p>Sets whether the statusbar has a resize grip. 
-<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> by default.</p>
+<code class="literal">TRUE</code> by default.</p>
 <div class="refsect3">
 <a name="gtk-statusbar-set-has-resize-grip.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -431,7 +431,7 @@ gtk_statusbar_set_has_resize_grip (<em class="parameter"><code><a class="link" h
 </tr>
 <tr>
 <td class="parameter_name"><p>setting</p></td>
-<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to have a resize grip</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> to have a resize grip</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -441,7 +441,7 @@ gtk_statusbar_set_has_resize_grip (<em class="parameter"><code><a class="link" h
 <hr>
 <div class="refsect2">
 <a name="gtk-statusbar-get-has-resize-grip"></a><h3>gtk_statusbar_get_has_resize_grip ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
 gtk_statusbar_get_has_resize_grip (<em class="parameter"><code><a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>);</pre>
 <p>Returns whether the statusbar has a resize grip.</p>
 <div class="refsect3">
@@ -461,7 +461,7 @@ gtk_statusbar_get_has_resize_grip (<em class="parameter"><code><a class="link" h
 </div>
 <div class="refsect3">
 <a name="gtk-statusbar-get-has-resize-grip.returns"></a><h4>Returns</h4>
-<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the statusbar has a resize grip.</p>
+<p> <code class="literal">TRUE</code> if the statusbar has a resize grip.</p>
 </div>
 </div>
 <hr>
@@ -504,8 +504,9 @@ gtk_statusbar_get_message_area (<em class="parameter"><code><a class="link" href
 <a name="GtkStatusbar.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GtkStatusbar--has-resize-grip"></a><h3>The <code class="literal">“has-resize-grip”</code> property</h3>
-<pre class="programlisting">  “has-resize-grip”          <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<pre class="programlisting">  “has-resize-grip”          <span class="type">gboolean</span></pre>
 <p>Whether the statusbar has a grip for resizing the toplevel window.</p>
+<p>Owner: GtkStatusbar</p>
 <p>Flags: Read / Write</p>
 <p>Default value: TRUE</p>
 <p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
@@ -517,6 +518,7 @@ gtk_statusbar_get_message_area (<em class="parameter"><code><a class="link" href
 <a name="GtkStatusbar--s-shadow-type"></a><h3>The <code class="literal">“shadow-type”</code> style property</h3>
 <pre class="programlisting">  “shadow-type”              <a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a></pre>
 <p>Style of bevel around the statusbar text.</p>
+<p>Owner: GtkStatusbar</p>
 <p>Flags: Read</p>
 <p>Default value: GTK_SHADOW_IN</p>
 </div>
@@ -527,9 +529,9 @@ gtk_statusbar_get_message_area (<em class="parameter"><code><a class="link" href
 <a name="GtkStatusbar-text-popped"></a><h3>The <code class="literal">“text-popped”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar,
-               <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         context_id,
-               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *text,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+               <span class="type">guint</span>         context_id,
+               <span class="type">char</span>         *text,
+               <span class="type">gpointer</span>      user_data)</pre>
 <p>Is emitted whenever a new message is popped off a statusbar's stack.</p>
 <div class="refsect3">
 <a name="GtkStatusbar-text-popped.parameters"></a><h4>Parameters</h4>
@@ -563,16 +565,16 @@ user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p>Flags: Run Last</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkStatusbar-text-pushed"></a><h3>The <code class="literal">“text-pushed”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><span class="type">GtkStatusbar</span></a> *statusbar,
-               <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         context_id,
-               <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *text,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+               <span class="type">guint</span>         context_id,
+               <span class="type">char</span>         *text,
+               <span class="type">gpointer</span>      user_data)</pre>
 <p>Is emitted whenever a new message gets pushed onto a statusbar's stack.</p>
 <div class="refsect3">
 <a name="GtkStatusbar-text-pushed.parameters"></a><h4>Parameters</h4>
@@ -606,11 +608,11 @@ user_function (<a class="link" href="GtkStatusbar.html" title="GtkStatusbar"><sp
 </tbody>
 </table></div>
 </div>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p>Flags: Run Last</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="gtk-migrating-GtkAboutDialog.html" title="Migrating from GnomeAbout to GtkAboutDialog">
 <link rel="next" href="gtk-migrating-GtkAssistant.html" title="Migrating from GnomeDruid to GtkAssistant">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -42,9 +42,9 @@
         <td class="listing_lines" align="right"><pre>1
 2
 3</pre></td>
-        <td class="listing_code"><pre class="programlisting">guint red<span class="gtkdoc opt">,</span> green<span class="gtkdoc opt">,</span> blue<span class="gtkdoc opt">,</span> alpha<span class="gtkdoc opt">;</span>
-<span class="comment">/* ... */</span>
-<span class="function">gnome_color_picker_set_i8</span> <span class="gtkdoc opt">(</span>color_picker<span class="gtkdoc opt">,</span> red<span class="gtkdoc opt">,</span> green<span class="gtkdoc opt">,</span> blue<span class="gtkdoc opt">,</span> alpha<span class="gtkdoc opt">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">guint</span> <span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">,</span> <span class="n">alpha</span><span class="p">;</span>
+<span class="cm">/* ... */</span>
+<span class="n">gnome_color_picker_set_i8</span> <span class="p">(</span><span class="n">color_picker</span><span class="p">,</span> <span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">,</span> <span class="n">alpha</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -64,13 +64,13 @@
 5
 6
 7</pre></td>
-        <td class="listing_code"><pre class="programlisting">GdkColor color<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GdkColor</span> <span class="n">color</span><span class="p">;</span>
 
-color<span class="gtkdoc opt">.</span>red <span class="gtkdoc opt">=</span> red <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">;</span>
-color<span class="gtkdoc opt">.</span>green <span class="gtkdoc opt">=</span> green <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">;</span>
-color<span class="gtkdoc opt">.</span>blue <span class="gtkdoc opt">=</span> blue <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">;</span>
-<span class="function"><a href="GtkColorButton.html#gtk-color-button-set-color">gtk_color_button_set_color</a></span> <span class="gtkdoc opt">(</span>color_picker<span class="gtkdoc opt">, &amp;</span>color<span class="gtkdoc opt">);</span>
-<span class="function"><a href="GtkColorButton.html#gtk-color-button-set-alpha">gtk_color_button_set_alpha</a></span> <span class="gtkdoc opt">(</span>color_picker<span class="gtkdoc opt">,</span> alpha <span class="gtkdoc opt">&lt;&lt;</span> <span class="number">8</span><span class="gtkdoc opt">);</span></pre></td>
+<span class="n">color</span><span class="p">.</span><span class="n">red</span> <span class="o">=</span> <span class="n">red</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">;</span>
+<span class="n">color</span><span class="p">.</span><span class="n">green</span> <span class="o">=</span> <span class="n">green</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">;</span>
+<span class="n">color</span><span class="p">.</span><span class="n">blue</span> <span class="o">=</span> <span class="n">blue</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">;</span>
+<span class="n">gtk_color_button_set_color</span> <span class="p">(</span><span class="n">color_picker</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">color</span><span class="p">);</span>
+<span class="n">gtk_color_button_set_alpha</span> <span class="p">(</span><span class="n">color_picker</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -89,9 +89,9 @@ color<span class="gtkdoc opt">.</span>blue <span class="gtkdoc opt">=</span> blu
         <td class="listing_lines" align="right"><pre>1
 2
 3</pre></td>
-        <td class="listing_code"><pre class="programlisting">color<span class="gtkdoc opt">.</span>red <span class="gtkdoc opt">= (</span>guint16<span class="gtkdoc opt">) (</span>red <span class="gtkdoc opt">*</span> <span class="number">65535.0</span> <span class="gtkdoc opt">+</span> <span class="number">0.5</span><span class="gtkdoc opt">);</span>
-color<span class="gtkdoc opt">.</span>green <span class="gtkdoc opt">= (</span>guint16<span class="gtkdoc opt">) (</span>green <span class="gtkdoc opt">*</span> <span class="number">65535.0</span> <span class="gtkdoc opt">+</span> <span class="number">0.5</span><span class="gtkdoc opt">);</span>
-color<span class="gtkdoc opt">.</span>blue <span class="gtkdoc opt">= (</span>guint16<span class="gtkdoc opt">) (</span>blue <span class="gtkdoc opt">*</span> <span class="number">65535.0</span> <span class="gtkdoc opt">+</span> <span class="number">0.5</span><span class="gtkdoc opt">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">color</span><span class="p">.</span><span class="n">red</span> <span class="o">=</span> <span class="p">(</span><span class="n">guint16</span><span class="p">)</span> <span class="p">(</span><span class="n">red</span> <span class="o">*</span> <span class="mf">65535.0</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
+<span class="n">color</span><span class="p">.</span><span class="n">green</span> <span class="o">=</span> <span class="p">(</span><span class="n">guint16</span><span class="p">)</span> <span class="p">(</span><span class="n">green</span> <span class="o">*</span> <span class="mf">65535.0</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
+<span class="n">color</span><span class="p">.</span><span class="n">blue</span> <span class="o">=</span> <span class="p">(</span><span class="n">guint16</span><span class="p">)</span> <span class="p">(</span><span class="n">blue</span> <span class="o">*</span> <span class="mf">65535.0</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -101,6 +101,6 @@ color<span class="gtkdoc opt">.</span>blue <span class="gtkdoc opt">= (</span>gu
   </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

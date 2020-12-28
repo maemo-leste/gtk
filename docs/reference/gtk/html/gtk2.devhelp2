@@ -339,7 +339,7 @@
   </chapters>
   <functions>
     <keyword type="function" name="gtk_set_locale ()" link="gtk2-General.html#gtk-set-locale" deprecated="2.24: Use setlocale() directly"/>
-    <keyword type="function" name="gtk_disable_setlocale ()" link="gtk2-General.html#gtk-disable-setlocale" deprecated=""/>
+    <keyword type="function" name="gtk_disable_setlocale ()" link="gtk2-General.html#gtk-disable-setlocale"/>
     <keyword type="function" name="gtk_get_default_language ()" link="gtk2-General.html#gtk-get-default-language"/>
     <keyword type="function" name="gtk_parse_args ()" link="gtk2-General.html#gtk-parse-args"/>
     <keyword type="function" name="gtk_init ()" link="gtk2-General.html#gtk-init"/>
@@ -377,8 +377,8 @@
     <keyword type="function" name="gtk_idle_remove_by_data ()" link="gtk2-General.html#gtk-idle-remove-by-data" deprecated=""/>
     <keyword type="function" name="gtk_input_add_full ()" link="gtk2-General.html#gtk-input-add-full" deprecated=""/>
     <keyword type="function" name="gtk_input_remove ()" link="gtk2-General.html#gtk-input-remove" deprecated=""/>
-    <keyword type="function" name="gtk_key_snooper_install ()" link="gtk2-General.html#gtk-key-snooper-install" deprecated=""/>
-    <keyword type="function" name="GtkKeySnoopFunc ()" link="gtk2-General.html#GtkKeySnoopFunc" deprecated=""/>
+    <keyword type="function" name="gtk_key_snooper_install ()" link="gtk2-General.html#gtk-key-snooper-install"/>
+    <keyword type="function" name="GtkKeySnoopFunc ()" link="gtk2-General.html#GtkKeySnoopFunc"/>
     <keyword type="function" name="gtk_key_snooper_remove ()" link="gtk2-General.html#gtk-key-snooper-remove"/>
     <keyword type="function" name="gtk_get_current_event ()" link="gtk2-General.html#gtk-get-current-event"/>
     <keyword type="function" name="gtk_get_current_event_time ()" link="gtk2-General.html#gtk-get-current-event-time"/>
@@ -835,7 +835,7 @@
     <keyword type="function" name="gtk_bindings_activate_event ()" link="gtk2-Bindings.html#gtk-bindings-activate-event" since="2.4"/>
     <keyword type="function" name="gtk_binding_set_activate ()" link="gtk2-Bindings.html#gtk-binding-set-activate"/>
     <keyword type="function" name="gtk_binding_entry_add_signal ()" link="gtk2-Bindings.html#gtk-binding-entry-add-signal"/>
-    <keyword type="function" name="gtk_binding_entry_skip ()" link="gtk2-Bindings.html#gtk-binding-entry-skip" deprecated="" since="2.12"/>
+    <keyword type="function" name="gtk_binding_entry_skip ()" link="gtk2-Bindings.html#gtk-binding-entry-skip" since="2.12"/>
     <keyword type="function" name="gtk_binding_entry_remove ()" link="gtk2-Bindings.html#gtk-binding-entry-remove"/>
     <keyword type="function" name="gtk_binding_set_add_path ()" link="gtk2-Bindings.html#gtk-binding-set-add-path"/>
     <keyword type="struct" name="struct GtkBindingSet" link="gtk2-Bindings.html#GtkBindingSet"/>
@@ -867,17 +867,17 @@
     <keyword type="enum" name="enum GtkPolicyType" link="gtk2-Standard-Enumerations.html#GtkPolicyType"/>
     <keyword type="enum" name="enum GtkPositionType" link="gtk2-Standard-Enumerations.html#GtkPositionType"/>
     <keyword type="enum" name="enum GtkPreviewType" link="gtk2-Standard-Enumerations.html#GtkPreviewType" deprecated=""/>
-    <keyword type="enum" name="enum GtkReliefStyle" link="gtk2-Standard-Enumerations.html#GtkReliefStyle" deprecated=""/>
+    <keyword type="enum" name="enum GtkReliefStyle" link="gtk2-Standard-Enumerations.html#GtkReliefStyle"/>
     <keyword type="enum" name="enum GtkResizeMode" link="gtk2-Standard-Enumerations.html#GtkResizeMode"/>
     <keyword type="enum" name="enum GtkScrollStep" link="gtk2-Standard-Enumerations.html#GtkScrollStep"/>
-    <keyword type="enum" name="enum GtkScrollType" link="gtk2-Standard-Enumerations.html#GtkScrollType" deprecated=""/>
+    <keyword type="enum" name="enum GtkScrollType" link="gtk2-Standard-Enumerations.html#GtkScrollType"/>
     <keyword type="enum" name="enum GtkSelectionMode" link="gtk2-Standard-Enumerations.html#GtkSelectionMode"/>
     <keyword type="enum" name="enum GtkShadowType" link="gtk2-Standard-Enumerations.html#GtkShadowType"/>
     <keyword type="enum" name="enum GtkSideType" link="gtk2-Standard-Enumerations.html#GtkSideType" deprecated=""/>
     <keyword type="enum" name="enum GtkStateType" link="gtk2-Standard-Enumerations.html#GtkStateType"/>
     <keyword type="enum" name="enum GtkSubmenuDirection" link="gtk2-Standard-Enumerations.html#GtkSubmenuDirection" deprecated=""/>
     <keyword type="enum" name="enum GtkSubmenuPlacement" link="gtk2-Standard-Enumerations.html#GtkSubmenuPlacement" deprecated=""/>
-    <keyword type="enum" name="enum GtkToolbarStyle" link="gtk2-Standard-Enumerations.html#GtkToolbarStyle" deprecated=""/>
+    <keyword type="enum" name="enum GtkToolbarStyle" link="gtk2-Standard-Enumerations.html#GtkToolbarStyle"/>
     <keyword type="enum" name="enum GtkUpdateType" link="gtk2-Standard-Enumerations.html#GtkUpdateType"/>
     <keyword type="enum" name="enum GtkVisibility" link="gtk2-Standard-Enumerations.html#GtkVisibility"/>
     <keyword type="enum" name="enum GtkWindowPosition" link="gtk2-Standard-Enumerations.html#GtkWindowPosition"/>
@@ -893,7 +893,7 @@
     <keyword type="function" name="gtk_style_detach ()" link="GtkStyle.html#gtk-style-detach"/>
     <keyword type="function" name="gtk_style_ref ()" link="GtkStyle.html#gtk-style-ref" deprecated="2.0: use g_object_ref() instead."/>
     <keyword type="function" name="gtk_style_unref ()" link="GtkStyle.html#gtk-style-unref" deprecated="2.0: use g_object_unref() instead."/>
-    <keyword type="function" name="gtk_style_set_background ()" link="GtkStyle.html#gtk-style-set-background" deprecated=""/>
+    <keyword type="function" name="gtk_style_set_background ()" link="GtkStyle.html#gtk-style-set-background"/>
     <keyword type="function" name="gtk_style_apply_default_background ()" link="GtkStyle.html#gtk-style-apply-default-background"/>
     <keyword type="macro" name="gtk_style_apply_default_pixmap()" link="GtkStyle.html#gtk-style-apply-default-pixmap" deprecated=""/>
     <keyword type="function" name="gtk_style_lookup_color ()" link="GtkStyle.html#gtk-style-lookup-color" since="2.10"/>
@@ -934,7 +934,7 @@
     <keyword type="function" name="gtk_paint_flat_box ()" link="GtkStyle.html#gtk-paint-flat-box"/>
     <keyword type="function" name="gtk_paint_focus ()" link="GtkStyle.html#gtk-paint-focus"/>
     <keyword type="function" name="gtk_paint_handle ()" link="GtkStyle.html#gtk-paint-handle"/>
-    <keyword type="function" name="gtk_paint_hline ()" link="GtkStyle.html#gtk-paint-hline" deprecated=""/>
+    <keyword type="function" name="gtk_paint_hline ()" link="GtkStyle.html#gtk-paint-hline"/>
     <keyword type="function" name="gtk_paint_option ()" link="GtkStyle.html#gtk-paint-option"/>
     <keyword type="function" name="gtk_paint_polygon ()" link="GtkStyle.html#gtk-paint-polygon"/>
     <keyword type="function" name="gtk_paint_shadow ()" link="GtkStyle.html#gtk-paint-shadow"/>
@@ -947,7 +947,7 @@
     <keyword type="function" name="gtk_paint_expander ()" link="GtkStyle.html#gtk-paint-expander"/>
     <keyword type="function" name="gtk_paint_layout ()" link="GtkStyle.html#gtk-paint-layout"/>
     <keyword type="function" name="gtk_paint_resize_grip ()" link="GtkStyle.html#gtk-paint-resize-grip"/>
-    <keyword type="function" name="gtk_draw_insertion_cursor ()" link="GtkStyle.html#gtk-draw-insertion-cursor" deprecated="" since="2.4"/>
+    <keyword type="function" name="gtk_draw_insertion_cursor ()" link="GtkStyle.html#gtk-draw-insertion-cursor" since="2.4"/>
     <keyword type="function" name="gtk_border_new ()" link="GtkStyle.html#gtk-border-new" since="2.14"/>
     <keyword type="function" name="gtk_border_copy ()" link="GtkStyle.html#gtk-border-copy"/>
     <keyword type="function" name="gtk_border_free ()" link="GtkStyle.html#gtk-border-free"/>
@@ -1213,7 +1213,7 @@
     <keyword type="function" name="gtk_window_activate_focus ()" link="GtkWindow.html#gtk-window-activate-focus"/>
     <keyword type="function" name="gtk_window_activate_default ()" link="GtkWindow.html#gtk-window-activate-default"/>
     <keyword type="function" name="gtk_window_set_modal ()" link="GtkWindow.html#gtk-window-set-modal"/>
-    <keyword type="function" name="gtk_window_set_default_size ()" link="GtkWindow.html#gtk-window-set-default-size" deprecated=""/>
+    <keyword type="function" name="gtk_window_set_default_size ()" link="GtkWindow.html#gtk-window-set-default-size"/>
     <keyword type="function" name="gtk_window_set_geometry_hints ()" link="GtkWindow.html#gtk-window-set-geometry-hints"/>
     <keyword type="function" name="gtk_window_set_gravity ()" link="GtkWindow.html#gtk-window-set-gravity"/>
     <keyword type="function" name="gtk_window_get_gravity ()" link="GtkWindow.html#gtk-window-get-gravity"/>
@@ -1350,7 +1350,7 @@
     <keyword type="function" name="gtk_about_dialog_new ()" link="GtkAboutDialog.html#gtk-about-dialog-new" since="2.6"/>
     <keyword type="function" name="gtk_about_dialog_get_name ()" link="GtkAboutDialog.html#gtk-about-dialog-get-name" deprecated="2.12: Use gtk_about_dialog_get_program_name() instead." since="2.6"/>
     <keyword type="function" name="gtk_about_dialog_set_name ()" link="GtkAboutDialog.html#gtk-about-dialog-set-name" deprecated="2.12: Use gtk_about_dialog_set_program_name() instead." since="2.6"/>
-    <keyword type="function" name="gtk_about_dialog_get_program_name ()" link="GtkAboutDialog.html#gtk-about-dialog-get-program-name" deprecated="" since="2.12"/>
+    <keyword type="function" name="gtk_about_dialog_get_program_name ()" link="GtkAboutDialog.html#gtk-about-dialog-get-program-name" since="2.12"/>
     <keyword type="function" name="gtk_about_dialog_set_program_name ()" link="GtkAboutDialog.html#gtk-about-dialog-set-program-name" since="2.12"/>
     <keyword type="function" name="gtk_about_dialog_get_version ()" link="GtkAboutDialog.html#gtk-about-dialog-get-version" since="2.6"/>
     <keyword type="function" name="gtk_about_dialog_set_version ()" link="GtkAboutDialog.html#gtk-about-dialog-set-version" since="2.6"/>
@@ -2517,7 +2517,7 @@
     <keyword type="function" name="gtk_tree_model_get ()" link="GtkTreeModel.html#gtk-tree-model-get"/>
     <keyword type="function" name="gtk_tree_model_get_valist ()" link="GtkTreeModel.html#gtk-tree-model-get-valist"/>
     <keyword type="function" name="gtk_tree_model_foreach ()" link="GtkTreeModel.html#gtk-tree-model-foreach"/>
-    <keyword type="function" name="gtk_tree_model_row_changed ()" link="GtkTreeModel.html#gtk-tree-model-row-changed" deprecated=""/>
+    <keyword type="function" name="gtk_tree_model_row_changed ()" link="GtkTreeModel.html#gtk-tree-model-row-changed"/>
     <keyword type="function" name="gtk_tree_model_row_inserted ()" link="GtkTreeModel.html#gtk-tree-model-row-inserted"/>
     <keyword type="function" name="gtk_tree_model_row_has_child_toggled ()" link="GtkTreeModel.html#gtk-tree-model-row-has-child-toggled"/>
     <keyword type="function" name="gtk_tree_model_row_deleted ()" link="GtkTreeModel.html#gtk-tree-model-row-deleted"/>
@@ -2682,7 +2682,7 @@
     <keyword type="function" name="gtk_tree_view_get_cell_area ()" link="GtkTreeView.html#gtk-tree-view-get-cell-area"/>
     <keyword type="function" name="gtk_tree_view_get_background_area ()" link="GtkTreeView.html#gtk-tree-view-get-background-area"/>
     <keyword type="function" name="gtk_tree_view_get_visible_rect ()" link="GtkTreeView.html#gtk-tree-view-get-visible-rect"/>
-    <keyword type="function" name="gtk_tree_view_get_visible_range ()" link="GtkTreeView.html#gtk-tree-view-get-visible-range" deprecated="" since="2.8"/>
+    <keyword type="function" name="gtk_tree_view_get_visible_range ()" link="GtkTreeView.html#gtk-tree-view-get-visible-range" since="2.8"/>
     <keyword type="function" name="gtk_tree_view_get_bin_window ()" link="GtkTreeView.html#gtk-tree-view-get-bin-window"/>
     <keyword type="function" name="gtk_tree_view_widget_to_tree_coords ()" link="GtkTreeView.html#gtk-tree-view-widget-to-tree-coords" deprecated=""/>
     <keyword type="function" name="gtk_tree_view_tree_to_widget_coords ()" link="GtkTreeView.html#gtk-tree-view-tree-to-widget-coords" deprecated=""/>
@@ -3241,7 +3241,7 @@
     <keyword type="function" name="gtk_menu_set_monitor ()" link="GtkMenu.html#gtk-menu-set-monitor" since="2.4"/>
     <keyword type="function" name="gtk_menu_get_monitor ()" link="GtkMenu.html#gtk-menu-get-monitor" since="2.14"/>
     <keyword type="function" name="gtk_menu_get_tearoff_state ()" link="GtkMenu.html#gtk-menu-get-tearoff-state"/>
-    <keyword type="function" name="gtk_menu_set_reserve_toggle_size ()" link="GtkMenu.html#gtk-menu-set-reserve-toggle-size" deprecated="" since="2.18"/>
+    <keyword type="function" name="gtk_menu_set_reserve_toggle_size ()" link="GtkMenu.html#gtk-menu-set-reserve-toggle-size" since="2.18"/>
     <keyword type="function" name="gtk_menu_get_reserve_toggle_size ()" link="GtkMenu.html#gtk-menu-get-reserve-toggle-size" since="2.18"/>
     <keyword type="function" name="gtk_menu_popdown ()" link="GtkMenu.html#gtk-menu-popdown"/>
     <keyword type="function" name="gtk_menu_reposition ()" link="GtkMenu.html#gtk-menu-reposition"/>
@@ -3422,7 +3422,7 @@
     <keyword type="function" name="gtk_toolbar_unset_style ()" link="GtkToolbar.html#gtk-toolbar-unset-style"/>
     <keyword type="struct" name="struct GtkToolbar" link="GtkToolbar.html#GtkToolbar-struct"/>
     <keyword type="enum" name="enum GtkToolbarChildType" link="GtkToolbar.html#GtkToolbarChildType" deprecated=""/>
-    <keyword type="enum" name="enum GtkToolbarSpaceStyle" link="GtkToolbar.html#GtkToolbarSpaceStyle" deprecated=""/>
+    <keyword type="enum" name="enum GtkToolbarSpaceStyle" link="GtkToolbar.html#GtkToolbarSpaceStyle"/>
     <keyword type="struct" name="struct GtkToolbarChild" link="GtkToolbar.html#GtkToolbarChild" deprecated=""/>
     <keyword type="property" name="The “icon-size” property" link="GtkToolbar.html#GtkToolbar--icon-size"/>
     <keyword type="property" name="The “icon-size-set” property" link="GtkToolbar.html#GtkToolbar--icon-size-set"/>
@@ -3447,7 +3447,7 @@
     <keyword type="function" name="gtk_tool_item_set_expand ()" link="GtkToolItem.html#gtk-tool-item-set-expand" since="2.4"/>
     <keyword type="function" name="gtk_tool_item_get_expand ()" link="GtkToolItem.html#gtk-tool-item-get-expand" since="2.4"/>
     <keyword type="function" name="gtk_tool_item_set_tooltip ()" link="GtkToolItem.html#gtk-tool-item-set-tooltip" deprecated="2.12: Use gtk_tool_item_set_tooltip_text() instead." since="2.4"/>
-    <keyword type="function" name="gtk_tool_item_set_tooltip_text ()" link="GtkToolItem.html#gtk-tool-item-set-tooltip-text" deprecated="" since="2.12"/>
+    <keyword type="function" name="gtk_tool_item_set_tooltip_text ()" link="GtkToolItem.html#gtk-tool-item-set-tooltip-text" since="2.12"/>
     <keyword type="function" name="gtk_tool_item_set_tooltip_markup ()" link="GtkToolItem.html#gtk-tool-item-set-tooltip-markup" since="2.12"/>
     <keyword type="function" name="gtk_tool_item_set_use_drag_window ()" link="GtkToolItem.html#gtk-tool-item-set-use-drag-window" since="2.4"/>
     <keyword type="function" name="gtk_tool_item_get_use_drag_window ()" link="GtkToolItem.html#gtk-tool-item-get-use-drag-window" since="2.4"/>
@@ -3570,7 +3570,7 @@
     <keyword type="function" name="gtk_menu_tool_button_set_menu ()" link="GtkMenuToolButton.html#gtk-menu-tool-button-set-menu" since="2.6"/>
     <keyword type="function" name="gtk_menu_tool_button_get_menu ()" link="GtkMenuToolButton.html#gtk-menu-tool-button-get-menu" since="2.6"/>
     <keyword type="function" name="gtk_menu_tool_button_set_arrow_tooltip ()" link="GtkMenuToolButton.html#gtk-menu-tool-button-set-arrow-tooltip" deprecated="" since="2.6"/>
-    <keyword type="function" name="gtk_menu_tool_button_set_arrow_tooltip_text ()" link="GtkMenuToolButton.html#gtk-menu-tool-button-set-arrow-tooltip-text" deprecated="" since="2.12"/>
+    <keyword type="function" name="gtk_menu_tool_button_set_arrow_tooltip_text ()" link="GtkMenuToolButton.html#gtk-menu-tool-button-set-arrow-tooltip-text" since="2.12"/>
     <keyword type="function" name="gtk_menu_tool_button_set_arrow_tooltip_markup ()" link="GtkMenuToolButton.html#gtk-menu-tool-button-set-arrow-tooltip-markup" since="2.12"/>
     <keyword type="struct" name="struct GtkMenuToolButton" link="GtkMenuToolButton.html#GtkMenuToolButton-struct"/>
     <keyword type="property" name="The “menu” property" link="GtkMenuToolButton.html#GtkMenuToolButton--menu"/>
@@ -3666,7 +3666,7 @@
     <keyword type="function" name="gtk_action_get_proxies ()" link="GtkAction.html#gtk-action-get-proxies" since="2.4"/>
     <keyword type="function" name="gtk_action_connect_accelerator ()" link="GtkAction.html#gtk-action-connect-accelerator" since="2.4"/>
     <keyword type="function" name="gtk_action_disconnect_accelerator ()" link="GtkAction.html#gtk-action-disconnect-accelerator" since="2.4"/>
-    <keyword type="function" name="gtk_action_block_activate ()" link="GtkAction.html#gtk-action-block-activate" deprecated="" since="2.16"/>
+    <keyword type="function" name="gtk_action_block_activate ()" link="GtkAction.html#gtk-action-block-activate" since="2.16"/>
     <keyword type="function" name="gtk_action_unblock_activate ()" link="GtkAction.html#gtk-action-unblock-activate" since="2.16"/>
     <keyword type="function" name="gtk_action_block_activate_from ()" link="GtkAction.html#gtk-action-block-activate-from" deprecated="" since="2.4"/>
     <keyword type="function" name="gtk_action_unblock_activate_from ()" link="GtkAction.html#gtk-action-unblock-activate-from" deprecated="" since="2.4"/>
@@ -3893,7 +3893,7 @@
     <keyword type="signal" name="The “update-preview” signal" link="GtkFileChooser.html#GtkFileChooser-update-preview"/>
     <keyword type="function" name="gtk_file_chooser_button_new ()" link="GtkFileChooserButton.html#gtk-file-chooser-button-new" since="2.6"/>
     <keyword type="function" name="gtk_file_chooser_button_new_with_backend ()" link="GtkFileChooserButton.html#gtk-file-chooser-button-new-with-backend" deprecated="2.14: Use gtk_file_chooser_button_new() instead." since="2.6"/>
-    <keyword type="function" name="gtk_file_chooser_button_new_with_dialog ()" link="GtkFileChooserButton.html#gtk-file-chooser-button-new-with-dialog" deprecated="" since="2.6"/>
+    <keyword type="function" name="gtk_file_chooser_button_new_with_dialog ()" link="GtkFileChooserButton.html#gtk-file-chooser-button-new-with-dialog" since="2.6"/>
     <keyword type="function" name="gtk_file_chooser_button_get_title ()" link="GtkFileChooserButton.html#gtk-file-chooser-button-get-title" since="2.6"/>
     <keyword type="function" name="gtk_file_chooser_button_set_title ()" link="GtkFileChooserButton.html#gtk-file-chooser-button-set-title" since="2.6"/>
     <keyword type="function" name="gtk_file_chooser_button_get_width_chars ()" link="GtkFileChooserButton.html#gtk-file-chooser-button-get-width-chars" since="2.6"/>
@@ -3950,7 +3950,7 @@
     <keyword type="function" name="gtk_font_selection_new ()" link="GtkFontSelection.html#gtk-font-selection-new"/>
     <keyword type="function" name="gtk_font_selection_get_font ()" link="GtkFontSelection.html#gtk-font-selection-get-font" deprecated="2.0: Use gtk_font_selection_get_font_name() instead."/>
     <keyword type="function" name="gtk_font_selection_get_font_name ()" link="GtkFontSelection.html#gtk-font-selection-get-font-name"/>
-    <keyword type="function" name="gtk_font_selection_set_font_name ()" link="GtkFontSelection.html#gtk-font-selection-set-font-name" deprecated=""/>
+    <keyword type="function" name="gtk_font_selection_set_font_name ()" link="GtkFontSelection.html#gtk-font-selection-set-font-name"/>
     <keyword type="function" name="gtk_font_selection_get_preview_text ()" link="GtkFontSelection.html#gtk-font-selection-get-preview-text"/>
     <keyword type="function" name="gtk_font_selection_set_preview_text ()" link="GtkFontSelection.html#gtk-font-selection-set-preview-text"/>
     <keyword type="function" name="gtk_font_selection_get_face ()" link="GtkFontSelection.html#gtk-font-selection-get-face" since="2.14"/>
@@ -3968,7 +3968,7 @@
     <keyword type="function" name="gtk_font_selection_dialog_new ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-new"/>
     <keyword type="function" name="gtk_font_selection_dialog_get_font ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-get-font" deprecated="2.0: Use gtk_font_selection_dialog_get_font_name() instead."/>
     <keyword type="function" name="gtk_font_selection_dialog_get_font_name ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-get-font-name"/>
-    <keyword type="function" name="gtk_font_selection_dialog_set_font_name ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-set-font-name" deprecated=""/>
+    <keyword type="function" name="gtk_font_selection_dialog_set_font_name ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-set-font-name"/>
     <keyword type="function" name="gtk_font_selection_dialog_get_preview_text ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-get-preview-text"/>
     <keyword type="function" name="gtk_font_selection_dialog_set_preview_text ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-set-preview-text"/>
     <keyword type="function" name="gtk_font_selection_dialog_get_apply_button ()" link="GtkFontSelectionDialog.html#gtk-font-selection-dialog-get-apply-button" deprecated="2.16: Don't use this function." since="2.14"/>
@@ -4063,7 +4063,7 @@
     <keyword type="function" name="gtk_notebook_set_tab_pos ()" link="GtkNotebook.html#gtk-notebook-set-tab-pos"/>
     <keyword type="function" name="gtk_notebook_set_show_tabs ()" link="GtkNotebook.html#gtk-notebook-set-show-tabs"/>
     <keyword type="function" name="gtk_notebook_set_show_border ()" link="GtkNotebook.html#gtk-notebook-set-show-border"/>
-    <keyword type="function" name="gtk_notebook_set_scrollable ()" link="GtkNotebook.html#gtk-notebook-set-scrollable" deprecated=""/>
+    <keyword type="function" name="gtk_notebook_set_scrollable ()" link="GtkNotebook.html#gtk-notebook-set-scrollable"/>
     <keyword type="function" name="gtk_notebook_set_tab_border ()" link="GtkNotebook.html#gtk-notebook-set-tab-border" deprecated=""/>
     <keyword type="function" name="gtk_notebook_popup_enable ()" link="GtkNotebook.html#gtk-notebook-popup-enable"/>
     <keyword type="function" name="gtk_notebook_popup_disable ()" link="GtkNotebook.html#gtk-notebook-popup-disable"/>
@@ -4098,7 +4098,7 @@
     <keyword type="function" name="gtk_notebook_get_group_id ()" link="GtkNotebook.html#gtk-notebook-get-group-id" deprecated="2.12: use gtk_notebook_get_group_name() instead." since="2.10"/>
     <keyword type="function" name="gtk_notebook_set_group ()" link="GtkNotebook.html#gtk-notebook-set-group" deprecated="2.24: Use gtk_notebook_set_group_name() instead" since="2.12"/>
     <keyword type="function" name="gtk_notebook_get_group ()" link="GtkNotebook.html#gtk-notebook-get-group" deprecated="2.24: Use gtk_notebook_get_group_name() instead" since="2.12"/>
-    <keyword type="function" name="gtk_notebook_set_group_name ()" link="GtkNotebook.html#gtk-notebook-set-group-name" deprecated="" since="2.24"/>
+    <keyword type="function" name="gtk_notebook_set_group_name ()" link="GtkNotebook.html#gtk-notebook-set-group-name" since="2.24"/>
     <keyword type="function" name="gtk_notebook_get_group_name ()" link="GtkNotebook.html#gtk-notebook-get-group-name" since="2.24"/>
     <keyword type="function" name="gtk_notebook_set_action_widget ()" link="GtkNotebook.html#gtk-notebook-set-action-widget" since="2.20"/>
     <keyword type="function" name="gtk_notebook_get_action_widget ()" link="GtkNotebook.html#gtk-notebook-get-action-widget" since="2.20"/>
@@ -4856,7 +4856,7 @@
     <keyword type="function" name="gtk_menu_shell_set_take_focus ()" link="GtkMenuShell.html#gtk-menu-shell-set-take-focus" since="2.8"/>
     <keyword type="function" name="gtk_menu_shell_get_take_focus ()" link="GtkMenuShell.html#gtk-menu-shell-get-take-focus" since="2.8"/>
     <keyword type="struct" name="struct GtkMenuShell" link="GtkMenuShell.html#GtkMenuShell-struct"/>
-    <keyword type="enum" name="enum GtkMenuDirectionType" link="GtkMenuShell.html#GtkMenuDirectionType" deprecated=""/>
+    <keyword type="enum" name="enum GtkMenuDirectionType" link="GtkMenuShell.html#GtkMenuDirectionType"/>
     <keyword type="property" name="The “take-focus” property" link="GtkMenuShell.html#GtkMenuShell--take-focus"/>
     <keyword type="signal" name="The “activate-current” signal" link="GtkMenuShell.html#GtkMenuShell-activate-current"/>
     <keyword type="signal" name="The “cancel” signal" link="GtkMenuShell.html#GtkMenuShell-cancel"/>
@@ -4941,7 +4941,7 @@
     <keyword type="function" name="gtk_range_set_show_fill_level ()" link="GtkRange.html#gtk-range-set-show-fill-level" since="2.12"/>
     <keyword type="function" name="gtk_range_get_adjustment ()" link="GtkRange.html#gtk-range-get-adjustment"/>
     <keyword type="function" name="gtk_range_set_update_policy ()" link="GtkRange.html#gtk-range-set-update-policy" deprecated=""/>
-    <keyword type="function" name="gtk_range_set_adjustment ()" link="GtkRange.html#gtk-range-set-adjustment" deprecated=""/>
+    <keyword type="function" name="gtk_range_set_adjustment ()" link="GtkRange.html#gtk-range-set-adjustment"/>
     <keyword type="function" name="gtk_range_get_inverted ()" link="GtkRange.html#gtk-range-get-inverted"/>
     <keyword type="function" name="gtk_range_set_inverted ()" link="GtkRange.html#gtk-range-set-inverted"/>
     <keyword type="function" name="gtk_range_get_update_policy ()" link="GtkRange.html#gtk-range-get-update-policy" deprecated=""/>
@@ -5057,10 +5057,10 @@
     <keyword type="function" name="gtk_widget_realize ()" link="GtkWidget.html#gtk-widget-realize"/>
     <keyword type="function" name="gtk_widget_unrealize ()" link="GtkWidget.html#gtk-widget-unrealize"/>
     <keyword type="function" name="gtk_widget_queue_draw ()" link="GtkWidget.html#gtk-widget-queue-draw"/>
-    <keyword type="function" name="gtk_widget_queue_resize ()" link="GtkWidget.html#gtk-widget-queue-resize" deprecated=""/>
+    <keyword type="function" name="gtk_widget_queue_resize ()" link="GtkWidget.html#gtk-widget-queue-resize"/>
     <keyword type="function" name="gtk_widget_queue_resize_no_redraw ()" link="GtkWidget.html#gtk-widget-queue-resize-no-redraw" since="2.4"/>
     <keyword type="function" name="gtk_widget_draw ()" link="GtkWidget.html#gtk-widget-draw" deprecated=""/>
-    <keyword type="function" name="gtk_widget_size_request ()" link="GtkWidget.html#gtk-widget-size-request" deprecated=""/>
+    <keyword type="function" name="gtk_widget_size_request ()" link="GtkWidget.html#gtk-widget-size-request"/>
     <keyword type="function" name="gtk_widget_get_child_requisition ()" link="GtkWidget.html#gtk-widget-get-child-requisition"/>
     <keyword type="function" name="gtk_widget_size_allocate ()" link="GtkWidget.html#gtk-widget-size-allocate"/>
     <keyword type="function" name="gtk_widget_add_accelerator ()" link="GtkWidget.html#gtk-widget-add-accelerator"/>
@@ -5154,7 +5154,7 @@
     <keyword type="function" name="gtk_widget_style_get_property ()" link="GtkWidget.html#gtk-widget-style-get-property"/>
     <keyword type="function" name="gtk_widget_style_get_valist ()" link="GtkWidget.html#gtk-widget-style-get-valist"/>
     <keyword type="function" name="gtk_widget_style_attach ()" link="GtkWidget.html#gtk-widget-style-attach" since="2.20"/>
-    <keyword type="function" name="gtk_widget_get_accessible ()" link="GtkWidget.html#gtk-widget-get-accessible" deprecated=""/>
+    <keyword type="function" name="gtk_widget_get_accessible ()" link="GtkWidget.html#gtk-widget-get-accessible"/>
     <keyword type="function" name="gtk_widget_child_focus ()" link="GtkWidget.html#gtk-widget-child-focus"/>
     <keyword type="function" name="gtk_widget_child_notify ()" link="GtkWidget.html#gtk-widget-child-notify"/>
     <keyword type="function" name="gtk_widget_freeze_child_notify ()" link="GtkWidget.html#gtk-widget-freeze-child-notify"/>
@@ -5234,7 +5234,7 @@
     <keyword type="struct" name="struct GtkWidgetAuxInfo" link="GtkWidget.html#GtkWidgetAuxInfo"/>
     <keyword type="struct" name="struct GtkWidgetShapeInfo" link="GtkWidget.html#GtkWidgetShapeInfo"/>
     <keyword type="enum" name="enum GtkWidgetHelpType" link="GtkWidget.html#GtkWidgetHelpType"/>
-    <keyword type="enum" name="enum GtkTextDirection" link="GtkWidget.html#GtkTextDirection" deprecated=""/>
+    <keyword type="enum" name="enum GtkTextDirection" link="GtkWidget.html#GtkTextDirection"/>
     <keyword type="property" name="The “app-paintable” property" link="GtkWidget.html#GtkWidget--app-paintable"/>
     <keyword type="property" name="The “can-default” property" link="GtkWidget.html#GtkWidget--can-default"/>
     <keyword type="property" name="The “can-focus” property" link="GtkWidget.html#GtkWidget--can-focus"/>
@@ -5463,7 +5463,7 @@
     <keyword type="function" name="gtk_recent_chooser_get_show_private ()" link="GtkRecentChooser.html#gtk-recent-chooser-get-show-private" since="2.10"/>
     <keyword type="function" name="gtk_recent_chooser_set_show_not_found ()" link="GtkRecentChooser.html#gtk-recent-chooser-set-show-not-found" since="2.10"/>
     <keyword type="function" name="gtk_recent_chooser_get_show_not_found ()" link="GtkRecentChooser.html#gtk-recent-chooser-get-show-not-found" since="2.10"/>
-    <keyword type="function" name="gtk_recent_chooser_set_show_icons ()" link="GtkRecentChooser.html#gtk-recent-chooser-set-show-icons" deprecated="" since="2.10"/>
+    <keyword type="function" name="gtk_recent_chooser_set_show_icons ()" link="GtkRecentChooser.html#gtk-recent-chooser-set-show-icons" since="2.10"/>
     <keyword type="function" name="gtk_recent_chooser_get_show_icons ()" link="GtkRecentChooser.html#gtk-recent-chooser-get-show-icons" since="2.10"/>
     <keyword type="function" name="gtk_recent_chooser_set_select_multiple ()" link="GtkRecentChooser.html#gtk-recent-chooser-set-select-multiple" since="2.10"/>
     <keyword type="function" name="gtk_recent_chooser_get_select_multiple ()" link="GtkRecentChooser.html#gtk-recent-chooser-get-select-multiple" since="2.10"/>
