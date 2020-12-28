@@ -6,3 +6,4 @@
 060_ignore-random-icons.patch
 061_use_pdf_as_default_printing_standard.patch
 098_multiarch_module_path.patch
+Reinstate-marshallers-that-accidentally-became-part-of-th.patch
