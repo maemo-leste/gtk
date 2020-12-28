@@ -1,3 +1,9 @@
+gtk+2.0 (2.24.32-6) UNRELEASED; urgency=medium
+
+  * d/watch: Cope with "+" being escaped to "%2B" in links to tarballs
+
+ -- Simon McVittie <smcv@debian.org>  Mon, 28 Dec 2020 12:15:27 +0000
+
 gtk+2.0 (2.24.32-5) unstable; urgency=medium
 
   * Team upload
