@@ -1,9 +1,12 @@
 gtk+2.0 (2.24.33-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
+    This is intended to be the last GTK 2 release.
+    Programs still using GTK 2 should migrate to GTK 3 or GTK 4.
+  * Drop most patches, included in new upstream release
   * d/watch: Cope with "+" being escaped to "%2B" in links to tarballs
-  * New upstream release
 
- -- Simon McVittie <smcv@debian.org>  Mon, 28 Dec 2020 12:15:27 +0000
+ -- Simon McVittie <smcv@debian.org>  Mon, 28 Dec 2020 12:25:14 +0000
 
 gtk+2.0 (2.24.32-5) unstable; urgency=medium
 
