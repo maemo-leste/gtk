@@ -8,7 +8,7 @@
 <link rel="up" href="MiscObjects.html" title="Miscellaneous">
 <link rel="prev" href="GtkSizeGroup.html" title="GtkSizeGroup">
 <link rel="next" href="GtkViewport.html" title="GtkViewport">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,8 +36,8 @@
 <a name="GtkTooltip.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -119,8 +119,8 @@
 <a name="GtkTooltip.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword"> </td>
@@ -130,7 +130,7 @@
 </div>
 <div class="refsect1">
 <a name="GtkTooltip.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+<pre class="screen">    GObject
     <span class="lineart">╰──</span> GtkTooltip
 </pre>
 </div>
@@ -148,12 +148,12 @@
 <a name="gtk-tooltip-set-markup"></a><h3>gtk_tooltip_set_markup ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tooltip_set_markup (<em class="parameter"><code><a class="link" href="GtkTooltip.html" title="GtkTooltip"><span class="type">GtkTooltip</span></a> *tooltip</code></em>,
-                        <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *markup</code></em>);</pre>
+                        <em class="parameter"><code>const <span class="type">gchar</span> *markup</code></em>);</pre>
 <p>Sets the text of the tooltip to be <em class="parameter"><code>markup</code></em>
 , which is marked up
 with the Pango text markup language.
 If <em class="parameter"><code>markup</code></em>
- is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the label will be hidden.</p>
+ is <code class="literal">NULL</code>, the label will be hidden.</p>
 <div class="refsect3">
 <a name="gtk-tooltip-set-markup.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -170,7 +170,7 @@ If <em class="parameter"><code>markup</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>markup</p></td>
-<td class="parameter_description"><p>a markup string (see Pango markup format) or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>a markup string (see Pango markup format) or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -183,10 +183,10 @@ If <em class="parameter"><code>markup</code></em>
 <a name="gtk-tooltip-set-text"></a><h3>gtk_tooltip_set_text ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tooltip_set_text (<em class="parameter"><code><a class="link" href="GtkTooltip.html" title="GtkTooltip"><span class="type">GtkTooltip</span></a> *tooltip</code></em>,
-                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+                      <em class="parameter"><code>const <span class="type">gchar</span> *text</code></em>);</pre>
 <p>Sets the text of the tooltip to be <em class="parameter"><code>text</code></em>
 . If <em class="parameter"><code>text</code></em>
- is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the label
+ is <code class="literal">NULL</code>, the label
 will be hidden. See also <a class="link" href="GtkTooltip.html#gtk-tooltip-set-markup" title="gtk_tooltip_set_markup ()"><code class="function">gtk_tooltip_set_markup()</code></a>.</p>
 <div class="refsect3">
 <a name="gtk-tooltip-set-text.parameters"></a><h4>Parameters</h4>
@@ -204,7 +204,7 @@ will be hidden. See also <a class="link" href="GtkTooltip.html#gtk-tooltip-set-m
 </tr>
 <tr>
 <td class="parameter_name"><p>text</p></td>
-<td class="parameter_description"><p>a text string or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>a text string or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -217,11 +217,11 @@ will be hidden. See also <a class="link" href="GtkTooltip.html#gtk-tooltip-set-m
 <a name="gtk-tooltip-set-icon"></a><h3>gtk_tooltip_set_icon ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tooltip_set_icon (<em class="parameter"><code><a class="link" href="GtkTooltip.html" title="GtkTooltip"><span class="type">GtkTooltip</span></a> *tooltip</code></em>,
-                      <em class="parameter"><code><a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
+                      <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);</pre>
 <p>Sets the icon of the tooltip (which is in front of the text) to be
 <em class="parameter"><code>pixbuf</code></em>
 .  If <em class="parameter"><code>pixbuf</code></em>
- is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the image will be hidden.</p>
+ is <code class="literal">NULL</code>, the image will be hidden.</p>
 <div class="refsect3">
 <a name="gtk-tooltip-set-icon.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -238,7 +238,7 @@ gtk_tooltip_set_icon (<em class="parameter"><code><a class="link" href="GtkToolt
 </tr>
 <tr>
 <td class="parameter_name"><p>pixbuf</p></td>
-<td class="parameter_description"><p>a <a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -251,14 +251,14 @@ gtk_tooltip_set_icon (<em class="parameter"><code><a class="link" href="GtkToolt
 <a name="gtk-tooltip-set-icon-from-stock"></a><h3>gtk_tooltip_set_icon_from_stock ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tooltip_set_icon_from_stock (<em class="parameter"><code><a class="link" href="GtkTooltip.html" title="GtkTooltip"><span class="type">GtkTooltip</span></a> *tooltip</code></em>,
-                                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>,
+                                 <em class="parameter"><code>const <span class="type">gchar</span> *stock_id</code></em>,
                                  <em class="parameter"><code><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSize" title="enum GtkIconSize"><span class="type">GtkIconSize</span></a> size</code></em>);</pre>
 <p>Sets the icon of the tooltip (which is in front of the text) to be
 the stock item indicated by <em class="parameter"><code>stock_id</code></em>
  with the size indicated
 by <em class="parameter"><code>size</code></em>
 .  If <em class="parameter"><code>stock_id</code></em>
- is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the image will be hidden.</p>
+ is <code class="literal">NULL</code>, the image will be hidden.</p>
 <div class="refsect3">
 <a name="gtk-tooltip-set-icon-from-stock.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -275,7 +275,7 @@ by <em class="parameter"><code>size</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>stock_id</p></td>
-<td class="parameter_description"><p>a stock id, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>a stock id, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -293,14 +293,14 @@ by <em class="parameter"><code>size</code></em>
 <a name="gtk-tooltip-set-icon-from-icon-name"></a><h3>gtk_tooltip_set_icon_from_icon_name ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tooltip_set_icon_from_icon_name (<em class="parameter"><code><a class="link" href="GtkTooltip.html" title="GtkTooltip"><span class="type">GtkTooltip</span></a> *tooltip</code></em>,
-                                     <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>,
+                                     <em class="parameter"><code>const <span class="type">gchar</span> *icon_name</code></em>,
                                      <em class="parameter"><code><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSize" title="enum GtkIconSize"><span class="type">GtkIconSize</span></a> size</code></em>);</pre>
 <p>Sets the icon of the tooltip (which is in front of the text) to be
 the icon indicated by <em class="parameter"><code>icon_name</code></em>
  with the size indicated
 by <em class="parameter"><code>size</code></em>
 .  If <em class="parameter"><code>icon_name</code></em>
- is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the image will be hidden.</p>
+ is <code class="literal">NULL</code>, the image will be hidden.</p>
 <div class="refsect3">
 <a name="gtk-tooltip-set-icon-from-icon-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -317,7 +317,7 @@ by <em class="parameter"><code>size</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>icon_name</p></td>
-<td class="parameter_description"><p>an icon name, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>an icon name, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -335,14 +335,14 @@ by <em class="parameter"><code>size</code></em>
 <a name="gtk-tooltip-set-icon-from-gicon"></a><h3>gtk_tooltip_set_icon_from_gicon ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_tooltip_set_icon_from_gicon (<em class="parameter"><code><a class="link" href="GtkTooltip.html" title="GtkTooltip"><span class="type">GtkTooltip</span></a> *tooltip</code></em>,
-                                 <em class="parameter"><code><a href="../gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a> *gicon</code></em>,
+                                 <em class="parameter"><code><span class="type">GIcon</span> *gicon</code></em>,
                                  <em class="parameter"><code><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSize" title="enum GtkIconSize"><span class="type">GtkIconSize</span></a> size</code></em>);</pre>
 <p>Sets the icon of the tooltip (which is in front of the text)
 to be the icon indicated by <em class="parameter"><code>gicon</code></em>
  with the size indicated
 by <em class="parameter"><code>size</code></em>
 . If <em class="parameter"><code>gicon</code></em>
- is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the image will be hidden.</p>
+ is <code class="literal">NULL</code>, the image will be hidden.</p>
 <div class="refsect3">
 <a name="gtk-tooltip-set-icon-from-gicon.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -359,7 +359,7 @@ by <em class="parameter"><code>size</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>gicon</p></td>
-<td class="parameter_description"><p>a <a href="../gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a> representing the icon, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_description"><p>a <span class="type">GIcon</span> representing the icon, or <code class="literal">NULL</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -402,7 +402,7 @@ and <a class="link" href="GtkTooltip.html#gtk-tooltip-set-icon" title="gtk_toolt
 </tr>
 <tr>
 <td class="parameter_name"><p>custom_widget</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a>, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to unset the old custom widget. </p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a>, or <code class="literal">NULL</code> to unset the old custom widget. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -485,6 +485,6 @@ functions for this: <a class="link" href="GtkTreeView.html#gtk-tree-view-set-too
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

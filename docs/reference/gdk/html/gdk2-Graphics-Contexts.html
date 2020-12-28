@@ -8,7 +8,7 @@
 <link rel="up" href="reference.html" title="API Reference">
 <link rel="prev" href="gdk2-Points-Rectangles-and-Regions.html" title="Points, Rectangles and Regions">
 <link rel="next" href="gdk2-Drawing-Primitives.html" title="Drawing Primitives">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -36,8 +36,8 @@
 <a name="gdk2-Graphics-Contexts.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -279,8 +279,8 @@
 <a name="gdk2-Graphics-Contexts.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -328,7 +328,7 @@
 </div>
 <div class="refsect1">
 <a name="gdk2-Graphics-Contexts.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+<pre class="screen">    GObject
     <span class="lineart">╰──</span> GdkGC
 </pre>
 </div>
@@ -455,9 +455,9 @@ gdk_gc_get_screen (<em class="parameter"><code><a class="link" href="gdk2-Graphi
 gdk_gc_ref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_ref</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
-<p>Use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
+<p>Use <code class="function">g_object_ref()</code> instead.</p>
 </div>
-<p>Deprecated function; use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
+<p>Deprecated function; use <code class="function">g_object_ref()</code> instead.</p>
 <div class="refsect3">
 <a name="gdk-gc-ref.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -485,7 +485,7 @@ gdk_gc_ref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Cont
 gdk_gc_unref (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_unref</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
-<p>Use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
+<p>Use <code class="function">g_object_unref()</code> instead.</p>
 </div>
 <p>Decrement the reference count of <em class="parameter"><code>gc</code></em>
 .</p>
@@ -641,7 +641,7 @@ gdk_gc_set_background (<em class="parameter"><code><a class="link" href="gdk2-Gr
 <p><code class="literal">gdk_gc_set_background</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="gdk2-Cairo-Interaction.html#gdk-cairo-set-source-color" title="gdk_cairo_set_source_color ()"><code class="function">gdk_cairo_set_source_color()</code></a> to use a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a>
 as the source in Cairo. Note that if you want to draw a background and a
-foreground in Cairo, you need to call drawing functions (like <code class="function">cairo_fill()</code>)
+foreground in Cairo, you need to call drawing functions (like <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-fill"><code class="function">cairo_fill()</code></a>)
 twice.</p>
 </div>
 <p>Sets the background color for a graphics context.
@@ -761,7 +761,7 @@ gdk_gc_set_font (<em class="parameter"><code><a class="link" href="gdk2-Graphics
 all text-drawing functions in GDK take a <em class="parameter"><code>font</code></em>
 
 argument; the value set here is used when that
-argument is <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.)</p>
+argument is <code class="literal">NULL</code>.)</p>
 <div class="refsect3">
 <a name="gdk-gc-set-font.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -793,7 +793,7 @@ gdk_gc_set_function (<em class="parameter"><code><a class="link" href="gdk2-Grap
                      <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkFunction" title="enum GdkFunction"><span class="type">GdkFunction</span></a> function</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_function</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <code class="function">cairo_set_operator()</code> with Cairo.</p>
+<p>Use <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-set-operator"><code class="function">cairo_set_operator()</code></a> with Cairo.</p>
 </div>
 <p>Determines how the current pixel values and the
 pixel values being drawn are combined to produce
@@ -830,7 +830,7 @@ gdk_gc_set_fill (<em class="parameter"><code><a class="link" href="gdk2-Graphics
 <div class="warning">
 <p><code class="literal">gdk_gc_set_fill</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>You can achieve tiling in Cairo by using
-<code class="function">cairo_pattern_set_extend()</code> on the source. For stippling, see the
+<a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-pattern-t.html#cairo-pattern-set-extend"><code class="function">cairo_pattern_set_extend()</code></a> on the source. For stippling, see the
 deprecation comments on <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-stipple" title="gdk_gc_set_stipple ()"><code class="function">gdk_gc_set_stipple()</code></a>.</p>
 </div>
 <p>Set the fill mode for a graphics context.</p>
@@ -872,7 +872,7 @@ as the source in Cairo:</p>
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="function">cairo_pattern_set_extend</span> <span class="gtkdoc opt">(</span><span class="function">cairo_get_source</span> <span class="gtkdoc opt">(</span>cr<span class="gtkdoc opt">),</span> CAIRO_EXTEND_REPEAT<span class="gtkdoc opt">);]|</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">cairo_pattern_set_extend</span> <span class="p">(</span><span class="n">cairo_get_source</span> <span class="p">(</span><span class="n">cr</span><span class="p">),</span> <span class="n">CAIRO_EXTEND_REPEAT</span><span class="p">);]</span><span class="o">|</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -916,8 +916,8 @@ gdk_gc_set_stipple (<em class="parameter"><code><a class="link" href="gdk2-Graph
 <p>Stippling has no direct replacement in Cairo. If you
 want to achieve an identical look, you can use the stipple bitmap as a
 mask. Most likely, this involves rendering the source to an intermediate
-surface using <code class="function">cairo_push_group()</code> first, so that you can then use
-<code class="function">cairo_mask()</code> to achieve the stippled look.</p>
+surface using <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-push-group"><code class="function">cairo_push_group()</code></a> first, so that you can then use
+<a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-mask"><code class="function">cairo_mask()</code></a> to achieve the stippled look.</p>
 </div>
 <p>Set the stipple bitmap for a graphics context. The
 stipple will only be used if the fill mode is
@@ -950,12 +950,12 @@ stipple will only be used if the fill mode is
 <a name="gdk-gc-set-ts-origin"></a><h3>gdk_gc_set_ts_origin ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_ts_origin (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_ts_origin</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>You can set the origin for tiles and stipples in Cairo
-by changing the source's matrix using <code class="function">cairo_pattern_set_matrix()</code>. Or you
+by changing the source's matrix using <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-pattern-t.html#cairo-pattern-set-matrix"><code class="function">cairo_pattern_set_matrix()</code></a>. Or you
 can specify it with <a class="link" href="gdk2-Cairo-Interaction.html#gdk-cairo-set-source-pixmap" title="gdk_cairo_set_source_pixmap ()"><code class="function">gdk_cairo_set_source_pixmap()</code></a> as shown in the example
 for <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-tile" title="gdk_gc_set_tile ()"><code class="function">gdk_gc_set_tile()</code></a>.</p>
 </div>
@@ -996,11 +996,11 @@ will coincide with this point.</p>
 <a name="gdk-gc-set-clip-origin"></a><h3>gdk_gc_set_clip_origin ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_clip_origin (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+                        <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                        <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_clip_origin</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <code class="function">cairo_translate()</code> before applying the clip path in
+<p>Use <a href="/usr/share/gtk-doc/html/cairo/cairo-Transformations.html#cairo-translate"><code class="function">cairo_translate()</code></a> before applying the clip path in
 Cairo.</p>
 </div>
 <p>Sets the origin of the clip mask. The coordinates are
@@ -1042,7 +1042,7 @@ gdk_gc_set_clip_mask (<em class="parameter"><code><a class="link" href="gdk2-Gra
                       <em class="parameter"><code><a class="link" href="gdk2-Bitmaps-and-Pixmaps.html#GdkBitmap" title="GdkBitmap"><span class="type">GdkBitmap</span></a> *mask</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_clip_mask</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <code class="function">cairo_mask()</code> instead.</p>
+<p>Use <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-mask"><code class="function">cairo_mask()</code></a> instead.</p>
 </div>
 <p>Sets the clip mask for a graphics context from a bitmap.
 The clip mask is interpreted relative to the clip
@@ -1078,7 +1078,7 @@ gdk_gc_set_clip_rectangle (<em class="parameter"><code><a class="link" href="gdk
                            <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle" title="struct GdkRectangle"><span class="type">GdkRectangle</span></a> *rectangle</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_clip_rectangle</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <code class="function">cairo_rectangle()</code> and <code class="function">cairo_clip()</code> in Cairo.</p>
+<p>Use <a href="/usr/share/gtk-doc/html/cairo/cairo-Paths.html#cairo-rectangle"><code class="function">cairo_rectangle()</code></a> and <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-clip"><code class="function">cairo_clip()</code></a> in Cairo.</p>
 </div>
 <p>Sets the clip mask for a graphics context from a
 rectangle. The clip mask is interpreted relative to the clip
@@ -1114,7 +1114,7 @@ gdk_gc_set_clip_region (<em class="parameter"><code><a class="link" href="gdk2-G
                         <em class="parameter"><code>const <a class="link" href="gdk2-Points-Rectangles-and-Regions.html#GdkRegion" title="GdkRegion"><span class="type">GdkRegion</span></a> *region</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_clip_region</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <a class="link" href="gdk2-Cairo-Interaction.html#gdk-cairo-region" title="gdk_cairo_region ()"><code class="function">gdk_cairo_region()</code></a> and <code class="function">cairo_clip()</code> in Cairo.</p>
+<p>Use <a class="link" href="gdk2-Cairo-Interaction.html#gdk-cairo-region" title="gdk_cairo_region ()"><code class="function">gdk_cairo_region()</code></a> and <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-clip"><code class="function">cairo_clip()</code></a> in Cairo.</p>
 </div>
 <p>Sets the clip mask for a graphics context from a region structure.
 The clip mask is interpreted relative to the clip origin. (See
@@ -1185,7 +1185,7 @@ windows of that window.</p>
 <a name="gdk-gc-set-exposures"></a><h3>gdk_gc_set_exposures ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_exposures (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exposures</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gboolean</span> exposures</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_exposures</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>There is no replacement. If you need to control
@@ -1213,7 +1213,7 @@ drawable. (See <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-drawa
 </tr>
 <tr>
 <td class="parameter_name"><p>exposures</p></td>
-<td class="parameter_description"><p>if <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, exposure events will be generated.</p></td>
+<td class="parameter_description"><p>if <code class="literal">TRUE</code>, exposure events will be generated.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1225,16 +1225,16 @@ drawable. (See <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-drawa
 <a name="gdk-gc-set-line-attributes"></a><h3>gdk_gc_set_line_attributes ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_line_attributes (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line_width</code></em>,
+                            <em class="parameter"><code><span class="type">gint</span> line_width</code></em>,
                             <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkLineStyle" title="enum GdkLineStyle"><span class="type">GdkLineStyle</span></a> line_style</code></em>,
                             <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkCapStyle" title="enum GdkCapStyle"><span class="type">GdkCapStyle</span></a> cap_style</code></em>,
                             <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkJoinStyle" title="enum GdkJoinStyle"><span class="type">GdkJoinStyle</span></a> join_style</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_line_attributes</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use the Cairo functions <code class="function">cairo_set_line_width()</code>,
-<code class="function">cairo_set_line_join()</code>, <code class="function">cairo_set_line_cap()</code> and <code class="function">cairo_set_dash()</code>
+<p>Use the Cairo functions <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-set-line-width"><code class="function">cairo_set_line_width()</code></a>,
+<a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-set-line-join"><code class="function">cairo_set_line_join()</code></a>, <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-set-line-cap"><code class="function">cairo_set_line_cap()</code></a> and <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-set-dash"><code class="function">cairo_set_dash()</code></a>
 to affect the stroking behavior in Cairo. Keep in mind that the default
-attributes of a <span class="type">cairo_t</span> are different from the default attributes of
+attributes of a <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-t"><span class="type">cairo_t</span></a> are different from the default attributes of
 a <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p>
 </div>
 <p>Sets various attributes of how lines are drawn. See
@@ -1283,12 +1283,12 @@ explanations of the arguments.</p>
 <a name="gdk-gc-set-dashes"></a><h3>gdk_gc_set_dashes ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_set_dashes (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> dash_offset</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint8"><span class="type">gint8</span></a> dash_list[]</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+                   <em class="parameter"><code><span class="type">gint</span> dash_offset</code></em>,
+                   <em class="parameter"><code><span class="type">gint8</span> dash_list[]</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> n</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_set_dashes</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use <code class="function">cairo_set_dash()</code> to set the dash in Cairo.</p>
+<p>Use <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-set-dash"><code class="function">cairo_set_dash()</code></a> to set the dash in Cairo.</p>
 </div>
 <p>Sets the way dashed-lines are drawn. Lines will be
 drawn with alternating on and off segments of the
@@ -1344,7 +1344,7 @@ gdk_gc_copy (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Con
              <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *src_gc</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_copy</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
-<p>Use Cairo for drawing. <code class="function">cairo_save()</code> and <code class="function">cairo_restore()</code>
+<p>Use Cairo for drawing. <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-save"><code class="function">cairo_save()</code></a> and <a href="/usr/share/gtk-doc/html/cairo/cairo-cairo-t.html#cairo-restore"><code class="function">cairo_restore()</code></a>
 can be helpful in cases where you'd have copied a <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p>
 </div>
 <p>Copy the set of values from one graphics context
@@ -1441,7 +1441,7 @@ gdk_gc_set_colormap.</p>
 <div class="refsect3">
 <a name="gdk-gc-get-colormap.returns"></a><h4>Returns</h4>
 <p> the colormap of <em class="parameter"><code>gc</code></em>
-, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>gc</code></em>
+, or <code class="literal">NULL</code> if <em class="parameter"><code>gc</code></em>
 doesn't have one.</p>
 </div>
 </div>
@@ -1450,8 +1450,8 @@ doesn't have one.</p>
 <a name="gdk-gc-offset"></a><h3>gdk_gc_offset ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gdk_gc_offset (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x_offset</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y_offset</code></em>);</pre>
+               <em class="parameter"><code><span class="type">gint</span> x_offset</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> y_offset</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gdk_gc_offset</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
 <p>There is no direct replacement, as this is just a
@@ -1893,6 +1893,6 @@ GC.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

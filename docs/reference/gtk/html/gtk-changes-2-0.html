@@ -8,7 +8,7 @@
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="gtk-changes-1-2.html" title="Changes from 1.0 to 1.2">
 <link rel="next" href="gtk-migrating-GtkFileChooser.html" title="Migrating from GtkFileSelection to GtkFileChooser">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -255,18 +255,18 @@ Object system changes:
 10
 11
 12</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">static void</span> <span class="function">gtk_label_finalize</span> <span class="gtkdoc opt">(</span>GObject <span class="gtkdoc opt">*</span>gobject<span class="gtkdoc opt">)</span>
-<span class="gtkdoc opt">{</span>
-  GtkLabel <span class="gtkdoc opt">*</span>label <span class="gtkdoc opt">=</span> <span class="function">GTK_LABEL</span> <span class="gtkdoc opt">(</span>gobject<span class="gtkdoc opt">);</span>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="kt">void</span> <span class="nf">gtk_label_finalize</span> <span class="p">(</span><span class="n">GObject</span> <span class="o">*</span><span class="n">gobject</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">GtkLabel</span> <span class="o">*</span><span class="n">label</span> <span class="o">=</span> <span class="n">GTK_LABEL</span> <span class="p">(</span><span class="n">gobject</span><span class="p">);</span>
   
-  <span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#G-OBJECT-CLASS:CAPS">G_OBJECT_CLASS</a></span> <span class="gtkdoc opt">(</span>parent_class<span class="gtkdoc opt">)-&gt;</span><span class="function">finalize</span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">);</span>
-<span class="gtkdoc opt">}</span>
-<span class="gtkdoc kwb">static void</span> <span class="function">gtk_label_class_init</span> <span class="gtkdoc opt">(</span>GtkLabelClass <span class="gtkdoc opt">*</span><span class="gtkdoc kwc">class</span><span class="gtkdoc opt">)</span>
-<span class="gtkdoc opt">{</span>
-  GObjectClass <span class="gtkdoc opt">*</span>gobject_class <span class="gtkdoc opt">=</span> <span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#G-OBJECT-CLASS:CAPS">G_OBJECT_CLASS</a></span> <span class="gtkdoc opt">(</span><span class="gtkdoc kwc">class</span><span class="gtkdoc opt">);</span>
+  <span class="n">G_OBJECT_CLASS</span> <span class="p">(</span><span class="n">parent_class</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">finalize</span> <span class="p">(</span><span class="n">object</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">gtk_label_class_init</span> <span class="p">(</span><span class="n">GtkLabelClass</span> <span class="o">*</span><span class="n">class</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">GObjectClass</span> <span class="o">*</span><span class="n">gobject_class</span> <span class="o">=</span> <span class="n">G_OBJECT_CLASS</span> <span class="p">(</span><span class="n">class</span><span class="p">);</span>
   
-  gobject_class<span class="gtkdoc opt">-&gt;</span>finalize <span class="gtkdoc opt">=</span> gtk_label_finalize<span class="gtkdoc opt">;</span>
-<span class="gtkdoc opt">}</span></pre></td>
+  <span class="n">gobject_class</span><span class="o">-&gt;</span><span class="n">finalize</span> <span class="o">=</span> <span class="n">gtk_label_finalize</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -295,11 +295,11 @@ The GtkObject::destroy signal can now be emitted multiple times on an object.
 3
 4
 5</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">if</span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>foo_data<span class="gtkdoc opt">)</span>
-  <span class="gtkdoc opt">{</span> 
-    <span class="function"><a href="../glib/glib-Memory-Allocation.html#g-free">g_free</a></span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>foo_data<span class="gtkdoc opt">);</span>
-    object<span class="gtkdoc opt">-&gt;</span>foo_data <span class="gtkdoc opt">=</span> NULL<span class="gtkdoc opt">;</span>
-  <span class="gtkdoc opt">}</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">if</span> <span class="p">(</span><span class="n">object</span><span class="o">-&gt;</span><span class="n">foo_data</span><span class="p">)</span>
+  <span class="p">{</span> 
+    <span class="n">g_free</span> <span class="p">(</span><span class="n">object</span><span class="o">-&gt;</span><span class="n">foo_data</span><span class="p">);</span>
+    <span class="n">object</span><span class="o">-&gt;</span><span class="n">foo_data</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+  <span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -319,11 +319,11 @@ The GtkObject::destroy signal can now be emitted multiple times on an object.
 3
 4
 5</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="keyword">if</span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>adjustment<span class="gtkdoc opt">)</span>
-  <span class="gtkdoc opt">{</span>
-    <span class="function"><a href="GtkObject.html#gtk-object-unref">gtk_object_unref</a></span> <span class="gtkdoc opt">(</span>object<span class="gtkdoc opt">-&gt;</span>adjustment<span class="gtkdoc opt">);</span>
-    object<span class="gtkdoc opt">-&gt;</span>adjustment <span class="gtkdoc opt">=</span> NULL<span class="gtkdoc opt">;</span>
-  <span class="gtkdoc opt">}</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">if</span> <span class="p">(</span><span class="n">object</span><span class="o">-&gt;</span><span class="n">adjustment</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">gtk_object_unref</span> <span class="p">(</span><span class="n">object</span><span class="o">-&gt;</span><span class="n">adjustment</span><span class="p">);</span>
+    <span class="n">object</span><span class="o">-&gt;</span><span class="n">adjustment</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+  <span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -1169,6 +1169,6 @@ The rectangle passed in is the bounding box, instead of
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

@@ -5923,8 +5923,8 @@ extern __typeof (gtk_input_dialog_new) IA__gtk_input_dialog_new __attribute((vis
 #endif
 #endif
 #endif
-#if IN_HEADER(__gtk_marshal_MARSHAL_H__)
-#if IN_FILE(__gtk_marshal_MARSHAL_C__)
+#if IN_HEADER(__gtk_marshal_MARSHAL_H__) || IN_HEADER(__GTK_MARSHAL_MARSHAL_H__)
+#if IN_FILE(__gtk_marshal_MARSHAL_C__) || IN_FILE(__GTK_MARSHAL_MARSHAL_C__)
 #ifndef GTK_DISABLE_DEPRECATED
 extern __typeof (gtk_marshal_BOOLEAN__POINTER) IA__gtk_marshal_BOOLEAN__POINTER __attribute((visibility("hidden")));
 #define gtk_marshal_BOOLEAN__POINTER IA__gtk_marshal_BOOLEAN__POINTER
@@ -5953,35 +5953,17 @@ extern __typeof (gtk_marshal_INT__POINTER) IA__gtk_marshal_INT__POINTER __attrib
 extern __typeof (gtk_marshal_INT__POINTER_CHAR_CHAR) IA__gtk_marshal_INT__POINTER_CHAR_CHAR __attribute((visibility("hidden")));
 #define gtk_marshal_INT__POINTER_CHAR_CHAR IA__gtk_marshal_INT__POINTER_CHAR_CHAR
 
-extern __typeof (gtk_marshal_VOID__BOOLEAN) IA__gtk_marshal_VOID__BOOLEAN __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__BOOLEAN IA__gtk_marshal_VOID__BOOLEAN
-
-extern __typeof (gtk_marshal_VOID__BOXED) IA__gtk_marshal_VOID__BOXED __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__BOXED IA__gtk_marshal_VOID__BOXED
-
-extern __typeof (gtk_marshal_VOID__ENUM) IA__gtk_marshal_VOID__ENUM __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__ENUM IA__gtk_marshal_VOID__ENUM
-
 extern __typeof (gtk_marshal_VOID__ENUM_FLOAT) IA__gtk_marshal_VOID__ENUM_FLOAT __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__ENUM_FLOAT IA__gtk_marshal_VOID__ENUM_FLOAT
 
 extern __typeof (gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN) IA__gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN IA__gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN
 
-extern __typeof (gtk_marshal_VOID__INT) IA__gtk_marshal_VOID__INT __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__INT IA__gtk_marshal_VOID__INT
-
 extern __typeof (gtk_marshal_VOID__INT_INT) IA__gtk_marshal_VOID__INT_INT __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__INT_INT IA__gtk_marshal_VOID__INT_INT
 
 extern __typeof (gtk_marshal_VOID__INT_INT_POINTER) IA__gtk_marshal_VOID__INT_INT_POINTER __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__INT_INT_POINTER IA__gtk_marshal_VOID__INT_INT_POINTER
-
-extern __typeof (gtk_marshal_VOID__OBJECT) IA__gtk_marshal_VOID__OBJECT __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__OBJECT IA__gtk_marshal_VOID__OBJECT
-
-extern __typeof (gtk_marshal_VOID__POINTER) IA__gtk_marshal_VOID__POINTER __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__POINTER IA__gtk_marshal_VOID__POINTER
 
 extern __typeof (gtk_marshal_VOID__POINTER_INT) IA__gtk_marshal_VOID__POINTER_INT __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__POINTER_INT IA__gtk_marshal_VOID__POINTER_INT
@@ -6010,14 +5992,8 @@ extern __typeof (gtk_marshal_VOID__POINTER_UINT_ENUM) IA__gtk_marshal_VOID__POIN
 extern __typeof (gtk_marshal_VOID__POINTER_UINT_UINT) IA__gtk_marshal_VOID__POINTER_UINT_UINT __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__POINTER_UINT_UINT IA__gtk_marshal_VOID__POINTER_UINT_UINT
 
-extern __typeof (gtk_marshal_VOID__STRING) IA__gtk_marshal_VOID__STRING __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__STRING IA__gtk_marshal_VOID__STRING
-
 extern __typeof (gtk_marshal_VOID__STRING_INT_POINTER) IA__gtk_marshal_VOID__STRING_INT_POINTER __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__STRING_INT_POINTER IA__gtk_marshal_VOID__STRING_INT_POINTER
-
-extern __typeof (gtk_marshal_VOID__UINT) IA__gtk_marshal_VOID__UINT __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__UINT IA__gtk_marshal_VOID__UINT
 
 extern __typeof (gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER) IA__gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER IA__gtk_marshal_VOID__UINT_POINTER_UINT_ENUM_ENUM_POINTER
@@ -6027,9 +6003,6 @@ extern __typeof (gtk_marshal_VOID__UINT_POINTER_UINT_UINT_ENUM) IA__gtk_marshal_
 
 extern __typeof (gtk_marshal_VOID__UINT_STRING) IA__gtk_marshal_VOID__UINT_STRING __attribute((visibility("hidden")));
 #define gtk_marshal_VOID__UINT_STRING IA__gtk_marshal_VOID__UINT_STRING
-
-extern __typeof (gtk_marshal_VOID__VOID) IA__gtk_marshal_VOID__VOID __attribute((visibility("hidden")));
-#define gtk_marshal_VOID__VOID IA__gtk_marshal_VOID__VOID
 
 #endif
 #endif

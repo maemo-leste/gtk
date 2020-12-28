@@ -8,7 +8,7 @@
 <link rel="up" href="DisplayWidgets.html" title="Display Widgets">
 <link rel="prev" href="GtkStatusIcon.html" title="GtkStatusIcon">
 <link rel="next" href="ButtonWidgets.html" title="Buttons and Toggles">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -39,8 +39,8 @@
 <a name="GtkSpinner.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -79,7 +79,7 @@
 <col width="200px" class="properties_flags">
 </colgroup>
 <tbody><tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_type"><span class="type">gboolean</span></td>
 <td class="property_name"><a class="link" href="GtkSpinner.html#GtkSpinner--active" title="The “active” property">active</a></td>
 <td class="property_flags">Read / Write</td>
 </tr></tbody>
@@ -95,12 +95,12 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_type"><span class="type">guint</span></td>
 <td class="property_name"><a class="link" href="GtkSpinner.html#GtkSpinner--s-cycle-duration" title="The “cycle-duration” style property">cycle-duration</a></td>
 <td class="property_flags">Read</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_type"><span class="type">guint</span></td>
 <td class="property_name"><a class="link" href="GtkSpinner.html#GtkSpinner--s-num-steps" title="The “num-steps” style property">num-steps</a></td>
 <td class="property_flags">Read</td>
 </tr>
@@ -111,8 +111,8 @@
 <a name="GtkSpinner.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -122,8 +122,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkSpinner.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkDrawingArea.html" title="GtkDrawingArea">GtkDrawingArea</a>
@@ -220,8 +220,9 @@ gtk_spinner_stop (<em class="parameter"><code><a class="link" href="GtkSpinner.h
 <a name="GtkSpinner.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GtkSpinner--active"></a><h3>The <code class="literal">“active”</code> property</h3>
-<pre class="programlisting">  “active”                   <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<pre class="programlisting">  “active”                   <span class="type">gboolean</span></pre>
 <p>Whether the spinner is active.</p>
+<p>Owner: GtkSpinner</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
 </div>
@@ -230,8 +231,9 @@ gtk_spinner_stop (<em class="parameter"><code><a class="link" href="GtkSpinner.h
 <a name="GtkSpinner.style-property-details"></a><h2>Style Property Details</h2>
 <div class="refsect2">
 <a name="GtkSpinner--s-cycle-duration"></a><h3>The <code class="literal">“cycle-duration”</code> style property</h3>
-<pre class="programlisting">  “cycle-duration”           <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<pre class="programlisting">  “cycle-duration”           <span class="type">guint</span></pre>
 <p>The duration in milliseconds for the spinner to complete a full cycle.</p>
+<p>Owner: GtkSpinner</p>
 <p>Flags: Read</p>
 <p>Allowed values: &gt;= 500</p>
 <p>Default value: 1000</p>
@@ -240,10 +242,11 @@ gtk_spinner_stop (<em class="parameter"><code><a class="link" href="GtkSpinner.h
 <hr>
 <div class="refsect2">
 <a name="GtkSpinner--s-num-steps"></a><h3>The <code class="literal">“num-steps”</code> style property</h3>
-<pre class="programlisting">  “num-steps”                <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<pre class="programlisting">  “num-steps”                <span class="type">guint</span></pre>
 <p>The number of steps for the spinner to complete a full loop.
 The animation will complete a full cycle in one second by default
 (see the <span class="type">“cycle-duration”</span> style property).</p>
+<p>Owner: GtkSpinner</p>
 <p>Flags: Read</p>
 <p>Allowed values: &gt;= 1</p>
 <p>Default value: 12</p>
@@ -256,6 +259,6 @@ The animation will complete a full cycle in one second by default
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

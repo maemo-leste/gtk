@@ -8,7 +8,7 @@
 <link rel="up" href="WindowWidgets.html" title="Windows">
 <link rel="prev" href="GtkAssistant.html" title="GtkAssistant">
 <link rel="next" href="DisplayWidgets.html" title="Display Widgets">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -30,7 +30,7 @@
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GtkOffscreenWindow.top_of_page"></a>GtkOffscreenWindow</span></h2>
 <p>GtkOffscreenWindow — A toplevel container widget used to manage offscreen
-   rendering of child widgets.</p>
+rendering of child widgets.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -38,8 +38,8 @@
 <a name="GtkOffscreenWindow.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkOffscreenWindow.html#gtk-offscreen-window-get-pixbuf" title="gtk_offscreen_window_get_pixbuf ()">gtk_offscreen_window_get_pixbuf</a> <span class="c_punctuation">()</span>
@@ -73,8 +73,8 @@
 <a name="GtkOffscreenWindow.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -84,8 +84,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkOffscreenWindow.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -116,7 +116,7 @@ is a toplevel widget you cannot obtain snapshots of a full window
 with it since you cannot pack a toplevel widget in another toplevel.</p>
 <p>The idea is to take a widget and manually set the state of it,
 add it to a <a class="link" href="GtkOffscreenWindow.html" title="GtkOffscreenWindow"><span class="type">GtkOffscreenWindow</span></a> and then retrieve the snapshot
-as a <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> or <a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.</p>
+as a <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> or <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.</p>
 <p><a class="link" href="GtkOffscreenWindow.html" title="GtkOffscreenWindow"><span class="type">GtkOffscreenWindow</span></a> derives from <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a> only as an implementation
 detail.  Applications should not use any API specific to <a class="link" href="GtkWindow.html" title="GtkWindow"><span class="type">GtkWindow</span></a>
 to operate on this object.  It should be treated as a <a class="link" href="GtkBin.html" title="GtkBin"><span class="type">GtkBin</span></a> that
@@ -166,7 +166,7 @@ resizes then you should add a reference to it.</p>
 <div class="refsect3">
 <a name="gtk-offscreen-window-get-pixmap.returns"></a><h4>Returns</h4>
 <p>A <a href="../html/gdk2-Bitmaps-and-Pixmaps.html#GdkPixmap"><span class="type">GdkPixmap</span></a> pointer to the offscreen pixmap,
-or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+or <code class="literal">NULL</code>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
@@ -174,10 +174,10 @@ or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">N
 <hr>
 <div class="refsect2">
 <a name="gtk-offscreen-window-get-pixbuf"></a><h3>gtk_offscreen_window_get_pixbuf ()</h3>
-<pre class="programlisting"><a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_offscreen_window_get_pixbuf (<em class="parameter"><code><a class="link" href="GtkOffscreenWindow.html" title="GtkOffscreenWindow"><span class="type">GtkOffscreenWindow</span></a> *offscreen</code></em>);</pre>
 <p>Retrieves a snapshot of the contained widget in the form of
-a <a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.  This is a new pixbuf with a reference count of 1,
+a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>.  This is a new pixbuf with a reference count of 1,
 and the application should unreference it once it is no longer
 needed.</p>
 <div class="refsect3">
@@ -197,7 +197,7 @@ needed.</p>
 </div>
 <div class="refsect3">
 <a name="gtk-offscreen-window-get-pixbuf.returns"></a><h4>Returns</h4>
-<p>A <a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> pointer, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p>A <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> pointer, or <code class="literal">NULL</code>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-20.html#api-index-2.20">2.20</a></p>
@@ -212,6 +212,6 @@ needed.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

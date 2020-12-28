@@ -2274,6 +2274,14 @@ gdk_event_translate (MSG  *msg,
 	  in_ime_composition)
 	break;
 
+      /* Ignore autorepeats on modifiers */
+      if (msg->message == WM_KEYDOWN &&
+          (msg->wParam == VK_MENU ||
+           msg->wParam == VK_CONTROL ||
+           msg->wParam == VK_SHIFT) &&
+           ((HIWORD(msg->lParam) & KF_REPEAT) >= 1))
+        break;
+
       if (!propagate (&window, msg,
 		      _gdk_display->keyboard_grab.window,
 		      _gdk_display->keyboard_grab.owner_events,
@@ -2773,11 +2781,15 @@ gdk_event_translate (MSG  *msg,
       event->scroll.window = window;
 
       if (msg->message == WM_MOUSEWHEEL)
+        {
 	  event->scroll.direction = (((short) HIWORD (msg->wParam)) > 0) ?
 	    GDK_SCROLL_UP : GDK_SCROLL_DOWN;
+        }
       else if (msg->message == WM_MOUSEHWHEEL)
+        {
 	  event->scroll.direction = (((short) HIWORD (msg->wParam)) > 0) ?
 	    GDK_SCROLL_RIGHT : GDK_SCROLL_LEFT;
+        }
       event->scroll.time = _gdk_win32_get_next_tick (msg->time);
       event->scroll.x = (gint16) point.x;
       event->scroll.y = (gint16) point.y;
@@ -3622,8 +3634,7 @@ _gdk_events_queue (GdkDisplay *display)
   if (modal_win32_dialog != NULL)
     return;
   
-  while (!_gdk_event_queue_find_first (display) &&
-	 PeekMessageW (&msg, NULL, 0, 0, PM_REMOVE))
+  while (PeekMessageW (&msg, NULL, 0, 0, PM_REMOVE))
     {
       TranslateMessage (&msg);
       DispatchMessageW (&msg);

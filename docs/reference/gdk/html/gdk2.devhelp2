@@ -59,15 +59,15 @@
     <keyword type="function" name="gdk_exit ()" link="gdk2-General.html#gdk-exit" deprecated=""/>
     <keyword type="function" name="gdk_notify_startup_complete ()" link="gdk2-General.html#gdk-notify-startup-complete" since="2.2"/>
     <keyword type="function" name="gdk_notify_startup_complete_with_id ()" link="gdk2-General.html#gdk-notify-startup-complete-with-id" since="2.12"/>
-    <keyword type="function" name="gdk_get_program_class ()" link="gdk2-General.html#gdk-get-program-class" deprecated=""/>
+    <keyword type="function" name="gdk_get_program_class ()" link="gdk2-General.html#gdk-get-program-class"/>
     <keyword type="function" name="gdk_set_program_class ()" link="gdk2-General.html#gdk-set-program-class"/>
-    <keyword type="function" name="gdk_get_display ()" link="gdk2-General.html#gdk-get-display" deprecated=""/>
+    <keyword type="function" name="gdk_get_display ()" link="gdk2-General.html#gdk-get-display"/>
     <keyword type="function" name="gdk_flush ()" link="gdk2-General.html#gdk-flush"/>
     <keyword type="function" name="gdk_screen_width ()" link="gdk2-General.html#gdk-screen-width"/>
     <keyword type="function" name="gdk_screen_height ()" link="gdk2-General.html#gdk-screen-height"/>
     <keyword type="function" name="gdk_screen_width_mm ()" link="gdk2-General.html#gdk-screen-width-mm"/>
     <keyword type="function" name="gdk_screen_height_mm ()" link="gdk2-General.html#gdk-screen-height-mm"/>
-    <keyword type="function" name="gdk_pointer_grab ()" link="gdk2-General.html#gdk-pointer-grab" deprecated=""/>
+    <keyword type="function" name="gdk_pointer_grab ()" link="gdk2-General.html#gdk-pointer-grab"/>
     <keyword type="function" name="gdk_pointer_ungrab ()" link="gdk2-General.html#gdk-pointer-ungrab"/>
     <keyword type="function" name="gdk_pointer_is_grabbed ()" link="gdk2-General.html#gdk-pointer-is-grabbed"/>
     <keyword type="function" name="gdk_set_double_click_time ()" link="gdk2-General.html#gdk-set-double-click-time"/>
@@ -196,7 +196,7 @@
     <keyword type="function" name="gdk_region_xor ()" link="gdk2-Points-Rectangles-and-Regions.html#gdk-region-xor"/>
     <keyword type="function" name="GdkSpanFunc ()" link="gdk2-Points-Rectangles-and-Regions.html#GdkSpanFunc" deprecated=""/>
     <keyword type="function" name="gdk_region_spans_intersect_foreach ()" link="gdk2-Points-Rectangles-and-Regions.html#gdk-region-spans-intersect-foreach" deprecated="2.22: There is no replacement."/>
-    <keyword type="struct" name="struct GdkPoint" link="gdk2-Points-Rectangles-and-Regions.html#GdkPoint" deprecated=""/>
+    <keyword type="struct" name="struct GdkPoint" link="gdk2-Points-Rectangles-and-Regions.html#GdkPoint"/>
     <keyword type="struct" name="struct GdkRectangle" link="gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"/>
     <keyword type="struct" name="GdkRegion" link="gdk2-Points-Rectangles-and-Regions.html#GdkRegion"/>
     <keyword type="enum" name="enum GdkFillRule" link="gdk2-Points-Rectangles-and-Regions.html#GdkFillRule" deprecated=""/>
@@ -248,11 +248,11 @@
     <keyword type="function" name="gdk_drawable_get_display ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-display" deprecated="2.24: Use gdk_window_get_display() instead" since="2.2"/>
     <keyword type="function" name="gdk_drawable_get_screen ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-screen" deprecated="2.24: Use gdk_window_get_screen() instead" since="2.2"/>
     <keyword type="function" name="gdk_drawable_get_visual ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-visual" deprecated="2.24: Use gdk_window_get_visual()"/>
-    <keyword type="function" name="gdk_drawable_set_colormap ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-set-colormap" deprecated=""/>
+    <keyword type="function" name="gdk_drawable_set_colormap ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-set-colormap"/>
     <keyword type="function" name="gdk_drawable_get_colormap ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-colormap"/>
     <keyword type="function" name="gdk_drawable_get_depth ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-depth"/>
     <keyword type="function" name="gdk_drawable_get_size ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-size" deprecated=""/>
-    <keyword type="function" name="gdk_drawable_get_clip_region ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-clip-region" deprecated=""/>
+    <keyword type="function" name="gdk_drawable_get_clip_region ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-clip-region"/>
     <keyword type="function" name="gdk_drawable_get_visible_region ()" link="gdk2-Drawing-Primitives.html#gdk-drawable-get-visible-region"/>
     <keyword type="function" name="gdk_draw_point ()" link="gdk2-Drawing-Primitives.html#gdk-draw-point" deprecated=""/>
     <keyword type="function" name="gdk_draw_points ()" link="gdk2-Drawing-Primitives.html#gdk-draw-points" deprecated=""/>
@@ -344,7 +344,7 @@
     <keyword type="function" name="gdk_pixbuf_render_to_drawable ()" link="gdk2-Pixbufs.html#gdk-pixbuf-render-to-drawable" deprecated="2.4: This function is obsolete. Use gdk_draw_pixbuf() instead."/>
     <keyword type="function" name="gdk_pixbuf_render_to_drawable_alpha ()" link="gdk2-Pixbufs.html#gdk-pixbuf-render-to-drawable-alpha" deprecated="2.4: This function is obsolete. Use gdk_draw_pixbuf() instead."/>
     <keyword type="function" name="gdk_pixbuf_render_pixmap_and_mask ()" link="gdk2-Pixbufs.html#gdk-pixbuf-render-pixmap-and-mask"/>
-    <keyword type="function" name="gdk_pixbuf_render_pixmap_and_mask_for_colormap ()" link="gdk2-Pixbufs.html#gdk-pixbuf-render-pixmap-and-mask-for-colormap" deprecated=""/>
+    <keyword type="function" name="gdk_pixbuf_render_pixmap_and_mask_for_colormap ()" link="gdk2-Pixbufs.html#gdk-pixbuf-render-pixmap-and-mask-for-colormap"/>
     <keyword type="function" name="gdk_pixbuf_get_from_drawable ()" link="gdk2-Pixbufs.html#gdk-pixbuf-get-from-drawable"/>
     <keyword type="function" name="gdk_pixbuf_get_from_image ()" link="gdk2-Pixbufs.html#gdk-pixbuf-get-from-image"/>
     <keyword type="function" name="gdk_colormap_new ()" link="gdk2-Colormaps-and-Colors.html#gdk-colormap-new"/>
@@ -694,7 +694,7 @@
     <keyword type="signal" name="The “direction-changed” signal" link="gdk2-Keyboard-Handling.html#GdkKeymap-direction-changed"/>
     <keyword type="signal" name="The “keys-changed” signal" link="gdk2-Keyboard-Handling.html#GdkKeymap-keys-changed"/>
     <keyword type="signal" name="The “state-changed” signal" link="gdk2-Keyboard-Handling.html#GdkKeymap-state-changed"/>
-    <keyword type="function" name="gdk_selection_owner_set ()" link="gdk2-Selections.html#gdk-selection-owner-set" deprecated=""/>
+    <keyword type="function" name="gdk_selection_owner_set ()" link="gdk2-Selections.html#gdk-selection-owner-set"/>
     <keyword type="function" name="gdk_selection_owner_set_for_display ()" link="gdk2-Selections.html#gdk-selection-owner-set-for-display" since="2.2"/>
     <keyword type="function" name="gdk_selection_owner_get ()" link="gdk2-Selections.html#gdk-selection-owner-get"/>
     <keyword type="function" name="gdk_selection_owner_get_for_display ()" link="gdk2-Selections.html#gdk-selection-owner-get-for-display" since="2.2"/>
@@ -735,7 +735,7 @@
     <keyword type="function" name="gdk_drag_context_list_targets ()" link="gdk2-Drag-and-Drop.html#gdk-drag-context-list-targets" since="2.22"/>
     <keyword type="function" name="gdk_drag_context_get_source_window ()" link="gdk2-Drag-and-Drop.html#gdk-drag-context-get-source-window" since="2.22"/>
     <keyword type="function" name="gdk_drag_begin ()" link="gdk2-Drag-and-Drop.html#gdk-drag-begin"/>
-    <keyword type="function" name="gdk_drag_motion ()" link="gdk2-Drag-and-Drop.html#gdk-drag-motion" deprecated=""/>
+    <keyword type="function" name="gdk_drag_motion ()" link="gdk2-Drag-and-Drop.html#gdk-drag-motion"/>
     <keyword type="function" name="gdk_drop_finish ()" link="gdk2-Drag-and-Drop.html#gdk-drop-finish"/>
     <keyword type="function" name="gdk_drag_get_protocol ()" link="gdk2-Drag-and-Drop.html#gdk-drag-get-protocol" deprecated="2.24: Use gdk_drag_get_protocol_for_display() instead"/>
     <keyword type="function" name="gdk_drag_get_protocol_for_display ()" link="gdk2-Drag-and-Drop.html#gdk-drag-get-protocol-for-display" since="2.2"/>
@@ -927,7 +927,7 @@
     <keyword type="function" name="gdk_x11_get_xatom_by_name_for_display ()" link="gdk2-X-Window-System-Interaction.html#gdk-x11-get-xatom-by-name-for-display" since="2.2"/>
     <keyword type="function" name="gdk_x11_get_xatom_name ()" link="gdk2-X-Window-System-Interaction.html#gdk-x11-get-xatom-name"/>
     <keyword type="function" name="gdk_x11_get_xatom_name_for_display ()" link="gdk2-X-Window-System-Interaction.html#gdk-x11-get-xatom-name-for-display" since="2.2"/>
-    <keyword type="function" name="gdk_x11_set_sm_client_id ()" link="gdk2-X-Window-System-Interaction.html#gdk-x11-set-sm-client-id" deprecated="" since="2.24"/>
+    <keyword type="function" name="gdk_x11_set_sm_client_id ()" link="gdk2-X-Window-System-Interaction.html#gdk-x11-set-sm-client-id" since="2.24"/>
     <keyword type="function" name="gdk_x11_window_foreign_new_for_display ()" link="gdk2-X-Window-System-Interaction.html#gdk-x11-window-foreign-new-for-display" since="2.24"/>
     <keyword type="function" name="gdk_x11_window_lookup_for_display ()" link="gdk2-X-Window-System-Interaction.html#gdk-x11-window-lookup-for-display" since="2.24"/>
     <keyword type="macro" name="GDK_WINDOW_XWINDOW" link="gdk2-X-Window-System-Interaction.html#GDK-WINDOW-XWINDOW:CAPS"/>

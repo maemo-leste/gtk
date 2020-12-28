@@ -281,6 +281,7 @@ copy ..\..\..\modules\other\gail\libgail-util\gailmisc.h $(CopyDir)\include\gail
 copy ..\..\..\modules\other\gail\libgail-util\gailtextutil.h $(CopyDir)\include\gail-1.0\libgail-util\gailtextutil.h&#x0D;&#x0A;
 copy ..\..\..\modules\other\gail\libgail-util\gail-util.h $(CopyDir)\include\gail-1.0\libgail-util\gail-util.h&#x0D;&#x0A;
 copy $(ConfigurationName)\$(PlatformName)\bin\libwimp.dll $(Outdir)\lib\gtk-$(ApiVersion)\$(GtkHost)\engines&#x0D;&#x0A;
+copy $(ConfigurationName)\$(PlatformName)\bin\libwimp.pdb $(Outdir)\lib\gtk-$(ApiVersion)\$(GtkHost)\engines&#x0D;&#x0A;
 mkdir $(CopyDir)\share\gtk-$(ApiVersion)\demo&#x0D;&#x0A;
 copy ..\..\..\demos\gtk-demo\*.png $(CopyDir)\share\gtk-$(ApiVersion)\demo&#x0D;&#x0A;
 copy ..\..\..\demos\gtk-demo\*.gif $(CopyDir)\share\gtk-$(ApiVersion)\demo&#x0D;&#x0A;

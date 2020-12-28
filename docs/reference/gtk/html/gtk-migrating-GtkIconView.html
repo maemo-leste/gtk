@@ -8,7 +8,7 @@
 <link rel="up" href="migrating.html" title="Part IV. Migrating from Previous Versions of GTK+">
 <link rel="prev" href="new-features-GtkComboBox.html" title="New features">
 <link rel="next" href="gtk-migrating-GtkAboutDialog.html" title="Migrating from GnomeAbout to GtkAboutDialog">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -56,14 +56,14 @@
 6
 7
 8</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">void</span> 
-<span class="function">fill_icon_list</span> <span class="gtkdoc opt">(</span>GnomeIconList <span class="gtkdoc opt">*</span>icon_list<span class="gtkdoc opt">)</span>
-<span class="gtkdoc opt">{</span>
-  <span class="function">gnome_icon_list_append</span> <span class="gtkdoc opt">(</span>icon_list<span class="gtkdoc opt">,</span> <span class="string">&quot;file1.png&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;Icon 1&quot;</span><span class="gtkdoc opt">);</span>
-  <span class="function">gnome_icon_list_append</span> <span class="gtkdoc opt">(</span>icon_list<span class="gtkdoc opt">,</span> <span class="string">&quot;file2.png&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;Icon 2&quot;</span><span class="gtkdoc opt">);</span>
+        <td class="listing_code"><pre class="programlisting"><span class="kt">void</span> 
+<span class="nf">fill_icon_list</span> <span class="p">(</span><span class="n">GnomeIconList</span> <span class="o">*</span><span class="n">icon_list</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">gnome_icon_list_append</span> <span class="p">(</span><span class="n">icon_list</span><span class="p">,</span> <span class="s">&quot;file1.png&quot;</span><span class="p">,</span> <span class="s">&quot;Icon 1&quot;</span><span class="p">);</span>
+  <span class="n">gnome_icon_list_append</span> <span class="p">(</span><span class="n">icon_list</span><span class="p">,</span> <span class="s">&quot;file2.png&quot;</span><span class="p">,</span> <span class="s">&quot;Icon 2&quot;</span><span class="p">);</span>
 
-  <span class="comment">/* more icons ... */</span> 
-<span class="gtkdoc opt">}</span></pre></td>
+  <span class="cm">/* more icons ... */</span> 
+<span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -127,56 +127,56 @@
 48
 49
 50</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">enum</span> <span class="gtkdoc opt">{</span> 
-  PIXBUF_COLUMN<span class="gtkdoc opt">,</span>
-  TEXT_COLUMN<span class="gtkdoc opt">,</span>
+        <td class="listing_code"><pre class="programlisting"><span class="k">enum</span> <span class="p">{</span> 
+  <span class="n">PIXBUF_COLUMN</span><span class="p">,</span>
+  <span class="n">TEXT_COLUMN</span><span class="p">,</span>
 
-  <span class="comment">/* you can have more columns here, e.g */</span> 
+  <span class="cm">/* you can have more columns here, e.g */</span> 
 
-  DATA_COLUMN
-<span class="gtkdoc opt">};</span>
+  <span class="n">DATA_COLUMN</span>
+<span class="p">};</span>
  
-<span class="gtkdoc kwb">void</span> 
-<span class="function">fill_model</span> <span class="gtkdoc opt">(</span>GtkListStore <span class="gtkdoc opt">*</span>store<span class="gtkdoc opt">)</span>
-<span class="gtkdoc opt">{</span>
-  GtkTreeIter iter<span class="gtkdoc opt">;</span>
-  GdkPixbuf <span class="gtkdoc opt">*</span>pixbuf<span class="gtkdoc opt">;</span>
+<span class="kt">void</span> 
+<span class="nf">fill_model</span> <span class="p">(</span><span class="n">GtkListStore</span> <span class="o">*</span><span class="n">store</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">GtkTreeIter</span> <span class="n">iter</span><span class="p">;</span>
+  <span class="n">GdkPixbuf</span> <span class="o">*</span><span class="n">pixbuf</span><span class="p">;</span>
 
-  <span class="function"><a href="GtkListStore.html#gtk-list-store-append">gtk_list_store_append</a></span> <span class="gtkdoc opt">(</span>store<span class="gtkdoc opt">, &amp;</span>iter<span class="gtkdoc opt">);</span>
-  pixbuf <span class="gtkdoc opt">=</span> <span class="function"><a href="../gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file">gdk_pixbuf_new_from_file</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;file1.png&quot;</span><span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
-  <span class="function"><a href="GtkListStore.html#gtk-list-store-set">gtk_list_store_set</a></span> <span class="gtkdoc opt">(</span>store<span class="gtkdoc opt">, &amp;</span>iter<span class="gtkdoc opt">,</span> PIXBUF_COLUMN<span class="gtkdoc opt">,</span> pixbuf<span class="gtkdoc opt">,</span> TEXT_COLUMN<span class="gtkdoc opt">,</span> <span class="string">&quot;Icon 1&quot;</span><span class="gtkdoc opt">, -</span><span class="number">1</span><span class="gtkdoc opt">);</span>
-  <span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span> <span class="gtkdoc opt">(</span>pixbuf<span class="gtkdoc opt">);</span>
+  <span class="n">gtk_list_store_append</span> <span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">iter</span><span class="p">);</span>
+  <span class="n">pixbuf</span> <span class="o">=</span> <span class="n">gdk_pixbuf_new_from_file</span> <span class="p">(</span><span class="s">&quot;file1.png&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">gtk_list_store_set</span> <span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">iter</span><span class="p">,</span> <span class="n">PIXBUF_COLUMN</span><span class="p">,</span> <span class="n">pixbuf</span><span class="p">,</span> <span class="n">TEXT_COLUMN</span><span class="p">,</span> <span class="s">&quot;Icon 1&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">g_object_unref</span> <span class="p">(</span><span class="n">pixbuf</span><span class="p">);</span>
 
-  <span class="function"><a href="GtkListStore.html#gtk-list-store-append">gtk_list_store_append</a></span> <span class="gtkdoc opt">(</span>store<span class="gtkdoc opt">, &amp;</span>iter<span class="gtkdoc opt">);</span>
-  pixbuf <span class="gtkdoc opt">=</span> <span class="function"><a href="../gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file">gdk_pixbuf_new_from_file</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;file2.png&quot;</span><span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
-  <span class="function"><a href="GtkListStore.html#gtk-list-store-set">gtk_list_store_set</a></span> <span class="gtkdoc opt">(</span>store<span class="gtkdoc opt">, &amp;</span>iter<span class="gtkdoc opt">,</span> PIXBUF_COLUMN<span class="gtkdoc opt">,</span> pixbuf<span class="gtkdoc opt">,</span> TEXT_COLUMN<span class="gtkdoc opt">,</span> <span class="string">&quot;Icon 2&quot;</span><span class="gtkdoc opt">, -</span><span class="number">1</span><span class="gtkdoc opt">);</span>
-  <span class="function"><a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span> <span class="gtkdoc opt">(</span>pixbuf<span class="gtkdoc opt">);</span>
+  <span class="n">gtk_list_store_append</span> <span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">iter</span><span class="p">);</span>
+  <span class="n">pixbuf</span> <span class="o">=</span> <span class="n">gdk_pixbuf_new_from_file</span> <span class="p">(</span><span class="s">&quot;file2.png&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">gtk_list_store_set</span> <span class="p">(</span><span class="n">store</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">iter</span><span class="p">,</span> <span class="n">PIXBUF_COLUMN</span><span class="p">,</span> <span class="n">pixbuf</span><span class="p">,</span> <span class="n">TEXT_COLUMN</span><span class="p">,</span> <span class="s">&quot;Icon 2&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="n">g_object_unref</span> <span class="p">(</span><span class="n">pixbuf</span><span class="p">);</span>
 
-  <span class="comment">/* more icons ... */</span> 
-<span class="gtkdoc opt">}</span>
+  <span class="cm">/* more icons ... */</span> 
+<span class="p">}</span>
 
-<span class="gtkdoc kwb">int</span> 
-<span class="function">main</span> <span class="gtkdoc opt">(</span><span class="gtkdoc kwb">int</span> argc<span class="gtkdoc opt">,</span> <span class="gtkdoc kwb">char</span> <span class="gtkdoc opt">*</span>argv<span class="gtkdoc opt">[])</span>
-<span class="gtkdoc opt">{</span>
-  GtkWidget <span class="gtkdoc opt">*</span>icon_view<span class="gtkdoc opt">;</span>
-  GtkListStore <span class="gtkdoc opt">*</span>store<span class="gtkdoc opt">;</span>
+<span class="kt">int</span> 
+<span class="nf">main</span> <span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="n">GtkWidget</span> <span class="o">*</span><span class="n">icon_view</span><span class="p">;</span>
+  <span class="n">GtkListStore</span> <span class="o">*</span><span class="n">store</span><span class="p">;</span>
 
-  <span class="function"><a href="gtk2-General.html#gtk-init">gtk_init</a></span> <span class="gtkdoc opt">(&amp;</span>argc<span class="gtkdoc opt">, &amp;</span>argv<span class="gtkdoc opt">);</span>
+  <span class="n">gtk_init</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">argc</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">argv</span><span class="p">);</span>
 
-  <span class="comment">/* do other initialization... */</span>
+  <span class="cm">/* do other initialization... */</span>
 
-  <span class="comment">/* construct the GtkIconView */</span>
-  icon_view <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkIconView.html#gtk-icon-view-new">gtk_icon_view_new</a></span> <span class="gtkdoc opt">();</span>
-  store <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkListStore.html#gtk-list-store-new">gtk_list_store_new</a></span> <span class="gtkdoc opt">(</span><span class="number">3</span><span class="gtkdoc opt">,</span> GDK_TYPE_PIXBUF<span class="gtkdoc opt">,</span> G_TYPE_STRING<span class="gtkdoc opt">,</span> G_TYPE_POINTER<span class="gtkdoc opt">);</span>
+  <span class="cm">/* construct the GtkIconView */</span>
+  <span class="n">icon_view</span> <span class="o">=</span> <span class="n">gtk_icon_view_new</span> <span class="p">();</span>
+  <span class="n">store</span> <span class="o">=</span> <span class="n">gtk_list_store_new</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">GDK_TYPE_PIXBUF</span><span class="p">,</span> <span class="n">G_TYPE_STRING</span><span class="p">,</span> <span class="n">G_TYPE_POINTER</span><span class="p">);</span>
 
-  <span class="function"><a href="GtkIconView.html#gtk-icon-view-set-pixbuf-column">gtk_icon_view_set_pixbuf_column</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_ICON_VIEW</span> <span class="gtkdoc opt">(</span>icon_view<span class="gtkdoc opt">),</span> PIXBUF_COLUMN<span class="gtkdoc opt">);</span>
-  <span class="function"><a href="GtkIconView.html#gtk-icon-view-set-text-column">gtk_icon_view_set_text_column</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_ICON_VIEW</span> <span class="gtkdoc opt">(</span>icon_view<span class="gtkdoc opt">),</span> TEXT_COLUMN<span class="gtkdoc opt">);</span>
-  <span class="function"><a href="GtkIconView.html#gtk-icon-view-set-model">gtk_icon_view_set_model</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_ICON_VIEW</span> <span class="gtkdoc opt">(</span>icon_view<span class="gtkdoc opt">),</span> <span class="function">GTK_TREE_MODEL</span> <span class="gtkdoc opt">(</span>store<span class="gtkdoc opt">));</span>
+  <span class="n">gtk_icon_view_set_pixbuf_column</span> <span class="p">(</span><span class="n">GTK_ICON_VIEW</span> <span class="p">(</span><span class="n">icon_view</span><span class="p">),</span> <span class="n">PIXBUF_COLUMN</span><span class="p">);</span>
+  <span class="n">gtk_icon_view_set_text_column</span> <span class="p">(</span><span class="n">GTK_ICON_VIEW</span> <span class="p">(</span><span class="n">icon_view</span><span class="p">),</span> <span class="n">TEXT_COLUMN</span><span class="p">);</span>
+  <span class="n">gtk_icon_view_set_model</span> <span class="p">(</span><span class="n">GTK_ICON_VIEW</span> <span class="p">(</span><span class="n">icon_view</span><span class="p">),</span> <span class="n">GTK_TREE_MODEL</span> <span class="p">(</span><span class="n">store</span><span class="p">));</span>
 
-  <span class="function">fill_model</span> <span class="gtkdoc opt">(</span>store<span class="gtkdoc opt">);</span>
+  <span class="n">fill_model</span> <span class="p">(</span><span class="n">store</span><span class="p">);</span>
 
-  <span class="comment">/* ... */</span>
-<span class="gtkdoc opt">}</span></pre></td>
+  <span class="cm">/* ... */</span>
+<span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -212,20 +212,20 @@
 12
 13
 14</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc kwb">void</span> 
-<span class="function">set_icon_data</span> <span class="gtkdoc opt">(</span>GtkIconView <span class="gtkdoc opt">*</span>icon_view<span class="gtkdoc opt">,</span>
-               gint         idx<span class="gtkdoc opt">,</span>
-               gpointer     data<span class="gtkdoc opt">)</span>
-<span class="gtkdoc opt">{</span>
-   GtkTreeModel <span class="gtkdoc opt">*</span>model<span class="gtkdoc opt">;</span>
-   GtkTreeIter iter<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="kt">void</span> 
+<span class="nf">set_icon_data</span> <span class="p">(</span><span class="n">GtkIconView</span> <span class="o">*</span><span class="n">icon_view</span><span class="p">,</span>
+               <span class="n">gint</span>         <span class="n">idx</span><span class="p">,</span>
+               <span class="n">gpointer</span>     <span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="n">GtkTreeModel</span> <span class="o">*</span><span class="n">model</span><span class="p">;</span>
+   <span class="n">GtkTreeIter</span> <span class="n">iter</span><span class="p">;</span>
 
-   model <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkIconView.html#gtk-icon-view-get-model">gtk_icon_view_get_model</a></span> <span class="gtkdoc opt">(</span>icon_view<span class="gtkdoc opt">);</span>
+   <span class="n">model</span> <span class="o">=</span> <span class="n">gtk_icon_view_get_model</span> <span class="p">(</span><span class="n">icon_view</span><span class="p">);</span>
 
-   <span class="keyword">if</span> <span class="gtkdoc opt">(</span><span class="function"><a href="GtkTreeModel.html#gtk-tree-model-iter-nth-child">gtk_tree_model_iter_nth_child</a></span> <span class="gtkdoc opt">(</span>model<span class="gtkdoc opt">, &amp;</span>iter<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">,</span> idx<span class="gtkdoc opt">))</span>
-     <span class="function"><a href="GtkListStore.html#gtk-list-store-set">gtk_list_store_set</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_LIST_STORE</span> <span class="gtkdoc opt">(</span>model<span class="gtkdoc opt">), &amp;</span>iter<span class="gtkdoc opt">,</span> 
-                         DATA_COLUMN<span class="gtkdoc opt">,</span> data<span class="gtkdoc opt">, -</span><span class="number">1</span><span class="gtkdoc opt">);</span>
-<span class="gtkdoc opt">}</span></pre></td>
+   <span class="k">if</span> <span class="p">(</span><span class="n">gtk_tree_model_iter_nth_child</span> <span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">iter</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">idx</span><span class="p">))</span>
+     <span class="n">gtk_list_store_set</span> <span class="p">(</span><span class="n">GTK_LIST_STORE</span> <span class="p">(</span><span class="n">model</span><span class="p">),</span> <span class="o">&amp;</span><span class="n">iter</span><span class="p">,</span> 
+                         <span class="n">DATA_COLUMN</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -233,7 +233,7 @@
 
 <p>
     assuming that your tree model has a <code class="literal">DATA_COLUMN</code> of type 
-    <a href="../gobject/gobject-Type-Information.html#G-TYPE-POINTER:CAPS"><code class="literal">G_TYPE_POINTER</code></a>.
+    <code class="literal">G_TYPE_POINTER</code>.
   </p>
 <p>
     There is a number of minor API differences between 
@@ -258,6 +258,6 @@
   </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

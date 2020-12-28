@@ -8,7 +8,7 @@
 <link rel="up" href="gtk-migrating-GtkRecentChooser.html" title="Migrating from EggRecent to GtkRecentChooser">
 <link rel="prev" href="gtkrecent-chooser.html" title="Displaying the Recently Used Documents">
 <link rel="next" href="gtk-migrating-GtkLinkButton.html" title="Migrating from GnomeHRef to GtkLinkButton">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -47,14 +47,14 @@
 6
 7
 8</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="comment">/* no sorting */</span>
-	<span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span> GTK_RECENT_SORT_NONE<span class="gtkdoc opt">);</span>
+        <td class="listing_code"><pre class="programlisting"><span class="cm">/* no sorting */</span>
+	<span class="n">gtk_recent_chooser_set_sort_type</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span> <span class="p">(</span><span class="n">chooser</span><span class="p">),</span> <span class="n">GTK_RECENT_SORT_NONE</span><span class="p">);</span>
 	
-<span class="comment">/* most recently used first */</span>
-	<span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span> GTK_RECENT_SORT_MRU<span class="gtkdoc opt">);</span>
+<span class="cm">/* most recently used first */</span>
+	<span class="n">gtk_recent_chooser_set_sort_type</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span> <span class="p">(</span><span class="n">chooser</span><span class="p">),</span> <span class="n">GTK_RECENT_SORT_MRU</span><span class="p">);</span>
 	
-	<span class="comment">/* most recently used last */</span>
-	<span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span> GTK_RECENT_SORT_LRU<span class="gtkdoc opt">);</span></pre></td>
+	<span class="cm">/* most recently used last */</span>
+	<span class="n">gtk_recent_chooser_set_sort_type</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span> <span class="p">(</span><span class="n">chooser</span><span class="p">),</span> <span class="n">GTK_RECENT_SORT_LRU</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -98,36 +98,36 @@
 28
 29
 30</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="comment">/* custom sorting function, based on the registration count</span>
-<span class="comment"> * (most used first)</span>
-<span class="comment"> */</span>
-<span class="gtkdoc kwb">static void</span>
-<span class="function">sort_by_usage_count</span> <span class="gtkdoc opt">(</span>GtkRecentInfo <span class="gtkdoc opt">*</span>a<span class="gtkdoc opt">,</span>
-                             GtkRecentInfo <span class="gtkdoc opt">*</span>b<span class="gtkdoc opt">,</span>
-                             gpointer       data<span class="gtkdoc opt">)</span>
-        <span class="gtkdoc opt">{</span>
-  gint count_a<span class="gtkdoc opt">,</span> count_b<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="cm">/* custom sorting function, based on the registration count</span>
+<span class="cm"> * (most used first)</span>
+<span class="cm"> */</span>
+<span class="k">static</span> <span class="kt">void</span>
+<span class="nf">sort_by_usage_count</span> <span class="p">(</span><span class="n">GtkRecentInfo</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span>
+                             <span class="n">GtkRecentInfo</span> <span class="o">*</span><span class="n">b</span><span class="p">,</span>
+                             <span class="n">gpointer</span>       <span class="n">data</span><span class="p">)</span>
+        <span class="p">{</span>
+  <span class="n">gint</span> <span class="n">count_a</span><span class="p">,</span> <span class="n">count_b</span><span class="p">;</span>
 
-  count_a <span class="gtkdoc opt">=</span> count_b <span class="gtkdoc opt">=</span> <span class="number">0</span><span class="gtkdoc opt">;</span>
+  <span class="n">count_a</span> <span class="o">=</span> <span class="n">count_b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-  <span class="keyword">if</span> <span class="gtkdoc opt">(</span><span class="function"><a href="GtkRecentManager.html#gtk-recent-info-has-application">gtk_recent_info_has_application</a></span> <span class="gtkdoc opt">(</span>a<span class="gtkdoc opt">,</span> APP_NAME<span class="gtkdoc opt">))</span>
-    <span class="function"><a href="GtkRecentManager.html#gtk-recent-info-get-application-info">gtk_recent_info_get_application_info</a></span> <span class="gtkdoc opt">(</span>a<span class="gtkdoc opt">,</span> APP_NAME<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">, &amp;</span>count_a<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">gtk_recent_info_has_application</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">APP_NAME</span><span class="p">))</span>
+    <span class="n">gtk_recent_info_get_application_info</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">APP_NAME</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">count_a</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
-  <span class="keyword">if</span> <span class="gtkdoc opt">(</span><span class="function"><a href="GtkRecentManager.html#gtk-recent-info-has-application">gtk_recent_info_has_application</a></span> <span class="gtkdoc opt">(</span>b<span class="gtkdoc opt">,</span> APP_NAME<span class="gtkdoc opt">))</span>
-    <span class="function"><a href="GtkRecentManager.html#gtk-recent-info-get-application-info">gtk_recent_info_get_application_info</a></span> <span class="gtkdoc opt">(</span>b<span class="gtkdoc opt">,</span> APP_NAME<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">, &amp;</span>count_b<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">gtk_recent_info_has_application</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">APP_NAME</span><span class="p">))</span>
+    <span class="n">gtk_recent_info_get_application_info</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">APP_NAME</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">count_b</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
-  <span class="keyword">return</span> count_a <span class="gtkdoc opt">&lt;</span> count_b<span class="gtkdoc opt">;</span>
-<span class="gtkdoc opt">}</span>
+  <span class="k">return</span> <span class="n">count_a</span> <span class="o">&lt;</span> <span class="n">count_b</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class="gtkdoc opt">...</span>
+<span class="p">...</span>
 
-  <span class="comment">/* set custom sorting and set the custom sorting function */</span>
-  <span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-type">gtk_recent_chooser_set_sort_type</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span>
-                                    GTK_RECENT_SORT_CUSTOM<span class="gtkdoc opt">);</span>
-  <span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-sort-func">gtk_recent_chooser_set_sort_func</a></span> <span class="gtkdoc opt">(</span>GTK_RECENT_CHOOSER<span class="gtkdoc opt">,</span>
-                                    sort_by_usage_count<span class="gtkdoc opt">,</span>
-		  		    NULL<span class="gtkdoc opt">,</span> <span class="comment">/* sort function data */</span>
-				    NULL  <span class="comment">/* destroy notify for the data */</span><span class="gtkdoc opt">);</span></pre></td>
+  <span class="cm">/* set custom sorting and set the custom sorting function */</span>
+  <span class="n">gtk_recent_chooser_set_sort_type</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span> <span class="p">(</span><span class="n">chooser</span><span class="p">),</span>
+                                    <span class="n">GTK_RECENT_SORT_CUSTOM</span><span class="p">);</span>
+  <span class="n">gtk_recent_chooser_set_sort_func</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span><span class="p">,</span>
+                                    <span class="n">sort_by_usage_count</span><span class="p">,</span>
+		  		    <span class="nb">NULL</span><span class="p">,</span> <span class="cm">/* sort function data */</span>
+				    <span class="nb">NULL</span>  <span class="cm">/* destroy notify for the data */</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -167,27 +167,27 @@
 19
 20
 21</pre></td>
-        <td class="listing_code"><pre class="programlisting">GtkRecentFilter <span class="gtkdoc opt">*</span>filter<span class="gtkdoc opt">;</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkRecentFilter</span> <span class="o">*</span><span class="n">filter</span><span class="p">;</span>
 
-	filter <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentFilter.html#gtk-recent-filter-new">gtk_recent_filter_new</a></span> <span class="gtkdoc opt">();</span>
+	<span class="n">filter</span> <span class="o">=</span> <span class="n">gtk_recent_filter_new</span> <span class="p">();</span>
 	
-	<span class="comment">/* set the user visible name of the filter */</span>
-	<span class="function"><a href="GtkRecentFilter.html#gtk-recent-filter-set-name">gtk_recent_filter_set_name</a></span> <span class="gtkdoc opt">(</span>filter<span class="gtkdoc opt">,</span> <span class="string">&quot;Since Last Month&quot;</span><span class="gtkdoc opt">);</span>
+	<span class="cm">/* set the user visible name of the filter */</span>
+	<span class="n">gtk_recent_filter_set_name</span> <span class="p">(</span><span class="n">filter</span><span class="p">,</span> <span class="s">&quot;Since Last Month&quot;</span><span class="p">);</span>
 
-	<span class="comment">/* set the maximum age of a recently used document */</span>
-	<span class="function">gtk_recent_filter_set_age</span> <span class="gtkdoc opt">(</span>filter<span class="gtkdoc opt">,</span> <span class="number">31</span><span class="gtkdoc opt">);</span>
+	<span class="cm">/* set the maximum age of a recently used document */</span>
+	<span class="n">gtk_recent_filter_set_age</span> <span class="p">(</span><span class="n">filter</span><span class="p">,</span> <span class="mi">31</span><span class="p">);</span>
 
-	<span class="comment">/* the chooser takes the ownership of the object */</span>
-	<span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-add-filter">gtk_recent_chooser_add_filter</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span> filter<span class="gtkdoc opt">);</span>
+	<span class="cm">/* the chooser takes the ownership of the object */</span>
+	<span class="n">gtk_recent_chooser_add_filter</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span> <span class="p">(</span><span class="n">chooser</span><span class="p">),</span> <span class="n">filter</span><span class="p">);</span>
 
-	<span class="comment">/* set the currently used filter */</span>
-	<span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-set-filter">gtk_recent_chooser_set_filter</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span> filter<span class="gtkdoc opt">);</span>
+	<span class="cm">/* set the currently used filter */</span>
+	<span class="n">gtk_recent_chooser_set_filter</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span> <span class="p">(</span><span class="n">chooser</span><span class="p">),</span> <span class="n">filter</span><span class="p">);</span>
 
-	filter <span class="gtkdoc opt">=</span> <span class="function"><a href="GtkRecentFilter.html#gtk-recent-filter-new">gtk_recent_filter_new</a></span> <span class="gtkdoc opt">();</span>
-	<span class="function"><a href="GtkRecentFilter.html#gtk-recent-filter-set-name">gtk_recent_filter_set_name</a></span> <span class="gtkdoc opt">(</span>filter<span class="gtkdoc opt">,</span> <span class="string">&quot;Every text file&quot;</span><span class="gtkdoc opt">);</span>
-	<span class="function">gtk_recent_filter_set_mime_type</span> <span class="gtkdoc opt">(</span>filter<span class="gtkdoc opt">,</span> <span class="string">&quot;text/plain&quot;</span><span class="gtkdoc opt">);</span>
+	<span class="n">filter</span> <span class="o">=</span> <span class="n">gtk_recent_filter_new</span> <span class="p">();</span>
+	<span class="n">gtk_recent_filter_set_name</span> <span class="p">(</span><span class="n">filter</span><span class="p">,</span> <span class="s">&quot;Every text file&quot;</span><span class="p">);</span>
+	<span class="n">gtk_recent_filter_set_mime_type</span> <span class="p">(</span><span class="n">filter</span><span class="p">,</span> <span class="s">&quot;text/plain&quot;</span><span class="p">);</span>
 
-	<span class="function"><a href="GtkRecentChooser.html#gtk-recent-chooser-add-filter">gtk_recent_chooser_add_filter</a></span> <span class="gtkdoc opt">(</span><span class="function">GTK_RECENT_CHOOSER</span> <span class="gtkdoc opt">(</span>chooser<span class="gtkdoc opt">),</span> filter<span class="gtkdoc opt">);</span></pre></td>
+	<span class="n">gtk_recent_chooser_add_filter</span> <span class="p">(</span><span class="n">GTK_RECENT_CHOOSER</span> <span class="p">(</span><span class="n">chooser</span><span class="p">),</span> <span class="n">filter</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -200,6 +200,6 @@
     </p>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

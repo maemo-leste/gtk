@@ -983,7 +983,7 @@ gtk_rc_context_parse_one_file (GtkRcContext *context,
 			       gboolean      reload)
 {
   GtkRcFile *rc_file;
-  struct stat statbuf;
+  GStatBuf statbuf;
   gint saved_priority;
 
   g_return_if_fail (filename != NULL);
@@ -1764,7 +1764,7 @@ gtk_rc_reparse_all_for_settings (GtkSettings *settings,
   GtkRcFile *rc_file;
   GSList *tmp_list;
   GtkRcContext *context;
-  struct stat statbuf;
+  GStatBuf statbuf;
 
   g_return_val_if_fail (GTK_IS_SETTINGS (settings), FALSE);
 
@@ -2032,8 +2032,14 @@ gtk_rc_get_style (GtkWidget *widget)
     {
       if (!context->default_style)
 	{
-	  context->default_style = gtk_style_new ();
-	  _gtk_style_init_for_settings (context->default_style, context->settings);
+	  GtkStyle * style = gtk_style_new ();
+	  _gtk_style_init_for_settings (style, context->settings);
+
+	  /* Only after _gtk_style_init_for_settings() do we install the style
+	   * as the default, otherwise gtk_rc_reset_styles() can be called and
+	   * unref the style while initializing it, causing a segfault.
+	   */
+	  context->default_style = style;
 	}
 
       return context->default_style;

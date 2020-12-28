@@ -8,7 +8,7 @@
 <link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
 <link rel="prev" href="gtk2-Graphics-Contexts.html" title="Graphics Contexts">
 <link rel="next" href="gtk2-Selections.html" title="Selections">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -37,8 +37,8 @@
 <a name="GtkStyle.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -119,7 +119,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="returnvalue">gboolean</span>
 </td>
 <td class="function_name">
 <a class="link" href="GtkStyle.html#gtk-style-lookup-color" title="gtk_style_lookup_color ()">gtk_style_lookup_color</a> <span class="c_punctuation">()</span>
@@ -135,7 +135,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GtkStyle.html#gtk-style-render-icon" title="gtk_style_render_icon ()">gtk_style_render_icon</a> <span class="c_punctuation">()</span>
@@ -559,7 +559,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="returnvalue">gboolean</span>
 </td>
 <td class="function_name">
 <span class="c_punctuation">(</span><a class="link" href="GtkStyle.html#GtkRcPropertyParser" title="GtkRcPropertyParser ()">*GtkRcPropertyParser</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
@@ -572,20 +572,20 @@
 <a name="GtkStyle.signals"></a><h2>Signals</h2>
 <div class="informaltable"><table class="informaltable" border="0">
 <colgroup>
-<col width="150px" class="signals_return">
-<col width="300px" class="signals_name">
-<col width="200px" class="signals_flags">
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
 </colgroup>
 <tbody>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStyle.html#GtkStyle-realize" title="The “realize” signal">realize</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags">Run First</td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GtkStyle.html#GtkStyle-unrealize" title="The “unrealize” signal">unrealize</a></td>
-<td class="signal_flags"><a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+<td class="signal_flags">Run First</td>
 </tr>
 </tbody>
 </table></div>
@@ -594,8 +594,8 @@
 <a name="GtkStyle.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -615,9 +615,9 @@
 </div>
 <div class="refsect1">
 <a name="GtkStyle.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="/home/mclasen/gnome/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
     <span class="lineart">╰──</span> GtkBorder
-    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    GObject
     <span class="lineart">╰──</span> GtkStyle
 </pre>
 </div>
@@ -761,7 +761,7 @@ to any windows anymore, it is unrealized. See <a class="link" href="GtkStyle.htm
 gtk_style_ref (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_style_ref</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
-<p>use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> instead.</p>
+<p>use <code class="function">g_object_ref()</code> instead.</p>
 </div>
 <p>Increase the reference count of <em class="parameter"><code>style</code></em>
 .</p>
@@ -796,7 +796,7 @@ gtk_style_ref (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 gtk_style_unref (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_style_unref</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
-<p>use <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> instead.</p>
+<p>use <code class="function">g_object_unref()</code> instead.</p>
 </div>
 <p>Decrease the reference count of <em class="parameter"><code>style</code></em>
 .</p>
@@ -823,7 +823,6 @@ gtk_style_unref (<em class="parameter"><code><a class="link" href="GtkStyle.html
 gtk_style_set_background (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                           <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                           <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>);</pre>
-<div class="warning"><p><code class="literal">gtk_style_set_background</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Sets the background of <em class="parameter"><code>window</code></em>
  to the background color or pixmap
 specified by <em class="parameter"><code>style</code></em>
@@ -862,13 +861,13 @@ specified by <em class="parameter"><code>style</code></em>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_style_apply_default_background (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                                     <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> set_bg</code></em>,
+                                    <em class="parameter"><code><span class="type">gboolean</span> set_bg</code></em>,
                                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                                     <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                                    <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                                    <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                                    <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                                    <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="refsect3">
 <a name="gtk-style-apply-default-background.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -895,15 +894,15 @@ gtk_style_apply_default_background (<em class="parameter"><code><a class="link" 
 <hr>
 <div class="refsect2">
 <a name="gtk-style-lookup-color"></a><h3>gtk_style_lookup_color ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
 gtk_style_lookup_color (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
-                        <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *color_name</code></em>,
+                        <em class="parameter"><code>const <span class="type">gchar</span> *color_name</code></em>,
                         <em class="parameter"><code><a href="../html/gdk2-Colormaps-and-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
 <p>Looks up <em class="parameter"><code>color_name</code></em>
  in the style's logical color mappings,
 filling in <em class="parameter"><code>color</code></em>
- and returning <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if found, otherwise
-returning <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>. Do not cache the found mapping, because
+ and returning <code class="literal">TRUE</code> if found, otherwise
+returning <code class="literal">FALSE</code>. Do not cache the found mapping, because
 it depends on the <a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> and might change when a theme
 switch occurs.</p>
 <div class="refsect3">
@@ -935,7 +934,7 @@ switch occurs.</p>
 </div>
 <div class="refsect3">
 <a name="gtk-style-lookup-color.returns"></a><h4>Returns</h4>
-<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the mapping was found.</p>
+<p> <code class="literal">TRUE</code> if the mapping was found.</p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-10.html#api-index-2.10">2.10</a></p>
 </div>
@@ -944,12 +943,12 @@ switch occurs.</p>
 <a name="gtk-style-lookup-icon-set"></a><h3>gtk_style_lookup_icon_set ()</h3>
 <pre class="programlisting"><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSet"><span class="returnvalue">GtkIconSet</span></a> *
 gtk_style_lookup_icon_set (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
-                           <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>);</pre>
+                           <em class="parameter"><code>const <span class="type">gchar</span> *stock_id</code></em>);</pre>
 <p>Looks up <em class="parameter"><code>stock_id</code></em>
  in the icon factories associated with <em class="parameter"><code>style</code></em>
 
 and the default icon factory, returning an icon set if found,
-otherwise <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+otherwise <code class="literal">NULL</code>.</p>
 <div class="refsect3">
 <a name="gtk-style-lookup-icon-set.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -982,14 +981,14 @@ otherwise <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="lit
 <hr>
 <div class="refsect2">
 <a name="gtk-style-render-icon"></a><h3>gtk_style_render_icon ()</h3>
-<pre class="programlisting"><a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="returnvalue">GdkPixbuf</span></a> *
 gtk_style_render_icon (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                        <em class="parameter"><code>const <a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSource" title="GtkIconSource"><span class="type">GtkIconSource</span></a> *source</code></em>,
                        <em class="parameter"><code><a class="link" href="GtkWidget.html#GtkTextDirection" title="enum GtkTextDirection"><span class="type">GtkTextDirection</span></a> direction</code></em>,
                        <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state</code></em>,
                        <em class="parameter"><code><a class="link" href="gtk2-Themeable-Stock-Images.html#GtkIconSize" title="enum GtkIconSize"><span class="type">GtkIconSize</span></a> size</code></em>,
                        <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>);</pre>
+                       <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>);</pre>
 <p>Renders the icon specified by <em class="parameter"><code>source</code></em>
  at the given <em class="parameter"><code>size</code></em>
 
@@ -1046,7 +1045,7 @@ don't scale.</p></td>
 </div>
 <div class="refsect3">
 <a name="gtk-style-render-icon.returns"></a><h4>Returns</h4>
-<p>a newly-created <a href="../gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>
+<p>a newly-created <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a>
 containing the rendered icon. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -1112,7 +1111,7 @@ use style-&gt;font_desc instead.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>font</p></td>
-<td class="parameter_description"><p>a <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a>, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use the <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> corresponding
+<td class="parameter_description"><p>a <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a>, or <code class="literal">NULL</code> to use the <a href="../html/gdk2-Fonts.html#GdkFont"><span class="type">GdkFont</span></a> corresponding
 to style-&gt;font_desc. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -1125,9 +1124,9 @@ to style-&gt;font_desc. </p></td>
 <a name="gtk-style-get-style-property"></a><h3>gtk_style_get_style_property ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_style_get_style_property (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
-                              <em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> widget_type</code></em>,
-                              <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *property_name</code></em>,
-                              <em class="parameter"><code><a href="../gobject/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
+                              <em class="parameter"><code><span class="type">GType</span> widget_type</code></em>,
+                              <em class="parameter"><code>const <span class="type">gchar</span> *property_name</code></em>,
+                              <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);</pre>
 <p>Queries the value of a style property corresponding to a
 widget class is in the given style.</p>
 <div class="refsect3">
@@ -1146,7 +1145,7 @@ widget class is in the given style.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>widget_type</p></td>
-<td class="parameter_description"><p>the <a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of a descendant of <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_description"><p>the <span class="type">GType</span> of a descendant of <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1156,7 +1155,7 @@ widget class is in the given style.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>value</p></td>
-<td class="parameter_description"><p>a <a href="../gobject/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> where the value of the property being
+<td class="parameter_description"><p>a <span class="type">GValue</span> where the value of the property being
 queried will be stored</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
@@ -1170,8 +1169,8 @@ queried will be stored</p></td>
 <a name="gtk-style-get-valist"></a><h3>gtk_style_get_valist ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_style_get_valist (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
-                      <em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> widget_type</code></em>,
-                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_property_name</code></em>,
+                      <em class="parameter"><code><span class="type">GType</span> widget_type</code></em>,
+                      <em class="parameter"><code>const <span class="type">gchar</span> *first_property_name</code></em>,
                       <em class="parameter"><code><span class="type">va_list</span> var_args</code></em>);</pre>
 <p>Non-vararg variant of <a class="link" href="GtkStyle.html#gtk-style-get" title="gtk_style_get ()"><code class="function">gtk_style_get()</code></a>.
 Used primarily by language bindings.</p>
@@ -1191,7 +1190,7 @@ Used primarily by language bindings.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>widget_type</p></td>
-<td class="parameter_description"><p>the <a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of a descendant of <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_description"><p>the <span class="type">GType</span> of a descendant of <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1217,8 +1216,8 @@ location for <em class="parameter"><code>first_property_name</code></em>
 <a name="gtk-style-get"></a><h3>gtk_style_get ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_style_get (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
-               <em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> widget_type</code></em>,
-               <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_property_name</code></em>,
+               <em class="parameter"><code><span class="type">GType</span> widget_type</code></em>,
+               <em class="parameter"><code>const <span class="type">gchar</span> *first_property_name</code></em>,
                <em class="parameter"><code>...</code></em>);</pre>
 <p>Gets the values of a multiple style properties for <em class="parameter"><code>widget_type</code></em>
 
@@ -1240,7 +1239,7 @@ from <em class="parameter"><code>style</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>widget_type</p></td>
-<td class="parameter_description"><p>the <a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of a descendant of <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a></p></td>
+<td class="parameter_description"><p>the <span class="type">GType</span> of a descendant of <a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1253,7 +1252,7 @@ from <em class="parameter"><code>style</code></em>
 <td class="parameter_description"><p>pairs of property names and locations to
 return the property values, starting with the location for
 <em class="parameter"><code>first_property_name</code></em>
-, terminated by <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+, terminated by <code class="literal">NULL</code>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1268,9 +1267,9 @@ return the property values, starting with the location for
 gtk_draw_hline (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x1</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x2</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+                <em class="parameter"><code><span class="type">gint</span> x1</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> x2</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_hline</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-hline" title="gtk_paint_hline ()"><code class="function">gtk_paint_hline()</code></a> instead.</p>
@@ -1332,9 +1331,9 @@ using the given style and state.</p>
 gtk_draw_vline (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y1_</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y2_</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>);</pre>
+                <em class="parameter"><code><span class="type">gint</span> y1_</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> y2_</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> x</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_vline</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-vline" title="gtk_paint_vline ()"><code class="function">gtk_paint_vline()</code></a> instead.</p>
@@ -1397,10 +1396,10 @@ gtk_draw_shadow (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_shadow</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-shadow" title="gtk_paint_shadow ()"><code class="function">gtk_paint_shadow()</code></a> instead.</p>
@@ -1470,8 +1469,8 @@ gtk_draw_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                   <em class="parameter"><code><a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a> *points</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> npoints</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fill</code></em>);</pre>
+                  <em class="parameter"><code><span class="type">gint</span> npoints</code></em>,
+                  <em class="parameter"><code><span class="type">gboolean</span> fill</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_polygon</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-polygon" title="gtk_paint_polygon ()"><code class="function">gtk_paint_polygon()</code></a> instead.</p>
@@ -1520,7 +1519,7 @@ gtk_draw_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>fill</p></td>
-<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the polygon should be filled</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> if the polygon should be filled</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1536,11 +1535,11 @@ gtk_draw_arrow (<em class="parameter"><code><a class="link" href="GtkStyle.html"
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkArrowType" title="enum GtkArrowType"><span class="type">GtkArrowType</span></a> arrow_type</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fill</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                <em class="parameter"><code><span class="type">gboolean</span> fill</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_arrow</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-arrow" title="gtk_paint_arrow ()"><code class="function">gtk_paint_arrow()</code></a> instead.</p>
@@ -1585,7 +1584,7 @@ parameters. <em class="parameter"><code>arrow_type</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>fill</p></td>
-<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the arrow tip should be filled</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> if the arrow tip should be filled</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -1620,10 +1619,10 @@ gtk_draw_diamond (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_diamond</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-diamond" title="gtk_paint_diamond ()"><code class="function">gtk_paint_diamond()</code></a> instead.</p>
@@ -1691,9 +1690,9 @@ parameters.</p>
 gtk_draw_string (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code>const <span class="type">gchar</span> *string</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_string</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-layout" title="gtk_paint_layout ()"><code class="function">gtk_paint_layout()</code></a> instead.</p>
@@ -1751,10 +1750,10 @@ gtk_draw_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" t
               <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+              <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+              <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+              <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+              <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_box</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-box" title="gtk_paint_box ()"><code class="function">gtk_paint_box()</code></a> instead.</p>
@@ -1822,13 +1821,13 @@ gtk_draw_box_gap (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPositionType" title="enum GtkPositionType"><span class="type">GtkPositionType</span></a> gap_side</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_width</code></em>);</pre>
+                  <em class="parameter"><code><span class="type">gint</span> gap_x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> gap_width</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_box_gap</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-box-gap" title="gtk_paint_box_gap ()"><code class="function">gtk_paint_box_gap()</code></a> instead.</p>
@@ -1912,10 +1911,10 @@ gtk_draw_check (<em class="parameter"><code><a class="link" href="GtkStyle.html"
                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                 <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_check</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-check" title="gtk_paint_check ()"><code class="function">gtk_paint_check()</code></a> instead.</p>
@@ -1984,10 +1983,10 @@ gtk_draw_extension (<em class="parameter"><code><a class="link" href="GtkStyle.h
                     <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPositionType" title="enum GtkPositionType"><span class="type">GtkPositionType</span></a> gap_side</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_extension</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
@@ -2060,10 +2059,10 @@ gtk_draw_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.ht
                    <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                   <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_flat_box</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-flat-box" title="gtk_paint_flat_box ()"><code class="function">gtk_paint_flat_box()</code></a> instead.</p>
@@ -2129,10 +2128,10 @@ gtk_draw_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_draw_focus (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                 <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_focus</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-focus" title="gtk_paint_focus ()"><code class="function">gtk_paint_focus()</code></a> instead.</p>
@@ -2191,10 +2190,10 @@ gtk_draw_handle (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkOrientation" title="enum GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_handle</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
@@ -2267,10 +2266,10 @@ gtk_draw_option (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_option</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-option" title="gtk_paint_option ()"><code class="function">gtk_paint_option()</code></a> instead.</p>
@@ -2339,13 +2338,13 @@ gtk_draw_shadow_gap (<em class="parameter"><code><a class="link" href="GtkStyle.
                      <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPositionType" title="enum GtkPositionType"><span class="type">GtkPositionType</span></a> gap_side</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_x</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_width</code></em>);</pre>
+                     <em class="parameter"><code><span class="type">gint</span> gap_x</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> gap_width</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_shadow_gap</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-shadow-gap" title="gtk_paint_shadow_gap ()"><code class="function">gtk_paint_shadow_gap()</code></a> instead.</p>
@@ -2430,10 +2429,10 @@ gtk_draw_slider (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkOrientation" title="enum GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_draw_slider</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Draws a slider in the given rectangle on <em class="parameter"><code>window</code></em>
@@ -2505,10 +2504,10 @@ gtk_draw_tab (<em class="parameter"><code><a class="link" href="GtkStyle.html" t
               <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
               <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+              <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+              <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+              <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+              <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_tab</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-tab" title="gtk_paint_tab ()"><code class="function">gtk_paint_tab()</code></a> instead.</p>
@@ -2576,8 +2575,8 @@ in the given rectangle on <em class="parameter"><code>window</code></em>
 gtk_draw_expander (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                    <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkExpanderStyle" title="enum GtkExpanderStyle"><span class="type">GtkExpanderStyle</span></a> expander_style</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_expander</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
@@ -2634,10 +2633,10 @@ gtk_draw_expander (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 gtk_draw_layout (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                  <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_text</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
+                 <em class="parameter"><code><span class="type">gboolean</span> use_text</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
 <div class="warning"><p><code class="literal">gtk_draw_layout</code> is deprecated and should not be used in newly-written code.</p></div>
 <p>Draws a layout on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
@@ -2699,10 +2698,10 @@ gtk_draw_resize_grip (<em class="parameter"><code><a class="link" href="GtkStyle
                       <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                       <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                       <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindowEdge"><span class="type">GdkWindowEdge</span></a> edge</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_draw_resize_grip</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-resize-grip" title="gtk_paint_resize_grip ()"><code class="function">gtk_paint_resize_grip()</code></a> instead.</p>
@@ -2773,13 +2772,13 @@ gtk_paint_arrow (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
+                 <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkArrowType" title="enum GtkArrowType"><span class="type">GtkArrowType</span></a> arrow_type</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fill</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                 <em class="parameter"><code><span class="type">gboolean</span> fill</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws an arrow in the given rectangle on <em class="parameter"><code>window</code></em>
  using the given 
 parameters. <em class="parameter"><code>arrow_type</code></em>
@@ -2815,7 +2814,7 @@ parameters. <em class="parameter"><code>arrow_type</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -2836,7 +2835,7 @@ output should not be clipped. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>fill</p></td>
-<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the arrow tip should be filled</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> if the arrow tip should be filled</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -2873,11 +2872,11 @@ gtk_paint_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
                <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-               <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+               <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a box on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
@@ -2911,7 +2910,7 @@ gtk_paint_box (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -2959,14 +2958,14 @@ gtk_paint_box_gap (<em class="parameter"><code><a class="link" href="GtkStyle.ht
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                   <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                   <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPositionType" title="enum GtkPositionType"><span class="type">GtkPositionType</span></a> gap_side</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_x</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_width</code></em>);</pre>
+                   <em class="parameter"><code><span class="type">gint</span> gap_x</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> gap_width</code></em>);</pre>
 <p>Draws a box in <em class="parameter"><code>window</code></em>
  using the given style and state and shadow type, 
 leaving a gap in one side.</p>
@@ -3001,7 +3000,7 @@ leaving a gap in one side.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3064,11 +3063,11 @@ gtk_paint_check (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                 <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a check button indicator in the given rectangle on <em class="parameter"><code>window</code></em>
  with 
 the given parameters.</p>
@@ -3103,7 +3102,7 @@ the given parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3151,11 +3150,11 @@ gtk_paint_diamond (<em class="parameter"><code><a class="link" href="GtkStyle.ht
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                   <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                   <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a diamond in the given rectangle on <em class="parameter"><code>window</code></em>
  using the given
 parameters.</p>
@@ -3190,7 +3189,7 @@ parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3238,11 +3237,11 @@ gtk_paint_extension (<em class="parameter"><code><a class="link" href="GtkStyle.
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                      <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                      <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                     <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                     <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                     <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                      <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPositionType" title="enum GtkPositionType"><span class="type">GtkPositionType</span></a> gap_side</code></em>);</pre>
 <p>Draws an extension, i.e. a notebook tab.</p>
 <div class="refsect3">
@@ -3276,7 +3275,7 @@ gtk_paint_extension (<em class="parameter"><code><a class="link" href="GtkStyle.
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3329,11 +3328,11 @@ gtk_paint_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.h
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                     <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                     <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                    <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                    <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a flat box on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
@@ -3367,7 +3366,7 @@ gtk_paint_flat_box (<em class="parameter"><code><a class="link" href="GtkStyle.h
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3414,11 +3413,11 @@ gtk_paint_focus (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                 <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a focus indicator around the given rectangle on <em class="parameter"><code>window</code></em>
  using the
 given style.</p>
@@ -3448,7 +3447,7 @@ given style.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3496,11 +3495,11 @@ gtk_paint_handle (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                  <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkOrientation" title="enum GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>);</pre>
 <p>Draws a handle as used in <a class="link" href="GtkHandleBox.html" title="GtkHandleBox"><span class="type">GtkHandleBox</span></a> and <a class="link" href="GtkPaned.html" title="GtkPaned"><span class="type">GtkPaned</span></a>.</p>
 <div class="refsect3">
@@ -3534,7 +3533,7 @@ gtk_paint_handle (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3586,11 +3585,10 @@ gtk_paint_hline (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x1</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x2</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
-<div class="warning"><p><code class="literal">gtk_paint_hline</code> is deprecated and should not be used in newly-written code.</p></div>
+                 <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x1</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x2</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
 <p>Draws a horizontal line from (<em class="parameter"><code>x1</code></em>
 , <em class="parameter"><code>y</code></em>
 ) to (<em class="parameter"><code>x2</code></em>
@@ -3624,7 +3622,7 @@ using the given style and state.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>rectangle to which the output is clipped, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>rectangle to which the output is clipped, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3667,11 +3665,11 @@ gtk_paint_option (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                  <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a radio button indicator in the given rectangle on <em class="parameter"><code>window</code></em>
  with 
 the given parameters.</p>
@@ -3706,7 +3704,7 @@ the given parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3754,10 +3752,10 @@ gtk_paint_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.ht
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                   <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
+                   <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkPoint"><span class="type">GdkPoint</span></a> *points</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_points</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fill</code></em>);</pre>
+                   <em class="parameter"><code><span class="type">gint</span> n_points</code></em>,
+                   <em class="parameter"><code><span class="type">gboolean</span> fill</code></em>);</pre>
 <p>Draws a polygon on <em class="parameter"><code>window</code></em>
  with the given parameters.</p>
 <div class="refsect3">
@@ -3791,7 +3789,7 @@ gtk_paint_polygon (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3818,7 +3816,7 @@ output should not be clipped. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>fill</p></td>
-<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the polygon should be filled</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> if the polygon should be filled</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -3835,11 +3833,11 @@ gtk_paint_shadow (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                  <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a shadow around the given rectangle in <em class="parameter"><code>window</code></em>
  
 using the given style and state and shadow type.</p>
@@ -3874,7 +3872,7 @@ using the given style and state and shadow type.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -3922,14 +3920,14 @@ gtk_paint_shadow_gap (<em class="parameter"><code><a class="link" href="GtkStyle
                       <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                       <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                       <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                      <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                      <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                       <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPositionType" title="enum GtkPositionType"><span class="type">GtkPositionType</span></a> gap_side</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_x</code></em>,
-                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> gap_width</code></em>);</pre>
+                      <em class="parameter"><code><span class="type">gint</span> gap_x</code></em>,
+                      <em class="parameter"><code><span class="type">gint</span> gap_width</code></em>);</pre>
 <p>Draws a shadow around the given rectangle in <em class="parameter"><code>window</code></em>
  
 using the given style and state and shadow type, leaving a 
@@ -3965,7 +3963,7 @@ gap in one side.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4028,11 +4026,11 @@ gtk_paint_slider (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                  <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> height</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkOrientation" title="enum GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>);</pre>
 <p>Draws a slider in the given rectangle on <em class="parameter"><code>window</code></em>
  using the
@@ -4068,7 +4066,7 @@ given style and orientation.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4120,12 +4118,12 @@ gtk_paint_spinner (<em class="parameter"><code><a class="link" href="GtkStyle.ht
                    <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                    <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                    <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                   <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> step</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                   <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                   <em class="parameter"><code><span class="type">guint</span> step</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                   <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a spinner on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
 <div class="refsect3">
@@ -4154,18 +4152,18 @@ gtk_paint_spinner (<em class="parameter"><code><a class="link" href="GtkStyle.ht
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>widget</p></td>
-<td class="parameter_description"><p>the widget (may be <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>). </p></td>
+<td class="parameter_description"><p>the widget (may be <code class="literal">NULL</code>). </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>detail</p></td>
-<td class="parameter_description"><p>a style detail (may be <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>). </p></td>
+<td class="parameter_description"><p>a style detail (may be <code class="literal">NULL</code>). </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -4207,10 +4205,10 @@ gtk_paint_string (<em class="parameter"><code><a class="link" href="GtkStyle.htm
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+                  <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code>const <span class="type">gchar</span> *string</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_paint_string</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkStyle.html#gtk-paint-layout" title="gtk_paint_layout ()"><code class="function">gtk_paint_layout()</code></a> instead.</p>
@@ -4243,7 +4241,7 @@ gtk_paint_string (<em class="parameter"><code><a class="link" href="GtkStyle.htm
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4286,11 +4284,11 @@ gtk_paint_tab (<em class="parameter"><code><a class="link" href="GtkStyle.html" 
                <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkShadowType" title="enum GtkShadowType"><span class="type">GtkShadowType</span></a> shadow_type</code></em>,
                <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-               <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+               <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws an option menu tab (i.e. the up and down pointing arrows)
 in the given rectangle on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
@@ -4325,7 +4323,7 @@ in the given rectangle on <em class="parameter"><code>window</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4372,10 +4370,10 @@ gtk_paint_vline (<em class="parameter"><code><a class="link" href="GtkStyle.html
                  <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                  <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                  <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                 <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y1_</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y2_</code></em>,
-                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>);</pre>
+                 <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y1_</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> y2_</code></em>,
+                 <em class="parameter"><code><span class="type">gint</span> x</code></em>);</pre>
 <p>Draws a vertical line from (<em class="parameter"><code>x</code></em>
 , <em class="parameter"><code>y1_</code></em>
 ) to (<em class="parameter"><code>x</code></em>
@@ -4409,7 +4407,7 @@ using the given style and state.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>rectangle to which the output is clipped, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>rectangle to which the output is clipped, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4451,9 +4449,9 @@ gtk_paint_expander (<em class="parameter"><code><a class="link" href="GtkStyle.h
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                     <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                     <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                    <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                    <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                    <em class="parameter"><code><span class="type">gint</span> y</code></em>,
                     <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkExpanderStyle" title="enum GtkExpanderStyle"><span class="type">GtkExpanderStyle</span></a> expander_style</code></em>);</pre>
 <p>Draws an expander as used in <a class="link" href="GtkTreeView.html" title="GtkTreeView"><span class="type">GtkTreeView</span></a>. <em class="parameter"><code>x</code></em>
  and <em class="parameter"><code>y</code></em>
@@ -4493,7 +4491,7 @@ expanded position.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4535,13 +4533,13 @@ intermediate state.</p></td>
 gtk_paint_layout (<em class="parameter"><code><a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style</code></em>,
                   <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
                   <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_text</code></em>,
+                  <em class="parameter"><code><span class="type">gboolean</span> use_text</code></em>,
                   <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                   <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                  <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                  <em class="parameter"><code><a href="../pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
+                  <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                  <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/pango/pango-Layout-Objects.html#PangoLayout-struct"><span class="type">PangoLayout</span></a> *layout</code></em>);</pre>
 <p>Draws a layout on <em class="parameter"><code>window</code></em>
  using the given parameters.</p>
 <div class="refsect3">
@@ -4577,7 +4575,7 @@ graphics context of <em class="parameter"><code>style</code></em>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4619,12 +4617,12 @@ gtk_paint_resize_grip (<em class="parameter"><code><a class="link" href="GtkStyl
                        <em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkStateType" title="enum GtkStateType"><span class="type">GtkStateType</span></a> state_type</code></em>,
                        <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                        <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *detail</code></em>,
+                       <em class="parameter"><code>const <span class="type">gchar</span> *detail</code></em>,
                        <em class="parameter"><code><a href="../html/gdk2-Windows.html#GdkWindowEdge"><span class="type">GdkWindowEdge</span></a> edge</code></em>,
-                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
-                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
-                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+                       <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> y</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> width</code></em>,
+                       <em class="parameter"><code><span class="type">gint</span> height</code></em>);</pre>
 <p>Draws a resize grip in the given rectangle on <em class="parameter"><code>window</code></em>
  using the given
 parameters.</p>
@@ -4654,7 +4652,7 @@ parameters.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>clip rectangle, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>clip rectangle, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4705,10 +4703,9 @@ gtk_draw_insertion_cursor (<em class="parameter"><code><a class="link" href="Gtk
                            <em class="parameter"><code><a href="../html/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
                            <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *area</code></em>,
                            <em class="parameter"><code>const <a href="../html/gdk2-Points-Rectangles-and-Regions.html#GdkRectangle"><span class="type">GdkRectangle</span></a> *location</code></em>,
-                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> is_primary</code></em>,
+                           <em class="parameter"><code><span class="type">gboolean</span> is_primary</code></em>,
                            <em class="parameter"><code><a class="link" href="GtkWidget.html#GtkTextDirection" title="enum GtkTextDirection"><span class="type">GtkTextDirection</span></a> direction</code></em>,
-                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> draw_arrow</code></em>);</pre>
-<div class="warning"><p><code class="literal">gtk_draw_insertion_cursor</code> is deprecated and should not be used in newly-written code.</p></div>
+                           <em class="parameter"><code><span class="type">gboolean</span> draw_arrow</code></em>);</pre>
 <p>Draws a text caret on <em class="parameter"><code>drawable</code></em>
  at <em class="parameter"><code>location</code></em>
 . This is not a style function
@@ -4734,7 +4731,7 @@ but merely a convenience function for drawing the standard cursor shape.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>area</p></td>
-<td class="parameter_description"><p>rectangle to which the output is clipped, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the
+<td class="parameter_description"><p>rectangle to which the output is clipped, or <code class="literal">NULL</code> if the
 output should not be clipped. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
 </tr>
@@ -4757,8 +4754,8 @@ right-to-left. Should never be <a class="link" href="GtkWidget.html#GTK-TEXT-DIR
 </tr>
 <tr>
 <td class="parameter_name"><p>draw_arrow</p></td>
-<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to draw a directional arrow on the
-cursor. Should be <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> unless the cursor is split.</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> to draw a directional arrow on the
+cursor. Should be <code class="literal">FALSE</code> unless the cursor is split.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -4834,10 +4831,10 @@ gtk_border_free (<em class="parameter"><code><a class="link" href="GtkStyle.html
 <hr>
 <div class="refsect2">
 <a name="GtkRcPropertyParser"></a><h3>GtkRcPropertyParser ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-<span class="c_punctuation">(</span>*GtkRcPropertyParser<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="../gobject/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a> *pspec</code></em>,
-                        <em class="parameter"><code>const <a href="../glib/glib-Strings.html#GString"><span class="type">GString</span></a> *rc_string</code></em>,
-                        <em class="parameter"><code><a href="../gobject/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *property_value</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<span class="c_punctuation">(</span>*GtkRcPropertyParser<span class="c_punctuation">)</span> (<em class="parameter"><code>const <span class="type">GParamSpec</span> *pspec</code></em>,
+                        <em class="parameter"><code>const <span class="type">GString</span> *rc_string</code></em>,
+                        <em class="parameter"><code><span class="type">GValue</span> *property_value</code></em>);</pre>
 </div>
 </div>
 <div class="refsect1">
@@ -4908,7 +4905,7 @@ gtk_border_free (<em class="parameter"><code><a class="link" href="GtkStyle.html
 <a name="GtkStyle-realize"></a><h3>The <code class="literal">“realize”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+               <span class="type">gpointer</span>  user_data)</pre>
 <p>Emitted when the style has been initialized for a particular
 colormap and depth. Connecting to this signal is probably seldom
 useful since most of the time applications and widgets only
@@ -4935,7 +4932,7 @@ deal with styles that have been already realized.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p>Flags: Run First</p>
 <p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 <hr>
@@ -4943,7 +4940,7 @@ deal with styles that have been already realized.</p>
 <a name="GtkStyle-unrealize"></a><h3>The <code class="literal">“unrealize”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 user_function (<a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a> *style,
-               <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>  user_data)</pre>
+               <span class="type">gpointer</span>  user_data)</pre>
 <p>Emitted when the aspects of the style specific to a particular colormap
 and depth are being cleaned up. A connection to this signal can be useful
 if a widget wants to cache objects like a <a href="../html/gdk2-Graphics-Contexts.html#GdkGC-struct"><span class="type">GdkGC</span></a> as object data on <a class="link" href="GtkStyle.html" title="GtkStyle"><span class="type">GtkStyle</span></a>.
@@ -4970,12 +4967,12 @@ This signal provides a convenient place to free such cached objects.</p>
 </tbody>
 </table></div>
 </div>
-<p>Flags: <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p>Flags: Run First</p>
 <p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

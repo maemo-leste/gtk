@@ -282,6 +282,7 @@ copy ..\..\..\modules\other\gail\libgail-util\gailtextutil.h $(CopyDir)\include\
 copy ..\..\..\modules\other\gail\libgail-util\gail-util.h $(CopyDir)\include\gail-1.0\libgail-util\gail-util.h
 mkdir $(CopyDir)\lib\gtk-$(ApiVersion)\$(GtkHost)\engines
 copy "$(BinDir)\libwimp.dll" $(CopyDir)\lib\gtk-$(ApiVersion)\$(GtkHost)\engines
+copy "$(BinDir)\libwimp.pdb" $(CopyDir)\lib\gtk-$(ApiVersion)\$(GtkHost)\engines
 mkdir $(CopyDir)\share\gtk-$(ApiVersion)\demo
 copy ..\..\..\demos\gtk-demo\*.png $(CopyDir)\share\gtk-$(ApiVersion)\demo
 copy ..\..\..\demos\gtk-demo\*.gif $(CopyDir)\share\gtk-$(ApiVersion)\demo

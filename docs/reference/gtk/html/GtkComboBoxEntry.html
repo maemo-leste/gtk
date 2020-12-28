@@ -8,7 +8,7 @@
 <link rel="up" href="MenusAndCombos.html" title="Menus, Combo Box, Toolbar">
 <link rel="prev" href="GtkComboBoxText.html" title="GtkComboBoxText">
 <link rel="next" href="GtkMenu.html" title="GtkMenu">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,8 +38,8 @@
 <a name="GtkComboBoxEntry.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -76,7 +76,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="returnvalue">gint</span>
 </td>
 <td class="function_name">
 <a class="link" href="GtkComboBoxEntry.html#gtk-combo-box-entry-get-text-column" title="gtk_combo_box_entry_get_text_column ()">gtk_combo_box_entry_get_text_column</a> <span class="c_punctuation">()</span>
@@ -94,7 +94,7 @@
 <col width="200px" class="properties_flags">
 </colgroup>
 <tbody><tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="GtkComboBoxEntry.html#GtkComboBoxEntry--text-column" title="The “text-column” property">text-column</a></td>
 <td class="property_flags">Read / Write</td>
 </tr></tbody>
@@ -104,8 +104,8 @@
 <a name="GtkComboBoxEntry.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -115,8 +115,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkComboBoxEntry.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -163,7 +163,7 @@ text column using <a class="link" href="GtkComboBoxEntry.html#gtk-combo-box-entr
 <a name="gtk-combo-box-entry-new-with-model"></a><h3>gtk_combo_box_entry_new_with_model ()</h3>
 <pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
 gtk_combo_box_entry_new_with_model (<em class="parameter"><code><a class="link" href="GtkTreeModel.html" title="GtkTreeModel"><span class="type">GtkTreeModel</span></a> *model</code></em>,
-                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> text_column</code></em>);</pre>
+                                    <em class="parameter"><code><span class="type">gint</span> text_column</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_combo_box_entry_new_with_model</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkComboBox.html#gtk-combo-box-new-with-model-and-entry" title="gtk_combo_box_new_with_model_and_entry ()"><code class="function">gtk_combo_box_new_with_model_and_entry()</code></a> instead</p>
@@ -226,7 +226,7 @@ the following convenience functions: <a class="link" href="GtkComboBox.html#gtk-
 <a name="gtk-combo-box-entry-set-text-column"></a><h3>gtk_combo_box_entry_set_text_column ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_combo_box_entry_set_text_column (<em class="parameter"><code><a class="link" href="GtkComboBoxEntry.html" title="GtkComboBoxEntry"><span class="type">GtkComboBoxEntry</span></a> *entry_box</code></em>,
-                                     <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> text_column</code></em>);</pre>
+                                     <em class="parameter"><code><span class="type">gint</span> text_column</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_combo_box_entry_set_text_column</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkComboBox.html#gtk-combo-box-set-entry-text-column" title="gtk_combo_box_set_entry_text_column ()"><code class="function">gtk_combo_box_set_entry_text_column()</code></a> instead</p>
@@ -263,7 +263,7 @@ to get the strings from.</p></td>
 <hr>
 <div class="refsect2">
 <a name="gtk-combo-box-entry-get-text-column"></a><h3>gtk_combo_box_entry_get_text_column ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<pre class="programlisting"><span class="returnvalue">gint</span>
 gtk_combo_box_entry_get_text_column (<em class="parameter"><code><a class="link" href="GtkComboBoxEntry.html" title="GtkComboBoxEntry"><span class="type">GtkComboBoxEntry</span></a> *entry_box</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_combo_box_entry_get_text_column</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
@@ -306,8 +306,9 @@ gtk_combo_box_entry_get_text_column (<em class="parameter"><code><a class="link"
 <a name="GtkComboBoxEntry.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GtkComboBoxEntry--text-column"></a><h3>The <code class="literal">“text-column”</code> property</h3>
-<pre class="programlisting">  “text-column”              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “text-column”              <span class="type">int</span></pre>
 <p>A column in the data source model to get the strings from.</p>
+<p>Owner: GtkComboBoxEntry</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: &gt;= -1</p>
 <p>Default value: -1</p>
@@ -315,6 +316,6 @@ gtk_combo_box_entry_get_text_column (<em class="parameter"><code><a class="link"
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>

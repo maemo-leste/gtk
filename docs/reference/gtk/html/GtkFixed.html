@@ -8,7 +8,7 @@
 <link rel="up" href="LayoutContainers.html" title="Layout Containers">
 <link rel="prev" href="GtkVButtonBox.html" title="GtkVButtonBox">
 <link rel="next" href="GtkHPaned.html" title="GtkHPaned">
-<meta name="generator" content="GTK-Doc V1.26.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -38,8 +38,8 @@
 <a name="GtkFixed.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -68,7 +68,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="returnvalue">gboolean</span>
 </td>
 <td class="function_name">
 <a class="link" href="GtkFixed.html#gtk-fixed-get-has-window" title="gtk_fixed_get_has_window ()">gtk_fixed_get_has_window</a> <span class="c_punctuation">()</span>
@@ -95,12 +95,12 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="GtkFixed.html#GtkFixed--c-x" title="The “x” child property">x</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
-<td class="property_type"><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_type"><span class="type">int</span></td>
 <td class="property_name"><a class="link" href="GtkFixed.html#GtkFixed--c-y" title="The “y” child property">y</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -111,8 +111,8 @@
 <a name="GtkFixed.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="datatype_keyword">struct</td>
@@ -122,8 +122,8 @@
 </div>
 <div class="refsect1">
 <a name="GtkFixed.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="../gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
-    <span class="lineart">╰──</span> <a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> GInitiallyUnowned
         <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
             <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
                 <span class="lineart">╰──</span> <a class="link" href="GtkContainer.html" title="GtkContainer">GtkContainer</a>
@@ -157,8 +157,8 @@ gtk_fixed_new (<em class="parameter"><code><span class="type">void</span></code>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_fixed_put (<em class="parameter"><code><a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> *fixed</code></em>,
                <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+               <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+               <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -166,13 +166,13 @@ gtk_fixed_put (<em class="parameter"><code><a class="link" href="GtkFixed.html" 
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_fixed_move (<em class="parameter"><code><a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> *fixed</code></em>,
                 <em class="parameter"><code><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="type">GtkWidget</span></a> *widget</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
-                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+                <em class="parameter"><code><span class="type">gint</span> x</code></em>,
+                <em class="parameter"><code><span class="type">gint</span> y</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="gtk-fixed-get-has-window"></a><h3>gtk_fixed_get_has_window ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
 gtk_fixed_get_has_window (<em class="parameter"><code><a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> *fixed</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_fixed_get_has_window</code> has been deprecated since version 2.20 and should not be used in newly-written code.</p>
@@ -197,7 +197,7 @@ See <a class="link" href="GtkFixed.html#gtk-fixed-set-has-window" title="gtk_fix
 </div>
 <div class="refsect3">
 <a name="gtk-fixed-get-has-window.returns"></a><h4>Returns</h4>
-<p> <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>fixed</code></em>
+<p> <code class="literal">TRUE</code> if <em class="parameter"><code>fixed</code></em>
 has its own window.</p>
 </div>
 </div>
@@ -206,7 +206,7 @@ has its own window.</p>
 <a name="gtk-fixed-set-has-window"></a><h3>gtk_fixed_set_has_window ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_fixed_set_has_window (<em class="parameter"><code><a class="link" href="GtkFixed.html" title="GtkFixed"><span class="type">GtkFixed</span></a> *fixed</code></em>,
-                          <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> has_window</code></em>);</pre>
+                          <em class="parameter"><code><span class="type">gboolean</span> has_window</code></em>);</pre>
 <div class="warning">
 <p><code class="literal">gtk_fixed_set_has_window</code> has been deprecated since version 2.20 and should not be used in newly-written code.</p>
 <p>Use <a class="link" href="GtkWidget.html#gtk-widget-set-has-window" title="gtk_widget_set_has_window ()"><code class="function">gtk_widget_set_has_window()</code></a> instead.</p>
@@ -235,7 +235,7 @@ older applications which may expect <a class="link" href="GtkFixed.html" title="
 </tr>
 <tr>
 <td class="parameter_name"><p>has_window</p></td>
-<td class="parameter_description"><p><a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a separate window should be created</p></td>
+<td class="parameter_description"><p><code class="literal">TRUE</code> if a separate window should be created</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -254,22 +254,24 @@ older applications which may expect <a class="link" href="GtkFixed.html" title="
 <a name="GtkFixed.child-property-details"></a><h2>Child Property Details</h2>
 <div class="refsect2">
 <a name="GtkFixed--c-x"></a><h3>The <code class="literal">“x”</code> child property</h3>
-<pre class="programlisting">  “x”                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “x”                        <span class="type">int</span></pre>
 <p>X position of child widget.</p>
+<p>Owner: GtkFixed</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GtkFixed--c-y"></a><h3>The <code class="literal">“y”</code> child property</h3>
-<pre class="programlisting">  “y”                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<pre class="programlisting">  “y”                        <span class="type">int</span></pre>
 <p>Y position of child widget.</p>
+<p>Owner: GtkFixed</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.26.1</div>
+<hr>Generated by GTK-Doc V1.33.0</div>
 </body>
 </html>
