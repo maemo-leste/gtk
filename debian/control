@@ -63,9 +63,9 @@ Depends: libgtk2.0-common,
          shared-mime-info
 Provides: gtk2.0-binver-2.10.0
 Recommends: libgail-common,
+            librsvg2-common,
             libgtk2.0-bin
-Suggests: librsvg2-common,
-          gvfs
+Suggests: gvfs
 Multi-Arch: same
 Description: GTK graphical user interface library - old version
  GTK is a multi-platform toolkit for creating graphical user

@@ -63,9 +63,9 @@ Depends: @COMMON_PKG@,
          shared-mime-info
 Provides: @GTK_BINVER_DEP@
 Recommends: libgail-common,
+            librsvg2-common,
             @BIN_PKG@
-Suggests: librsvg2-common,
-          gvfs
+Suggests: gvfs
 Multi-Arch: same
 Description: GTK graphical user interface library - old version
  GTK is a multi-platform toolkit for creating graphical user
