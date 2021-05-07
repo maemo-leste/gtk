@@ -119,6 +119,7 @@ shared_configure_flags := $(configure_flags) \
 			--enable-introspection \
 			--enable-man
 shared_udeb_configure_flags := $(configure_flags) \
+			CPPFLAGS="$(CPPFLAGS) -DDEBIAN_INSTALLER" \
 			--disable-introspection \
 			--disable-xcomposite \
 			--disable-xdamage \
