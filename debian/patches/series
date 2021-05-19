@@ -7,3 +7,4 @@
 061_use_pdf_as_default_printing_standard.patch
 098_multiarch_module_path.patch
 Reinstate-marshallers-that-accidentally-became-part-of-th.patch
+d-i/textlayout-Clamp-width-to-the-value-we-asked-for-as-a-hac.patch

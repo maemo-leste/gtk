@@ -1,0 +1,39 @@
+From: Simon McVittie <smcv@debian.org>
+Date: Wed, 19 May 2021 11:36:58 +0100
+Subject: textlayout: Clamp width to the value we asked for, as a hack for d-i
+
+When we ask Pango to lay out text with a particular width in mind, if
+the width is really narrow then reducing it can result in Pango asking
+for *more* space. This can result in a relayout loop in the Debian
+installer. Avoid this by restricting the width to be no more than what
+we asked for, which might result in text being clipped or overlapping
+with an adjacent widget but is better than an infinite loop.
+
+Signed-off-by: Simon McVittie <smcv@debian.org>
+Bug-Debian: https://bugs.debian.org/988786
+---
+ gtk/gtktextlayout.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+diff --git a/gtk/gtktextlayout.c b/gtk/gtktextlayout.c
+index 31139d7..f8a44c0 100644
+--- a/gtk/gtktextlayout.c
++++ b/gtk/gtktextlayout.c
+@@ -2472,6 +2472,17 @@ gtk_text_layout_get_line_display (GtkTextLayout *layout,
+   display->width = PIXEL_BOUND (extents.width) + display->left_margin + display->right_margin;
+   display->height += PANGO_PIXELS (extents.height);
+ 
++#ifdef DEBIAN_INSTALLER
++  if (display->total_width > 0 && display->width > display->total_width)
++    {
++      g_warning ("%s: we asked Pango to wrap text for width %dpx but it "
++                 "now wants %dpx. Clamping result to %dpx!",
++                 G_STRFUNC, display->total_width, display->width,
++                 display->total_width);
++      display->width = display->total_width;
++    }
++#endif
++
+   /* If we aren't wrapping, we need to do the alignment of each
+    * paragraph ourselves.
+    */
