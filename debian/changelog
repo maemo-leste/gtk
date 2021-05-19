@@ -1,3 +1,25 @@
+gtk+2.0 (2.24.33-2) unstable; urgency=medium
+
+  * Team upload
+  * d/rules: Build udeb with extra CPPFLAGS.
+    This allows adding special-case code for debian-installer where
+    necessary.
+  * udeb: Clamp text layout width to no more than was requested.
+    This works around a relayout loop that makes the Debian installer hang.
+    To minimize the effect on installed systems, this is
+    #ifdef DEBIAN_INSTALLER; we currently have no evidence of similar
+    relayout loops outside the d-i environment. (Closes: #988786)
+  * Increase dependency on librsvg2-common from Suggests to Recommends.
+    This is not a hard dependency, but should be installed in nearly all
+    cases. Increasingly many icons are provided in SVG format, so
+    applications will appear broken if the SVG pixbuf loader is not
+    installed. See #980396 for more information.
+    adwaita-icon-theme already Recommends librsvg2-common, but people who
+    routinely do not install recommended packages will get a better hint
+    about how much will be broken by its removal if GTK also recommends it.
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 19 May 2021 17:13:33 +0100
+
 gtk+2.0 (2.24.33-1) unstable; urgency=medium
 
   * Team upload
