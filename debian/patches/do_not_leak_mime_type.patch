@@ -1,0 +1,13 @@
+Index: gtk/gtk/gtkicontheme.c
+===================================================================
+--- gtk.orig/gtk/gtkicontheme.c
++++ gtk/gtk/gtkicontheme.c
+@@ -2927,6 +2927,8 @@ icon_info_ensure_scale_and_pixbuf (GtkIc
+ 
+               if (mime_type && strcmp (mime_type, "image/svg+xml") == 0)
+                 is_svg = TRUE;
++
++              g_free (mime_type);
+             }
+ 
+           g_object_unref (file_info);
