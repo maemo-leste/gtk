@@ -55,7 +55,6 @@ OLD_MODULES_BASE_PATH := usr/lib/gtk-$(APIVER)/$(GTK_BINARY_VERSION)
 SHARED_PKG := libgtk$(APIVER)-$(SONAME)
 COMMON_PKG := libgtk$(APIVER)-common
 DEV_PKG := libgtk$(APIVER)-dev
-UDEB_PKG := $(SHARED_PKG)-udeb
 DOC_PKG := libgtk$(APIVER)-doc
 BIN_PKG := libgtk$(APIVER)-bin
 EXAMPLES_PKG := gtk$(APIVER)-examples
@@ -74,7 +73,7 @@ unexport XDG_DATA_DIRS
 
 # package groups, used in rule dependencies and in cleanup
 BINARY_INDEP_PKGS := $(COMMON_PKG) $(DOC_PKG) libgail-doc
-BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail18-udeb libgail-dbg libgail-dev libgail-common
+BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(DEV_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail-dbg libgail-dev libgail-common
 ALL_PKGS := $(BINARY_INDEP_PKGS) $(BINARY_ARCH_PKGS)
 
 # list of flavors we build; each gets a builddir, a configure pass (configure
@@ -82,9 +81,6 @@ ALL_PKGS := $(BINARY_INDEP_PKGS) $(BINARY_ARCH_PKGS)
 # Note: the shared flavor is required
 FLAVORS := shared
 
-ifneq ($(filter %-udeb,$(built_binaries)),)
-FLAVORS += shared_udeb
-endif
 
 # current flavor we're building; this is only expanded in flavor specific
 # targets
@@ -118,13 +114,7 @@ configure_flags := \
 shared_configure_flags := $(configure_flags) \
 			--enable-introspection \
 			--enable-man
-shared_udeb_configure_flags := $(configure_flags) \
-			CPPFLAGS="$(CPPFLAGS) -DDEBIAN_INSTALLER" \
-			--disable-introspection \
-			--disable-xcomposite \
-			--disable-xdamage \
-			--disable-xfixes \
-			--disable-xrandr
+
 
 DH_INSTALLDOCS_FILES := NEWS README AUTHORS
 
@@ -202,7 +192,6 @@ debian/%: debian/%.in
 		-e "s#@SHARED_PKG@#$(SHARED_PKG)#g" \
 		-e "s#@COMMON_PKG@#$(COMMON_PKG)#g" \
 		-e "s#@DEV_PKG@#$(DEV_PKG)#g" \
-		-e "s#@UDEB_PKG@#$(UDEB_PKG)#g" \
 		-e "s#@DOC_PKG@#$(DOC_PKG)#g" \
 		-e "s#@BIN_PKG@#$(BIN_PKG)#g" \
 		-e "s#@EXAMPLES_PKG@#$(EXAMPLES_PKG)#g" \
@@ -258,14 +247,9 @@ override_dh_installdocs-arch:
 	# of dh_installdocs (ship README.Debian etc. in the first package)
 	dh_installdocs -p$(PIXBUF_PKG) -a
 
-override_dh_dwz:
-	# Skip udebs to work around #933212
-	dh_dwz -N$(UDEB_PKG) -Nlibgail18-udeb
-
 override_dh_strip:
-	dh_strip --dbgsym-migration="libgtk2.0-0-dbg (<< 2.24.31-3~)" -N$(UDEB_PKG) -Nlibgail18 -Nlibgail18-udeb -Nlibgail-common
+	dh_strip --dbgsym-migration="libgtk2.0-0-dbg (<< 2.24.31-3~)" -Nlibgail18 -Nlibgail-common
 	dh_strip -plibgail18 -plibgail-common --dbgsym-migration="libgail-dbg (<< 2.24.31-3~)"
-	dh_strip -p$(UDEB_PKG) -plibgail18-udeb
 
 override_dh_compress:
 	dh_compress -X.sgml -X.devhelp
@@ -277,12 +261,10 @@ override_dh_makeshlibs:
 	dh_makeshlibs -p$(SHARED_PKG) \
 		-X$(MODULES_BASE_PATH) \
 		-V"$(SHARED_PKG) (>= $(SHVER))" \
-		--add-udeb=$(UDEB_PKG) \
 		-- -c4
 	dh_makeshlibs -plibgail18 \
 		-X$(MODULES_BASE_PATH) \
 		-V"libgail18 (>= $(SHVER))" \
-		--add-udeb=libgail18-udeb \
 		-- -c4
 
 override_dh_shlibdeps:
