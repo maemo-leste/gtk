@@ -43,3 +43,4 @@ hildonize-gtk-treeview.diff
 hildonize-gtk-iconview.diff
 hildonize-gtk-immulticontext.diff
 do_not_leak_mime_type.patch
+hildonize-gtk-range.diff
