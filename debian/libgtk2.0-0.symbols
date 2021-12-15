@@ -3057,6 +3057,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_range_get_fill_level@Base 2.12.0
  gtk_range_get_flippable@Base 2.18.0
  gtk_range_get_inverted@Base 2.8.0
+ gtk_range_get_jump_to_position@Base 2:2.24.32-3
  gtk_range_get_lower_stepper_sensitivity@Base 2.10.0
  gtk_range_get_min_slider_size@Base 2.20.0
  gtk_range_get_range_rect@Base 2.20.0
@@ -3074,6 +3075,7 @@ libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gtk_range_set_flippable@Base 2.18.0
  gtk_range_set_increments@Base 2.8.0
  gtk_range_set_inverted@Base 2.8.0
+ gtk_range_set_jump_to_position@Base 2:2.24.32-3
  gtk_range_set_lower_stepper_sensitivity@Base 2.10.0
  gtk_range_set_min_slider_size@Base 2.20.0
  gtk_range_set_range@Base 2.8.0
