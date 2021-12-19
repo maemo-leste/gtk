@@ -1,0 +1,13 @@
+Index: gtk/gtk/gtkscale.c
+===================================================================
+--- gtk.orig/gtk/gtkscale.c
++++ gtk/gtk/gtkscale.c
+@@ -440,8 +440,6 @@ gtk_scale_init (GtkScale *scale)
+ {
+   GtkRange *range = GTK_RANGE (scale);
+ 
+-  gtk_widget_set_can_focus (GTK_WIDGET (scale), TRUE);
+-
+   range->slider_size_fixed = TRUE;
+   range->has_stepper_a = FALSE;
+   range->has_stepper_b = FALSE;
