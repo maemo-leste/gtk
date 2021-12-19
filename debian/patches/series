@@ -45,3 +45,4 @@ hildonize-gtk-immulticontext.diff
 do_not_leak_mime_type.patch
 hildonize-gtk-range.diff
 hildonize-gtk-scale.diff
+hildonize-gtk-filechooser.diff
