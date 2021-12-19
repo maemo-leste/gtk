@@ -8,6 +8,8 @@ gtk+2.0 (2:2.24.33-2) unstable; urgency=medium
   * GtkTreeView: fix selection
   * add hildon_icon_view symbols
   * add hildonize-gtk-immulticontext.diff
+  * hildonize GtkButton, GtkFileChooser, GtkScale, GtkRange
+  * fix GtkRange motion event processing bug
 
   [Merlijn Wajer]
   * Add hildon patches
