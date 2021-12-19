@@ -1,0 +1,13 @@
+Index: gtk/gtk/gtkfilechooser.c
+===================================================================
+--- gtk.orig/gtk/gtkfilechooser.c
++++ gtk/gtk/gtkfilechooser.c
+@@ -931,7 +931,7 @@ gtk_file_chooser_class_init (gpointer g_
+ 							     P_("Whether a file chooser in save mode "
+ 								"will present an overwrite confirmation dialog "
+ 								"if necessary."),
+-							     FALSE,
++							     TRUE,
+ 							     GTK_PARAM_READWRITE));
+ 
+   /**
