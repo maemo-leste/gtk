@@ -1,0 +1,19 @@
+Index: gtk/configure.ac
+===================================================================
+--- gtk.orig/configure.ac
++++ gtk/configure.ac
+@@ -1396,12 +1396,12 @@ if test "x$gdktarget" = "xx11"; then
+   GTK_PACKAGES="$GTK_PACKAGES pangoft2"
+ fi
+ GTK_EXTRA_LIBS=
+-GTK_EXTRA_CFLAGS= 
++GTK_EXTRA_CFLAGS='-DGLIB_DISABLE_DEPRECATION_WARNINGS'
+ GTK_DEP_LIBS="$GDK_EXTRA_LIBS $GTK_DEP_LIBS_FOR_X `$PKG_CONFIG --libs $PANGO_PACKAGES $GTK_PACKAGES_FOR_X $GTK_PACKAGES` $GTK_EXTRA_LIBS $MATH_LIB"
+ GTK_DEP_CFLAGS="`$PKG_CONFIG --cflags  gthread-2.0 $GDK_PACKAGES $GTK_PACKAGES` $GDK_EXTRA_CFLAGS $GTK_EXTRA_CFLAGS"
+ 
+ if test x"$os_win32" = xyes; then
+-  GTK_EXTRA_CFLAGS="$msnative_struct"
++  GTK_EXTRA_CFLAGS="$GTK_EXTRA_CFLAGS $msnative_struct"
+ fi
+ 
+ GLIB_PREFIX="`$PKG_CONFIG --variable=prefix glib-2.0`"
