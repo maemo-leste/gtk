@@ -28,3 +28,4 @@ hildonize-gtk-scale.diff
 hildonize-gtk-filechooser.diff
 hildonize-gtk-button.diff
 hildonize-gtk-frame.diff
+glib-disable-deprecated-warnings.patch
