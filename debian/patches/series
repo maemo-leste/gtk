@@ -29,3 +29,5 @@ hildonize-gtk-filechooser.diff
 hildonize-gtk-button.diff
 hildonize-gtk-frame.diff
 glib-disable-deprecated-warnings.patch
+0001-2009-08-20-Alberto-Garcia-agarcia-igalia.com.patch
+neon-optimize-gdk-pixbuf.patch
