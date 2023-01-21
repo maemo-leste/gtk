@@ -10,6 +10,8 @@ gtk+2.0 (2:2.24.33-2) unstable; urgency=medium
   * add hildonize-gtk-immulticontext.diff
   * hildonize GtkButton, GtkFileChooser, GtkScale, GtkRange
   * fix GtkRange motion event processing bug
+  * Add -DGLIB_DISABLE_DEPRECATION_WARNINGS to silence compiler warnings
+  * gdk: Some optimizations from Fremantle
 
   [Merlijn Wajer]
   * Add hildon patches
