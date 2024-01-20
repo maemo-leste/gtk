@@ -1,9 +1,5 @@
 #!/usr/bin/make -f
 
-# Debian GNOME Maintainers
-DISABLE_UPDATE_UPLOADERS := 1
-include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
-
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/default.mk
 include /usr/share/dpkg/pkg-info.mk
@@ -43,9 +39,6 @@ SHVER := 2.24.0
 
 # earliest version that this release has backwards binary compatibility for
 GTK_BINARY_VERSION := 2.10.0
-
-# Gtk binary version virtual Provide
-GTK_BINVER_DEP := gtk$(APIVER)-binver-$(GTK_BINARY_VERSION)
 
 # relative base directory for all types of modules
 MODULES_BASE_PATH := $(LIBDIR)/gtk-$(APIVER)/$(GTK_BINARY_VERSION)
@@ -197,17 +190,12 @@ debian/%: debian/%.in
 	sed \
 		-e "s#@SONAME@#$(SONAME)#g" \
 		-e "s#@APIVER@#$(APIVER)#g" \
-		-e "s#@VERSION@#$(DEB_VERSION_UPSTREAM)#g" \
-		-e "s#@GTK_BINVER_DEP@#$(GTK_BINVER_DEP)#g" \
 		-e "s#@SHARED_PKG@#$(SHARED_PKG)#g" \
 		-e "s#@COMMON_PKG@#$(COMMON_PKG)#g" \
 		-e "s#@DEV_PKG@#$(DEV_PKG)#g" \
-		-e "s#@UDEB_PKG@#$(UDEB_PKG)#g" \
 		-e "s#@DOC_PKG@#$(DOC_PKG)#g" \
 		-e "s#@BIN_PKG@#$(BIN_PKG)#g" \
-		-e "s#@EXAMPLES_PKG@#$(EXAMPLES_PKG)#g" \
 		-e "s#@PIXBUF_PKG@#$(PIXBUF_PKG)#g" \
-		-e "s#@GNOME_TEAM@#$(UPLOADERS)#g" \
 		-e "s#@GTK_BINARY_VERSION@#$(GTK_BINARY_VERSION)#g" \
 		-e "s#@LIBDIR@#$(LIBDIR)#g" \
 		-e "s#@MODULES_BASE_PATH@#$(MODULES_BASE_PATH)#g" \
@@ -219,8 +207,6 @@ clean:: debian/control
 	dh clean
 
 override_dh_clean: debian/control
-	# gross kludge to force control generation with the %.in target
-	touch debian/control.in
 	# remove install and build dirs
 	rm -rf $(installbasedir)
 	rm -rf $(buildbasedir)
