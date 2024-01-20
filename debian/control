@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Jeremy Bicha <jbicha@debian.org>
 Build-Depends: debhelper-compat (= 12),
+               dh-sequence-gnome,
                dh-python,
                gettext,
                gtk-doc-tools (>= 1.11),
@@ -28,7 +29,6 @@ Build-Depends: debhelper-compat (= 12),
                libxinerama-dev (>= 2:1.1-3),
                libxfixes-dev (>= 1:3.0.0-3),
                libcairo2-dev (>= 1.6.4-6.1),
-               gnome-pkg-tools (>= 0.11),
                dpkg-dev (>= 1.16.1),
                x11proto-xext-dev,
                libcups2-dev (>= 1.2),
