@@ -176,20 +176,6 @@ Description: documentation for the GTK graphical user interface library
  This package contains the HTML documentation for the GTK library
  in /usr/share/doc/libgtk2.0-doc/ .
 
-Package: gtk2.0-examples
-Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         libgtk2.0-0 (= ${binary:Version})
-Description: example files for GTK 2
- GTK is a multi-platform toolkit for creating graphical user
- interfaces. Offering a complete set of widgets, GTK is suitable
- for projects ranging from small one-off tools to complete application
- suites.
- .
- This package contains the example files and a demonstration program
- for GTK 2.
-
 Package: gtk2-engines-pixbuf
 Architecture: any
 Multi-Arch: same

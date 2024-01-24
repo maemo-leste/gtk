@@ -51,7 +51,6 @@ DEV_PKG := libgtk$(APIVER)-dev
 UDEB_PKG := $(SHARED_PKG)-udeb
 DOC_PKG := libgtk$(APIVER)-doc
 BIN_PKG := libgtk$(APIVER)-bin
-EXAMPLES_PKG := gtk$(APIVER)-examples
 PIXBUF_PKG := gtk2-engines-pixbuf
 
 # Avoid test failures on buildd environments
@@ -67,7 +66,7 @@ unexport XDG_DATA_DIRS
 
 # package groups, used in rule dependencies and in cleanup
 BINARY_INDEP_PKGS := $(COMMON_PKG) $(DOC_PKG) libgail-doc
-BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(EXAMPLES_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail18-udeb libgail-dbg libgail-dev libgail-common
+BINARY_ARCH_PKGS := $(SHARED_PKG) $(BIN_PKG) $(UDEB_PKG) $(DEV_PKG) $(PIXBUF_PKG) gir1.2-gtk-2.0 libgail18 libgail18-udeb libgail-dbg libgail-dev libgail-common
 ALL_PKGS := $(BINARY_INDEP_PKGS) $(BINARY_ARCH_PKGS)
 
 # list of flavors we build; each gets a builddir, a configure pass (configure
