@@ -1,11 +1,13 @@
-gtk+2.0 (2.24.33-3) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.33-3) unstable; urgency=medium
 
-  * Drop multiarch module path patch: nothing in Debian needs it any more
   * Cherry-pick patch to fix GFileInfo critical warnings
+  * Drop multiarch module path patch: nothing in Debian needs it any more
   * Stop generating d/control from a template
   * Build-Depend on dh-sequence-gnome
+  * Set Section to oldlibs
+  * Stop building gtk2.0-examples
 
- -- Jeremy Bícha <jbicha@ubuntu.com>  Sat, 20 Jan 2024 18:24:16 -0500
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 24 Jan 2024 16:02:45 -0500
 
 gtk+2.0 (2.24.33-2) unstable; urgency=medium
 
