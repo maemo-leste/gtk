@@ -1,3 +1,10 @@
+gtk+2.0 (2.24.33-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Rename libraries for 64-bit time_t transition.  Closes: #1064080
+
+ -- Steve Langasek <vorlon@debian.org>  Thu, 29 Feb 2024 05:46:40 +0000
+
 gtk+2.0 (2.24.33-3) unstable; urgency=medium
 
   * Cherry-pick patch to fix GFileInfo critical warnings

@@ -1,4 +1,4 @@
-libgdk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
+libgdk-x11-2.0.so.0 libgtk2.0-0t64 #MINVER#
 * Build-Depends-Package: libgtk2.0-dev
  gdk_add_client_message_filter@Base 2.8.0
  gdk_add_option_entries_libgtk_only@Base 2.8.0
@@ -780,7 +780,7 @@ libgdk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
  gdk_xid_table_lookup_for_display@Base 2.8.0
  gdkx_colormap_get@Base 2.8.0
  gdkx_visual_get@Base 2.8.0
-libgtk-x11-2.0.so.0 libgtk2.0-0 #MINVER#
+libgtk-x11-2.0.so.0 libgtk2.0-0t64 #MINVER#
 * Build-Depends-Package: libgtk2.0-dev
  gtk_about_dialog_get_artists@Base 2.8.0
  gtk_about_dialog_get_authors@Base 2.8.0
