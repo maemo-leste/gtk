@@ -1,4 +1,4 @@
-gtk+2.0 (2.24.33-4) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.33-4) unstable; urgency=medium
 
   * Team upload
   * d/libgtk2.0-0t64.preinst: Remove libgtk2.0-0 postrm to avoid loss of
@@ -11,7 +11,7 @@ gtk+2.0 (2.24.33-4) UNRELEASED; urgency=medium
     directory no longer exists.
   * d/tests/1065493-futureproofing: Add a test for recurrence of #1065493.
 
- -- Simon McVittie <smcv@debian.org>  Wed, 06 Mar 2024 11:29:11 +0000
+ -- Simon McVittie <smcv@debian.org>  Wed, 06 Mar 2024 12:31:37 +0000
 
 gtk+2.0 (2.24.33-3.1) unstable; urgency=medium
 
