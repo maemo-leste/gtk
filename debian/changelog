@@ -1,3 +1,18 @@
+gtk+2.0 (2.24.33-4) UNRELEASED; urgency=medium
+
+  * Team upload
+  * d/libgtk2.0-0t64.preinst: Remove libgtk2.0-0 postrm to avoid loss of
+    input method modules during upgrade (Closes: #1065493)
+  * d/tests/manual/1065493.sh: Add a manual reproducer for #1065493
+  * d/libgtk2.0-0t64.postrm.in: Only clean up immodules.cache during purge.
+    This avoids input methods becoming briefly unavailable during upgrades.
+  * d/libgtk2.0-0t64.postrm.in: Avoid recurrence of #1065493 in the future,
+    by not deleting immodules.cache (even during purge) unless the immodules
+    directory no longer exists.
+  * d/tests/1065493-futureproofing: Add a test for recurrence of #1065493.
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 06 Mar 2024 11:29:11 +0000
+
 gtk+2.0 (2.24.33-3.1) unstable; urgency=medium
 
   * Non-maintainer upload.
