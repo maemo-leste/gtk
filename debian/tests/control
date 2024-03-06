@@ -1,3 +1,7 @@
 Tests: build
 Depends: build-essential, libgtk2.0-dev, xauth, xvfb
 Restrictions: allow-stderr, superficial
+
+Tests: 1065493-futureproofing
+Depends: dpkg-dev, dpkg-repack, libgtk2.0-0t64
+Restrictions: allow-stderr breaks-testbed flaky needs-root
