@@ -2,5 +2,4 @@
 libgail18t64: package-name-doesnt-match-sonames libgailutil18
 # Intentionally done: packages that use GAIL need both, but an
 # interdependency would be circular, so we do this instead
-libgail18t64: symbols-declares-dependency-on-other-package libgail-common
-libgail18t64: package-name-doesnt-match-sonames libgail18
+libgail18t64: symbols-declares-dependency-on-other-package libgail-common *

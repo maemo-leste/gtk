@@ -1,0 +1,5 @@
+# https://bugs.debian.org/1063709
+missing-build-dependency-for-dh-addon gir *
+# The source is this source package. Regenerated with gtk-doc during build
+source-is-missing [docs/reference/gdk/html/*]
+source-is-missing [docs/reference/gtk/html/*]
