@@ -8,3 +8,4 @@
 Reinstate-marshallers-that-accidentally-became-part-of-th.patch
 d-i/textlayout-Clamp-width-to-the-value-we-asked-for-as-a-hac.patch
 Check-for-attribute-availability-before-accessing-it.patch
+CVE-2024-6655.patch
