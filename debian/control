@@ -2,7 +2,7 @@ Source: gtk+2.0
 Section: oldlibs
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Jeremy Bícha <jbicha@debian.org>
+Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Jeremy Bícha <jbicha@ubuntu.com>
 Build-Depends: dpkg-dev (>= 1.22.5), debhelper-compat (= 12),
                dh-sequence-gnome,
                dh-python,
