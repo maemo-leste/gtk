@@ -9,3 +9,10 @@ Reinstate-marshallers-that-accidentally-became-part-of-th.patch
 d-i/textlayout-Clamp-width-to-the-value-we-asked-for-as-a-hac.patch
 Check-for-attribute-availability-before-accessing-it.patch
 CVE-2024-6655.patch
+gtk2-c99.patch
+gtk2-c89.patch
+gtk2-c89-2.patch
+gtk2-c89-3.patch
+gtk2-c89-4.patch
+gtk2-c89-5.patch
+gtk2-c89-6.patch
