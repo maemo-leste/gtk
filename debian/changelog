@@ -1,4 +1,6 @@
-gtk+2.0 (2.24.33-6) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.33-6) unstable; urgency=medium
+
+  * Team upload
 
   [ Alessandro Astone ]
   * debian: Add patches to fix FTBFS with gcc-14 (Closes: #1075050)
@@ -17,7 +19,7 @@ gtk+2.0 (2.24.33-6) UNRELEASED; urgency=medium
     replacement x11proto-dev
   * Standards-Version: 4.7.0 (no changes required)
 
- -- Simon McVittie <smcv@debian.org>  Fri, 30 Aug 2024 18:27:06 +0100
+ -- Simon McVittie <smcv@debian.org>  Fri, 30 Aug 2024 18:29:28 +0100
 
 gtk+2.0 (2.24.33-5) unstable; urgency=high
 
