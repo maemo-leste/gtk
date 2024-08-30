@@ -1,3 +1,24 @@
+gtk+2.0 (2.24.33-6) UNRELEASED; urgency=medium
+
+  [ Alessandro Astone ]
+  * debian: Add patches to fix FTBFS with gcc-14 (Closes: #1075050)
+
+  [ Simon McVittie ]
+  * d/rules: Suppress gtk2-engines-pixbuf dependency on libgtk2.0-0t64.
+    This allows themes to be installed without always requiring GTK 2
+    to be installed. We did this for libgtk2.0-0 since 2017, but it
+    regressed during the t64 transition. (Helps: #1077864)
+  * d/control: Recommend gnome-themes-extra.
+    This provides the Adwaita theme for GTK 2, making GTK 2 apps
+    approximately match the default appearance of GTK 3 apps.
+    (Helps: #1077864)
+  * Remove version constraints unnecessary since Debian 11
+  * Replace dependency on transitional package x11proto-xext-dev with
+    replacement x11proto-dev
+  * Standards-Version: 4.7.0 (no changes required)
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 30 Aug 2024 18:27:06 +0100
+
 gtk+2.0 (2.24.33-5) unstable; urgency=high
 
   [ Jeremy Bícha ]
