@@ -271,7 +271,7 @@ override_dh_makeshlibs:
 		-- -c4
 
 override_dh_shlibdeps:
-	dh_shlibdeps -p$(PIXBUF_PKG) -- -xlibgtk2.0-0
+	dh_shlibdeps -p$(PIXBUF_PKG) -- -xlibgtk2.0-0t64
 	# --remaining-packages didn't work right so let's at least make sure
 	# it doesn't run a second time for the pixbuf .so
 	dh_shlibdeps --remaining-packages -Xlibpixmap.so
