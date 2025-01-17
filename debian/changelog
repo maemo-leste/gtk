@@ -1,5 +1,6 @@
-gtk+2.0 (2.24.33-7) UNRELEASED; urgency=medium
+gtk+2.0 (2.24.33-7) unstable; urgency=medium
 
+  * Team upload
   * d/salsa-ci.yml: Add
   * d/libgtk2.0-0t64.links.in: Provide a symlink to the old
     gtk-query-immodules-2.0 path.
@@ -21,7 +22,7 @@ gtk+2.0 (2.24.33-7) UNRELEASED; urgency=medium
     with GTK 3 and 4) but not practically useful.
   * Remove unused lintian override for #1063709
 
- -- Simon McVittie <smcv@debian.org>  Fri, 17 Jan 2025 11:15:01 +0000
+ -- Simon McVittie <smcv@debian.org>  Fri, 17 Jan 2025 11:16:34 +0000
 
 gtk+2.0 (2.24.33-6) unstable; urgency=medium
 
