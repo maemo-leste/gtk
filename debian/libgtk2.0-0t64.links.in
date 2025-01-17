@@ -1,3 +1,4 @@
+@LIBDIR@/@SHARED_PKG@/gtk-query-immodules-2.0 @LIBDIR@/libgtk2.0-0/gtk-query-immodules-2.0
 usr/share/doc/@COMMON_PKG@/NEWS.gz usr/share/doc/@SHARED_PKG@/NEWS.gz
 usr/share/doc/@COMMON_PKG@/README.gz usr/share/doc/@SHARED_PKG@/README.gz
 usr/share/doc/@COMMON_PKG@/AUTHORS usr/share/doc/@SHARED_PKG@/AUTHORS
