@@ -1,3 +1,28 @@
+gtk+2.0 (2.24.33-7) UNRELEASED; urgency=medium
+
+  * d/salsa-ci.yml: Add
+  * d/libgtk2.0-0t64.links.in: Provide a symlink to the old
+    gtk-query-immodules-2.0 path.
+    This provides drop-in compatibility with libgtk2.0-0, which some
+    packages rely on (gcin, hime).
+  * d/control: Use generated ${gir:Provides} instead of hard-coding
+  * d/control: Add ${gir:Depends}, ${gir:Provides} to -dev package
+  * Stop generating Devhelp indexes for the FAQ and tutorial.
+    These are at least 15 years out of date, were emitted in the
+    deprecated Devhelp file format version 1, and do not have the GTK
+    major version in their title, which could mislead developers into
+    thinking they're applicable to GTK 3 and 4.
+  * d/upstream/metadata: Remove obsolete FAQ link
+  * d/upstream/metadata: Link to the correct branch's commit log
+  * d/upstream/metadata: Update Bug-Database URL for current Gitlab
+  * d/upstream/metadata: Remove Bug-Submit.
+    GTK 2 is no longer supported upstream. It is technically possible to
+    report issues (because it shares a git repository and issue tracker
+    with GTK 3 and 4) but not practically useful.
+  * Remove unused lintian override for #1063709
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 17 Jan 2025 11:15:01 +0000
+
 gtk+2.0 (2.24.33-6) unstable; urgency=medium
 
   * Team upload
