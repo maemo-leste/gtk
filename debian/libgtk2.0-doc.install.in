@@ -1,7 +1,3 @@
-# from Debian
-debian/gtk-faq.devhelp usr/share/doc/@DOC_PKG@/faq
-debian/gtk-tutorial.devhelp usr/share/doc/@DOC_PKG@/tutorial
-# from the source
 docs/reference/gtk/html/* usr/share/gtk-doc/html/gtk2
 docs/reference/gdk/html/* usr/share/gtk-doc/html/gdk2
 docs/faq/html/* usr/share/doc/@DOC_PKG@/faq

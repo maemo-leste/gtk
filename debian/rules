@@ -124,10 +124,6 @@ DH_INSTALLDOCS_FILES := NEWS README AUTHORS
 # ".in" file; pass the list of packages in $(1)
 dh_subst_files = $(patsubst %.in,%,$(wildcard $(addprefix debian/, $(addsuffix *.in, $(1)))))
 
-# Gruik gruik generation of .devhelp files for the FAQ and tutorial
-debian/gtk-%.devhelp: docs/%/html/index.html
-	gawk -f debian/gruik2devhelp.awk -v name=gtk-$* $< > $@
-
 debian/dh_gtkmodules.1: debian/dh_gtkmodules
 	cd debian && pod2man -c "Gtk" -r "$(DEB_VERSION)" dh_gtkmodules dh_gtkmodules.1
 
@@ -220,7 +216,7 @@ override_dh_installchangelogs:
 	# changelog.gz symlinks will be overwritten by dh_link
 	dh_installchangelogs -XChangeLog
 
-override_dh_install-indep: $(call dh_subst_files,$(BINARY_INDEP_PKGS)) debian/gtk-faq.devhelp debian/gtk-tutorial.devhelp
+override_dh_install-indep: $(call dh_subst_files,$(BINARY_INDEP_PKGS))
 	dh_install -i
 
 override_dh_installdocs-indep:
