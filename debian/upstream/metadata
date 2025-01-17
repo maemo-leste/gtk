@@ -1,6 +1,7 @@
 Archive: GNOME
 Bug-Database: https://gitlab.gnome.org/GNOME/gtk/-/issues
-Bug-Submit: https://gitlab.gnome.org/GNOME/gtk/issues/new
+# Intentionally no Bug-Submit: upstream is no longer maintaining GTK 2
+# and will not accept issue reports for it
 Changelog: https://gitlab.gnome.org/GNOME/gtk/-/commits/gtk-2-24
 Repository-Browse: https://gitlab.gnome.org/GNOME/gtk
 Repository: https://gitlab.gnome.org/GNOME/gtk.git
